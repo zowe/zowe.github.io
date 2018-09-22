@@ -10,25 +10,95 @@
 
 <script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
 <title>What is Zowe?</title>
-	<script>
-	( function() {
-		var query = document.location.search;
-
-		if ( query && query.indexOf( 'preview=true' ) !== -1 ) {
-			window.name = 'wp-preview-627';
-		}
-
-		if ( window.addEventListener ) {
-			window.addEventListener( 'unload', function() { window.name = ''; }, false );
-		}
-	}());
-	</script>
-	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
 <link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="https://zowe.org/feed/" />
 <link rel="alternate" type="application/rss+xml" title=" &raquo; Comments Feed" href="https://zowe.org/comments/feed/" />
-<!-- This site uses the Google Analytics by MonsterInsights plugin v 7.1.0 - https://www.monsterinsights.com/ --><!-- You are currently in a preview window. MonsterInsights doesn&#039;t track preview window traffic to avoid false visit reports. --><!-- / Google Analytics by MonsterInsights -->		<script type="text/javascript">
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.1.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+	var mi_version         = '7.1.0';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-123892882-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-123892882-1', 'auto', {'allowLinker':true});
+		__gaTracker('set', 'forceSSL', true);
+	__gaTracker('require', 'linker');
+__gaTracker('linker:autoLink', ['zowe.org', 'projectgiza.org', 'zowe.github.io'] );
+		__gaTracker('require', 'displayfeatures');
+		__gaTracker('require', 'linkid', 'linkid.js');
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/zowe.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
 			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
 		</script>
@@ -46,9 +116,8 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='stylesheet' id='dashicons-css'  href='https://zowe.org/wp-includes/css/dashicons.min.css?ver=4.9.8' type='text/css' media='all' />
-<link rel='stylesheet' id='admin-bar-css'  href='https://zowe.org/wp-includes/css/admin-bar.min.css?ver=4.9.8' type='text/css' media='all' />
 <link rel='stylesheet' id='olympus-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C300%2C400%2C500%2C700%2C900%2C0%7CRoboto+Condensed%3A300%2C400%2C700%2C0&#038;subset=greek-ext%2Cvietnamese%2Clatin%2Ccyrillic%2Cgreek%2Clatin-ext%2Ccyrillic-ext&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='sow-image-default-bd5cd9da0588-css'  href='https://zowe.org/wp-content/uploads/siteorigin-widgets/sow-image-default-bd5cd9da0588.css?ver=4.9.8' type='text/css' media='all' />
 <link rel='stylesheet' id='wpstatistics-css-css'  href='https://zowe.org/wp-content/plugins/wp-statistics/assets/css/frontend.css?ver=12.3.6.4' type='text/css' media='all' />
 <link rel='stylesheet' id='twentyseventeen-fonts-css'  href='https://fonts.googleapis.com/css?family=Libre+Franklin%3A300%2C300i%2C400%2C400i%2C600%2C600i%2C800%2C800i&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
 <link rel='stylesheet' id='twentyseventeen-style-css'  href='https://zowe.org/wp-content/themes/twentyseventeen/style.css?ver=4.9.8' type='text/css' media='all' />
@@ -56,6 +125,12 @@ img.emoji {
 <link rel='stylesheet' id='twentyseventeen-ie8-css'  href='https://zowe.org/wp-content/themes/twentyseventeen/assets/css/ie8.css?ver=1.0' type='text/css' media='all' />
 <![endif]-->
 <link rel='stylesheet' id='sccss_style-css'  href='https://zowe.org/?sccss=1&#038;ver=4.9.8' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls,pax","inbound_paths":"","home_url":"https:\/\/zowe.org","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://zowe.org/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.1.0'></script>
 <!--[if lt IE 9]>
 <script type='text/javascript' src='https://zowe.org/wp-content/themes/twentyseventeen/assets/js/html5.js?ver=3.7.3'></script>
 <![endif]-->
@@ -81,12 +156,7 @@ font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 																			</style>
 	<!-- Olympus Google Fonts CSS -->
-	            <style type="text/css">.so-widget-sow-image-default-bd5cd9da0588 .sow-image-container .so-widget-image {
-  display: block;
-  max-width: 100%;
-  width: inherit;
-  height: auto;
-}</style>	<style type="text/css" id="custom-theme-colors" >
+		<style type="text/css" id="custom-theme-colors" >
 		
 /**
  * Twenty Seventeen: Color Patterns
@@ -631,18 +701,9 @@ body.colors-custom,
 	}
 }	</style>
 		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-		<style type="text/css" media="print">#wpadminbar { display:none; }</style>
-<style type="text/css" media="screen">
-	html { margin-top: 32px !important; }
-	* html body { margin-top: 32px !important; }
-	@media screen and ( max-width: 782px ) {
-		html { margin-top: 46px !important; }
-		* html body { margin-top: 46px !important; }
-	}
-</style>
-</head>
+		</head>
 
-<body class="page-template-default page page-id-627 logged-in admin-bar no-customize-support wp-custom-logo has-header-image page-one-column colors-custom">
+<body class="page-template-default page page-id-627 wp-custom-logo has-header-image page-one-column colors-custom">
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
@@ -704,11 +765,15 @@ body.colors-custom,
 			
 <article id="post-627" class="post-627 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">What is Zowe?</h1>		<span class="edit-link"><a class="post-edit-link" href="https://zowe.org/wp-admin/post.php?post=627&#038;action=edit">Edit<span class="screen-reader-text"> "What is Zowe?"</span></a></span>	</header><!-- .entry-header -->
+		<h1 class="entry-title">What is Zowe?</h1>			</header><!-- .entry-header -->
 	<div class="entry-content">
-		<div id="pl-859"  class="panel-layout" ><div id="pg-859-0"  class="panel-grid panel-no-style" ><div id="pgc-859-0-0"  class="panel-grid-cell" ><div id="panel-859-0-0-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="0" ><div class="so-widget-sow-editor so-widget-sow-editor-base">
+		<div id="pl-627"  class="panel-layout" >
+<div id="pg-627-0"  class="panel-grid panel-no-style"  data-style="{&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;,&quot;bottom_margin&quot;:&quot;0px&quot;,&quot;cell_alignment&quot;:&quot;flex-start&quot;}"  data-ratio="1"  data-ratio-direction="right" >
+<div id="pgc-627-0-0"  class="panel-grid-cell"  data-weight="1" >
+<div id="panel-627-0-0-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="0" data-style="{&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;}" >
+<div class="so-widget-sow-editor so-widget-sow-editor-base">
 <div class="siteorigin-widget-tinymce textwidget">
-	<p>Zowe offers modern interfaces to interact with z/OS and allows you to work with z/OS in a way that is similar to what you experience on cloud platforms today. You can use these interfaces as delivered or through plug-ins and extensions that are created by clients or third-party vendors.</p>
+	Zowe offers modern interfaces to interact with z/OS and allows you to work with z/OS in a way that is similar to what you experience on cloud platforms today. You can use these interfaces as delivered or through plug-ins and extensions that are created by clients or third-party vendors.</p>
 <p>Zowe consists of the following main components.</p>
 <p><strong>zLUX</strong>: Contains a Web user interface (UI) that provides a full screen interactive experience. The Web UI includes many interactions that exist in 3270 terminals and web interfaces such as IBM z/OSMF.</p>
 <p><strong>E</strong><strong>xplorer server</strong>: Provides a range of APIs for the management of jobs, data sets, z/OS UNIX System Services files, and persistent data.</p>
@@ -716,75 +781,154 @@ body.colors-custom,
 <p><strong>Z</strong><strong>o</strong><strong>we CLI</strong>: Provides a command-line interface that lets you interact with the mainframe remotely and use common tools such as Integrated Development Environments (IDEs), shell commands, bash scripts, and build tools for mainframe development. It provides a set of utilities and services for application developers that want to become efficient in supporting and building z/OS applications quickly.</p>
 <p>&nbsp;</p>
 <hr />
-<p>&nbsp;</p>
+<p>&nbsp;</p></div>
 </div>
-</div></div></div></div><div id="pg-859-1"  class="panel-grid panel-has-style" ><div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-859-1" data-stretch-type="full" ><div id="pgc-859-1-0"  class="panel-grid-cell" ><div id="panel-859-1-0-0" class="so-panel widget widget_sow-editor panel-first-child" data-index="1" ><div class="panel-widget-style panel-widget-style-for-859-1-0-0" ><div class="so-widget-sow-editor so-widget-sow-editor-base">
+</div>
+</div>
+</div>
+<div id="pg-627-1"  class="panel-grid panel-has-style"  data-style="{&quot;padding&quot;:&quot;0px 0px 45px 0px&quot;,&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;cover&quot;,&quot;bottom_margin&quot;:&quot;0px&quot;,&quot;row_stretch&quot;:&quot;full&quot;,&quot;cell_alignment&quot;:&quot;flex-start&quot;}"  data-ratio="1"  data-ratio-direction="left" >
+<div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-627-1" data-stretch-type="full" >
+<div id="pgc-627-1-0"  class="panel-grid-cell"  data-style="{&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;,&quot;vertical_alignment&quot;:&quot;auto&quot;}"  data-weight="0.5" >
+<div id="panel-627-1-0-0" class="so-panel widget widget_sow-editor panel-first-child" data-index="1" data-style="{&quot;padding&quot;:&quot;0px 0px 10px 0px&quot;,&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;,&quot;margin&quot;:&quot;0px 0px 0px 0px&quot;,&quot;font_color&quot;:&quot;#000000&quot;}" >
+<div class="panel-widget-style panel-widget-style-for-627-1-0-0" >
+<div class="so-widget-sow-editor so-widget-sow-editor-base">
 <div class="siteorigin-widget-tinymce textwidget">
-	<h1>Play with our beta *</h1>
+<h1>Play with our beta</h1>
 <p>The best way to experience Zowe is by downloading our open beta.</p>
 </div>
-</div></div></div><div id="panel-859-1-0-1" class="so-panel widget widget_sow-button" data-index="2" ><div class="so-widget-sow-button so-widget-sow-button-flat-4a75a8acc3b6"><div class="ow-button-base ow-button-align-left">
-	<a href="https://projectgiza.org/Downloads/legal.html" class="ow-icon-placement-left ow-button-hover" 		>
+</div>
+</div>
+</div>
+<div id="panel-627-1-0-1" class="so-panel widget widget_sow-button" data-index="2" data-style="{&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;,&quot;margin&quot;:&quot;-10px 0px 0px 0px&quot;}" ><div class="so-widget-sow-button so-widget-sow-button-wire-4a75a8acc3b6"><div class="ow-button-base ow-button-align-left">
+	<a href="https://zowe.org/download/" class="ow-icon-placement-left ow-button-hover" 		>
 		<span>
-			<span class="sow-icon-fontawesome" data-sow-icon="&#xf063;" style="color: #ffffff"></span>
-			DOWNLOAD		</span>
+			
+			DOWNLOAD PAGE		</span>
 	</a>
 </div>
-</div></div><div id="panel-859-1-0-2" class="so-panel widget widget_sow-editor panel-last-child" data-index="3" ><div class="panel-widget-style panel-widget-style-for-859-1-0-2" ><div class="so-widget-sow-editor so-widget-sow-editor-base">
+</div></div>
+<div id="panel-627-1-0-2" class="so-panel widget widget_sow-editor panel-last-child" data-index="3" data-style="{&quot;padding&quot;:&quot;20px 0px 0px 0px&quot;,&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;}" >
+<div class="panel-widget-style panel-widget-style-for-627-1-0-2" >
+<div class="so-widget-sow-editor so-widget-sow-editor-base">
 <div class="siteorigin-widget-tinymce textwidget">
-	<p style="font-size:.75rem; color:#626262;">* Please note this is a beta version of Zowe which is not intended for production use. This binary is provided under a different license and not from the Open Mainframe Project or Zowe community.</p></div>
-</div></div></div></div><div id="pgc-859-1-1"  class="panel-grid-cell" ><div id="panel-859-1-1-0" class="so-panel widget widget_sow-image panel-first-child panel-last-child" data-index="4" ><div class="panel-widget-style panel-widget-style-for-859-1-1-0" ><div class="so-widget-sow-image so-widget-sow-image-default-bd5cd9da0588">
+<p style="font-size:.75rem; color:#626262;">* Please note this is a beta version of Zowe which is not intended for production use. This binary is provided under a different license and not from the Open Mainframe Project or Zowe community.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="pgc-627-1-1"  class="panel-grid-cell"  data-weight="0.5" >
+<div id="panel-627-1-1-0" class="so-panel widget widget_sow-image panel-first-child panel-last-child" data-index="4" data-style="{&quot;padding&quot;:&quot;0px 0px 0px 0px&quot;,&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;,&quot;margin&quot;:&quot;0px 0px 0px 0px&quot;}" >
+<div class="panel-widget-style panel-widget-style-for-627-1-1-0" ><div class="so-widget-sow-image so-widget-sow-image-default-bd5cd9da0588">
 
 <div class="sow-image-container">
 	<img src="https://zowe.org/wp-content/uploads/2018/08/download_img-e1536674249337.png" width="361" height="299" srcset="https://zowe.org/wp-content/uploads/2018/08/download_img-e1536674249337.png 361w, https://zowe.org/wp-content/uploads/2018/08/download_img-e1536674249337-300x248.png 300w" sizes="(max-width: 361px) 100vw, 361px" title="download_img" 		class="so-widget-image"/>
 </div>
 
-</div></div></div></div></div></div><div id="pg-859-2"  class="panel-grid panel-no-style" ><div id="pgc-859-2-0"  class="panel-grid-cell" ><div id="panel-859-2-0-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="5" ><div class="so-widget-sow-editor so-widget-sow-editor-base">
-<div class="siteorigin-widget-tinymce textwidget">
-	<hr />
-
-&nbsp;</div>
-</div></div></div></div><div id="pg-859-3"  class="panel-grid panel-has-style" ><div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-859-3" data-stretch-type="full" ><div id="pgc-859-3-0"  class="panel-grid-cell" ><div id="panel-859-3-0-0" class="so-panel widget widget_sow-editor panel-first-child" data-index="6" ><div class="panel-widget-style panel-widget-style-for-859-3-0-0" ><div class="so-widget-sow-editor so-widget-sow-editor-base">
-<div class="siteorigin-widget-tinymce textwidget">
-	<h1>Join the community</h1>
-<p>There are hundreds of developers - called Committers - who are dedicated to extending Zowe and building a community around open source on the mainframe. Discover how you can contribute code, ideas, generate issues and earn your Committer status.</p>
-
+</div></div>
 </div>
-</div></div></div><div id="panel-859-3-0-1" class="so-panel widget widget_sow-button panel-last-child" data-index="7" ><div class="so-widget-sow-button so-widget-sow-button-wire-4a75a8acc3b6"><div class="ow-button-base ow-button-align-left">
+</div>
+</div>
+</div>
+<div id="pg-627-2"  class="panel-grid panel-no-style"  data-style="{&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;,&quot;bottom_margin&quot;:&quot;-10px&quot;,&quot;cell_alignment&quot;:&quot;flex-start&quot;}"  data-ratio="1"  data-ratio-direction="right" >
+<div id="pgc-627-2-0"  class="panel-grid-cell"  data-weight="1" >
+<div id="panel-627-2-0-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="5" data-style="{&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;}" >
+<div class="so-widget-sow-editor so-widget-sow-editor-base">
+<div class="siteorigin-widget-tinymce textwidget">
+<hr />
+<p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+</div>
+<div id="pg-627-3"  class="panel-grid panel-has-style"  data-style="{&quot;padding&quot;:&quot;0px 0px 40px 0px&quot;,&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;cover&quot;,&quot;bottom_margin&quot;:&quot;30px&quot;,&quot;row_stretch&quot;:&quot;full&quot;,&quot;cell_alignment&quot;:&quot;flex-start&quot;}"  data-ratio="1"  data-ratio-direction="left" >
+<div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-627-3" data-stretch-type="full" >
+<div id="pgc-627-3-0"  class="panel-grid-cell"  data-weight="0.5" >
+<div id="panel-627-3-0-0" class="so-panel widget widget_sow-editor panel-first-child" data-index="6" data-style="{&quot;padding&quot;:&quot;0px 0px 10px 0px&quot;,&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;,&quot;margin&quot;:&quot;20px 0px 0px 0px&quot;,&quot;font_color&quot;:&quot;#000000&quot;}" >
+<div class="panel-widget-style panel-widget-style-for-627-3-0-0" >
+<div class="so-widget-sow-editor so-widget-sow-editor-base">
+<div class="siteorigin-widget-tinymce textwidget">
+<h1>Join the community</h1>
+<p>There are hundreds of developers &#8211; called Committers &#8211; who are dedicated to extending Zowe and building a community around open source on the mainframe. Discover how you can contribute code, ideas, generate issues and earn your Committer status.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="panel-627-3-0-1" class="so-panel widget widget_sow-button panel-last-child" data-index="7" data-style="{&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;,&quot;margin&quot;:&quot;0px 0px 0px 0px&quot;}" ><div class="so-widget-sow-button so-widget-sow-button-wire-4a75a8acc3b6"><div class="ow-button-base ow-button-align-left">
 	<a href="https://zowe.org/contribute/" class="ow-icon-placement-left ow-button-hover" 		>
 		<span>
 			
 			LEARN MORE		</span>
 	</a>
 </div>
-</div></div></div><div id="pgc-859-3-1"  class="panel-grid-cell" ><div id="panel-859-3-1-0" class="so-panel widget widget_sow-image panel-first-child panel-last-child" data-index="8" ><div class="download-icon panel-widget-style panel-widget-style-for-859-3-1-0" ><div class="so-widget-sow-image so-widget-sow-image-default-b37b538aacbf">
+</div></div>
+</div>
+<div id="pgc-627-3-1"  class="panel-grid-cell"  data-style="{&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;,&quot;vertical_alignment&quot;:&quot;auto&quot;}"  data-weight="0.5" >
+<div id="panel-627-3-1-0" class="so-panel widget widget_sow-image panel-first-child panel-last-child" data-index="8" data-style="{&quot;class&quot;:&quot;download-icon&quot;,&quot;padding&quot;:&quot;0px 0px 0px 0px&quot;,&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;,&quot;margin&quot;:&quot;0px 0px 0px 0px&quot;}" >
+<div class="download-icon panel-widget-style panel-widget-style-for-627-3-1-0" ><div class="so-widget-sow-image so-widget-sow-image-default-b37b538aacbf">
 
 <div class="sow-image-container">
 	<img src="https://zowe.org/wp-content/uploads/2018/08/community_img.png" width="400" height="300" srcset="https://zowe.org/wp-content/uploads/2018/08/community_img.png 400w, https://zowe.org/wp-content/uploads/2018/08/community_img-300x225.png 300w" sizes="(max-width: 400px) 100vw, 400px" 		class="so-widget-image"/>
 </div>
 
-</div></div></div></div></div></div><div id="pg-859-4"  class="panel-grid panel-has-style" ><div class="panel-row-style panel-row-style-for-859-4" ><div id="pgc-859-4-0"  class="panel-grid-cell" ><div id="panel-859-4-0-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="9" ><div class="panel-widget-style panel-widget-style-for-859-4-0-0" ><div class="so-widget-sow-editor so-widget-sow-editor-base"><h3 class="widget-title">Core Infrastructure Initiative Support</h3>
-<div class="siteorigin-widget-tinymce textwidget">
-	Zowe is actively working to ensure it meets the high level of expectations from existing z/OS customers and those using Open Source technology.  Track our status of being compliance with the <a href"https://www.coreinfrastructure.org/programs/badge-program/" target="_blank">Core Infrastructure Initiative</a> efforts.
-
-<a href="https://bestpractices.coreinfrastructure.org/projects/2226"><img src="https://bestpractices.coreinfrastructure.org/projects/2226/badge"/></a> 
-&nbsp;
+</div></div>
 </div>
-</div></div></div></div></div></div><div id="pg-859-5"  class="panel-grid panel-has-style" ><div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-859-5" data-stretch-type="full" ><div id="pgc-859-5-0"  class="panel-grid-cell" ><div class="panel-cell-style panel-cell-style-for-859-5-0" ><div id="panel-859-5-0-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="10" ><div class="action-container panel-widget-style panel-widget-style-for-859-5-0-0" ><div class="so-widget-sow-editor so-widget-sow-editor-base">
+</div>
+</div>
+</div>
+<div id="pg-627-4"  class="panel-grid panel-has-style"  data-style="{&quot;padding&quot;:&quot;0px 0px 40px 0px&quot;,&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;,&quot;cell_alignment&quot;:&quot;flex-start&quot;}"  data-ratio="1"  data-ratio-direction="right"  data-label="Project Progress with other Open Source Standards" >
+<div class="panel-row-style panel-row-style-for-627-4" >
+<div id="pgc-627-4-0"  class="panel-grid-cell"  data-style="{&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;,&quot;vertical_alignment&quot;:&quot;auto&quot;}"  data-weight="1" >
+<div id="panel-627-4-0-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="9" data-style="{&quot;padding&quot;:&quot;0px 0px 40px 0px&quot;,&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;}" >
+<div class="panel-widget-style panel-widget-style-for-627-4-0-0" >
+<div class="so-widget-sow-editor so-widget-sow-editor-base">
+<h3 class="widget-title">Core Infrastructure Initiative Support</h3>
 <div class="siteorigin-widget-tinymce textwidget">
-	<h1><img class="alignnone size-full wp-image-668 title-icon" src="//zowe.org/wp-content/uploads/2018/08/faq_icon.png" alt="" width="50" height="55" />  Learn more</h1>
-<p>Find the answers to all things Zowe! We know you’re a curious group.
-&nbsp&nbsp&nbsp&nbsp&nbsp</p>
-
-<a href="https://zowe.org/index.php/faq/"><strong>See FAQ</strong></a>
-<br /></div>
-</div></div></div></div></div><div id="pgc-859-5-1"  class="panel-grid-cell" ><div class="panel-cell-style panel-cell-style-for-859-5-1" ><div id="panel-859-5-1-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="11" ><div class="action-container panel-widget-style panel-widget-style-for-859-5-1-0" ><div class="so-widget-sow-editor so-widget-sow-editor-base">
+<p>Zowe is actively working to ensure it meets the high level of expectations from existing z/OS customers and those using Open Source technology. Track our status of being compliance with the <a target="_blank" rel="noopener">Core Infrastructure Initiative</a> efforts.</p>
+<p><a href="https://bestpractices.coreinfrastructure.org/projects/2226"><img src="https://bestpractices.coreinfrastructure.org/projects/2226/badge" /></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="pg-627-5"  class="panel-grid panel-has-style"  data-style="{&quot;padding&quot;:&quot;60px 0px 70px 0px&quot;,&quot;background&quot;:&quot;#10395b&quot;,&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;cover&quot;,&quot;bottom_margin&quot;:&quot;-105px&quot;,&quot;row_stretch&quot;:&quot;full&quot;,&quot;cell_alignment&quot;:&quot;flex-start&quot;}"  data-ratio="1"  data-ratio-direction="left" >
+<div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-627-5" data-stretch-type="full" >
+<div id="pgc-627-5-0"  class="panel-grid-cell"  data-style="{&quot;padding&quot;:&quot;30px 30px 30px 30px&quot;,&quot;background&quot;:&quot;#ffffff&quot;,&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;,&quot;vertical_alignment&quot;:&quot;auto&quot;}"  data-weight="0.5" >
+<div class="panel-cell-style panel-cell-style-for-627-5-0" >
+<div id="panel-627-5-0-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="10" data-style="{&quot;class&quot;:&quot;action-container&quot;,&quot;padding&quot;:&quot;0px 0px 10px 0px&quot;,&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;,&quot;font_color&quot;:&quot;#000000&quot;}" >
+<div class="action-container panel-widget-style panel-widget-style-for-627-5-0-0" >
+<div class="so-widget-sow-editor so-widget-sow-editor-base">
 <div class="siteorigin-widget-tinymce textwidget">
-	<h1><img class="alignnone size-full wp-image-673 title-icon" src="//zowe.org/wp-content/uploads/2018/08/doc_icon.png" alt="" width="50" height="55" />  Documentation</h1>
+<h1><img class="alignnone size-full wp-image-668 title-icon" src="//zowe.org/wp-content/uploads/2018/08/faq_icon.png" alt="" width="50" height="55" />  Learn more</h1>
+<p>Find the answers to all things Zowe! We know you’re a curious group.<br />
+&#038;nbsp&#038;nbsp&#038;nbsp&#038;nbsp&#038;nbsp</p>
+<p><a href="https://zowe.org/index.php/faq/"><strong>See FAQ</strong></a><br />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="pgc-627-5-1"  class="panel-grid-cell"  data-style="{&quot;padding&quot;:&quot;30px 30px 30px 30px&quot;,&quot;background&quot;:&quot;#ffffff&quot;,&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;,&quot;vertical_alignment&quot;:&quot;auto&quot;}"  data-weight="0.5" >
+<div class="panel-cell-style panel-cell-style-for-627-5-1" >
+<div id="panel-627-5-1-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="11" data-style="{&quot;class&quot;:&quot;action-container&quot;,&quot;padding&quot;:&quot;0px 0px 10px 0px&quot;,&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;,&quot;font_color&quot;:&quot;#000000&quot;}" >
+<div class="action-container panel-widget-style panel-widget-style-for-627-5-1-0" >
+<div class="so-widget-sow-editor so-widget-sow-editor-base">
+<div class="siteorigin-widget-tinymce textwidget">
+<h1><img class="alignnone size-full wp-image-673 title-icon" src="//zowe.org/wp-content/uploads/2018/08/doc_icon.png" alt="" width="50" height="55" />  Documentation</h1>
 <p>Follow tutorials, learn to install Zowe and check out our user guide.</p>
-
-<a href="https://zowe.github.io/docs-site/"><strong>View</strong></a></div>
-</div></div></div></div></div></div></div></div>	</div><!-- .entry-content -->
+<p><a href="https://zowe.github.io/docs-site/"><strong>View</strong></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+	</div><!-- .entry-content -->
 </article><!-- #post-## -->
 
 		</main><!-- #main -->
@@ -831,101 +975,11 @@ body.colors-custom,
 		</footer><!-- #colophon -->
 	</div><!-- .site-content-contain -->
 </div><!-- #page -->
-            <style type="text/css">.so-widget-sow-button-flat-4a75a8acc3b6 .ow-button-base {
-  zoom: 1;
-}
-.so-widget-sow-button-flat-4a75a8acc3b6 .ow-button-base:before {
-  content: '';
-  display: block;
-}
-.so-widget-sow-button-flat-4a75a8acc3b6 .ow-button-base:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-.so-widget-sow-button-flat-4a75a8acc3b6 .ow-button-base a {
-  -ms-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 1em;
-  padding: 1em 2em;
-  background: #41a9d5;
-  color: #ffffff !important;
-  border: 1px solid #41a9d5;
-  border-width: 1px 0;
-  -webkit-border-radius: 0.25em;
-  -moz-border-radius: 0.25em;
-  border-radius: 0.25em;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
-}
-.so-widget-sow-button-flat-4a75a8acc3b6 .ow-button-base a:visited,
-.so-widget-sow-button-flat-4a75a8acc3b6 .ow-button-base a:active,
-.so-widget-sow-button-flat-4a75a8acc3b6 .ow-button-base a:hover {
-  color: #ffffff !important;
-}
-.so-widget-sow-button-flat-4a75a8acc3b6 .ow-button-base a.ow-button-hover:hover {
-  background: #52b1d9;
-  border-bottom-color: #3da7d4;
-  color: #ffffff;
-}</style>            <style type="text/css">.so-widget-sow-image-default-bd5cd9da0588 .sow-image-container .so-widget-image {
-  display: block;
-  max-width: 100%;
-  width: inherit;
-  height: auto;
-}</style>            <style type="text/css">.so-widget-sow-button-wire-4a75a8acc3b6 .ow-button-base {
-  zoom: 1;
-}
-.so-widget-sow-button-wire-4a75a8acc3b6 .ow-button-base:before {
-  content: '';
-  display: block;
-}
-.so-widget-sow-button-wire-4a75a8acc3b6 .ow-button-base:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-.so-widget-sow-button-wire-4a75a8acc3b6 .ow-button-base a {
-  -ms-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 1em;
-  padding: 1em 2em;
-  background: transparent;
-  border: 2px solid #41a9d5;
-  color: #41a9d5 !important;
-  -webkit-border-radius: 0.25em;
-  -moz-border-radius: 0.25em;
-  border-radius: 0.25em;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
-}
-.so-widget-sow-button-wire-4a75a8acc3b6 .ow-button-base a:visited,
-.so-widget-sow-button-wire-4a75a8acc3b6 .ow-button-base a:active,
-.so-widget-sow-button-wire-4a75a8acc3b6 .ow-button-base a:hover {
-  color: #41a9d5 !important;
-}
-.so-widget-sow-button-wire-4a75a8acc3b6 .ow-button-base a.ow-button-hover:hover {
-  background: #41a9d5;
-  color: #ffffff !important;
-}</style>            <style type="text/css">.so-widget-sow-image-default-b37b538aacbf .sow-image-container {
-  text-align: center;
-}
-.so-widget-sow-image-default-b37b538aacbf .sow-image-container .so-widget-image {
-  display: inline-block;
-  max-width: 100%;
-  width: inherit;
-  height: auto;
-}</style>            <style type="text/css">.so-widget-sow-image-default-bd5cd9da0588 .sow-image-container .so-widget-image {
-  display: block;
-  max-width: 100%;
-  width: inherit;
-  height: auto;
-}</style>                <style type="text/css" media="all"
-                       id="siteorigin-panels-layouts-footer">/* Layout 859 */ #pgc-859-0-0 , #pgc-859-2-0 , #pgc-859-4-0 { width:100%;width:calc(100% - ( 0 * 30px ) ) } #pl-859 #panel-859-0-0-0 , #pl-859 #panel-859-1-0-2 , #pl-859 #panel-859-2-0-0 , #pl-859 #panel-859-4-0-0 , #pl-859 #panel-859-5-0-0 , #pl-859 #panel-859-5-1-0 {  } #pg-859-0 , #pg-859-1 , #pl-859 .so-panel:last-child { margin-bottom:0px } #pgc-859-1-0 , #pgc-859-1-1 , #pgc-859-3-0 , #pgc-859-3-1 , #pgc-859-5-0 , #pgc-859-5-1 { width:50%;width:calc(50% - ( 0.5 * 30px ) ) } #pl-859 #panel-859-1-0-0 , #pl-859 #panel-859-1-1-0 , #pl-859 #panel-859-3-0-1 , #pl-859 #panel-859-3-1-0 { margin:0px 0px 0px 0px } #pl-859 #panel-859-1-0-1 { margin:-10px 0px 0px 0px } #pg-859-2 { margin-bottom:-10px } #pl-859 #panel-859-3-0-0 { margin:20px 0px 0px 0px } #pg-859-3 , #pg-859-4 , #pl-859 .so-panel { margin-bottom:30px } #pg-859-5 { margin-bottom:-105px } #pg-859-0.panel-no-style, #pg-859-0.panel-has-style > .panel-row-style , #pg-859-1.panel-no-style, #pg-859-1.panel-has-style > .panel-row-style , #pg-859-2.panel-no-style, #pg-859-2.panel-has-style > .panel-row-style , #pg-859-3.panel-no-style, #pg-859-3.panel-has-style > .panel-row-style , #pg-859-4.panel-no-style, #pg-859-4.panel-has-style > .panel-row-style , #pg-859-5.panel-no-style, #pg-859-5.panel-has-style > .panel-row-style { -webkit-align-items:flex-start;align-items:flex-start } #pg-859-1> .panel-row-style { padding:0px 0px 45px 0px } #pgc-859-1-0 , #pgc-859-4-0 , #pgc-859-5-0 , #pgc-859-5-1 { align-self:auto } #panel-859-1-0-0> .panel-widget-style , #panel-859-3-0-0> .panel-widget-style , #panel-859-5-0-0> .panel-widget-style , #panel-859-5-1-0> .panel-widget-style { color:#000000;padding:0px 0px 10px 0px } #panel-859-1-0-2> .panel-widget-style { padding:20px 0px 0px 0px } #panel-859-1-1-0> .panel-widget-style , #panel-859-3-1-0> .panel-widget-style { padding:0px 0px 0px 0px } #pg-859-3> .panel-row-style , #pg-859-4> .panel-row-style , #panel-859-4-0-0> .panel-widget-style { padding:0px 0px 40px 0px } #pg-859-5> .panel-row-style { background-color:#10395b;padding:60px 0px 70px 0px } #pgc-859-5-0> .panel-cell-style , #pgc-859-5-1> .panel-cell-style { background-color:#ffffff;padding:30px 30px 30px 30px } @media (max-width:780px){ #pg-859-0.panel-no-style, #pg-859-0.panel-has-style > .panel-row-style , #pg-859-1.panel-no-style, #pg-859-1.panel-has-style > .panel-row-style , #pg-859-2.panel-no-style, #pg-859-2.panel-has-style > .panel-row-style , #pg-859-3.panel-no-style, #pg-859-3.panel-has-style > .panel-row-style , #pg-859-4.panel-no-style, #pg-859-4.panel-has-style > .panel-row-style , #pg-859-5.panel-no-style, #pg-859-5.panel-has-style > .panel-row-style { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-859-0 .panel-grid-cell , #pg-859-1 .panel-grid-cell , #pg-859-2 .panel-grid-cell , #pg-859-3 .panel-grid-cell , #pg-859-4 .panel-grid-cell , #pg-859-5 .panel-grid-cell { margin-right:0 } #pg-859-0 .panel-grid-cell , #pg-859-1 .panel-grid-cell , #pg-859-2 .panel-grid-cell , #pg-859-3 .panel-grid-cell , #pg-859-4 .panel-grid-cell , #pg-859-5 .panel-grid-cell { width:100% } #pgc-859-1-0 , #pgc-859-3-0 , #pgc-859-5-0 { margin-bottom:30px } #pl-859 .panel-grid-cell { padding:0 } #pl-859 .panel-grid .panel-grid-cell-empty { display:none } #pl-859 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px }  } /* Layout w5b71da2560503 */ #pgc-w5b71da2560503-0-0 , #pgc-w5b71da2560503-0-1 { width:50%;width:calc(50% - ( 0.5 * 30px ) ) } #pl-w5b71da2560503 #panel-w5b71da2560503-0-0-0 , #pl-w5b71da2560503 #panel-w5b71da2560503-0-1-0 {  } #pl-w5b71da2560503 .so-panel { margin-bottom:30px } #pl-w5b71da2560503 .so-panel:last-child { margin-bottom:0px } #pg-w5b71da2560503-0.panel-no-style, #pg-w5b71da2560503-0.panel-has-style > .panel-row-style { -webkit-align-items:flex-start;align-items:flex-start } @media (max-width:780px){ #pg-w5b71da2560503-0.panel-no-style, #pg-w5b71da2560503-0.panel-has-style > .panel-row-style { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-w5b71da2560503-0 .panel-grid-cell { margin-right:0 } #pg-w5b71da2560503-0 .panel-grid-cell { width:100% } #pgc-w5b71da2560503-0-0 { margin-bottom:30px } #pl-w5b71da2560503 .panel-grid-cell { padding:0 } #pl-w5b71da2560503 .panel-grid .panel-grid-cell-empty { display:none } #pl-w5b71da2560503 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px }  } </style><link rel='stylesheet' id='sow-button-base-css'  href='https://zowe.org/wp-content/plugins/so-widgets-bundle/widgets/button/css/style.css?ver=1.12.1' type='text/css' media='all' />
-<link rel='stylesheet' id='siteorigin-widget-icon-font-fontawesome-css'  href='https://zowe.org/wp-content/plugins/so-widgets-bundle/icons/fontawesome/style.css?ver=4.9.8' type='text/css' media='all' />
+                <style type="text/css" media="all"
+                       id="siteorigin-panels-layouts-footer">/* Layout w5b71da2560503 */ #pgc-w5b71da2560503-0-0 , #pgc-w5b71da2560503-0-1 { width:50%;width:calc(50% - ( 0.5 * 30px ) ) } #pl-w5b71da2560503 #panel-w5b71da2560503-0-0-0 , #pl-w5b71da2560503 #panel-w5b71da2560503-0-1-0 {  } #pl-w5b71da2560503 .so-panel { margin-bottom:30px } #pl-w5b71da2560503 .so-panel:last-child { margin-bottom:0px } #pg-w5b71da2560503-0.panel-no-style, #pg-w5b71da2560503-0.panel-has-style > .panel-row-style { -webkit-align-items:flex-start;align-items:flex-start } @media (max-width:780px){ #pg-w5b71da2560503-0.panel-no-style, #pg-w5b71da2560503-0.panel-has-style > .panel-row-style { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-w5b71da2560503-0 .panel-grid-cell { margin-right:0 } #pg-w5b71da2560503-0 .panel-grid-cell { width:100% } #pgc-w5b71da2560503-0-0 { margin-bottom:30px } #pl-w5b71da2560503 .panel-grid-cell { padding:0 } #pl-w5b71da2560503 .panel-grid .panel-grid-cell-empty { display:none } #pl-w5b71da2560503 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px }  } </style><link rel='stylesheet' id='sow-button-wire-4a75a8acc3b6-css'  href='https://zowe.org/wp-content/uploads/siteorigin-widgets/sow-button-wire-4a75a8acc3b6.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='sow-button-base-css'  href='https://zowe.org/wp-content/plugins/so-widgets-bundle/widgets/button/css/style.css?ver=1.12.1' type='text/css' media='all' />
+<link rel='stylesheet' id='sow-image-default-b37b538aacbf-css'  href='https://zowe.org/wp-content/uploads/siteorigin-widgets/sow-image-default-b37b538aacbf.css?ver=4.9.8' type='text/css' media='all' />
 <link rel='stylesheet' id='siteorigin-panels-front-css'  href='https://zowe.org/wp-content/plugins/siteorigin-panels/css/front-flex.min.css?ver=2.7.3' type='text/css' media='all' />
-<script type='text/javascript' src='https://zowe.org/wp-includes/js/admin-bar.min.js?ver=4.9.8'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var twentyseventeenScreenReaderText = {"quote":"<svg class=\"icon icon-quote-right\" aria-hidden=\"true\" role=\"img\"> <use href=\"#icon-quote-right\" xlink:href=\"#icon-quote-right\"><\/use> <\/svg>","expand":"Expand child menu","collapse":"Collapse child menu","icon":"<svg class=\"icon icon-angle-down\" aria-hidden=\"true\" role=\"img\"> <use href=\"#icon-angle-down\" xlink:href=\"#icon-angle-down\"><\/use> <span class=\"svg-fallback icon-angle-down\"><\/span><\/svg>"};
@@ -936,393 +990,7 @@ var twentyseventeenScreenReaderText = {"quote":"<svg class=\"icon icon-quote-rig
 <script type='text/javascript' src='https://zowe.org/wp-content/themes/twentyseventeen/assets/js/global.js?ver=1.0'></script>
 <script type='text/javascript' src='https://zowe.org/wp-content/themes/twentyseventeen/assets/js/jquery.scrollTo.js?ver=2.1.2'></script>
 <script type='text/javascript' src='https://zowe.org/wp-includes/js/wp-embed.min.js?ver=4.9.8'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var panelsStyles = {"fullContainer":"body"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://zowe.org/wp-content/plugins/siteorigin-panels/js/styling-273.min.js?ver=2.7.3'></script>
-
-		<style id="pum-admin-bar-styles">
-			/* Layer admin bar over popups. */
-			#wpadminbar {
-				z-index: 999999999999;
-			}
-
-			#wp-admin-bar-popup-maker > .ab-item::before {
-				background: url("https://zowe.org/wp-content/plugins/popup-maker//assets/images/admin/icon-info-21x21.png") center center no-repeat transparent !important;
-				top: 3px;
-				content: "";
-				width: 20px;
-				height: 20px;
-			}
-
-			#wp-admin-bar-popup-maker:hover > .ab-item::before {
-				background-image: url("https://zowe.org/wp-content/plugins/popup-maker//assets/images/admin/icon-info-21x21.png") !important;
-			}
-		</style>
-		<script id="pum-admin-bar-tools" type="text/javascript">
-            /**
-             * CssSelectorGenerator
-             */
-            (function () {
-                var CssSelectorGenerator, root,
-                    indexOf = [].indexOf || function (item) {
-                        for (var i = 0, l = this.length; i < l; i++) {
-                            if (i in this && this[i] === item) return i;
-                        }
-                        return -1;
-                    };
-
-                CssSelectorGenerator = (function () {
-                    CssSelectorGenerator.prototype.default_options = {
-                        selectors: ['id', 'class', 'tag', 'nthchild']
-                    };
-
-                    function CssSelectorGenerator(options) {
-                        if (options == null) {
-                            options = {};
-                        }
-                        this.options = {};
-                        this.setOptions(this.default_options);
-                        this.setOptions(options);
-                    }
-
-                    CssSelectorGenerator.prototype.setOptions = function (options) {
-                        var key, results, val;
-                        if (options == null) {
-                            options = {};
-                        }
-                        results = [];
-                        for (key in options) {
-                            val = options[key];
-                            if (this.default_options.hasOwnProperty(key)) {
-                                results.push(this.options[key] = val);
-                            } else {
-                                results.push(void 0);
-                            }
-                        }
-                        return results;
-                    };
-
-                    CssSelectorGenerator.prototype.isElement = function (element) {
-                        return !!((element != null ? element.nodeType : void 0) === 1);
-                    };
-
-                    CssSelectorGenerator.prototype.getParents = function (element) {
-                        var current_element, result;
-                        result = [];
-                        if (this.isElement(element)) {
-                            current_element = element;
-                            while (this.isElement(current_element)) {
-                                result.push(current_element);
-                                current_element = current_element.parentNode;
-                            }
-                        }
-                        return result;
-                    };
-
-                    CssSelectorGenerator.prototype.getTagSelector = function (element) {
-                        return this.sanitizeItem(element.tagName.toLowerCase());
-                    };
-
-                    CssSelectorGenerator.prototype.sanitizeItem = function (item) {
-                        var characters;
-                        characters = (item.split('')).map(function (character) {
-                            if (character === ':') {
-                                return "\\" + (':'.charCodeAt(0).toString(16).toUpperCase()) + " ";
-                            } else if (/[ !"#$%&'()*+,.\/;<=>?@\[\\\]^`{|}~]/.test(character)) {
-                                return "\\" + character;
-                            } else {
-                                return escape(character).replace(/\%/g, '\\');
-                            }
-                        });
-                        return characters.join('');
-                    };
-
-                    CssSelectorGenerator.prototype.getIdSelector = function (element) {
-                        var id, sanitized_id;
-                        id = element.getAttribute('id');
-                        if ((id != null) && (id !== '') && !(/\s/.exec(id)) && !(/^\d/.exec(id))) {
-                            sanitized_id = "#" + (this.sanitizeItem(id));
-                            if (element.ownerDocument.querySelectorAll(sanitized_id).length === 1) {
-                                return sanitized_id;
-                            }
-                        }
-                        return null;
-                    };
-
-                    CssSelectorGenerator.prototype.getClassSelectors = function (element) {
-                        var class_string, item, result;
-                        result = [];
-                        class_string = element.getAttribute('class');
-                        if (class_string != null) {
-                            class_string = class_string.replace(/\s+/g, ' ');
-                            class_string = class_string.replace(/^\s|\s$/g, '');
-                            if (class_string !== '') {
-                                result = (function () {
-                                    var k, len, ref, results;
-                                    ref = class_string.split(/\s+/);
-                                    results = [];
-                                    for (k = 0, len = ref.length; k < len; k++) {
-                                        item = ref[k];
-                                        results.push("." + (this.sanitizeItem(item)));
-                                    }
-                                    return results;
-                                }).call(this);
-                            }
-                        }
-                        return result;
-                    };
-
-                    CssSelectorGenerator.prototype.getAttributeSelectors = function (element) {
-                        var attribute, blacklist, k, len, ref, ref1, result;
-                        result = [];
-                        blacklist = ['id', 'class'];
-                        ref = element.attributes;
-                        for (k = 0, len = ref.length; k < len; k++) {
-                            attribute = ref[k];
-                            if (ref1 = attribute.nodeName, indexOf.call(blacklist, ref1) < 0) {
-                                result.push("[" + attribute.nodeName + "=" + attribute.nodeValue + "]");
-                            }
-                        }
-                        return result;
-                    };
-
-                    CssSelectorGenerator.prototype.getNthChildSelector = function (element) {
-                        var counter, k, len, parent_element, sibling, siblings;
-                        parent_element = element.parentNode;
-                        if (parent_element != null) {
-                            counter = 0;
-                            siblings = parent_element.childNodes;
-                            for (k = 0, len = siblings.length; k < len; k++) {
-                                sibling = siblings[k];
-                                if (this.isElement(sibling)) {
-                                    counter++;
-                                    if (sibling === element) {
-                                        return ":nth-child(" + counter + ")";
-                                    }
-                                }
-                            }
-                        }
-                        return null;
-                    };
-
-                    CssSelectorGenerator.prototype.testSelector = function (element, selector) {
-                        var is_unique, result;
-                        is_unique = false;
-                        if ((selector != null) && selector !== '') {
-                            result = element.ownerDocument.querySelectorAll(selector);
-                            if (result.length === 1 && result[0] === element) {
-                                is_unique = true;
-                            }
-                        }
-                        return is_unique;
-                    };
-
-                    CssSelectorGenerator.prototype.getAllSelectors = function (element) {
-                        var result;
-                        result = {
-                            t: null,
-                            i: null,
-                            c: null,
-                            a: null,
-                            n: null
-                        };
-                        if (indexOf.call(this.options.selectors, 'tag') >= 0) {
-                            result.t = this.getTagSelector(element);
-                        }
-                        if (indexOf.call(this.options.selectors, 'id') >= 0) {
-                            result.i = this.getIdSelector(element);
-                        }
-                        if (indexOf.call(this.options.selectors, 'class') >= 0) {
-                            result.c = this.getClassSelectors(element);
-                        }
-                        if (indexOf.call(this.options.selectors, 'attribute') >= 0) {
-                            result.a = this.getAttributeSelectors(element);
-                        }
-                        if (indexOf.call(this.options.selectors, 'nthchild') >= 0) {
-                            result.n = this.getNthChildSelector(element);
-                        }
-                        return result;
-                    };
-
-                    CssSelectorGenerator.prototype.testUniqueness = function (element, selector) {
-                        var found_elements, parent;
-                        parent = element.parentNode;
-                        found_elements = parent.querySelectorAll(selector);
-                        return found_elements.length === 1 && found_elements[0] === element;
-                    };
-
-                    CssSelectorGenerator.prototype.testCombinations = function (element, items, tag) {
-                        var item, k, l, len, len1, ref, ref1;
-                        ref = this.getCombinations(items);
-                        for (k = 0, len = ref.length; k < len; k++) {
-                            item = ref[k];
-                            if (this.testUniqueness(element, item)) {
-                                return item;
-                            }
-                        }
-                        if (tag != null) {
-                            ref1 = items.map(function (item) {
-                                return tag + item;
-                            });
-                            for (l = 0, len1 = ref1.length; l < len1; l++) {
-                                item = ref1[l];
-                                if (this.testUniqueness(element, item)) {
-                                    return item;
-                                }
-                            }
-                        }
-                        return null;
-                    };
-
-                    CssSelectorGenerator.prototype.getUniqueSelector = function (element) {
-                        var found_selector, k, len, ref, selector_type, selectors;
-                        selectors = this.getAllSelectors(element);
-                        ref = this.options.selectors;
-                        for (k = 0, len = ref.length; k < len; k++) {
-                            selector_type = ref[k];
-                            switch (selector_type) {
-                            case 'id':
-                                if (selectors.i != null) {
-                                    return selectors.i;
-                                }
-                                break;
-                            case 'tag':
-                                if (selectors.t != null) {
-                                    if (this.testUniqueness(element, selectors.t)) {
-                                        return selectors.t;
-                                    }
-                                }
-                                break;
-                            case 'class':
-                                if ((selectors.c != null) && selectors.c.length !== 0) {
-                                    found_selector = this.testCombinations(element, selectors.c, selectors.t);
-                                    if (found_selector) {
-                                        return found_selector;
-                                    }
-                                }
-                                break;
-                            case 'attribute':
-                                if ((selectors.a != null) && selectors.a.length !== 0) {
-                                    found_selector = this.testCombinations(element, selectors.a, selectors.t);
-                                    if (found_selector) {
-                                        return found_selector;
-                                    }
-                                }
-                                break;
-                            case 'nthchild':
-                                if (selectors.n != null) {
-                                    return selectors.n;
-                                }
-                            }
-                        }
-                        return '*';
-                    };
-
-                    CssSelectorGenerator.prototype.getSelector = function (element) {
-                        var all_selectors, item, k, l, len, len1, parents, result, selector, selectors;
-                        all_selectors = [];
-                        parents = this.getParents(element);
-                        for (k = 0, len = parents.length; k < len; k++) {
-                            item = parents[k];
-                            selector = this.getUniqueSelector(item);
-                            if (selector != null) {
-                                all_selectors.push(selector);
-                            }
-                        }
-                        selectors = [];
-                        for (l = 0, len1 = all_selectors.length; l < len1; l++) {
-                            item = all_selectors[l];
-                            selectors.unshift(item);
-                            result = selectors.join(' > ');
-                            if (this.testSelector(element, result)) {
-                                return result;
-                            }
-                        }
-                        return null;
-                    };
-
-                    CssSelectorGenerator.prototype.getCombinations = function (items) {
-                        var i, j, k, l, ref, ref1, result;
-                        if (items == null) {
-                            items = [];
-                        }
-                        result = [[]];
-                        for (i = k = 0, ref = items.length - 1; 0 <= ref ? k <= ref : k >= ref; i = 0 <= ref ? ++k : --k) {
-                            for (j = l = 0, ref1 = result.length - 1; 0 <= ref1 ? l <= ref1 : l >= ref1; j = 0 <= ref1 ? ++l : --l) {
-                                result.push(result[j].concat(items[i]));
-                            }
-                        }
-                        result.shift();
-                        result = result.sort(function (a, b) {
-                            return a.length - b.length;
-                        });
-                        result = result.map(function (item) {
-                            return item.join('');
-                        });
-                        return result;
-                    };
-
-                    return CssSelectorGenerator;
-
-                })();
-
-                if (typeof define !== "undefined" && define !== null ? define.amd : void 0) {
-                    define([], function () {
-                        return CssSelectorGenerator;
-                    });
-                } else {
-                    root = typeof exports !== "undefined" && exports !== null ? exports : this;
-                    root.CssSelectorGenerator = CssSelectorGenerator;
-                }
-
-            }).call(this);
-
-            (function ($) {
-                var selector_generator = new CssSelectorGenerator;
-
-                $(document).on('click', '#wp-admin-bar-pum-get-selector', function (event) {
-
-                    alert("After clicking ok, click the element you want a selector for.");
-
-                    event.preventDefault();
-                    event.stopPropagation();
-
-                    $(document).one('click', function (event) {
-                        // get reference to the element user clicked on
-                        var element  = event.target,
-                            // get unique CSS selector for that element
-                            selector = selector_generator.getSelector(element);
-
-                        alert("Selector: " + selector);
-
-                        event.preventDefault();
-                        event.stopPropagation();
-                    });
-                });
-            }(jQuery));
-		</script>	<!--[if lte IE 8]>
-		<script type="text/javascript">
-			document.body.className = document.body.className.replace( /(^|\s)(no-)?customize-support(?=\s|$)/, '' ) + ' no-customize-support';
-		</script>
-	<![endif]-->
-	<!--[if gte IE 9]><!-->
-		<script type="text/javascript">
-			(function() {
-				var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
-
-						request = true;
-		
-				b[c] = b[c].replace( rcs, ' ' );
-				// The customizer requires postMessage and CORS (if the site is cross domain)
-				b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
-			}());
-		</script>
-	<!--<![endif]-->
-
-		<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-behance" viewBox="0 0 37 32">
 <path class="path1" d="M33 6.054h-9.125v2.214h9.125v-2.214zM28.5 13.661q-1.607 0-2.607 0.938t-1.107 2.545h7.286q-0.321-3.482-3.571-3.482zM28.786 24.107q1.125 0 2.179-0.571t1.357-1.554h3.946q-1.786 5.482-7.625 5.482-3.821 0-6.080-2.357t-2.259-6.196q0-3.714 2.33-6.17t6.009-2.455q2.464 0 4.295 1.214t2.732 3.196 0.902 4.429q0 0.304-0.036 0.839h-11.75q0 1.982 1.027 3.063t2.973 1.080zM4.946 23.214h5.286q3.661 0 3.661-2.982 0-3.214-3.554-3.214h-5.393v6.196zM4.946 13.625h5.018q1.393 0 2.205-0.652t0.813-2.027q0-2.571-3.393-2.571h-4.643v5.25zM0 4.536h10.607q1.554 0 2.768 0.25t2.259 0.848 1.607 1.723 0.563 2.75q0 3.232-3.071 4.696 2.036 0.571 3.071 2.054t1.036 3.643q0 1.339-0.438 2.438t-1.179 1.848-1.759 1.268-2.161 0.75-2.393 0.232h-10.911v-22.5z"></path>
