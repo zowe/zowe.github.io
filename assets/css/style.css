@@ -1,0 +1,263 @@
+body {
+  margin: 0 auto;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#333333;
+  font-weight:300;
+  line-height:1.4em;
+}
+ p {
+   margin-bottom:1%;
+ }
+
+ .content {
+   width:80%;
+   margin-left:10%;
+
+ }
+
+.navigation-top {
+  border-bottom:0px solid white !important;
+  position:relative !important;
+  padding-top:3%;
+  padding-bottom:2%;
+  padding-left:5%;
+  background-color:#292929 !important;
+  color:white !important;
+  vertical-align:middle;
+}
+
+.logo img {
+  width:20%;
+}
+
+.menu a{
+ display:inline-block;
+ padding-right:2%;
+ font-size:0.9em;
+ font-weight:500;
+ color:#aaaaaa!important;
+ text-decoration:none;
+}
+
+.menu a:hover {
+
+}
+
+.menu {
+ float:right;
+ margin-top:-4%;
+ width:75%;
+}
+
+.topbanner {
+  font-weight:400;
+  background:url("../img/bg.jpg");
+  text-align:center;
+  font-size:27pt;
+  color:white;
+  background-size:100%;
+  padding-top:15%;
+  padding-bottom:15%;
+}
+
+.whitebackground h1 {
+ font-size:2.3em;
+ line-height:1.1em;
+ color:#145391 !important;
+ font-family:"Roboto Condensed", sans-serif;
+}
+
+.bluebackground h1 {
+ font-size:2.3em;
+ line-height:1.1em;
+ color:white !important;
+ font-family:"Roboto Condensed", sans-serif;
+}
+
+.whitebackground {
+  padding-top:3%;
+  padding-left:7%;
+  padding-right:10%;
+  padding-bottom:4%;
+}
+
+.bluebackground {
+  padding-top:3%;
+  color:white;
+  background-color:#145391;
+  padding-left:7%;
+  padding-right:10%;
+  padding-bottom:4%;
+}
+
+.whitebackground button {
+ padding:2%;
+ font-family:"Roboto Condensed", sans-serif;
+ margin-top:2%;
+ margin-bottom:2%;
+ background-color:white;
+ font-size:1.2em;
+ font-weight:700;
+ border:2px solid #145391;
+ color:#145391;
+}
+
+.bluebackground button {
+ padding:2%;
+ font-family:"Roboto Condensed", sans-serif;
+ margin-top:2%;
+ margin-bottom:2%;
+ background-color:#145391;
+ font-size:1.2em;
+ font-weight:700;
+ border:2px solid white;
+ color:white;
+
+}
+
+.twoboxes {
+ background-color:#145391;
+ padding-left:5%;
+ padding-right:5%;
+ padding-top:1%;
+ padding-bottom:4%;
+ width:100%;
+ float:left;
+}
+
+.boxone {
+  padding-left:4%;
+  padding-right:4%;
+  padding-top:6%;
+  padding-bottom:6%;
+  margin:2%;
+  width:30%;
+  float:left;
+  background-color:white;
+}
+
+.boxtwo {
+  padding-left:4%;
+  padding-right:4%;
+  padding-top:6%;
+  padding-bottom:6%;
+  margin:2%;
+  float:left;
+  width:30%;
+  background-color:white;
+}
+
+h2 {
+  font-size:2em;
+  font-weight:400;
+  color:#145391 !important;
+  font-family:"Roboto Condensed", sans-serif;
+}
+
+footer {
+  background-color:black;
+  padding-top:5%;
+  padding-left:7%;
+  color:white;
+  padding-bottom:5%;
+  float:left;
+}
+
+.footercol1 {
+  width:35%;
+  padding-top:%;
+  float:left;
+  font-size:1.3em;
+}
+
+.footercol2 {
+  width:30%;
+  padding-top:%;
+  float:left;
+}
+
+.footercol3 {
+  width:30%;
+  padding-top:;
+  float:left;
+}
+
+.footercol2 a{
+  display:block;
+  color:white;
+  text-decoration:none;
+  line-height:1.7em;
+
+}
+.footercol3 a{
+  display:block;
+  color:white;
+  text-decoration:none;
+  line-height:1.7em;
+}
+
+.footercol1 img{
+  padding-top:10%;
+  padding-bottom:5%;
+  display:block;
+  width:55%;
+}
+
+
+@media (max-width:750px) {
+
+
+.boxone {
+  width:80%;
+}
+
+.boxtwo {
+  width:80%;
+  background-color:white;
+}
+
+.navigation-top {
+  border-bottom:0px solid white !important;
+  position:relative !important;
+  padding-top:3%;
+  padding-bottom:12%;
+  padding-left:5%;
+  color:white !important;
+  vertical-align:middle;
+}
+
+  .logo img {
+   width:60%;
+   padding-bottom:5%;
+   padding-top:3%;
+   padding-left:5%;
+   text-align:center;
+}
+
+  .menu a{
+   display:inline-block;
+   padding-right:2%;
+   font-size:0.9em;
+   font-weight:500;
+   color:#aaaaaa!important;
+   text-decoration:none;
+}
+
+  .menu {
+   float:right;
+   margin-top:-4%;
+   width:100%;
+   padding-bottom:4%;
+}
+
+  .topbanner {
+    font-weight:400;
+    background:url("../img/bg.jpg");
+    text-align:center;
+    font-size:27pt;
+    color:white;
+    padding-top:25%;
+    padding-bottom:25%;
+}
+
+}
