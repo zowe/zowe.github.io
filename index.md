@@ -1,6 +1,6 @@
 <section class="whitebackground">
 
-<h1>WHAT IS ZOWE?</h1>
+<h1 id="what-is-zowe">WHAT IS ZOWE?</h1>
 
 <p>
 Zowe offers modern interfaces to interact with z/OS and allows you to work with z/OS in a way that is similar to what you experience on cloud platforms today. You can use these interfaces as delivered or through plug-ins and extensions that are created by clients or third-party vendors.
@@ -19,48 +19,32 @@ Zowe consists of the following main components.
 
 <section class="bluebackground">
 
-<h1>PLAY WITH OUR BETA</h1>
+<h1 id="download">DOWNLOAD</h1>
 <p>
-The best way to experience Zowe is by downloading our open beta.
+The easiest way to get started with Zowe is by downloading the convenience build. You can also go to the GitHub repository to build Zowe on your own.
 </p>
-<button>DOWNLOAD PAGE</button>
+<button><a href="https://docs.zowe.org">Zowe z/OS Components</a></button>
+<button><a href="https://docs.zowe.org">Zowe Command Line Interface</a></button>
+<button><a href="https://github.com/zowe">Zowe Github repository</a></button>
 <p>
-* Please note this is a beta version of Zowe which is not intended for production use. This binary is provided under a different license and not from the Open Mainframe Project or Zowe community.
+* Please note the Zowe binaries are made available to you by Zowe Binary Projects a Series of LF Projects, LLC, and not by The Linux Foundation or the Open Mainframe Project.
 </p>
 </section>
 
 <section class="whitebackground">
 
-<h1>JOIN THE COMMUNITY</h1>
+<h1 id="documentation">DOCUMENTATION</h1>
 <p>
 There are hundreds of developers – called Committers – who are dedicated to extending Zowe and building a community around open source on the mainframe. Discover how you can contribute code, ideas, generate issues and earn your Committer status.
 </p>
-<button>LEARN MORE</button></section>
+<button><a href="https://docs.zowe.org">READ THE DOCS</a></button>
+
+</section>
 
 <section class="bluebackground">
 
-<h1>CORE INFRASTRUCTURE INITIATIVE SUPPORT</h1>
+<h1 id="community">COMMUNITY</h1>
 <p>
-Zowe is actively working to ensure it meets the high level of expectations from existing z/OS customers and those using Open Source technology. Track our status of being compliance with the Core Infrastructure Initiative efforts.
+Zowe is more than a framework - it's a worldwide community of developers, vendors, and users building and extending Zowe. Discover how you can connect, learn, and contribute to it's future.
 </p>
-</section>
-
-<section class="twoboxes">
-
-<div class="boxone">
-
-<h2>Learn more</h2>
-<p>
-Find the answers to all things Zowe! We know you’re a curious group.
-</p>
-See FAQ</div>
-
-<div class="boxtwo">
-
-<h2>Documentation</h2>
-<p>
-Follow tutorials, learn to install Zowe and check out our user guide.
-</p>
-<a>View</a></div>
-
-</section>
+<button><a href="https://github.com/zowe/community/">LEARN MORE</a></button>
