@@ -38,8 +38,8 @@ Zowe consists of the following main components.
 <p>
 The easiest way to get started with Zowe is by downloading the convenience build. You can also go to the GitHub repository to build Zowe on your own.
 </p>
-<button><a href="https://zowe.github.io/docs-site/">Zowe z/OS Components</a></button>
-<button><a href="https://zowe.github.io/docs-site/">Zowe Command Line Interface</a></button>
+<button><a href="https://projectgiza.org/Downloads/legal.html">Zowe z/OS Components</a></button>
+<button><a href="https://projectgiza.org/Downloads/cli.html">Zowe Command Line Interface</a></button>
 <button><a href="https://github.com/zowe">Zowe Github repository</a></button>
 <p>
 * Please note the Zowe binaries are made available to you by Zowe Binary Projects a Series of LF Projects, LLC, and not by The Linux Foundation or the Open Mainframe Project.
