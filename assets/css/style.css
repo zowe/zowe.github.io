@@ -5,6 +5,10 @@ body {
   font-weight:300;
   line-height:1.4em;
 }
+
+body, html { overflow-x:hidden; }
+
+
  p {
    margin-bottom:1%;
  }
@@ -12,7 +16,21 @@ body {
  .content {
    width:80%;
    margin-left:10%;
+ }
 
+ .copyright {
+   width:80% !important;
+   margin-top:2%;
+   font-size:0.8em;
+   display:block;
+   line-height:1.5em;
+   float:left;
+   color:white !important;
+ }
+ 
+ .copyright a {
+
+   color:white !important;
  }
 
 .navigation-top {
@@ -33,7 +51,7 @@ body {
 .menu a{
  display:inline-block;
  padding-right:2%;
- font-size:0.9em;
+ font-size:1.2em;
  font-weight:500;
  color:#aaaaaa!important;
  text-decoration:none;
@@ -60,7 +78,34 @@ body {
   padding-bottom:15%;
 }
 
+.announcementsection {
+  background-color:#eeeeee;
+  padding-left:7%;
+  padding-top:1%;
+  padding-bottom:3%;
+
+}
+
+.section1col1 {
+width:50%;
+float:left;
+}
+
+.videocol {
+width:40%;
+padding-left:5%;
+float:left;
+
+}
+
 .whitebackground h1 {
+ font-size:2.3em;
+ line-height:1.1em;
+ color:#145391 !important;
+ font-family:"Roboto Condensed", sans-serif;
+}
+
+.announcementsection h1 {
  font-size:2.3em;
  line-height:1.1em;
  color:#145391 !important;
@@ -76,6 +121,7 @@ body {
 
 .whitebackground {
   padding-top:3%;
+  float:left;
   padding-left:7%;
   padding-right:10%;
   padding-bottom:4%;
@@ -84,8 +130,10 @@ body {
 .bluebackground {
   padding-top:3%;
   color:white;
+  width:90%;
   background-color:#145391;
   padding-left:7%;
+  float:left;
   padding-right:10%;
   padding-bottom:4%;
 }
@@ -94,6 +142,7 @@ body {
  padding:2%;
  font-family:"Roboto Condensed", sans-serif;
  margin-top:2%;
+ margin-right:2%;
  margin-bottom:2%;
  background-color:white;
  font-size:1.2em;
@@ -101,6 +150,14 @@ body {
  border:2px solid #145391;
  color:#145391;
 }
+
+.whitebackground button a {
+
+ color:#145391 !important;
+ text-decoration:none;
+}
+
+
 
 .bluebackground button {
  padding:2%;
@@ -112,6 +169,11 @@ body {
  font-weight:700;
  border:2px solid white;
  color:white;
+
+}
+.bluebackground button a{
+ color:white !important;
+ text-decoration:none !important;
 
 }
 
@@ -159,6 +221,7 @@ footer {
   padding-top:5%;
   padding-left:7%;
   color:white;
+  width:100%;
   padding-bottom:5%;
   float:left;
 }
@@ -207,6 +270,29 @@ footer {
 @media (max-width:750px) {
 
 
+  .whitebackground {
+    padding-top:3%;
+    width:90%;
+    padding-bottom:7%;
+  }
+
+  .bluebackground {
+    width:80%;
+    padding-bottom:8%;
+  }
+
+  .section1col1 {
+  width:100%;
+  float:left;
+  }
+
+  .videocol {
+  width:95%;
+  padding-top:9%;
+
+  }
+
+
 .boxone {
   width:80%;
 }
@@ -237,7 +323,7 @@ footer {
   .menu a{
    display:inline-block;
    padding-right:2%;
-   font-size:0.9em;
+   font-size:1.2em;
    font-weight:500;
    color:#aaaaaa!important;
    text-decoration:none;
