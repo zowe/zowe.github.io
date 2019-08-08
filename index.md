@@ -2,27 +2,30 @@
 
 <div class="announcementsection">
 <h1>Announcements</h1>
-• 6/13/2019 - Zowe v1.3.0 is now available. See What's New.<br>
-• 6/1/2019 - All builds prior to Zowe v1.0.0 had been removed at May 31, 2019.
+• 6/14/2019 - Zowe v1.3.0 is now available. See <a href="https://zowe.github.io/docs-site/latest/getting-started/summaryofchanges.html#version-1-3-0-june-2019">What's New</a>.<br>
+  • 6/2/2019 - <b>All builds prior to Zowe v1.0.0</b> had been removed at May 31, 2019.
 </div>
 
 <section class="whitebackground" style="padding-top:1%">
 
-<h1 id="what-is-zowe">WHAT IS ZOWE?</h1>
+<h1 id="what-is-zowe">What is Zowe?</h1>
 
 <div class="section1col1">
 <p>
+Zowe is an open source project created to host technologies that benefit the Z platform from all members of the Z community (Integrated Software Vendors, System Integrators and z/OS consumers). Zowe, like Mac OS or Windows, comes with a set of APIs and OS capabilities that applications build on and also includes some applications out of the box.
+</p>
+  
+<p>
 Zowe offers modern interfaces to interact with z/OS and allows you to work with z/OS in a way that is similar to what you experience on cloud platforms today. You can use these interfaces as delivered or through plug-ins and extensions that are created by clients or third-party vendors.
 </p>
-Zowe consists of the following main components.
 
-<p><b>zLUX:</b> Contains a Web user interface (UI) that provides a full screen interactive experience. The Web UI includes many interactions that exist in 3270 terminals and web interfaces such as IBM z/OSMF. </p>
+<p>Zowe consists of the following main components.</p>
 
-<p><b>Explorer server:</b> Provides a range of APIs for the management of jobs, data sets, z/OS UNIX System Services files, and persistent data. </p>
+<p><b>Zowe Application Framework:</b> A web user interface (UI) that provides a virtual desktop containing a number of apps allowing access to z/OS function.  Base Zowe includes apps for traditional access such as a 3270 terminal and a VT Terminal, as well as an editor and explorers for working with JES, MVS Data Sets and Unix System Services.</p>
 
-<p><b>API Mediation Layer:</b> Provides an API abstraction layer through which APIs can be discovered, catalogued, and presented uniformly. </p>
+<p><b>API Mediation Layer:</b> Provides a gateway that acts as a reverse proxy for z/OS services, together with a catalog of REST APIs and a dynamic discovery capability. Base Zowe provides core services for working with MVS Data Sets, JES, as well as working with z/OSMF REST APIs. The API Mediation Layer also provides a framework for Single Sign On (SSO). </p>
 
-<p><b>Zowe CLI:</b> Provides a command-line interface that lets you interact with the mainframe remotely and use common tools such as Integrated Development Environments (IDEs), shell commands, bash scripts, and build tools for mainframe development. It provides a set of utilities and services for application developers that want to become efficient in supporting and building z/OS applications quickly.</p>
+<p><b>Zowe CLI:</b> Provides a command-line interface that lets you interact with the mainframe remotely and use common tools such as Integrated Development Environments (IDEs), shell commands, bash scripts, and build tools for mainframe development. It provides a set of utilities and services for application developers that want to become efficient in supporting and building z/OS applications quickly. The CLI provides a core set of commands for working with data sets, USS, JES, as well as issuing TSO and console commands.</p>
 </div>
 
 <div class="videocol">
@@ -34,32 +37,43 @@ Zowe consists of the following main components.
 
 <section class="bluebackground">
 
-<h1 id="download">DOWNLOAD</h1>
+<h1 id="documentation">Try Zowe now</h1>
+<p>
+Try Zowe today at no charge, and with no installation required. Your no-charge trial is available in two hours for three days. Register and get started today. 
+</p>
+<button><a href="https://www.openmainframeproject.org/projects/zowe/ztrial">Request a trial</a></button>
+<p>* By proceeding to the trial, you will be leaving the Zowe.org website.</p>
+
+</section>
+
+<section class="whitebackground">
+
+<h1 id="download">Download</h1>
 <p>
 The easiest way to get started with Zowe is by downloading the convenience build. You can also go to the GitHub repository to build Zowe on your own.
 </p>
 <button><a href="https://projectgiza.org/Downloads/legal.html">Zowe z/OS Components</a></button>
 <button><a href="https://projectgiza.org/Downloads/cli.html">Zowe Command Line Interface</a></button>
-<button><a href="https://github.com/zowe">Zowe Github repository</a></button>
+<button><a href="https://github.com/zowe">Zowe GitHub repository</a></button>
 <p>
 * Please note the Zowe binaries are made available to you by Zowe Binary Projects a Series of LF Projects, LLC, and not by The Linux Foundation or the Open Mainframe Project.
 </p>
 </section>
 
-<section class="whitebackground">
+<section class="bluebackground">
 
-<h1 id="documentation">DOCUMENTATION</h1>
+<h1 id="documentation">Documentation</h1>
 <p>
-There are hundreds of developers – called Committers – who are dedicated to extending Zowe and building a community around open source on the mainframe. Discover how you can contribute code, ideas, generate issues and earn your Committer status.
+Check out quick start guides, user guides, developer guides, references, tutorials, and more.
 </p>
-<button><a href="https://zowe.github.io/docs-site/">READ THE DOCS</a></button>
+<button><a href="https://zowe.github.io/docs-site/">Read the docs</a></button>
 
 </section>
 
-<section class="bluebackground">
+<section class="whitebackground">
 
-<h1 id="community">COMMUNITY</h1>
+<h1 id="community">Community</h1>
 <p>
 Zowe is more than a framework - it's a worldwide community of developers, vendors, and users building and extending Zowe. Discover how you can connect, learn, and contribute to it's future.
 </p>
-<button><a href="https://github.com/zowe/community/">LEARN MORE</a></button>
+<button><a href="https://github.com/zowe/community/">Learn more</a></button>
