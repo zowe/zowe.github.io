@@ -25,7 +25,7 @@ body, html {
 
 
  .copyright {
-   width:80% !important;
+   width:90% !important;
    margin-top:2%;
    font-size:0.8em;
    display:block;
@@ -155,7 +155,7 @@ float:left;
  background-color:white;
  font-size:1.2em;
  font-weight:700;
- border:2px solid #145391;
+ border:3px solid #145391;
  color:#145391;
 }
 
@@ -176,7 +176,7 @@ float:left;
  background-color:#145391;
  font-size:1.2em;
  font-weight:700;
- border:2px solid white;
+ border:3px solid white;
  color:white;
 
 }
@@ -226,12 +226,12 @@ h2 {
 }
 
 footer {
-  background-color:black;
+  background-color:#222222;
   padding-top:5%;
   padding-left:7%;
   color:white;
   width:100%;
-  padding-bottom:5%;
+  padding-bottom:2%;
   float:left;
 }
 
@@ -269,14 +269,24 @@ footer {
 }
 
 .footercol1 img{
-  padding-top:10%;
-  padding-bottom:5%;
+  padding-top:%;
+  padding-bottom:4%;
   display:block;
   width:55%;
 }
 
 
 @media (max-width:750px) {
+
+  .copyright {
+    width:95% !important;
+    margin-top:3%;
+    font-size:0.7em;
+    display:block;
+    line-height:1.2em;
+    float:left;
+    color:white !important;
+  }
 
 .announcementsection {
   padding-bottom:8%;
