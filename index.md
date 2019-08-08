@@ -41,7 +41,8 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 <p>
 Try Zowe today at no charge, and with no installation required. Your no-charge trial is available in two hours for three days. Register and get started today. 
 </p>
-<button><a href="https://www.ibm.com/account/reg/signup?formid=urx-38870">Request a trial</a></button>
+<button><a href="https://www.openmainframeproject.org/projects/zowe/ztrial">Request a trial</a></button>
+<p>* By proceeding to the trial, you will be leaving the Zowe.org website.</p>
 
 </section>
 
