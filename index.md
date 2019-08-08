@@ -6,7 +6,7 @@
 • 6/1/2019 - All builds prior to Zowe v1.0.0 had been removed at May 31, 2019.
 </div>
 
-<section class="whitebackground">
+<section class="whitebackground" style="padding-top:1%">
 
 <h1 id="what-is-zowe">WHAT IS ZOWE?</h1>
 
