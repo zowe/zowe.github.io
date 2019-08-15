@@ -23,6 +23,19 @@ body, html {
    padding-right:5%;
  }
 
+.lfheader{
+  background-color:#777777;
+  width:100%;
+}
+
+.lfheader img{
+
+  width:20%;
+  padding-top:0.5%;
+  padding-left:2%;
+}
+
+
 
  .copyright {
    width:90% !important;
@@ -278,6 +291,13 @@ footer {
 
 @media (max-width:750px) {
 
+
+  .lfheader img{
+    width:55%;
+    padding-top:1.5%;
+    padding-left:2%;
+  }
+
   .copyright {
     width:95% !important;
     margin-top:3%;
@@ -394,7 +414,6 @@ footer {
 
  .bluebackground button {
   padding:3%;
-
 }
 
 .content {
