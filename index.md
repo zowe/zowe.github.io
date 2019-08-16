@@ -84,7 +84,7 @@ If you don't have infrastructure to install Zowe locally, you can use the Zowe T
 <p>
 Check out quick start guides, user guides, developer guides, references, tutorials, and more.
 </p>
-<button><a href="{{ site.docs_site_url }}/blob/master/README.md">Read the docs</a></button>
+<button><a href="{{ site.docs_site_url }}">Read the docs</a></button>
 
 </section>
 
