@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-4.0 -->
+<!-- Copyright Contributors to the Zowe project. -->
 <p style="padding-left:7%;padding-top:2%;padding-bottom:2%"><strong>Please note: this website is under-construction. Please visit https://zowe.org and check the most recent news of Zowe.</strong></p>
 
 <div class="announcementsection">
@@ -13,7 +15,7 @@
 <p>
 Zowe is an open source project created to host technologies that benefit the Z platform from all members of the Z community (Integrated Software Vendors, System Integrators and z/OS consumers). Zowe, like Mac OS or Windows, comes with a set of APIs and OS capabilities that applications build on and also includes some applications out of the box.
 </p>
-  
+
 <p>
 Zowe offers modern interfaces to interact with z/OS and allows you to work with z/OS in a way that is similar to what you experience on cloud platforms today. You can use these interfaces as delivered or through plug-ins and extensions that are created by clients or third-party vendors.
 </p>
@@ -105,7 +107,7 @@ Zowe is more than a framework - it's a worldwide community of developers, vendor
 The Zowe Conformance Program aims to give users the confidence that when they use a product, app, or distribution that leverages Zowe they can expect a high level of common functionality, interoperability and user experience.
 </p>
 <button><a href="{{ site.conformance_page_url }}">Learn more</a></button>
-  
+
 </div>
 
 <div class="videocol">

@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+<!-- SPDX-License-Identifier: CC-BY-4.0 -->
+<!-- Copyright Contributors to the Zowe project. -->
 
-You can use the [editor on GitHub](https://github.com/zowe/zowe.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+# Welcome to Zowe website development
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This GitHub repo is for management of the Zowe website. It uses [Github Pages](https://pages.github.com/) to automatically publish any commits to the master branch of the repo to https://zowe.org. GitHub Pages uses  [Jekyll](https://jekyllrb.com/) to publish this site from the content in your markdown files in this repo. For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Markdown
+## Site organization
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Most site updates can be made without changing the markdown files, but adjusting the [config settings](_config.yml). This includes doing new releases and changing the URLs to other resources.
 
-```markdown
-Syntax highlighted code block
+The primary page content is in [index.md](index.md). The overall layout is in [_layouts/default.html](_layouts/default.html), and css and image files are in [assets](assets)
 
-# Header 1
-## Header 2
-### Header 3
+## Submitting site updates
 
-- Bulleted
-- List
+Any site updates can be submitted as a pull request. We recommmend you [create a fork](https://help.github.com/en/articles/fork-a-repo) of this repo and make changes there so you can preview them using GitHub Pages on your GitHub account. You can also develop locally by [setting up Jeykll on your computer](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll).
 
-1. Numbered
-2. List
+This repo aligns with the general [Zowe project role definitions](https://github.com/zowe/zlc/blob/master/process/roles.md) and [License and Copyright guideance](https://github.com/zowe/zlc/blob/master/process/LicenseAndCopyrightGuidance.md)
 
-**Bold** and _Italic_ and `Code` text
+## Governance
 
-[Link](url) and ![Image](src)
-```
+Committers to this repo are defined in the [COMMITTERS.md](COMMITTERS.md) file. You can request to the committers to become a committer after having successful commits to this repo. Committers are approved by an affirmative vote of the majority of committers.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+# Questions and feedback
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zowe/zowe.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+You can direct questions about the website to the Zowe ZLC [via email](https://lists.openmainframeproject.org/g/zowe-zlc) or on [Slack](https://slack.openmainframeproject.org).
