@@ -56,8 +56,10 @@ The easiest way to get started with Zowe is by downloading the convenience build
 <button><a href="{{ site.github_repo_url }}">Zowe GitHub repository</a></button>
 <details>
 <summary>Past Releases</summary>
-<table>
 {% for release in site.releases %}
+  {% if forloop.first %}
+  <table>
+  {% endif %}
   {% unless forloop.first %}
   <tr>
     <td>Zowe {{release.version}} ({{release.release_date}})</td>
@@ -67,6 +69,10 @@ The easiest way to get started with Zowe is by downloading the convenience build
     <td><a href="{{release.documentation}}">Documentation</a></td>
   </tr>
   {% endunless %}
+  {% if forloop.last %}
+  </table>
+  <i>All builds prior to Zowe v1.0.0 are no longer available.</i>
+  {% endif %}
 {% endfor %}
 </table>
 </details>
