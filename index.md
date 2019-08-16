@@ -102,7 +102,7 @@ Zowe is more than a framework - it's a worldwide community of developers, vendor
 
 <section class="bluebackground">
 
-<h1 id="conformance">Conformance</h1>
+<h1 id="conformance">Zowe Conformance Program</h1>
 
 <div class="section1col1">
 <p>
