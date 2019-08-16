@@ -58,7 +58,7 @@ The easiest way to get started with Zowe is by downloading the convenience build
 <summary>Past Releases</summary>
 <ul>
 {% for release in site.releases %}
-  {% if !forloop.first %}
+  {% unless forloop.first %}
   <li>Zowe {{release.version}} ({{release.release_date}})</li>
   <ul>
     <li><a href="{{release.zos_download_url }}">Zowe z/OS Components</a></li>
@@ -66,7 +66,7 @@ The easiest way to get started with Zowe is by downloading the convenience build
     <li><a href="{{release.release_notes}}">Release Notes</a></li>
     <li><a href="{{release.documentation}}">Documentation</a></li>
   </ul>
-  {% endif %}
+  {% endunless %}
 {% endfor %}
 </ul>
 </details>
