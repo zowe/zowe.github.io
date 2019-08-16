@@ -97,3 +97,21 @@ Check out quick start guides, user guides, developer guides, references, tutoria
 Zowe is more than a framework - it's a worldwide community of developers, vendors, and users building and extending Zowe. Discover how you can connect, learn, and contribute to it's future.
 </p>
 <button><a href="{{ site.community_site_url }}">Learn more</a></button>
+
+</section>
+
+<section class="bluebackground">
+
+<h1 id="conformance">Zowe Conformance Program</h1>
+
+<div class="section1col1">
+<p>
+The Zowe Conformance Program aims to give users the confidence that when they use a product, app, or distribution that leverages Zowe they can expect a high level of common functionality, interoperability and user experience.
+</p>
+<button><a href="{{ site.conformance_page_url }}">Learn more</a></button>
+  
+</div>
+
+<div class="videocol">
+<img src="assets/img/Zowe_ConformanceBadge_general-white.svg">
+</div>

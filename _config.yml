@@ -11,6 +11,7 @@ forums_url: https://community.openmainframeproject.org/c/zowe
 slack_url: https://slack.openmainframeproject.org
 mailing_list_user_url: https://lists.openmainframeproject.org/g/zowe-user
 youtube_zowe_url: https://www.youtube.com/playlist?list=PL8REpLGaY9QE_9d57tw3KQdwSVLKuTpUZ
+conformance_page_url: https://www.openmainframeproject.org/projects/zowe/conformance
 
 # List of Zowe releases - update here and it will update the entire site :-)
 # Note - keep this in order as the latest release is pulled from the first item in the list!
