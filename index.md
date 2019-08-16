@@ -2,7 +2,7 @@
 
 <div class="announcementsection">
 <h1>Announcements</h1>
-Zowe {{ site.latest }} is now available. See <a href="{{ site.release_notes }}">What's New</a>.<br>
+<strong>Zowe {{ site.releases[0].version }} is now available. See <a href="{{ site.releases[0].release_notes }}">What's New</a>.<br></strong>
 </div>
 
 <section class="whitebackground" style="padding-top:1%">
@@ -28,7 +28,7 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 </div>
 
 <div class="videocol">
-<object style="width:100%;height:330px;width:100%; float: none; clear: both; margin: 2px auto;" data="https://www.youtube.com/embed/NX20ZMRoTtk">
+<object style="width:100%;height:330px;width:100%; float: none; clear: both; margin: 2px auto;" data="{{ site.latest_video_embed }}">
 </object>
 </div>
 
@@ -40,7 +40,7 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 <p>
 Try Zowe today at no charge, and with no installation required. Your no-charge trial is available in two hours for three days. Register and get started today. 
 </p>
-<button><a href="https://www.openmainframeproject.org/projects/zowe/ztrial">Request a trial</a></button>
+<button><a href="{{ site.ibm_ztrial_url }}">Request a trial</a></button>
 <p>* By proceeding to the trial, you will be leaving the Zowe.org website.</p>
 
 </section>
@@ -51,9 +51,9 @@ Try Zowe today at no charge, and with no installation required. Your no-charge t
 <p>
 The easiest way to get started with Zowe is by downloading the convenience build. You can also go to the GitHub repository to build Zowe on your own.
 </p>
-<button><a href="https://projectgiza.org/Downloads/legal.html">Zowe z/OS Components</a></button>
-<button><a href="https://projectgiza.org/Downloads/cli.html">Zowe Command Line Interface</a></button>
-<button><a href="https://github.com/zowe">Zowe GitHub repository</a></button>
+<button><a href="{{ site.releases[0].zos_download_url }}">Zowe z/OS Components</a></button>
+<button><a href="{{ site.releases[0].cli_download_url }}">Zowe Command Line Interface</a></button>
+<button><a href="{{ site.github_repo_url }}">Zowe GitHub repository</a></button>
 <p>
 * Please note the Zowe binaries are made available to you by Zowe Binary Projects a Series of LF Projects, LLC, and not by The Linux Foundation or the Open Mainframe Project.
 </p>
@@ -65,7 +65,7 @@ The easiest way to get started with Zowe is by downloading the convenience build
 <p>
 Check out quick start guides, user guides, developer guides, references, tutorials, and more.
 </p>
-<button><a href="https://zowe.github.io/docs-site/">Read the docs</a></button>
+<button><a href="{{ site.docs_site_url }}">Read the docs</a></button>
 
 </section>
 
@@ -75,4 +75,4 @@ Check out quick start guides, user guides, developer guides, references, tutoria
 <p>
 Zowe is more than a framework - it's a worldwide community of developers, vendors, and users building and extending Zowe. Discover how you can connect, learn, and contribute to it's future.
 </p>
-<button><a href="https://github.com/zowe/community/">Learn more</a></button>
+<button><a href="{{ site.community_site_url }}">Learn more</a></button>
