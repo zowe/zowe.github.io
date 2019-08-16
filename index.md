@@ -36,7 +36,7 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 
 <section class="bluebackground">
 
-<h1 id="documentation">Try Zowe now</h1>
+<h1 id="try-zowe-now">Try Zowe now</h1>
 <p>
 Try Zowe today at no charge, and with no installation required. Your no-charge trial is available in two hours for three days. Register and get started today. 
 </p>
