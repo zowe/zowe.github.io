@@ -7,8 +7,8 @@ auto_ids: true
 latest_video_embed: https://www.youtube.com/embed/NX20ZMRoTtk
 ibm_ztrial_url: https://www.openmainframeproject.org/projects/zowe/ztrial
 github_repo_url: https://github.com/zowe
-docs_site_url: https://zowe.github.io/docs-site
-community_site_url: https://github.com/zowe/community
+docs_site_url: https://zowe.github.io/docs-site/latest
+community_site_url: https://github.com/zowe/community/blob/master/README.md
 forums_url: https://community.openmainframeproject.org/c/zowe
 slack_url: https://slack.openmainframeproject.org
 mailing_list_user_url: https://lists.openmainframeproject.org/g/zowe-user
