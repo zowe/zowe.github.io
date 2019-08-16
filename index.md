@@ -2,8 +2,7 @@
 
 <div class="announcementsection">
 <h1>Announcements</h1>
-• 6/14/2019 - Zowe v1.3.0 is now available. See <a href="https://zowe.github.io/docs-site/latest/getting-started/summaryofchanges.html#version-1-3-0-june-2019">What's New</a>.<br>
-  • 6/2/2019 - <b>All builds prior to Zowe v1.0.0</b> had been removed at May 31, 2019.
+Zowe {{ site.latest }} is now available. See <a href="{ site.release_notes }">What's New</a>.<br>
 </div>
 
 <section class="whitebackground" style="padding-top:1%">
