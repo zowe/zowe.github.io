@@ -67,6 +67,7 @@ The easiest way to get started with Zowe is by downloading the convenience build
   </ul>
 {% endfor %}
 </ul>
+</details>
 <p>
 * Please note the Zowe binaries are made available to you by Zowe Binary Projects a Series of LF Projects, LLC, and not by The Linux Foundation or the Open Mainframe Project.
 </p>
