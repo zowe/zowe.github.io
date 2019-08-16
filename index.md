@@ -2,7 +2,7 @@
 
 <div class="announcementsection">
 <h1>Announcements</h1>
-Zowe {{ site.latest }} is now available. See <a href="{ site.release_notes }">What's New</a>.<br>
+Zowe {{ site.latest }} is now available. See <a href="{{ site.release_notes }}">What's New</a>.<br>
 </div>
 
 <section class="whitebackground" style="padding-top:1%">
