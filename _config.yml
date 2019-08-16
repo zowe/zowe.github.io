@@ -1,2 +1,5 @@
 theme: jekyll-theme-cayman
 auto_ids: true
+
+latest: 1.4.0
+release_notes: https://zowe.github.io/docs-site/latest/getting-started/summaryofchanges.html#version-1-4-0-august-2019
