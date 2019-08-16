@@ -44,7 +44,7 @@ The easiest way to get started with Zowe is by downloading the convenience build
 </p>
 <button><a href="{{ site.releases[0].zos_download_url }}">Zowe z/OS Components</a></button>
 <button><a href="{{ site.releases[0].cli_download_url }}">Zowe Command Line Interface</a></button>
-<button><a href="{{ site.github_repo_url }}">Zowe GitHub repository</a></button>
+<button><a href="{{ site.github_repo_url }}">Zowe GitHub repositories</a></button>
 <details>
 <summary>Past Releases</summary>
 {% for release in site.releases %}
@@ -84,7 +84,7 @@ If you don't have infrastructure to install Zowe locally, you can use the Zowe T
 <p>
 Check out quick start guides, user guides, developer guides, references, tutorials, and more.
 </p>
-<button><a href="{{ site.docs_site_url }}">Read the docs</a></button>
+<button><a href="{{ site.docs_site_url }}/blob/master/README.md">Read the docs</a></button>
 
 </section>
 
