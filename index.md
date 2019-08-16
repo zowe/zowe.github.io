@@ -54,6 +54,19 @@ The easiest way to get started with Zowe is by downloading the convenience build
 <button><a href="{{ site.releases[0].zos_download_url }}">Zowe z/OS Components</a></button>
 <button><a href="{{ site.releases[0].cli_download_url }}">Zowe Command Line Interface</a></button>
 <button><a href="{{ site.github_repo_url }}">Zowe GitHub repository</a></button>
+<details>
+<summary>Past releases</summary>
+<ul>
+{% for release in site.releases %}
+  <li>Zowe {{release.version}} ({{release.release_date}})</li>
+  <ul>
+    <li><a href="{{release.zos_download_url }}">Zowe z/OS Components</a></li>
+    <li><a href="{{release.cli_download_url }}">Zowe Command Line Interface</a></li>
+    <li><a href="{{release.release_notes}}">Release Notes</a></li>
+    <li><a href="{{release.documentation}}">Documentation</a></li>
+  </ul>
+{% endfor %}
+</ul>
 <p>
 * Please note the Zowe binaries are made available to you by Zowe Binary Projects a Series of LF Projects, LLC, and not by The Linux Foundation or the Open Mainframe Project.
 </p>
