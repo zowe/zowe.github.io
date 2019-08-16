@@ -288,6 +288,11 @@ footer {
   width:55%;
 }
 
+.bluebackground details table { 
+    background-color: white;
+    color: #33332B;
+    padding: 5px;
+}
 
 @media (max-width:750px) {
 
