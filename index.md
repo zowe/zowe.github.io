@@ -36,17 +36,6 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 
 <section class="bluebackground">
 
-<h1 id="documentation">Try Zowe now</h1>
-<p>
-Try Zowe today at no charge, and with no installation required. Your no-charge trial is available in two hours for three days. Register and get started today. 
-</p>
-<button><a href="{{ site.ibm_ztrial_url }}">Request a trial</a></button>
-<p>* By proceeding to the trial, you will be leaving the Zowe.org website.</p>
-
-</section>
-
-<section class="whitebackground">
-
 <h1 id="download">Download</h1>
 <p>
 The easiest way to get started with Zowe is by downloading the convenience build. You can also go to the GitHub repository to build Zowe on your own.
@@ -75,12 +64,19 @@ The easiest way to get started with Zowe is by downloading the convenience build
   {% endif %}
 {% endfor %}
 </details>
-<p>
+<p><i>
 * Please note the Zowe binaries are made available to you by Zowe Binary Projects a Series of LF Projects, LLC, and not by The Linux Foundation or the Open Mainframe Project.
+</i></p>
+
+<p>
+If you don't have infrastructure to install Zowe locally, you can use the Zowe Trial hosted by IBM. This no-charge trial is available in two hours for three days.
 </p>
+<button><a href="{{ site.ibm_ztrial_url }}">Request a trial</a></button>
+<p><i>* By proceeding to the trial, you will be leaving the Zowe.org website.</i></p>
+
 </section>
 
-<section class="bluebackground">
+<section class="whitebackground">
 
 <h1 id="documentation">Documentation</h1>
 <p>
@@ -90,7 +86,7 @@ Check out quick start guides, user guides, developer guides, references, tutoria
 
 </section>
 
-<section class="whitebackground">
+<section class="bluebackground">
 
 <h1 id="community">Community</h1>
 <p>
@@ -100,7 +96,7 @@ Zowe is more than a framework - it's a worldwide community of developers, vendor
 
 </section>
 
-<section class="bluebackground">
+<section class="whitebackground">
 
 <h1 id="conformance">Zowe Conformance Program</h1>
 
