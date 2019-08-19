@@ -1,6 +1,5 @@
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- Copyright Contributors to the Zowe project. -->
-<p style="padding-left:7%;padding-top:2%;padding-bottom:2%"><strong>Please note: this website is under-construction. Please visit https://zowe.org and check the most recent news of Zowe.</strong></p>
 
 <div class="announcementsection">
 <h1>Announcements</h1>
