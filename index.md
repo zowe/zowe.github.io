@@ -1,6 +1,7 @@
 ---
-redirect_from: "/home"
-redirect_from: "/home/"
+redirect_from: 
+  - "/home"
+  - "/home/"
 ---
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- Copyright Contributors to the Zowe project. -->
