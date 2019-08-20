@@ -1,5 +1,8 @@
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- Copyright Contributors to the Zowe project. -->
+---
+redirect_from: "/home"
+---
 
 <div class="announcementsection">
 <h1>Announcements</h1>
