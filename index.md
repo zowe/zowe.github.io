@@ -8,7 +8,10 @@ redirect_from:
 
 <div class="announcementsection">
 <h1>Announcements</h1>
-<strong>Zowe {{ site.releases[0].version }} is now available. See <a href="{{ site.releases[0].release_notes }}">What's New</a>.<br></strong>
+<ul>
+<li><strong>Zowe SMP/E alpha release is now available. This is a pre-release of the Zowe FMID package for early testing and adoption. The alpha release should not be used in production. See <a href="https://zowe.org/#download">Download</a>.<br></strong></li>
+<li><strong>Zowe {{ site.releases[0].version }} is now available. See <a href="{{ site.releases[0].release_notes }}">What's New</a>.<br></strong></li>
+</ul>
 </div>
 
 <section class="whitebackground" style="padding-top:1%">
@@ -43,14 +46,14 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 <section class="bluebackground">
 
 <h1 id="download">Download</h1>
-<p>
-The easiest way to get started with Zowe is by downloading the convenience build. You can also go to the GitHub repository to build Zowe on your own.
-</p>
+<p>The easiest way to get started with Zowe is by downloading the convenience build. You can also go to the GitHub repository to build Zowe on your own.</p>
 <button><a href="{{ site.releases[0].zos_download_url }}">Zowe z/OS Components</a></button>
 <button><a href="{{ site.releases[0].cli_download_url }}">Zowe Command Line Interface</a></button>
 <button><a href="{{ site.github_repo_url }}">Zowe GitHub repositories</a></button>
+<button><a href="https://projectgiza.org/Downloads/smpe.alpha.html">Zowe SMP/E Alpha</a></button>
+
 <details>
-<summary>Past Releases</summary>
+<summary><b>Past Releases</b></summary>
 {% for release in site.releases %}
   {% if forloop.first %}
   <table>
