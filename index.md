@@ -2,6 +2,16 @@
 redirect_from:
   - "/home"
   - "/home/"
+  - "/download/"
+  - "/about-us/"
+  - "/contribute/"
+  - "/code-guidelines/"
+  - "/faq/"
+  - "/download"
+  - "/about-us"
+  - "/contribute"
+  - "/faq"
+  - "/code-guidelines"
 ---
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- Copyright Contributors to the Zowe project. -->
