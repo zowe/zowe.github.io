@@ -53,10 +53,10 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 <p>
 The easiest way to get started with Zowe is by downloading the convenience build. You can also go to the GitHub repository to build Zowe on your own.
 </p>
-<button><a href="{{ site.zos_download_url }}{{ site.releases[0].version }}">Zowe z/OS Components</a></button>
-<button><a href="{{ site.cli_download_url }}{{ site.releases[0].version }}">Zowe Command Line Interface</a></button>
+<button><a href="{{ site.zos_download_url }}{{ site.releases[0].version }}">Zowe {{ site.releases[0].version }} z/OS Components</a></button>
+<button><a href="{{ site.cli_download_url }}{{ site.releases[0].version }}">Zowe {{ site.releases[0].version }} Command Line Interface</a></button>
 <button><a href="{{ site.github_repo_url }}">Zowe GitHub repositories</a></button>
-<button><a href="{{ site.smpe_download_url }}smpealpha">Zowe SMP/E Alpha</a></button>
+<button><a href="{{ site.smpe_download_url }}smpealpha">Zowe {{ site.releases[0].version }} SMP/E Alpha</a></button>
 <details>
 <summary>Past Releases</summary>
 {% for release in site.releases %}

@@ -20,7 +20,7 @@ smpe_download_url: https://d1xozlojgf8voe.cloudfront.net/smpe.html?version=
 
 # Announcements
 announcements:
-  - announcement: Zowe SMP/E alpha release is now available. This is a pre-release of the Zowe FMID package for early testing and adoption. The alpha release should not be used in production.
+  - announcement: A pre-release of the Zowe SMP/E install is now available. This is an alpha release based on Zowe 1.4.0, and should not be used in production.
     link: https://zowe.org/#download
 
 # List of Zowe releases - update here and it will update the entire site :-)
