@@ -9,7 +9,7 @@ redirect_from:
 <div class="announcementsection">
 <h1>Announcements</h1>
 <ul>
-<li><strong>A pre-release of the Zowe SMP/E install is now available. This alpha release, based on Zowe v1.4.0, should not be used in production. See <a href="https://zowe.org/#download">Download</a>.<br></strong></li>
+<li><strong>A pre-release of the Zowe SMP/E install is now available. This alpha release, based on Zowe V1.4.0, should not be used in production. See <a href="https://zowe.org/#download">Download</a>.<br></strong></li>
 <li><strong>Zowe {{ site.releases[0].version }} is now available. See <a href="{{ site.releases[0].release_notes }}">What's New</a>.<br></strong></li>
 </ul>
 </div>
