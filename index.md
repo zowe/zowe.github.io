@@ -49,6 +49,8 @@ The easiest way to get started with Zowe is by downloading the convenience build
 <button><a href="{{ site.releases[0].zos_download_url }}">Zowe z/OS Components</a></button>
 <button><a href="{{ site.releases[0].cli_download_url }}">Zowe Command Line Interface</a></button>
 <button><a href="{{ site.github_repo_url }}">Zowe GitHub repositories</a></button>
+<script src="https://cdn.jsdelivr.net/npm/details-polyfill@1/index.min.js" async>
+</script>
 <details>
 <summary>Past Releases</summary>
 {% for release in site.releases %}
