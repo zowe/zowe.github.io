@@ -2,6 +2,8 @@
 redirect_from: 
   - "/home"
   - "/home/"
+title: Zowe
+description: Zowe is an open source framework for leveraging data and applications in z/OS from modern applications and tools.
 ---
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- Copyright Contributors to the Zowe project. -->
