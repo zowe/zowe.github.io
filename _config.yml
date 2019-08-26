@@ -1,5 +1,9 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # Copyright Contributors to the Zowe project.
+title: Zowe
+description: > # this means to ignore newlines until "keywords:"
+  Zowe is an open source framework for leveraging data and applications in z/OS from modern applications and tools.
+keywords: mainframe, zos, open source, framework
 theme: jekyll-theme-cayman
 auto_ids: true
 
