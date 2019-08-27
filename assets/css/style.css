@@ -428,4 +428,8 @@ footer {
   margin-left:5%;
   padding-right:2%;
 }
+  
+summary {
+  display:block;
+}
 }
