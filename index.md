@@ -8,11 +8,11 @@ redirect_from:
 
 <div class="announcementsection">
 <h1>Announcements</h1>
-<strong>Zowe {{ site.releases[0].version }} is now available. See <a href="{{ site.releases[0].release_notes }}">What's New</a>.<br></strong>
-{% for announcement in site.announcements %}
+<strong>Zowe {{ site.data.releases[0].version }} is now available. See <a href="{{ site.data.releases[0].release_notes }}">What's New</a>.<br></strong>
+{% for announcement in site.data.announcements %}
 <strong>{{ announcement.announcement }}
 {% if announcement.link %}
- <a href="{{ site.releases[0].release_notes }}">Learn More</a>
+ <a href="{{ announcement.link }}">Learn More</a>
 {% endif %}
 <br></strong>
 {% endfor %}
@@ -53,13 +53,13 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 <p>
 The easiest way to get started with Zowe is by downloading the convenience build. You can also go to the GitHub repository to build Zowe on your own.
 </p>
-<button><a href="{{ site.zos_download_url }}{{ site.releases[0].version }}">Zowe {{ site.releases[0].version }} z/OS Components</a></button>
-<button><a href="{{ site.cli_download_url }}{{ site.releases[0].version }}">Zowe {{ site.releases[0].version }} Command Line Interface</a></button>
+<button><a href="{{ site.zos_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} z/OS Components</a></button>
+<button><a href="{{ site.cli_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} Command Line Interface</a></button>
 <button><a href="{{ site.github_repo_url }}">Zowe GitHub repositories</a></button>
 <button><a href="{{ site.smpe_download_url }}smpealpha">Zowe {{ site.releases[0].version }} SMP/E Alpha</a></button>
 <details>
 <summary>Past Releases</summary>
-{% for release in site.releases %}
+{% for release in site.data.releases %}
   {% if forloop.first %}
   <table>
   {% endif %}
