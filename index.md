@@ -73,7 +73,7 @@ The easiest way to get started with Zowe is by downloading the convenience build
     <td><a href="{{site.zos_download_url}}{{release.version}}">Zowe z/OS Components</a></td>
     <td><a href="{{site.cli_download_url}}{{release.version}}">Zowe Command Line Interface</a></td>
     <td><a href="{{release.release_notes}}">Release Notes</a></td>
-    <td><a href="{{release.documentation}}">Documentation</a></td>
+    <td><a href="{{ site.docs_site_url }}/{{release.documentation}}">Documentation</a></td>
   </tr>
   {% endunless %}
   {% if forloop.last %}
