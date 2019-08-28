@@ -9,6 +9,7 @@ redirect_from:
 <div class="announcementsection">
 <h1>Announcements</h1>
 <strong>Zowe {{ site.data.releases[0].version }} is now available. See <a href="{{ site.data.releases[0].release_notes }}">What's New</a>.<br></strong>
+{% if site.data.announcements %}
 {% for announcement in site.data.announcements %}
 <strong>{{ announcement.announcement }}
 {% if announcement.link %}
@@ -16,6 +17,7 @@ redirect_from:
 {% endif %}
 <br></strong>
 {% endfor %}
+{% endif %}
 </div>
 
 <section class="whitebackground" style="padding-top:1%">
@@ -56,7 +58,9 @@ The easiest way to get started with Zowe is by downloading the convenience build
 <button><a href="{{ site.zos_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} z/OS Components</a></button>
 <button><a href="{{ site.cli_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} Command Line Interface</a></button>
 <button><a href="{{ site.github_repo_url }}">Zowe GitHub repositories</a></button>
+{% if site.smpe_download_url %}
 <button><a href="{{ site.smpe_download_url }}smpealpha">Zowe {{ site.releases[0].version }} SMP/E Alpha</a></button>
+{% endif %}
 <details>
 <summary>Past Releases</summary>
 {% for release in site.data.releases %}
