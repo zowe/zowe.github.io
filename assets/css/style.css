@@ -295,6 +295,10 @@ footer {
     color: #33332B;
     padding: 5px;
 }
+ 
+summary {
+  display:block;
+}
 
 @media (max-width:750px) {
 
