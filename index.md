@@ -47,7 +47,8 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 The easiest way to get started with Zowe is by downloading the convenience build. You can also go to the GitHub repository to build Zowe on your own.
 </p>
 <button><a href="{{ site.releases[0].zos_download_url }}">Zowe z/OS Components</a></button>
-<button><a href="{{ site.releases[0].cli_download_url }}">Zowe Command Line Interface</a></button>
+<button><a href="{{ site.releases[1].cli_download_url }}">Zowe CLI (Stable)</a></button>
+<button><a href="{{ site.releases[0].cli_download_url }}">Zowe CLI (Active Development)</a></button>
 <button><a href="{{ site.github_repo_url }}">Zowe GitHub repositories</a></button>
 <details>
 <summary>Past Releases</summary>
