@@ -298,6 +298,7 @@ footer {
  
 summary {
   display:block;
+  cursor:pointer;
 }
 
 @media (max-width:750px) {
