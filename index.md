@@ -8,7 +8,7 @@ redirect_from:
 
 <div class="announcementsection">
 <h1>Announcements</h1>
-<strong>Zowe {{ site.data.releases[0].version }} is now available. See <a href="{{ site.data.releases[0].release_notes }}">What's New</a>.<br></strong>
+<strong>Zowe {{ site.data.releases[0].version }} is now available. See <a href="{{ site.docs_site_url }}/{{site.data.releases[0].documentation}}/getting-started/summaryofchanges.html">What's New</a>.<br></strong>
 {% if site.data.announcements %}
 {% for announcement in site.data.announcements %}
 <strong>{{ announcement.announcement }}
@@ -70,7 +70,7 @@ The easiest way to get started with Zowe is by downloading the convenience build
     <td>Zowe {{release.version}} ({{release.release_date}})</td>
     <td><a href="{{site.zos_download_url}}{{release.version}}">Zowe z/OS Components</a></td>
     <td><a href="{{site.cli_download_url}}{{release.version}}">Zowe Command Line Interface</a></td>
-    <td><a href="{{release.release_notes}}">Release Notes</a></td>
+    <td><a href="{{ site.docs_site_url }}/{{release.documentation}}/getting-started/summaryofchanges.html">Release Notes</a></td>
     <td><a href="{{ site.docs_site_url }}/{{release.documentation}}">Documentation</a></td>
   </tr>
   {% endunless %}
