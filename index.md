@@ -1,5 +1,5 @@
 ---
-redirect_from: 
+redirect_from:
   - "/home"
   - "/home/"
 ---
@@ -8,10 +8,16 @@ redirect_from:
 
 <div class="announcementsection">
 <h1>Announcements</h1>
-<ul>
-<li><strong>A pre-release of the Zowe SMP/E install is now available. This alpha release, based on Zowe V1.4.0, should not be used in production. See <a href="https://zowe.org/#download">Download</a>.<br></strong></li>
-<li><strong>Zowe {{ site.releases[0].version }} is now available. See <a href="{{ site.releases[0].release_notes }}">What's New</a>.<br></strong></li>
-</ul>
+<strong>Zowe {{ site.data.releases[0].version }} is now available. See <a href="{{ site.data.releases[0].release_notes }}">What's New</a>.<br></strong>
+{% if site.data.announcements %}
+{% for announcement in site.data.announcements %}
+<strong>{{ announcement.announcement }}
+{% if announcement.link %}
+ <a href="{{ announcement.link }}">Learn More</a>
+{% endif %}
+<br></strong>
+{% endfor %}
+{% endif %}
 </div>
 
 <section class="whitebackground" style="padding-top:1%">
@@ -46,25 +52,28 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 <section class="bluebackground">
 
 <h1 id="download">Download</h1>
-<p>The easiest way to get started with Zowe is by downloading the convenience build. You can also go to the GitHub repository to build Zowe on your own.</p>
-<button><a href="{{ site.releases[0].zos_download_url }}">Zowe z/OS Components</a></button>
-<button><a href="{{ site.releases[0].cli_download_url }}">Zowe Command Line Interface</a></button>
+<p>
+The easiest way to get started with Zowe is by downloading the convenience build. You can also go to the GitHub repository to build Zowe on your own.
+</p>
+<button><a href="{{ site.zos_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} z/OS Components</a></button>
+<button><a href="{{ site.cli_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} Command Line Interface</a></button>
 <button><a href="{{ site.github_repo_url }}">Zowe GitHub repositories</a></button>
-<button><a href="https://projectgiza.org/Downloads/smpe.alpha.html">Zowe SMP/E Alpha</a></button>
-
+{% if site.smpe_download_url %}
+<button><a href="{{ site.smpe_download_url }}smpealpha">Zowe {{ site.releases[0].version }} SMP/E Alpha</a></button>
+{% endif %}
 <details>
-<summary><b>Past Releases</b></summary>
-{% for release in site.releases %}
+<summary>Past Releases</summary>
+{% for release in site.data.releases %}
   {% if forloop.first %}
   <table>
   {% endif %}
   {% unless forloop.first %}
   <tr>
     <td>Zowe {{release.version}} ({{release.release_date}})</td>
-    <td><a href="{{release.zos_download_url }}">Zowe z/OS Components</a></td>
-    <td><a href="{{release.cli_download_url }}">Zowe Command Line Interface</a></td>
+    <td><a href="{{site.zos_download_url}}{{release.version}}">Zowe z/OS Components</a></td>
+    <td><a href="{{site.cli_download_url}}{{release.version}}">Zowe Command Line Interface</a></td>
     <td><a href="{{release.release_notes}}">Release Notes</a></td>
-    <td><a href="{{release.documentation}}">Documentation</a></td>
+    <td><a href="{{ site.docs_site_url }}/{{release.documentation}}">Documentation</a></td>
   </tr>
   {% endunless %}
   {% if forloop.last %}
