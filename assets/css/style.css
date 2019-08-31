@@ -297,7 +297,7 @@ footer {
 }
  
 summary {
-  display:block;
+  display:list-item;
   cursor:pointer;
 }
 
