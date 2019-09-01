@@ -298,7 +298,6 @@ footer {
  
 summary {
   display:list-item;
-  list-style: none;
   cursor:pointer;
 }
 
