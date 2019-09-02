@@ -59,7 +59,7 @@ The easiest way to get started with Zowe is by downloading the convenience build
 <button><a href="{{ site.cli_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} Command Line Interface</a></button>
 <button><a href="{{ site.github_repo_url }}">Zowe GitHub repositories</a></button>
 {% if site.smpe_download_url %}
-<button><a href="{{ site.smpe_download_url }}{{ site.data.releases[0].version }}-smpealpha">Zowe {{ site.releases[0].version }} SMP/E Alpha</a></button>
+<button><a href="{{ site.smpe_download_url }}{{ site.data.releases[0].version }}alpha1">Zowe {{ site.releases[0].version }} SMP/E Alpha</a></button>
 {% endif %}
 <details>
 <summary>Past Releases</summary>
