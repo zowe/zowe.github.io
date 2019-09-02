@@ -19,8 +19,8 @@ mailing_list_user_url: https://lists.openmainframeproject.org/g/zowe-user
 youtube_zowe_url: https://www.youtube.com/playlist?list=PL8REpLGaY9QE_9d57tw3KQdwSVLKuTpUZ
 conformance_page_url: https://www.openmainframeproject.org/projects/zowe/conformance
 zos_download_url: https://d1xozlojgf8voe.cloudfront.net/legal.html?version=
-cli_download_url: https://d1xozlojgf8voe.cloudfront.net/cli.html?version=
-smpe_download_url: https://d1xozlojgf8voe.cloudfront.net/legal.html?version=
+cli_download_url: https://d1xozlojgf8voe.cloudfront.net/legal.html?type=cli&version=
+smpe_download_url: https://d1xozlojgf8voe.cloudfront.net/legal.html?type=smpe&version=
 
 gems:
 # Redirect plugin
