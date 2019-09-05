@@ -18,17 +18,17 @@ conformance_page_url: https://www.openmainframeproject.org/projects/zowe/conform
 # List of Zowe releases - update here and it will update the entire site :-)
 # Note - keep this in order as the latest release is pulled from the first item in the list!
 releases:
-  - version: Active Development
-    release_notes: https://zowe.github.io/docs-site/active-development/getting-started/summaryofchanges.html
-    release_date: 2019-09-??
-    cli_download_url: https://projectgiza.org/Downloads/??????.html
-    documentation: https://zowe.github.io/docs-site/active-development
   - version: 1.3.0
     release_notes: https://zowe.github.io/docs-site/latest/getting-started/summaryofchanges.html#version-1-3-0-june-2019
     release_date: 2019-06-13
     zos_download_url: https://projectgiza.org/Downloads/legal.1.3.0.html
     cli_download_url: https://projectgiza.org/Downloads/cli.1.3.0.html
     documentation: https://zowe.github.io/docs-site/v1-3-x/
+  - version: Active Development
+    release_notes: https://zowe.github.io/docs-site/active-development/getting-started/summaryofchanges.html
+    release_date: 2019-09-??
+    cli_download_url: https://projectgiza.org/Downloads/??????.html
+    documentation: https://zowe.github.io/docs-site/active-development
   - version: 1.2.0
     release_notes: https://zowe.github.io/docs-site/latest/getting-started/summaryofchanges.html#version-1-2-0-may-2019
     release_date: 2019-05-03
