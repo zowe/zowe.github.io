@@ -43,6 +43,15 @@
 
 </head>
 <body>
+<script>
+  $(".nav-links, ul.primary-nav li a").click(function () {
+    $(".primary-nav").toggleClass("open");
+        });
+  // Closes menu on link click
+  $(document).on('click', '.nav-links a', function() {
+    $('#nav-check').prop('checked', false);
+  });
+</script>
 <a href="#" class="back-to-top">Back to Top</a>
 <script>
 var amountScrolled = 100;
