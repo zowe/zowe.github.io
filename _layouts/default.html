@@ -23,6 +23,24 @@
 <link rel="stylesheet" type="text/css" href="assets/css/menu.css">
 <link rel='stylesheet' id='olympus-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C300%2C400%2C500%2C700%2C900%2C0%7CRoboto+Condensed%3A300%2C400%2C700%2C0&#038;subset=greek-ext%2Cvietnamese%2Clatin%2Ccyrillic%2Cgreek%2Clatin-ext%2Ccyrillic-ext&#038;ver=4.9.8' type='text/css' media='all' />
 
+<script
+  src="https://code.jquery.com/jquery-1.10.1.js"
+  integrity="sha256-663tSdtipgBgyqJXfypOwf9ocmvECGG8Zdl3q+tk+n0="
+  crossorigin="anonymous"></script>
+
+<script>
+
+  $(".nav-links, ul.primary-nav li a").click(function () {
+    $(".primary-nav").toggleClass("open");
+	});
+
+  // Closes menu on link click
+  $(document).on('click', '.nav-links a', function() {
+    $('#nav-check').prop('checked', false);
+  });
+
+ </script>
+ 
 
 </head>
 <div class="lfheader">
