@@ -56,12 +56,8 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 The easiest way to get started with Zowe is by downloading the convenience build. You can also go to the GitHub repository to build Zowe on your own.
 </p>
 <button><a href="{{ site.zos_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} z/OS Components</a></button>
-<button><a href="{{ site.cli_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} CLI (Stable)</a></button>
-<button><a href="{{ site.cli_latest_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} CLI (Active Development)</a></button>
+<button><a href="{{ site.cli_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} CLI</a></button>
 <button><a href="{{ site.github_repo_url }}">Zowe GitHub repositories</a></button>
-{% if site.smpe_download_url %}
-<button><a href="{{ site.smpe_download_url }}{{ site.data.releases[0].version }}alpha1">Zowe {{ site.releases[0].version }} SMP/E Alpha</a></button>
-{% endif %}
 <details>
 <summary>Past Releases</summary>
 {% for release in site.data.releases %}
@@ -83,6 +79,17 @@ The easiest way to get started with Zowe is by downloading the convenience build
   {% endif %}
 {% endfor %}
 </details>
+{% if site.smpe_download_url or site.cli_latest_download_url %}
+<p>
+If you would like to try newer, actively developed features and functions in Zowe, you can download these packages.
+</p>
+{% endif %}
+{% if site.smpe_download_url %}
+<button><a href="{{ site.smpe_download_url }}{{ site.data.releases[0].version }}alpha1">Zowe {{ site.releases[0].version }} SMP/E Alpha</a></button>
+{% endif %}
+{% if site.cli_latest_download_url %}
+<button><a href="{{ site.cli_latest_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} CLI (Active Development)</a></button>
+{% endif %}
 <p><i>
 * Please note the Zowe binaries are made available to you by Zowe Binary Projects a Series of LF Projects, LLC, and not by The Linux Foundation or the Open Mainframe Project.
 </i></p>

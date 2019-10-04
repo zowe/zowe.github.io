@@ -1,9 +1,6 @@
 # List of Zowe releases - update here and it will update the entire site :-)
 # Note - keep this in order as the latest release is pulled from the first item in the list!
 
-- version: Active Development
-  release_date: 2019-10-04
-  documentation: active-development
 - version: 1.5.0
   release_date: 2019-10-03
   documentation: stable
