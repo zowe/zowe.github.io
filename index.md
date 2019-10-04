@@ -81,7 +81,7 @@ The easiest way to get started with Zowe is by downloading the convenience build
 </details>
 {% if site.smpe_download_url or site.cli_latest_download_url %}
 <p>
-If you would like to try newer, actively-developed features and functions in Zowe, you can download the following packages:
+If you want to try newer, actively-developed Zowe features and functions, download the following packages:
 </p>
 {% endif %}
 {% if site.smpe_download_url %}
