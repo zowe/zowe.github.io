@@ -16,7 +16,7 @@ The primary page content is in [index.md](index.md). The overall layout is in [_
 To do a new release, add a new entry at the top of [releases.yml](_data/releases.yml) right under the contents with this structure:
 
 ```yaml
-- version: 1.4.0 # version number 
+- version: 1.4.0 # version number
   release_notes: https://zowe.github.io/docs-site/latest/getting-started/summaryofchanges.html#version-1-4-0-august-2019 # link to release notes
   release_date: 2019-08-09 # release date in YYYY-MM-DD format
   documentation: latest # path to docs ( minus the site url of https://docs.zowe.org )
@@ -32,9 +32,12 @@ To add an announcement, add an entry like below in [announcements.yml](_data/ann
 
 ## Submitting site updates
 
-Any site updates can be submitted as a pull request. We recommmend you [create a fork](https://help.github.com/en/articles/fork-a-repo) of this repo and make changes there so you can preview them using GitHub Pages on your GitHub account. You can also develop locally by [setting up Jeykll on your computer](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll).
+Any site updates can be submitted as a pull request. We recommmend you [create a fork](https://help.github.com/en/articles/fork-a-repo) of this repo and make changes there so you can preview them using GitHub Pages on your GitHub account. You can also develop locally with the following steps:
+* [Set up Jekyll on your computer](https://jekyllrb.com/docs/installation/)
+* Run `bundle install` to install the GitHub Pages gem
+* Run `bundle exec jekyll serve` to host the site locally (at `http://localhost:4000`)
 
-This repo aligns with the general [Zowe project role definitions](https://github.com/zowe/zlc/blob/master/process/roles.md) and [License and Copyright guideance](https://github.com/zowe/zlc/blob/master/process/LicenseAndCopyrightGuidance.md)
+This repo aligns with the general [Zowe project role definitions](https://github.com/zowe/zlc/blob/master/process/roles.md) and [License and Copyright guidance](https://github.com/zowe/zlc/blob/master/process/LicenseAndCopyrightGuidance.md)
 
 ## Governance
 
