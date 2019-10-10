@@ -80,15 +80,18 @@ The easiest way to get started with Zowe is by downloading the convenience build
 {% endfor %}
 </details>
 {% if site.smpe_download_url or site.cli_latest_download_url %}
+<details>
+<summary>Pre-Release Builds</summary>
 <p>
 If you want to try newer, actively-developed Zowe features and functions, download the following packages:
 </p>
-{% endif %}
 {% if site.smpe_download_url %}
 <button><a href="{{ site.smpe_download_url }}{{ site.data.releases[0].version }}alpha1">Zowe {{ site.releases[0].version }} SMP/E Alpha</a></button>
 {% endif %}
 {% if site.cli_latest_download_url %}
 <button><a href="{{ site.cli_latest_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} CLI (Active Development)</a></button>
+{% endif %}
+</details>
 {% endif %}
 <p><i>
 * Please note the Zowe binaries are made available to you by Zowe Binary Projects a Series of LF Projects, LLC, and not by The Linux Foundation or the Open Mainframe Project.
