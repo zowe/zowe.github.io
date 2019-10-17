@@ -20,7 +20,7 @@ youtube_zowe_url: https://www.youtube.com/playlist?list=PL8REpLGaY9QE_9d57tw3KQd
 conformance_page_url: https://www.openmainframeproject.org/projects/zowe/conformance
 zos_download_url: https://d1xozlojgf8voe.cloudfront.net/legal.html?version=
 cli_download_url: https://d1xozlojgf8voe.cloudfront.net/legal.html?type=cli&version=
-cli_latest_download_url: 
+cli_active_development_download_url: https://d1xozlojgf8voe.cloudfront.net/legal.html?type=cli-active-development&version=
 smpe_download_url: https://d1xozlojgf8voe.cloudfront.net/legal.html?type=smpe&version=
 
 gems:
