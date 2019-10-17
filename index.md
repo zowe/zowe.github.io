@@ -89,7 +89,7 @@ If you want to try newer, actively-developed Zowe features and functions, downlo
 <button><a href="{{ site.smpe_download_url }}{{ site.data.releases[0].version }}alpha1">Zowe {{ site.releases[0].version }} SMP/E Alpha</a></button>
 {% endif %}
 {% if site.cli_active_development_download_url %}
-<button><a href="{{ site.cli_active_development_download_url }}{{ site.data.active_development.cli.version }}&package=">Zowe {{ site.data.active_development.cli.package }} CLI (Active Development)</a></button>
+<button><a href="{{ site.cli_active_development_download_url }}{{ site.data.active_development.cli.version }}&package={{ site.data.active_development.cli.package }}">Zowe CLI (Active Development)</a></button>
 {% endif %}
 </details>
 {% endif %}
