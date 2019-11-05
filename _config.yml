@@ -22,6 +22,7 @@ zos_download_url: https://d1xozlojgf8voe.cloudfront.net/legal.html?version=
 cli_download_url: https://d1xozlojgf8voe.cloudfront.net/legal.html?type=cli&version=
 cli_active_development_download_url: https://d1xozlojgf8voe.cloudfront.net/legal.html?type=cli-active-development&version=
 smpe_download_url: https://d1xozlojgf8voe.cloudfront.net/legal.html?type=smpe&version=
+lts_url: https://github.com/zowe/zlc/blob/master/process/long_term_support.md
 
 gems:
 # Redirect plugin
