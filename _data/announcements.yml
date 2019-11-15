@@ -1,5 +1,5 @@
 # Announcements
-- announcement: "A pre-release of the Zowe SMP/E install is now available. This is an alpha release based on Zowe 1.6.0, and should not be used in production."
+- announcement: "A pre-release of the Zowe SMP/E install is now available. This is an alpha release based on Zowe 1.7.0, and should not be used in production."
   link: "https://docs.zowe.org/stable/getting-started/summaryofchanges.html#zowe-smp-e-alpha-august-2019"
 - announcement: "An active development, offline-installable version of the Zowe CLI is now available. This is the @zowe/cli@latest release also available on public NPM."
   link: "https://docs.zowe.org/active-development/getting-started/summaryofchanges.html#what-is-active-development"
