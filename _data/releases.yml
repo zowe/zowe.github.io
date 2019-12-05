@@ -1,6 +1,9 @@
 # List of Zowe releases - update here and it will update the entire site :-)
 # Note - keep this in order as the latest release is pulled from the first item in the list!
 
+- version: 1.7.1
+  release_date: 2019-12-04
+  documentation: stable
 - version: 1.7.0
   release_date: 2019-11-18
   documentation: stable
