@@ -121,10 +121,10 @@ Check out quick start guides, user guides, developer guides, references, tutoria
 <p>
 Zowe is more than a framework - it's a worldwide community of developers, vendors, and users building and extending Zowe. Discover how you can connect, learn, and contribute to its future.
 </p>
-<button><a href="{{ site.slack_url }}">Slack channels</a></button>
-<button><a href="{{ site.forums_url }}">FAQ forum</a></button>
-<button><a href="{{ site.twitter_url }}">Twitter</a></button>
-<button><a href="{{ site.community_site_url }}">Learn more</a></button>
+<button><a href="{{ site.slack_url }}">Slack channels <p>Ask questions, report problems, and more.</p></a></button>
+<button><a href="{{ site.forums_url }}">FAQ forum <p>Read and discuss frequently-asked questions about Zowe.</p></a></button>
+<button><a href="{{ site.twitter_url }}">Twitter <p>Follow the Open Mainframe Project on Twitter.</p></a></button>
+<button><a href="{{ site.community_site_url }}">Learn more <p>Find more community resources.</p></a></button>
 
 </section>
 

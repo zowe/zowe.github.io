@@ -201,6 +201,12 @@ float:left;
 
 }
 
+.bluebackground button p{
+  color:white !important;
+  font-size: .5em;
+  text-decoration:none !important;
+ }
+
 .twoboxes {
  background-color:#145391;
  padding-left:5%;
@@ -295,7 +301,7 @@ footer {
     color: #33332B;
     padding: 5px;
 }
- 
+
 summary {
   display:list-item;
   cursor:pointer;
