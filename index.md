@@ -55,9 +55,9 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 <p>
 The easiest way to get started with Zowe is by downloading the convenience build. You can also go to the GitHub repository to build Zowe on your own.
 </p>
-<button><a href="{{ site.zos_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} z/OS Components</a></button>
-<button><a href="{{ site.cli_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} CLI</a></button>
-<button><a href="{{ site.github_repo_url }}">Zowe GitHub repositories</a></button>
+<a class="button" href="{{ site.zos_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} z/OS Components</a>
+<a class="button" href="{{ site.cli_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} CLI</a>
+<a class="button" href="{{ site.github_repo_url }}">Zowe GitHub repositories</a>
 <details>
 <summary>Past Releases</summary>
 {% for release in site.data.releases %}
@@ -86,10 +86,10 @@ The easiest way to get started with Zowe is by downloading the convenience build
 If you want to try newer, actively-developed Zowe features and functions, download the following packages:
 </p>
 {% if site.smpe_download_url %}
-<button><a href="{{ site.smpe_download_url }}{{ site.data.releases[0].version }}alpha1">Zowe {{ site.releases[0].version }} SMP/E Alpha</a></button>
+<a class="button" href="{{ site.smpe_download_url }}{{ site.data.releases[0].version }}alpha1">Zowe {{ site.releases[0].version }} SMP/E Alpha</a>
 {% endif %}
 {% if site.cli_active_development_download_url %}
-<button><a href="{{ site.cli_active_development_download_url }}{{ site.data.active_development.cli.version }}&package={{ site.data.active_development.cli.package }}">Zowe CLI (Active Development)</a></button>
+<a class="button" href="{{ site.cli_active_development_download_url }}{{ site.data.active_development.cli.version }}&package={{ site.data.active_development.cli.package }}">Zowe CLI (Active Development)</a>
 {% endif %}
 </details>
 {% endif %}
@@ -100,7 +100,7 @@ If you want to try newer, actively-developed Zowe features and functions, downlo
 <p>
 If you don't have infrastructure to install Zowe locally, you can use the Zowe Trial hosted by IBM. This no-charge trial is available in two hours for three days.
 </p>
-<button><a href="{{ site.ibm_ztrial_url }}">Request a trial</a></button>
+<a class="button" href="{{ site.ibm_ztrial_url }}">Request a trial</a>
 <p><i>* By proceeding to the trial, you will be leaving the Zowe.org website.</i></p>
 
 </section>
@@ -111,7 +111,7 @@ If you don't have infrastructure to install Zowe locally, you can use the Zowe T
 <p>
 Check out quick start guides, user guides, developer guides, references, tutorials, and more.
 </p>
-<button><a href="{{ site.docs_site_url }}">Read the docs</a></button>
+<a class="button" href="{{ site.docs_site_url }}">Read the docs</a>
 
 </section>
 
@@ -121,7 +121,7 @@ Check out quick start guides, user guides, developer guides, references, tutoria
 <p>
 Zowe is more than a framework - it's a worldwide community of developers, vendors, and users building and extending Zowe. Discover how you can connect, learn, and contribute to its future.
 </p>
-<button><a href="{{ site.community_site_url }}">Learn more</a></button>
+<a class="button" href="{{ site.community_site_url }}">Learn more</a>
 
 </section>
 
@@ -133,7 +133,7 @@ Zowe is more than a framework - it's a worldwide community of developers, vendor
 <p>
 The Zowe Conformance Program aims to give users the confidence that when they use a product, app, or distribution that leverages Zowe they can expect a high level of common functionality, interoperability and user experience.
 </p>
-<button><a href="{{ site.conformance_page_url }}">Learn more</a></button>
+<a class="button" href="{{ site.conformance_page_url }}">Learn more</a>
 
 </div>
 
