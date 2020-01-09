@@ -128,7 +128,7 @@ Check out quick start guides, user guides, developer guides, references, tutoria
 
 <h1 id="community">Community</h1>
 <p>
-Zowe is more than a framework - it's a worldwide community of developers, vendors, and users building and extending Zowe. Discover how you can connect, learn, and contribute to it's future.
+Zowe is more than a framework - it's a worldwide community of developers, vendors, and users building and extending Zowe. Discover how you can connect, learn, and contribute to its future.
 </p>
 <button><a href="{{ site.community_site_url }}">Learn more</a></button>
 
