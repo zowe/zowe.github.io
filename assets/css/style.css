@@ -161,7 +161,7 @@ float:left;
   padding-bottom:4%;
 }
 
-.whitebackground button {
+.whitebackground .button {
  padding:2%;
  font-family:"Roboto Condensed", sans-serif;
  margin-top:2%;
@@ -172,9 +172,10 @@ float:left;
  font-weight:700;
  border:3px solid #145391;
  color:#145391;
+ line-height: 5em;
 }
 
-.whitebackground button a {
+.whitebackground a.button {
 
  color:#145391 !important;
  text-decoration:none;
@@ -182,7 +183,7 @@ float:left;
 
 
 
-.bluebackground button {
+.bluebackground .button {
  padding:2%;
  font-family:"Roboto Condensed", sans-serif;
  margin-top:2%;
@@ -193,9 +194,9 @@ float:left;
  font-weight:700;
  border:3px solid white;
  color:white;
-
+ line-height: 7em;
 }
-.bluebackground button a{
+.bluebackground a.button {
  color:white !important;
  text-decoration:none !important;
 
@@ -435,11 +436,11 @@ a.back-to-top {
   padding-top:4%;
   float:left;
 }
-.whitebackground button {
+.whitebackground .button {
  padding:3%;
 }
 
- .bluebackground button {
+ .bluebackground .button {
   padding:3%;
 }
 
