@@ -79,6 +79,17 @@ The easiest way to get started with Zowe is by downloading the convenience build
   {% endif %}
 {% endfor %}
 </details>
+<details>
+<summary>Nightly Builds</summary>
+<p>Please visit Zowe Artifactory nightly build folder to find the most recent build: <a class="white" href="https://zowe.jfrog.io/zowe/webapp/#/artifacts/browse/tree/General/libs-release-local/org/zowe/nightly">https://zowe.jfrog.io/zowe/webapp/#/artifacts/browse/tree/General/libs-release-local/org/zowe/nightly</a>.</p>
+<p>Please note:
+  <ul>
+    <li><i>Nightly builds might not be stable, it's for preview purpose.</i></li>
+    <li><i>You can find latest build status from <a class="white" href="https://openmainframeproject.slack.com/archives/CC9QW5NJE">#zowe-build Slack channel</a>.</i></li>
+    <li><i>A nightly build will be removed about 30 days after release.</i></li>
+  </ul>
+</p>
+</details>
 {% if site.smpe_download_url or site.cli_latest_download_url %}
 <details>
 <summary>Pre-Release Builds</summary>
