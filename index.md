@@ -86,10 +86,16 @@ The easiest way to get started with Zowe is by downloading the convenience build
 If you want to try newer, actively-developed Zowe features and functions, download the following packages:
 </p>
 {% if site.smpe_download_url %}
-<a class="button" href="{{ site.smpe_download_url }}{{ site.data.releases[0].version }}alpha1">Zowe {{ site.releases[0].version }} SMP/E Alpha</a>
+<a class="button" href="{{ site.smpe_download_url }}{{ site.data.releases[0].version }}alpha1">Zowe {{ site.data.releases[0].version }} SMP/E Alpha</a>
 {% endif %}
 {% if site.cli_active_development_download_url %}
 <a class="button" href="{{ site.cli_active_development_download_url }}{{ site.data.active_development.cli.version }}&package={{ site.data.active_development.cli.package }}">Zowe CLI (Active Development)</a>
+{% endif %}
+{% if site.zos_tech_preview_download_url %}
+<a class="button" href="{{ site.zos_tech_preview_download_url }}">Zowe 1.8 z/OS Components Tech Preview</a>
+{% endif %}
+{% if site.smpe_tech_preview_download_url %}
+<a class="button" href="{{ site.smpe_tech_preview_download_url }}">Zowe 1.8 SMP/E Tech Preview</a>
 {% endif %}
 </details>
 {% endif %}
@@ -106,15 +112,6 @@ If you don't have infrastructure to install Zowe locally, you can use the Zowe T
 </section>
 
 <section class="whitebackground">
-<h1 id="lts">Releases</h1>
-<p>
-Check out the Zowe Long Term Support (LTS) schedule for releases. 
-</p>
-<img src="assets/img/lts.png" width="850" />
-<button><a href="{{ site.lts_url }}">Learn more</a></button>
-</section>
-
-<section class="bluebackground">
 
 <h1 id="documentation">Docs</h1>
 <p>
@@ -124,7 +121,7 @@ Check out quick start guides, user guides, developer guides, references, tutoria
 
 </section>
 
-<section class="whitebackground">
+<section class="bluebackground">
 
 <h1 id="community">Community</h1>
 <p>
@@ -134,7 +131,7 @@ Zowe is more than a framework - it's a worldwide community of developers, vendor
 
 </section>
 
-<section class="bluebackground">
+<section class="whitebackground">
 
 <h1 id="conformance">Zowe Conformance Program</h1>
 
