@@ -22,6 +22,8 @@ zos_download_url: https://d1xozlojgf8voe.cloudfront.net/legal.html?version=
 cli_download_url: https://d1xozlojgf8voe.cloudfront.net/legal.html?type=cli&version=
 cli_active_development_download_url: https://d1xozlojgf8voe.cloudfront.net/legal.html?type=cli-active-development&version=
 smpe_download_url: https://d1xozlojgf8voe.cloudfront.net/legal.html?type=smpe&version=
+zos_tech_preview_download_url: https://zowe.jfrog.io/zowe/libs-release-local/org/zowe/nightly/zowe-1.8.0-staging-436-20200115051733.pax
+smpe_tech_preview_download_url: https://zowe.jfrog.io/zowe/libs-release-local/org/zowe/nightly/zowe-smpe-1.8.0-staging-436-20200115051733.tar
 nightly_build_url: https://zowe.jfrog.io/zowe/webapp/#/artifacts/browse/tree/General/libs-release-local/org/zowe/nightly
 zowe_build_slack_url: https://openmainframeproject.slack.com/archives/CC9QW5NJE
 
