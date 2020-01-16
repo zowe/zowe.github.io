@@ -84,8 +84,8 @@ The easiest way to get started with Zowe is by downloading the convenience build
 <p>Visit the Zowe Artifactory <a class="white" href="{{ site.nightly_build_url }}">nightly build folder</a> to find the most recent build.</p>
 <p>Please note:
   <ul>
-    <li><i>Nightly builds are for preview purpose. They might not be stable.</i></li>
-    <li><i>You can find latest build status from the <a class="white" href="{{ site.zowe_build_slack_url }}">#zowe-build Slack channel</a>.</i></li>
+    <li><i>Nightly builds are made available to allow preview and early distribution of in-progress work items which may be functionally incomplete and unstable. The coverage and successful execution of tests has not been guaranteed and the builds should be treated accordingly.</i></li>
+    <li><i>The latest build status is available from <a class="white" href="{{ site.zowe_build_slack_url }}">#zowe-build Slack channel</a>.</i></li>
     <li><i>A nightly build will be removed about 30 days after release.</i></li>
   </ul>
 </p>
