@@ -59,7 +59,7 @@ The easiest way to get started with Zowe is by downloading the convenience build
 <a class="button" href="{{ site.cli_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} CLI</a>
 <a class="button" href="{{ site.github_repo_url }}">Zowe GitHub repositories</a>
 <details>
-<summary>Past Releases</summary>
+<summary><b>Past Releases</b></summary>
 {% for release in site.data.releases %}
   {% if forloop.first %}
   <table>
@@ -79,9 +79,20 @@ The easiest way to get started with Zowe is by downloading the convenience build
   {% endif %}
 {% endfor %}
 </details>
+<details>
+<summary><b>Nightly Builds</b></summary>
+<p>Visit the Zowe Artifactory <a class="white" href="{{ site.nightly_build_url }}">nightly build folder</a> to find the most recent build.</p>
+<p>Please note:
+  <ul>
+    <li><i>Nightly builds are made available to allow preview and early distribution of in-progress work items which may be functionally incomplete and unstable. The coverage and successful execution of tests has not been guaranteed and the builds should be treated accordingly.</i></li>
+    <li><i>The latest build status is available from <a class="white" href="{{ site.zowe_build_slack_url }}">#zowe-build Slack channel</a>.</i></li>
+    <li><i>A nightly build will be removed about 30 days after release.</i></li>
+  </ul>
+</p>
+</details>
 {% if site.smpe_download_url or site.cli_latest_download_url %}
 <details>
-<summary>Pre-Release Builds</summary>
+<summary><b>Pre-Release Builds</b></summary>
 <p>
 If you want to try newer, actively-developed Zowe features and functions, download the following packages:
 </p>
