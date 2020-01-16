@@ -1,6 +1,6 @@
 # Announcements
 - announcement: "A technology preview of the Zowe Version 1.8.0 build is now available. You can download the convenience build and SMP/E build in the Pre-Release section."
-  link: "https://docs.zowe.org/stable/getting-started/summaryofchanges.html"
+  link: "https://www.zowe.org/#download"
 - announcement: "A pre-release of the Zowe SMP/E install is now available. This is an alpha release based on Zowe 1.7.1, and should not be used in production."
   link: "https://docs.zowe.org/stable/getting-started/summaryofchanges.html#zowe-smp-e-alpha-august-2019"
 - announcement: "An active development, offline-installable version of the Zowe CLI is now available. This is the @zowe/cli@latest release also available on public NPM."
