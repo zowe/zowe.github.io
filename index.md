@@ -106,17 +106,8 @@ If you don't have infrastructure to install Zowe locally, you can use the Zowe T
 </section>
 
 <section class="whitebackground">
-<h1 id="lts">Releases</h1>
-<p>
-Check out the Zowe Long Term Support (LTS) schedule for releases. 
-</p>
-<img src="assets/img/lts.png" width="850" />
-<button><a href="{{ site.lts_url }}">Learn more</a></button>
-</section>
 
-<section class="bluebackground">
-
-<h1 id="documentation">Docs</h1>
+<h1 id="documentation">Documentation</h1>
 <p>
 Check out quick start guides, user guides, developer guides, references, tutorials, and more.
 </p>
@@ -124,7 +115,7 @@ Check out quick start guides, user guides, developer guides, references, tutoria
 
 </section>
 
-<section class="whitebackground">
+<section class="bluebackground">
 
 <h1 id="community">Community</h1>
 <p>
@@ -134,7 +125,7 @@ Zowe is more than a framework - it's a worldwide community of developers, vendor
 
 </section>
 
-<section class="bluebackground">
+<section class="whitebackground">
 
 <h1 id="conformance">Zowe Conformance Program</h1>
 
