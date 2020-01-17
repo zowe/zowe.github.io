@@ -296,6 +296,10 @@ footer {
     color: #33332B;
     padding: 5px;
 }
+
+.bluebackground a.white {
+  color:white !important;
+}
  
 summary {
   display:list-item;
