@@ -102,12 +102,6 @@ If you want to try newer, actively-developed Zowe features and functions, downlo
 {% if site.cli_active_development_download_url %}
 <a class="button" href="{{ site.cli_active_development_download_url }}{{ site.data.active_development.cli.version }}&package={{ site.data.active_development.cli.package }}">Zowe CLI (Active Development)</a>
 {% endif %}
-{% if site.zos_tech_preview_download_url %}
-<a class="button" href="{{ site.zos_tech_preview_download_url }}">Zowe 1.8 z/OS Components Tech Preview</a>
-{% endif %}
-{% if site.smpe_tech_preview_download_url %}
-<a class="button" href="{{ site.smpe_tech_preview_download_url }}">Zowe 1.8 SMP/E Tech Preview</a>
-{% endif %}
 </details>
 {% endif %}
 <p><i>
