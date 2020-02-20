@@ -2,6 +2,8 @@
 # Note - keep this in order as the latest release is pulled from the first item in the list!
 
 - version: 1.8.0
+  zos_version: 1.8.0
+  cli_version: 1.8.1
   release_date: 2020-02-07
   documentation: stable
 - version: 1.7.1
