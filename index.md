@@ -108,21 +108,10 @@ If you want to try newer, actively-developed Zowe features and functions, downlo
 * Please note the Zowe binaries are made available to you by Zowe Binary Projects a Series of LF Projects, LLC, and not by The Linux Foundation or the Open Mainframe Project.
 </i></p>
 
-<p>
-If you don't have infrastructure to install Zowe locally, you can use the Zowe Trial hosted by IBM. This no-charge trial is available in two hours for three days.
-</p>
-<a class="button" href="{{ site.ibm_ztrial_url }}">Request a trial</a>
-<p><i>* By proceeding to the trial, you will be leaving the Zowe.org website.</i></p>
-
-</section>
-
-<section class="whitebackground">
-
-<h1 id="lts">Releases</h1>
-<p>
-Check out the Zowe Long Term Support (LTS) schedule for releases.
-</p>
-<img src="assets/img/zowe-lts.png" width="850" />
+<details>
+<summary><b>Zowe Support Policy</b></summary>
+<p>Check out the Zowe Long Term Support (TLS) schedule for releases.</p>
+<img src="assets/img/zowe-lts.png" width="950" />
 <p><b>Version timeframe, Current, Active LTS, Maintenance</b></p>
 <ul>
 <li>New Zowe versions will enter <b>current</b> release status for six to nine months to allow consumers of Zowe to test, provide feedback, and adjust to any changes.</li>
@@ -138,10 +127,17 @@ Check out the Zowe Long Term Support (LTS) schedule for releases.
 <li>Production applications should only use <b>Active LTS</b> or <b>Maintenance LTS</b> releases due to the contract with extender products remaining functional and the community’s commitment to fix critical defects.</li>
 </ul>
 <a class="button" href="{{ site.lts_url }}">Learn more</a>
+</details>
+
+<p>
+If you don't have infrastructure to install Zowe locally, you can use the Zowe Trial hosted by IBM. This no-charge trial is available in two hours for three days.
+</p>
+<a class="button" href="{{ site.ibm_ztrial_url }}">Request a trial</a>
+<p><i>* By proceeding to the trial, you will be leaving the Zowe.org website.</i></p>
 
 </section>
 
-<section class="bluebackground">
+<section class="whitebackground">
 
 <h1 id="community">Community</h1>
 <p>
@@ -151,7 +147,7 @@ Zowe is more than a framework - it's a worldwide community of developers, vendor
 
 </section>
 
-<section class="whitebackground">
+<section class="bluebackground">
 
 <h1 id="conformance">Zowe Conformance Program</h1>
 
