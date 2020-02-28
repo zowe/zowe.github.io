@@ -3,6 +3,8 @@
 
 - version: 1.9.0
   zos_version: 1.9.0
+  smpe_version: 1.9.0
+  smpe_sysmod: FMID
   cli_version: 1.9.0
   cli_plugins_version: 1.9.0
   release_date: 2020-02-28

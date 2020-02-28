@@ -173,6 +173,7 @@ float:left;
  border:3px solid #145391;
  color:#145391;
  line-height: 5em;
+ white-space: nowrap;
 }
 
 .whitebackground a.button {
@@ -195,6 +196,7 @@ float:left;
  border:3px solid white;
  color:white;
  line-height: 7em;
+ white-space: nowrap;
 }
 .bluebackground a.button {
  color:white !important;
