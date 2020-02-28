@@ -55,9 +55,10 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 <p>
 The easiest way to get started with Zowe is by downloading the convenience build. You can also go to the GitHub repository to build Zowe on your own.
 </p>
-{% if site.data.releases[0].cli_version and site.data.releases[0].zos_version %}
+{% if site.data.releases[0].cli_version and site.data.releases[0].cli_plugins_version and site.data.releases[0].zos_version %}
 <a class="button" href="{{ site.zos_download_url }}{{ site.data.releases[0].zos_version }}">Zowe {{ site.data.releases[0].zos_version }} z/OS Components</a>
-<a class="button" href="{{ site.cli_download_url }}{{ site.data.releases[0].cli_version }}">Zowe {{ site.data.releases[0].cli_version }} CLI</a>
+<a class="button" href="{{ site.cli_download_url }}{{ site.data.releases[0].cli_version }}">Zowe {{ site.data.releases[0].cli_version }} CLI Core</a>
+<a class="button" href="{{ site.cli_plugins_download_url }}{{ site.data.releases[0].cli_plugins_version }}">Zowe {{ site.data.releases[0].cli_plugins_version }} CLI Plugins</a>
 {% else %}
 <a class="button" href="{{ site.zos_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} z/OS Components</a>
 <a class="button" href="{{ site.cli_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} CLI</a>
@@ -70,13 +71,28 @@ The easiest way to get started with Zowe is by downloading the convenience build
   <table>
   {% endif %}
   {% unless forloop.first %}
-  <tr>
-    <td>Zowe {{release.version}} ({{release.release_date}})</td>
-    <td><a href="{{site.zos_download_url}}{{release.version}}">Zowe z/OS Components</a></td>
-    <td><a href="{{site.cli_download_url}}{{release.version}}">Zowe Command Line Interface</a></td>
-    <td><a href="{{ site.docs_site_url }}/{{release.documentation}}/getting-started/summaryofchanges.html">Release Notes</a></td>
-    <td><a href="{{ site.docs_site_url }}/{{release.documentation}}">Documentation</a></td>
-  </tr>
+    {% if release.cli_version and release.zos_version %}
+    <tr>
+      <td>Zowe {{release.version}} ({{release.release_date}})</td>
+      <td><a href="{{site.zos_download_url}}{{release.zos_version}}">Zowe z/OS Components</a></td>
+        {% if release.cli_plugins_version %}
+        <td><a href="{{site.cli_download_url}}{{release.cli_version}}">Zowe Command Line Interface Core</a></td>
+        <td><a href="{{site.cli_download_url}}{{release.cli_plugins_version}}">Zowe Command Line Interface Plugins</a></td>
+        {% else %}
+        <td><a href="{{site.cli_download_url}}{{release.cli_version}}">Zowe Command Line Interface</a></td>
+        {% endif %}
+      <td><a href="{{ site.docs_site_url }}/{{release.documentation}}/getting-started/summaryofchanges.html">Release Notes</a></td>
+      <td><a href="{{ site.docs_site_url }}/{{release.documentation}}">Documentation</a></td>
+    </tr>
+    {% else %}
+    <tr>
+      <td>Zowe {{release.version}} ({{release.release_date}})</td>
+      <td><a href="{{site.zos_download_url}}{{release.version}}">Zowe z/OS Components</a></td>
+      <td><a href="{{site.cli_download_url}}{{release.version}}">Zowe Command Line Interface</a></td>
+      <td><a href="{{ site.docs_site_url }}/{{release.documentation}}/getting-started/summaryofchanges.html">Release Notes</a></td>
+      <td><a href="{{ site.docs_site_url }}/{{release.documentation}}">Documentation</a></td>
+    </tr>
+    {% endif %}
   {% endunless %}
   {% if forloop.last %}
   </table>
