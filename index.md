@@ -94,7 +94,7 @@ The easiest way to get started with Zowe is by downloading the convenience build
       {% endif %}
     {% endif %}
     {% if release.cli_plugins_version %}
-      <td><a href="{{site.cli_download_url}}{{release.cli_plugins_version}}">Zowe Command Line Interface Plugins</a></td>
+      <td><a href="{{site.cli_plugins_download_url}}{{release.cli_plugins_version}}">Zowe Command Line Interface Plugins</a></td>
     {% else %}
       <td></td>
     {% endif %}
