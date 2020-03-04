@@ -55,8 +55,15 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 <p>
 The easiest way to get started with Zowe is by downloading the convenience build. You can also go to the GitHub repository to build Zowe on your own.
 </p>
+{% if site.data.releases[0].cli_version and site.data.releases[0].cli_plugins_version and site.data.releases[0].zos_version and site.data.releases[0].smpe_version %}
+<a class="button" href="{{ site.zos_download_url }}{{ site.data.releases[0].zos_version }}">Zowe {{ site.data.releases[0].zos_version }} z/OS Components</a>
+<a class="button" href="{{ site.smpe_download_url }}{{ site.data.releases[0].smpe_version }}">Zowe {{ site.data.releases[0].smpe_version }} SMP/E {{ site.data.releases[0].smpe_sysmod }}</a>
+<a class="button" href="{{ site.cli_download_url }}{{ site.data.releases[0].cli_version }}">Zowe {{ site.data.releases[0].cli_version }} CLI Core</a>
+<a class="button" href="{{ site.cli_plugins_download_url }}{{ site.data.releases[0].cli_plugins_version }}">Zowe {{ site.data.releases[0].cli_plugins_version }} CLI Plugins</a>
+{% else %}
 <a class="button" href="{{ site.zos_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} z/OS Components</a>
 <a class="button" href="{{ site.cli_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} CLI</a>
+{% endif %}
 <a class="button" href="{{ site.github_repo_url }}">Zowe GitHub repositories</a>
 <details>
 <summary><b>Past Releases</b></summary>
@@ -65,13 +72,35 @@ The easiest way to get started with Zowe is by downloading the convenience build
   <table>
   {% endif %}
   {% unless forloop.first %}
-  <tr>
-    <td>Zowe {{release.version}} ({{release.release_date}})</td>
-    <td><a href="{{site.zos_download_url}}{{release.version}}">Zowe z/OS Components</a></td>
-    <td><a href="{{site.cli_download_url}}{{release.version}}">Zowe Command Line Interface</a></td>
-    <td><a href="{{ site.docs_site_url }}/{{release.documentation}}/getting-started/summaryofchanges.html">Release Notes</a></td>
-    <td><a href="{{ site.docs_site_url }}/{{release.documentation}}">Documentation</a></td>
-  </tr>
+    <tr>
+      <td>Zowe {{release.version}} ({{release.release_date}})</td>
+    {% if release.zos_version %}
+      <td><a href="{{site.zos_download_url}}{{release.zos_version}}">Zowe z/OS Components</a></td>
+    {% else %}
+      <td><a href="{{site.zos_download_url}}{{release.version}}">Zowe z/OS Components</a></td>
+    {% endif %}
+    {% if release.smpe_version and release.smpe_sysmod %}
+      <td><a href="{{site.smpe_download_url}}{{release.smpe_version}}">Zowe SMP/E {{release.smpe_sysmod}}</a></td>
+    {% else %}
+      <td></td>
+    {% endif %}
+    {% if release.cli_version and release.cli_plugins_version %}
+      <td><a href="{{site.cli_download_url}}{{release.cli_version}}">Zowe Command Line Interface Core</a></td>
+    {% else %}
+      {% if release.cli_version %}
+        <td><a href="{{site.cli_download_url}}{{release.cli_version}}">Zowe Command Line Interface</a></td>
+      {% else %}
+        <td><a href="{{site.cli_download_url}}{{release.version}}">Zowe Command Line Interface</a></td>
+      {% endif %}
+    {% endif %}
+    {% if release.cli_plugins_version %}
+      <td><a href="{{site.cli_plugins_download_url}}{{release.cli_plugins_version}}">Zowe Command Line Interface Plugins</a></td>
+    {% else %}
+      <td></td>
+    {% endif %}
+      <td><a href="{{ site.docs_site_url }}/{{release.documentation}}/getting-started/summaryofchanges.html">Release Notes</a></td>
+      <td><a href="{{ site.docs_site_url }}/{{release.documentation}}">Documentation</a></td>
+    </tr>
   {% endunless %}
   {% if forloop.last %}
   </table>
@@ -90,15 +119,12 @@ The easiest way to get started with Zowe is by downloading the convenience build
   </ul>
 </p>
 </details>
-{% if site.smpe_download_url or site.cli_latest_download_url %}
+{% if site.cli_active_development_download_url %}
 <details>
 <summary><b>Pre-Release Builds</b></summary>
 <p>
 If you want to try newer, actively-developed Zowe features and functions, download the following packages:
 </p>
-{% if site.smpe_download_url %}
-<a class="button" href="{{ site.smpe_download_url }}{{ site.data.releases[0].version }}alpha1">Zowe {{ site.data.releases[0].version }} SMP/E Alpha</a>
-{% endif %}
 {% if site.cli_active_development_download_url %}
 <a class="button" href="{{ site.cli_active_development_download_url }}{{ site.data.active_development.cli.version }}&package={{ site.data.active_development.cli.package }}">Zowe CLI (Active Development)</a>
 {% endif %}
