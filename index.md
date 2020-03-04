@@ -110,7 +110,7 @@ If you want to try newer, actively-developed Zowe features and functions, downlo
 
 <details>
 <summary><b>Zowe Support Policy</b></summary>
-<p>Check out the Zowe Long Term Support (TLS) schedule for releases.</p>
+<p>Check out the Zowe Long Term Support (LTS) schedule for releases.</p>
 <img src="assets/img/zowe-lts.png" width="950" />
 <p><b>Version timeframe, Current, Active LTS, Maintenance</b></p>
 <ul>
