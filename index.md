@@ -135,9 +135,8 @@ If you want to try newer, actively-developed Zowe features and functions, downlo
 </i></p>
 
 <details>
-<summary><b>Zowe Support Policy</b></summary>
-<p>Check out the Zowe Long Term Support (LTS) schedule for releases.</p>
-<img src="assets/img/zowe-lts.png" width="950" />
+<summary><b>Release Timeline</b></summary>
+<p><img src="assets/img/zowe-lts.png" width="950" /></p>
 <p><b>Version timeframe, Current, Active LTS, Maintenance</b></p>
 <ul>
 <li>New Zowe versions will enter <b>current</b> release status for six to nine months to allow consumers of Zowe to test, provide feedback, and adjust to any changes.</li>
