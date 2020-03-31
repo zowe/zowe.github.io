@@ -294,6 +294,10 @@ footer {
   width:55%;
 }
 
+.footercol1 a img{
+  width: auto;
+}
+
 .bluebackground details table {
     background-color: white;
     color: #33332B;
