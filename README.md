@@ -1,6 +1,9 @@
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- Copyright Contributors to the Zowe project. -->
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b4057863-5816-4a06-a503-f8989ec2062f/deploy-status)](https://app.netlify.com/sites/condescending-dubinsky-4645a9/deploys)
+![License](https://img.shields.io/github/license/zowe/zowe.github.io)
+
 # Welcome to Zowe website development
 
 This GitHub repo is for management of the Zowe website. It uses [Github Pages](https://pages.github.com/) to automatically publish any commits to the master branch of the repo to https://zowe.org. GitHub Pages uses  [Jekyll](https://jekyllrb.com/) to publish this site from the content in your markdown files in this repo. For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
