@@ -44,7 +44,7 @@ This repo aligns with the general [Zowe project role definitions](https://github
 
 ## Governance
 
-Committers to this repo are defined in the [COMMITTERS.md](COMMITTERS.md) file. You can request to the committers to become a committer after having successful commits to this repo. Committers are approved by an affirmative vote of the majority of committers.
+Committers to this repo are defined in the [COMMITTERS.csv](COMMITTERS.csv) file. You can request to the committers to become a committer after having successful commits to this repo. Committers are approved by an affirmative vote of the majority of committers.
 
 # Questions and feedback
 
