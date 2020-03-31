@@ -34,8 +34,8 @@ body html {
   padding-top:%;
 }
 
-.socialfooter img{
-  width:7%;
+.socialfooter a img{
+  width: 40px;
   padding-right:2%;
   display:inline;
 }
