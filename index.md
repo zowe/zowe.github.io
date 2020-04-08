@@ -75,26 +75,26 @@ The easiest way to get started with Zowe is by downloading the convenience build
     <tr>
       <td>Zowe {{release.version}} ({{release.release_date}})</td>
     {% if release.zos_version %}
-      <td><a href="{{site.zos_download_url}}{{release.zos_version}}">Zowe z/OS Components</a></td>
+      <td><a href="{{site.zos_download_url}}{{release.zos_version}}">z/OS Components</a></td>
     {% else %}
-      <td><a href="{{site.zos_download_url}}{{release.version}}">Zowe z/OS Components</a></td>
+      <td><a href="{{site.zos_download_url}}{{release.version}}">z/OS Components</a></td>
     {% endif %}
     {% if release.smpe_version and release.smpe_sysmod %}
-      <td><a href="{{site.smpe_download_url}}{{release.smpe_version}}">Zowe SMP/E {{release.smpe_sysmod}}</a></td>
+      <td><a href="{{site.smpe_download_url}}{{release.smpe_version}}">SMP/E {{release.smpe_sysmod}}</a></td>
     {% else %}
       <td></td>
     {% endif %}
     {% if release.cli_version and release.cli_plugins_version %}
-      <td><a href="{{site.cli_download_url}}{{release.cli_version}}">Zowe Command Line Interface Core</a></td>
+      <td><a href="{{site.cli_download_url}}{{release.cli_version}}">CLI Core</a></td>
     {% else %}
       {% if release.cli_version %}
-        <td><a href="{{site.cli_download_url}}{{release.cli_version}}">Zowe Command Line Interface</a></td>
+        <td><a href="{{site.cli_download_url}}{{release.cli_version}}">CLI</a></td>
       {% else %}
-        <td><a href="{{site.cli_download_url}}{{release.version}}">Zowe Command Line Interface</a></td>
+        <td><a href="{{site.cli_download_url}}{{release.version}}">CLI</a></td>
       {% endif %}
     {% endif %}
     {% if release.cli_plugins_version %}
-      <td><a href="{{site.cli_plugins_download_url}}{{release.cli_plugins_version}}">Zowe Command Line Interface Plugins</a></td>
+      <td><a href="{{site.cli_plugins_download_url}}{{release.cli_plugins_version}}">CLI Plugins</a></td>
     {% else %}
       <td></td>
     {% endif %}
