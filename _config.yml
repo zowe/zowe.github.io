@@ -25,6 +25,8 @@ cli_active_development_download_url: https://d1xozlojgf8voe.cloudfront.net/legal
 smpe_download_url: https://d1xozlojgf8voe.cloudfront.net/legal.html?type=smpe&version=
 nightly_build_url: https://zowe.jfrog.io/zowe/webapp/#/artifacts/browse/tree/General/libs-release-local/org/zowe/nightly
 zowe_build_slack_url: https://openmainframeproject.slack.com/archives/CC9QW5NJE
+zowe_fmid: AZWE001
+zowe_fmid_oss_version: 1.9.0
 
 gems:
 # Redirect plugin
