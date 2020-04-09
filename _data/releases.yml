@@ -5,6 +5,7 @@
   zos_version: 1.10.0
   smpe_version: 1.10.0
   smpe_sysmod: PTF
+  smpe_numbers: UO01939 and UO01940
   cli_version: 1.10.0
   cli_plugins_version: 1.10.0
   release_date: 2020-04-08
@@ -13,6 +14,7 @@
   zos_version: 1.9.0
   smpe_version: 1.9.0
   smpe_sysmod: FMID
+  smpe_numbers: AZWE001
   cli_version: 1.9.0
   cli_plugins_version: 1.9.0
   release_date: 2020-02-28
