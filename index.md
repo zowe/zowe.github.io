@@ -72,6 +72,9 @@ The easiest way to get started with Zowe is by downloading the convenience build
   </p>
 {% endif %}
 <p><a class="button" href="{{ site.github_repo_url }}">Zowe GitHub repositories</a></p>
+<p><i>
+* Please note the Zowe binaries are made available to you by Zowe Binary Projects a Series of LF Projects, LLC, and not by The Linux Foundation or the Open Mainframe Project.
+</i></p>
 <details>
 <summary><b>Past Releases</b></summary>
 {% for release in site.data.releases %}
@@ -126,27 +129,14 @@ The easiest way to get started with Zowe is by downloading the convenience build
   </ul>
 </p>
 </details>
-{% if site.cli_active_development_download_url %}
+
 <details>
 <summary><b>Pre-Release Builds</b></summary>
-<p>
-If you want to try newer, actively-developed Zowe features and functions, download the following packages:
-</p>
-{% if site.cli_active_development_download_url %}
-<a class="button" href="{{ site.cli_active_development_download_url }}{{ site.data.active_development.cli.version }}&package={{ site.data.active_development.cli.package }}">Zowe CLI (Active Development)</a>
-{% endif %}
-</details>
-{% endif %}
-<p><i>
-* Please note the Zowe binaries are made available to you by Zowe Binary Projects a Series of LF Projects, LLC, and not by The Linux Foundation or the Open Mainframe Project.
-</i></p>
-
 <p>
 If you don't have infrastructure to install Zowe locally, you can use the Zowe Trial hosted by IBM. This no-charge trial is available in two hours for three days.
 </p>
 <a class="button" href="{{ site.ibm_ztrial_url }}">Request a trial</a>
 <p><i>* By proceeding to the trial, you will be leaving the Zowe.org website.</i></p>
-
 </section>
 
 <section class="whitebackground">
