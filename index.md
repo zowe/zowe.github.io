@@ -127,7 +127,17 @@ The easiest way to get started with Zowe is by downloading the convenience build
   </ul>
 </p>
 </details>
-
+{% if site.cli_active_development_download_url %}
+<details>
+<summary><b>Pre-Release Builds</b></summary>
+<p>
+If you want to try newer, actively-developed Zowe features and functions, download the following packages:
+</p>
+{% if site.cli_active_development_download_url %}
+<a class="button" href="{{ site.cli_active_development_download_url }}{{ site.data.active_development.cli.version }}&package={{ site.data.active_development.cli.package }}">Zowe CLI (Active Development)</a>
+{% endif %}
+</details>
+{% endif %}
 <p><i>
 * Please note the Zowe binaries are made available to you by Zowe Binary Projects a Series of LF Projects, LLC, and not by The Linux Foundation or the Open Mainframe Project.
 </i></p>
