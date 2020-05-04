@@ -141,6 +141,26 @@ If you want to try newer, actively-developed Zowe features and functions, downlo
 * Please note the Zowe binaries are made available to you by Zowe Binary Projects a Series of LF Projects, LLC, and not by The Linux Foundation or the Open Mainframe Project.
 </i></p>
 
+<details>
+<summary><b>Release Timeline</b></summary>
+<p><img src="assets/img/zowe-lts.png" width="950" /></p>
+<p><b>Version timeframe, Current, Active LTS, Maintenance</b></p>
+<ul>
+<li>New Zowe versions will enter <b>current</b> release status for six to nine months to allow consumers of Zowe to test, provide feedback, and adjust to any changes.</li>
+<li>After current release phase, Zowe will move to <b>Active LTS</b> status and will be deemed ready by the community for general use. <b>Active LTS</b> will have additional releases with both fixes and enhancements.</li>
+<li>Following a period of <b>Active LTS</b>, the Zowe version will enter <b>Maintenance</b> for fixes only.</li>
+<li>The combination of <b>Active LTS</b> and <b>Maintenance LTS</b> release is designated as <b>"long-term support”</b>, which provides two guarantees:
+  <ul>
+    <li>Critical defects will be fixed. The criteria for what constitutes a critical defect is covered in <a href="{{ site.lts_url }}">Release Process</a>.</li>
+    <li>Extenders who achieve Zowe conformance for the long-term support version will not need to modify their product for it to remain functional when the Zowe community provides distributions within the release or  modification level boundary within the same version.</li>
+  </ul>
+</li>
+<li>The length of <b>Active LTS</b> may vary but the total time period of <b>Active LTS</b> + <b>Maintenance LTS</b> will be at least 24 months.</li>
+<li>Production applications should only use <b>Active LTS</b> or <b>Maintenance LTS</b> releases due to the contract with extender products remaining functional and the community’s commitment to fix critical defects.</li>
+</ul>
+<a class="button" href="{{ site.lts_url }}">Learn more</a>
+</details>
+
 <p>
 If you don't have infrastructure to install Zowe locally, you can use the Zowe Trial hosted by IBM. This no-charge trial is available in two hours for three days.
 </p>
@@ -151,16 +171,6 @@ If you don't have infrastructure to install Zowe locally, you can use the Zowe T
 
 <section class="whitebackground">
 
-<h1 id="documentation">Docs</h1>
-<p>
-Check out quick start guides, user guides, developer guides, references, tutorials, and more.
-</p>
-<a class="button" href="{{ site.docs_site_url }}">Read the docs</a>
-
-</section>
-
-<section class="bluebackground">
-
 <h1 id="community">Community</h1>
 <p>
 Zowe is more than a framework - it's a worldwide community of developers, vendors, and users building and extending Zowe. Discover how you can connect, learn, and contribute to its future.
@@ -169,7 +179,7 @@ Zowe is more than a framework - it's a worldwide community of developers, vendor
 
 </section>
 
-<section class="whitebackground">
+<section class="bluebackground">
 
 <h1 id="conformance">Zowe Conformance Program</h1>
 
