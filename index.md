@@ -56,15 +56,22 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 The easiest way to get started with Zowe is by downloading the convenience build. You can also go to the GitHub repository to build Zowe on your own.
 </p>
 {% if site.data.releases[0].cli_version and site.data.releases[0].cli_plugins_version and site.data.releases[0].zos_version and site.data.releases[0].smpe_version %}
-<a class="button" href="{{ site.zos_download_url }}{{ site.data.releases[0].zos_version }}">Zowe {{ site.data.releases[0].zos_version }} z/OS Components</a>
-<a class="button" href="{{ site.smpe_download_url }}{{ site.data.releases[0].smpe_version }}">Zowe {{ site.data.releases[0].smpe_version }} SMP/E {{ site.data.releases[0].smpe_sysmod }}</a>
-<a class="button" href="{{ site.cli_download_url }}{{ site.data.releases[0].cli_version }}">Zowe {{ site.data.releases[0].cli_version }} CLI Core</a>
-<a class="button" href="{{ site.cli_plugins_download_url }}{{ site.data.releases[0].cli_plugins_version }}">Zowe {{ site.data.releases[0].cli_plugins_version }} CLI Plugins</a>
+  <p>
+    <a class="button" href="{{ site.zos_download_url }}{{ site.data.releases[0].zos_version }}">Zowe {{ site.data.releases[0].zos_version }} z/OS Convenience build</a>
+    <a class="button" href="{{ site.smpe_download_url }}{{ site.zowe_fmid_oss_version }}">Zowe SMP/E FMID {{ site.zowe_fmid }}</a>
+    <a class="button" href="{{ site.smpe_download_url }}{{ site.data.releases[0].smpe_version }}">Zowe SMP/E {{ site.data.releases[0].smpe_sysmod }} {{ site.data.releases[0].smpe_numbers }}</a>
+  </p>
+  <p>
+    <a class="button" href="{{ site.cli_download_url }}{{ site.data.releases[0].cli_version }}">Zowe {{ site.data.releases[0].cli_version }} CLI Core</a>
+    <a class="button" href="{{ site.cli_plugins_download_url }}{{ site.data.releases[0].cli_plugins_version }}">Zowe {{ site.data.releases[0].cli_plugins_version }} CLI Plugins</a>
+  </p>
 {% else %}
-<a class="button" href="{{ site.zos_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} z/OS Components</a>
-<a class="button" href="{{ site.cli_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} CLI</a>
+  <p>
+    <a class="button" href="{{ site.zos_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} z/OS Convenience build</a>
+    <a class="button" href="{{ site.cli_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} CLI</a>
+  </p>
 {% endif %}
-<a class="button" href="{{ site.github_repo_url }}">Zowe GitHub repositories</a>
+<p><a class="button" href="{{ site.github_repo_url }}">Zowe GitHub repositories</a></p>
 <details>
 <summary><b>Past Releases</b></summary>
 {% for release in site.data.releases %}
@@ -75,26 +82,26 @@ The easiest way to get started with Zowe is by downloading the convenience build
     <tr>
       <td>Zowe {{release.version}} ({{release.release_date}})</td>
     {% if release.zos_version %}
-      <td><a href="{{site.zos_download_url}}{{release.zos_version}}">Zowe z/OS Components</a></td>
+      <td><a href="{{site.zos_download_url}}{{release.zos_version}}">z/OS Convenience build</a></td>
     {% else %}
-      <td><a href="{{site.zos_download_url}}{{release.version}}">Zowe z/OS Components</a></td>
+      <td><a href="{{site.zos_download_url}}{{release.version}}">z/OS Convenience build</a></td>
     {% endif %}
     {% if release.smpe_version and release.smpe_sysmod %}
-      <td><a href="{{site.smpe_download_url}}{{release.smpe_version}}">Zowe SMP/E {{release.smpe_sysmod}}</a></td>
+      <td><a href="{{site.smpe_download_url}}{{release.smpe_version}}">SMP/E {{release.smpe_sysmod}} {{release.smpe_numbers}}</a></td>
     {% else %}
       <td></td>
     {% endif %}
     {% if release.cli_version and release.cli_plugins_version %}
-      <td><a href="{{site.cli_download_url}}{{release.cli_version}}">Zowe Command Line Interface Core</a></td>
+      <td><a href="{{site.cli_download_url}}{{release.cli_version}}">CLI Core</a></td>
     {% else %}
       {% if release.cli_version %}
-        <td><a href="{{site.cli_download_url}}{{release.cli_version}}">Zowe Command Line Interface</a></td>
+        <td><a href="{{site.cli_download_url}}{{release.cli_version}}">CLI</a></td>
       {% else %}
-        <td><a href="{{site.cli_download_url}}{{release.version}}">Zowe Command Line Interface</a></td>
+        <td><a href="{{site.cli_download_url}}{{release.version}}">CLI</a></td>
       {% endif %}
     {% endif %}
     {% if release.cli_plugins_version %}
-      <td><a href="{{site.cli_plugins_download_url}}{{release.cli_plugins_version}}">Zowe Command Line Interface Plugins</a></td>
+      <td><a href="{{site.cli_plugins_download_url}}{{release.cli_plugins_version}}">CLI Plugins</a></td>
     {% else %}
       <td></td>
     {% endif %}
@@ -134,6 +141,26 @@ If you want to try newer, actively-developed Zowe features and functions, downlo
 * Please note the Zowe binaries are made available to you by Zowe Binary Projects a Series of LF Projects, LLC, and not by The Linux Foundation or the Open Mainframe Project.
 </i></p>
 
+<details>
+<summary><b>Release Timeline</b></summary>
+<p><img src="assets/img/zowe-lts.png" width="950" /></p>
+<p><b>Version timeframe, Current, Active LTS, Maintenance</b></p>
+<ul>
+<li>New Zowe versions will enter <b>current</b> release status for six to nine months to allow consumers of Zowe to test, provide feedback, and adjust to any changes.</li>
+<li>After current release phase, Zowe will move to <b>Active LTS</b> status and will be deemed ready by the community for general use. <b>Active LTS</b> will have additional releases with both fixes and enhancements.</li>
+<li>Following a period of <b>Active LTS</b>, the Zowe version will enter <b>Maintenance</b> for fixes only.</li>
+<li>The combination of <b>Active LTS</b> and <b>Maintenance LTS</b> release is designated as <b>"long-term support”</b>, which provides two guarantees:
+  <ul>
+    <li>Critical defects will be fixed. The criteria for what constitutes a critical defect is covered in <a href="{{ site.lts_url }}">Release Process</a>.</li>
+    <li>Extenders who achieve Zowe conformance for the long-term support version will not need to modify their product for it to remain functional when the Zowe community provides distributions within the release or  modification level boundary within the same version.</li>
+  </ul>
+</li>
+<li>The length of <b>Active LTS</b> may vary but the total time period of <b>Active LTS</b> + <b>Maintenance LTS</b> will be at least 24 months.</li>
+<li>Production applications should only use <b>Active LTS</b> or <b>Maintenance LTS</b> releases due to the contract with extender products remaining functional and the community’s commitment to fix critical defects.</li>
+</ul>
+<a class="button" href="{{ site.lts_url }}">Learn more</a>
+</details>
+
 <p>
 If you don't have infrastructure to install Zowe locally, you can use the Zowe Trial hosted by IBM. This no-charge trial is available in two hours for three days.
 </p>
@@ -144,16 +171,6 @@ If you don't have infrastructure to install Zowe locally, you can use the Zowe T
 
 <section class="whitebackground">
 
-<h1 id="documentation">Docs</h1>
-<p>
-Check out quick start guides, user guides, developer guides, references, tutorials, and more.
-</p>
-<a class="button" href="{{ site.docs_site_url }}">Read the docs</a>
-
-</section>
-
-<section class="bluebackground">
-
 <h1 id="community">Community</h1>
 <p>
 Zowe is more than a framework - it's a worldwide community of developers, vendors, and users building and extending Zowe. Discover how you can connect, learn, and contribute to its future.
@@ -162,7 +179,7 @@ Zowe is more than a framework - it's a worldwide community of developers, vendor
 
 </section>
 
-<section class="whitebackground">
+<section class="bluebackground">
 
 <h1 id="conformance">Zowe Conformance Program</h1>
 
