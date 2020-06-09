@@ -8,41 +8,66 @@ redirect_from:
 
 <section class="whitebackground" style="padding-top:1%">
 <h1 id="download">Download Zowe</h1>
-<p>
-Download latest Zowe installer or source code, and start your journey with Zowe today. 
-</p>
+  <p>
+  Download latest Zowe installer and start your journey with Zowe today. 
+  </p>
+  <p>
+  Want to build Zowe on your own? Access <a href="{{ site.github_repo_url }}">Zowe GitHub repositories</a> to download the source code.
+  </p>
 {% if site.data.releases[0].cli_version and site.data.releases[0].cli_plugins_version and site.data.releases[0].zos_version and site.data.releases[0].smpe_version %}
-<div class="card-group">
-<div class="card bg-light mb-3">
-  <div class="card-header">Zowe installer</div>
-  <div class="card-body">
-    <h5 class="card-title">Zowe z/OS components: convenience build</h5>
-    <p class="card-text">PAX archive format installed on the z/OS server</p>
-    <p class="card-text">The easiest way to get started with Zowe is by downloading the convenience build.</p>
-    <a class="btn btn-primary" href="{{ site.zos_download_url }}{{ site.data.releases[0].zos_version }}">Zowe {{ site.data.releases[0].zos_version }} z/OS Convenience build</a>
+<div class="card-deck">
+<div class="card border-secondary mb-3">
+  <div class="card-header">Server-side component installer</div>
+    <div class="card-body"> 
+    <p class="card-text">Install Zowe z/OS compoments via the convenience build or the SMP/E build depending on your need.</p>
+        <div class="row">
+          <div class="card-body">
+            <h5 class="card-title">Convenience build</h5>
+            <p class="card-text">PAX archive format installed on the z/OS server</p>
+            <p><a class="btn btn-primary" href="{{ site.zos_download_url }}{{ site.data.releases[0].zos_version }}">Zowe {{ site.data.releases[0].zos_version }} z/OS Convenience build</a></p>
+          <div class="card-footer">
+            <a class="card-footer" href="https://docs.zowe.org/stable/user-guide/install-zos.html" class="card-link">Read installation docs</a>
+          </div> 
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">SMP/E build</h5>
+            <p class="card-text">SMP/E format installed on the z/OS server</p>
+            <p class="card-text">Download the base FMID AZWE001 (based on v1.9.0) first and then apply the PTFs to get the latest version. </p>
+            <p><a class="btn btn-primary" href="{{ site.smpe_download_url }}{{ site.zowe_fmid_oss_version }}">Zowe {{ site.data.releases[0].zos_version }} FMID {{ site.zowe_fmid }}</a></p>
+            <p><a class="btn btn-primary" href="{{ site.smpe_download_url }}{{ site.data.releases[0].smpe_version }}">Zowe {{ site.data.releases[0].zos_version }} {{ site.data.releases[0].smpe_sysmod }} {{ site.data.releases[0].smpe_numbers }}</a></p>
+            <div class="card-footer">
+              <a href="https://docs.zowe.org/stable/user-guide/install-zos.html" class="card-link">Read installation docs</a>
+            </div> 
+          </div>
+       </div>
+    </div>
   </div>
+<div class="card border-secondary mb-3">
+  <div class="card-header">Client-side component installer</div>
+    <div class="card-body">
+    <p class="card-text">Install Zowe CLI or Zowe Explorer, a Visual Studio Code extension powered by Zowe CLI.</p>
+      <div class="row">
+        <div class="card-body">
+          <h5 class="card-title">Zowe CLI</h5>
+          <p class="card-text">Install Zowe CLI from the local package or from an npm registry if your computer is connected to the Internet.</p>
+          <p class="card-text">Download the Zowe CLI core package and optionally download the plug-ins (CICS, DB2, IMS, MQ, z/OS FTP and so on) to gain more capabilities.</p>
+          <p><a class="btn btn-primary" href="{{ site.cli_download_url }}{{ site.data.releases[0].cli_version }}">Zowe {{ site.data.releases[0].cli_version }} CLI Core</a></p>
+          <p><a class="btn btn-primary" href="{{ site.cli_plugins_download_url }}{{ site.data.releases[0].cli_plugins_version }}">Zowe {{ site.data.releases[0].cli_plugins_version }} CLI Plugins</a></p>
+          <div class="card-footer">
+            <a href="https://docs.zowe.org/stable/user-guide/cli-installcli.html#installing-zowe-cli-from-a-local-package" class="card-link">Read installation docs</a>
+          </div> 
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Zowe Explorer</h5>
+          <p class="card-text">Installed directly to VSCode within the GUI</p>
+          <p><a class="btn btn-primary" href="https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe">Visual Studio Code Marketplace</a></p>
+          <div class="card-footer">
+            <a href="https://docs.zowe.org/stable/user-guide/cli-installcli.html#installing-zowe-cli-from-an-online-registry" class="card-link">Read installation docs</a>
+          </div> 
+       </div>
+     </div>
+   </div>  
 </div>
-<div class="card bg-light mb-3">
-  <div class="card-header">Zowe installer</div>
-  <div class="card-body">
-    <h5 class="card-title">Zowe z/OS components: SMP/E build</h5>
-    <p class="card-text">SMP/E format installed on the z/OS server</p>
-    <p class="card-text">Download the base FMID AZWE001 (based on v1.9.0) first and then apply the PTFs to get the latest version. </p>
-    <p><a class="btn btn-primary" href="{{ site.smpe_download_url }}{{ site.zowe_fmid_oss_version }}">FMID {{ site.zowe_fmid }}</a></p>
-    <p><a class="btn btn-primary" href="{{ site.smpe_download_url }}{{ site.data.releases[0].smpe_version }}">{{ site.data.releases[0].smpe_sysmod }} {{ site.data.releases[0].smpe_numbers }}</a></p>
-  </div>
-</div>
-<div class="card bg-light mb-3">
-  <div class="card-header">Zowe installer</div>
-  <div class="card-body">
-    <h5 class="card-title">Zowe CLI</h5>
-    <p>  </p>
-    <p class="card-text">ZIP archive format installed on your computer</p>
-    <p class="card-text">Download the Zowe CLI core package and optionally download the plug-ins to gain more capabilities.</p>
-    <p>  </p>
-    <p><a class="btn btn-primary" href="{{ site.cli_download_url }}{{ site.data.releases[0].cli_version }}">Zowe {{ site.data.releases[0].cli_version }} CLI Core</a></p>
-    <p><a class="btn btn-primary" href="{{ site.cli_plugins_download_url }}{{ site.data.releases[0].cli_plugins_version }}">Zowe {{ site.data.releases[0].cli_plugins_version }} CLI Plugins</a></p>
-  </div>
 </div>
 {% else %}
   <p>
@@ -50,23 +75,14 @@ Download latest Zowe installer or source code, and start your journey with Zowe 
     <a class="button" href="{{ site.cli_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} CLI</a>
   </p>
 {% endif %}
-<div class="card bg-light mb-3">
-  <div class="card-header">Source code</div>
-  <div class="card-body">
-    <h5 class="card-title">Build Zowe on your own</h5>
-    <p class="card-text">Download the Zowe source code to build Zowe on your own.</p>
-    <p><a class="btn btn-primary" href="{{ site.github_repo_url }}">Zowe GitHub repositories</a></p>
-  </div>
-</div>
 
-<section class="bluebackground">
-<h1>Past Releases</h1>
+<h2>Previous Releases</h2>
 <p>
 Download previous releases of Zowe by version number. 
 </p>
 {% for release in site.data.releases %}
   {% if forloop.first %}
-  <table>
+  <table class="table table-hover table-sm">
   {% endif %}
   {% unless forloop.first %}
     <tr>
@@ -101,22 +117,9 @@ Download previous releases of Zowe by version number.
   {% endunless %}
   {% if forloop.last %}
   </table>
-  <i>All builds prior to Zowe v1.0.0 are no longer available.</i>
+  <p><i>All builds prior to Zowe v1.0.0 are no longer available.</i></p>
   {% endif %}
 {% endfor %}
-</section>
-
-
-<section class="whitebackground">
-<h1>Nightly Builds</h1>
-<p>Visit the Zowe Artifactory <a class="white" href="{{ site.nightly_build_url }}">nightly build folder</a> to find the most recent build.</p>
-<p>Please note:
-  <ul>
-    <li><i>Nightly builds are made available to allow preview and early distribution of in-progress work items which may be functionally incomplete and unstable. The coverage and successful execution of tests has not been guaranteed and the builds should be treated accordingly.</i></li>
-    <li><i>The latest build status is available from <a class="white" href="{{ site.zowe_build_slack_url }}">#zowe-build Slack channel</a>.</i></li>
-    <li><i>A nightly build will be removed about 30 days after release.</i></li>
-  </ul>
-</p>
 </section>
 
 <section class="bluebackground">
@@ -153,3 +156,18 @@ If you want to try newer, actively-developed Zowe features and functions, downlo
 <li>Production applications should only use <b>Active LTS</b> or <b>Maintenance LTS</b> releases due to the contract with extender products remaining functional and the community’s commitment to fix critical defects.</li>
 </ul>
 <a class="button" href="{{ site.lts_url }}">Learn more</a>
+</section>
+
+<section class="bluebackground">
+<h1>Nightly Builds</h1>
+<p>Visit the Zowe Artifactory <a class="white" href="{{ site.nightly_build_url }}">nightly build folder</a> to find the most recent build.</p>
+<p>Please note:
+  <ul>
+    <li>Nightly builds are made available to allow preview and early distribution of in-progress work items which may be functionally incomplete and unstable. The coverage and successful execution of tests has not been guaranteed and the builds should be treated accordingly.</li>
+    <li>The latest build status is available from <a class="white" href="{{ site.zowe_build_slack_url }}">#zowe-build Slack channel</a>.</li>
+    <li>A nightly build will be removed about 30 days after release.</li>
+  </ul>
+</p>
+</section>
+
+
