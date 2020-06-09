@@ -28,6 +28,11 @@ zowe_build_slack_url: https://openmainframeproject.slack.com/archives/CC9QW5NJE
 lts_url: https://github.com/zowe/zlc/blob/master/process/ReleaseProcess.md 
 zowe_fmid: AZWE001
 zowe_fmid_oss_version: 1.9.0
+zos_component_install_doc_url: https://docs.zowe.org/stable/user-guide/install-zos.html
+zowe_cli_install_doc_url: https://docs.zowe.org/stable/user-guide/cli-installcli.html
+zowe_explorer_install_doc_url: https://docs.zowe.org/stable/user-guide/ze-install.html
+vscode_marketplace_url: https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe
+
 
 gems:
 # Redirect plugin

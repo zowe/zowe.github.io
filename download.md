@@ -9,7 +9,7 @@ redirect_from:
 <section class="whitebackground" style="padding-top:1%">
 <h1 id="download">Download Zowe</h1>
   <p>
-  Download latest Zowe installer and start your journey with Zowe today. 
+  Download the latest Zowe installer and start your journey with Zowe today. 
   </p>
   <p>
   Want to build Zowe on your own? Access <a href="{{ site.github_repo_url }}">Zowe GitHub repositories</a> to download the source code.
@@ -19,24 +19,24 @@ redirect_from:
 <div class="card border-secondary mb-3">
   <div class="card-header">Server-side component installer</div>
     <div class="card-body"> 
-    <p class="card-text">Install Zowe z/OS compoments via the convenience build or the SMP/E build depending on your need.</p>
+    <p class="card-text">Install Zowe z/OS components from the convenience build or the SMP/E build depending on your need.</p>
         <div class="row">
           <div class="card-body">
             <h5 class="card-title">Convenience build</h5>
             <p class="card-text">PAX archive format installed on the z/OS server</p>
             <p><a class="btn btn-primary" href="{{ site.zos_download_url }}{{ site.data.releases[0].zos_version }}">Zowe {{ site.data.releases[0].zos_version }} z/OS Convenience build</a></p>
           <div class="card-footer">
-            <a class="card-footer" href="https://docs.zowe.org/stable/user-guide/install-zos.html" class="card-link">Read installation docs</a>
+            <a class="card-footer" href="{{ site.zos_component_install_doc_url }}" class="card-link">Read installation docs</a>
           </div> 
           </div>
           <div class="card-body">
             <h5 class="card-title">SMP/E build</h5>
             <p class="card-text">SMP/E format installed on the z/OS server</p>
             <p class="card-text">Download the base FMID AZWE001 (based on v1.9.0) first and then apply the PTFs to get the latest version. </p>
-            <p><a class="btn btn-primary" href="{{ site.smpe_download_url }}{{ site.zowe_fmid_oss_version }}">Zowe {{ site.data.releases[0].zos_version }} FMID {{ site.zowe_fmid }}</a></p>
+            <p><a class="btn btn-primary" href="{{ site.smpe_download_url }}{{ site.zowe_fmid_oss_version }}">Zowe 1.9.0 FMID {{ site.zowe_fmid }}</a></p>
             <p><a class="btn btn-primary" href="{{ site.smpe_download_url }}{{ site.data.releases[0].smpe_version }}">Zowe {{ site.data.releases[0].zos_version }} {{ site.data.releases[0].smpe_sysmod }} {{ site.data.releases[0].smpe_numbers }}</a></p>
             <div class="card-footer">
-              <a href="https://docs.zowe.org/stable/user-guide/install-zos.html" class="card-link">Read installation docs</a>
+              <a href="{{ site.zos_component_install_doc_url }}" class="card-link">Read installation docs</a>
             </div> 
           </div>
        </div>
@@ -50,19 +50,19 @@ redirect_from:
         <div class="card-body">
           <h5 class="card-title">Zowe CLI</h5>
           <p class="card-text">Install Zowe CLI from the local package or from an npm registry if your computer is connected to the Internet.</p>
-          <p class="card-text">Download the Zowe CLI core package and optionally download the plug-ins (CICS, DB2, IMS, MQ, z/OS FTP and so on) to gain more capabilities.</p>
+          <p class="card-text">Download the Zowe CLI core package and optionally download the plug-ins (CICS, Db2, IMS, MQ, z/OS FTP, and so on) to gain more capabilities.</p>
           <p><a class="btn btn-primary" href="{{ site.cli_download_url }}{{ site.data.releases[0].cli_version }}">Zowe {{ site.data.releases[0].cli_version }} CLI Core</a></p>
-          <p><a class="btn btn-primary" href="{{ site.cli_plugins_download_url }}{{ site.data.releases[0].cli_plugins_version }}">Zowe {{ site.data.releases[0].cli_plugins_version }} CLI Plugins</a></p>
+          <p><a class="btn btn-primary" href="{{ site.cli_plugins_download_url }}{{ site.data.releases[0].cli_plugins_version }}">Zowe {{ site.data.releases[0].cli_plugins_version }} CLI Plug-ins</a></p>
           <div class="card-footer">
-            <a href="https://docs.zowe.org/stable/user-guide/cli-installcli.html#installing-zowe-cli-from-a-local-package" class="card-link">Read installation docs</a>
+            <a href="{{ site.zowe_cli_install_doc_url }}" class="card-link">Read installation docs</a>
           </div> 
         </div>
         <div class="card-body">
           <h5 class="card-title">Zowe Explorer</h5>
           <p class="card-text">Installed directly to VSCode within the GUI</p>
-          <p><a class="btn btn-primary" href="https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe">Visual Studio Code Marketplace</a></p>
+          <p><a class="btn btn-primary" href="{{ site.vscode_marketplace_url }}">Visual Studio Code Marketplace</a></p>
           <div class="card-footer">
-            <a href="https://docs.zowe.org/stable/user-guide/cli-installcli.html#installing-zowe-cli-from-an-online-registry" class="card-link">Read installation docs</a>
+            <a href="{{ site.zowe_explorer_install_doc_url }}" class="card-link">Read installation docs</a>
           </div> 
        </div>
      </div>
@@ -134,7 +134,7 @@ If you want to try newer, actively-developed Zowe features and functions, downlo
 {% endif %}
 <p>
 <i>
-* Please note the Zowe binaries are made available to you by Zowe Binary Projects a Series of LF Projects, LLC, and not by The Linux Foundation or the Open Mainframe Project.
+* Please note that the Zowe binaries are made available to you by Zowe Binary Projects a Series of LF Projects, LLC, and not by The Linux Foundation or the Open Mainframe Project.
 </i></p>
 </section>
 
