@@ -1,7 +1,7 @@
 ---
 redirect_from:
-  - "/home"
-  - "/home/"
+  - "/#download"
+  - "/#download/"
 ---
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- Copyright Contributors to the Zowe project. -->
@@ -9,7 +9,7 @@ redirect_from:
 <section class="whitebackground" style="padding-top:1%">
 <h1 id="download">Download Zowe</h1>
   <p>
-  Download the latest Zowe installer and start your journey with Zowe today. 
+  Download the latest installer to install Zowe on the z/OS server, on your computer, or both. Start your journey with Zowe today! 
   </p>
   <p>
   Want to build Zowe on your own? Access <a href="{{ site.github_repo_url }}">Zowe GitHub repositories</a> to download the source code.
@@ -123,22 +123,6 @@ Download previous releases of Zowe by version number.
 </section>
 
 <section class="bluebackground">
-{% if site.cli_active_development_download_url %}
-<h1>Pre-Release Builds</h1>
-<p>
-If you want to try newer, actively-developed Zowe features and functions, download the following packages:
-</p>
-{% if site.cli_active_development_download_url %}
-<a class="button" href="{{ site.cli_active_development_download_url }}{{ site.data.active_development.cli.version }}&package={{ site.data.active_development.cli.package }}">Zowe CLI (Active Development)</a>
-{% endif %}
-{% endif %}
-<p>
-<i>
-* Please note that the Zowe binaries are made available to you by Zowe Binary Projects a Series of LF Projects, LLC, and not by The Linux Foundation or the Open Mainframe Project.
-</i></p>
-</section>
-
-<section class="whitebackground">
 <h1>Release Timeline</h1>
 <p><img src="assets/img/zowe-lts.png" width="950" /></p>
 <p><b>Version timeframe, Current, Active LTS, Maintenance</b></p>
@@ -158,7 +142,7 @@ If you want to try newer, actively-developed Zowe features and functions, downlo
 <a class="button" href="{{ site.lts_url }}">Learn more</a>
 </section>
 
-<section class="bluebackground">
+<section class="whitebackground">
 <h1>Nightly Builds</h1>
 <p>Visit the Zowe Artifactory <a class="white" href="{{ site.nightly_build_url }}">nightly build folder</a> to find the most recent build.</p>
 <p>Please note:

@@ -45,6 +45,7 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 <div class="videocol">
 <object style="width:100%;height:330px;width:100%; float: none; clear: both; margin: 2px auto;" data="{{ site.latest_video_embed }}">
 </object>
+<a class="button" href="/download">Download Zowe</a>
 </div>
 
 </section>
