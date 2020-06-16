@@ -194,3 +194,22 @@ The Zowe Conformance Program aims to give users the confidence that when they us
 <div class="videocol">
 <img src="assets/img/Zowe_ConformanceBadge_general-white.svg">
 </div>
+
+</section>
+{% for adopter in site.data.adopters %}
+{% if forloop.first %}
+<section class="whitebackground">
+
+<h1 id="adopters">Who's Using Zowe?</h1>
+
+<div class="flex-container">
+{% endif %}
+  <div>
+    <img alt="{{adopter.name}}" src="assets/img/adopters/{{adopter.logo}}">
+  </div>
+{% if forloop.last %}
+</div>
+
+</section>
+{% endif %}
+{% endfor %}
