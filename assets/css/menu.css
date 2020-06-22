@@ -152,7 +152,8 @@ body html {
     overflow-y: auto;
   }
 }
-  @media (max-width:900px) {
+
+@media (max-width:900px) {
 
     .nav-links img {
       width:3%;
@@ -160,11 +161,9 @@ body html {
       padding-top:5%;
       margin-left:0% !important;
     }
-  }
 }
 
 @media (max-width:600px) {
-
 
     .nav > .nav-header > .nav-title {
       padding-left: 4%;
