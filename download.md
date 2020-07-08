@@ -5,25 +5,33 @@
 
 <section class="whitebackground" style="padding-top:1%">
 <h1 id="download">Download Zowe</h1>
-  <p>
-  Download the latest installer to install Zowe on the z/OS server, on your computer, or both. Start your journey with Zowe today! 
+<div class="card">
+  <div class="card-body">
+  <p class="card-text">
+    Zowe has both server and client components, which you can install independently. Download the latest installer to install Zowe on the z/OS server, on your computer, or both. Start your journey with Zowe today!
   </p>
-  <p>
-  Want to build Zowe on your own? Access <a href="{{ site.github_repo_url }}">Zowe GitHub repositories</a> to download the source code.
+  <p class="card-text">
+    Want to build Zowe on your own? Access <a href="{{ site.github_repo_url }}">Zowe GitHub repositories</a> to download the source code.
   </p>
+  </div>
+</div>
+<p> </p>
 {% if site.data.releases[0].cli_version and site.data.releases[0].cli_plugins_version and site.data.releases[0].zos_version and site.data.releases[0].smpe_version %}
 <div class="card-deck">
-<div class="card border-secondary mb-3">
-  <div class="card-header">Server-side component installer</div>
+<div class="card bg-light border-light mb-3">
+  <h4 class="card-header">Server-side component installer</h4>
     <div class="card-body"> 
-    <p class="card-text">Install Zowe z/OS components from the convenience build or the SMP/E build depending on your need.</p>
+    <p class="card-text">Install Zowe z/OS components from the <b>convenience build</b> or the <b>SMP/E build</b> depending on your need.</p>
         <div class="row">
           <div class="card-body">
             <h5 class="card-title">Convenience build</h5>
             <p class="card-text">PAX archive format installed on the z/OS server</p>
             <p><a class="btn btn-primary" href="{{ site.zos_download_url }}{{ site.data.releases[0].zos_version }}">Zowe {{ site.data.releases[0].zos_version }} z/OS Convenience build</a></p>
-          <div class="card-footer">
-            <a class="card-footer" href="{{ site.zos_component_install_doc_url }}" class="card-link">Read installation docs</a>
+          <div>
+            <a href="{{ site.zos_component_install_doc_url }}" class="card-link">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+            Read installation docs
+            </a>
           </div> 
           </div>
           <div class="card-body">
@@ -32,17 +40,20 @@
             <p class="card-text">Download the base FMID AZWE001 (based on v1.9.0) first and then apply the PTFs to get the latest version. </p>
             <p><a class="btn btn-primary" href="{{ site.smpe_download_url }}{{ site.zowe_fmid_oss_version }}">Zowe 1.9.0 FMID {{ site.zowe_fmid }}</a></p>
             <p><a class="btn btn-primary" href="{{ site.smpe_download_url }}{{ site.data.releases[0].smpe_version }}">Zowe {{ site.data.releases[0].zos_version }} {{ site.data.releases[0].smpe_sysmod }} {{ site.data.releases[0].smpe_numbers }}</a></p>
-            <div class="card-footer">
-              <a href="{{ site.zos_component_install_doc_url }}" class="card-link">Read installation docs</a>
+            <div>
+              <a href="{{ site.zos_component_install_doc_url }}" class="card-link">
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+              Read installation docs
+              </a>
             </div> 
           </div>
        </div>
     </div>
   </div>
-<div class="card border-secondary mb-3">
-  <div class="card-header">Client-side component installer</div>
+<div class="card bg-light border-light mb-3">
+  <h4 class="card-header">Client-side component installer</h4>
     <div class="card-body">
-    <p class="card-text">Install Zowe CLI or Zowe Explorer, a Visual Studio Code extension powered by Zowe CLI.</p>
+    <p class="card-text">Install <b>Zowe CLI</b> or <b>Zowe Explorer</b>, a Visual Studio Code extension powered by Zowe CLI.</p>
       <div class="row">
         <div class="card-body">
           <h5 class="card-title">Zowe CLI</h5>
@@ -50,16 +61,22 @@
           <p class="card-text">Download the Zowe CLI core package and optionally download the plug-ins (CICS, Db2, IMS, MQ, z/OS FTP, and so on) to gain more capabilities.</p>
           <p><a class="btn btn-primary" href="{{ site.cli_download_url }}{{ site.data.releases[0].cli_version }}">Zowe {{ site.data.releases[0].cli_version }} CLI Core</a></p>
           <p><a class="btn btn-primary" href="{{ site.cli_plugins_download_url }}{{ site.data.releases[0].cli_plugins_version }}">Zowe {{ site.data.releases[0].cli_plugins_version }} CLI Plug-ins</a></p>
-          <div class="card-footer">
-            <a href="{{ site.zowe_cli_install_doc_url }}" class="card-link">Read installation docs</a>
+          <div>
+            <a href="{{ site.zowe_cli_install_doc_url }}" class="card-link">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+            Read installation docs
+            </a>
           </div> 
         </div>
         <div class="card-body">
           <h5 class="card-title">Zowe Explorer</h5>
           <p class="card-text">Installed directly to VSCode within the GUI</p>
           <p><a class="btn btn-primary" href="{{ site.vscode_marketplace_url }}">Visual Studio Code Marketplace</a></p>
-          <div class="card-footer">
-            <a href="{{ site.zowe_explorer_install_doc_url }}" class="card-link">Read installation docs</a>
+          <div>
+            <a href="{{ site.zowe_explorer_install_doc_url }}" class="card-link">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+            Read installation docs
+            </a>
           </div> 
        </div>
      </div>
@@ -72,10 +89,13 @@
     <a class="button" href="{{ site.cli_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} CLI</a>
   </p>
 {% endif %}
-
-<h2>Previous Releases</h2>
+<p> </p>
+<h1>Previous Releases</h1>
 <p>
 Download previous releases of Zowe by version number. 
+</p>
+<p>
+Zowe version 1.0.0 through 1.8.0 are available as rollup convenience build. Zowe version 1.9.0 is the first Active Long-Term Support (LTS) release. Starting in 1.9.0, the Zowe SMP/E build is made available with an FMID of AZWE001, which is the same content as the Zowe 1.9.0 convenience build. Updates in subsequent releases are made available as co-requisite PTFs. Also, starting in 1.9.0, Zowe CLI core and plug-in packages are distributed separately.
 </p>
 {% for release in site.data.releases %}
   {% if forloop.first %}
@@ -104,7 +124,7 @@ Download previous releases of Zowe by version number.
       {% endif %}
     {% endif %}
     {% if release.cli_plugins_version %}
-      <td><a href="{{site.cli_plugins_download_url}}{{release.cli_plugins_version}}">CLI Plugins</a></td>
+      <td><a href="{{site.cli_plugins_download_url}}{{release.cli_plugins_version}}">CLI Plug-ins</a></td>
     {% else %}
       <td></td>
     {% endif %}
@@ -114,7 +134,7 @@ Download previous releases of Zowe by version number.
   {% endunless %}
   {% if forloop.last %}
   </table>
-  <p><i>All builds prior to Zowe v1.0.0 are no longer available.</i></p>
+  <p class="text-muted">All builds prior to Zowe v1.0.0 are no longer available.</p>
   {% endif %}
 {% endfor %}
 </section>
