@@ -95,7 +95,7 @@
 Download previous releases of Zowe by version number. 
 </p>
 <p>
-Zowe version 1.0.0 through 1.8.0 are available as rollup convenience build. Zowe version 1.9.0 is the first Active Long-Term Support (LTS) release. Starting in 1.9.0, the Zowe SMP/E build is made available with an FMID of AZWE001, which is the same content as the Zowe 1.9.0 convenience build. Updates in subsequent releases are made available as co-requisite PTFs. Also, starting in 1.9.0, Zowe CLI core and plug-in packages are distributed separately.
+Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds. Zowe version 1.9.0 is the beginning of the Active Long-Term Support (LTS) release and it provides an SMP/E build with an FMID of AZWE001. The SMP/E build is the same content as the Zowe 1.9.0 convenience build. Updates in subsequent releases are made available as co-requisite PTFs as well as in convenience builds. Also, starting in 1.9.0, Zowe CLI core and plug-in packages are distributed separately.
 </p>
 {% for release in site.data.releases %}
   {% if forloop.first %}
