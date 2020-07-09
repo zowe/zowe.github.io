@@ -31,7 +31,6 @@ body html {
 
 .socialfooter {
   width:60%;
-  padding-top:%;
 }
 
 .socialfooter a img{
@@ -76,7 +75,6 @@ body html {
   padding-right:4%;
   font-size: 18px;
   cursor: pointer;
-  cursor:hand;
 }
 
 .nav > .nav-links > a {
@@ -86,14 +84,11 @@ body html {
   color: #efefef;
   font-weight:700;
   cursor: pointer;
-  cursor:hand;
 }
 
 .nav > .nav-links > a:hover {
   background-color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  cursor:hand;
-
 }
 
 .nav > #nav-check {
@@ -157,24 +152,24 @@ body html {
     overflow-y: auto;
   }
 }
-  @media (max-width:900px) {
 
-    .nav-links img{
+@media (max-width:900px) {
+
+    .nav-links img {
       width:3%;
       padding-right:0%;
       padding-top:5%;
       margin-left:0% !important;
     }
-  }
+}
 
-  @media (max-width:600px) {
-
+@media (max-width:600px) {
 
     .nav > .nav-header > .nav-title {
       padding-left: 4%;
     }
 
-    .nav-links img{
+    .nav-links img {
       width:7%;
       padding-right:1%;
       padding-top:6%;
