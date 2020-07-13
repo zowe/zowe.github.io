@@ -8,7 +8,7 @@ redirect_from:
 
 <div class="announcementsection">
 <h1>Announcements</h1>
-<strong>Zowe {{ site.data.releases[0].version }} is now available. See <a href="{{ site.docs_site_url }}/{{site.data.releases[0].documentation}}/getting-started/summaryofchanges.html">What's New</a>.<br></strong>
+<strong>Zowe {{ site.data.releases[0].version }} is now available. You can download the installers and PTFs ({{ site.data.releases[0].smpe_numbers }}) for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="{{ site.docs_site_url }}/{{site.data.releases[0].documentation}}/getting-started/summaryofchanges.html">Release notes</a>.<br></strong>
 {% if site.data.announcements %}
 {% for announcement in site.data.announcements %}
 <strong>{{ announcement.announcement }}
