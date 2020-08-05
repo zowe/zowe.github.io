@@ -40,6 +40,9 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 <p><b>API Mediation Layer:</b> Provides a gateway that acts as a reverse proxy for z/OS services, together with a catalog of REST APIs and a dynamic discovery capability. Base Zowe provides core services for working with MVS Data Sets, JES, as well as working with z/OSMF REST APIs. The API Mediation Layer also provides a framework for Single Sign On (SSO). </p>
 
 <p><b>Zowe CLI:</b> Provides a command-line interface that lets you interact with the mainframe remotely and use common tools such as Integrated Development Environments (IDEs), shell commands, bash scripts, and build tools for mainframe development. It provides a set of utilities and services for application developers that want to become efficient in supporting and building z/OS applications quickly. The CLI provides a core set of commands for working with data sets, USS, JES, as well as issuing TSO and console commands.</p>
+
+<p><b>Zowe Client Software Development Kits (SDKs)</b> Provides access to a set of programamatic APIs that you can use to build client applications or scripts that interact with z/OS. SDKs are available for Node and Python.</p>
+
 </div>
 
 <div class="videocol">
