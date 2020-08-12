@@ -40,7 +40,7 @@ Any site updates can be submitted as a pull request. We recommmend you [create a
 * Run `bundle install` to install the GitHub Pages gem
 * Run `bundle exec jekyll serve` to host the site locally (at `http://localhost:4000`)
 
-This repo aligns with the general [Zowe project role definitions](https://github.com/zowe/zlc/blob/master/process/roles.md) and [License and Copyright guidance] (https://github.com/zowe/zlc/blob/master/process/LicenseAndCopyrightGuidance.md)
+This repo aligns with the general [Zowe project role definitions](https://github.com/zowe/zlc/blob/master/process/roles.md) and [License and Copyright guidance](https://github.com/zowe/zlc/blob/master/process/LicenseAndCopyrightGuidance.md)
 
 ## Governance
 
