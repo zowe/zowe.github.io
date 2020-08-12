@@ -1,6 +1,15 @@
 # List of Zowe releases - update here and it will update the entire site :-)
 # Note - keep this in order as the latest release is pulled from the first item in the list!
 
+- version: 1.14.0
+  zos_version: 1.14.0
+  smpe_version: 1.14.0
+  smpe_sysmod: PTF
+  smpe_numbers: UO01951 and UO01952
+  cli_version: 1.14.0
+  cli_plugins_version: 1.14.0
+  release_date: 2020-08-11
+  documentation: stable
 - version: 1.13.0
   zos_version: 1.13.0
   smpe_version: 1.13.0
@@ -9,7 +18,7 @@
   cli_version: 1.13.0
   cli_plugins_version: 1.13.0
   release_date: 2020-07-10
-  documentation: stable
+  documentation: v1-13-x
 - version: 1.12.0
   zos_version: 1.12.0
   smpe_version: 1.12.0
