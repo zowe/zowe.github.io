@@ -20,7 +20,7 @@
 <div class="card-deck">
 <div class="card bg-light border-light mb-3">
   <h4 class="card-header">Server-side component installer</h4>
-    <div class="card-body"> 
+    <div class="card-body">
     <p class="card-text">Install Zowe z/OS components from the <b>convenience build</b> or the <b>SMP/E build</b> depending on your need.</p>
         <div class="row">
           <div class="card-body">
@@ -32,7 +32,7 @@
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
             Read installation docs
             </a>
-          </div> 
+          </div>
           </div>
           <div class="card-body">
             <h5 class="card-title">SMP/E build</h5>
@@ -45,7 +45,7 @@
               <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
               Read installation docs
               </a>
-            </div> 
+            </div>
           </div>
        </div>
     </div>
@@ -66,8 +66,19 @@
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
             Read installation docs
             </a>
-          </div> 
-        </div>
+          </div>
+        </div>        <div class="card-body">
+          <h5 class="card-title">Zowe Client SDKs</h5>
+          <p class="card-text">Download the Zowe Software Development Kits (SDKs) for use in development and automation.</p>
+          <p><a class="btn btn-primary" href="{{ site.zowe_node_sdk_download_url }}">Zowe Node Client SDK</a></p>
+          <p><a class="btn btn-primary" href="{{ site.zowe_python_sdk_download_url }}">Zowe Python Client SDK</a></p>
+          <div>
+            <a href="{{ site.zowe_sdk_install_doc_url }}" class="card-link">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+            Read installation docs
+            </a>
+          </div>
+       </div>
         <div class="card-body">
           <h5 class="card-title">Zowe Explorer</h5>
           <p class="card-text">Installed directly to VSCode within the GUI</p>
@@ -77,10 +88,10 @@
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
             Read installation docs
             </a>
-          </div> 
+          </div>
        </div>
      </div>
-   </div>  
+   </div>
 </div>
 </div>
 {% else %}
@@ -92,7 +103,7 @@
 <p> </p>
 <h1>Previous Releases</h1>
 <p>
-Download previous releases of Zowe by version number. 
+Download previous releases of Zowe by version number.
 </p>
 <p>
 Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds. Zowe version 1.9.0 is the beginning of the Active Long-Term Support (LTS) release and it provides an SMP/E build with an FMID of AZWE001. The SMP/E build is the same content as the Zowe 1.9.0 convenience build. Updates in subsequent releases are made available as co-requisite PTFs as well as in convenience builds. Also, starting in 1.9.0, Zowe CLI core and plug-in packages are distributed separately.
