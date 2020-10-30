@@ -23,8 +23,8 @@ cli_download_url: https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/do
 cli_plugins_download_url: https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/download/legal.html?type=cli-plugins&version=
 cli_active_development_download_url: https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/download/legal.html?type=cli-active-development&version=
 smpe_download_url: https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/download/legal.html?type=smpe&version=
-zowe_node_sdk_download_url:
-zowe_python_sdk_download_url:
+zowe_node_sdk_download_url: https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/download/legal.html?type=nodejs-sdk&version=
+zowe_python_sdk_download_url: https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/download/legal.html?type=python-sdk&version=
 nightly_build_url: https://zowe.jfrog.io/zowe/webapp/#/artifacts/browse/tree/General/libs-release-local/org/zowe/nightly
 zowe_build_slack_url: https://openmainframeproject.slack.com/archives/CC9QW5NJE
 lts_url: https://github.com/zowe/zlc/blob/master/process/ReleaseProcess.md
