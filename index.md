@@ -41,7 +41,7 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 
 <p><b>Zowe CLI:</b> Provides a command-line interface that lets you interact with the mainframe remotely and use common tools such as Integrated Development Environments (IDEs), shell commands, bash scripts, and build tools for mainframe development. It provides a set of utilities and services for application developers that want to become efficient in supporting and building z/OS applications quickly. The CLI provides a core set of commands for working with data sets, USS, JES, as well as issuing TSO and console commands.</p>
 
-<p><b>Zowe Client Software Development Kits (SDKs)</b> Provides access to a set of programamatic APIs that you can use to build client applications or scripts that interact with z/OS. SDKs are available for Node and Python.</p>
+<p><b>Zowe Client Software Development Kits (SDKs)</b> Provides access to a set of programamatic APIs that you can use to build client applications or scripts that interact with z/OS. SDKs are available for Node.js and Python.</p>
 
 </div>
 

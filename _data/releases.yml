@@ -8,6 +8,8 @@
   smpe_numbers: UO01955 and UO01956
   cli_version: 1.16.0
   cli_plugins_version: 1.16.0
+  node_sdk_version: 1.16.0
+  python_sdk_version: 1.16.0
   release_date: 2020-10-13
   documentation: stable
 - version: 1.15.0
