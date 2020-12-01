@@ -1,6 +1,44 @@
 # List of Zowe releases - update here and it will update the entire site :-)
 # Note - keep this in order as the latest release is pulled from the first item in the list!
 
+- version: 1.16.0
+  zos_version: 1.16.0
+  smpe_version: 1.16.0
+  smpe_sysmod: PTF
+  smpe_numbers: UO01955 and UO01956
+  cli_version: 1.16.0
+  cli_plugins_version: 1.16.0
+  node_sdk_version: 1.16.0
+  python_sdk_version: 1.16.0
+  release_date: 2020-10-13
+  documentation: stable
+- version: 1.15.0
+  zos_version: 1.15.0
+  smpe_version: 1.15.0
+  smpe_sysmod: PTF
+  smpe_numbers: UO01953 and UO01954
+  cli_version: 1.15.0
+  cli_plugins_version: 1.15.0
+  release_date: 2020-09-11
+  documentation: v1-15-x
+- version: 1.14.0
+  zos_version: 1.14.0
+  smpe_version: 1.14.0
+  smpe_sysmod: PTF
+  smpe_numbers: UO01951 and UO01952
+  cli_version: 1.14.0
+  cli_plugins_version: 1.14.0
+  release_date: 2020-08-11
+  documentation: v1-14-x
+- version: 1.13.0
+  zos_version: 1.13.0
+  smpe_version: 1.13.0
+  smpe_sysmod: PTF
+  smpe_numbers: UO01948 and UO01949
+  cli_version: 1.13.0
+  cli_plugins_version: 1.13.0
+  release_date: 2020-07-10
+  documentation: v1-13-x
 - version: 1.12.0
   zos_version: 1.12.0
   smpe_version: 1.12.0
@@ -9,7 +47,7 @@
   cli_version: 1.12.0
   cli_plugins_version: 1.12.0
   release_date: 2020-06-12
-  documentation: stable
+  documentation: v1-12-x
 - version: 1.11.0
   zos_version: 1.11.0
   smpe_version: 1.11.0
