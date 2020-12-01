@@ -133,6 +133,9 @@ Test the latest Zowe features and provide feedback. Technical previews are <b>fo
               </a>
             </div>
        </div>
+    </div>
+  </div>
+</div>
 
 <h1>Previous Releases</h1>
 <p>
