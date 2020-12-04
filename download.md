@@ -110,32 +110,32 @@ Test the latest Zowe features and provide feedback. Technical previews are <b>fo
 <p>Explore the upcoming production-ready release below and provide feedback to the community on the documentation, user experience, and desired features that can be implemented in future releases. Any feedback you can provide is highly appreciated. Let us know via Slack or Github!
 </p>
 <div class="card-deck">
-<div class="card bg-light border-light mb-3">
+  <div class="card bg-light border-light mb-3">
   <h4 class="card-header">Zowe Docker build</h4>
-  <div class="card-body">
+    <div class="card-body">
     <p class="card-text">The Zowe Docker build enables you to run a subset of the Zowe server-side components outside z/OS. The Docker build runs in combination with the convenience or S MP/E build. Learn more about the relationship of the builds in the docs.</p>
-    <p>
     <p class="card-text">You can download the build directly via the tarball, or as a cloud download from dockerhub. Separate downloads exist for z/Linux ("S390") and other Linux ("amd64" for intel & amd systems).</p>
         <div class="row">
           <div class="card-body">
             <h5 class="card-title">Direct download</h5>
-            <p><a class="btn btn-primary" href="{{ site.zos_download_url }}{{ site.data.releases[0].zos_version }}">Zowe {{ site.data.releases[0].zos_version }} amd64 tarball</a></p>
-            <p><a class="btn btn-primary" href="{{ site.zos_download_url }}{{ site.data.releases[0].zos_version }}">Zowe {{ site.data.releases[0].zos_version }} s390x tarball</a></p>
+            <p><a class="btn btn-primary" href="{{ site.docker_download_url }}{{ site.data.releases[0].zos_version }}/zowe-v1-lts.amd64-{{ site.data.releases[0].zos_version }}.tar">Zowe {{ site.data.releases[0].zos_version }} amd64 tarball</a></p>
+            <p><a class="btn btn-primary" href="{{ site.docker_download_url }}{{ site.data.releases[0].zos_version }}/zowe-v1-lts.s390x-{{ site.data.releases[0].zos_version }}.tar">Zowe {{ site.data.releases[0].zos_version }} s390x tarball</a></p>
           </div>
           <div class="card-body">
             <h5 class="card-title">Cloud download</h5>
-            <p><a class="btn btn-primary" href="{{ site.smpe_download_url }}{{ site.zowe_fmid_oss_version }}">Zowe v1.x LTS dockerhub</a></p>
+            <p><a class="btn btn-primary" href="{{ site.zowe_dockerhub_download_url }}">Zowe v1.x LTS dockerhub</a></p>
             <div>
               <a href="{{ site.zos_component_install_doc_url }}" class="card-link">
               <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
               Read installation docs
               </a>
             </div>
-          </div>
-        </div>
-      </div>
+         </div>
+      </div>   
     </div>
+  </div>
 </div>
+
 
 <h1>Previous Releases</h1>
 <p>

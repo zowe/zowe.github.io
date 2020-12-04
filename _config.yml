@@ -35,6 +35,8 @@ zowe_cli_install_doc_url: https://docs.zowe.org/stable/user-guide/cli-installcli
 zowe_explorer_install_doc_url: https://docs.zowe.org/stable/user-guide/ze-install.html
 zowe_sdk_install_doc_url: https://docs.zowe.org/stable/user-guide/sdks-using.html
 vscode_marketplace_url: https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe
+zowe_docker_download_url: https://zowe.jfrog.io/zowe/libs-release-local/org/zowe/
+zowe_dockerhub_download_url: https://hub.docker.com/r/ompzowe/zowe-v1-lts
 
 #TODO add url for zowe_sdk_install_doc_url, zowe_node_sdk_download_url, and zowe_python_sdk_download_url
 
