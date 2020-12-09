@@ -30,7 +30,7 @@ Zowe is an integrated and extensible open source framework for z/OS. Zowe, like 
 </p>
 
 <p>
-Zowe offers modern interfaces to interact with z/OS and allows you to work with z/OS in a way that is similar to what you experience on cloud platforms today. You can use these interfaces as delivered or through plug-ins and extensions that are created by clients or third-party vendors.
+Zowe offers modern interfaces to interact with z/OS and allows you to work with z/OS in a way that is similar to what you experience on cloud platforms today. You can use these interfaces as delivered or through plug-ins and extensions that are created by clients or third-party vendors. 
 </p>
 
 <p>Zowe consists of the following main components.</p>
@@ -44,9 +44,9 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 <p><b>Zowe Explorer:</b> A Visual Studio Code extension that lets you interact with data sets, USS files and jobs that are stored on z/OS. Working with data sets and USS files from VS Code can be more convenient than using 3270 emulators, and complements your Zowe CLI experience.
 </p>
 
-<p><b>Zowe Client SDKs <i>(incubation)</i>:</b> Provides access to a set of programmatic APIs that you can use to build client applications or scripts that interact with z/OS. SDKs are available for Node.js and Python.</p>
+<p><b>Zowe Client SDKs <i>(under development)</i>:</b> Provides access to a set of programmatic APIs that you can use to build client applications or scripts that interact with z/OS. SDKs are available for Node.js and Python.</p>
 
-<p><b>Zowe Mobile <i>(incubation)</i>:</b> Lets you interact with your Zowe instance running on the mainframe from your mobile.</p>
+<p><b>Zowe Mobile <i>(under development)</i>:</b> Lets you interact with your Zowe instance running on the mainframe from your mobile.</p>
 
 </div>
 
