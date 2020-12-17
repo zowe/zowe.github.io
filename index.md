@@ -41,7 +41,7 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 
 <p><b>Zowe CLI:</b> Provides a command-line interface that lets you interact with the mainframe remotely and use common tools such as Integrated Development Environments (IDEs), shell commands, bash scripts, and build tools for mainframe development. It provides a set of utilities and services for application developers that want to become efficient in supporting and building z/OS applications quickly. The CLI provides a core set of commands for working with data sets, USS, JES, as well as issuing TSO and console commands.</p>
 
-<p><b>Zowe Explorer:</b> A Visual Studio Code extension that lets you interact with data sets, USS files and jobs that are stored on z/OS. Working with data sets and USS files from VS Code can be more convenient than using 3270 emulators, and complements your Zowe CLI experience.
+<p><b>Zowe Explorer:</b> A Visual Studio Code extension that modernizes the way developers and system administrators interact with z/OS mainframes. Zowe Explorer lets you interact with data sets, USS files, and jobs that are stored on z/OS. The extension complements your Zowe CLI experience and lets you use authentication services like API Mediation Layer.
 </p>
 <div class="card">
   <div class="card-body">
