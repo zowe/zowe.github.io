@@ -26,14 +26,14 @@ redirect_from:
 
 <div class="section1col1">
 <p>
-Zowe is an open source project created to host technologies that benefit the Z platform from all members of the Z community (Integrated Software Vendors, System Integrators and z/OS consumers). Zowe, like Mac OS or Windows, comes with a set of APIs and OS capabilities that applications build on and also includes some applications out of the box.
+Zowe is an integrated and extensible open source framework for z/OS. Zowe, like Mac OS or Windows, comes with a set of APIs and OS capabilities that applications build on and also includes some applications out of the box.
 </p>
 
 <p>
-Zowe offers modern interfaces to interact with z/OS and allows you to work with z/OS in a way that is similar to what you experience on cloud platforms today. You can use these interfaces as delivered or through plug-ins and extensions that are created by clients or third-party vendors.
+Zowe offers modern interfaces to interact with z/OS and allows you to work with z/OS in a way that is similar to what you experience on cloud platforms today. You can use these interfaces as delivered or through plug-ins and extensions that are created by clients or third-party vendors. 
 </p>
 
-<p>Zowe consists of the following main components.</p>
+<p>Zowe consists of the following components.</p>
 
 <p><b>Zowe Application Framework:</b> A web user interface (UI) that provides a virtual desktop containing a number of apps allowing access to z/OS function.  Base Zowe includes apps for traditional access such as a 3270 terminal and a VT Terminal, as well as an editor and explorers for working with JES, MVS Data Sets and Unix System Services.</p>
 
@@ -41,7 +41,18 @@ Zowe offers modern interfaces to interact with z/OS and allows you to work with 
 
 <p><b>Zowe CLI:</b> Provides a command-line interface that lets you interact with the mainframe remotely and use common tools such as Integrated Development Environments (IDEs), shell commands, bash scripts, and build tools for mainframe development. It provides a set of utilities and services for application developers that want to become efficient in supporting and building z/OS applications quickly. The CLI provides a core set of commands for working with data sets, USS, JES, as well as issuing TSO and console commands.</p>
 
-<p><b>Zowe Client Software Development Kits (SDKs):</b> Provides access to a set of programmatic APIs that you can use to build client applications or scripts that interact with z/OS. SDKs are available for Node.js and Python.</p>
+<p><b>Zowe Explorer:</b> A Visual Studio Code extension that modernizes the way developers and system administrators interact with z/OS mainframes. Zowe Explorer lets you interact with data sets, USS files, and jobs that are stored on z/OS. The extension complements your Zowe CLI experience and lets you use authentication services like API Mediation Layer.
+</p>
+<div class="card">
+  <div class="card-body">
+  <p class="card-text">
+    <b>Zowe Client SDKs <i>(under development)</i>:</b> Provides access to a set of programmatic APIs that you can use to build client applications or scripts that interact with z/OS. SDKs are available for Node.js and Python.
+  </p>
+  <p class="card-text">
+    <b>Zowe Mobile <i>(Incubator)</i>:</b> Lets you interact with your Zowe instance running on the mainframe from your mobile.
+  </p>
+  </div>
+</div>
 
 </div>
 
