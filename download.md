@@ -118,8 +118,8 @@ Test the latest Zowe features and provide feedback. Technical previews are <b>fo
         <div class="row">
           <div class="card-body">
             <h5 class="card-title">Direct download</h5>
-            <p><a class="btn btn-primary" href="{{ site.docker_download_url }}{{ site.data.releases[0].zos_version }}/server-bundle.amd64-{{ site.data.releases[0].zos_version }}.tar">Zowe {{ site.data.releases[0].zos_version }} amd64 tarball</a></p> 
-            <p><a class="btn btn-primary" href="{{ site.docker_download_url }}{{ site.data.releases[0].zos_version }}/server-bundle.s390x-{{ site.data.releases[0].zos_version }}.tar">Zowe {{ site.data.releases[0].zos_version }} s390x tarball</a></p> 
+            <p><a class="btn btn-primary" href="{{ site.zowe_docker_download_url }}/{{ site.data.releases[0].zos_version }}/server-bundle.amd64-{{ site.data.releases[0].zos_version }}.tar">Zowe {{ site.data.releases[0].zos_version }} amd64 tarball</a></p> 
+            <p><a class="btn btn-primary" href="{{ site.zowe_docker_download_url }}/{{ site.data.releases[0].zos_version }}/server-bundle.s390x-{{ site.data.releases[0].zos_version }}.tar">Zowe {{ site.data.releases[0].zos_version }} s390x tarball</a></p> 
           </div>
           <div class="card-body">
             <h5 class="card-title">Cloud download</h5>
