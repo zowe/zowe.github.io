@@ -11,7 +11,7 @@
   python_sdk_version: 1.18.0
   release_date: 2021-01-07
   documentation: stable
-- version: 1.18.0
+- version: 1.17.0
   zos_version: 1.17.0
   smpe_version: 1.17.0
   smpe_sysmod: PTF
