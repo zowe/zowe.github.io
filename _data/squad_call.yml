@@ -1,0 +1,56 @@
+# Squad Call
+# Any kind of links should NOT be in ""
+
+- squad-name: "Zowe API"
+  day: "Tue/Thu 9-10am"
+  meeting-link: https://github.com
+  meeting-topic: https://github.com
+  slack: "#zowe-api"
+  github-link: https://github.com
+  description: "This squad develops and maintains the Zowe API Mediation Layer sub-project and API authentication and authorization."
+
+- squad-name: "Zowe Application Framework"
+  day: "Fri 9-10am"
+  meeting-link: https://github.com
+  meeting-topic: https://github.com
+  github-link: https://github.com
+  description: "TThis squad develops and maintains the Zowe Desktop and Zowe Application Framework sub-projects."
+
+- squad-name: "Zowe Explorer"
+  day: "Tue 10:30-11am, Thu 8-8:30am"
+  meeting-link: https://github.com
+  meeting-topic: https://github.com
+  slack: "#zowe-explorer"
+  github-link: https://github.com
+  description: "This squad develops and maintains the Zowe Explorer sub-project."
+
+- squad-name: "Zowe CLI"
+  day: "Mon 11-11:30am, Wed 8-8:30am"
+  meeting-link: https://github.com
+  meeting-topic: https://github.com
+  slack: "#zowe-cli"
+  github-link: https://github.com
+  description: "This squad develops and maintains the Zowe CLI sub-project."
+
+- squad-name: "Zowe Systems"
+  day: "Thu 11am-12pm"
+  meeting-link: https://github.com
+  meeting-topic: https://github.com
+  github-link: https://github.com
+  description: "This squad maintains Zowe’s installation tools, infrastructure, and integration of Zowe components."
+
+- squad-name: "Documentation"
+  day: "Wed 9:30-10am (biweekly)"
+  meeting-link: https://github.com
+  meeting-topic: https://github.com
+  slack: "#zowe-doc"
+  github-link: https://github.com
+  description: "This squad develops and maintains the Zowe documentation."
+
+- squad-name: "Onboarding"
+  day: "Wed 1:30-2pm"
+  meeting-link: https://github.com
+  meeting-topic: https://github.com
+  slack: "#zowe-onboarding"
+  github-link: https://github.com
+  description: "This squad helps new users get started with Zowe and assists those looking to build on top of Zowe."
