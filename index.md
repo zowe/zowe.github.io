@@ -176,5 +176,9 @@ redirect_from:
       </div>
     </div>
   </div>
+  <div id="medium-widget" style="margin-top: 5%">
+    </div>
+      <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+      <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/zowe","postsPerLine":2,"limit":4,"picture":"small","fields":["description","publishAt"],"ratio":"landscape"}})</script>
 
 </div>
