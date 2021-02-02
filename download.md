@@ -154,7 +154,7 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
     {% if release.zos_version %}
       <td><a href="{{site.zos_download_url}}{{release.zos_version}}">z/OS Convenience build</a></td>
     {% else %}
-      <td><a href="{{site.zos_download_url}}{{release.version}}">z/OS Convenience build</a></td>
+      <td></td>
     {% endif %}
     {% if release.smpe_version and release.smpe_sysmod %}
       <td><a href="{{site.smpe_download_url}}{{release.smpe_version}}">SMP/E {{release.smpe_sysmod}} {{release.smpe_numbers}}</a></td>
