@@ -11,6 +11,31 @@
   python_sdk_version: 1.19.0
   release_date: 2021-01-29
   documentation: stable
+- version: 1.18.0
+  cli_version: 1.18.0
+  cli_plugins_version: 1.18.0
+  node_sdk_version: 1.18.0
+  python_sdk_version: 1.18.0
+  release_date: 2021-01-07
+  documentation: v1-18-x
+- version: 1.17.0
+  cli_version: 1.17.0
+  cli_plugins_version: 1.17.0
+  node_sdk_version: 1.17.0
+  python_sdk_version: 1.17.0
+  release_date: 2020-12-07
+  documentation: v1-17-x
+- version: 1.16.0
+  zos_version: 1.16.0
+  smpe_version: 1.16.0
+  smpe_sysmod: PTF
+  smpe_numbers: UO01955 and UO01956
+  cli_version: 1.16.0
+  cli_plugins_version: 1.16.0
+  node_sdk_version: 1.16.0
+  python_sdk_version: 1.16.0
+  release_date: 2020-10-13
+  documentation: v1-16-x
 - version: 1.15.0
   zos_version: 1.15.0
   smpe_version: 1.15.0
