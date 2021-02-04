@@ -158,7 +158,7 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
     {% endif %}
     {% if release.smpe_version and release.smpe_sysmod == "PE-PTF" %}
       <td><a href="https://www.ibm.com/support/knowledgecenter/SSLTBW_2.4.0/com.ibm.zos.v2r4.gim3000/esmovr.htm">SMP/E {{release.smpe_sysmod}} {{release.smpe_numbers}}</a></td>
-    {% elseif release.smpe_version and release.smpe_sysmod %}
+    {% elsif release.smpe_version and release.smpe_sysmod %}
       <td><a href="{{site.smpe_download_url}}{{release.smpe_version}}">SMP/E {{release.smpe_sysmod}} {{release.smpe_numbers}}</a></td>
     {% else %}
       <td></td>
