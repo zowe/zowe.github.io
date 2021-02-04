@@ -26,10 +26,10 @@
     <div class="row">
       <a class="col-md-3" href="{{ site.ibm_ztrial_url }}"><button type="button" class="btn btn-primary btn-lg btn-block">Browse Code and Raise Issues</button></a>
       <p class="col-md-9"><strong>
-        Zowe Github: Go here if you want to see all of Zowe’s code, raise support issues, or start contributing to Zowe!.</strong>
+        Zowe Github: Go here if you want to see all of Zowe’s code, raise support issues, or start contributing to Zowe!</strong>
       </p>
     </div>
-    <div class="row">
+    <div class="row" style="margin-top: 1rem">
       <a class="col-md-3" href="{{ site.ibm_ztrial_url }}"><button type="button" class="btn btn-primary btn-lg btn-block">Try Zowe Without Installation</button></a>
       <div class="col-md-9">
         <strong>

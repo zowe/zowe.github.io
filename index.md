@@ -7,6 +7,35 @@ redirect_from:
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- Copyright Contributors to the Zowe project. -->
 
+<script>
+  fetch(`http://wash.zowe.org:3000/api/cli`)
+    .then((response) => response.json())
+    .then((data) => {
+      // let CLI_DOWNLOAD_VALUE = data.downloads;
+      document.querySelector('#cli-downloads').innerHTML = data.downloads;
+    });
+  fetch(`http://wash.zowe.org:3000/api/explorer`)
+    .then((response) => response.json())
+    .then((data) => {
+      document.querySelector('#explorer-downloads').innerHTML = data.downloads;
+    });
+  fetch(`http://wash.zowe.org:3000/api/server`)
+    .then((response) => response.json())
+    .then((data) => {
+      document.querySelector('#server-downloads').innerHTML = data.downloads;
+    });
+  fetch(`http://wash.zowe.org:3000/api/omp`)
+    .then((response) => response.json())
+    .then((data) => {
+      document.querySelector('#github-contributors').innerHTML = data.githubSubmittors;
+    });
+  fetch(`http://wash.zowe.org:3000/api/conformants`)
+    .then((response) => response.json())
+    .then((data) => {
+      document.querySelector('#conformant-product-value').innerHTML = data.products;
+    });
+</script>
+
 <div class="announcementsection">
   <h1>Announcements</h1>
   <!-- <p>
@@ -54,35 +83,35 @@ redirect_from:
 <div style="padding: 2% 3%; background-color: #74a9de; color: black !important;">
   <div class="row" style="margin-bottom: 2%">
     <div class="col-md text-center">
-      <img style="width:25%;" src="assets/img/github.svg">
-      <h6 style="margin-bottom: 0rem">15814</h6>
+      <img style="width:25%;" src="assets/img/github.svg" />
+      <h6 style="margin-bottom: 0rem" id="cli-downloads"></h6>
       <h6>Zowe CLI Downloads</h6>
     </div>
     <div class="col-md text-center">
-      <img style="width:25%" src="assets/img/github.svg">
-      <h6 style="margin-bottom: 0rem">22376</h6>
+      <img style="width:25%" src="assets/img/github.svg" />
+      <h6 style="margin-bottom: 0rem" id="explorer-downloads"></h6>
       <h6>Zowe Explorer Downloads</h6>
     </div>
     <div class="col-md text-center">
-      <img style="width:25%" src="assets/img/github.svg">
-      <h6 style="margin-bottom: 0rem">18000</h6>
+      <img style="width:25%" src="assets/img/github.svg" />
+      <h6 style="margin-bottom: 0rem" id="server-downloads"></h6>
       <h6>Zowe Build Downloads</h6>
     </div>
   </div>
   <div class="row">
     <div class="col-md text-center">
-      <img style="width:25%" src="assets/img/github.svg">
+      <img style="width:25%" src="assets/img/github.svg" />
       <h6 style="margin-bottom: 0rem">33000</h6>
       <h6>Slack Community Members</h6>
     </div>
     <div class="col-md text-center">
-      <img style="width:25%" src="assets/img/github.svg">
-      <h6 style="margin-bottom: 0rem">134</h6>
+      <img style="width:25%" src="assets/img/github.svg" />
+      <h6 style="margin-bottom: 0rem" id="github-contributors"></h6>
       <h6>Open Source Contributors</h6>
     </div>
     <div class="col-md text-center">
-      <img style="width:25%" src="assets/img/github.svg">
-      <h6 style="margin-bottom: 0rem">53</h6>
+      <img style="width:25%" src="assets/img/github.svg" />
+      <h6 style="margin-bottom: 0rem" id="conformant-product-value"></h6>
       <h6>Vendor Products</h6>
     </div>
   </div>
@@ -163,7 +192,7 @@ redirect_from:
         <p style="margin-top: 1rem">Learn how Zowe works and what it can do for you</p>
       </div>
       <div class="col-sm text-center">
-        <a href="/docs"><button type="button" class="btn btn-primary btn-lg btn-block">Use</button></a>
+        <a href="https://docs.zowe.org/"><button type="button" class="btn btn-primary btn-lg btn-block">Use</button></a>
         <p style="margin-top: 1rem">Get started with installing and using Zowe</p>
       </div>
       <div class="col-sm text-center">

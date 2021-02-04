@@ -47,6 +47,7 @@
     <p>Zowe is an open source project - this means that anyone can contribute to any part of it, and that includes you! The best ways to first get involved are <a href="{{ }}">opening issues on GitHub</a>, saying hi on Slack, or joining the weekly calls of one of the squads listed below.</p>
     <p>Zowe’s most frequent and dedicated contributors work in teams called “squads”. If you have specific questions or are excited about a particular part of Zowe, connect with the relevant squad using the table below!</p>
     {% if site.data.squad_call %}
+    <div>
       <table class="table table-bordered">
         <thead>
           <tr>
@@ -82,6 +83,7 @@
           {% endfor %}
         </tbody>
       </table>
+    </div>
     {% endif %}
   </div>
 </section>
