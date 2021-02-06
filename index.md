@@ -8,7 +8,7 @@ redirect_from:
 <!-- Copyright Contributors to the Zowe project. -->
 
 <script>
-  fetch(`http://wash.zowe.org:3000/api/cli`)
+  fetch(`https://wash.zowe.org:3000/api/cli`)
     .then((response) => response.json())
     .then((data) => {
       // let CLI_DOWNLOAD_VALUE = data.downloads;
@@ -19,17 +19,17 @@ redirect_from:
     .then((data) => {
       document.querySelector('#explorer-downloads').innerHTML = data.downloads;
     });
-  fetch(`http://wash.zowe.org:3000/api/server`)
+  fetch(`https://wash.zowe.org:3000/api/server`)
     .then((response) => response.json())
     .then((data) => {
       document.querySelector('#server-downloads').innerHTML = data.downloads;
     });
-  fetch(`http://wash.zowe.org:3000/api/omp`)
+  fetch(`https://wash.zowe.org:3000/api/omp`)
     .then((response) => response.json())
     .then((data) => {
       document.querySelector('#github-contributors').innerHTML = data.githubSubmittors;
     });
-  fetch(`http://wash.zowe.org:3000/api/conformants`)
+  fetch(`https://wash.zowe.org:3000/api/conformants`)
     .then((response) => response.json())
     .then((data) => {
       document.querySelector('#conformant-product-value').innerHTML = data.products;

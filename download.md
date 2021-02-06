@@ -146,44 +146,46 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
 </p>
 {% for release in site.data.releases %}
   {% if forloop.first %}
-  <div style="overflow-x: scroll">
-    <table class="table table-hover table-sm">
-    {% endif %}
-    {% unless forloop.first %}
-      <tr>
-        <td>Zowe {{release.version}} ({{release.release_date}})</td>
-      {% if release.zos_version %}
-        <td><a href="{{site.zos_download_url}}{{release.zos_version}}">z/OS Convenience build</a></td>
-      {% else %}
-        <td><a href="{{site.zos_download_url}}{{release.version}}">z/OS Convenience build</a></td>
+    <div style="overflow-x: auto">
+      <table class="table table-hover table-sm">
       {% endif %}
-      {% if release.smpe_version and release.smpe_sysmod %}
-        <td><a href="{{site.smpe_download_url}}{{release.smpe_version}}">SMP/E {{release.smpe_sysmod}} {{release.smpe_numbers}}</a></td>
-      {% else %}
-        <td></td>
-      {% endif %}
-      {% if release.cli_version and release.cli_plugins_version %}
-        <td><a href="{{site.cli_download_url}}{{release.cli_version}}">CLI Core</a></td>
-      {% else %}
-        {% if release.cli_version %}
-          <td><a href="{{site.cli_download_url}}{{release.cli_version}}">CLI</a></td>
+      {% unless forloop.first %}
+        <tr>
+          <td>Zowe {{release.version}} ({{release.release_date}})</td>
+        {% if release.zos_version %}
+          <td><a href="{{site.zos_download_url}}{{release.zos_version}}">z/OS Convenience build</a></td>
         {% else %}
-          <td><a href="{{site.cli_download_url}}{{release.version}}">CLI</a></td>
+          <td></td>
         {% endif %}
-      {% endif %}
-      {% if release.cli_plugins_version %}
-        <td><a href="{{site.cli_plugins_download_url}}{{release.cli_plugins_version}}">CLI Plug-ins</a></td>
-      {% else %}
-        <td></td>
-      {% endif %}
-        <td><a href="{{ site.docs_site_url }}/{{release.documentation}}/getting-started/summaryofchanges.html">Release Notes</a></td>
-        <td><a href="{{ site.docs_site_url }}/{{release.documentation}}">Documentation</a></td>
-      </tr>
-    {% endunless %}
-    {% if forloop.last %}
-    </table>
-  </div>
-  <p class="text-muted">All builds prior to Zowe v1.0.0 are no longer available.</p>
+        {% if release.smpe_version and release.smpe_sysmod == "PE-PTF" %}
+          <td>SMP/E {{release.smpe_sysmod}} {{release.smpe_numbers}}</td>
+        {% elsif release.smpe_version and release.smpe_sysmod %}
+          <td><a href="{{site.smpe_download_url}}{{release.smpe_version}}">SMP/E {{release.smpe_sysmod}} {{release.smpe_numbers}}</a></td>
+        {% else %}
+          <td></td>
+        {% endif %}
+        {% if release.cli_version and release.cli_plugins_version %}
+          <td><a href="{{site.cli_download_url}}{{release.cli_version}}">CLI Core</a></td>
+        {% else %}
+          {% if release.cli_version %}
+            <td><a href="{{site.cli_download_url}}{{release.cli_version}}">CLI</a></td>
+          {% else %}
+            <td><a href="{{site.cli_download_url}}{{release.version}}">CLI</a></td>
+          {% endif %}
+        {% endif %}
+        {% if release.cli_plugins_version %}
+          <td><a href="{{site.cli_plugins_download_url}}{{release.cli_plugins_version}}">CLI Plug-ins</a></td>
+        {% else %}
+          <td></td>
+        {% endif %}
+          <td><a href="{{ site.docs_site_url }}/{{release.documentation}}/getting-started/summaryofchanges.html">Release Notes</a></td>
+          <td><a href="{{ site.docs_site_url }}/{{release.documentation}}">Documentation</a></td>
+        </tr>
+      {% endunless %}
+      {% if forloop.last %}
+      </table>
+    </div>
+    <p class="text-muted">All builds prior to Zowe v1.0.0 are no longer available.</p>
   {% endif %}
 {% endfor %}
 </section>
