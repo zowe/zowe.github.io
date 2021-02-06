@@ -146,53 +146,51 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
 </p>
 {% for release in site.data.releases %}
   {% if forloop.first %}
-    <div style="overflow-x: auto">
-      <table class="table table-hover table-sm">
+  <table class="table table-hover table-sm">
+  {% endif %}
+  {% unless forloop.first %}
+    <tr>
+      <td>Zowe {{release.version}} ({{release.release_date}})</td>
+    {% if release.zos_version %}
+      <td><a href="{{site.zos_download_url}}{{release.zos_version}}">z/OS Convenience build</a></td>
+    {% else %}
+      <td></td>
+    {% endif %}
+    {% if release.smpe_version and release.smpe_sysmod == "PE-PTF" %}
+      <td>SMP/E {{release.smpe_sysmod}} {{release.smpe_numbers}}</td>
+    {% elsif release.smpe_version and release.smpe_sysmod %}
+      <td><a href="{{site.smpe_download_url}}{{release.smpe_version}}">SMP/E {{release.smpe_sysmod}} {{release.smpe_numbers}}</a></td>
+    {% else %}
+      <td></td>
+    {% endif %}
+    {% if release.cli_version and release.cli_plugins_version %}
+      <td><a href="{{site.cli_download_url}}{{release.cli_version}}">CLI Core</a></td>
+    {% else %}
+      {% if release.cli_version %}
+        <td><a href="{{site.cli_download_url}}{{release.cli_version}}">CLI</a></td>
+      {% else %}
+        <td><a href="{{site.cli_download_url}}{{release.version}}">CLI</a></td>
       {% endif %}
-      {% unless forloop.first %}
-        <tr>
-          <td>Zowe {{release.version}} ({{release.release_date}})</td>
-        {% if release.zos_version %}
-          <td><a href="{{site.zos_download_url}}{{release.zos_version}}">z/OS Convenience build</a></td>
-        {% else %}
-          <td></td>
-        {% endif %}
-        {% if release.smpe_version and release.smpe_sysmod == "PE-PTF" %}
-          <td>SMP/E {{release.smpe_sysmod}} {{release.smpe_numbers}}</td>
-        {% elsif release.smpe_version and release.smpe_sysmod %}
-          <td><a href="{{site.smpe_download_url}}{{release.smpe_version}}">SMP/E {{release.smpe_sysmod}} {{release.smpe_numbers}}</a></td>
-        {% else %}
-          <td></td>
-        {% endif %}
-        {% if release.cli_version and release.cli_plugins_version %}
-          <td><a href="{{site.cli_download_url}}{{release.cli_version}}">CLI Core</a></td>
-        {% else %}
-          {% if release.cli_version %}
-            <td><a href="{{site.cli_download_url}}{{release.cli_version}}">CLI</a></td>
-          {% else %}
-            <td><a href="{{site.cli_download_url}}{{release.version}}">CLI</a></td>
-          {% endif %}
-        {% endif %}
-        {% if release.cli_plugins_version %}
-          <td><a href="{{site.cli_plugins_download_url}}{{release.cli_plugins_version}}">CLI Plug-ins</a></td>
-        {% else %}
-          <td></td>
-        {% endif %}
-          <td><a href="{{ site.docs_site_url }}/{{release.documentation}}/getting-started/summaryofchanges.html">Release Notes</a></td>
-          <td><a href="{{ site.docs_site_url }}/{{release.documentation}}">Documentation</a></td>
-        </tr>
-      {% endunless %}
-      {% if forloop.last %}
-      </table>
-    </div>
-    <p class="text-muted">All builds prior to Zowe v1.0.0 are no longer available.</p>
+    {% endif %}
+    {% if release.cli_plugins_version %}
+      <td><a href="{{site.cli_plugins_download_url}}{{release.cli_plugins_version}}">CLI Plug-ins</a></td>
+    {% else %}
+      <td></td>
+    {% endif %}
+      <td><a href="{{ site.docs_site_url }}/{{release.documentation}}/getting-started/summaryofchanges.html">Release Notes</a></td>
+      <td><a href="{{ site.docs_site_url }}/{{release.documentation}}">Documentation</a></td>
+    </tr>
+  {% endunless %}
+  {% if forloop.last %}
+  </table>
+  <p class="text-muted">All builds prior to Zowe v1.0.0 are no longer available.</p>
   {% endif %}
 {% endfor %}
 </section>
 
 <section class="bluebackground">
 <h1>Release Timeline</h1>
-<p><img src="assets/img/zowe-lts.png" width="90%" /></p>
+<p><img src="assets/img/zowe-lts.png" width="950" /></p>
 <p><b>Version timeframe, Current, Active LTS, Maintenance</b></p>
 <ul>
 <li>New Zowe versions will enter <b>current</b> release status for six to nine months to allow consumers of Zowe to test, provide feedback, and adjust to any changes.</li>
@@ -200,14 +198,14 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
 <li>Following a period of <b>Active LTS</b>, the Zowe version will enter <b>Maintenance</b> for fixes only.</li>
 <li>The combination of <b>Active LTS</b> and <b>Maintenance LTS</b> release is designated as <b>"long-term support”</b>, which provides two guarantees:
   <ul>
-    <li style="list-style-type: disc">Critical defects will be fixed. The criteria for what constitutes a critical defect is covered in <a href="{{ site.lts_url }}">Release Process</a>.</li>
-    <li style="list-style-type: disc">Extenders who achieve Zowe conformance for the long-term support version will not need to modify their product for it to remain functional when the Zowe community provides distributions within the release or  modification level boundary within the same version.</li>
+    <li>Critical defects will be fixed. The criteria for what constitutes a critical defect is covered in <a href="{{ site.lts_url }}">Release Process</a>.</li>
+    <li>Extenders who achieve Zowe conformance for the long-term support version will not need to modify their product for it to remain functional when the Zowe community provides distributions within the release or  modification level boundary within the same version.</li>
   </ul>
 </li>
 <li>The length of <b>Active LTS</b> may vary but the total time period of <b>Active LTS</b> + <b>Maintenance LTS</b> will be at least 24 months.</li>
 <li>Production applications should only use <b>Active LTS</b> or <b>Maintenance LTS</b> releases due to the contract with extender products remaining functional and the community’s commitment to fix critical defects.</li>
 </ul>
-<a href="{{ site.lts_url }}"><button type="button" class="btn btn-outline-light">Learn more</button></a>
+<a class="button" href="{{ site.lts_url }}">Learn more</a>
 </section>
 
 <section class="whitebackground">
