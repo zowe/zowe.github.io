@@ -5,11 +5,11 @@
   smpe_version: 1.19.1
   smpe_sysmod: PTF
   smpe_numbers: UO01969
-  cli_version: 1.19.0
-  cli_plugins_version: 1.19.0
-  node_sdk_version: 1.19.0
-  python_sdk_version: 1.19.0
-  release_date: 2021-02-08
+  cli_version: 1.19.1
+  cli_plugins_version: 1.19.1
+  node_sdk_version: 1.19.1
+  python_sdk_version: 1.19.1
+  release_date: 2021-02-11
   documentation: stable
 - version: 1.19.0
   zos_version: 1.19.0
