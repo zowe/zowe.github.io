@@ -65,3 +65,14 @@ body html {
     flex-direction: column !important;
   }
 }
+
+.image-zowe-use{
+  width: 370px;
+  margin-bottom: 1rem;
+}
+
+@media (max-width:768px) and (min-width:420px) {
+  .image-zowe-use{
+    width: 250px;
+  }
+}

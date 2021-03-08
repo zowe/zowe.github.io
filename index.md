@@ -8,27 +8,27 @@ redirect_from:
 <!-- Copyright Contributors to the Zowe project. -->
 
 <script>
-  fetch(`http://wash.zowe.org:3000/api/cli`)
+  fetch(`https://wash.zowe.org:3000/api/cli`)
     .then((response) => response.json())
     .then((data) => {
       document.querySelector('#cli-downloads').innerHTML = data.downloads;
     });
-  fetch(`http://wash.zowe.org:3000/api/explorer`)
+  fetch(`https://wash.zowe.org:3000/api/explorer`)
     .then((response) => response.json())
     .then((data) => {
       document.querySelector('#explorer-downloads').innerHTML = data.downloads;
     });
-  fetch(`http://wash.zowe.org:3000/api/server`)
+  fetch(`https://wash.zowe.org:3000/api/server`)
     .then((response) => response.json())
     .then((data) => {
       document.querySelector('#server-downloads').innerHTML = data.downloads;
     });
-  fetch(`http://wash.zowe.org:3000/api/omp`)
+  fetch(`https://wash.zowe.org:3000/api/omp`)
     .then((response) => response.json())
     .then((data) => {
       document.querySelector('#github-contributors').innerHTML = data.githubSubmittors;
     });
-  fetch(`http://wash.zowe.org:3000/api/conformants`)
+  fetch(`https://wash.zowe.org:3000/api/conformants`)
     .then((response) => response.json())
     .then((data) => {
       document.querySelector('#conformant-product-value').innerHTML = data.products;
@@ -136,12 +136,12 @@ redirect_from:
         </p>
       </div>
       <div class="col-md-5 col-sm order-first order-sm-last">
-        <img src="assets/img/ZLUXImage.png" style="width: 370px">
+        <img class="image-zowe-use" src="assets/img/ZLUXImage.png">
       </div>
     </div>
     <div class="row" style="margin-bottom: 4%">
       <div class="col-md-5 col-sm">
-        <img src="assets/img/APIMLimage.png" style="width: 370px">
+        <img class="image-zowe-use" src="assets/img/APIMLimage.png">
       </div>
       <div class="col-md-7 col-sm">
         <h4>API Mediation Layer</h4>
@@ -164,12 +164,12 @@ redirect_from:
           </p>
       </div>
       <div class="col-md-5 col-sm order-first order-sm-last">
-        <img src="assets/img/Zowe-CLI-Image.png" style="width: 370px">
+        <img class="image-zowe-use" src="assets/img/Zowe-CLI-Image.png">
       </div>
     </div>
     <div class="row" style="margin-bottom: 4%">
       <div class="col-md-5 col-sm">
-        <img src="assets/img/Zowe-Explorer.png" style="width: 370px">
+        <img class="image-zowe-use" src="assets/img/Zowe-Explorer.png">
       </div>
       <div class="col-md-7 col-sm">
         <h4>Zowe Explorer</h4>
