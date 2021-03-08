@@ -59,3 +59,9 @@ body html {
   padding-right:2%;
   display:inline;
 }
+
+@media (max-width:900px) {
+  .medium-widget-article__grid {
+    flex-direction: column !important;
+  }
+}
