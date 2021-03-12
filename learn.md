@@ -12,42 +12,39 @@
 
   <div>
     <div class="row">
-      <a class="col-md-3" href="{{ site.ibm_ztrial_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">Learn, Get Started, and Troubleshoot</button></a>
-      <p class="col-md-9"><strong>
-        Zowe Docs: A comprehensive guide to all things Zowe! Go here if you want a clear, detailed written walkthrough of how Zowe works, the features and benefits of each component, and information about installation and troubleshooting.</strong>
+      <a class="col-md-3" href="{{ site.learn_page_get_started }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">Get started</button></a>
+      <p class="col-md-9">
+        <strong>Zowe Docs</strong>: A comprehensive guide to all things Zowe! Go here if you want a clear, detailed written walkthrough of how Zowe works, the features and benefits of each component, and information about installation and troubleshooting.
       </p>
     </div>
     <div class="row">
-      <a class="col-md-3" href="{{ site.ibm_ztrial_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">Watch Walkthroughs</button></a>
-      <p class="col-md-9"><strong>
-        Opem Mainframe Project YouTube Channel: Go here if you want video demonstrations of Zowe components, detailed step by step walkthroughs of Zowe use cases, and conference/webinar presentations.</strong>
+      <a class="col-md-3" href="{{ site.youtube_zowe_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">Watch walkthroughs</button></a>
+      <p class="col-md-9">
+        <strong>Open Mainframe Project YouTube Channel</strong>: Go here if you want video demonstrations of Zowe components, detailed step by step walkthroughs of Zowe use cases, and conference/webinar presentations.
       </p>
     </div>
     <div class="row">
-      <a class="col-md-3" href="{{ site.ibm_ztrial_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">Browse Code and Raise Issues</button></a>
-      <p class="col-md-9"><strong>
-        Zowe Github: Go here if you want to see all of Zowe’s code, raise support issues, or start contributing to Zowe!</strong>
+      <a class="col-md-3" href="{{ site.github_repo_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">Browse code and raise issues</button></a>
+      <p class="col-md-9"><strong>Zowe Github</strong>: Go here if you want to see all of Zowe’s code, raise support issues, or start contributing to Zowe!
       </p>
     </div>
     <div class="row" style="margin-top: 1rem">
-      <a class="col-md-3" href="{{ site.ibm_ztrial_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">Try Zowe Without Installation</button></a>
+      <a class="col-md-3" href="{{ site.ibm_ztrial_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">Try Zowe without installation</button></a>
       <div class="col-md-9">
-        <strong>
-        <p>Zowe zTrial: Go here if you want to try using all of Zowe’s components in realistic use cases without installing anything via IBM’s zTrial.</p>
+        <p><strong>Zowe zTrial</strong>: Go here if you want to try using all of Zowe’s components in realistic use cases without installing anything via IBM’s zTrial.</p>
         <p>Note: this service is freely provided by IBM.</p>
-        </strong>
       </div>
     </div>
     <div class="row">
-      <a class="col-md-3" href="{{ site.ibm_ztrial_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">Read Case Studies</button></a>
-      <p class="col-md-9"><strong>
-        Medium Blog: Go here if you want to read through detailed case studies from real companies on how they implemented Zowe on Medium.</strong>
+      <a class="col-md-3" href="{{ site.zowe_medium_blog_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">Read blogs</button></a>
+      <p class="col-md-9">
+        <strong>Medium Blog</strong>: Go here if you want to read through detailed case studies and stories from real companies on how they implemented Zowe.</strong>
       </p>
     </div>
     <div class="row">
-      <a class="col-md-3" href="{{ site.ibm_ztrial_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">Join The Community</button></a>
-      <p class="col-md-9"><strong>
-        Open Mainframe Project Slack: Go here if you want to connect with the community of Zowe developers and users, ask questions, and offer ideas!</strong>
+      <a class="col-md-3" href="{{ site.slack_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">Join the community</button></a>
+      <p class="col-md-9">
+        <strong>Open Mainframe Project Slack</strong>: Go here if you want to connect with the community of Zowe developers and users, ask questions, and offer ideas!</strong>
       </p>
     </div>
   </div>

@@ -8,7 +8,7 @@ theme: jekyll-theme-cayman
 auto_ids: true
 
 # URLs to various sites
-latest_video_embed: https://www.youtube.com/embed/NX20ZMRoTtk
+latest_video_embed: https://www.youtube.com/embed/7XpOjREP8JU
 ibm_ztrial_url: https://www.openmainframeproject.org/projects/zowe/ztrial
 github_repo_url: https://github.com/zowe
 docs_site_url: https://docs.zowe.org
@@ -38,6 +38,24 @@ vscode_marketplace_url: https://marketplace.visualstudio.com/items?itemName=Zowe
 zowe_docker_download_url: https://zowe.jfrog.io/zowe/libs-release-local/org/zowe
 zowe_dockerhub_download_url: https://hub.docker.com/r/ompzowe/server-bundle
 docker_install_doc_url: https://docs.zowe.org/stable/user-guide/install-docker.html
+app_framework_doc_url: https://docs.zowe.org/stable/getting-started/user-roadmap-app-framework.html
+app_framework_github_url: https://github.com/zowe/zlux
+apiml_doc_url: https://docs.zowe.org/stable/getting-started/user-roadmap-apiml.html
+apiml_github_url: https://github.com/zowe/api-layer
+zowe_cli_doc_url: https://docs.zowe.org/stable/getting-started/user-roadmap-zowe-cli.html
+zowe_cli_github_url: https://github.com/zowe/zowe-cli
+zowe_explorer_doc_url: https://docs.zowe.org/stable/getting-started/user-roadmap-zowe-explorer.html
+zowe_explorer_github_url: https://github.com/zowe/vscode-extension-for-zowe
+zowe_sdk_doc_url: https://docs.zowe.org/stable/getting-started/user-roadmap-client-sdk.html
+zowe_sdk_github_url: https://github.com/zowe/zowe-cli
+zowe_mobile_doc_url: https://docs.zowe.org/stable/getting-started/user-roadmap-zowe-mobile.html
+zowe_mobile_github_url: https://github.com/zowe/zowe-on-the-go
+zowe_video_deck_url: https://docs.zowe.org/stable/Zowe_introduction_video_deck.pptx
+zowe_video_transcript_url: https://docs.zowe.org/stable/Zowe_introduction_video_script.txt
+learn_page_get_started: 
+learn_page_zowe_github:
+zowe_medium_blog_url: https://medium.com/zowe
+
 
 #TODO add url for zowe_sdk_install_doc_url, zowe_node_sdk_download_url, and zowe_python_sdk_download_url
 

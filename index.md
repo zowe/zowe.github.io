@@ -8,27 +8,32 @@ redirect_from:
 <!-- Copyright Contributors to the Zowe project. -->
 
 <script>
-  fetch(`https://wash.zowe.org:3000/api/cli`)
+  fetch(`https://www.api.metrics.zowe.org/cli`)
     .then((response) => response.json())
     .then((data) => {
       document.querySelector('#cli-downloads').innerHTML = data.downloads;
     });
-  fetch(`https://wash.zowe.org:3000/api/explorer`)
+  fetch(`https://www.api.metrics.zowe.org/explorer`)
     .then((response) => response.json())
     .then((data) => {
       document.querySelector('#explorer-downloads').innerHTML = data.downloads;
     });
-  fetch(`https://wash.zowe.org:3000/api/server`)
+  fetch(`https://www.api.metrics.zowe.org/server`)
     .then((response) => response.json())
     .then((data) => {
       document.querySelector('#server-downloads').innerHTML = data.downloads;
     });
-  fetch(`https://wash.zowe.org:3000/api/omp`)
+  fetch(`https://www.api.metrics.zowe.org/omp`)
+    .then((response) => response.json())
+    .then((data) => {
+      document.querySelector('#slack-members').innerHTML = data.slackParticipants;
+    });
+  fetch(`https://www.api.metrics.zowe.org/omp`)
     .then((response) => response.json())
     .then((data) => {
       document.querySelector('#github-contributors').innerHTML = data.githubSubmittors;
     });
-  fetch(`https://wash.zowe.org:3000/api/conformants`)
+  fetch(`https://www.api.metrics.zowe.org/conformants`)
     .then((response) => response.json())
     .then((data) => {
       document.querySelector('#conformant-product-value').innerHTML = data.products;
@@ -59,80 +64,68 @@ redirect_from:
   {% endif %}
 </div>
 
-<div style="text-align: center; padding: 3%; background-color: #74a9de; color: black !important">
-  <h1 id="conformance">Welcome to Zowe</h1>
+<div style="text-align: center; padding: 3%; background-color: #145391; color: white !important">
+  <h2 id="conformance">Welcome to Zowe</h2>
   <h4 style="">Combining the past and the present to build the future of mainframe</h4>
-  <h5 style="margin-top: 5%;">A Linux Foundation project</h5>
+  <p>We are a Linux Foundation project</p>
 </div>
 
 <div class="row" style="padding: 5%">
-  <div class="col-12 col-md-8">
-    <p>Zowe offers modern interfaces that allow you to work with z/OS in a similar way to what you experience on modern cloud platforms. You can use these interfaces as delivered or through plug-ins and extensions that are created by clients or third-party vendors.
+  <div class="col-12 col-md-8" style="text-align: left">
+    <p>Zowe is an integrated and extensible open source framework for z/OS. Zowe, like Mac OS or Windows, comes with a set of APIs and OS capabilities that applications build on and also includes some applications out of the box. 
     </p>
     <br>
-    <p>Zowe is an open source project created to further technologies that benefit the Z platform from all members of the Z community. Like Mac OS or Windows, Zowe comes with a set of APIs and OS capabilities that applications build on and also includes some applications out of the box.
+    <p>Zowe offers modern interfaces to interact with z/OS and allows you to work with z/OS in a way that is similar to what you experience on cloud platforms today. You can use these interfaces as delivered or through plug-ins and extensions that are created by clients or third-party vendors. 
     </p>
+    <p>Zowe is composed of several components, each improving the learning ability, accessibility, and possibility of mainframe development.</p>
   </div>
   <div class="col-6 col-md-4">
-    <object style="width:100%;height:330px;width:100%; float: none; clear: both; margin: 2px auto;" data="{{ site.  latest_video_embed }}">
+    <object style="width:100%;height:330px;width:100%; float: none; clear: both; margin: 2px auto;" data="{{ site. latest_video_embed }}">
     </object>
+    <p>
+      <a href="{{ site.zowe_video_deck_url }}">Download Slides (.pptx)</a>&nbsp;|&nbsp;
+      <a href="{{ site.zowe_video_transcript_url }}">Download Transcript (.txt)</a>
+    </p>
   </div>
 </div>
 
-<div style="padding: 2% 3%; background-color: #74a9de; color: black !important;">
-  <div class="row" style="margin-bottom: 2%">
-    <div class="col-md text-center">
-      <img style="width:25%;" src="assets/img/github.svg" />
-      <h6 style="margin-bottom: 0rem" id="cli-downloads"></h6>
-      <h6>Zowe CLI Downloads</h6>
+<div style="padding: 4% 7% 5% 7%" class="bg-light">
+    <h2 class="text-center" style="color: black !important; margin-bottom: 5%">What would you like to do with Zowe?</h2>
+    <div class="row">
+      <div class="col-sm text-center">
+        <a href="/learn"><button type="button" class="btn btn-primary btn-lg btn-block">Learn</button></a>
+        <p style="margin-top: 1rem">Learn how Zowe works and what it can do for you</p>
+      </div>
+      <div class="col-sm text-center">
+        <a href="https://docs.zowe.org/stable/user-guide/installandconfig.html"><button type="button" class="btn btn-primary btn-lg btn-block">Use</button></a>
+        <p style="margin-top: 1rem">Get started with installing and using Zowe</p>
+      </div>
+      <div class="col-sm text-center">
+        <a href="/extend"><button type="button" class="btn btn-primary btn-lg btn-block">Extend</button></a>
+        <p style="margin-top: 1rem">Build the next generation of mainframe tooling on top of Zowe</p>
+      </div>
+      <div class="col-sm text-center">
+        <a href="/contribute"><button type="button" class="btn btn-primary btn-lg btn-block">Contribute</button></a>
+        <p style="margin-top: 1rem">Contribute to the open source community developing Zowe</p>
+      </div>
     </div>
-    <div class="col-md text-center">
-      <img style="width:25%" src="assets/img/github.svg" />
-      <h6 style="margin-bottom: 0rem" id="explorer-downloads"></h6>
-      <h6>Zowe Explorer Downloads</h6>
-    </div>
-    <div class="col-md text-center">
-      <img style="width:25%" src="assets/img/github.svg" />
-      <h6 style="margin-bottom: 0rem" id="server-downloads"></h6>
-      <h6>Zowe Build Downloads</h6>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md text-center">
-      <img style="width:25%" src="assets/img/github.svg" />
-      <h6 style="margin-bottom: 0rem">33000</h6>
-      <h6>Slack Community Members</h6>
-    </div>
-    <div class="col-md text-center">
-      <img style="width:25%" src="assets/img/github.svg" />
-      <h6 style="margin-bottom: 0rem" id="github-contributors"></h6>
-      <h6>Open Source Contributors</h6>
-    </div>
-    <div class="col-md text-center">
-      <img style="width:25%" src="assets/img/github.svg" />
-      <h6 style="margin-bottom: 0rem" id="conformant-product-value"></h6>
-      <h6>Vendor Products</h6>
-    </div>
-  </div>
 </div>
 
 <div style="padding: 4% 7% 5% 7%">
   <div style="margin-bottom: 4%">
-    <h2 style="color: black !important">How Mainframers Use Zowe</h2>
-    <p>Zowe is made up of several products, each improving the learning ability, accessibility, and possibility of mainframe development.
-    </p>
+    <h2 class="text-center" style="color: black !important; margin-bottom: 5%">Zowe components</h2>
   </div>
 
   <div>
     <div class="row" style="margin-bottom: 4%">
       <div class="col-md-7 col-sm order-last order-sm-first">
         <h4>Zowe Application Framework</h4>
-        <p style="margin: 1rem auto">A web user interface (UI) providing a virtual desktop containing a number of apps allowing access to z/OS function. Includes apps for traditional access such as a 3270 terminal and a VT Terminal, as well as an editor and explorers for working with JES, MVS Data Sets and Unix System Services.
+        <p style="margin: 1rem auto">  
+        A web user interface (UI) that provides a virtual desktop containing a number of apps allowing access to z/OS function. Base Zowe includes apps for traditional access such as a 3270 terminal and a VT Terminal, as well as an editor and explorers for working with JES, MVS Data Sets and Unix System Services.
         </p>
         <p>
-          <a href="{{ site.ibm_ztrial_url }}">Case Study</a>&nbsp;|&nbsp;
-          <a href="{{ site.ibm_ztrial_url }}">Documentation</a>&nbsp;|&nbsp;
-          <a href="{{ site.ibm_ztrial_url }}">Code on Github</a>
+          <a href="{{ site.app_framework_github_url }}">Code on Github</a>&nbsp;|&nbsp;
+          <a href="{{ site.app_framework_doc_url }}">Learn more</a>
         </p>
       </div>
       <div class="col-md-5 col-sm order-first order-sm-last">
@@ -145,22 +138,21 @@ redirect_from:
       </div>
       <div class="col-md-7 col-sm">
         <h4>API Mediation Layer</h4>
-          <p style="margin: 1rem auto">A single point of access for mainframe service REST APIs, offering enterprise, cloud-like features such as high-availability, scalability, dynamic API discovery, consistent security, SSO, and documentation. Includes core services for working with MVS Data Sets, JES, and z/OSMF REST APIs.</p>
+          <p style="margin: 1rem auto">Provides a gateway that acts as a reverse proxy for z/OS services, together with a catalog of REST APIs and a dynamic discovery capability. Base Zowe provides core services for working with MVS Data Sets, JES, as well as working with z/OSMF REST APIs. The API Mediation Layer also provides a framework for Single Sign On (SSO). 
+          </p>
           <p>
-            <a href="{{ site.ibm_ztrial_url }}">Case Study</a>&nbsp;|&nbsp;
-            <a href="{{ site.ibm_ztrial_url }}">Documentation</a>&nbsp;|&nbsp;
-            <a href="{{ site.ibm_ztrial_url }}">Code on Github</a>
+            <a href="{{ site.apiml_github_url }}">Code on Github</a>&nbsp;|&nbsp;
+            <a href="{{ site.apiml_doc_url }}">Learn more</a>
           </p>
       </div>
     </div>
     <div class="row" style="margin-bottom: 4%">
       <div class="col-md-7 col-sm order-last order-sm-first">
         <h4>Zowe CLI</h4>
-        <p style="margin: 1rem auto">A command line interface enabling remote mainframe interaction and use of common tools such as IDEs, shell commands, bash scripts, and build tools for mainframe development. It provides a set of utilities and services for application developers who want to become efficient in supporting and building z/OS applications quickly.</p>
+        <p style="margin: 1rem auto">Provides a command-line interface that lets you interact with the mainframe remotely and use common tools such as Integrated Development Environments (IDEs), shell commands, bash scripts, and build tools for mainframe development. It provides a set of utilities and services for application developers that want to become efficient in supporting and building z/OS applications quickly. The CLI provides a core set of commands for working with data sets, USS, JES, as well as issuing TSO and console commands.</p>
           <p>
-            <a href="{{ site.ibm_ztrial_url }}">Case Study</a>&nbsp;|&nbsp;
-            <a href="{{ site.ibm_ztrial_url }}">Documentation</a>&nbsp;|&nbsp;
-            <a href="{{ site.ibm_ztrial_url }}">Code on Github</a>
+            <a href="{{ site.zowe_cli_github_url }}">Code on Github</a>&nbsp;|&nbsp;
+            <a href="{{ site.zowe_cli_doc_url }}">Learn more</a>
           </p>
       </div>
       <div class="col-md-5 col-sm order-first order-sm-last">
@@ -173,40 +165,90 @@ redirect_from:
       </div>
       <div class="col-md-7 col-sm">
         <h4>Zowe Explorer</h4>
-          <p style="margin: 1rem auto">A VS Code IDE extension enabling mainframe development using modern tooling by accessing USS files, datasets, and jobs that are stored on z/OS mainframes. The extension installs directly from VS Code, and complements the Zowe CLI experience.</p>
+          <p style="margin: 1rem auto">A Visual Studio Code extension that modernizes the way developers and system administrators interact with z/OS mainframes. Zowe Explorer lets you interact with data sets, USS files, and jobs that are stored on z/OS. The extension complements your Zowe CLI experience and lets you use authentication services like API Mediation Layer.</p>
           <p>
-            <a href="{{ site.ibm_ztrial_url }}">Case Study</a>&nbsp;|&nbsp;
-            <a href="{{ site.ibm_ztrial_url }}">Documentation</a>&nbsp;|&nbsp;
-            <a href="{{ site.ibm_ztrial_url }}">Code on Github</a>
+            <a href="{{ site.zowe_explorer_github_url }}">Code on Github</a>&nbsp;|&nbsp;
+            <a href="{{ site.zowe_explorer_doc_url }}">Learn more</a>
+          </p>
+      </div>
+    </div>
+    <div class="row" style="margin-bottom: 4%">
+      <div class="col-md-7 col-sm order-last order-sm-first">
+        <h4>Zowe Client SDKs (under development)</h4>
+        <p style="margin: 1rem auto">Provides access to a set of programmatic APIs that you can use to build client applications or scripts that interact with z/OS. SDKs are available for Node.js and Python.</p>
+          <p>
+            <a href="{{ site.zowe_sdk_github_url }}">Code on Github</a>&nbsp;|&nbsp;
+            <a href="{{ site.zowe_sdk_doc_url }}">Learn more</a>
+          </p>
+      </div>
+      <div class="col-md-5 col-sm order-first order-sm-last">
+        <img class="image-zowe-use" src="assets/img/Zowe-CLI-Image.png">
+      </div>
+    </div>
+    <div class="row" style="margin-bottom: 4%">
+      <div class="col-md-5 col-sm">
+        <img class="image-zowe-use" src="assets/img/Zowe-Explorer.png">
+      </div>
+      <div class="col-md-7 col-sm">
+        <h4>Zowe Mobile (Incubator)</h4>
+          <p style="margin: 1rem auto">Lets you interact with your Zowe instance running on the mainframe from your mobile. </p>
+          <p>
+            <a href="{{ site.zowe_mobile_github_url }}">Code on Github</a>&nbsp;|&nbsp;
+            <a href="{{ site.zowe_mobile_doc_url }}">Learn more</a>
           </p>
       </div>
     </div>
   </div>
+</div>
 
-  <div>
-    <h2 class="text-center" style="color: black !important; margin-bottom: 5%">What Would You Like To Do With Zowe?</h2>
-    <div class="row">
-      <div class="col-sm text-center">
-        <a href="/learn"><button type="button" class="btn btn-primary btn-lg btn-block">Learn</button></a>
-        <p style="margin-top: 1rem">Learn how Zowe works and what it can do for you</p>
-      </div>
-      <div class="col-sm text-center">
-        <a href="https://docs.zowe.org/"><button type="button" class="btn btn-primary btn-lg btn-block">Use</button></a>
-        <p style="margin-top: 1rem">Get started with installing and using Zowe</p>
-      </div>
-      <div class="col-sm text-center">
-        <a href="/extend"><button type="button" class="btn btn-primary btn-lg btn-block">Extend</button></a>
-        <p style="margin-top: 1rem">Build the next generation of mainframe tooling on top of Zowe</p>
-      </div>
-      <div class="col-sm text-center">
-        <a href="/contribute"><button type="button" class="btn btn-primary btn-lg btn-block">Contribute</button></a>
-        <p style="margin-top: 1rem">Contribute to the open source community developing Zowe</p>
-      </div>
+<div style="padding: 2% 3%; color: black !important;" class="bg-light"> 
+<h2 class="text-center" style="color: black !important; margin-bottom: 5%">Zowe by the numbers</h2>
+  <div class="row" style="margin-bottom: 2%">
+    <div class="col-md text-center">
+      <img style="width:15%;" src="assets/img/logo-cli-download.svg" />
+      <h3 style="margin-bottom: 0rem" id="cli-downloads"></h3>
+      <h6>Zowe CLI Downloads</h6>
+    </div>
+    <div class="col-md text-center">
+      <img style="width:15%" src="assets/img/logo-explorer-download.svg" />
+      <h3 style="margin-bottom: 0rem" id="explorer-downloads"></h3>
+      <h6>Zowe Explorer Downloads</h6>
+    </div>
+    <div class="col-md text-center">
+      <img style="width:15%" src="assets/img/logo-zowe-build-download.svg" />
+      <h3 style="margin-bottom: 0rem" id="server-downloads"></h3>
+      <h6>Zowe z/OS  Build Downloads</h6>
     </div>
   </div>
-  <div id="medium-widget" style="margin-top: 5%">
+  <div class="row">
+    <div class="col-md text-center">
+      <img style="width:15%" src="assets/img/logo-slack-black.svg" />
+      <h3 style="margin-bottom: 0rem" id="slack-members"></h3>
+      <h6>Slack Community Members</h6>
     </div>
-      <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-      <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/zowe","postsPerLine":2,"limit":4,"picture":"small","fields":["description","publishAt"],"ratio":"landscape"}})</script>
-
+    <div class="col-md text-center">
+      <img style="width:15%" src="assets/img/logo-github-back.svg" />
+      <h3 style="margin-bottom: 0rem" id="github-contributors"></h3>
+      <h6>Contributors</h6>
+    </div>
+    <div class="col-md text-center">
+      <img style="width:15%" src="assets/img/logo-vendor-product.svg" />
+      <h3 style="margin-bottom: 0rem" id="conformant-product-value"></h3>
+      <h6>Zowe Conformant Products</h6>
+    </div>
+  </div>
 </div>
+
+<div style="padding: 4% 7% 5% 7%">
+  <div style="margin-bottom: 4%">
+    <h2 class="text-center" style="color: black !important; margin-bottom: 5%">Explore more about Zowe</h2>
+  </div>
+  <div id="medium-widget" style="margin-top: 5%"></div>
+    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/zowe","postsPerLine":2,"limit":4,"picture":"small","fields":["description","publishAt"],"ratio":"landscape"}})</script>
+</div>
+<div>
+  
+  
+
+
