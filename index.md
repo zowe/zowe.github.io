@@ -155,7 +155,7 @@ redirect_from:
           </p>
       </div>
       <div class="col-md-5 col-sm order-first order-sm-last">
-        <img class="image-zowe-use" src="assets/img/zowe-cli-image.png">
+        <img class="image-zowe-use" src="assets/img/zowe-cli.png">
       </div>
     </div>
     <div class="row" style="margin-bottom: 4%">
