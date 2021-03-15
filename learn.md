@@ -38,13 +38,13 @@
     <div class="row">
       <a class="col-md-3" href="{{ site.zowe_medium_blog_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">Read blogs</button></a>
       <p class="col-md-9">
-        <strong>Medium Blog</strong>: Go here if you want to read through detailed case studies and stories from real companies on how they implemented Zowe.</strong>
+        <strong>Medium Blog</strong>: Go here if you want to read through detailed case studies and stories from real companies on how they implemented Zowe.
       </p>
     </div>
     <div class="row">
       <a class="col-md-3" href="{{ site.slack_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">Join the community</button></a>
       <p class="col-md-9">
-        <strong>Open Mainframe Project Slack</strong>: Go here if you want to connect with the community of Zowe developers and users, ask questions, and offer ideas!</strong>
+        <strong>Open Mainframe Project Slack</strong>: Go here if you want to connect with the community of Zowe developers and users, ask questions, and offer ideas!
       </p>
     </div>
   </div>
@@ -53,15 +53,15 @@
     <h2 style="margin-bottom: 1.5rem">Supporting Resources</h2>
     <p>Here are some great resources to build your knowledge and skills for modern mainframe development!</p>
     <div class="row">
-      <a class="col-sm-4" href="{{ }}"><strong>Master The Mainframe</strong></a>
+      <a class="col-sm-4" href="{{ site.master_the_mainframe_url }}"><strong>Master The Mainframe</strong></a>
       <p class="col-sm-8">New to mainframe development? This course is the place to start!</p>
     </div>
     <div class="row">
-      <a class="col-sm-4" href="{{ }}"><strong>Visual Studio Code</strong></a>
+      <a class="col-sm-4" href="{{ site.visual_studio_code_url }}"><strong>Visual Studio Code</strong></a>
       <p class="col-sm-8">The IDE you need to use Zowe Explorer and any vendor products built on top of it</p>
     </div>
     <div class="row">
-      <a class="col-sm-4" href="{{ }}"><strong>Web Development With Node.js</strong></a>
+      <a class="col-sm-4" href="{{ site.web_dev_node_url }}"><strong>Web Development With Node.js</strong></a>
       <p class="col-sm-8">An easy resource to combine mainframe with modern development paradigms</p>
     </div>
   </div>
