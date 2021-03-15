@@ -16,7 +16,7 @@
   <p style="margin-bottom: 0rem">2. Add a REST API service to the API Mediation Layer.</p>
   <p>3. Add a plug-in to the Zowe Desktop.</p>
   </div>
-  <p>Learn more and get started with the <a href="{{ }}">Extending documentation</a>.</p>
+  <p>Learn more and get started with the <a href="{{ site.zowe_extend_doc_url }}">Extending documentation</a>.</p>
 
   <div style="padding-top: 3%">
     <h2 style="margin-bottom: 1.5rem">Why Build With Zowe?</h2>
@@ -26,7 +26,7 @@
         <p><strong>Modern DevOps Practices</strong> - automate your CI/CD pipeline with modern tools like Jenkins.</p>
         <p><strong>Aligned With New Developers</strong> - the next generation of mainframe developers is using Zowe, and will be the ones who implement and use your extension.</p>
       </div>
-      <p>Learn more and get started with the <a href="{{ }}">Extending documentation</a>.</p>
+      <p>Learn more and get started with the <a href="{{ site.zowe_extend_doc_url }}">Extending documentation</a>.</p>
   </div>
 
   <section style="padding-top: 3%;">
@@ -42,6 +42,6 @@
         <img src="assets/img/ZoweConformanceBlueBadge.png" />
       </div>
     </div>
-    <p style="margin-top: 1rem;">Learn more at the<a href="{{ site.conformance_page_url }}">&nbsp;Zowe Conformance website</a></p>
+    <p style="margin-top: 1rem;">Learn more at the<a href="{{ site.conformance_page_url }}">&nbsp;Zowe Conformance website</a>.</p>
   </section>
 </section>
