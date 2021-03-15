@@ -128,12 +128,12 @@ redirect_from:
         </p>
       </div>
       <div class="col-md-5 col-sm order-first order-sm-last">
-        <img class="image-zowe-use" src="assets/img/ZLUXImage.png">
+        <img class="image-zowe-use" src="assets/img/zowe-desktop-image.png">
       </div>
     </div>
     <div class="row" style="margin-bottom: 4%">
       <div class="col-md-5 col-sm">
-        <img class="image-zowe-use" src="assets/img/APIMLimage.png">
+        <img class="image-zowe-use" src="assets/img/zowe-apiml-image.png">
       </div>
       <div class="col-md-7 col-sm">
         <h4>API Mediation Layer</h4>
@@ -155,12 +155,12 @@ redirect_from:
           </p>
       </div>
       <div class="col-md-5 col-sm order-first order-sm-last">
-        <img class="image-zowe-use" src="assets/img/Zowe-CLI-Image.png">
+        <img class="image-zowe-use" src="assets/img/zowe-cli-image.png">
       </div>
     </div>
     <div class="row" style="margin-bottom: 4%">
       <div class="col-md-5 col-sm">
-        <img class="image-zowe-use" src="assets/img/Zowe-Explorer.png">
+        <img class="image-zowe-use" src="assets/img/zowe-explorer-image.png">
       </div>
       <div class="col-md-7 col-sm">
         <h4>Zowe Explorer</h4>
@@ -181,12 +181,12 @@ redirect_from:
           </p>
       </div>
       <div class="col-md-5 col-sm order-first order-sm-last">
-        <img class="image-zowe-use" src="assets/img/Zowe-CLI-Image.png">
+        <img class="image-zowe-use" src="assets/img/zowe-client-sdk-image.png">
       </div>
     </div>
     <div class="row" style="margin-bottom: 4%">
       <div class="col-md-5 col-sm">
-        <img class="image-zowe-use" src="assets/img/Zowe-Explorer.png">
+        <img class="image-zowe-use" src="assets/img/zowe-mobile-image.png">
       </div>
       <div class="col-md-7 col-sm">
         <h4>Zowe Mobile (Incubator)</h4>
