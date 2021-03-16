@@ -5,9 +5,12 @@
 #
 # encoding=utf8
 
-from ics import Calendar
+# Built-in modules
 from datetime import date
 from datetime import time
+
+# Third-party modules
+from ics import Calendar
 import requests
 import yaml
 
