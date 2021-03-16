@@ -29,12 +29,12 @@
       {% if site.data.upcoming_events %}
         <div class="row">
           {% for events in site.data.upcoming_events limit:4 %}
-            <p class="col-md-4"><strong>{{ events.event}}</strong></p>
-            <p class="col-md-8">{{ events.description }}
-              {% if events.link %}
-                <a href="{{ events.link }}">register here</a>
-              {% endif %}
-            </p>
+            {% if events.url %}
+              <p href="{{ events.url }}" class="col-md-4"><strong>{{ events.event }}</strong></p>
+            {% else %}
+              <p class="col-md-4"><strong>{{ events.event }}</strong></p>
+            {% endif %}
+              <p class="col-md-8">{{ events.schedule }}</p>
             <br>
           {% endfor %}
         </div>

@@ -1,15 +1,141 @@
-# Contribute
-# Any kind of links should NOT be in ""
-
-- event: "21PI1 Program Increment (PI) Planning"
-  description: "January 27-29 - all events will be posted in the OMP Calendar"
-
-- event: "March System Demo"
-  description: "March 8 - events will be posted in the OMP Calendar"
-
-- event: "Zowe System Demo"
-  description: "April 9 - events will be posted in the OMP Calendar"
-
-- event: "2021 Q2 Quarterly Webinar"
-  description: "April 21, 2021, 11:30ET -"
-  link: https://google.com
+- event: Zowe Quarterly Update Webinar
+  schedule: April 21 @ 08:30 AM - 09:30 PM
+  description: "Whether you are a Zowe User, Contributor, Extender, or simply interested\
+    \ in what\u2019s happening with Zowe \u2013 please join us for our next Zowe Quarterly\
+    \ Update Webinar. \nOur agenda will include:\n\u2013 A focus topic/speaker\n\u2013\
+    \ A brief Zowe update\n\u2013 Upcoming Community Events\n\u2013 Interactive Polls\
+    \ \n\n\nRegister Now!"
+  url: https://www.openmainframeproject.org/event/zowe-quarterly-update-webinar
+- event: IDUG Virtual Australasia Db2 Tech Conference
+  schedule: March 15 - March 20
+  description: "The IDUG Virtual Australasia Db2 Tech Conference, which is being held\
+    \ on March 15-19, features presentations from top international experts and technical\
+    \ deep dives into topics at the forefront of the industry. \nOpen Mainframe Project\
+    \ Ambassador \_Joe Winchester, a Senior Technical Staff Member at IBM and member\
+    \ of OMP\u2019s Zowe Leadership Committee, will be at the conference giving two\
+    \ presentations. \n\u2013 On Tuesday, March 16 \u2013 \u201CSoftware in space\
+    \ \u2013 what can IT Earthlings learn from Space missions\u201D\n\u2013 On Wednesday,\
+    \ March 17 \u2013 \u201CWowee it\u2019s Zowe ! How Linux Foundation Tooling is\
+    \ changing the face of Db2 on z/OS\u201D\n\nLearn more about these sessions or\
+    \ the conference agenda here. Registration is open and can be found here."
+  url: https://www.openmainframeproject.org/event/idug-virtual-australasia-db2-tech-conference
+- event: SHARE Virtual Summit March 2021
+  schedule: March 02 - March 25
+  description: "SHARE Virtual Summit takes place in March 2-4, 9-11, 16-17 and 23-24.\
+    \ On week three \u2013 Tuesday, March 16-17 the conference will focus on DevOps\
+    \ in the Enterprise, Open Source on Z and Zowe CICS. \nOpen Mainframe Project\u2019\
+    s Zowe will be presented in several talks at the conference. \n \nTuesday, March\
+    \ 9:\n3-4 pm: 28343 \u2013 Want to Use IBM Z NetView REST APIs? Here\u2019s How!\
+    \ \u2013 Pamela Mclean and James Henderson, IBM \nIn this session, our speakers\
+    \ will provide information on configuring the IBM Z NetView REST Server stand-alone\
+    \ and with Zowe and how it can be used with Service Management Unite to view NetView\
+    \ dashboards or to write your own web applications. The speakers will also provide\
+    \ configuration hints and tips on setting up the NetView program to make it easy\
+    \ for you to retrieve data from all NetView programs in your enterprise using\
+    \ a single NetView REST Server. \nTuesday, March 16:\n10:30-10:55 am: 28363 \u2013\
+    \ Zowe: A User\u2019s Experience from an IT Infrastructure View \u2013 Matheus\
+    \ Milani De Oliveira, Gustavo De Paiva Almeida, Guilherme Cartier, IBM \nIBM Services\
+    \ presenting the modernization roadmap leveraging ZOWE, zOSMF and OpenSource for\
+    \ Mainframe Digital Transformation, in a DEMO-session focused on showing how integration\
+    \ of products and solutions is possible, aiming to achive real IT & Business goals\
+    \ in a interactive and fun. \n11-11:25 am: 28453 \u2013 Test automation framework\
+    \ of your choice powered by Zowe \u2013 Petr Vacula, Broadcom \nMainframe development\
+    \ teams sometimes create their own test automation tools to automate repetitive\
+    \ testing tasks. Most common reasons to build such tools are that formal test\
+    \ automation products do not fit their application\u2019s needs or simply because\
+    \ there are no good test automation products available. At the same time, there\
+    \ are many test automation frameworks available for non-mainframe testing, many\
+    \ of which are open source. What if you could use one of these well established\
+    \ and proven testing frameworks to perform mainframe testing? It can be done by\
+    \ enabling the test automation framework to perform mainframe actions. Zowe client\
+    \ SDK is perfect fit for this duty. \n12-12:25 pm: 28452 \u2013 How to configure\
+    \ z/OSMF for Zowe, Rose Sakach, Broadcom \nThe IBM z/OS Management Facility (z/OSMF)\
+    \ is delivered with z/OS. Though documented as an optional prerequisite for Zowe,\
+    \ configuration is highly recommended to fully exploit Zowe\u2019s capabilities.\
+    \ Join this session for an overview of first-time configuration tips, a list of\
+    \ common problems, and suggestions for trouble-shooting typical issues. \n1-1:25\
+    \ pm: 28383 \u2013 Easy start in zOS with one of the most popular IDEs \u2013\
+    \ Kiryl Branavitski and Viktar Mushtsin, IBA Group \nExplaining how open source\
+    \ projects can bring a breath of fresh air to the mainframe world. Inspired by\
+    \ ZOWE VS Code extension, we are introducing our vision of how to organize the\
+    \ development of zOS applications in the modern IDEs. \n1:30-1:55 pm: 28573 \u2013\
+    \ Muscle Memory: New Zowe Desktop Apps for the Multi-tasker \u2013 Sean Grady,\
+    \ Rocket Software \nWhere did I save that file? I know I just used that dataset\u2026\
+    \ Do blockers like these drive you crazy? Have you ever wished you could explore\
+    \ and manage your datasets, files, and USS processes as simply as you do on your\
+    \ own computer? Now you can! Get the latest on the hottest new apps for the Zowe\
+    \ Desktop that give you the user experience your mind and fingertips are already\
+    \ trained to do. Quickly, easily and effectively handle tasks like finding which\
+    \ process is consuming CPU time, setting files to the right encoding, and extracting\
+    \ compressed files. Discover how you can explore and manage your datasets and\
+    \ files per your usual habit and much more. From seasoned veterans to new z/OS\
+    \ users, these cool apps are must haves for your day-to-day tasks. \n2:30-2:55\
+    \ pm: 28479 \u2013 I Get My CICS on Route Zowe! Using Zowe for CICS Development,\
+    \ Administration, Automation and More! Joe Winchester and Russell Bonner, IBM\
+    \ \nGoogle for CICS development and traditionally you\u2019ll have been be presented\
+    \ with ISPF panels and blogs with CEMT, CEDA, and other 4 letter acronyms.\_ This\
+    \ talk shows how that doesn\u2019t have to be the case, where Zowe\u2019s command\
+    \ line interface and VS Code extensions allow you to become productive with CICS\
+    \ using open, simple and familiar interfaces.\_ The presentation will focus on\
+    \ how an experienced CICS developer can do their job using the Zowe CLI and VS\
+    \ Code extensions including building a devops pipeline in Jenkins and Travis using\
+    \ open source technology.\_ The talk will also show how a developer who isn\u2019\
+    t a CICS expert can navigate their way around JCL, compilation, deployment using\
+    \ scripting and familiar automation tools. \nWednesday, March 17:\n1-1:25 pm:\
+    \ 28478 \u2013 Wowee it\u2019s Zowe! Overview and deep dive in how customers,\
+    \ ISVS, and the community are using Zowe to transform and modernize the mainframe\
+    \ \u2013 Joe Winchester, IBM and Dan Kelosky, Broadcom \nZowe is an open source\
+    \ project owned and managed by the Linux Foundation working with a number of software\
+    \ vendors.\_ This talk will cover the landscape of Zowe, the community, the technology,\
+    \ and its architecture.\_ The focus will be on the deployment scenarios where\
+    \ since Zowe\u2019s inception customers have deployed Zowe in their shops, and\
+    \ the different users to which they have adopted and been successful with the\
+    \ technology.\_ This talk will include co-presenters from customer shops sharing\
+    \ their experiences, as well as case studies for where Zowe was a good fit for\
+    \ mainframe devops or automation modernization.\_ The landscape of Zowe covers\
+    \ vendor offerings as well as runtimes such as CICS, DB2, IMS, MQ and more, so\
+    \ this talk has applicability across the diversity of what the mainframe can offer.\
+    \ \n1:30-1:55 pm: 28578 \u2013 How to get Involved in the Zowe Community for fun,\
+    \ education, contribution or commercial extensions \u2013 Bruce Armstrong, IBM\
+    \ \nCome learn the many ways you or your organization can get involved in the\
+    \ Zowe open community. The community is so much more than just open source code\
+    \ \u2013 it is the people and teams working together to improve the z/OS experience.\
+    \ We will cover how the community is organized, ways for you to interact with\
+    \ community members and key meetings to get your ideas, issues and requirements\
+    \ known. Zowe is a multifaceted project consisting of both open source but, almost\
+    \ more importantly, a set of executable services with open interfaces for download\
+    \ and immediate use. Bring your questions on how to get started and we will provide\
+    \ answers. The integrated components of Zowe can be used together or you can deploy\
+    \ selected components of Zowe for their specific capabilities. We will discuss\
+    \ deployment options. Come join the Zowe movement!!! Zowe is a project of the\
+    \ Open Mainframe Project. Zowe\u2122 and the Open Mainframe Project\u2122 are\
+    \ trademarks of the Linux Foundation. \n2-2:25 pm: 28455 \u2013 Build z/OS-connected\
+    \ apps using Node.js, Python or Swift Zowe SDKs, Andrew Harn and Michael Bauer,\
+    \ Broadcom \nThe Zowe CLI Squad has recently introduced Software Development Kits\
+    \ (SDKs) for Node.js, Python, and Swift. These SDKs enable developers to integrate\
+    \ some of the most used Zowe CLI functions into their own projects with minimal\
+    \ development overhead. In this session, we will briefly describe how the Zowe\
+    \ CLI and the Zowe Explorer VS Code Extension utilize he Zowe Client Node SDK,\
+    \ what these SDKs have to offer, and explain how to get started with your own\
+    \ z/OS-connected project using your (Node, Python, or Swift) SDK-of-choice! We\
+    \ will also be interested to hear which languages you would like us to develop\
+    \ for next! \n3-3:25 pm: 28539 \u2013 Proposed ZOWE Incubator \u2013 ZEBRA \u2013\
+    \ Yongkim (Alex) Kim, Vicom Infinity \nZEBRA(Zowe Embedded Browser for RMF/SMF\
+    \ and APIs) is a proposed incubator project for Linux Foundation\u2019s Open Mainframe\
+    \ ZOWE Project. It intends to provide re-usable and industry compliant JSON formatted\
+    \ RMF/SMF data records, so that many other ISV SW and users can exploit them using\
+    \ Open-Source SW for many ways. It can serve applications using JSON formatted\
+    \ RMF data thru ZOWE managed APIs to share/re-use them. It has potential to help\
+    \ system programmers, capacity/performance analyzers use more open-source utilities\
+    \ out there, perhaps create knowledge base to share among z performance SMEs and\
+    \ users. \n3:30-3:55 pm: 28543 \u2013 Access z/OS Performance & Management Data\
+    \ using Zowe CLI and CA SYSVIEW \u2013 Michael Heuzey, Broadcom \nZowe and the\
+    \ Open Mainframe Project are helping mainframers everywhere access their z/OS\
+    \ data and services in new and innovative ways. No longer are you bound to the\
+    \ green screen in order to interact with the mainframe. The new SYSVIEW for Zowe\
+    \ CLI plug-in is the latest way to utilize Zowe to view your mainframe systems\
+    \ and transactions off-platform.\nDiscover how you can harness Zowe and CA SYSVIEW\
+    \ to improve and streamline devops processes. Use cases include help desk ticket\
+    \ creation and CI/CD pipelines. \nRegister for the event at their website: https://event.share.org/register.\
+    \ Check out the rest of the agenda here. \n\_"
+  url: https://www.openmainframeproject.org/event/share-virtual-summit-march-2021
