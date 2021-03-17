@@ -63,6 +63,9 @@ create_zowe_issue_url: https://github.com/zowe/community/issues/new/choose
 conformance_step1_url: https://www.openmainframeproject.org/projects/zowe/conformance/terms-and-conditions
 conformance_step2_url: https://www.openmainframeproject.org/projects/zowe/conformance/test-evaluation-guide
 conformance_step3_url: https://www.openmainframeproject.org/projects/zowe/conformance/participation-form-esign
+zowe_community_repo_url: https://github.com/zowe/community
+zowe_zlc_repo_url: https://github.com/zowe/zlc
+zowe_docs_repo_url: https://github.com/zowe/docs-site
 
 #TODO add url for zowe_sdk_install_doc_url, zowe_node_sdk_download_url, and zowe_python_sdk_download_url
 

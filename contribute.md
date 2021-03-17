@@ -8,19 +8,45 @@
   <h1 id="download" style="margin-bottom: 1.5rem">Join The Zowe Community</h1>
   <p>Here are some of the best ways to engage with the Zowe community!</p>
 
-  <p><a href="{{ site.slack_url }}">Slack</a> - hosted by the Open Mainframe Project, this is a messaging board where you can directly engage with Zowe users and contributors - ask questions, engage in discussions, and contribute your ideas!</p>
-
-  <div>
-    <p>Some good channels to get started:</p>
-    <p style="margin-bottom: 0">- #general</p>
-    <p style="margin-bottom: 0">- #zowe-user</p>
-    <p style="margin-bottom: 0">- #zowe-onboarding</p>
-    <p>- #zowe-dev</p>
+  <div class="card-deck">
+  <div class="card border-dark mb-3">
+    <div class="card-body">
+      <h5 class="card-title text-center">Slack</h5>
+      <a class="col-md-3" href="{{ site.slack_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">Join our Slack community</button></a>
+      <p class="card-text">Hosted by the Open Mainframe Project, this is a messaging board where you can directly engage with Zowe users and contributors - ask questions, engage in discussions, and contribute your ideas!</p>
+      <p>Some popular channels to get started: <ul>
+      <li>#zowe-onboarding</li> 
+      <li>#zowe-user</li> 
+      <li>#zowe-cli</li> 
+      <li>#zowe-explorer</li> 
+      <li>#zowe-api</li>
+      <li>#zowe-doc</li> 
+      </ul>
+      </p>
+    </div>
   </div>
-
-  <p><a href="{{ site.omp_calendar_url }}">Open Mainframe Project Calendar</a> - all scheduled meetings in the Zowe community are placed here, from the scrum status of a squad to meetings of the Zowe Leadership Committee. You are welcome to drop in on and contribute to any of these meetings!</p>
-
-  <p><a href="{{ site.github_repo_url }}">GitHub</a> - this is where all of Zowe’s code is, and where you can find detailed information about each project and how to collaborate/contribute. This is the place to open issues, give feedback, and contribute code.</p>
+  <div class="card border-dark mb-3">
+    <div class="card-body">
+      <h5 class="card-title text-center">Meetings</h5>
+      <a class="col-md-3" href="{{ site.omp_calendar_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">Check the calendar</button></a>
+      <p class="card-text">All scheduled meetings in the Zowe community are placed in the Mainframe Project Calendar, from the scrum status of a squad to meetings of the Zowe Leadership Committee. </p>
+      <p>You are welcome to drop in on and contribute to any of these meetings! Check out the detailed introduction to squad meetings and other recurring meetings! </p>
+    </div>
+  </div>
+  <div class="card border-dark mb-3">
+    <div class="card-body">
+      <h5 class="card-title text-center">GitHub</h5>
+      <a class="col-md-3" href="{{ site.github_repo_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">Visit Zowe repos</button></a>
+      <p class="card-text">This is where all of Zowe’s code is, and where you can find detailed information about each project and how to collaborate and contribute. This is the place to open issues, give feedback, and contribute code.</p>
+      <p>Some good repos to get started: <ul>
+      <li><a href="{{ site.zowe_community_repo_url }}">community</a></li> 
+      <li><a href="{{ site.zowe_zlc_repo_url }}">zlc</a></li> 
+      <li><a href="{{ site.zowe_docs_repo_url }}">docs-site</a></li>  
+      </ul>
+      </p>
+    </div>
+  </div>
+</div>
 
   <div style="padding-top: 2%">
     <h2 style="margin-bottom: 1.5rem">Upcoming Events</h2>
