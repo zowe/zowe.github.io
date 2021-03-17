@@ -1,15 +1,21 @@
-# Contribute
-# Any kind of links should NOT be in ""
-
-- event: "21PI1 Program Increment (PI) Planning"
-  description: "January 27-29 - all events will be posted in the OMP Calendar"
-
-- event: "March System Demo"
-  description: "March 8 - events will be posted in the OMP Calendar"
-
-- event: "Zowe System Demo"
-  description: "April 9 - events will be posted in the OMP Calendar"
-
-- event: "2021 Q2 Quarterly Webinar"
-  description: "April 21, 2021, 11:30ET -"
-  link: https://google.com
+- event: Zowe Quarterly Update Webinar
+  schedule: April 21 @ 08:30 AM - 09:30 PM
+  description: "Whether you are a Zowe User, Contributor, Extender, or simply interested\
+    \ in what\u2019s happening with Zowe \u2013 please join us for our next Zowe Quarterly\
+    \ Update Webinar. Our agenda will include: \u2013 A focus topic/speaker \u2013\
+    \ A brief Zowe update..."
+  url: https://www.openmainframeproject.org/event/zowe-quarterly-update-webinar
+- event: IDUG Virtual Australasia Db2 Tech Conference
+  schedule: March 15 - March 20
+  description: The IDUG Virtual Australasia Db2 Tech Conference, which is being held
+    on March 15-19, features presentations from top international experts and technical
+    deep dives into topics at the forefront of the industry. Open Mainframe Project
+    Ambassador Joe Winchester, a Senior...
+  url: https://www.openmainframeproject.org/event/idug-virtual-australasia-db2-tech-conference
+- event: SHARE Virtual Summit March 2021
+  schedule: March 02 - March 25
+  description: "SHARE Virtual Summit takes place in March 2-4, 9-11, 16-17 and 23-24.\
+    \ On week three \u2013 Tuesday, March 16-17 the conference will focus on DevOps\
+    \ in the Enterprise, Open Source on Z and Zowe CICS. Open Mainframe Project\u2019\
+    s Zowe will..."
+  url: https://www.openmainframeproject.org/event/share-virtual-summit-march-2021
