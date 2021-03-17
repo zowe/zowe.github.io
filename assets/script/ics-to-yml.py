@@ -35,8 +35,13 @@ for event in list(c.events):
         #April 21 @ 08:30 AM - 09:30 PM
     else:
         eventinstance['schedule'] = start_date + ' - ' + end_date #March 15 - March 20
+    
+    description_list = event.description.split()[:40]
+    description = ""
+    for words in description_list:
+        description = description + words + " "
 
-    eventinstance['description'] = event.description
+    eventinstance['description'] = description.strip() + "..."
     eventinstance['url'] = event.url
     eventlist.append(eventinstance)
 
