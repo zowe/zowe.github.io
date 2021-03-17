@@ -19,29 +19,34 @@
   <p>Learn more and get started with the <a href="{{ site.zowe_extend_doc_url }}">Extending documentation</a>.</p>
 
   <div style="padding-top: 3%">
-    <h2 style="margin-bottom: 1.5rem">Why Build With Zowe?</h2>
+    <h2 style="margin-bottom: 1.5rem">Why build with Zowe?</h2>
       <p>Building your product or extension on top of Zowe has many advantages! Here are a few:</p>
       <div>
         <p><strong>Advanced Security</strong> - Zowe has multifactor authentication built in, ensuring your product keeps with modern security standards.</p>
-        <p><strong>Modern DevOps Practices</strong> - automate your CI/CD pipeline with modern tools like Jenkins.</p>
-        <p><strong>Aligned With New Developers</strong> - the next generation of mainframe developers is using Zowe, and will be the ones who implement and use your extension.</p>
+        <p><strong>Modern DevOps practices</strong> - Automate your CI/CD pipeline with modern tools like Jenkins.</p>
+        <p><strong>Aligned with new developers</strong> - The next generation of mainframe developers is using Zowe, and will be the ones who implement and use your extension.</p>
       </div>
       <p>Learn more and get started with the <a href="{{ site.zowe_extend_doc_url }}">Extending documentation</a>.</p>
   </div>
 
   <section style="padding-top: 3%;">
     <h2 style="margin-bottom: 1.5rem;">Zowe Conformance Program</h2>
-    <div class="row">
-      <div class="col-md-8 col-sm">
         <p>Administered by the Open Mainframe Project, the Zowe Conformance Program gives users the confidence that when they use a product, app, or distribution that extends Zowe, they can expect a high level of common functionality, interoperability, and user experience.</p>
         <p>As a vendor, getting a Zowe Conformance Badge for your application also ensures that your extension will continue to be supported as Zowe changes and grows.</p>
         <p>Getting a Zowe Conformance Badge happens in 3 steps:</p>
-        <img style="margin: 3% auto;" src="assets/img/conformance-process.png">
-      </div>
-      <div class="col-md-4 col-sm">
-        <img src="assets/img/ZoweConformanceBlueBadge.png" />
-      </div>
-    </div>
-    <p style="margin-top: 1rem;">Learn more at the<a href="{{ site.conformance_page_url }}">&nbsp;Zowe Conformance website</a>.</p>
+        <div style="color: black !important;"> 
+          <div class="row">
+            <div class="col-md text-center">
+              <a class="col-md-3" href="{{ site.conformance_step1_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">1) Review program terms and conditions</button></a>
+            </div>
+            <div class="col-md text-center">
+              <a class="col-md-3" href="{{ site.conformance_step1_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">2) Complete test evaluation guide</button></a>
+            </div>
+            <div class="col-md text-center">
+              <a class="col-md-3" href="{{ site.conformance_step1_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">3) Submit the participation form</button></a>
+            </div>
+         </div>
+       </div>
+    <p style="margin-top: 1rem;">Learn more about the program and explore a list of products that have earned Zowe Conformant status at the<a href="{{ site.conformance_page_url }}">&nbsp;Zowe Conformance Program website</a>.</p>
   </section>
 </section>
