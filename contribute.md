@@ -69,7 +69,7 @@
   </div>
 
   <div style="padding-top: 2%">
-    <h2 style="margin-bottom: 1.5rem">Join A Squad Call!</h2>
+    <h2 style="margin-bottom: 1.5rem">Join a squad call</h2>
     <p>Zowe is an open source project - this means that anyone can contribute to any part of it, and that includes you! The best ways to first get involved are <a href="{{ site.create_zowe_issue_url }}">opening issues on GitHub</a>, saying hi on Slack, or joining the weekly calls of one of the squads listed below.</p>
     <p>Zowe’s most frequent and dedicated contributors work in teams called “squads”. If you have specific questions or are excited about a particular part of Zowe, connect with the relevant squad using the table below!</p>
     {% if site.data.squad_call %}
@@ -87,7 +87,7 @@
             <tr>
               <td>
                 <p style="margin-bottom: 0">{{ squad.squad-name }}</p>
-                <a href="{{ squad.github-link }}"><p>Github</p></a>
+                <a href="{{ squad.github-link }}"><p>GitHub</p></a>
               </td>
               <td colspan="2">{{ squad.description }}</td>
               <td>
@@ -100,9 +100,51 @@
                 {% if squad.meeting-link %}
                   <a href="{{ squad.meeting-link }}">Join this squad’s meeting</a>
                 {% endif %}
+                <!--
                 <br>
                 {% if squad.meeting-topic %}
                   <a href="{{ squad.meeting-topic }}">Submit a meeting topic</a>
+                {% endif %}
+                -->
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endif %}
+  </div>
+
+  <div style="padding-top: 2%">
+    <h2 style="margin-bottom: 1.5rem">Join other meetings</h2>
+    <p>Check out other great discussions that are happening each week!</p>
+    {% if site.data.other_call %}
+    <div>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Meeting</th>
+            <th scope="col" colspan="2">Description</th>
+            <th scope="col">Meeting Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for squad in site.data.other_call %}
+            <tr>
+              <td>
+                <p style="margin-bottom: 0">{{ squad.squad-name }}</p>
+                <a href="{{ squad.github-link }}"><p>GitHub</p></a>
+              </td>
+              <td colspan="2">{{ squad.description }}</td>
+              <td>
+                {% if squad.day %}
+                  <p style="margin-bottom: 0rem">{{ squad.day }}</p>
+                {% endif %}
+                {% if squad.slack %}
+                  <p style="margin-bottom: 0rem">Slack Channel: {{ squad.slack }}</p>
+                {% endif %}
+                {% if squad.meeting-link %}
+                  <a href="{{ squad.meeting-link }}">Join this meeting</a>
                 {% endif %}
               </td>
             </tr>
