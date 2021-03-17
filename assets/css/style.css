@@ -6,6 +6,7 @@ body {
   color:#333333;
   font-weight:300;
   line-height:1.4em;
+  text-decoration: none;
 }
 
 body, html {
@@ -14,6 +15,10 @@ body, html {
 
 p {
   margin-bottom:1%;
+}
+
+a:hover{
+  text-decoration: none !important;
 }
 
 .content {
@@ -100,6 +105,9 @@ p {
   padding-bottom:3%;
 }
 
+.announcementsection strong {
+  font-weight: 600;
+}
 .section1col1 {
   width:60%;
   float:left;

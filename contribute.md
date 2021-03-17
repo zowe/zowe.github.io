@@ -22,25 +22,34 @@
 
   <p><a href="{{ site.github_repo_url }}">GitHub</a> - this is where all of Zowe’s code is, and where you can find detailed information about each project and how to collaborate/contribute. This is the place to open issues, give feedback, and contribute code.</p>
 
-  <div style="padding-top: 2%">
-    <h2 style="margin-bottom: 1.5rem">Upcoming Events</h2>
-    <p>Here are some of the exciting community events coming up in the next few months!</p>
-    <div>
-      {% if site.data.upcoming_events %}
-        <div class="row">
-          {% for events in site.data.upcoming_events limit:4 %}
-            {% if events.url %}
-              <p href="{{ events.url }}" class="col-md-4"><strong>{{ events.event }}</strong></p>
-            {% else %}
-              <p class="col-md-4"><strong>{{ events.event }}</strong></p>
-            {% endif %}
-              <p class="col-md-8">{{ events.schedule }}</p>
+  <hr class="w-75 mt-5 mb-5">
+  
+  {% if site.data.upcoming_events %}
+    <section class="py-4" id="events">
+    <div class="container">
+      <h2 class="mb-3">Upcoming Events</h2>
+      <p class="mb-0">Here are some of the exciting community events coming up in the next few months!</p>
+      <div class="row py-4">
+        {% for events in site.data.upcoming_events limit:3 %}
+        <div class="col-md-4 px-3 pb-4 pb-md-0">
+          <div class="w-100 px-4 py-4 rounded shadow bg-light h-100">
+          {% if events.url %}
+            <h5 class="border-bottom border-primary pb-2"><a href="{{ events.url }}">{{ events.event }}</a></h5>
+          {% else %}
+            <h5 class="border-bottom border-primary pb-2">{{ events.event }}</h5>
+          {% endif %}
+            <span style="font-weight: 600">{{ events.schedule }}</span>
             <br>
-          {% endfor %}
+            <span class="text-muted small">{{ events.description }}</span>
+          </div>
         </div>
-      {% endif %}
+        {% endfor %}
+      </div>
     </div>
-  </div>
+    </section>
+  {% endif %}
+
+  <hr class="w-75 mt-5 mb-5">
 
   <div style="padding-top: 2%">
     <h2 style="margin-bottom: 1.5rem">Join A Squad Call!</h2>

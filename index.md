@@ -80,7 +80,7 @@ redirect_from:
     <p>Zowe is composed of several components, each improving the learning ability, accessibility, and possibility of mainframe development.</p>
   </div>
   <div class="col-12 col-md-4">
-    <iframe title="Introduction to Zowe" src="{{ site. latest_video_embed }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="{{ width: -webkit-fill-available; height: 100%;}}"></iframe>
+    <iframe title="Introduction to Zowe" src="{{ site. latest_video_embed }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: -webkit-fill-available; height: 100%"></iframe>
     <p>
       <a href="{{ site.zowe_video_deck_url }}">Download Slides (.pptx)</a>&nbsp;|&nbsp;
       <a href="{{ site.zowe_video_transcript_url }}">Download Transcript (.txt)</a>
@@ -131,6 +131,7 @@ redirect_from:
         <img class="image-zowe-use" src="assets/img/zowe-desktop-image.png">
       </div>
     </div>
+    <hr class="w-75 mt-5 mb-5">
     <div class="row" style="margin-bottom: 4%">
       <div class="col-md-5 col-sm">
         <img class="image-zowe-use" src="assets/img/zowe-apiml-image.png">
@@ -145,6 +146,7 @@ redirect_from:
           </p>
       </div>
     </div>
+    <hr class="w-75 mt-5 mb-5">
     <div class="row" style="margin-bottom: 4%">
       <div class="col-md-7 col-sm order-last order-sm-first">
         <h4>Zowe CLI</h4>
@@ -158,6 +160,7 @@ redirect_from:
         <img class="image-zowe-use" src="assets/img/zowe-cli.png">
       </div>
     </div>
+    <hr class="w-75 mt-5 mb-5">
     <div class="row" style="margin-bottom: 4%">
       <div class="col-md-5 col-sm">
         <img class="image-zowe-use" src="assets/img/zowe-explorer-image.png">
@@ -171,6 +174,7 @@ redirect_from:
           </p>
       </div>
     </div>
+    <hr class="w-75 mt-5 mb-5">
     <div class="row" style="margin-bottom: 4%">
       <div class="col-md-7 col-sm order-last order-sm-first">
         <h4>Zowe Client SDKs (under development)</h4>
@@ -184,6 +188,7 @@ redirect_from:
         <img class="image-zowe-use" src="assets/img/zowe-client-sdk-image.png">
       </div>
     </div>
+    <hr class="w-75 mt-5 mb-5">
     <div class="row" style="margin-bottom: 4%">
       <div class="col-md-5 col-sm">
         <img class="image-zowe-use" src="assets/img/zowe-mobile-image.png">
