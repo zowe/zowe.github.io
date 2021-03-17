@@ -64,14 +64,14 @@ redirect_from:
   {% endif %}
 </div>
 
-<div style="text-align: center; padding: 3%; background-color: #3659B5; color: white !important">
+<div style="text-align: center; padding: 3%; background-color: #3659B5; color: white !important"> <!-- TODO: color: #1b6dc5 ? -->
   <h2 id="conformance">Welcome to Zowe</h2>
   <h4 style="">Combining the past and the present to build the future of mainframe</h4>
   <p>We are a Linux Foundation project</p>
 </div>
 
 <div class="row" style="padding: 5%">
-  <div class="col-12 col-md-8" style="text-align: left; font-size:14pt">
+  <div class="col-12 col-md-8">
     <p>Zowe is an integrated and extensible open source framework for z/OS. Zowe, like Mac OS or Windows, comes with a set of APIs and OS capabilities that applications build on and also includes some applications out of the box. 
     </p>
     <br>
@@ -79,8 +79,8 @@ redirect_from:
     </p>
     <p>Zowe is composed of several components, each improving the learning ability, accessibility, and possibility of mainframe development.</p>
   </div>
-  <div class="col-6 col-md-4">
-    <iframe title="Introduction to Zowe" width="560" height="315" src="{{ site. latest_video_embed }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="col-12 col-md-4">
+    <iframe title="Introduction to Zowe" src="{{ site. latest_video_embed }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="{{ width: -webkit-fill-available; height: 100%;}}"></iframe>
     <p>
       <a href="{{ site.zowe_video_deck_url }}">Download Slides (.pptx)</a>&nbsp;|&nbsp;
       <a href="{{ site.zowe_video_transcript_url }}">Download Transcript (.txt)</a>
