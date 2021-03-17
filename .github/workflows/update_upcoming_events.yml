@@ -17,6 +17,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
+          repository: zowe/zowe.github.io
           path: master
 
       - name: Set up Python 3.x
@@ -27,12 +28,12 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r master/requirements.txt
 
       # Runs the Script to convert ics to yaml format
       - name: Run ics-to-yml.py
         run: |
-          python assets/script/ics-to-yml.py
+          python master/assets/script/ics-to-yml.py
 
       - name: Check diff
         run: | #set an environment variable
