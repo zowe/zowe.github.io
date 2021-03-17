@@ -67,7 +67,7 @@ redirect_from:
 <div style="text-align: center; padding: 3%; background-color: #3659B5; color: white !important"> <!-- TODO: color: #1b6dc5 ? -->
   <h2 id="conformance">Welcome to Zowe</h2>
   <h4 style="">Combining the past and the present to build the future of mainframe</h4>
-  <p>We are a Linux Foundation project</p>
+  <p>We are a <a href="https://linuxfoundation.org">Linux Foundation project</a> and <a href="https://openmainframeproject.org">Open Mainframe Project Active Project</a></p>
 </div>
 
 <div class="row" style="padding: 5%">
