@@ -18,6 +18,7 @@ slack_url: https://slack.openmainframeproject.org
 mailing_list_user_url: https://lists.openmainframeproject.org/g/zowe-user
 youtube_zowe_url: https://www.youtube.com/playlist?list=PL8REpLGaY9QE_9d57tw3KQdwSVLKuTpUZ
 conformance_page_url: https://www.openmainframeproject.org/projects/zowe/conformance
+omp_calendar_url: https://lists.openmainframeproject.org/g/zowe-dev/calendar
 zos_download_url: https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/download/legal.html?version=
 cli_download_url: https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/download/legal.html?type=cli&version=
 cli_plugins_download_url: https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/download/legal.html?type=cli-plugins&version=
@@ -58,8 +59,13 @@ master_the_mainframe_url: https://www.ibm.com/it-infrastructure/z/education/mast
 visual_studio_code_url: https://code.visualstudio.com/
 web_dev_node_url: https://nodejs.org/
 zowe_extend_doc_url: https://docs.zowe.org/stable/extend/extend-zowe-overview.html
-omp_calendar_url: https://lists.openmainframeproject.org/g/zowe-dev/calendar
 create_zowe_issue_url: https://github.com/zowe/community/issues/new/choose
+conformance_step1_url: https://www.openmainframeproject.org/projects/zowe/conformance/terms-and-conditions
+conformance_step2_url: https://www.openmainframeproject.org/projects/zowe/conformance/test-evaluation-guide
+conformance_step3_url: https://www.openmainframeproject.org/projects/zowe/conformance/participation-form-esign
+zowe_community_repo_url: https://github.com/zowe/community
+zowe_zlc_repo_url: https://github.com/zowe/zlc
+zowe_docs_repo_url: https://github.com/zowe/docs-site
 
 #TODO add url for zowe_sdk_install_doc_url, zowe_node_sdk_download_url, and zowe_python_sdk_download_url
 
