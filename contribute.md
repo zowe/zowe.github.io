@@ -9,10 +9,12 @@
   <p>Here are some of the best ways to engage with the Zowe community!</p>
 
   <div class="card-deck">
-  <div class="card border-dark mb-3">
+  <div class="card mb-3">
     <div class="card-body">
-      <h5 class="card-title text-center">Slack</h5>
-      <a class="col-md-3" href="{{ site.slack_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">Join our Slack community</button></a>
+      <div class="d-flex align-items-baseline">
+        <h5 class="text-left"><a href="{{ site.slack_url }}">Slack</a></h5>
+        <i class="fab fa-slack fa-lg ml-2"><a href="{{ site.slack_url }}"></a></i>
+      </div>
       <p class="card-text">Hosted by the Open Mainframe Project, this is a messaging board where you can directly engage with Zowe users and contributors - ask questions, engage in discussions, and contribute your ideas!</p>
       <p>Some popular channels to get started: <ul>
       <li>#zowe-onboarding</li> 
@@ -25,18 +27,22 @@
       </p>
     </div>
   </div>
-  <div class="card border-dark mb-3">
+  <div class="card mb-3">
     <div class="card-body">
-      <h5 class="card-title text-center">Meetings</h5>
-      <a class="col-md-3" href="{{ site.omp_calendar_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">Check the calendar</button></a>
+      <div class="d-flex align-items-baseline">
+        <h5 class="text-left"><a href="{{ site.omp_calendar_url }}">Meetings</a></h5>
+        <i class="far fa-calendar-alt fa-lg ml-2"><a href="{{ site.slack_url }}"></a></i>
+      </div>
       <p class="card-text">All scheduled meetings in the Zowe community are placed in the Mainframe Project Calendar, from the scrum status of a squad to meetings of the Zowe Leadership Committee. </p>
       <p>You are welcome to drop in on and contribute to any of these meetings! Check out the detailed introduction to squad meetings and other recurring meetings! </p>
     </div>
   </div>
-  <div class="card border-dark mb-3">
+  <div class="card mb-3">
     <div class="card-body">
-      <h5 class="card-title text-center">GitHub</h5>
-      <a class="col-md-3" href="{{ site.github_repo_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">Visit Zowe repos</button></a>
+      <div class="d-flex align-items-baseline">
+        <h5 class="text-left"><a href="{{ site.github_repo_url }}">GitHub</a></h5>
+        <i class="fab fa-github fa-lg ml-2"><a href="{{ site.github_repo_url }}"></a></i>
+      </div>
       <p class="card-text">This is where all of Zowe’s code is, and where you can find detailed information about each project and how to collaborate and contribute. This is the place to open issues, give feedback, and contribute code.</p>
       <p>Some good repos to get started: <ul>
       <li><a href="{{ site.zowe_community_repo_url }}">community</a></li> 
