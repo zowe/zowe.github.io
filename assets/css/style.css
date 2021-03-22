@@ -77,10 +77,6 @@ a:hover{
   text-decoration:none;
 }
 
-/* .menu a:hover {
-
-} */
-
 .menu {
   float:right;
   margin-top:-4%;
@@ -236,7 +232,6 @@ a:hover{
 h2 {
   font-size:2em;
   font-weight:400;
-  /* color:#145391 !important; */
 }
 
 footer {
@@ -251,20 +246,17 @@ footer {
 
 .footercol1 {
   width:35%;
-  /* padding-top:%; */
   float:left;
   font-size:1.3em;
 }
 
 .footercol2 {
   width:30%;
-  /* padding-top:%; */
   float:left;
 }
 
 .footercol3 {
   width:30%;
-  /* padding-top:; */
   float:left;
 }
 
@@ -286,7 +278,6 @@ footer {
 }
 
 .footercol1 img{
-  /* padding-top:%; */
   padding-bottom:4%;
   display:block;
   width:55%;
@@ -324,6 +315,10 @@ a.back-to-top {
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
+}
+
+.zowe-video {
+  max-height: 216px;
 }
 
 @media (max-width:750px) {
@@ -424,7 +419,6 @@ a.back-to-top {
   
   .footercol1 {
     width:100%;
-    /* padding-top:%; */
     float:left;
     font-size:1.3em;
   }
@@ -453,5 +447,15 @@ a.back-to-top {
     width:90%;
     margin-left:5%;
     padding-right:2%;
+  }
+
+  .zowe-video {
+    max-height: 181px;
+  }
+}
+
+@media (min-width:1500px) {
+  .zowe-video {
+    max-height: inherit;
   }
 }
