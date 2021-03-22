@@ -140,9 +140,9 @@
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th scope="col" style="width: 220px">Meeting</th>
-            <th scope="col" style="width: 650px">Description</th>
-            <th scope="col" colspan="2">Meeting Details</th>
+            <th scope="col" style="width: auto">Meeting</th>
+            <th scope="col">Description</th>
+            <th scope="col" colspan="2" style="width: 480px">Meeting Details</th>
           </tr>
         </thead>
         <tbody>
