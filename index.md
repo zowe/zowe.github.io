@@ -76,7 +76,17 @@ redirect_from:
     <br>
     <p>Zowe offers modern interfaces to interact with z/OS and allows you to work with z/OS in a way that is similar to what you experience on cloud platforms today. You can use these interfaces as delivered or through plug-ins and extensions that are created by clients or third-party vendors. 
     </p>
-    <p>Zowe is composed of several components, each improving the learning ability, accessibility, and possibility of mainframe development.</p>
+    <p>Zowe is composed of several components, each improving the learning ability, accessibility, and possibility of mainframe development.
+    <ul>
+    <li><a href="#app-framework-intro">Zowe Application Framework</a></li>
+    <li><a href="#apiml-intro">Zowe API Mediation Layer</a></li>
+    <li><a href="#cli-intro">Zowe CLI</a></li>
+    <li><a href="#zowe-explorer-intro">Zowe Explorer</a></li>
+    <li><a href="#zowe-client-sdk-intro">Zowe Client SDKs - under development</a></li>
+    <li><a href="#zowe-mobile-intro">Zowe Mobile - Incubator</a></li>
+    <li><a href="#zebra-intro">ZEBRA (Zowe Embedded Browser for RMF/SMF and APIs) - Incubator</a></li>
+    </ul>
+    </p>
   </div>
   <div class="col-12 col-md-4">
     <iframe title="Introduction to Zowe" src="{{ site. latest_video_embed }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: -webkit-fill-available; height: 100%"></iframe>
@@ -117,12 +127,12 @@ redirect_from:
   <div>
     <div class="row" style="margin-bottom: 4%">
       <div class="col-md-7 col-sm order-last order-sm-first">
-        <h4>Zowe Application Framework</h4>
+        <a id="app-framework-intro"><h4>Zowe Application Framework</h4></a>
         <p style="margin: 1rem auto">  
         A web user interface (UI) that provides a virtual desktop containing a number of apps allowing access to z/OS function. Base Zowe includes apps for traditional access such as a 3270 terminal and a VT Terminal, as well as an editor and explorers for working with JES, MVS Data Sets and Unix System Services.
         </p>
         <p>
-          <a href="{{ site.app_framework_github_url }}">Code on Github</a>&nbsp;|&nbsp;
+          <a href="{{ site.app_framework_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
           <a href="{{ site.app_framework_doc_url }}">Learn more</a>
         </p>
       </div>
@@ -136,11 +146,11 @@ redirect_from:
         <img class="image-zowe-use" src="assets/img/zowe-apiml-image.png">
       </div>
       <div class="col-md-7 col-sm">
-        <h4>API Mediation Layer</h4>
+        <a id="apiml-intro"><h4>API Mediation Layer</h4></a>
           <p style="margin: 1rem auto">Provides a gateway that acts as a reverse proxy for z/OS services, together with a catalog of REST APIs and a dynamic discovery capability. Base Zowe provides core services for working with MVS Data Sets, JES, as well as working with z/OSMF REST APIs. The API Mediation Layer also provides a framework for Single Sign On (SSO). 
           </p>
           <p>
-            <a href="{{ site.apiml_github_url }}">Code on Github</a>&nbsp;|&nbsp;
+            <a href="{{ site.apiml_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
             <a href="{{ site.apiml_doc_url }}">Learn more</a>
           </p>
       </div>
@@ -148,10 +158,10 @@ redirect_from:
     <hr class="w-75 mt-5 mb-5">
     <div class="row" style="margin-bottom: 4%">
       <div class="col-md-7 col-sm order-last order-sm-first">
-        <h4>Zowe CLI</h4>
+        <a id="cli-intro"><h4>Zowe CLI</h4></a>
         <p style="margin: 1rem auto">Provides a command-line interface that lets you interact with the mainframe remotely and use common tools such as Integrated Development Environments (IDEs), shell commands, bash scripts, and build tools for mainframe development. It provides a set of utilities and services for application developers that want to become efficient in supporting and building z/OS applications quickly. The CLI provides a core set of commands for working with data sets, USS, JES, as well as issuing TSO and console commands.</p>
           <p>
-            <a href="{{ site.zowe_cli_github_url }}">Code on Github</a>&nbsp;|&nbsp;
+            <a href="{{ site.zowe_cli_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
             <a href="{{ site.zowe_cli_doc_url }}">Learn more</a>
           </p>
       </div>
@@ -165,10 +175,10 @@ redirect_from:
         <img class="image-zowe-use" src="assets/img/zowe-explorer-image.png">
       </div>
       <div class="col-md-7 col-sm">
-        <h4>Zowe Explorer</h4>
+        <a id="zowe-explorer-intro"><h4>Zowe Explorer</h4></a>
           <p style="margin: 1rem auto">A Visual Studio Code extension that modernizes the way developers and system administrators interact with z/OS mainframes. Zowe Explorer lets you interact with data sets, USS files, and jobs that are stored on z/OS. The extension complements your Zowe CLI experience and lets you use authentication services like API Mediation Layer.</p>
           <p>
-            <a href="{{ site.zowe_explorer_github_url }}">Code on Github</a>&nbsp;|&nbsp;
+            <a href="{{ site.zowe_explorer_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
             <a href="{{ site.zowe_explorer_doc_url }}">Learn more</a>
           </p>
       </div>
@@ -176,10 +186,10 @@ redirect_from:
     <hr class="w-75 mt-5 mb-5">
     <div class="row" style="margin-bottom: 4%">
       <div class="col-md-7 col-sm order-last order-sm-first">
-        <h4>Zowe Client SDKs (under development)</h4>
+        <a id="zowe-client-sdk-intro"><h4>Zowe Client SDKs (under development)</h4></a>
         <p style="margin: 1rem auto">Provides access to a set of programmatic APIs that you can use to build client applications or scripts that interact with z/OS. SDKs are available for Node.js and Python.</p>
           <p>
-            <a href="{{ site.zowe_sdk_github_url }}">Code on Github</a>&nbsp;|&nbsp;
+            <a href="{{ site.zowe_sdk_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
             <a href="{{ site.zowe_sdk_doc_url }}">Learn more</a>
           </p>
       </div>
@@ -193,12 +203,26 @@ redirect_from:
         <img class="image-zowe-use" src="assets/img/zowe-mobile-image.png">
       </div>
       <div class="col-md-7 col-sm">
-        <h4>Zowe Mobile (Incubator)</h4>
+        <a id="zowe-mobile-intro"><h4>Zowe Mobile (Incubator)</h4></a>
           <p style="margin: 1rem auto">Lets you interact with your Zowe instance running on the mainframe from your mobile. </p>
           <p>
-            <a href="{{ site.zowe_mobile_github_url }}">Code on Github</a>&nbsp;|&nbsp;
+            <a href="{{ site.zowe_mobile_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
             <a href="{{ site.zowe_mobile_doc_url }}">Learn more</a>
           </p>
+      </div>
+    </div>
+    <hr class="w-75 mt-5 mb-5">
+    <div class="row" style="margin-bottom: 4%">
+      <div class="col-md-7 col-sm order-last order-sm-first">
+        <a id="zebra-intro"><h4>ZEBRA (Incubator)</h4></a>
+        <p style="margin: 1rem auto">Provides re-usable and industry compliant JSON formatted RMF/SMF data records, so that many other ISV SW and users can exploit them using open-source SW for many ways.</p>
+          <p>
+            <a href="{{ site.zebra_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
+            <a href="{{ site.zebra_doc_url }}">Learn more</a>
+          </p>
+      </div>
+      <div class="col-md-5 col-sm order-first order-sm-last">
+        <img class="image-zowe-use" src="assets/img/zebra-image.png">
       </div>
     </div>
   </div>
