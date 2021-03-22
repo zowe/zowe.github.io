@@ -51,6 +51,8 @@ zowe_sdk_doc_url: https://github.com/zowe/docs-site/blob/redesign-nav/docs/getti
 zowe_sdk_github_url: https://github.com/zowe/zowe-cli
 zowe_mobile_doc_url: https://github.com/zowe/docs-site/blob/redesign-nav/docs/getting-started/user-roadmap-zowe-mobile.md
 zowe_mobile_github_url: https://github.com/zowe/zowe-on-the-go
+zebra_github_url: https://github.com/zowe/zebra
+zebra_doc_url: https://github.com/zowe/zebra/tree/main/Documentation
 zowe_video_deck_url: https://docs.zowe.org/stable/Zowe_introduction_video_deck.pptx
 zowe_video_transcript_url: https://docs.zowe.org/stable/Zowe_introduction_video_script.txt
 learn_page_get_started: https://github.com/zowe/docs-site/blob/redesign-nav/docs/getting-started/zowe-getting-started.md
