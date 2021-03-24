@@ -21,7 +21,7 @@
   node_sdk_version: 1.19.1
   python_sdk_version: 1.19.1
   release_date: 2021-02-11
-  documentation: stable
+  documentation: v1-19-x
 - version: 1.19.0
   zos_version: 1.19.0
   smpe_version: 1.19.0
@@ -32,7 +32,7 @@
   node_sdk_version: 1.19.0
   python_sdk_version: 1.19.0
   release_date: 2021-01-29
-  documentation: stable
+  documentation: v1-19-x
 - version: 1.18.0
   smpe_version: 1.18.0
   smpe_sysmod: PE-PTF
