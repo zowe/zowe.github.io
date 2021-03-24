@@ -20,7 +20,7 @@
 {% if site.data.releases[0].cli_version and site.data.releases[0].cli_plugins_version and site.data.releases[0].zos_version and site.data.releases[0].smpe_version and site.data.releases[0].node_sdk_version and site.data.releases[0].python_sdk_version %}
 <div class="card-deck">
 <div class="card bg-light border-light mb-3">
-  <h4 class="card-header">Server-side component installer</h4>
+  <h4 class="card-header" id="zowe-zos-build-download">Server-side component installer</h4>
     <div class="card-body">
     <p class="card-text">Install Zowe z/OS components from the <b>convenience build</b> or the <b>SMP/E build</b> depending on your need.</p>
     <p class="card-text">You can also optionally use the Docker build technical preview to run a subset of the Zowe server-side components outside z/OS. Download and learn more about the build in the technical preview section.</p>
@@ -58,7 +58,7 @@
     <p class="card-text">Install <b>Zowe CLI</b> or <b>Zowe Explorer</b>, a Visual Studio Code extension powered by Zowe CLI.</p>
       <div class="row">
         <div class="card-body">
-          <h5 class="card-title">Zowe CLI</h5>
+          <h5 class="card-title" id="zowe-cli-download">Zowe CLI</h5>
           <p class="card-text">Install Zowe CLI from the local package or from an npm registry if your computer is connected to the Internet.</p>
           <p class="card-text">Download the Zowe CLI core package and optionally download the plug-ins (CICS, Db2, IMS, MQ, z/OS FTP, and so on) to gain more capabilities.</p>
           <p><a class="btn btn-primary" href="{{ site.cli_download_url }}{{ site.data.releases[0].cli_version }}">Zowe {{ site.data.releases[0].cli_version }} CLI Core</a></p>

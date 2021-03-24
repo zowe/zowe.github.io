@@ -14,7 +14,7 @@
   <div style="margin-left: 1%">
   <p style="margin-bottom: 0rem">1. Extend the Zowe Command Line Interface.</p>
   <p style="margin-bottom: 0rem">2. Add a REST API service to the API Mediation Layer.</p>
-  <p>3. Add a plug-in to the Zowe Desktop.</p>
+  <p>3. Add an application plug-in to the Zowe Desktop.</p>
   </div>
   <p>Learn more and get started with the <a href="{{ site.zowe_extend_doc_url }}">Extending documentation</a>.</p>
 
@@ -40,13 +40,21 @@
               <a class="col-md-3" href="{{ site.conformance_step1_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">1) Review program terms and conditions</button></a>
             </div>
             <div class="col-md text-center">
-              <a class="col-md-3" href="{{ site.conformance_step1_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">2) Complete test evaluation guide</button></a>
+              <a class="col-md-3" href="{{ site.conformance_step2_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">2) Complete test evaluation guide</button></a>
             </div>
             <div class="col-md text-center">
-              <a class="col-md-3" href="{{ site.conformance_step1_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">3) Submit the participation form</button></a>
+              <a class="col-md-3" href="{{ site.conformance_step3_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">3) Submit the participation form</button></a>
             </div>
          </div>
        </div>
-    <p style="margin-top: 1rem;">Learn more about the program and explore a list of products that have earned Zowe Conformant status at the<a href="{{ site.conformance_page_url }}">&nbsp;Zowe Conformance Program website</a>.</p>
-  </section>
+    <p style="margin-top: 1rem;">Learn more about the program at the <a href="{{ site.conformance_page_url }}">&nbsp;Zowe Conformance Program website</a>.</p>
+
+  <div>
+	  <div>
+		<h3 style="text-align: left;">The following products have earned Zowe Conformant status</h3>
+    <iframe frameBorder="0" id="landscape" scrolling="no" style="width: 1px; min-width: 100%" src="https://landscape.openmainframeproject.org/pages/zowe-conformant"></iframe><script src="https://landscape.openmainframeproject.org/iframeResizer.js"></script>
+	  </div>
+  </div>
+
+</section>
 </section>

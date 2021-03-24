@@ -64,8 +64,8 @@ redirect_from:
   {% endif %}
 </div>
 
-<div style="text-align: center; padding: 3%; background-image: url('assets/img/bg2.jpg'); background-repeat: no-repeat; background-size: cover; color: white !important"> 
-  <h1 id="conformance">Open, Simple, Familiar</h1>
+<div style="text-align: center; padding: 5%; background-image: url('assets/img/bg2.jpg'); background-repeat: no-repeat; background-size: cover; color: white !important"> 
+  <h1 id="conformance" style="margin-bottom: 2%">Open, Simple, Familiar</h1>
   <h4 style="">Combining the past and the present to build the future of mainframe</h4>
 </div>
 
@@ -137,11 +137,36 @@ redirect_from:
         <p style="margin-top: 1rem">Contribute to the open source community developing Zowe</p>
       </div>
     </div>
-</div>
+</div> 
+
+  {% if site.data.upcoming_events %}
+  <section id="events" style="margin-top: 3%">
+    <div class="container">
+      <h2 class="mb-3 text-center">Upcoming events</h2>
+      <p class="mb-0">Here are some of the exciting community events coming up in the next few months!</p>
+      <div class="row py-4">
+        {% for events in site.data.upcoming_events limit:3 %}
+        <div class="col-md-4 px-3 pb-4 pb-md-0">
+          <div class="w-100 px-4 py-4 rounded shadow bg-light h-100">
+          {% if events.url %}
+            <h5 class="border-bottom border-primary pb-2"><a href="{{ events.url }}">{{ events.event }}</a></h5>
+          {% else %}
+            <h5 class="border-bottom border-primary pb-2">{{ events.event }}</h5>
+          {% endif %}
+            <span style="font-weight: 600">{{ events.schedule }}</span>
+            <br>
+            <span class="text-muted small">{{ events.description }}</span>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
 
 <div style="padding: 4% 7% 5% 7%">
-  <div style="margin-bottom: 4%">
-    <h2 class="text-center" style="color: black !important; margin-bottom: 5%">Zowe components</h2>
+  <div>
+    <h2 class="text-center" style="color: black !important; margin-bottom: 3%">Zowe components</h2>
   </div>
 
   <div>
@@ -153,6 +178,7 @@ redirect_from:
         </p>
         <p>
           <a href="{{ site.app_framework_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
+          <a href="{{ site.app_framework_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
           <a href="{{ site.app_framework_doc_url }}">Learn more</a>
         </p>
       </div>
@@ -171,6 +197,7 @@ redirect_from:
           </p>
           <p>
             <a href="{{ site.apiml_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
+            <a href="{{ site.apiml_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
             <a href="{{ site.apiml_doc_url }}">Learn more</a>
           </p>
       </div>
@@ -182,6 +209,7 @@ redirect_from:
         <p style="margin: 1rem auto">Provides a command-line interface that lets you interact with the mainframe remotely and use common tools such as Integrated Development Environments (IDEs), shell commands, bash scripts, and build tools for mainframe development. It provides a set of utilities and services for application developers that want to become efficient in supporting and building z/OS applications quickly. The CLI provides a core set of commands for working with data sets, USS, JES, as well as issuing TSO and console commands.</p>
           <p>
             <a href="{{ site.zowe_cli_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
+            <a href="{{ site.zowe_cli_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
             <a href="{{ site.zowe_cli_doc_url }}">Learn more</a>
           </p>
       </div>
@@ -199,6 +227,7 @@ redirect_from:
           <p style="margin: 1rem auto">A Visual Studio Code extension that modernizes the way developers and system administrators interact with z/OS mainframes. Zowe Explorer lets you interact with data sets, USS files, and jobs that are stored on z/OS. The extension complements your Zowe CLI experience and lets you use authentication services like API Mediation Layer.</p>
           <p>
             <a href="{{ site.zowe_explorer_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
+            <a href="{{ site.zowe_explorer_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
             <a href="{{ site.zowe_explorer_doc_url }}">Learn more</a>
           </p>
       </div>
@@ -210,6 +239,7 @@ redirect_from:
         <p style="margin: 1rem auto">Provides access to a set of programmatic APIs that you can use to build client applications or scripts that interact with z/OS. SDKs are available for Node.js and Python.</p>
           <p>
             <a href="{{ site.zowe_sdk_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
+            <a href="{{ site.zowe_sdk_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
             <a href="{{ site.zowe_sdk_doc_url }}">Learn more</a>
           </p>
       </div>
@@ -227,6 +257,7 @@ redirect_from:
           <p style="margin: 1rem auto">Lets you interact with your Zowe instance running on the mainframe from your mobile. </p>
           <p>
             <a href="{{ site.zowe_mobile_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
+            <a href="{{ site.zowe_mobile_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
             <a href="{{ site.zowe_mobile_doc_url }}">Learn more</a>
           </p>
       </div>
@@ -238,6 +269,7 @@ redirect_from:
         <p style="margin: 1rem auto">Provides re-usable and industry compliant JSON formatted RMF/SMF data records, so that many other ISV SW and users can exploit them using open-source SW for many ways.</p>
           <p>
             <a href="{{ site.zebra_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
+            <a href="{{ site.zebra_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
             <a href="{{ site.zebra_doc_url }}">Learn more</a>
           </p>
       </div>
@@ -252,34 +284,34 @@ redirect_from:
 <h2 class="text-center" style="color: black !important; margin-bottom: 5%">Zowe by the numbers</h2>
   <div class="row" style="margin-bottom: 2%">
     <div class="col-md text-center">
-      <img style="width:15%;" src="assets/img/logo-cli-download.svg" />
+      <a href="download.html#zowe-cli-download"><img style="width:15%" src="assets/img/logo-cli-download.svg" /></a>
       <h3 style="margin-bottom: 0rem" id="cli-downloads"></h3>
       <h6>Zowe CLI Downloads</h6>
     </div>
     <div class="col-md text-center">
-      <img style="width:15%" src="assets/img/logo-explorer-download.svg" />
+      <a href="{{ site.vscode_marketplace_url }}"><img style="width:15%" src="assets/img/logo-explorer-download.svg" /></a>
       <h3 style="margin-bottom: 0rem" id="explorer-downloads"></h3>
       <h6>Zowe Explorer Downloads</h6>
     </div>
     <div class="col-md text-center">
-      <img style="width:15%" src="assets/img/logo-zowe-build-download.svg" />
+      <a href="download.html#zowe-zos-build-download"><img style="width:15%" src="assets/img/logo-zowe-build-download.svg" /></a>
       <h3 style="margin-bottom: 0rem" id="server-downloads"></h3>
-      <h6>Zowe z/OS  Build Downloads</h6>
+      <h6>Zowe z/OS Build Downloads</h6>
     </div>
   </div>
   <div class="row">
     <div class="col-md text-center">
-      <img style="width:15%" src="assets/img/logo-slack-black.svg" />
+      <a href="{{ site.slack_url }}"><img style="width:15%" src="assets/img/logo-slack-black.svg" /></a>
       <h3 style="margin-bottom: 0rem" id="slack-members"></h3>
       <h6>Slack Community Members</h6>
     </div>
     <div class="col-md text-center">
-      <img style="width:15%" src="assets/img/logo-github-back.svg" />
+      <a href="{{ site.github_repo_url }}"><img style="width:15%" src="assets/img/logo-github-back.svg" /></a>
       <h3 style="margin-bottom: 0rem" id="github-contributors"></h3>
       <h6>Contributors</h6>
     </div>
     <div class="col-md text-center">
-      <img style="width:15%" src="assets/img/logo-vendor-product.svg" />
+      <a href="{{ site.conformance_page_url }}"><img style="width:15%" src="assets/img/logo-vendor-product.svg" /></a>
       <h3 style="margin-bottom: 0rem" id="conformant-product-value"></h3>
       <h6>Zowe Conformant Products</h6>
     </div>
@@ -288,13 +320,19 @@ redirect_from:
 
 <div style="padding: 4% 7% 5% 7%">
   <div style="margin-bottom: 4%">
-    <h2 class="text-center" style="color: black !important; margin-bottom: 5%">Explore more about Zowe</h2>
+    <h2 class="text-center" style="color: black !important; margin-bottom: 5%">From Zowe blog</h2>
   </div>
   <div id="medium-widget" style="margin-top: 5%"></div>
     <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
     <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/zowe","postsPerLine":2,"limit":4,"picture":"small","fields":["description","publishAt"],"ratio":"landscape"}})</script>
+  <div style="margin-bottom: 4%">
+    <a href="{{ site.zowe_medium_blog_url }}"><h5 class="text-center"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg> Visit our blog</h5></a>
+  </div>
+    
 </div>
 <div>
+
+
   
   
 
