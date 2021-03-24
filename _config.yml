@@ -39,20 +39,27 @@ vscode_marketplace_url: https://marketplace.visualstudio.com/items?itemName=Zowe
 zowe_docker_download_url: https://zowe.jfrog.io/zowe/libs-release-local/org/zowe
 zowe_dockerhub_download_url: https://hub.docker.com/r/ompzowe/server-bundle
 docker_install_doc_url: https://docs.zowe.org/stable/user-guide/install-docker.html
-app_framework_doc_url: https://github.com/zowe/docs-site/blob/redesign-nav/docs/getting-started/user-roadmap-app-framework.md
+app_framework_doc_url: https://docs.zowe.org/stable/getting-started/overview.html#zowe-application-framework
 app_framework_github_url: https://github.com/zowe/zlux
-apiml_doc_url: https://github.com/zowe/docs-site/blob/redesign-nav/docs/getting-started/user-roadmap-apiml.md
+app_framework_slack_url: https://openmainframeproject.slack.com/archives/CC5U0JCFP
+apiml_doc_url: https://docs.zowe.org/stable/getting-started/overview.html#api-mediation-layer
 apiml_github_url: https://github.com/zowe/api-layer
-zowe_cli_doc_url: https://github.com/zowe/docs-site/blob/redesign-nav/docs/getting-started/user-roadmap-zowe-cli.md
+apiml_slack_url: https://openmainframeproject.slack.com/archives/CC5UUL005 
+zowe_cli_doc_url: https://docs.zowe.org/stable/getting-started/overview.html#zowe-cli
 zowe_cli_github_url: https://github.com/zowe/zowe-cli
-zowe_explorer_doc_url: https://github.com/zowe/docs-site/blob/redesign-nav/docs/getting-started/user-roadmap-zowe-explorer.md
+zowe_cli_slack_url: https://openmainframeproject.slack.com/archives/CC8AALGN6
+zowe_explorer_doc_url: https://docs.zowe.org/stable/user-guide/ze-install.html#installing-zowe-explorer
 zowe_explorer_github_url: https://github.com/zowe/vscode-extension-for-zowe
-zowe_sdk_doc_url: https://github.com/zowe/docs-site/blob/redesign-nav/docs/getting-started/user-roadmap-client-sdk.md
+zowe_explorer_slack_url: https://openmainframeproject.slack.com/archives/CUVE37Z5F
+zowe_sdk_doc_url: https://docs.zowe.org/stable/getting-started/overview.html#zowe-client-software-development-kits-sdks
 zowe_sdk_github_url: https://github.com/zowe/zowe-cli
+zowe_sdk_slack_url: https://openmainframeproject.slack.com/archives/C010AUS5MK5
 zowe_mobile_doc_url: https://github.com/zowe/docs-site/blob/redesign-nav/docs/getting-started/user-roadmap-zowe-mobile.md
 zowe_mobile_github_url: https://github.com/zowe/zowe-on-the-go
+zowe_mobile_slack_url: https://openmainframeproject.slack.com/archives/C0138CFMY74
 zebra_github_url: https://github.com/zowe/zebra
 zebra_doc_url: https://github.com/zowe/zebra/tree/main/Documentation
+zebra_slack_url: https://openmainframeproject.slack.com/archives/C01QWBJG3A4
 zowe_video_deck_url: https://docs.zowe.org/stable/Zowe_introduction_video_deck.pptx
 zowe_video_transcript_url: https://docs.zowe.org/stable/Zowe_introduction_video_script.txt
 learn_page_get_started: https://github.com/zowe/docs-site/blob/redesign-nav/docs/getting-started/zowe-getting-started.md
@@ -68,6 +75,10 @@ conformance_step3_url: https://www.openmainframeproject.org/projects/zowe/confor
 zowe_community_repo_url: https://github.com/zowe/community
 zowe_zlc_repo_url: https://github.com/zowe/zlc
 zowe_docs_repo_url: https://github.com/zowe/docs-site
+zowe_onboarding_slack_url: https://openmainframeproject.slack.com/archives/CC60ALD61
+zowe_user_slack_url: https://openmainframeproject.slack.com/archives/CC08782AG
+zowe_doc_slack_url: https://openmainframeproject.slack.com/archives/CC961JYMQ
+
 
 #TODO add url for zowe_sdk_install_doc_url, zowe_node_sdk_download_url, and zowe_python_sdk_download_url
 

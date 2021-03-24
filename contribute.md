@@ -17,12 +17,12 @@
       </div>
       <p class="card-text">Hosted by the Open Mainframe Project, this is a messaging board where you can directly engage with Zowe users and contributors - ask questions, engage in discussions, and contribute your ideas!</p>
       <p>Some popular channels to get started: <ul>
-      <li>#zowe-onboarding</li> 
-      <li>#zowe-user</li> 
-      <li>#zowe-cli</li> 
-      <li>#zowe-explorer</li> 
-      <li>#zowe-api</li>
-      <li>#zowe-doc</li> 
+      <li><a href="{{ site.zowe_onboarding_slack_url }}">#zowe-onboarding</a></li> 
+      <li><a href="{{ site.zowe_user_slack_url }}">#zowe-user</a></li> 
+      <li><a href="{{ site.zowe_cli_slack_url }}">#zowe-cli</a></li> 
+      <li><a href="{{ site.zowe_explorer_slack_url }}">#zowe-explorer</a></li> 
+      <li><a href="{{ site.apiml_slack_url }}">#zowe-api</a></li>
+      <li><a href="{{ site.zowe_doc_slack_url }}">#zowe-doc</a></li> 
       </ul>
       </p>
     </div>
@@ -54,37 +54,8 @@
   </div>
 </div>
 
-  <hr class="w-75 mt-5 mb-5">
-  
-  {% if site.data.upcoming_events %}
-    <section id="events">
-    <div class="container">
-      <h2 class="mb-3">Upcoming Events</h2>
-      <p class="mb-0">Here are some of the exciting community events coming up in the next few months!</p>
-      <div class="row py-4">
-        {% for events in site.data.upcoming_events limit:3 %}
-        <div class="col-md-4 px-3 pb-4 pb-md-0">
-          <div class="w-100 px-4 py-4 rounded shadow bg-light h-100">
-          {% if events.url %}
-            <h5 class="border-bottom border-primary pb-2"><a href="{{ events.url }}">{{ events.event }}</a></h5>
-          {% else %}
-            <h5 class="border-bottom border-primary pb-2">{{ events.event }}</h5>
-          {% endif %}
-            <span style="font-weight: 600">{{ events.schedule }}</span>
-            <br>
-            <span class="text-muted small">{{ events.description }}</span>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-    </section>
-  {% endif %}
-
-  <hr class="w-75 mt-5 mb-5">
-
   <div>
-    <h2 style="margin-bottom: 1.5rem">Join a squad call</h2>
+    <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Join a squad call</h2>
     <p>Zowe is an open source project - this means that anyone can contribute to any part of it, and that includes you! The best ways to first get involved are <a href="{{ site.create_zowe_issue_url }}">opening issues on GitHub</a>, saying hi on Slack, or joining the weekly calls of one of the squads listed below.</p>
     <p>Zowe’s most frequent and dedicated contributors work in teams called “squads”. If you have specific questions or are excited about a particular part of Zowe, connect with the relevant squad using the table below!</p>
     {% if site.data.squad_call %}
@@ -110,7 +81,7 @@
                   <p style="margin-bottom: 0rem">{{ squad.day }}</p>
                 {% endif %}
                 {% if squad.slack %}
-                  <p style="margin-bottom: 0rem">Slack Channel: {{ squad.slack }}</p>
+                  <p style="margin-bottom: 0rem"><b>Slack Channel:</b> {{ squad.slack }}</p>
                 {% endif %}
                 {% if squad.meeting-link %}
                   <a href="{{ squad.meeting-link }}">Join this squad’s meeting</a>
@@ -130,10 +101,8 @@
     {% endif %}
   </div>
 
-  <hr class="w-75 mt-5 mb-5">
-
   <div>
-    <h2 style="margin-bottom: 1.5rem">Join other meetings</h2>
+    <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Join other meetings</h2>
     <p>Check out other great discussions that are happening each week!</p>
     {% if site.data.other_call %}
     <div>
