@@ -2,7 +2,7 @@
 # Any kind of links should NOT be in ""
 
 - squad-name: "Zowe API Mediation Layer"
-  day: "Tue/Thu 9-10am EST"
+  day: "Mon 10-10:30am, Wed 9-10am, Fri 9-9:30am EST"
   meeting-link: https://zoom.us/j/98404818292
   slack: "#zowe-api"
   github-link: https://github.com/zowe/api-layer
@@ -16,7 +16,7 @@
   description: "This squad develops and maintains the Zowe Application Framework sub-project."
 
 - squad-name: "Zowe CLI"
-  day: "Mon 11-11:30am, Wed 8-8:30am EST"
+  day: "Mon/Wed 11-11:30am EST"
   meeting-link: https://zoom.us/j/99891777715
   slack: "#zowe-cli"
   github-link: https://github.com/zowe/zowe-cli
@@ -44,7 +44,7 @@
   description: "This squad develops and maintains the Zowe documentation."
 
 - squad-name: "Zowe Onboarding"
-  day: "Wed 1:30-2pm EST"
+  day: "Wed 12pm-12:30pm or 12pm-1pm EST"
   meeting-link: https://zoom.us/j/94312528890
   slack: "#zowe-onboarding"
   github-link: https://github.com/zowe/community
