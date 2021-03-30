@@ -57,7 +57,7 @@
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Join a squad call</h2>
     <p>Zowe is an open source project - this means that anyone can contribute to any part of it, and that includes you! The best ways to first get involved are <a href="{{ site.create_zowe_issue_url }}">opening issues on GitHub</a>, saying hi on Slack, or joining the weekly calls of one of the squads listed below.</p>
-    <p>Zowe’s most frequent and dedicated contributors work in teams called “squads”. If you have specific questions or are excited about a particular part of Zowe, connect with the relevant squad using the table below!</p>
+    <p>Zowe’s most frequent and dedicated contributors work in teams called “squads”. If you have specific questions or are excited about a particular part of Zowe, connect with the relevant squad using the table below! Occasionally, some of the meetings might be cancelled or rescheduled. Stay up to date in the Slack channels.</p>
     {% if site.data.squad_call %}
     <div>
       <table class="table table-bordered">

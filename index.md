@@ -64,7 +64,7 @@ redirect_from:
   {% endif %}
 </div>
 
-<div style="text-align: center; padding: 5%; background-image: url('assets/img/bg2.png'); background-repeat: no-repeat; background-size: cover; color: white !important"> 
+<div style="text-align: center; padding: 3%; background-image: url('assets/img/bg2.png'); background-repeat: no-repeat; background-size: cover; color: white !important"> 
   <h1 id="conformance" style="margin-bottom: 2%">Open, Simple, Familiar</h1>
   <h4 style="">Combining the past and the present to build the future of mainframe</h4>
 </div>

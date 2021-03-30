@@ -11,9 +11,9 @@
 - squad-name: "Zowe Application Framework"
   day: "Fri 9-10am EST"
   meeting-link: https://zoom.us/j/99494243697
-  slack: "#zowe-core"
+  slack: "#zowe-dev"
   github-link: https://github.com/zowe/zlux
-  description: "TThis squad develops and maintains the Zowe Application Framework sub-project."
+  description: "This squad develops and maintains the Zowe Application Framework sub-project."
 
 - squad-name: "Zowe CLI"
   day: "Mon 11-11:30am, Wed 8-8:30am EST"
