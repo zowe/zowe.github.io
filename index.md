@@ -54,6 +54,7 @@ redirect_from:
   <strong>Zowe {{ site.data.releases[0].version }} is now available. You can download the installers and PTFs ({{ site.data.releases[0].smpe_numbers }}) for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="{{ site.docs_site_url }}/{{site.data.releases[0].documentation}}/getting-started/summaryofchanges.html">Release notes</a>.<br></strong>
   {% if site.data.announcements %}
     {% for announcement in site.data.announcements %}
+    <hr class="w-100" style="margin-top: 0.5rem; margin-bottom: 0.5rem; border-top: 1px solid rgb(0 0 0 / 20%)">
     <strong>{{ announcement.announcement }}
       {% if announcement.link %}
         <a href="{{ announcement.link }}">Learn More</a>
@@ -145,7 +146,7 @@ redirect_from:
       <h2 class="mb-3 text-center">Upcoming events</h2>
       <div class="row py-4">
         {% for events in site.data.upcoming_events limit:3 %}
-        <div class="col-md-4 px-3 pb-4 pb-md-0">
+        <div class="col-md-4 px-3 pb-4 pb-md-0"> <!-- ml-auto mr-auto -->
           <div class="w-100 px-4 py-4 rounded shadow bg-light h-100">
           {% if events.url %}
             <h5 class="border-bottom border-primary pb-2"><a href="{{ events.url }}">{{ events.event }}</a></h5>
