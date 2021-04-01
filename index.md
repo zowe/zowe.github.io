@@ -140,7 +140,7 @@ redirect_from:
     </div>
 </div> 
 
-  {% if site.data.upcoming_events %}
+  {% if site.data.upcoming_events.size >= 1 %}
   <section id="events" style="margin-top: 3%">
     <div style="padding: 0% 7%">
       <h2 class="mb-3 text-center">Upcoming events</h2>
