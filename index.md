@@ -179,7 +179,8 @@ redirect_from:
         <p>
           <a href="{{ site.app_framework_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
           <a href="{{ site.app_framework_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
-          <a href="{{ site.app_framework_doc_url }}">Learn more</a>
+          <a href="{{ site.app_framework_doc_url }}">Learn more</a>&nbsp;|&nbsp;
+          <a href="{{ site.app_framework_tour_url }}">View Tour</a>
         </p>
       </div>
       <div class="col-md-5 col-sm order-first order-sm-last">
