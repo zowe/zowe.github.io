@@ -42,19 +42,10 @@ redirect_from:
 
 <div class="announcementsection">
   <h1>Announcements</h1>
-  <!-- <p>
-    <strong>New Build: </strong>Zowe {{ site.data.releases[0].version }} is now available. Install it from <a href="/download">here</a>, and check out the Release notes <a href="{{ site.docs_site_url }}/{{site.data.releases[0].documentation}}/getting-started/summaryofchanges.html">here</a>.
-  </p>
-  <p>
-    <strong>Upcoming Events: </strong>Join the Quaterly Webinar to learn about the present and future of Zowe - find out more here
-  </p>
-  <p>
-    <strong>New Features: </strong>
-  </p> -->
   <strong>Zowe {{ site.data.releases[0].version }} is now available. You can download the installers and PTFs ({{ site.data.releases[0].smpe_numbers }}) for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="{{ site.docs_site_url }}/{{site.data.releases[0].documentation}}/getting-started/summaryofchanges.html">Release notes</a>.<br></strong>
   {% if site.data.announcements %}
     {% for announcement in site.data.announcements %}
-    <hr class="w-100" style="margin-top: 0.5rem; margin-bottom: 0.5rem; border-top: 1px solid rgb(0 0 0 / 20%)">
+    <hr class="w-100" style="margin-top: 0.25rem; margin-bottom: 0.25rem; border-top: 1px solid rgb(0 0 0 / 20%)">
     <strong>{{ announcement.announcement }}
       {% if announcement.link %}
         <a href="{{ announcement.link }}">Learn More</a>
@@ -282,23 +273,23 @@ redirect_from:
 </div>
 
 <div style="padding: 2% 3%; color: black !important;" class="bg-light"> 
-  <h2 class="text-center" style="margin-bottom: 5%"><a href="{{ site.zowe_metrics_url }}">Zowe by the numbers</a></h2>
+  <h2 class="text-center" style="margin-bottom: 5%"><a href="{{ site.zowe_metrics_url }}" style="color: initial">Zowe by the numbers</a></h2>
   <div class="row" style="margin-bottom: 2%">
     <div class="col-md text-center">
       <a style="color: initial; text-decoration: none" href="{{ site.zowe_metrics_url }}"><img style="width:15%" src="assets/img/logo-cli-download.svg" />
-        <h3 style="margin-bottom: 0rem" id="cli-downloads"></h3>
+        <h3 class="mb-0" id="cli-downloads"></h3>
         <h6>Zowe CLI Downloads</h6>
       </a>
     </div>
     <div class="col-md text-center">
       <a style="color: initial; text-decoration: none" href="{{ site.vscode_marketplace_url }}"><img style="width:15%" src="assets/img/logo-explorer-download.svg" />
-        <h3 style="margin-bottom: 0rem" id="explorer-downloads"></h3>
+        <h3 class="mb-0" id="explorer-downloads"></h3>
         <h6>Zowe Explorer Downloads</h6>
       </a>
     </div>
     <div class="col-md text-center">
       <a style="color: initial; text-decoration: none" href="{{ site.zowe_metrics_url }}"><img style="width:15%" src="assets/img/logo-zowe-build-download.svg">
-        <h3 style="margin-bottom: 0rem" id="server-downloads"></h3>
+        <h3 class="mb-0" id="server-downloads"></h3>
         <h6>Zowe z/OS Build Downloads</h6>
       </a>
     </div>
@@ -306,19 +297,19 @@ redirect_from:
   <div class="row">
     <div class="col-md text-center">
       <a style="color: initial; text-decoration: none" href="{{ site.slack_url }}"><img style="width:15%" src="assets/img/logo-slack-black.svg" />
-        <h3 style="margin-bottom: 0rem" id="slack-members"></h3>
+        <h3 class="mb-0" id="slack-members"></h3>
         <h6>Slack Community Members</h6>
       </a>
     </div>
     <div class="col-md text-center">
       <a style="color: initial; text-decoration: none" href="{{ site.github_repo_url }}"><img style="width:15%" src="assets/img/logo-github-back.svg" />
-        <h3 style="margin-bottom: 0rem" id="github-contributors"></h3>
+        <h3 class="mb-0" id="github-contributors"></h3>
         <h6>Contributors</h6>
       </a>
     </div>
     <div class="col-md text-center">
       <a style="color: initial; text-decoration: none" href="{{ site.conformance_page_url }}"><img style="width:15%" src="assets/img/logo-vendor-product.svg" />
-        <h3 style="margin-bottom: 0rem" id="conformant-product-value"></h3>
+        <h3 class="mb-0" id="conformant-product-value"></h3>
         <h6>Zowe Conformant Products</h6>
       </a>
     </div>
