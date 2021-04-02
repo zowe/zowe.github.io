@@ -143,7 +143,7 @@ redirect_from:
   {% if site.data.upcoming_events.size >= 1 %}
   <section id="events" style="margin-top: 3%">
     <div style="padding: 0% 7%">
-      <h2 class="mb-3 text-center">Upcoming events</h2>
+      <h2 class="mb-3 text-center" style="color: black !important">Upcoming events</h2>
       <div class="row py-4">
         {% for events in site.data.upcoming_events limit:3 %}
         <div class="col-md-4 px-3 pb-4 pb-md-0"> <!-- ml-auto mr-auto -->
@@ -282,7 +282,7 @@ redirect_from:
 </div>
 
 <div style="padding: 2% 3%; color: black !important;" class="bg-light"> 
-<h2 class="text-center" style="color: black !important; margin-bottom: 5%">Zowe by the numbers</h2>
+  <h2 class="text-center" style="margin-bottom: 5%"><a href="{{ site.zowe_metrics_url }}">Zowe by the numbers</a></h2>
   <div class="row" style="margin-bottom: 2%">
     <div class="col-md text-center">
       <a style="color: initial; text-decoration: none" href="{{ site.zowe_metrics_url }}"><img style="width:15%" src="assets/img/logo-cli-download.svg" />
@@ -322,9 +322,6 @@ redirect_from:
         <h6>Zowe Conformant Products</h6>
       </a>
     </div>
-  </div>
-  <div style="margin-bottom: 2%; margin-top: 4%">
-    <a href="{{ site.zowe_metrics_url }}"><h5 class="text-right"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg> Check out more Zowe community metrics</h5></a>
   </div>
 </div>
 
