@@ -78,6 +78,7 @@ zowe_docs_repo_url: https://github.com/zowe/docs-site
 zowe_onboarding_slack_url: https://openmainframeproject.slack.com/archives/CC60ALD61
 zowe_user_slack_url: https://openmainframeproject.slack.com/archives/CC08782AG
 zowe_doc_slack_url: https://openmainframeproject.slack.com/archives/CC961JYMQ
+zowe_metrics_url: https://www.metrics.zowe.org/
 
 
 #TODO add url for zowe_sdk_install_doc_url, zowe_node_sdk_download_url, and zowe_python_sdk_download_url
