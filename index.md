@@ -285,7 +285,7 @@ redirect_from:
 <h2 class="text-center" style="color: black !important; margin-bottom: 5%">Zowe by the numbers</h2>
   <div class="row" style="margin-bottom: 2%">
     <div class="col-md text-center">
-      <a style="color: initial; text-decoration: none" href="download.html#zowe-cli-download"><img style="width:15%" src="assets/img/logo-cli-download.svg" />
+      <a style="color: initial; text-decoration: none" href="{{ site.zowe_metrics_url }}"><img style="width:15%" src="assets/img/logo-cli-download.svg" />
         <h3 style="margin-bottom: 0rem" id="cli-downloads"></h3>
         <h6>Zowe CLI Downloads</h6>
       </a>
@@ -297,7 +297,7 @@ redirect_from:
       </a>
     </div>
     <div class="col-md text-center">
-      <a style="color: initial; text-decoration: none" href="download.html#zowe-zos-build-download"><img style="width:15%" src="assets/img/logo-zowe-build-download.svg">
+      <a style="color: initial; text-decoration: none" href="{{ site.zowe_metrics_url }}"><img style="width:15%" src="assets/img/logo-zowe-build-download.svg">
         <h3 style="margin-bottom: 0rem" id="server-downloads"></h3>
         <h6>Zowe z/OS Build Downloads</h6>
       </a>
@@ -322,6 +322,9 @@ redirect_from:
         <h6>Zowe Conformant Products</h6>
       </a>
     </div>
+  </div>
+  <div style="margin-bottom: 2%; margin-top: 4%">
+    <a href="{{ site.zowe_metrics_url }}"><h5 class="text-right"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg> Check out more Zowe community metrics</h5></a>
   </div>
 </div>
 
