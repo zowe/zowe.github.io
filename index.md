@@ -54,6 +54,7 @@ redirect_from:
   <strong>Zowe {{ site.data.releases[0].version }} is now available. You can download the installers and PTFs ({{ site.data.releases[0].smpe_numbers }}) for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="{{ site.docs_site_url }}/{{site.data.releases[0].documentation}}/getting-started/summaryofchanges.html">Release notes</a>.<br></strong>
   {% if site.data.announcements %}
     {% for announcement in site.data.announcements %}
+    <hr class="w-100" style="margin-top: 0.5rem; margin-bottom: 0.5rem; border-top: 1px solid rgb(0 0 0 / 20%)">
     <strong>{{ announcement.announcement }}
       {% if announcement.link %}
         <a href="{{ announcement.link }}">Learn More</a>
@@ -139,13 +140,13 @@ redirect_from:
     </div>
 </div> 
 
-  {% if site.data.upcoming_events %}
+  {% if site.data.upcoming_events.size >= 1 %}
   <section id="events" style="margin-top: 3%">
     <div style="padding: 0% 7%">
       <h2 class="mb-3 text-center">Upcoming events</h2>
       <div class="row py-4">
         {% for events in site.data.upcoming_events limit:3 %}
-        <div class="col-md-4 px-3 pb-4 pb-md-0">
+        <div class="col-md-4 px-3 pb-4 pb-md-0"> <!-- ml-auto mr-auto -->
           <div class="w-100 px-4 py-4 rounded shadow bg-light h-100">
           {% if events.url %}
             <h5 class="border-bottom border-primary pb-2"><a href="{{ events.url }}">{{ events.event }}</a></h5>
@@ -178,7 +179,8 @@ redirect_from:
         <p>
           <a href="{{ site.app_framework_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
           <a href="{{ site.app_framework_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
-          <a href="{{ site.app_framework_doc_url }}">Learn more</a>
+          <a href="{{ site.app_framework_doc_url }}">Learn more</a>&nbsp;|&nbsp;
+          <a href="{{ site.app_framework_tour_url }}">View Tour</a>
         </p>
       </div>
       <div class="col-md-5 col-sm order-first order-sm-last">
@@ -283,36 +285,42 @@ redirect_from:
 <h2 class="text-center" style="color: black !important; margin-bottom: 5%">Zowe by the numbers</h2>
   <div class="row" style="margin-bottom: 2%">
     <div class="col-md text-center">
-      <a href="{{ site.zowe_metrics_url }}"><img style="width:15%" src="assets/img/logo-cli-download.svg" /></a>
-      <h3 style="margin-bottom: 0rem" id="cli-downloads"></h3>
-      <h6>Zowe CLI Downloads</h6>
+      <a style="color: initial; text-decoration: none" href="{{ site.zowe_metrics_url }}"><img style="width:15%" src="assets/img/logo-cli-download.svg" />
+        <h3 style="margin-bottom: 0rem" id="cli-downloads"></h3>
+        <h6>Zowe CLI Downloads</h6>
+      </a>
     </div>
     <div class="col-md text-center">
-      <a href="{{ site.vscode_marketplace_url }}"><img style="width:15%" src="assets/img/logo-explorer-download.svg" /></a>
-      <h3 style="margin-bottom: 0rem" id="explorer-downloads"></h3>
-      <h6>Zowe Explorer Downloads</h6>
+      <a style="color: initial; text-decoration: none" href="{{ site.vscode_marketplace_url }}"><img style="width:15%" src="assets/img/logo-explorer-download.svg" />
+        <h3 style="margin-bottom: 0rem" id="explorer-downloads"></h3>
+        <h6>Zowe Explorer Downloads</h6>
+      </a>
     </div>
     <div class="col-md text-center">
-      <a href="{{ site.zowe_metrics_url }}"><img style="width:15%" src="assets/img/logo-zowe-build-download.svg" /></a>
-      <h3 style="margin-bottom: 0rem" id="server-downloads"></h3>
-      <h6>Zowe z/OS Build Downloads</h6>
+      <a style="color: initial; text-decoration: none" href="{{ site.zowe_metrics_url }}"><img style="width:15%" src="assets/img/logo-zowe-build-download.svg">
+        <h3 style="margin-bottom: 0rem" id="server-downloads"></h3>
+        <h6>Zowe z/OS Build Downloads</h6>
+      </a>
     </div>
   </div>
   <div class="row">
     <div class="col-md text-center">
-      <a href="{{ site.slack_url }}"><img style="width:15%" src="assets/img/logo-slack-black.svg" /></a>
-      <h3 style="margin-bottom: 0rem" id="slack-members"></h3>
-      <h6>Slack Community Members</h6>
+      <a style="color: initial; text-decoration: none" href="{{ site.slack_url }}"><img style="width:15%" src="assets/img/logo-slack-black.svg" />
+        <h3 style="margin-bottom: 0rem" id="slack-members"></h3>
+        <h6>Slack Community Members</h6>
+      </a>
     </div>
     <div class="col-md text-center">
-      <a href="{{ site.github_repo_url }}"><img style="width:15%" src="assets/img/logo-github-back.svg" /></a>
-      <h3 style="margin-bottom: 0rem" id="github-contributors"></h3>
-      <h6>Contributors</h6>
+      <a style="color: initial; text-decoration: none" href="{{ site.github_repo_url }}"><img style="width:15%" src="assets/img/logo-github-back.svg" />
+        <h3 style="margin-bottom: 0rem" id="github-contributors"></h3>
+        <h6>Contributors</h6>
+      </a>
     </div>
     <div class="col-md text-center">
-      <a href="{{ site.conformance_page_url }}"><img style="width:15%" src="assets/img/logo-vendor-product.svg" /></a>
-      <h3 style="margin-bottom: 0rem" id="conformant-product-value"></h3>
-      <h6>Zowe Conformant Products</h6>
+      <a style="color: initial; text-decoration: none" href="{{ site.conformance_page_url }}"><img style="width:15%" src="assets/img/logo-vendor-product.svg" />
+        <h3 style="margin-bottom: 0rem" id="conformant-product-value"></h3>
+        <h6>Zowe Conformant Products</h6>
+      </a>
     </div>
   </div>
   <div style="margin-bottom: 2%; margin-top: 4%">

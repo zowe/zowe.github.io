@@ -1,5 +1,16 @@
 # List of Zowe releases - update here and it will update the entire site :-)
 # Note - keep this in order as the latest release is pulled from the first item in the list!
+- version: 1.20.1
+  zos_version: 1.20.1
+  smpe_version: 1.20.1
+  smpe_sysmod: PTF
+  smpe_numbers: UO01980
+  cli_version: 1.20.1
+  cli_plugins_version: 1.20.1
+  node_sdk_version: 1.20.1
+  python_sdk_version: 1.20.1
+  release_date: 2021-03-29
+  documentation: stable
 - version: 1.20.0
   zos_version: 1.20.0
   smpe_version: 1.20.0

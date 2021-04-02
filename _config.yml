@@ -42,6 +42,7 @@ docker_install_doc_url: https://docs.zowe.org/stable/user-guide/install-docker.h
 app_framework_doc_url: https://docs.zowe.org/stable/getting-started/overview.html#zowe-application-framework
 app_framework_github_url: https://github.com/zowe/zlux
 app_framework_slack_url: https://openmainframeproject.slack.com/archives/CBW5ET69G
+app_framework_tour_url: https://www.youtube.com/watch?v=cbEVbcsaGCs&ab_channel=OpenMainframeProject
 apiml_doc_url: https://docs.zowe.org/stable/getting-started/overview.html#api-mediation-layer
 apiml_github_url: https://github.com/zowe/api-layer
 apiml_slack_url: https://openmainframeproject.slack.com/archives/CC5UUL005 
