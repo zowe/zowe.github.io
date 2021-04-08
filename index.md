@@ -199,6 +199,14 @@ redirect_from:
       <div class="col-md-7 col-sm order-last order-sm-first">
         <a id="cli-intro"><h4>Zowe CLI</h4></a>
         <p style="margin: 1rem auto">Provides a command-line interface that lets you interact with the mainframe remotely and use common tools such as Integrated Development Environments (IDEs), shell commands, bash scripts, and build tools for mainframe development. It provides a set of utilities and services for application developers that want to become efficient in supporting and building z/OS applications quickly. The CLI provides a core set of commands for working with data sets, USS, JES, as well as issuing TSO and console commands.</p>
+          <p>Zowe CLI Plug-ins:
+            <a href="{{ site.zowe_cli_secure_credential_store_plugin_url }}">Secure Credential Store Plug-in</a>,&nbsp;
+            <a href="{{ site.zowe_cli_cics_plugin_url }}">CICS Plug-in</a>,&nbsp;
+            <a href="{{ site.zowe_cli_db2_plugin_url }}">Db2 Plug-in</a>,&nbsp;
+            <a href="{{ site.zowe_cli_ftp_plugin_url }}">FTP Plug-in</a>,&nbsp;
+            <a href="{{ site.zowe_cli_ims_plugin_url }}">IMS Plug-in</a>,&nbsp;
+            <a href="{{ site.zowe_cli_mq_plugin_url }}">MQ Plug-in</a> 
+          </p>
           <p>
             <a href="{{ site.zowe_cli_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
             <a href="{{ site.zowe_cli_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
@@ -229,6 +237,11 @@ redirect_from:
       <div class="col-md-7 col-sm order-last order-sm-first">
         <a id="zowe-client-sdk-intro"><h4>Zowe Client SDKs (under development)</h4></a>
         <p style="margin: 1rem auto">Provides access to a set of programmatic APIs that you can use to build client applications or scripts that interact with z/OS. SDKs are available for Node.js and Python.</p>
+          <p>Zowe SDKs:
+            <a href="{{ site.zowe_node_sdk_url }}">Node SDK</a>,&nbsp;
+            <a href="{{ site.zowe_python_sdk_url }}">Python SDK</a>,&nbsp;
+            <a href="{{ site.zowe_swift_sdk_url }}">Swift SDK</a>
+          </p>
           <p>
             <a href="{{ site.zowe_sdk_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
             <a href="{{ site.zowe_sdk_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
