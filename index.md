@@ -134,7 +134,7 @@ redirect_from:
   {% if site.data.upcoming_events.size >= 1 %}
   <section id="events" style="margin-top: 3%">
     <div style="padding: 0% 7%">
-      <h2 class="mb-3 text-center" style="color: black !important">Upcoming events</h2>
+      <h2 class="mb-3 text-center" style="color: black !important">Upcoming and recent events</h2>
       <div class="row py-4">
         {% for events in site.data.upcoming_events limit:3 %}
         <div class="col-md-4 px-3 pb-4 pb-md-0"> <!-- ml-auto mr-auto -->
