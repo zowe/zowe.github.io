@@ -236,14 +236,13 @@ redirect_from:
     <div class="row" style="margin-bottom: 4%">
       <div class="col-md-7 col-sm order-last order-sm-first">
         <a id="zowe-client-sdk-intro"><h4>Zowe Client SDKs (under development)</h4></a>
-        <p style="margin: 1rem auto">Provides access to a set of programmatic APIs that you can use to build client applications or scripts that interact with z/OS. SDKs are available for Node.js and Python.</p>
+        <p style="margin: 1rem auto">Provides access to a set of programmatic APIs that you can use to build client applications or scripts that interact with z/OS.</p>
           <p>Zowe SDKs:
             <a href="{{ site.zowe_node_sdk_url }}">Node SDK</a>,&nbsp;
             <a href="{{ site.zowe_python_sdk_url }}">Python SDK</a>,&nbsp;
             <a href="{{ site.zowe_swift_sdk_url }}">Swift SDK</a>
           </p>
           <p>
-            <a href="{{ site.zowe_sdk_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
             <a href="{{ site.zowe_sdk_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
             <a href="{{ site.zowe_sdk_doc_url }}">Learn more</a>
           </p>
