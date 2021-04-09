@@ -271,7 +271,8 @@ redirect_from:
           <p>
             <a href="{{ site.zebra_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
             <a href="{{ site.zebra_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
-            <a href="{{ site.zebra_doc_url }}">Learn more</a>
+            <a href="{{ site.zebra_doc_url }}">Learn more</a>&nbsp;|&nbsp;
+            <a href="{{ site.zebra_demo_url }}">Take a tour</a>
           </p>
       </div>
       <div class="col-md-5 col-sm order-first order-sm-last">
