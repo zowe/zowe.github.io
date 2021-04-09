@@ -1,9 +1,8 @@
 - event: Zowe Quarterly Update Webinar
-  schedule: April 21 @ 08:30 AM - 09:30 PM
-  description: Zowe API ML leverages various security token types depending on the
-    choice of the identity provider and ESM subsystems deployment options. Join this
-    session to learn how this technology can help you to achieve the exceptional security
-    expected from a...
+  schedule: April 21 @ 08:30 AM - 09:30 AM
+  description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
+    \ in what\u2019s happening with Zowe \u2013 we invite you to the next Quarterly\
+    \ Update Webinar on April 21 at 8:30 am PT /11:30 am ET (US and Canada)! This..."
   url: https://www.openmainframeproject.org/event/zowe-quarterly-update-webinar
 - event: IDUG Virtual Australasia Db2 Tech Conference
   schedule: March 15 - March 20

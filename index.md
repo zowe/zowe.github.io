@@ -42,19 +42,10 @@ redirect_from:
 
 <div class="announcementsection">
   <h1>Announcements</h1>
-  <!-- <p>
-    <strong>New Build: </strong>Zowe {{ site.data.releases[0].version }} is now available. Install it from <a href="/download">here</a>, and check out the Release notes <a href="{{ site.docs_site_url }}/{{site.data.releases[0].documentation}}/getting-started/summaryofchanges.html">here</a>.
-  </p>
-  <p>
-    <strong>Upcoming Events: </strong>Join the Quaterly Webinar to learn about the present and future of Zowe - find out more here
-  </p>
-  <p>
-    <strong>New Features: </strong>
-  </p> -->
   <strong>Zowe {{ site.data.releases[0].version }} is now available. You can download the installers and PTFs ({{ site.data.releases[0].smpe_numbers }}) for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="{{ site.docs_site_url }}/{{site.data.releases[0].documentation}}/getting-started/summaryofchanges.html">Release notes</a>.<br></strong>
   {% if site.data.announcements %}
     {% for announcement in site.data.announcements %}
-    <hr class="w-100" style="margin-top: 0.5rem; margin-bottom: 0.5rem; border-top: 1px solid rgb(0 0 0 / 20%)">
+    <hr class="w-100" style="margin-top: 0.25rem; margin-bottom: 0.25rem; border-top: 1px solid rgb(0 0 0 / 20%)">
     <strong>{{ announcement.announcement }}
       {% if announcement.link %}
         <a href="{{ announcement.link }}">Learn More</a>
@@ -143,7 +134,7 @@ redirect_from:
   {% if site.data.upcoming_events.size >= 1 %}
   <section id="events" style="margin-top: 3%">
     <div style="padding: 0% 7%">
-      <h2 class="mb-3 text-center">Upcoming events</h2>
+      <h2 class="mb-3 text-center" style="color: black !important">Upcoming and recent events</h2>
       <div class="row py-4">
         {% for events in site.data.upcoming_events limit:3 %}
         <div class="col-md-4 px-3 pb-4 pb-md-0"> <!-- ml-auto mr-auto -->
@@ -208,6 +199,14 @@ redirect_from:
       <div class="col-md-7 col-sm order-last order-sm-first">
         <a id="cli-intro"><h4>Zowe CLI</h4></a>
         <p style="margin: 1rem auto">Provides a command-line interface that lets you interact with the mainframe remotely and use common tools such as Integrated Development Environments (IDEs), shell commands, bash scripts, and build tools for mainframe development. It provides a set of utilities and services for application developers that want to become efficient in supporting and building z/OS applications quickly. The CLI provides a core set of commands for working with data sets, USS, JES, as well as issuing TSO and console commands.</p>
+          <p>Zowe CLI Plug-ins:
+            <a href="{{ site.zowe_cli_secure_credential_store_plugin_url }}">Secure Credential Store Plug-in</a>,&nbsp;
+            <a href="{{ site.zowe_cli_cics_plugin_url }}">CICS Plug-in</a>,&nbsp;
+            <a href="{{ site.zowe_cli_db2_plugin_url }}">Db2 Plug-in</a>,&nbsp;
+            <a href="{{ site.zowe_cli_ftp_plugin_url }}">FTP Plug-in</a>,&nbsp;
+            <a href="{{ site.zowe_cli_ims_plugin_url }}">IMS Plug-in</a>,&nbsp;
+            <a href="{{ site.zowe_cli_mq_plugin_url }}">MQ Plug-in</a> 
+          </p>
           <p>
             <a href="{{ site.zowe_cli_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
             <a href="{{ site.zowe_cli_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
@@ -237,9 +236,13 @@ redirect_from:
     <div class="row" style="margin-bottom: 4%">
       <div class="col-md-7 col-sm order-last order-sm-first">
         <a id="zowe-client-sdk-intro"><h4>Zowe Client SDKs (under development)</h4></a>
-        <p style="margin: 1rem auto">Provides access to a set of programmatic APIs that you can use to build client applications or scripts that interact with z/OS. SDKs are available for Node.js and Python.</p>
+        <p style="margin: 1rem auto">Provides access to a set of programmatic APIs that you can use to build client applications or scripts that interact with z/OS.</p>
+          <p>Zowe SDKs:
+            <a href="{{ site.zowe_node_sdk_url }}">Node SDK</a>,&nbsp;
+            <a href="{{ site.zowe_python_sdk_url }}">Python SDK</a>,&nbsp;
+            <a href="{{ site.zowe_swift_sdk_url }}">Swift SDK</a>
+          </p>
           <p>
-            <a href="{{ site.zowe_sdk_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
             <a href="{{ site.zowe_sdk_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
             <a href="{{ site.zowe_sdk_doc_url }}">Learn more</a>
           </p>
@@ -283,23 +286,23 @@ redirect_from:
 </div>
 
 <div style="padding: 2% 3%; color: black !important;" class="bg-light"> 
-<h2 class="text-center" style="color: black !important; margin-bottom: 5%">Zowe by the numbers</h2>
+  <h2 class="text-center" style="margin-bottom: 5%"><a href="{{ site.zowe_metrics_url }}" style="color: initial">Zowe by the numbers</a></h2>
   <div class="row" style="margin-bottom: 2%">
     <div class="col-md text-center">
       <a style="color: initial; text-decoration: none" href="{{ site.zowe_metrics_url }}"><img style="width:15%" src="assets/img/logo-cli-download.svg" />
-        <h3 style="margin-bottom: 0rem" id="cli-downloads"></h3>
+        <h3 class="mb-0" id="cli-downloads"></h3>
         <h6>Zowe CLI Downloads</h6>
       </a>
     </div>
     <div class="col-md text-center">
       <a style="color: initial; text-decoration: none" href="{{ site.vscode_marketplace_url }}"><img style="width:15%" src="assets/img/logo-explorer-download.svg" />
-        <h3 style="margin-bottom: 0rem" id="explorer-downloads"></h3>
+        <h3 class="mb-0" id="explorer-downloads"></h3>
         <h6>Zowe Explorer Downloads</h6>
       </a>
     </div>
     <div class="col-md text-center">
       <a style="color: initial; text-decoration: none" href="{{ site.zowe_metrics_url }}"><img style="width:15%" src="assets/img/logo-zowe-build-download.svg">
-        <h3 style="margin-bottom: 0rem" id="server-downloads"></h3>
+        <h3 class="mb-0" id="server-downloads"></h3>
         <h6>Zowe z/OS Build Downloads</h6>
       </a>
     </div>
@@ -307,25 +310,22 @@ redirect_from:
   <div class="row">
     <div class="col-md text-center">
       <a style="color: initial; text-decoration: none" href="{{ site.slack_url }}"><img style="width:15%" src="assets/img/logo-slack-black.svg" />
-        <h3 style="margin-bottom: 0rem" id="slack-members"></h3>
+        <h3 class="mb-0" id="slack-members"></h3>
         <h6>Slack Community Members</h6>
       </a>
     </div>
     <div class="col-md text-center">
       <a style="color: initial; text-decoration: none" href="{{ site.github_repo_url }}"><img style="width:15%" src="assets/img/logo-github-back.svg" />
-        <h3 style="margin-bottom: 0rem" id="github-contributors"></h3>
+        <h3 class="mb-0" id="github-contributors"></h3>
         <h6>Contributors</h6>
       </a>
     </div>
     <div class="col-md text-center">
       <a style="color: initial; text-decoration: none" href="{{ site.conformance_page_url }}"><img style="width:15%" src="assets/img/logo-vendor-product.svg" />
-        <h3 style="margin-bottom: 0rem" id="conformant-product-value"></h3>
+        <h3 class="mb-0" id="conformant-product-value"></h3>
         <h6>Zowe Conformant Products</h6>
       </a>
     </div>
-  </div>
-  <div style="margin-bottom: 2%; margin-top: 4%">
-    <a href="{{ site.zowe_metrics_url }}"><h5 class="text-right"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg> Check out more Zowe community metrics</h5></a>
   </div>
 </div>
 
