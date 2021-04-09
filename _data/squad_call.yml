@@ -1,58 +1,60 @@
-# Squad Call
-# Any kind of links should NOT be in ""
+# # Not needed anymore!
 
-- squad-name: "Zowe API Mediation Layer"
-  day: "Mon 10-10:30am, Wed 9-10am, Fri 9-9:30am EST"
-  meeting-link: https://zoom.us/j/98404818292
-  slack: "#zowe-api"
-  github-link: https://github.com/zowe/api-layer
-  description: "This squad develops and maintains the Zowe API Mediation Layer sub-project and API authentication and authorization."
+# # Squad Call
+# # Any kind of links should NOT be in ""
 
-- squad-name: "Zowe Application Framework"
-  day: "Fri 9-10am EST"
-  meeting-link: https://zoom.us/j/99494243697
-  slack: "#zowe-dev"
-  github-link: https://github.com/zowe/zlux
-  description: "This squad develops and maintains the Zowe Application Framework sub-project."
+# - squad-name: "Zowe API Mediation Layer"
+#   day: "Mon 10-10:30am, Wed 9-10am, Fri 9-9:30am EST"
+#   meeting-link: https://zoom.us/j/98404818292
+#   slack: "#zowe-api"
+#   github-link: https://github.com/zowe/api-layer
+#   description: "This squad develops and maintains the Zowe API Mediation Layer sub-project and API authentication and authorization."
 
-- squad-name: "Zowe CLI"
-  day: "Mon/Wed 11-11:30am EST"
-  meeting-link: https://zoom.us/j/99891777715
-  slack: "#zowe-cli"
-  github-link: https://github.com/zowe/zowe-cli
-  description: "This squad develops and maintains the Zowe CLI sub-project."
+# - squad-name: "Zowe Application Framework"
+#   day: "Fri 9-10am EST"
+#   meeting-link: https://zoom.us/j/99494243697
+#   slack: "#zowe-dev"
+#   github-link: https://github.com/zowe/zlux
+#   description: "This squad develops and maintains the Zowe Application Framework sub-project."
 
-- squad-name: "Zowe Explorer"
-  day: "Tue 10:30-11am, Thu 8-8:30am EST"
-  meeting-link: https://zoom.us/j/94312528890
-  slack: "#zowe-explorer"
-  github-link: https://github.com/zowe/vscode-extension-for-zowe
-  description: "This squad develops and maintains the Zowe Explorer sub-project."
+# - squad-name: "Zowe CLI"
+#   day: "Mon/Wed 11-11:30am EST"
+#   meeting-link: https://zoom.us/j/99891777715
+#   slack: "#zowe-cli"
+#   github-link: https://github.com/zowe/zowe-cli
+#   description: "This squad develops and maintains the Zowe CLI sub-project."
 
-- squad-name: "Zowe Systems"
-  day: "Thu 11am-12pm EST"
-  meeting-link: https://zoom.us/my/zowe.cicd
-  slack: "#zowe-cicd, #zowe-build"
-  github-link: https://github.com/zowe/zowe-install-test
-  description: "This squad maintains Zowe’s installation tools, infrastructure, and integration of Zowe components."
+# - squad-name: "Zowe Explorer"
+#   day: "Tue 10:30-11am, Thu 8-8:30am EST"
+#   meeting-link: https://zoom.us/j/94312528890
+#   slack: "#zowe-explorer"
+#   github-link: https://github.com/zowe/vscode-extension-for-zowe
+#   description: "This squad develops and maintains the Zowe Explorer sub-project."
 
-- squad-name: "Zowe Docs"
-  day: "Wed 9:30-10am EST (biweekly)"
-  meeting-link: https://zoom.us/j/646062143
-  slack: "#zowe-doc"
-  github-link: https://github.com/zowe/docs-site
-  description: "This squad develops and maintains the Zowe documentation."
+# - squad-name: "Zowe Systems"
+#   day: "Thu 11am-12pm EST"
+#   meeting-link: https://zoom.us/my/zowe.cicd
+#   slack: "#zowe-cicd, #zowe-build"
+#   github-link: https://github.com/zowe/zowe-install-test
+#   description: "This squad maintains Zowe’s installation tools, infrastructure, and integration of Zowe components."
 
-- squad-name: "Zowe Onboarding"
-  day: "Wed 12pm-12:30pm or 12pm-1pm EST"
-  meeting-link: https://zoom.us/j/94312528890
-  slack: "#zowe-onboarding"
-  github-link: https://github.com/zowe/community
-  description: "This squad helps new users get started with Zowe and assists those who are looking to build on top of Zowe."
+# - squad-name: "Zowe Docs"
+#   day: "Wed 9:30-10am EST (biweekly)"
+#   meeting-link: https://zoom.us/j/646062143
+#   slack: "#zowe-doc"
+#   github-link: https://github.com/zowe/docs-site
+#   description: "This squad develops and maintains the Zowe documentation."
 
-- squad-name: "Zebra"
-  day: "Thu 8-9am EST (biweekly)"
-  meeting-link: https://zoom.us/j/93552887535
-  slack: "#zowe-zebra"
-  github-link: https://github.com/zowe/zebra
-  description: "This squad develops and maintains the Zebra sub-project."
+# - squad-name: "Zowe Onboarding"
+#   day: "Wed 12pm-12:30pm or 12pm-1pm EST"
+#   meeting-link: https://zoom.us/j/94312528890
+#   slack: "#zowe-onboarding"
+#   github-link: https://github.com/zowe/community
+#   description: "This squad helps new users get started with Zowe and assists those who are looking to build on top of Zowe."
+
+# - squad-name: "Zebra"
+#   day: "Thu 8-9am EST (biweekly)"
+#   meeting-link: https://zoom.us/j/93552887535
+#   slack: "#zowe-zebra"
+#   github-link: https://github.com/zowe/zebra
+#   description: "This squad develops and maintains the Zebra sub-project."
