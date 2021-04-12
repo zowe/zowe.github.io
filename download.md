@@ -1,5 +1,6 @@
 ---
 ---
+
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- Copyright Contributors to the Zowe project. -->
 
@@ -19,7 +20,7 @@
 {% if site.data.releases[0].cli_version and site.data.releases[0].cli_plugins_version and site.data.releases[0].zos_version and site.data.releases[0].smpe_version and site.data.releases[0].node_sdk_version and site.data.releases[0].python_sdk_version %}
 <div class="card-deck">
 <div class="card bg-light border-light mb-3">
-  <h4 class="card-header">Server-side component installer</h4>
+  <h4 class="card-header" id="zowe-zos-build-download">Server-side component installer</h4>
     <div class="card-body">
     <p class="card-text">Install Zowe z/OS components from the <b>convenience build</b> or the <b>SMP/E build</b> depending on your need.</p>
     <p class="card-text">You can also optionally use the Docker build technical preview to run a subset of the Zowe server-side components outside z/OS. Download and learn more about the build in the technical preview section.</p>
@@ -57,7 +58,7 @@
     <p class="card-text">Install <b>Zowe CLI</b> or <b>Zowe Explorer</b>, a Visual Studio Code extension powered by Zowe CLI.</p>
       <div class="row">
         <div class="card-body">
-          <h5 class="card-title">Zowe CLI</h5>
+          <h5 class="card-title" id="zowe-cli-download">Zowe CLI</h5>
           <p class="card-text">Install Zowe CLI from the local package or from an npm registry if your computer is connected to the Internet.</p>
           <p class="card-text">Download the Zowe CLI core package and optionally download the plug-ins (CICS, Db2, IMS, MQ, z/OS FTP, and so on) to gain more capabilities.</p>
           <p><a class="btn btn-primary" href="{{ site.cli_download_url }}{{ site.data.releases[0].cli_version }}">Zowe {{ site.data.releases[0].cli_version }} CLI Core</a></p>
@@ -136,53 +137,52 @@ Test the latest Zowe features and provide feedback. Technical previews are <b>fo
   </div>
 </div>
 
-
 <h1>Previous Releases</h1>
-<p>
-Download previous releases of Zowe by version number.
-</p>
+<p>Download previous releases of Zowe by version number.</p>
 <p>
 Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds. Zowe version 1.9.0 is the beginning of the Active Long-Term Support (LTS) release and it provides an SMP/E build with an FMID of AZWE001. The SMP/E build is the same content as the Zowe 1.9.0 convenience build. Updates in subsequent releases are made available as co-requisite PTFs as well as in convenience builds. Also, starting in 1.9.0, Zowe CLI core and plug-in packages are distributed separately.
 </p>
 {% for release in site.data.releases %}
   {% if forloop.first %}
-  <table class="table table-hover table-sm">
-  {% endif %}
-  {% unless forloop.first %}
-    <tr>
-      <td>Zowe {{release.version}} ({{release.release_date}})</td>
-    {% if release.zos_version %}
-      <td><a href="{{site.zos_download_url}}{{release.zos_version}}">z/OS Convenience build</a></td>
-    {% else %}
-      <td></td>
-    {% endif %}
-    {% if release.smpe_version and release.smpe_sysmod == "PE-PTF" %}
-      <td>SMP/E {{release.smpe_sysmod}} {{release.smpe_numbers}}</td>
-    {% elsif release.smpe_version and release.smpe_sysmod %}
-      <td><a href="{{site.smpe_download_url}}{{release.smpe_version}}">SMP/E {{release.smpe_sysmod}} {{release.smpe_numbers}}</a></td>
-    {% else %}
-      <td></td>
-    {% endif %}
-    {% if release.cli_version and release.cli_plugins_version %}
-      <td><a href="{{site.cli_download_url}}{{release.cli_version}}">CLI Core</a></td>
-    {% else %}
-      {% if release.cli_version %}
-        <td><a href="{{site.cli_download_url}}{{release.cli_version}}">CLI</a></td>
-      {% else %}
-        <td><a href="{{site.cli_download_url}}{{release.version}}">CLI</a></td>
+    <div style="overflow-x: auto">
+      <table class="table table-hover table-sm">
       {% endif %}
-    {% endif %}
-    {% if release.cli_plugins_version %}
-      <td><a href="{{site.cli_plugins_download_url}}{{release.cli_plugins_version}}">CLI Plug-ins</a></td>
-    {% else %}
-      <td></td>
-    {% endif %}
-      <td><a href="{{ site.docs_site_url }}/{{release.documentation}}/getting-started/summaryofchanges.html">Release Notes</a></td>
-      <td><a href="{{ site.docs_site_url }}/{{release.documentation}}">Documentation</a></td>
-    </tr>
-  {% endunless %}
-  {% if forloop.last %}
-  </table>
+      {% unless forloop.first %}
+        <tr>
+          <td>Zowe {{release.version}} ({{release.release_date}})</td>
+        {% if release.zos_version %}
+          <td><a href="{{site.zos_download_url}}{{release.zos_version}}">z/OS Convenience build</a></td>
+        {% else %}
+          <td></td>
+        {% endif %}
+        {% if release.smpe_version and release.smpe_sysmod == "PE-PTF" %}
+          <td>SMP/E {{release.smpe_sysmod}} {{release.smpe_numbers}}</td>
+        {% elsif release.smpe_version and release.smpe_sysmod %}
+          <td><a href="{{site.smpe_download_url}}{{release.smpe_version}}">SMP/E {{release.smpe_sysmod}} {{release.smpe_numbers}}</a></td>
+        {% else %}
+          <td></td>
+        {% endif %}
+        {% if release.cli_version and release.cli_plugins_version %}
+          <td><a href="{{site.cli_download_url}}{{release.cli_version}}">CLI Core</a></td>
+        {% else %}
+          {% if release.cli_version %}
+            <td><a href="{{site.cli_download_url}}{{release.cli_version}}">CLI</a></td>
+          {% else %}
+            <td><a href="{{site.cli_download_url}}{{release.version}}">CLI</a></td>
+          {% endif %}
+        {% endif %}
+        {% if release.cli_plugins_version %}
+          <td><a href="{{site.cli_plugins_download_url}}{{release.cli_plugins_version}}">CLI Plug-ins</a></td>
+        {% else %}
+          <td></td>
+        {% endif %}
+          <td><a href="{{ site.docs_site_url }}/{{release.documentation}}/getting-started/summaryofchanges.html">Release Notes</a></td>
+          <td><a href="{{ site.docs_site_url }}/{{release.documentation}}">Documentation</a></td>
+        </tr>
+      {% endunless %}
+      {% if forloop.last %}
+    </table>
+  </div>
   <p class="text-muted">All builds prior to Zowe v1.0.0 are no longer available.</p>
   {% endif %}
 {% endfor %}
@@ -190,7 +190,7 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
 
 <section class="bluebackground">
 <h1>Release Timeline</h1>
-<p><img src="assets/img/zowe-lts.png" width="950" /></p>
+<p><img src="assets/img/zowe-lts.png" width="90%" /></p>
 <p><b>Version timeframe, Current, Active LTS, Maintenance</b></p>
 <ul>
 <li>New Zowe versions will enter <b>current</b> release status for six to nine months to allow consumers of Zowe to test, provide feedback, and adjust to any changes.</li>
@@ -198,14 +198,14 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
 <li>Following a period of <b>Active LTS</b>, the Zowe version will enter <b>Maintenance</b> for fixes only.</li>
 <li>The combination of <b>Active LTS</b> and <b>Maintenance LTS</b> release is designated as <b>"long-term support”</b>, which provides two guarantees:
   <ul>
-    <li>Critical defects will be fixed. The criteria for what constitutes a critical defect is covered in <a href="{{ site.lts_url }}">Release Process</a>.</li>
-    <li>Extenders who achieve Zowe conformance for the long-term support version will not need to modify their product for it to remain functional when the Zowe community provides distributions within the release or  modification level boundary within the same version.</li>
+    <li style="list-style-type: disc">Critical defects will be fixed. The criteria for what constitutes a critical defect is covered in <a href="{{ site.lts_url }}">Release Process</a>.</li>
+    <li style="list-style-type: disc">Extenders who achieve Zowe conformance for the long-term support version will not need to modify their product for it to remain functional when the Zowe community provides distributions within the release or  modification level boundary within the same version.</li>
   </ul>
 </li>
 <li>The length of <b>Active LTS</b> may vary but the total time period of <b>Active LTS</b> + <b>Maintenance LTS</b> will be at least 24 months.</li>
 <li>Production applications should only use <b>Active LTS</b> or <b>Maintenance LTS</b> releases due to the contract with extender products remaining functional and the community’s commitment to fix critical defects.</li>
 </ul>
-<a class="button" href="{{ site.lts_url }}">Learn more</a>
+<button type="button" class="btn btn-outline-light" href="{{ site.lts_url }}">Learn more</button>
 </section>
 
 <section class="whitebackground">
@@ -219,5 +219,3 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
   </ul>
 </p>
 </section>
-
-

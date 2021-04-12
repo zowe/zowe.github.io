@@ -8,7 +8,7 @@ theme: jekyll-theme-cayman
 auto_ids: true
 
 # URLs to various sites
-latest_video_embed: https://www.youtube.com/embed/NX20ZMRoTtk
+latest_video_embed: https://www.youtube.com/embed/7XpOjREP8JU
 ibm_ztrial_url: https://www.openmainframeproject.org/projects/zowe/ztrial
 github_repo_url: https://github.com/zowe
 docs_site_url: https://docs.zowe.org
@@ -18,6 +18,7 @@ slack_url: https://slack.openmainframeproject.org
 mailing_list_user_url: https://lists.openmainframeproject.org/g/zowe-user
 youtube_zowe_url: https://www.youtube.com/playlist?list=PL8REpLGaY9QE_9d57tw3KQdwSVLKuTpUZ
 conformance_page_url: https://www.openmainframeproject.org/projects/zowe/conformance
+omp_calendar_url: https://lists.openmainframeproject.org/g/zowe-dev/calendar
 zos_download_url: https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/download/legal.html?version=
 cli_download_url: https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/download/legal.html?type=cli&version=
 cli_plugins_download_url: https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/download/legal.html?type=cli-plugins&version=
@@ -36,13 +37,65 @@ zowe_explorer_install_doc_url: https://docs.zowe.org/stable/user-guide/ze-instal
 zowe_sdk_install_doc_url: https://docs.zowe.org/stable/user-guide/sdks-using.html
 vscode_marketplace_url: https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe
 zowe_docker_download_url: https://zowe.jfrog.io/zowe/libs-release-local/org/zowe
-zowe_dockerhub_download_url: https://hub.docker.com/r/ompzowe/server-bundle 
+zowe_dockerhub_download_url: https://hub.docker.com/r/ompzowe/server-bundle
 docker_install_doc_url: https://docs.zowe.org/stable/user-guide/install-docker.html
+app_framework_doc_url: https://docs.zowe.org/stable/getting-started/overview.html#zowe-application-framework
+app_framework_github_url: https://github.com/zowe/zlux
+app_framework_slack_url: https://openmainframeproject.slack.com/archives/CBW5ET69G
+app_framework_tour_url: https://www.youtube.com/watch?v=cbEVbcsaGCs&ab_channel=OpenMainframeProject
+apiml_doc_url: https://docs.zowe.org/stable/getting-started/overview.html#api-mediation-layer
+apiml_github_url: https://github.com/zowe/api-layer
+apiml_slack_url: https://openmainframeproject.slack.com/archives/CC5UUL005 
+zowe_cli_doc_url: https://docs.zowe.org/stable/getting-started/overview.html#zowe-cli
+zowe_cli_github_url: https://github.com/zowe/zowe-cli
+zowe_cli_slack_url: https://openmainframeproject.slack.com/archives/CC8AALGN6
+zowe_cli_secure_credential_store_plugin_url: https://github.com/zowe/zowe-cli-scs-plugin
+zowe_cli_cics_plugin_url: https://github.com/zowe/zowe-cli-cics-plugin
+zowe_cli_db2_plugin_url: https://github.com/zowe/zowe-cli-db2-plugin
+zowe_cli_ftp_plugin_url: https://github.com/zowe/zowe-cli-ftp-plugin
+zowe_cli_ims_plugin_url: https://github.com/zowe/zowe-cli-ims-plugin
+zowe_cli_mq_plugin_url: https://github.com/zowe/zowe-cli-mq-plugin
+zowe_explorer_doc_url: https://docs.zowe.org/stable/user-guide/ze-install.html#installing-zowe-explorer
+zowe_explorer_github_url: https://github.com/zowe/vscode-extension-for-zowe
+zowe_explorer_slack_url: https://openmainframeproject.slack.com/archives/CUVE37Z5F
+zowe_sdk_doc_url: https://docs.zowe.org/stable/getting-started/overview.html#zowe-client-software-development-kits-sdks
+zowe_sdk_github_url: https://github.com/zowe/zowe-cli
+zowe_sdk_slack_url: https://openmainframeproject.slack.com/archives/C010AUS5MK5
+zowe_node_sdk_url: https://github.com/zowe/zowe-cli
+zowe_python_sdk_url: https://github.com/zowe/zowe-client-python-sdk
+zowe_swift_sdk_url: https://github.com/zowe/zowe-client-swift-sdk
+zowe_mobile_doc_url: https://docs.zowe.org/stable/getting-started/user-roadmap-zowe-mobile.html
+zowe_mobile_github_url: https://github.com/zowe/zowe-on-the-go
+zowe_mobile_slack_url: https://openmainframeproject.slack.com/archives/C0138CFMY74
+zebra_github_url: https://github.com/zowe/zebra
+zebra_doc_url: https://github.com/zowe/zebra/tree/main/Documentation
+zebra_slack_url: https://openmainframeproject.slack.com/archives/C01QWBJG3A4
+zebra_demo_url: https://zebra.talktothemainframe.com/
+zowe_video_deck_url: https://docs.zowe.org/stable/Zowe_introduction_video_deck.pptx
+zowe_video_transcript_url: https://docs.zowe.org/stable/Zowe_introduction_video_script.txt
+learn_page_get_started: https://docs.zowe.org/stable/getting-started/zowe-getting-started.html
+zowe_medium_blog_url: https://medium.com/zowe
+master_the_mainframe_url: https://www.ibm.com/it-infrastructure/z/education/master-the-mainframe
+visual_studio_code_url: https://code.visualstudio.com/
+web_dev_node_url: https://nodejs.org/
+zowe_extend_doc_url: https://docs.zowe.org/stable/extend/extend-zowe-overview.html
+create_zowe_issue_url: https://github.com/zowe/community/issues/new/choose
+conformance_step1_url: https://www.openmainframeproject.org/projects/zowe/conformance/terms-and-conditions
+conformance_step2_url: https://www.openmainframeproject.org/projects/zowe/conformance/test-evaluation-guide
+conformance_step3_url: https://www.openmainframeproject.org/projects/zowe/conformance/participation-form-esign
+zowe_community_repo_url: https://github.com/zowe/community
+zowe_zlc_repo_url: https://github.com/zowe/zlc
+zowe_docs_repo_url: https://github.com/zowe/docs-site
+zowe_onboarding_slack_url: https://openmainframeproject.slack.com/archives/CC60ALD61
+zowe_user_slack_url: https://openmainframeproject.slack.com/archives/CC08782AG
+zowe_doc_slack_url: https://openmainframeproject.slack.com/archives/CC961JYMQ
+zowe_metrics_url: https://www.metrics.zowe.org/
+
 
 #TODO add url for zowe_sdk_install_doc_url, zowe_node_sdk_download_url, and zowe_python_sdk_download_url
 
-gems:
-# Redirect plugin
+plugins:
+  # Redirect plugin
   - jekyll-redirect-from
 
 # Exclude from processing.

@@ -1,0 +1,22 @@
+# # Not needed anymore!
+
+# # Other Recurring Calls
+# # Any kind of links should NOT be in ""
+
+# - squad-name: "Zowe Architecture Call"
+#   day: "Tue 10-11am (EST)"
+#   meeting-link: https://zoom.us/my/zowe.cicd
+#   github-link: https://github.com/zowe/community
+#   description: "This meeting discusses Zowe architecture topics."
+
+# - squad-name: "Zowe Technical Steering Committee (TSC)"
+#   day: "Thu 2-3pm (EST)"
+#   meeting-link: https://zoom.us/j/99702386308
+#   github-link: https://github.com/zowe/community/tree/master/Technical-Steering-Committee
+#   description: "Zowe TSC oversees, governs, and improves the infrastructure, execution, and customer experience related to development, testing, packaging, delivery, and cross-squad technology overlap areas."
+
+# - squad-name: "Zowe Development / Release Checkpoint"
+#   day: "Thu 10-11am (EST)"
+#   meeting-link: https://zoom.us/my/zowe.cicd
+#   github-link: https://github.com/zowe/community/tree/master/Project%20Management/
+#   description: "This meeting discusses Zowe development and release issues."

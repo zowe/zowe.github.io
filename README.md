@@ -33,6 +33,14 @@ To add an announcement, add an entry like below in [announcements.yml](_data/ann
   link: https://linktomyannouncementcalltoaction.org
 ```
 
+### Add upcoming events
+
+Events are not supposed to be added/modified manually, since they directly get synced with the [OMP events calendar](https://www.openmainframeproject.org/events/category/zowe) and updates only when the response of [ICS feed](https://www.openmainframeproject.org/events/category/zowe?ical=1&tribe_display=photo) changes through a PR by GitHub action.
+
+The events are dynamically fetched from an [ICS feed](https://www.openmainframeproject.org/events/category/zowe?ical=1&tribe_display=photo) and parsed into the [upcoming_events.yml](_data/upcoming_events.yml).
+
+If needed, the [upcoming_events.yml](_data/upcoming_events.yml) can be manually updated by running `python assets/script/ics-to-yml.py` locally from root directory.
+
 ## Submitting site updates
 
 Any site updates can be submitted as a pull request. We recommmend you [create a fork](https://help.github.com/en/articles/fork-a-repo) of this repo and make changes there so you can preview them using GitHub Pages on your GitHub account. You can also develop locally with the following steps:
