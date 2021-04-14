@@ -53,5 +53,5 @@ for i in range(2):
         eventinstance['url'] = event.url
         eventlist.append(eventinstance)
 
-with open(r'./_data/upcoming_events.yml', 'w') as yamlfile:
+with open(r'../_data/upcoming_events.yml', 'w') as yamlfile:
     yaml.dump(eventlist, yamlfile, sort_keys=False)
