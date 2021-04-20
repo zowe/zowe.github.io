@@ -109,7 +109,7 @@ redirect_from:
   </div>
 </div>
 
-<div style="padding: 4% 7% 5% 7%" class="bg-light">
+<div id="intents" style="padding: 4% 7% 5% 7%" class="bg-light">
     <h2 class="text-center" style="color: black !important; margin-bottom: 5%">What would you like to do with Zowe?</h2>
     <div class="row">
       <div class="col-sm text-center">
@@ -155,7 +155,7 @@ redirect_from:
   </section>
   {% endif %}
 
-<div style="padding: 4% 7% 5% 7%">
+<div id="components" style="padding: 4% 7% 5% 7%">
   <div>
     <h2 class="text-center" style="color: black !important; margin-bottom: 3%">Zowe components</h2>
   </div>
@@ -285,7 +285,7 @@ redirect_from:
   </div>
 </div>
 
-<div style="padding: 2% 3%; color: black !important;" class="bg-light"> 
+<div id="metrics" style="padding: 2% 3%; color: black !important;" class="bg-light"> 
   <h2 class="text-center" style="margin-bottom: 5%"><a href="{{ site.zowe_metrics_url }}" style="color: initial">Zowe by the numbers</a></h2>
   <div class="row" style="margin-bottom: 2%">
     <div class="col-md text-center">
@@ -329,7 +329,7 @@ redirect_from:
   </div>
 </div>
 
-<div style="padding: 4% 7% 5% 7%">
+<div id="blogs" style="padding: 4% 7% 5% 7%">
   <div style="margin-bottom: 4%">
     <h2 class="text-center" style="color: black !important; margin-bottom: 5%">From Zowe blog</h2>
   </div>
