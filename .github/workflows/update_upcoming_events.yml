@@ -33,7 +33,7 @@ jobs:
       # Runs the Script to convert ics to yaml format
       - name: Run ics-to-yml.py
         run: |
-          python master/assets/script/ics-to-yml.py
+          python master/_data/ics-to-yml.py
 
       - name: Check diff
         run: | #set an environment variable

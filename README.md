@@ -39,7 +39,7 @@ Events are not supposed to be added/modified manually, since they directly get s
 
 The events are dynamically fetched from an [ICS feed](https://www.openmainframeproject.org/events/category/zowe?ical=1&tribe_display=photo) and parsed into the [upcoming_events.yml](_data/upcoming_events.yml).
 
-If needed, the [upcoming_events.yml](_data/upcoming_events.yml) can be manually updated by running `python assets/script/ics-to-yml.py` locally from root directory.
+If needed, the [upcoming_events.yml](_data/upcoming_events.yml) can be manually updated by running `cd _data` and `python ics-to-yml.py` locally from the root directory.
 
 ## Submitting site updates
 
