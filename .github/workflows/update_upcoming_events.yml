@@ -48,7 +48,7 @@ jobs:
         # Creates Pull Request only if there are differences
         uses: peter-evans/create-pull-request@v3
         with:
-          token: ${{ secrets.PAT }}
+          token: ${{ secrets.ZOWE_ROBOT_TOKEN }}
           branch-suffix: timestamp
           path: ./master
           title: Update upcoming events
