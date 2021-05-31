@@ -35,7 +35,10 @@ jobs:
           python _data/ics-to-yml.py
       
       - name: moch changes
-        run: echo "aaa" > dummy_change
+        run: echo "$(date)" > contribute.md
+
+      - name: show diff
+        run: git diff
 
       - name: Check diff
         run: | #set an environment variable
