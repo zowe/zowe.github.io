@@ -58,3 +58,4 @@ jobs:
           title: Update upcoming events
           labels: automated-build
           commit-message: Update upcoming events
+          signoff: true
