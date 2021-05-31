@@ -1,20 +1,27 @@
+- event: VM Workshop 2021
+  schedule: June 10 - June 12
+  description: The annual VM Workshop, which originally was planned for in-person
+    at Ohio State University, will now take place virtually on June 10-11. Open Mainframe
+    Project will be represented at the conference as several community leaders will
+    be giving presentations. Check...
+  url: https://www.openmainframeproject.org/event/vm-workshop-2021
 - event: Zowe Quarterly Update Webinar
   schedule: April 21 @ 08:30 AM - 09:30 AM
   description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
     \ in what\u2019s happening with Zowe \u2013 we invite you to the next Quarterly\
     \ Update Webinar on April 21 at 8:30 am PT /11:30 am ET (US and Canada)! This..."
   url: https://www.openmainframeproject.org/event/zowe-quarterly-update-webinar
-- event: IDUG Virtual Australasia Db2 Tech Conference
-  schedule: March 15 - March 20
-  description: The IDUG Virtual Australasia Db2 Tech Conference, which is being held
-    on March 15-19, features presentations from top international experts and technical
-    deep dives into topics at the forefront of the industry. Open Mainframe Project
-    Ambassador Joe Winchester, a Senior...
-  url: https://www.openmainframeproject.org/event/idug-virtual-australasia-db2-tech-conference
 - event: SHARE Virtual Summit March 2021
-  schedule: March 02 - March 25
+  schedule: March 01 - March 25
   description: "SHARE Virtual Summit takes place in March 2-4, 9-11, 16-17 and 23-24.\
     \ On week three \u2013 Tuesday, March 16-17 the conference will focus on DevOps\
     \ in the Enterprise, Open Source on Z and Zowe CICS. Open Mainframe Project\u2019\
     s Zowe will..."
   url: https://www.openmainframeproject.org/event/share-virtual-summit-march-2021
+- event: IDUG Virtual Australasia Db2 Tech Conference
+  schedule: March 15 - March 21
+  description: The IDUG Virtual Australasia Db2 Tech Conference, which is being held
+    on March 15-19, features presentations from top international experts and technical
+    deep dives into topics at the forefront of the industry. Open Mainframe Project
+    Ambassador Joe Winchester, a Senior...
+  url: https://www.openmainframeproject.org/event/idug-virtual-australasia-db2-tech-conference
