@@ -33,6 +33,9 @@ jobs:
       - name: Run ics-to-yml.py
         run: |
           python _data/ics-to-yml.py
+      
+      - name: moch changes
+        run: echo "aaa" > dummy_change
 
       - name: Check diff
         run: | #set an environment variable
