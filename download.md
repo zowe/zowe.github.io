@@ -176,8 +176,8 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
         {% else %}
           <td></td>
         {% endif %}
-          <td><a href="{{ site.docs_site_url }}/{{release.documentation}}/getting-started/summaryofchanges.html">Release Notes</a></td>
-          <td><a href="{{ site.docs_site_url }}/{{release.documentation}}">Documentation</a></td>
+          <td><a href="https://docs.zowe.org/{{release.documentation}}/getting-started/summaryofchanges.html">Release Notes</a></td>
+          <td><a href="https://docs.zowe.org/{{release.documentation}}">Documentation</a></td>
         </tr>
       {% endunless %}
       {% if forloop.last %}
