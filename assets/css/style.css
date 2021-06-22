@@ -178,6 +178,26 @@ a:hover{
  text-decoration:none;
 }
 
+.whitebackground button {
+  padding:2%;
+  font-family:"Roboto Condensed", sans-serif;
+  margin-top:2%;
+  margin-right:2%;
+  margin-bottom:2%;
+  background-color:white;
+  font-size:1.2em;
+  font-weight:700;
+  border:3px solid #145391;
+  color:#145391;
+ }
+ 
+ .whitebackground button a {
+ 
+  color:#145391 !important;
+  text-decoration:none;
+ }
+ 
+
 .bluebackground .button {
  padding:2%;
  font-family:"Roboto Condensed", sans-serif;
