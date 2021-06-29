@@ -91,7 +91,7 @@ zowe_doc_slack_url: https://openmainframeproject.slack.com/archives/CC961JYMQ
 zowe_metrics_url: https://www.metrics.zowe.org/
 zowe_cli_next_features_doc_url: https://github.com/zowe/zowe-cli#early-access-features
 zowe_node_sdk_next_reference_doc_url: https://docs.zowe.org/stable/typedoc_next/index.html
-zowe_next_release_date: 26 Jul 2021
+zowe_next_release_date: 2021-07-26
 
 
 plugins:

@@ -139,14 +139,14 @@ Test the latest Zowe features and provide feedback. Technical previews are <b>fo
     <h4 class="card-header">Zowe v2 LTS Preview</h4>
     <div class="card-body">
       <p class="card-text">Preview early access features planned for the next Long Term Support release of Zowe.</p>
-      <p class="card-text">These downloads were last updated on {{ site.zowe_next_release_date }}.</p>
+      <p class="card-text">These downloads were last updated on {{ site.zowe_next_release_date | date: "%d %b %Y" }}.</p>
       <div class="row">
         <div class="card-body">
             <h5 class="card-title" id="zowe-cli-download">Zowe CLI</h5>
             <p class="card-text">Install Zowe CLI from the local package or from an npm registry if your computer is connected to the Internet.</p>
             <p class="card-text">Download the Zowe CLI core package and optionally download the plug-ins (CICS, Db2, IMS, MQ, z/OS FTP, and so on) to gain more capabilities.</p>
-            <p><a class="btn btn-primary" href="{{ site.cli_download_url }}{{ site.data.releases[0].cli_version }}&preview=true">Zowe vNext CLI Core</a></p>
-            <p><a class="btn btn-primary" href="{{ site.cli_plugins_download_url }}{{ site.data.releases[0].cli_plugins_version }}&preview=true">Zowe vNext CLI Plug-ins</a></p>
+            <p><a class="btn btn-primary" href="{{ site.cli_download_url }}{{ site.data.releases[0].cli_version }}&preview={{ site.zowe_next_release_date | remove: '-' }}">Zowe vNext CLI Core</a></p>
+            <p><a class="btn btn-primary" href="{{ site.cli_plugins_download_url }}{{ site.data.releases[0].cli_plugins_version }}&preview={{ site.zowe_next_release_date | remove: '-' }}">Zowe vNext CLI Plug-ins</a></p>
             <div>
               <a href="{{ site.zowe_cli_next_features_doc_url }}" class="card-link">
               <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
@@ -157,7 +157,7 @@ Test the latest Zowe features and provide feedback. Technical previews are <b>fo
           <div class="card-body">
             <h5 class="card-title">Zowe Client SDKs</h5>
             <p class="card-text">Download the Zowe Software Development Kits (SDKs) for use in development and automation.</p>
-            <p><a class="btn btn-primary" href="{{ site.zowe_node_sdk_download_url }}{{ site.data.releases[0].node_sdk_version }}&preview=true">Zowe vNext Node.js Client SDK</a></p>
+            <p><a class="btn btn-primary" href="{{ site.zowe_node_sdk_download_url }}{{ site.data.releases[0].node_sdk_version }}&preview={{ site.zowe_next_release_date | remove: '-' }}">Zowe vNext Node.js Client SDK</a></p>
             <div>
               <a href="{{ site.zowe_node_sdk_next_reference_doc_url }}" class="card-link">
               <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
