@@ -89,9 +89,10 @@ zowe_onboarding_slack_url: https://openmainframeproject.slack.com/archives/CC60A
 zowe_user_slack_url: https://openmainframeproject.slack.com/archives/CC08782AG
 zowe_doc_slack_url: https://openmainframeproject.slack.com/archives/CC961JYMQ
 zowe_metrics_url: https://www.metrics.zowe.org/
+zowe_cli_next_features_doc_url: https://github.com/zowe/zowe-cli#early-access-features
+zowe_node_sdk_next_reference_doc_url: https://docs.zowe.org/stable/typedoc_next/index.html
+zowe_next_release_date: 26 Jul 2021
 
-
-#TODO add url for zowe_sdk_install_doc_url, zowe_node_sdk_download_url, and zowe_python_sdk_download_url
 
 plugins:
   # Redirect plugin
