@@ -130,9 +130,9 @@
       document.getElementById('download_button').onclick = function () {
         ga && ga('send', 'event', 'download', 'Zowe CLI ' + params.get('version'), 'zowe-cli-package-' +
           (params.get('preview') ? 'next-' + params.get('preview') : params.get('version')) + '.zip');
-        window.open("https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" + params.get('version') +
-          '/zowe-cli-package-' + (params.get('preview') ? 'next-' + params.get('preview') : params.get('version')) +
-          '.zip', '_blank');
+        window.open("https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" +
+          (params.get('preview') ? 'next' : params.get('version')) + '/zowe-cli-package-' +
+          (params.get('preview') ? 'next-' + params.get('preview') : params.get('version')) + '.zip', '_blank');
       }
       document.getElementById('download_file_message').innerHTML = 'You are downloading zowe-cli-package-' +
         (params.get('preview') ? 'next-' + params.get('preview') : params.get('version')) + '.zip';
@@ -141,9 +141,9 @@
       document.getElementById('download_button').onclick = function () {
         ga && ga('send', 'event', 'download', 'Zowe CLI Plugins ' + params.get('version'), 'zowe-cli-plugins-' +
           (params.get('preview') ? 'next-' + params.get('preview') : params.get('version')) + '.zip');
-        window.open("https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" + params.get('version') +
-          '/zowe-cli-plugins-' + (params.get('preview') ? 'next-' + params.get('preview') : params.get('version')) +
-          '.zip', '_blank');
+        window.open("https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" +
+          (params.get('preview') ? 'next' : params.get('version')) + '/zowe-cli-plugins-' +
+          (params.get('preview') ? 'next-' + params.get('preview') : params.get('version')) + '.zip', '_blank');
       }
       document.getElementById('download_file_message').innerHTML = 'You are downloading zowe-cli-plugins-' +
         (params.get('preview') ? 'next-' + params.get('preview') : params.get('version')) + '.zip';
@@ -162,9 +162,9 @@
       document.getElementById('download_button').onclick = function () {
         ga && ga('send', 'event', 'download', 'Zowe SMPE ' + params.get('version'), 'zowe-python-sdk-' +
           (params.get('preview') ? 'next-' + params.get('preview') : params.get('version')) + '.zip');
-        window.open("https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" + params.get('version') +
-          '/zowe-python-sdk-' + (params.get('preview') ? 'next-' + params.get('preview') : params.get('version')) +
-          '.zip', '_blank');
+        window.open("https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" +
+          (params.get('preview') ? 'next' : params.get('version')) + '/zowe-python-sdk-' +
+          (params.get('preview') ? 'next-' + params.get('preview') : params.get('version')) + '.zip', '_blank');
       }
       document.getElementById('download_file_message').innerHTML = 'You are downloading zowe-python-sdk-' +
         (params.get('preview') ? 'next-' + params.get('preview') : params.get('version')) + '.zip';
@@ -173,9 +173,9 @@
       document.getElementById('download_button').onclick = function () {
         ga && ga('send', 'event', 'download', 'Zowe SMPE ' + params.get('version'), 'zowe-nodejs-sdk-' +
           (params.get('preview') ? 'next-' + params.get('preview') : params.get('version')) + '.zip');
-        window.open("https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" + params.get('version') +
-          '/zowe-nodejs-sdk-' + (params.get('preview') ? 'next-' + params.get('preview') : params.get('version')) +
-          '.zip', '_blank');
+        window.open("https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" +
+          (params.get('preview') ? 'next' : params.get('version')) + '/zowe-nodejs-sdk-' +
+          (params.get('preview') ? 'next-' + params.get('preview') : params.get('version')) + '.zip', '_blank');
       }
       document.getElementById('download_file_message').innerHTML = 'You are downloading zowe-nodejs-sdk-' +
         (params.get('preview') ? 'next-' + params.get('preview') : params.get('version')) + '.zip';
