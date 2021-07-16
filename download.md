@@ -132,20 +132,29 @@ Test the latest Zowe features and provide feedback. Technical previews are <b>fo
               </a>
             </div>
          </div>
-         <div class="card-body">
-          <h5 class="card-title">Zowe Explorer</h5>
-          <p class="card-text">The Zowe Explorer vNext release enables you to adopt the Team Configuration File (recently developed by the Zowe CLI Squad) - designed to make profile management more centralized and much simpler.</p>
-          <p class="card-text">You can download the <em>.vsix</em> files directly via the GitHub release page with the tag <b>"Pre-release"</b>. Separate downloads exist for Zowe Explorer and Zowe Explorer Extension for FTP.</p>
-          <p class="card-text">To install the <em>.vsix</em> files, use <b>Extensions > Install from vsix</b> within VS Code.</p>
-          <p><a class="btn btn-primary" href="{{ site.zowe_explorer_next_github_url }}">Zowe Explorer vNext release</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card-deck">
+  <div class="card bg-light border-light mb-3">
+  <h4 class="card-header">Zowe Explorer</h4>
+    <div class="card-body">
+    <p class="card-text">The Zowe Explorer vNext release enables you to adopt the Team Configuration File (recently developed by the Zowe CLI Squad) - designed to make profile management more centralized and much simpler.</p>
+    <p class="card-text">You can download the <em>.vsix</em> files directly via the GitHub release page with the tag <b>"Pre-release"</b>. Separate downloads exist for Zowe Explorer and Zowe Explorer Extension for FTP.</p>
+    <p class="card-text">To install the <em>.vsix</em> files, use <b>Extensions > Install from vsix</b> within VS Code.</p>
+        <div class="row">
+          <div class="card-body">
+            <h5 class="card-title">Direct download</h5>
+            <p><a class="btn btn-primary" href="{{ site.zowe_explorer_next_github_url }}">Zowe Explorer vNext release</a></p>
+          </div>
           <div>
             <a href="{{ site.zowe_explorer_next_doc_url }}" class="card-link">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
             Review early access features
             </a>
           </div>
-       </div>
-      </div>   
+        </div>
     </div>
   </div>
 </div>
