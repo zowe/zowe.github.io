@@ -1,24 +1,52 @@
+- event: SHARE Virtual
+  schedule: August 09 - August 14
+  description: The SHARE virtual conference (#SHAREvirtual21) is hosting its summer
+    session on August 9-13. There will be more than 100 live sessions and 100 on-demand
+    presentations focused on a variety of topics related to mainframes. Several Open
+    Mainframe Project community leaders...
+  url: https://www.openmainframeproject.org/event/share-virtual
 - event: Code PaLOUsa 2021
-  schedule: August 18 - August 20	
-  description: OMP Ambassador Joe Winchester, and John Mertic, OMP Director, 
-   will be presenting "Who said you can’t teach an old dog new tricks?" – Friday, 
-   August 20 at 9:45 am EDT. Joe Winchester is also presenting "Wowee it’s Zowe 
-   – how the mainframe got its groove again" – Thursday, August 19 at 8:30 am EDT.
+  schedule: August 18 - August 21
+  description: "OMP Ambassador Joe Winchester, and John Mertic, OMP Director, will\
+    \ be presenting: Who said you can\u2019t teach an old dog new tricks? \u2013 Friday,\
+    \ August 20 at 9:45 am EDT The Mainframe computer is over 65 years old, and has..."
   url: https://www.openmainframeproject.org/event/code-palousa-2021
-
-- event: Zowe v1.23 System Demo
-  schedule: August 4 @ 09:00 AM
-  description: Join the Zowe System Demo on Aug 4 to see a demo of what's new
-   in the Zowe v1.23 release, and ask the community questions. Check out the Zowe 
-   calendar for detailed call-in information.
-  url: https://lists.openmainframeproject.org/g/zowe-dev/viewevent?eventid=1205575&calstart=2021-08-04
-
-- event: Zowe Quarterly Update Webinar
-  schedule: July 21 @ 11:30 AM ET
-  description: Whether you are a Zowe User, Contributor, Extender or simply 
-   interested in what’s happening with Zowe – we invite you to the next 
-   Quarterly Update Webinar on July 21 at 8:30 am PT /11:30 am ET (US and Canada). 
-   This is the fourth in the series of webinars we plan to host each quarter that 
-   includes a topic, Zowe Squad update, brief Zowe update, community events overview 
-   and interactive polls.
+- event: Zowe 1.23 Live System Demo
+  schedule: August 04 @ 06:00 AM - 07:00 AM
+  description: Open Mainframe Project is excited to announce that Zowe 1.23 release
+    is now available! OnAugust 4 at 6-7 am PST/ 9-10 am EST, Zowe squads will share
+    the new benefits of the release as well as live demos to see...
+  url: https://www.openmainframeproject.org/event/zowe-1-23-live-system-demo
+- event: VM Workshop 2021
+  schedule: June 10 - June 12
+  description: The annual VM Workshop, which originally was planned for in-person
+    at Ohio State University, will now take place virtually on June 10-11. Open Mainframe
+    Project will be represented at the conference as several community leaders will
+    be giving presentations. Check...
+  url: https://www.openmainframeproject.org/event/vm-workshop-2021
+- event: Zowe Quarterly Update - July 2021
+  schedule: July 21 @ 08:30 AM - 09:30 AM
+  description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
+    \ in what\u2019s happening with Zowe \u2013 we invite you to the next Quarterly\
+    \ Update Webinar on July 21 at 8:30 am PT /11:30 am ET (US and Canada). This..."
   url: https://www.openmainframeproject.org/event/zowe-quarterly-update-july-2021
+- event: Zowe Quarterly Update Webinar
+  schedule: April 21 @ 08:30 AM - 09:30 AM
+  description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
+    \ in what\u2019s happening with Zowe \u2013 we invite you to the next Quarterly\
+    \ Update Webinar on April 21 at 8:30 am PT /11:30 am ET (US and Canada)! This..."
+  url: https://www.openmainframeproject.org/event/zowe-quarterly-update-webinar
+- event: SHARE Virtual Summit March 2021
+  schedule: March 01 - March 25
+  description: "SHARE Virtual Summit takes place in March 2-4, 9-11, 16-17 and 23-24.\
+    \ On week three \u2013 Tuesday, March 16-17 the conference will focus on DevOps\
+    \ in the Enterprise, Open Source on Z and Zowe CICS. Open Mainframe Project\u2019\
+    s Zowe will..."
+  url: https://www.openmainframeproject.org/event/share-virtual-summit-march-2021
+- event: IDUG Virtual Australasia Db2 Tech Conference
+  schedule: March 15 - March 21
+  description: The IDUG Virtual Australasia Db2 Tech Conference, which is being held
+    on March 15-19, features presentations from top international experts and technical
+    deep dives into topics at the forefront of the industry. Open Mainframe Project
+    Ambassador Joe Winchester, a Senior...
+  url: https://www.openmainframeproject.org/event/idug-virtual-australasia-db2-tech-conference
