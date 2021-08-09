@@ -10,6 +10,11 @@
   <div class="card-body">
     <p class="card-text">
       Zowe has both server and client components, which you can install independently. Download the latest installer to install Zowe on the z/OS server, on your computer, or both. Start your journey with Zowe today!
+
+      <p>
+      While it is generally recommended that you use more recent releases of Zowe, users who intend to use Zowe as a prerequisite for a commercial product or plugin should refer to the documentation for those products to determine which versions of Zowe are compatible and have been tested with the commercial product in question.
+      </p>
+
     </p>
     <p class="card-text">
       Want to build Zowe on your own? Access <a href="{{ site.github_repo_url }}">Zowe GitHub repositories</a> to download the source code.
