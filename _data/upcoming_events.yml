@@ -1,15 +1,9 @@
-- event: SHARE Virtual
-  schedule: August 09 - August 14
-  description: The SHARE virtual conference (#SHAREvirtual21) is hosting its summer
-    session on August 9-13. There will be more than 100 live sessions and 100 on-demand
-    presentations focused on a variety of topics related to mainframes. Several Open
-    Mainframe Project community leaders...
-  url: https://www.openmainframeproject.org/event/share-virtual
 - event: Code PaLOUsa 2021
   schedule: August 18 - August 21
-  description: "OMP Ambassador Joe Winchester, and John Mertic, OMP Director, will\
-    \ be presenting: Who said you can\u2019t teach an old dog new tricks? \u2013 Friday,\
-    \ August 20 at 9:45 am EDT The Mainframe computer is over 65 years old, and has..."
+  description: "OMP Ambassadors Joe Winchester, Jessielaine Punongbayan, Richelle\
+    \ Anne Craw, together with and John Mertic, OMP Director, will be presenting\u201D\
+    \ John Mertic and Joe Winchester: Who said you can\u2019t teach an old dog new\
+    \ tricks? \u2013 Friday, August 20 at 9:45..."
   url: https://www.openmainframeproject.org/event/code-palousa-2021
 - event: 'I am a Mainframer: Personal Stories and Lessons from the Next Generation
     of Mainframe Developers'
@@ -25,6 +19,13 @@
     Computing conference with a lineup of more than 100+ global thought leaders that
     will highlight industry trends and innovation. Last year, IBM Z Day had more...
   url: https://www.openmainframeproject.org/event/ibm-z-day-2021-virtual
+- event: SHARE Virtual
+  schedule: August 09 - August 14
+  description: The SHARE virtual conference (#SHAREvirtual21) is hosting its summer
+    session on August 9-13. There will be more than 100 live sessions and 100 on-demand
+    presentations focused on a variety of topics related to mainframes. Several Open
+    Mainframe Project community leaders...
+  url: https://www.openmainframeproject.org/event/share-virtual
 - event: VM Workshop 2021
   schedule: June 10 - June 12
   description: The annual VM Workshop, which originally was planned for in-person
