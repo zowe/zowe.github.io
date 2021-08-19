@@ -33,7 +33,7 @@
         <h5 class="text-left"><a href="{{ site.omp_calendar_url }}">Meetings</a></h5>
         <img class="ml-2" style="height: 20px" src="assets/img/calendar-community.svg">
       </div>
-      <p class="card-text">All scheduled meetings in the Zowe community are placed in the Mainframe Project Calendar, from the scrum status of a squad to meetings of the Zowe Leadership Committee. </p>
+      <p class="card-text">All scheduled meetings in the Zowe community are placed in the Mainframe Project Calendar, from the scrum status of a squad to meetings of the Technical Steering Committer and the Zowe Advisory Council. </p>
       <p>You are welcome to drop in on and contribute to any of these meetings! Check out the detailed introduction to squad meetings and other recurring meetings! </p>
     </div>
   </div>
@@ -46,7 +46,6 @@
       <p class="card-text">This is where all of Zowe’s code is, and where you can find detailed information about each project and how to collaborate and contribute. This is the place to open issues, give feedback, and contribute code.</p>
       <p>Some good repos to get started: <ul>
       <li><a href="{{ site.zowe_community_repo_url }}">community</a></li> 
-      <li><a href="{{ site.zowe_zlc_repo_url }}">zlc</a></li> 
       <li><a href="{{ site.zowe_docs_repo_url }}">docs-site</a></li>  
       </ul>
       </p>
