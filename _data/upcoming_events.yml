@@ -6,14 +6,6 @@
     development community and virtual booths where leading software development companies
     come...
   url: https://www.openmainframeproject.org/event/code-palousa-2021
-- event: 'I am a Mainframer: Personal Stories and Lessons from the Next Generation
-    of Mainframe Developers'
-  schedule: August 18 @ 08:00 AM - 09:00 AM
-  description: "Join us on Wednesday, August 19 at 8-9 am PDT for a new webinar that\
-    \ explores \u201CPersonal Stories and lessons from the next generation of mainframe\
-    \ Developers.\u201D Five open source mainframe developers will share their personal\
-    \ journey into the mainframe,..."
-  url: https://www.openmainframeproject.org/event/i-am-a-mainframer-personal-stories-and-lessons-from-the-next-generation-of-mainframe-developers
 - event: IBM Z Day 2021 (Virtual)
   schedule: September 15 - September 16
   description: IBM Z Day, which takes place on September 15, is a free virtual Enterprise
@@ -40,6 +32,14 @@
     is now available! OnAugust 4 at 6-7 am PST/ 9-10 am EST, Zowe squads will share
     the new benefits of the release as well as live demos to see...
   url: https://www.openmainframeproject.org/event/zowe-1-23-live-system-demo
+- event: 'I am a Mainframer: Personal Stories and Lessons from the Next Generation
+    of Mainframe Developers'
+  schedule: August 18 @ 08:00 AM - 09:00 AM
+  description: "Join us on Wednesday, August 18 at 8-9 am PDT for a new webinar that\
+    \ explores \u201CPersonal Stories and lessons from the next generation of mainframe\
+    \ Developers.\u201D Five open source mainframe developers will share their personal\
+    \ journey into the mainframe,..."
+  url: https://www.openmainframeproject.org/event/i-am-a-mainframer-personal-stories-and-lessons-from-the-next-generation-of-mainframe-developers
 - event: Zowe Quarterly Update - July 2021
   schedule: July 21 @ 08:30 AM - 09:30 AM
   description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
