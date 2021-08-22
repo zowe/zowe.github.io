@@ -1,11 +1,3 @@
-- event: Code PaLOUsa 2021
-  schedule: August 18 - August 21
-  description: Codepalousa is a multi-day software development conference designed
-    to cover all aspects of software development regardless of technology stack. The
-    conference features presentations from well-known professionals in the software
-    development community and virtual booths where leading software development companies
-    come...
-  url: https://www.openmainframeproject.org/event/code-palousa-2021
 - event: IBM Z Day 2021 (Virtual)
   schedule: September 15 - September 16
   description: IBM Z Day, which takes place on September 15, is a free virtual Enterprise
@@ -40,6 +32,14 @@
     \ Developers.\u201D Five open source mainframe developers will share their personal\
     \ journey into the mainframe,..."
   url: https://www.openmainframeproject.org/event/i-am-a-mainframer-personal-stories-and-lessons-from-the-next-generation-of-mainframe-developers
+- event: Code PaLOUsa 2021
+  schedule: August 18 - August 21
+  description: Codepalousa is a multi-day software development conference designed
+    to cover all aspects of software development regardless of technology stack. The
+    conference features presentations from well-known professionals in the software
+    development community and virtual booths where leading software development companies
+    come...
+  url: https://www.openmainframeproject.org/event/code-palousa-2021
 - event: Zowe Quarterly Update - July 2021
   schedule: July 21 @ 08:30 AM - 09:30 AM
   description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
