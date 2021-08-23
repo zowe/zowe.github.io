@@ -98,6 +98,10 @@ redirect_from:
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
       ZEBRA (Zowe Embedded Browser for RMF/SMF and APIs) - Incubator
       </a>
+      <a href="#workflow-wizard-intro" class="card-link">
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+      Zowe Workflow wiZard - Incubator
+      </a>
     </div>
   </div>
   <div class="col-12 col-md-4 zowe-video">
@@ -280,6 +284,21 @@ redirect_from:
       </div>
       <div class="col-md-5 col-sm order-first order-sm-last">
         <img class="image-zowe-use" src="assets/img/zebra-image.png">
+      </div>
+    </div>
+    <hr class="w-75 mt-5 mb-5">
+    <div class="row" style="margin-bottom: 4%">
+      <div class="col-md-7 col-sm order-last order-sm-first">
+        <a id="workflow-wizard-intro"><h4>Zowe Workflow wiZard (Incubator)</h4></a>
+        <p style="margin: 1rem auto">The Workflow wiZard delivers a workflow builder which simplifies the creation of z/OSMF workflows. These workflows can be very helpful for automating workloads or guiding users through a set of ordered steps to complete a task, but they can also be complex and challenging to create. The workflow builder was created to address these challenges.</p>
+          <p>
+            <a href="{{ site.workflow_wizard_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
+            <a href="{{ site.workflow_wizard_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
+            <a href="{{ site.workflow_wizard_doc_url }}">Learn more</a>&nbsp;|&nbsp;
+          </p>
+      </div>
+      <div class="col-md-5 col-sm order-first order-sm-last">
+        <img class="image-zowe-use" src="assets/img/workflow_wizard.png">
       </div>
     </div>
   </div>
