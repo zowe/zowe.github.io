@@ -245,20 +245,25 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
 
 <section class="bluebackground">
 <h1>Release Timeline</h1>
-<p><img src="assets/img/zowe-lts.png" width="90%" /></p>
-<p><b>Version timeframe, Current, Active LTS, Maintenance</b></p>
+<p><img src="assets/img/major_releases.png" width="90%" /></p>
+<p><b>Version timeframe, Active , Maintenance</b></p>
 <ul>
-<li>New Zowe versions will enter <b>current</b> release status for six to nine months to allow consumers of Zowe to test, provide feedback, and adjust to any changes.</li>
-<li>After current release phase, Zowe will move to <b>Active LTS</b> status and will be deemed ready by the community for general use. <b>Active LTS</b> will have additional releases with both fixes and enhancements.</li>
-<li>Following a period of <b>Active LTS</b>, the Zowe version will enter <b>Maintenance</b> for fixes only.</li>
-<li>The combination of <b>Active LTS</b> and <b>Maintenance LTS</b> release is designated as <b>"long-term support”</b>, which provides two guarantees:
+<li>Zowe is released on regular schedule. A major version is released every two years and minor versions on a schedule published in the <a href="https://github.com/zowe/community/blob/master/Project%20Management/Schedule/Zowe%20PI%20%26%20Sprint%20Cadence.md">Zowe Community GitHub repository</a>.</li>
+<li>The Zowe community provides three types of releases:
   <ul>
-    <li style="list-style-type: disc">Critical defects will be fixed. The criteria for what constitutes a critical defect is covered in <a href="{{ site.lts_url }}">Release Process</a>.</li>
-    <li style="list-style-type: disc">Extenders who achieve Zowe conformance for the long-term support version will not need to modify their product for it to remain functional when the Zowe community provides distributions within the release or  modification level boundary within the same version.</li>
+    <li style="list-style-type: disc">Maintenance - This release receives only security patches and fixes for the critical bugs. It's suitable for environment that prefers stability to new features.</li>        
+    <li style="list-style-type: disc">Active - This release receives updates regularly according to the schedule.  It is suitable for users who are willing to invest a bit more time into upgrades to get the latest features.</li>
+    <li style="list-style-type: disc">Nightly - The Zowe publishes bleeding edge state of the project on the nightly basis. There are no guarantees around the stability of the build.</li>
   </ul>
 </li>
-<li>The length of <b>Active LTS</b> may vary but the total time period of <b>Active LTS</b> + <b>Maintenance LTS</b> will be at least 24 months.</li>
-<li>Production applications should only use <b>Active LTS</b> or <b>Maintenance LTS</b> releases due to the contract with extender products remaining functional and the community’s commitment to fix critical defects.</li>
+<li>Every major version will be in the Active phase for two years and then transition into the Maintenance phase for another two and half year. This brings to you the possibility to use only major versions in the maintenance mode.</li>
+<li>The combination of <b>Active</b> and <b>Maintenance</b> release provides two guarantees:
+  <ul>
+    <li style="list-style-type: disc">Critical defects will be fixed. The criteria for what constitutes a critical defect is covered in <a href="{{ site.lts_url }}">Release Process</a>.</li>
+    <li style="list-style-type: disc">Extenders who achieve Zowe conformance for the long-term support version will not need to modify their product for it to remain functional when the Zowe community provides distributions within the release or modification level boundary within the same major version.</li>
+  </ul>
+</li>
+<li>Production applications should only use <b>Active</b> or <b>Maintenance </b> releases due to the contract with extender products remaining functional and the community’s commitment to fix critical defects.</li>
 </ul>
 <button type="button" class="btn btn-outline-light" href="{{ site.lts_url }}">Learn more</button>
 </section>
