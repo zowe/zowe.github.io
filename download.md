@@ -249,7 +249,7 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
 <p><b>Version timeframe, Active , Maintenance</b></p>
 <ul>
 <li>Zowe is released on regular schedule. Major version every two years. Minor versions on a schedule published in <a href="https://github.com/zowe/community/blob/master/Project%20Management/Schedule/Zowe%20PI%20%26%20Sprint%20Cadence.md">Community repository.</a></li>
-<li>There are three different types of releases, released by Zowe community:
+<li>The Zowe community provides three types of releases:
   <ul>
     <li style="list-style-type: disc">Maintenance - This release receives only security patches and fixes for the critical bugs. It's suitable for environment that prefers stability to new features.</li>        
     <li style="list-style-type: disc">Active - This release receives updates regularly according to the schedule, and it is for the users that are willing to invest a bit more time into upgrades to get the latest features.</li>
