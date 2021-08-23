@@ -248,15 +248,15 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
 <p><img src="assets/img/major_releases.png" width="90%" /></p>
 <p><b>Version timeframe, Active , Maintenance</b></p>
 <ul>
-<li>Zowe is released on regular schedule. Major version every two years. Minor versions on a schedule published in <a href="https://github.com/zowe/community/blob/master/Project%20Management/Schedule/Zowe%20PI%20%26%20Sprint%20Cadence.md">Community repository.</a></li>
+<li>Zowe is released on regular schedule. A major version is released every two years and minor versions on a schedule published in the <a href="https://github.com/zowe/community/blob/master/Project%20Management/Schedule/Zowe%20PI%20%26%20Sprint%20Cadence.md">Zowe Community GitHub repository</a>.</li>
 <li>The Zowe community provides three types of releases:
   <ul>
     <li style="list-style-type: disc">Maintenance - This release receives only security patches and fixes for the critical bugs. It's suitable for environment that prefers stability to new features.</li>        
-    <li style="list-style-type: disc">Active - This release receives updates regularly according to the schedule, and it is for the users that are willing to invest a bit more time into upgrades to get the latest features.</li>
+    <li style="list-style-type: disc">Active - This release receives updates regularly according to the schedule.  It is suitable for users who are willing to invest a bit more time into upgrades to get the latest features.</li>
     <li style="list-style-type: disc">Nightly - The Zowe publishes bleeding edge state of the project on the nightly basis. There are no guarantees around the stability of the build.</li>
   </ul>
 </li>
-<li>Every major version will be for two years in the Active phase and then in the Maintenance phase for another two and half year. This brings to you the possibility to use only major versions in the maintenance mode</li>
+<li>Every major version will be in the Active phase for two years and then transition into the Maintenance phase for another two and half year. This brings to you the possibility to use only major versions in the maintenance mode.</li>
 <li>The combination of <b>Active</b> and <b>Maintenance</b> release provides two guarantees:
   <ul>
     <li style="list-style-type: disc">Critical defects will be fixed. The criteria for what constitutes a critical defect is covered in <a href="{{ site.lts_url }}">Release Process</a>.</li>
