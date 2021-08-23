@@ -27,7 +27,7 @@ zowe_node_sdk_download_url: /legal.html?type=nodejs-sdk&version=
 zowe_python_sdk_download_url: /legal.html?type=python-sdk&version=
 nightly_build_url: https://zowe.jfrog.io/zowe/webapp/#/artifacts/browse/tree/General/libs-release-local/org/zowe/nightly
 zowe_build_slack_url: https://openmainframeproject.slack.com/archives/CC9QW5NJE
-lts_url: https://github.com/zowe/zlc/blob/master/process/ReleaseProcess.md
+lts_url: https://github.com/zowe/community/blob/master/Technical-Steering-Committee/release.md
 zowe_fmid: AZWE001
 zowe_fmid_oss_version: 1.9.0
 zos_component_install_doc_url: https://docs.zowe.org/stable/user-guide/install-zos.html
