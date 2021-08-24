@@ -288,6 +288,9 @@ redirect_from:
     </div>
     <hr class="w-75 mt-5 mb-5">
     <div class="row" style="margin-bottom: 4%">
+      <div class="col-md-5 col-sm order-first order-sm-last">
+        <img class="image-zowe-use" src="assets/img/workflow_wizard.png">
+      </div>
       <div class="col-md-7 col-sm order-last order-sm-first">
         <a id="workflow-wizard-intro"><h4>Zowe Workflow wiZard (Incubator)</h4></a>
         <p style="margin: 1rem auto">The Workflow wiZard delivers a workflow builder which simplifies the creation of z/OSMF workflows. These workflows can be very helpful for automating workloads or guiding users through a set of ordered steps to complete a task, but they can also be complex and challenging to create. The workflow builder was created to address these challenges.</p>
@@ -296,9 +299,6 @@ redirect_from:
             <a href="{{ site.workflow_wizard_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
             <a href="{{ site.workflow_wizard_doc_url }}">Learn more</a>&nbsp;|&nbsp;
           </p>
-      </div>
-      <div class="col-md-5 col-sm order-first order-sm-last">
-        <img class="image-zowe-use" src="assets/img/workflow_wizard.png">
       </div>
     </div>
   </div>
