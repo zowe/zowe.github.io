@@ -272,7 +272,7 @@ redirect_from:
     </div>
     <hr class="w-75 mt-5 mb-5">
     <div class="row" style="margin-bottom: 4%">
-      <div class="col-md-7 col-sm order-last order-sm-first">
+      <div class="col-md-7 col-sm">
         <a id="zebra-intro"><h4>ZEBRA (Incubator)</h4></a>
         <p style="margin: 1rem auto">Provides re-usable and industry compliant JSON formatted RMF/SMF data records, so that many other ISV SW and users can exploit them using open-source SW for many ways.</p>
           <p>
@@ -282,16 +282,16 @@ redirect_from:
             <a href="{{ site.zebra_demo_url }}">Take a tour</a>
           </p>
       </div>
-      <div class="col-md-5 col-sm order-first order-sm-last">
+      <div class="col-md-5 col-sm">
         <img class="image-zowe-use" src="assets/img/zebra-image.png">
       </div>
     </div>
     <hr class="w-75 mt-5 mb-5">
     <div class="row" style="margin-bottom: 4%">
-      <div class="col-md-5 col-sm order-first order-sm-last">
+      <div class="col-md-5 col-sm order-last order-sm-first">
         <img class="image-zowe-use" src="assets/img/workflow_wizard.png">
       </div>
-      <div class="col-md-7 col-sm order-last order-sm-first">
+      <div class="col-md-7 col-sm order-first order-sm-last">
         <a id="workflow-wizard-intro"><h4>Zowe Workflow wiZard (Incubator)</h4></a>
         <p style="margin: 1rem auto">The Workflow wiZard delivers a workflow builder which simplifies the creation of z/OSMF workflows. These workflows can be very helpful for automating workloads or guiding users through a set of ordered steps to complete a task, but they can also be complex and challenging to create. The workflow builder was created to address these challenges.</p>
           <p>
