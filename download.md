@@ -8,33 +8,33 @@
 <h1 id="download">Download Zowe</h1>
 <div class="card">
   <div class="card-body">
-  <p class="card-text">
-    Zowe has both server and client components, which you can install independently. Download the latest installer to install Zowe on the z/OS server, on your computer, or both. Start your journey with Zowe today!
-  </p>
-  <p class="card-text">
-    Want to build Zowe on your own? Access <a href="{{ site.github_repo_url }}">Zowe GitHub repositories</a> to download the source code.
-  </p>
+    <p class="card-text">
+      Zowe has both server and client components, which you can install independently. Download the latest installer to install Zowe on the z/OS server, on your computer, or both. Start your journey with Zowe today!
+    </p>
+    <p class="card-text">
+      Want to build Zowe on your own? Access <a href="{{ site.github_repo_url }}">Zowe GitHub repositories</a> to download the source code.
+    </p>
   </div>
 </div>
 <p> </p>
 {% if site.data.releases[0].cli_version and site.data.releases[0].cli_plugins_version and site.data.releases[0].zos_version and site.data.releases[0].smpe_version and site.data.releases[0].node_sdk_version and site.data.releases[0].python_sdk_version %}
-<div class="card-deck">
-<div class="card bg-light border-light mb-3">
-  <h4 class="card-header" id="zowe-zos-build-download">Server-side component installer</h4>
-    <div class="card-body">
-    <p class="card-text">Install Zowe z/OS components from the <b>convenience build</b> or the <b>SMP/E build</b> depending on your need.</p>
-    <p class="card-text">You can also optionally use the Docker build technical preview to run a subset of the Zowe server-side components outside z/OS. Download and learn more about the build in the technical preview section.</p>
+  <div class="card-deck">
+    <div class="card bg-light border-light mb-3">
+      <h4 class="card-header" id="zowe-zos-build-download">Server-side component installer</h4>
+      <div class="card-body">
+        <p class="card-text">Install Zowe z/OS components from the <b>convenience build</b> or the <b>SMP/E build</b> depending on your need.</p>
+        <p class="card-text">You can also optionally use the Docker build technical preview to run a subset of the Zowe server-side components outside z/OS. Download and learn more about the build in the technical preview section.</p>
         <div class="row">
           <div class="card-body">
             <h5 class="card-title">Convenience build</h5>
             <p class="card-text">PAX archive format installed on the z/OS server</p>
             <p><a class="btn btn-primary" href="{{ site.zos_download_url }}{{ site.data.releases[0].zos_version }}">Zowe {{ site.data.releases[0].zos_version }} z/OS Convenience build</a></p>
-          <div>
-            <a href="{{ site.zos_component_install_doc_url }}" class="card-link">
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
-            Read installation docs
-            </a>
-          </div>
+            <div>
+              <a href="{{ site.zos_component_install_doc_url }}" class="card-link">
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+              Read installation docs
+              </a>
+            </div>
           </div>
           <div class="card-body">
             <h5 class="card-title">SMP/E build</h5>
@@ -49,54 +49,54 @@
               </a>
             </div>
           </div>
-       </div>
+        </div>
+      </div>
     </div>
-  </div>
-<div class="card bg-light border-light mb-3">
-  <h4 class="card-header">Client-side component installer</h4>
-    <div class="card-body">
-    <p class="card-text">Install <b>Zowe CLI</b> or <b>Zowe Explorer</b>, a Visual Studio Code extension powered by Zowe CLI.</p>
-      <div class="row">
-        <div class="card-body">
-          <h5 class="card-title" id="zowe-cli-download">Zowe CLI</h5>
-          <p class="card-text">Install Zowe CLI from the local package or from an npm registry if your computer is connected to the Internet.</p>
-          <p class="card-text">Download the Zowe CLI core package and optionally download the plug-ins (CICS, Db2, IMS, MQ, z/OS FTP, and so on) to gain more capabilities.</p>
-          <p><a class="btn btn-primary" href="{{ site.cli_download_url }}{{ site.data.releases[0].cli_version }}">Zowe {{ site.data.releases[0].cli_version }} CLI Core</a></p>
-          <p><a class="btn btn-primary" href="{{ site.cli_plugins_download_url }}{{ site.data.releases[0].cli_plugins_version }}">Zowe {{ site.data.releases[0].cli_plugins_version }} CLI Plug-ins</a></p>
-          <div>
-            <a href="{{ site.zowe_cli_install_doc_url }}" class="card-link">
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
-            Read installation docs
-            </a>
+    <div class="card bg-light border-light mb-3">
+      <h4 class="card-header">Client-side component installer</h4>
+      <div class="card-body">
+        <p class="card-text">Install <b>Zowe CLI</b> or <b>Zowe Explorer</b>, a Visual Studio Code extension powered by Zowe CLI.</p>
+        <div class="row">
+          <div class="card-body">
+            <h5 class="card-title" id="zowe-cli-download">Zowe CLI</h5>
+            <p class="card-text">Install Zowe CLI from the local package or from an npm registry if your computer is connected to the Internet.</p>
+            <p class="card-text">Download the Zowe CLI core package and optionally download the plug-ins (CICS, Db2, IMS, MQ, z/OS FTP, and so on) to gain more capabilities.</p>
+            <p><a class="btn btn-primary" href="{{ site.cli_download_url }}{{ site.data.releases[0].cli_version }}">Zowe {{ site.data.releases[0].cli_version }} CLI Core</a></p>
+            <p><a class="btn btn-primary" href="{{ site.cli_plugins_download_url }}{{ site.data.releases[0].cli_plugins_version }}">Zowe {{ site.data.releases[0].cli_plugins_version }} CLI Plug-ins</a></p>
+            <div>
+              <a href="{{ site.zowe_cli_install_doc_url }}" class="card-link">
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+              Read installation docs
+              </a>
+            </div>
+          </div>        
+          <div class="card-body">
+            <h5 class="card-title">Zowe Client SDKs</h5>
+            <p class="card-text">Download the Zowe Software Development Kits (SDKs) for use in development and automation.</p>
+            <p><a class="btn btn-primary" href="{{ site.zowe_node_sdk_download_url }}{{ site.data.releases[0].node_sdk_version }}">Zowe {{ site.data.releases[0].node_sdk_version }} Node.js Client SDK</a></p>
+            <p><a class="btn btn-primary" href="{{ site.zowe_python_sdk_download_url }}{{ site.data.releases[0].python_sdk_version }}">Zowe {{ site.data.releases[0].python_sdk_version }} Python Client SDK</a></p>
+            <div>
+              <a href="{{ site.zowe_sdk_install_doc_url }}" class="card-link">
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+              Read installation docs
+              </a>
+            </div>
           </div>
-        </div>        
-        <div class="card-body">
-          <h5 class="card-title">Zowe Client SDKs</h5>
-          <p class="card-text">Download the Zowe Software Development Kits (SDKs) for use in development and automation.</p>
-          <p><a class="btn btn-primary" href="{{ site.zowe_node_sdk_download_url }}{{ site.data.releases[0].node_sdk_version }}">Zowe {{ site.data.releases[0].node_sdk_version }} Node.js Client SDK</a></p>
-          <p><a class="btn btn-primary" href="{{ site.zowe_python_sdk_download_url }}{{ site.data.releases[0].python_sdk_version }}">Zowe {{ site.data.releases[0].python_sdk_version }} Python Client SDK</a></p>
-          <div>
-            <a href="{{ site.zowe_sdk_install_doc_url }}" class="card-link">
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
-            Read installation docs
-            </a>
+          <div class="card-body">
+            <h5 class="card-title">Zowe Explorer</h5>
+            <p class="card-text">Installed directly to VSCode within the GUI</p>
+            <p><a class="btn btn-primary" href="{{ site.vscode_marketplace_url }}">Visual Studio Code Marketplace</a></p>
+            <div>
+              <a href="{{ site.zowe_explorer_install_doc_url }}" class="card-link">
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+              Read installation docs
+              </a>
+            </div>
           </div>
         </div>
-        <div class="card-body">
-          <h5 class="card-title">Zowe Explorer</h5>
-          <p class="card-text">Installed directly to VSCode within the GUI</p>
-          <p><a class="btn btn-primary" href="{{ site.vscode_marketplace_url }}">Visual Studio Code Marketplace</a></p>
-          <div>
-            <a href="{{ site.zowe_explorer_install_doc_url }}" class="card-link">
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
-            Read installation docs
-            </a>
-          </div>
-       </div>
-     </div>
-   </div>
-</div>
-</div>
+      </div>
+    </div>
+  </div>
 {% else %}
   <p>
     <a class="button" href="{{ site.zos_download_url }}{{ site.data.releases[0].version }}">Zowe {{ site.data.releases[0].version }} z/OS Convenience build</a>
@@ -112,28 +112,83 @@ Test the latest Zowe features and provide feedback. Technical previews are <b>fo
 </p>
 <div class="card-deck">
   <div class="card bg-light border-light mb-3">
-  <h4 class="card-header">Zowe Docker build</h4>
+    <h4 class="card-header">Zowe Docker build</h4>
     <div class="card-body">
-    <p class="card-text">The Zowe Docker build enables you to run a subset of the Zowe server-side components outside z/OS. The Docker build runs in combination with the convenience or S MP/E build. Learn more about the relationship of the builds in the docs.</p>
-    <p class="card-text">You can download the build directly via the tarball, or as a cloud download from Docker Hub. Separate downloads exist for z/Linux ("s390x") and other Linux ("amd64" for intel & amd systems).</p>
+      <p class="card-text">The Zowe Docker build enables you to run a subset of the Zowe server-side components outside z/OS. The Docker build runs in combination with the convenience or S MP/E build. Learn more about the relationship of the builds in the docs.</p>
+      <p class="card-text">You can download the build directly via the tarball, or as a cloud download from Docker Hub. Separate downloads exist for z/Linux ("s390x") and other Linux ("amd64" for intel & amd systems).</p>
+      <div class="row">
+        <div class="card-body">
+          <h5 class="card-title">Direct download</h5>
+          <p><a class="btn btn-primary" href="{{ site.zowe_docker_download_url }}/{{ site.data.releases[0].zos_version }}/server-bundle.amd64-{{ site.data.releases[0].zos_version }}.tar">Zowe {{ site.data.releases[0].zos_version }} amd64 tarball</a></p> 
+          <p><a class="btn btn-primary" href="{{ site.zowe_docker_download_url }}/{{ site.data.releases[0].zos_version }}/server-bundle.s390x-{{ site.data.releases[0].zos_version }}.tar">Zowe {{ site.data.releases[0].zos_version }} s390x tarball</a></p> 
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Cloud download</h5>
+          <p><a class="btn btn-primary" href="{{ site.zowe_dockerhub_download_url }}">Zowe v1.x LTS Docker Hub</a></p>
+          <div>
+            <a href="{{ site.docker_install_doc_url }}" class="card-link">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+            Read installation docs
+            </a>
+          </div>
+        </div>
+      </div>   
+    </div>
+  </div>
+  <div class="card bg-light border-light mb-3">
+    <h4 class="card-header">Zowe v2 LTS Preview</h4>
+    <div class="card-body">
+      <p class="card-text">Preview early access features planned for the next Long Term Support release of Zowe.</p>
+      <p class="card-text">These downloads were last updated on {{ site.zowe_next_release_date | date: "%d %b %Y" }}.</p>
+      <div class="row">
+        <div class="card-body">
+          <h5 class="card-title" id="zowe-cli-download">Zowe CLI</h5>
+          <p class="card-text">Install Zowe CLI from the local package or from an npm registry if your computer is connected to the Internet.</p>
+          <p class="card-text">Download the Zowe CLI core package and optionally download the plug-ins (CICS, Db2, IMS, MQ, z/OS FTP, and so on) to gain more capabilities.</p>
+          <p><a class="btn btn-primary" href="{{ site.cli_download_url }}{{ site.data.releases[0].cli_version }}&preview={{ site.zowe_next_release_date | remove: '-' }}">Zowe vNext CLI Core</a></p>
+          <p><a class="btn btn-primary" href="{{ site.cli_plugins_download_url }}{{ site.data.releases[0].cli_plugins_version }}&preview={{ site.zowe_next_release_date | remove: '-' }}">Zowe vNext CLI Plug-ins</a></p>
+          <div>
+            <a href="{{ site.zowe_cli_next_features_doc_url }}" class="card-link">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+            Review early access features
+            </a>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Zowe Client SDKs</h5>
+          <p class="card-text">Download the Zowe Software Development Kits (SDKs) for use in development and automation.</p>
+          <p><a class="btn btn-primary" href="{{ site.zowe_node_sdk_download_url }}{{ site.data.releases[0].node_sdk_version }}&preview={{ site.zowe_next_release_date | remove: '-' }}">Zowe vNext Node.js Client SDK</a></p>
+          <div>
+            <a href="{{ site.zowe_node_sdk_next_reference_doc_url }}" class="card-link">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+            Browse SDK reference
+            </a>
+          </div>
+        </div>
+      </div>   
+    </div>
+  </div>
+</div>
+<div class="card-deck">
+  <div class="card bg-light border-light mb-3">
+  <h4 class="card-header">Zowe Explorer</h4>
+    <div class="card-body">
+    <p class="card-text">Zowe Explorer vNext enables you to adopt the team configuration file, recently developed by the Zowe CLI Squad, to make profile management more centralized and much simpler.</p>
+    <p class="card-text">You can download the <em>.vsix</em> files directly from the GitHub release page with the tag <b>"Pre-release"</b>. Separate downloads are available for Zowe Explorer and Zowe Explorer Extension for FTP.</p>
+    <p class="card-text">To install the <em>.vsix</em> files, use <b>Extensions > Install from vsix</b> within VS Code.</p>
         <div class="row">
           <div class="card-body">
             <h5 class="card-title">Direct download</h5>
-            <p><a class="btn btn-primary" href="{{ site.zowe_docker_download_url }}/{{ site.data.releases[0].zos_version }}/server-bundle.amd64-{{ site.data.releases[0].zos_version }}.tar">Zowe {{ site.data.releases[0].zos_version }} amd64 tarball</a></p> 
-            <p><a class="btn btn-primary" href="{{ site.zowe_docker_download_url }}/{{ site.data.releases[0].zos_version }}/server-bundle.s390x-{{ site.data.releases[0].zos_version }}.tar">Zowe {{ site.data.releases[0].zos_version }} s390x tarball</a></p> 
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Cloud download</h5>
-            <p><a class="btn btn-primary" href="{{ site.zowe_dockerhub_download_url }}">Zowe v1.x LTS Docker Hub</a></p>
+            <p><a class="btn btn-primary" href="{{ site.zowe_explorer_next_github_url }}">Zowe Explorer vNext release</a></p>
             <div>
-              <a href="{{ site.docker_install_doc_url }}" class="card-link">
+              <a href="{{ site.zowe_explorer_next_doc_url }}" class="card-link">
               <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
-              Read installation docs
+              Review early access features
               </a>
             </div>
-         </div>
-      </div>   
-    </div>
+          </div>
+        </div>
+      </div>
   </div>
 </div>
 
@@ -190,20 +245,25 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
 
 <section class="bluebackground">
 <h1>Release Timeline</h1>
-<p><img src="assets/img/zowe-lts.png" width="90%" /></p>
-<p><b>Version timeframe, Current, Active LTS, Maintenance</b></p>
+<p><img src="assets/img/major_releases.png" width="90%" /></p>
+<p><b>Version timeframe, Active , Maintenance</b></p>
 <ul>
-<li>New Zowe versions will enter <b>current</b> release status for six to nine months to allow consumers of Zowe to test, provide feedback, and adjust to any changes.</li>
-<li>After current release phase, Zowe will move to <b>Active LTS</b> status and will be deemed ready by the community for general use. <b>Active LTS</b> will have additional releases with both fixes and enhancements.</li>
-<li>Following a period of <b>Active LTS</b>, the Zowe version will enter <b>Maintenance</b> for fixes only.</li>
-<li>The combination of <b>Active LTS</b> and <b>Maintenance LTS</b> release is designated as <b>"long-term support”</b>, which provides two guarantees:
+<li>Zowe is released on regular schedule. A major version is released every two years and minor versions on a schedule published in the <a href="https://github.com/zowe/community/blob/master/Project%20Management/Schedule/Zowe%20PI%20%26%20Sprint%20Cadence.md">Zowe Community GitHub repository</a>.</li>
+<li>The Zowe community provides three types of releases:
   <ul>
-    <li style="list-style-type: disc">Critical defects will be fixed. The criteria for what constitutes a critical defect is covered in <a href="{{ site.lts_url }}">Release Process</a>.</li>
-    <li style="list-style-type: disc">Extenders who achieve Zowe conformance for the long-term support version will not need to modify their product for it to remain functional when the Zowe community provides distributions within the release or  modification level boundary within the same version.</li>
+    <li style="list-style-type: disc">Maintenance - This release receives only security patches and fixes for the critical bugs. It's suitable for environment that prefers stability to new features.</li>        
+    <li style="list-style-type: disc">Active - This release receives updates regularly according to the schedule.  It is suitable for users who are willing to invest a bit more time into upgrades to get the latest features.</li>
+    <li style="list-style-type: disc">Nightly - The Zowe publishes bleeding edge state of the project on the nightly basis. There are no guarantees around the stability of the build.</li>
   </ul>
 </li>
-<li>The length of <b>Active LTS</b> may vary but the total time period of <b>Active LTS</b> + <b>Maintenance LTS</b> will be at least 24 months.</li>
-<li>Production applications should only use <b>Active LTS</b> or <b>Maintenance LTS</b> releases due to the contract with extender products remaining functional and the community’s commitment to fix critical defects.</li>
+<li>Every major version will be in the Active phase for two years and then transition into the Maintenance phase for another two and half year. This brings to you the possibility to use only major versions in the maintenance mode.</li>
+<li>The combination of <b>Active</b> and <b>Maintenance</b> release provides two guarantees:
+  <ul>
+    <li style="list-style-type: disc">Critical defects will be fixed. The criteria for what constitutes a critical defect is covered in <a href="{{ site.lts_url }}">Release Process</a>.</li>
+    <li style="list-style-type: disc">Extenders who achieve Zowe conformance for the long-term support version will not need to modify their product for it to remain functional when the Zowe community provides distributions within the release or modification level boundary within the same major version.</li>
+  </ul>
+</li>
+<li>Production applications should only use <b>Active</b> or <b>Maintenance </b> releases due to the contract with extender products remaining functional and the community’s commitment to fix critical defects.</li>
 </ul>
 <button type="button" class="btn btn-outline-light" href="{{ site.lts_url }}">Learn more</button>
 </section>

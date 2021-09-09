@@ -1,3 +1,22 @@
+- event: Zowe Quarterly Update (October 2021 Webinar)
+  schedule: October 20 @ 08:30 AM - 09:30 AM
+  description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
+    \ in what\u2019s happening with Zowe \u2013 we invite you to the next Quarterly\
+    \ Update Webinar on Wednesday, October 20 at 8:30 am PT /11:30 am ET (US and Canada)...."
+  url: https://www.openmainframeproject.org/event/zowe-quarterly-update-october-2021-webinar
+- event: IBM Z Day 2021 (Virtual)
+  schedule: September 15 - September 16
+  description: IBM Z Day, which takes place on September 15, is a free virtual Enterprise
+    Computing conference with a lineup of more than 100+ global thought leaders that
+    will highlight industry trends and innovation. Last year, IBM Z Day had more...
+  url: https://www.openmainframeproject.org/event/ibm-z-day-2021-virtual
+- event: SHARE Virtual
+  schedule: August 09 - August 14
+  description: The SHARE virtual conference (#SHAREvirtual21) is hosting its summer
+    session on August 9-13. There will be more than 100 live sessions and 100 on-demand
+    presentations focused on a variety of topics related to mainframes. Several Open
+    Mainframe Project community leaders...
+  url: https://www.openmainframeproject.org/event/share-virtual
 - event: VM Workshop 2021
   schedule: June 10 - June 12
   description: The annual VM Workshop, which originally was planned for in-person
@@ -5,6 +24,34 @@
     Project will be represented at the conference as several community leaders will
     be giving presentations. Check...
   url: https://www.openmainframeproject.org/event/vm-workshop-2021
+- event: Zowe 1.23 Live System Demo
+  schedule: August 04 @ 06:00 AM - 07:00 AM
+  description: Open Mainframe Project is excited to announce that Zowe 1.23 release
+    is now available! OnAugust 4 at 6-7 am PST/ 9-10 am EST, Zowe squads will share
+    the new benefits of the release as well as live demos to see...
+  url: https://www.openmainframeproject.org/event/zowe-1-23-live-system-demo
+- event: 'I am a Mainframer: Personal Stories and Lessons from the Next Generation
+    of Mainframe Developers'
+  schedule: August 18 @ 08:00 AM - 09:00 AM
+  description: "Join us on Wednesday, August 18 at 8-9 am PDT for a new webinar that\
+    \ explores \u201CPersonal Stories and lessons from the next generation of mainframe\
+    \ Developers.\u201D Five open source mainframe developers will share their personal\
+    \ journey into the mainframe,..."
+  url: https://www.openmainframeproject.org/event/i-am-a-mainframer-personal-stories-and-lessons-from-the-next-generation-of-mainframe-developers
+- event: Code PaLOUsa 2021
+  schedule: August 18 - August 21
+  description: Codepalousa is a multi-day software development conference designed
+    to cover all aspects of software development regardless of technology stack. The
+    conference features presentations from well-known professionals in the software
+    development community and virtual booths where leading software development companies
+    come...
+  url: https://www.openmainframeproject.org/event/code-palousa-2021
+- event: Zowe Quarterly Update - July 2021
+  schedule: July 21 @ 08:30 AM - 09:30 AM
+  description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
+    \ in what\u2019s happening with Zowe \u2013 we invite you to the next Quarterly\
+    \ Update Webinar on July 21 at 8:30 am PT /11:30 am ET (US and Canada). This..."
+  url: https://www.openmainframeproject.org/event/zowe-quarterly-update-july-2021
 - event: Zowe Quarterly Update Webinar
   schedule: April 21 @ 08:30 AM - 09:30 AM
   description: "Whether you are a Zowe User, Contributor, Extender or simply interested\

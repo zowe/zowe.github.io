@@ -27,7 +27,7 @@ zowe_node_sdk_download_url: https://zowe.jfrog.io/zowe/list/libs-release-local/o
 zowe_python_sdk_download_url: https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/download/legal.html?type=python-sdk&version=
 nightly_build_url: https://zowe.jfrog.io/zowe/webapp/#/artifacts/browse/tree/General/libs-release-local/org/zowe/nightly
 zowe_build_slack_url: https://openmainframeproject.slack.com/archives/CC9QW5NJE
-lts_url: https://github.com/zowe/zlc/blob/master/process/ReleaseProcess.md
+lts_url: https://github.com/zowe/community/blob/master/Technical-Steering-Committee/release.md
 zowe_fmid: AZWE001
 zowe_fmid_oss_version: 1.9.0
 zos_component_install_doc_url: https://docs.zowe.org/stable/user-guide/install-zos.html
@@ -57,6 +57,8 @@ zowe_cli_mq_plugin_url: https://github.com/zowe/zowe-cli-mq-plugin
 zowe_explorer_doc_url: https://docs.zowe.org/stable/user-guide/ze-install.html#installing-zowe-explorer
 zowe_explorer_github_url: https://github.com/zowe/vscode-extension-for-zowe
 zowe_explorer_slack_url: https://openmainframeproject.slack.com/archives/CUVE37Z5F
+zowe_explorer_next_github_url: https://github.com/zowe/vscode-extension-for-zowe/releases
+zowe_explorer_next_doc_url: https://github.com/zowe/vscode-extension-for-zowe/tree/next/docs/Early%20Access%20-%20Using%20Global%20Profile%20Configuration.md
 zowe_sdk_doc_url: https://docs.zowe.org/stable/getting-started/overview.html#zowe-client-software-development-kits-sdks
 zowe_sdk_github_url: https://github.com/zowe/zowe-cli
 zowe_sdk_slack_url: https://openmainframeproject.slack.com/archives/C010AUS5MK5
@@ -70,8 +72,11 @@ zebra_github_url: https://github.com/zowe/zebra
 zebra_doc_url: https://github.com/zowe/zebra/tree/main/Documentation
 zebra_slack_url: https://openmainframeproject.slack.com/archives/C01QWBJG3A4
 zebra_demo_url: https://zebra.talktothemainframe.com/
-zowe_video_deck_url: https://docs.zowe.org/stable/Zowe_introduction_video_deck.pptx
-zowe_video_transcript_url: https://docs.zowe.org/stable/Zowe_introduction_video_script.txt
+workflow_wizard_github_url: https://github.com/zowe/workflow-wizard
+workflow_wizard_slack_url: https://openmainframeproject.slack.com/archives/C01T5F2RU5D 
+workflow_wizard_doc_url: https://github.com/zowe/workflow-wizard/raw/main/doc/Workflow%20Templates%20Reference.docx
+zowe_video_deck_url: https://docs.zowe.org/Zowe_introduction_video_deck.pptx
+zowe_video_transcript_url: https://docs.zowe.org/Zowe_introduction_video_script.txt
 learn_page_get_started: https://docs.zowe.org/stable/getting-started/zowe-getting-started.html
 zowe_medium_blog_url: https://medium.com/zowe
 master_the_mainframe_url: https://www.ibm.com/it-infrastructure/z/education/master-the-mainframe
@@ -89,9 +94,10 @@ zowe_onboarding_slack_url: https://openmainframeproject.slack.com/archives/CC60A
 zowe_user_slack_url: https://openmainframeproject.slack.com/archives/CC08782AG
 zowe_doc_slack_url: https://openmainframeproject.slack.com/archives/CC961JYMQ
 zowe_metrics_url: https://www.metrics.zowe.org/
+zowe_cli_next_features_doc_url: https://github.com/zowe/zowe-cli#early-access-features
+zowe_node_sdk_next_reference_doc_url: https://docs.zowe.org/stable/typedoc_next/index.html
+zowe_next_release_date: 2021-07-26
 
-
-#TODO add url for zowe_sdk_install_doc_url, zowe_node_sdk_download_url, and zowe_python_sdk_download_url
 
 plugins:
   # Redirect plugin
