@@ -45,7 +45,7 @@ app_framework_slack_url: https://openmainframeproject.slack.com/archives/CBW5ET6
 app_framework_tour_url: https://www.youtube.com/watch?v=cbEVbcsaGCs&ab_channel=OpenMainframeProject
 apiml_doc_url: https://docs.zowe.org/stable/getting-started/overview.html#api-mediation-layer
 apiml_github_url: https://github.com/zowe/api-layer
-apiml_slack_url: https://openmainframeproject.slack.com/archives/CC5UUL005 
+apiml_slack_url: https://openmainframeproject.slack.com/archives/CC5UUL005
 zowe_cli_doc_url: https://docs.zowe.org/stable/getting-started/overview.html#zowe-cli
 zowe_cli_github_url: https://github.com/zowe/zowe-cli
 zowe_cli_slack_url: https://openmainframeproject.slack.com/archives/CC8AALGN6
@@ -74,7 +74,7 @@ zebra_doc_url: https://github.com/zowe/zebra/tree/main/Documentation
 zebra_slack_url: https://openmainframeproject.slack.com/archives/C01QWBJG3A4
 zebra_demo_url: https://zebra.talktothemainframe.com/
 workflow_wizard_github_url: https://github.com/zowe/workflow-wizard
-workflow_wizard_slack_url: https://openmainframeproject.slack.com/archives/C01T5F2RU5D 
+workflow_wizard_slack_url: https://openmainframeproject.slack.com/archives/C01T5F2RU5D
 workflow_wizard_doc_url: https://github.com/zowe/workflow-wizard/raw/main/doc/Workflow%20Templates%20Reference.docx
 zowe_video_deck_url: https://docs.zowe.org/Zowe_introduction_video_deck.pptx
 zowe_video_transcript_url: https://docs.zowe.org/Zowe_introduction_video_script.txt
@@ -97,7 +97,7 @@ zowe_doc_slack_url: https://openmainframeproject.slack.com/archives/CC961JYMQ
 zowe_metrics_url: https://www.metrics.zowe.org/
 zowe_cli_next_features_doc_url: https://github.com/zowe/zowe-cli#early-access-features
 zowe_node_sdk_next_reference_doc_url: https://docs.zowe.org/stable/typedoc_next/index.html
-zowe_next_release_date: 2021-07-26
+zowe_next_release_date: 2021-09-16
 
 
 plugins:
