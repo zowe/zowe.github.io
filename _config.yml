@@ -24,8 +24,8 @@ cli_download_url:  legal.html?type=cli&version=
 cli_plugins_download_url: legal.html?type=cli-plugins&version=
 cli_active_development_download_url: legal.html?type=cli-active-development&version=
 smpe_download_url: legal.html?type=smpe&version=
-psi_download_url: https://www.google.com
-psi_install_doc_url: https://www.google.com
+pswi_download_url: https://www.google.com
+pswi_install_doc_url: https://github.com/jp669844/zowe-install-packaging/blob/master/zowe_pswi_tech_prev.md
 zowe_node_sdk_download_url: legal.html?type=nodejs-sdk&version=
 zowe_python_sdk_download_url: legal.html?type=python-sdk&version=
 nightly_build_url: https://zowe.jfrog.io/zowe/webapp/#/artifacts/browse/tree/General/libs-release-local/org/zowe/nightly
