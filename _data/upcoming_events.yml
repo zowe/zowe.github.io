@@ -1,15 +1,16 @@
+- event: IBM TechU
+  schedule: October 25 - October 29
+  description: "Join Open Mainframe Project at IBM\u2019s Tech U, a virtual training\
+    \ event happening on October 25-28. TechU is the The premier virtual training\
+    \ event for deep technical content on IBM IT Infrastructure products and solutions.\
+    \ Open Mainframe Project will have..."
+  url: https://www.openmainframeproject.org/event/ibm-techu
 - event: Zowe Quarterly Update (October 2021 Webinar)
   schedule: October 20 @ 08:30 AM - 09:30 AM
   description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
     \ in what\u2019s happening with Zowe \u2013 we invite you to the next Quarterly\
     \ Update Webinar on Wednesday, October 20 at 8:30 am PT /11:30 am ET (US and Canada)...."
   url: https://www.openmainframeproject.org/event/zowe-quarterly-update-october-2021-webinar
-- event: IBM Z Day 2021 (Virtual)
-  schedule: September 15 - September 16
-  description: IBM Z Day, which takes place on September 15, is a free virtual Enterprise
-    Computing conference with a lineup of more than 100+ global thought leaders that
-    will highlight industry trends and innovation. Last year, IBM Z Day had more...
-  url: https://www.openmainframeproject.org/event/ibm-z-day-2021-virtual
 - event: SHARE Virtual
   schedule: August 09 - August 14
   description: The SHARE virtual conference (#SHAREvirtual21) is hosting its summer
@@ -52,6 +53,12 @@
     \ in what\u2019s happening with Zowe \u2013 we invite you to the next Quarterly\
     \ Update Webinar on July 21 at 8:30 am PT /11:30 am ET (US and Canada). This..."
   url: https://www.openmainframeproject.org/event/zowe-quarterly-update-july-2021
+- event: IBM Z Day 2021 (Virtual)
+  schedule: September 15 - September 16
+  description: IBM Z Day, which takes place on September 15, is a free virtual Enterprise
+    Computing conference with a lineup of more than 100+ global thought leaders that
+    will highlight industry trends and innovation. Last year, IBM Z Day had more...
+  url: https://www.openmainframeproject.org/event/ibm-z-day-2021-virtual
 - event: Zowe Quarterly Update Webinar
   schedule: April 21 @ 08:30 AM - 09:30 AM
   description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
