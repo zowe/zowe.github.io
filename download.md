@@ -49,18 +49,6 @@
               </a>
             </div>
           </div>
-          <div class="card-body">
-            <h5 class="card-title">Portable Software Instance</h5>
-            <p class="card-text">PSWI that can be registered in z/OSMF</p>
-            <p class="card-text">Download the PSWI</p>
-            <p><a class="btn btn-primary" href="{{ site.pswi_download_url }}">Zowe PSWI 1.24.0 Technical Preview {{ site.zowe_fmid }}</a></p>
-            <div>
-              <a href="{{ site.pswi_install_doc_url }}" class="card-link">
-              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
-              Read installation docs
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -203,6 +191,29 @@ Test the latest Zowe features and provide feedback. Technical previews are <b>fo
       </div>
   </div>
 </div>
+
+<div class="card-deck">
+  <div class="card bg-light border-light mb-3">
+  <h4 class="card-header">Zowe - Portable Software Instance</h4>
+    <div class="card-body">
+    <p class="card-text">PSWI that can be registered in z/OSMF</p>
+        <div class="row">
+          <div class="card-body">
+            <h5 class="card-title">Direct download</h5>
+            <p><a class="btn btn-primary" href="{{ site.zowe_explorer_next_github_url }}">Zowe Explorer vNext release</a></p>            <p class="card-text">Download the PSWI</p>
+            <p><a class="btn btn-primary" href="{{ site.pswi_download_url }}">Zowe PSWI 1.24.0 Technical Preview {{ site.zowe_fmid }}</a></p>
+            <div>
+              <a href="{{ site.pswi_install_doc_url }}" class="card-link">
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+              Read installation docs
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
 
 <h1>Previous Releases</h1>
 <p>Download previous releases of Zowe by version number.</p>
