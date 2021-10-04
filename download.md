@@ -190,9 +190,6 @@ Test the latest Zowe features and provide feedback. Technical previews are <b>fo
         </div>
       </div>
   </div>
-</div>
-
-<div class="card-deck">
   <div class="card bg-light border-light mb-3">
   <h4 class="card-header">Zowe - Portable Software Instance</h4>
     <div class="card-body">
