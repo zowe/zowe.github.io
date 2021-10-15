@@ -7,8 +7,6 @@ on:
       - master
   pull_request:
     types: [labeled]
-    branches:
-      - master
     
 jobs:
 
@@ -46,22 +44,23 @@ jobs:
         JF_ARTIFACTORY_1: ${{ secrets.JF_ARTIFACTORY_TOKEN }}
 
     - name: Publish Release to Artifactory
-      uses: markackert/shared-actions/publish@user/markackert/customize-publish-filename
+      uses: zowe-actions/shared-actions/publish@main
       if: ${{ github.ref == 'refs/heads/master' }}
       with:
         perform-release: true
         artifacts: |
           _site/post_download.html
           _site/legal.html
-        publish-target-path: libs-release-local/org/zowe/download/
-        publish-file-format: "{filename}{fileext}"
+        publish-target-path-pattern: libs-release-local/org/zowe/download/
+        publish-target-file-pattern: "{filename}{fileext}"
 
     - name: Publish Snapshot to Artifactory
-      uses: markackert/shared-actions/publish@user/markackert/customize-publish-filename
+      uses: zowe-actions/shared-actions/publish@main
       if: ${{ github.ref != 'refs/heads/master' }}
       with:
         perform-release: false
         artifacts: |
           _site/post_download.html
           _site/legal.html
-        publish-target-path: libs-snapshot-local/org/zowe/download/
+        publish-target-path-pattern: libs-snapshot-local/org/zowe/download/
+        publish-target-file-pattern: "{filename}{fileext}"
