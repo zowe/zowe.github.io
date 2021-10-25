@@ -5,12 +5,6 @@
     \ event for deep technical content on IBM IT Infrastructure products and solutions.\
     \ Open Mainframe Project will have..."
   url: https://www.openmainframeproject.org/event/ibm-techu
-- event: Zowe Quarterly Update (October 2021 Webinar)
-  schedule: October 20 @ 08:30 AM - 09:30 AM
-  description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
-    \ in what\u2019s happening with Zowe \u2013 we invite you to the next Quarterly\
-    \ Update Webinar on Wednesday, October 20 at 8:30 am PT /11:30 am ET (US and Canada)...."
-  url: https://www.openmainframeproject.org/event/zowe-quarterly-update-october-2021-webinar
 - event: SHARE Virtual
   schedule: August 09 - August 14
   description: The SHARE virtual conference (#SHAREvirtual21) is hosting its summer
@@ -79,3 +73,9 @@
     deep dives into topics at the forefront of the industry. Open Mainframe Project
     Ambassador Joe Winchester, a Senior...
   url: https://www.openmainframeproject.org/event/idug-virtual-australasia-db2-tech-conference
+- event: Zowe Quarterly Update (October 2021 Webinar)
+  schedule: October 20 @ 08:30 AM - 09:30 AM
+  description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
+    \ in what\u2019s happening with Zowe \u2013 we invite you to the next Quarterly\
+    \ Update Webinar on Wednesday, October 20 at 8:30 am PT /11:30 am ET (US and Canada)...."
+  url: https://www.openmainframeproject.org/event/zowe-quarterly-update-october-2021-webinar
