@@ -20,6 +20,7 @@ youtube_zowe_url: https://www.youtube.com/playlist?list=PL8REpLGaY9QE_9d57tw3KQd
 conformance_page_url: https://www.openmainframeproject.org/projects/zowe/conformance
 omp_calendar_url: https://lists.openmainframeproject.org/g/zowe-dev/calendar
 zos_download_url: legal.html?version=
+containerization_download_url: legal.html?type=containerization&version=
 cli_download_url:  legal.html?type=cli&version=
 cli_plugins_download_url: legal.html?type=cli-plugins&version=
 cli_active_development_download_url: legal.html?type=cli-active-development&version=
