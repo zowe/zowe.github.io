@@ -1,16 +1,3 @@
-- event: IBM TechU
-  schedule: October 25 - October 29
-  description: "Join Open Mainframe Project at IBM\u2019s Tech U, a virtual training\
-    \ event happening on October 25-28. TechU is the The premier virtual training\
-    \ event for deep technical content on IBM IT Infrastructure products and solutions.\
-    \ Open Mainframe Project will have..."
-  url: https://www.openmainframeproject.org/event/ibm-techu
-- event: Zowe Quarterly Update (October 2021 Webinar)
-  schedule: October 20 @ 08:30 AM - 09:30 AM
-  description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
-    \ in what\u2019s happening with Zowe \u2013 we invite you to the next Quarterly\
-    \ Update Webinar on Wednesday, October 20 at 8:30 am PT /11:30 am ET (US and Canada)...."
-  url: https://www.openmainframeproject.org/event/zowe-quarterly-update-october-2021-webinar
 - event: SHARE Virtual
   schedule: August 09 - August 14
   description: The SHARE virtual conference (#SHAREvirtual21) is hosting its summer
@@ -39,6 +26,13 @@
     \ Developers.\u201D Five open source mainframe developers will share their personal\
     \ journey into the mainframe,..."
   url: https://www.openmainframeproject.org/event/i-am-a-mainframer-personal-stories-and-lessons-from-the-next-generation-of-mainframe-developers
+- event: IBM TechU
+  schedule: October 25 - October 29
+  description: "Join Open Mainframe Project at IBM\u2019s Tech U, a virtual training\
+    \ event happening on October 25-28. TechU is the The premier virtual training\
+    \ event for deep technical content on IBM IT Infrastructure products and solutions.\
+    \ Open Mainframe Project will have..."
+  url: https://www.openmainframeproject.org/event/ibm-techu
 - event: Code PaLOUsa 2021
   schedule: August 18 - August 21
   description: Codepalousa is a multi-day software development conference designed
@@ -79,3 +73,9 @@
     deep dives into topics at the forefront of the industry. Open Mainframe Project
     Ambassador Joe Winchester, a Senior...
   url: https://www.openmainframeproject.org/event/idug-virtual-australasia-db2-tech-conference
+- event: Zowe Quarterly Update (October 2021 Webinar)
+  schedule: October 20 @ 08:30 AM - 09:30 AM
+  description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
+    \ in what\u2019s happening with Zowe \u2013 we invite you to the next Quarterly\
+    \ Update Webinar on Wednesday, October 20 at 8:30 am PT /11:30 am ET (US and Canada)...."
+  url: https://www.openmainframeproject.org/event/zowe-quarterly-update-october-2021-webinar
