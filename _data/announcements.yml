@@ -1,5 +1,7 @@
 # Announcements
 # Any kind of links should NOT be in ""
+- announcement: "NPM Depedency Security Vunerabiity Nov 4th to Nov 5th.  Zowe CLI users and Zowe Developers, please read"
+  link: https://github.com/zowe/community/discussions/1362#discussion-3675014
 - announcement: "Interested in Zowe V2? Watch the Oct 20th Quarterly Update Webinar replay"
   link: https://www.youtube.com/playlist?list=PL8REpLGaY9QHtnElqPosteBFpITStkAxo 
 - announcement: "Zowe Conformant Support Provider Program is LIVE"
