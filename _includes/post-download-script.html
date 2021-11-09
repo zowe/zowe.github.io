@@ -1,0 +1,47 @@
+<!-- Used to write out HTML specifying how to run GPG signing against downloaded binaries -->
+<script>
+    params = new URLSearchParams(location.search);
+    if (params.has('version')) {
+        document.getElementById('download_link').href = "legal.html?version=" + params.get('version');
+        document.getElementById('hash_download').href = "https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" +
+            params.get('version') + "/zowe-" + params.get('version') + ".pax.sha512";
+        document.getElementById('hash_download').onclick = function () {
+            ga && ga('send', 'event', 'download', 'Zowe Binary Hash ' + params.get('version'), 'zowe-' + params.get(
+                'version') + '.pax.sha512');
+        }
+        document.getElementById('hash_download').innerHTML = 'zowe-' + params.get('version') + '.pax.sha512';
+        document.getElementById('hash_code').innerHTML = '(gpg --print-md SHA512 zowe-' + params.get('version') +
+            '.pax &gt; zowe-' + params.get('version') + '.pax.sha512.my) && diff zowe-' + params.get('version') +
+            '.pax.sha512.my zowe-' + params.get('version') + '.pax.sha512 && echo matched || echo "not match"';
+        document.getElementById('hash_my').innerHTML = 'zowe-' + params.get('version') + '.pax.sha512.my';
+        document.getElementById('signature_download').href =
+            "https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" + params.get('version') + "/zowe-" + params
+            .get(
+                'version') + ".pax.asc";
+        document.getElementById('signature_download').onclick = function () {
+            ga && ga('send', 'event', 'download', 'Zowe Binary Signature ' + params.get('version'), 'zowe-' + params
+                .get('version') + '.pax.asc');
+        }
+        document.getElementById('signature_download').innerHTML = 'zowe-' + params.get('version') + '.pax.asc';
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                keyinfo = JSON.parse(this.responseText);
+                document.getElementById('keyfile').href = keyinfo.key_location;
+                document.getElementById('keyfile').innerHTML = document.getElementById('keyfile').href.substring(
+                    document.getElementById('keyfile').href.lastIndexOf('/') + 1);
+                document.getElementById('keyfile_import_command').innerHTML = "gpg --import " + document
+                    .getElementById('keyfile').innerHTML;
+                document.getElementById('key_id').innerHTML = keyinfo.key_id;
+                document.getElementById('key_signer').innerHTML = keyinfo.key_signer;
+                document.getElementById('gpg-sign-key').innerHTML = "gpg --sign-key " + keyinfo.key_id;
+                document.getElementById('gpg-delete-key').innerHTML = "gpg --delete-key " + keyinfo.key_id;
+            }
+        }
+        xhttp.open("GET", "https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" + params.get('version') +
+            "/code-signing-key-info.json", true);
+        xhttp.send();
+        document.getElementById('gpg_command').innerHTML = 'gpg --verify zowe-' + params.get('version') +
+            '.pax.asc zowe-' + params.get('version') + '.pax';
+    }
+</script>

@@ -42,7 +42,7 @@ redirect_from:
 
 <div class="announcementsection">
   <h1>Announcements</h1>
-  <strong>Zowe {{ site.data.releases[0].version }} is now available. You can download the installers and PTFs ({{ site.data.releases[0].smpe_numbers }}) for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="https://docs.zowe.org/{{site.data.releases[0].documentation}}/getting-started/summaryofchanges.html">Release notes</a>.<br></strong>
+  <strong>Zowe {{ site.data.releases[0].version }} is now available. You can download the installers and PTFs ({{ site.data.releases[0].smpe_numbers }}) for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="https://docs.zowe.org/stable/getting-started/release-notes/{{ site.data.releases[0].release_notes }}.html">Release notes</a>.<br></strong>
   {% if site.data.announcements %}
     {% for announcement in site.data.announcements %}
     <hr class="w-100" style="margin-top: 0.25rem; margin-bottom: 0.25rem; border-top: 1px solid rgb(0 0 0 / 20%)">
@@ -97,6 +97,10 @@ redirect_from:
       <a href="#zebra-intro" class="card-link">
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
       ZEBRA (Zowe Embedded Browser for RMF/SMF and APIs) - Incubator
+      </a>
+      <a href="#workflow-wizard-intro" class="card-link">
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+      Zowe Workflow wiZard - Incubator
       </a>
     </div>
   </div>
@@ -271,7 +275,7 @@ redirect_from:
     </div>
     <hr class="w-75 mt-5 mb-5">
     <div class="row" style="margin-bottom: 4%">
-      <div class="col-md-7 col-sm order-last order-sm-first">
+      <div class="col-md-7 col-sm">
         <a id="zebra-intro"><h4>ZEBRA (Incubator)</h4></a>
         <p style="margin: 1rem auto">Provides re-usable and industry compliant JSON formatted RMF/SMF data records, so that many other ISV SW and users can exploit them using open-source SW for many ways.</p>
           <p>
@@ -281,8 +285,23 @@ redirect_from:
             <a href="{{ site.zebra_demo_url }}">Take a tour</a>
           </p>
       </div>
-      <div class="col-md-5 col-sm order-first order-sm-last">
+      <div class="col-md-5 col-sm">
         <img class="image-zowe-use" src="assets/img/zebra-image.png">
+      </div>
+    </div>
+    <hr class="w-75 mt-5 mb-5">
+    <div class="row" style="margin-bottom: 4%">
+      <div class="col-md-5 col-sm order-last order-sm-first">
+        <img class="image-zowe-use" src="assets/img/workflow_wizard.png">
+      </div>
+      <div class="col-md-7 col-sm order-first order-sm-last">
+        <a id="workflow-wizard-intro"><h4>Zowe Workflow wiZard (Incubator)</h4></a>
+        <p style="margin: 1rem auto">The Workflow wiZard delivers a workflow builder which simplifies the creation of z/OSMF workflows. These workflows can be very helpful for automating workloads or guiding users through a set of ordered steps to complete a task, but they can also be complex and challenging to create. The workflow builder was created to address these challenges.</p>
+          <p>
+            <a href="{{ site.workflow_wizard_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
+            <a href="{{ site.workflow_wizard_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
+            <a href="{{ site.workflow_wizard_doc_url }}">Learn more</a>&nbsp;|&nbsp;
+          </p>
       </div>
     </div>
   </div>

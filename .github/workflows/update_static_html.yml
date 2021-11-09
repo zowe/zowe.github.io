@@ -1,0 +1,67 @@
+name: Update static HTML files
+
+# Run this workflow 
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    types: [labeled]
+    branches:
+      - master
+    
+jobs:
+
+  check-permission:
+    runs-on: ubuntu-latest
+    steps:
+      # this action will fail the whole workflow if permission check fails
+      - name: check permission
+        uses: zowe-actions/shared-actions/permission-check@main
+        with:
+          user: ${{ github.actor }}
+          github-repo: ${{ github.repository }}
+          github-user: ${{ secrets.ZOWE_ROBOT_USER }}
+          github-passwd: ${{ secrets.ZOWE_ROBOT_TOKEN }}
+
+  # Set the job key. The key is displayed as the job name
+  build:
+    # Set the type of machine to run on
+    runs-on: ubuntu-latest
+    needs: check-permission
+
+    steps:
+    # Checks out a copy of your repository on the ubuntu-latest machine
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        repository: zowe/zowe.github.io
+
+    - name: Build site
+      uses: jerryjvl/jekyll-build-action@v1
+
+    - name: Setup JFrog Artifactory CLI
+      uses: jfrog/setup-jfrog-cli@v1
+      env:
+        JF_ARTIFACTORY_1: ${{ secrets.JF_ARTIFACTORY_TOKEN }}
+
+    - name: Publish Release to Artifactory
+      uses: markackert/shared-actions/publish@user/markackert/customize-publish-filename
+      if: ${{ github.ref == 'refs/heads/master' }}
+      with:
+        perform-release: true
+        artifacts: |
+          _site/post_download.html
+          _site/legal.html
+        publish-target-path: libs-release-local/org/zowe/download/
+        publish-file-format: "{filename}{fileext}"
+
+    - name: Publish Snapshot to Artifactory
+      uses: markackert/shared-actions/publish@user/markackert/customize-publish-filename
+      if: ${{ github.ref != 'refs/heads/master' }}
+      with:
+        perform-release: false
+        artifacts: |
+          _site/post_download.html
+          _site/legal.html
+        publish-target-path: libs-snapshot-local/org/zowe/download/
