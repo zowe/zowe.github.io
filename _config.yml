@@ -20,6 +20,7 @@ youtube_zowe_url: https://www.youtube.com/playlist?list=PL8REpLGaY9QE_9d57tw3KQd
 conformance_page_url: https://www.openmainframeproject.org/projects/zowe/conformance
 omp_calendar_url: https://lists.openmainframeproject.org/g/zowe-dev/calendar
 zos_download_url: legal.html?version=
+containerization_download_url: legal.html?type=containerization&version=
 cli_download_url:  legal.html?type=cli&version=
 cli_plugins_download_url: legal.html?type=cli-plugins&version=
 cli_active_development_download_url: legal.html?type=cli-active-development&version=
@@ -34,6 +35,7 @@ lts_url: https://github.com/zowe/community/blob/master/Technical-Steering-Commit
 zowe_fmid: AZWE001
 zowe_fmid_oss_version: 1.9.0
 zos_component_install_doc_url: https://docs.zowe.org/stable/user-guide/install-zos.html
+zowe_containerization_install_doc_url: https://docs.zowe.org/stable/user-guide/k8s-introduction
 zowe_cli_install_doc_url: https://docs.zowe.org/stable/user-guide/cli-installcli.html
 zowe_explorer_install_doc_url: https://docs.zowe.org/stable/user-guide/ze-install.html
 zowe_sdk_install_doc_url: https://docs.zowe.org/stable/user-guide/sdks-using.html
@@ -99,7 +101,7 @@ zowe_doc_slack_url: https://openmainframeproject.slack.com/archives/CC961JYMQ
 zowe_metrics_url: https://www.metrics.zowe.org/
 zowe_cli_next_features_doc_url: https://github.com/zowe/zowe-cli#early-access-features
 zowe_node_sdk_next_reference_doc_url: https://docs.zowe.org/stable/typedoc_next/index.html
-zowe_next_release_date: 2021-09-16
+zowe_next_release_date: 2021-10-18
 
 
 plugins:
