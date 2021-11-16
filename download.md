@@ -222,7 +222,7 @@ Test the latest Zowe features and provide feedback. Technical previews are <b>fo
 </div>
 
 
-<h1>Previous Releases</h1>
+<h1 id="releases">Previous Releases</h1>
 <p>Download previous releases of Zowe by version number.</p>
 <p>
 Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds. Zowe version 1.9.0 is the beginning of the Active Long-Term Support (LTS) release and it provides an SMP/E build with an FMID of AZWE001. The SMP/E build is the same content as the Zowe 1.9.0 convenience build. Updates in subsequent releases are made available as co-requisite PTFs as well as in convenience builds. Also, starting in 1.9.0, Zowe CLI core and plug-in packages are distributed separately.
@@ -274,7 +274,7 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
 </section>
 
 <section class="bluebackground">
-<h1>Release Timeline</h1>
+<h1 id=timeline>Release Timeline</h1>
 <p><img src="assets/img/major_releases.png" width="90%" /></p>
 <p><b>Version timeframe, Active , Maintenance</b></p>
 <ul>
@@ -299,7 +299,7 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
 </section>
 
 <section class="whitebackground">
-<h1>Nightly Builds</h1>
+<h1 id="builds">Nightly Builds</h1>
 <p>Visit the Zowe Artifactory <a class="white" href="{{ site.nightly_build_url }}">nightly build folder</a> to find the most recent build.</p>
 <p>Please note:
   <ul>
