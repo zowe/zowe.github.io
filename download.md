@@ -274,7 +274,7 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
 </section>
 
 <section class="bluebackground">
-<h1 id=timeline>Release Timeline</h1>
+<h1 id="timeline">Release Timeline</h1>
 <p><img src="assets/img/major_releases.png" width="90%" /></p>
 <p><b>Version timeframe, Active , Maintenance</b></p>
 <ul>
