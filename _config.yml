@@ -95,6 +95,7 @@ conformance_step3_url: https://www.openmainframeproject.org/projects/zowe/confor
 conformance_support_step1_url: https://www.openmainframeproject.org/projects/zowe/conformance/terms-and-conditions
 conformance_support_step2_url: https://www.openmainframeproject.org/projects/zowe/conformance/support-evaluation-guide
 conformance_support_step3_url: https://www.openmainframeproject.org/projects/zowe/conformance/participation-form-esign
+conformance_support_page_url: https://www.openmainframeproject.org/projects/zowe/conformant-support-provider
 zowe_community_repo_url: https://github.com/zowe/community
 zowe_zlc_repo_url: https://github.com/zowe/zlc
 zowe_docs_repo_url: https://github.com/zowe/docs-site
