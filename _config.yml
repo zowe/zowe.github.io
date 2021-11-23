@@ -92,6 +92,10 @@ create_zowe_issue_url: https://github.com/zowe/community/issues/new/choose
 conformance_step1_url: https://www.openmainframeproject.org/projects/zowe/conformance/terms-and-conditions
 conformance_step2_url: https://www.openmainframeproject.org/projects/zowe/conformance/test-evaluation-guide
 conformance_step3_url: https://www.openmainframeproject.org/projects/zowe/conformance/participation-form-esign
+conformance_support_step1_url: https://www.openmainframeproject.org/projects/zowe/conformance/terms-and-conditions
+conformance_support_step2_url: https://www.openmainframeproject.org/projects/zowe/conformance/support-evaluation-guide
+conformance_support_step3_url: https://www.openmainframeproject.org/projects/zowe/conformance/participation-form-esign
+conformance_support_page_url: https://www.openmainframeproject.org/projects/zowe/conformant-support-provider
 zowe_community_repo_url: https://github.com/zowe/community
 zowe_zlc_repo_url: https://github.com/zowe/zlc
 zowe_docs_repo_url: https://github.com/zowe/docs-site
@@ -102,6 +106,7 @@ zowe_metrics_url: https://www.metrics.zowe.org/
 zowe_cli_next_features_doc_url: https://github.com/zowe/zowe-cli#early-access-features
 zowe_node_sdk_next_reference_doc_url: https://docs.zowe.org/stable/typedoc_next/index.html
 zowe_next_release_date: 2021-10-18
+
 
 
 plugins:
