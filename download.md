@@ -204,11 +204,11 @@ Test the latest Zowe features and provide feedback. Technical previews are <b>fo
   <div class="card bg-light border-light mb-3">
   <h4 class="card-header">Zowe - Portable Software Instance</h4>
     <div class="card-body">
-    <p class="card-text">The Zowe Portable Software Instance (PSWI) is a new way of z/OS component distribution. The technology preview allows the full installation as you are used to from SMP/E build, but it uses the new standard for mainframe software distribution.</p>
+    <p class="card-text">The Zowe Portable Software Instance (PSWI) is a new way of z/OS component distribution. The PSWI allows the full installation as you are used to from SMP/E build, but it uses the new standard for mainframe software distribution.</p>
         <div class="row">
           <div class="card-body">
             <h5 class="card-title">Download the PSWI</h5>
-            <p><a class="btn btn-primary" href="{{ site.pswi_download_uri }}">Zowe PSWI {{ site.pswi_version }} Technical Preview {{ site.zowe_fmid }}</a></p>
+            <p><a class="btn btn-primary" href="{{ site.pswi_download_uri }}">Zowe PSWI {{ site.pswi_version }} {{ site.zowe_fmid }}</a></p>
             <div>
               <a href="{{ site.pswi_install_doc_url }}" class="card-link">
               <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
