@@ -87,12 +87,14 @@
           <h5 class="text-left"><a href="{{ site.slack_url }}">API Mediation Layer</a></h5>
         </div>
         <p class="card-text">V2 Highlights</p>
+        <p>
         <ul>
           <li>Remove support for the old path pattern</li>
           <li>Move to the Material UI from Mineral UI</li>
           <li>New change password as a part of the API Catalog</li>
           <li>Remove the support for different authentication schemas for different instances of service</li>
         </ul>
+        </p>
       </div>
     </div>
     <div class="card mb-3">
@@ -253,13 +255,6 @@
         <div class="d-flex align-items-baseline">
           <h5 class="text-left"><a href="{{ site.slack_url }}">API Mediation Layer</a></h5>
         </div>
-        <p class="card-text">General information about the API Mediation Layer updates for extenders.</p>
-
-        <div class="d-flex align-items-baseline">
-          <h5 class="text-left"><a href="{{ site.slack_url }}">Breaking Changes</a></h5>
-        </div>
-        <p class="card-text"></p>
-
         <div class="d-flex align-items-baseline">
           <h5 class="text-left"><a href="{{ site.slack_url }}">Conformance Criteria Changes</a></h5>
         </div>
@@ -277,13 +272,6 @@
         <div class="d-flex align-items-baseline">
           <h5 class="text-left"><a href="{{ site.omp_calendar_url }}">CLI</a></h5>
         </div>
-        <p class="card-text"></p>
-
-        <div class="d-flex align-items-baseline">
-          <h5 class="text-left"><a href="{{ site.slack_url }}">Breaking Changes</a></h5>
-        </div>
-        <p class="card-text"></p>
-
         <div class="d-flex align-items-baseline">
           <h5 class="text-left"><a href="{{ site.slack_url }}">Conformance Criteria Changes</a></h5>
         </div>
@@ -294,14 +282,7 @@
       <div class="card-body">
         <div class="d-flex align-items-baseline">
           <h5 class="text-left"><a href="{{ site.slack_url }}">Explorers</a></h5>
-        </div>
-        <p class="card-text"></p>
-
-        <div class="d-flex align-items-baseline">
-          <h5 class="text-left"><a href="{{ site.slack_url }}">Breaking Changes</a></h5>
-        </div>
-        <p class="card-text"></p>
-
+        </div>        
         <div class="d-flex align-items-baseline">
           <h5 class="text-left"><a href="{{ site.slack_url }}">Conformance Criteria Changes</a></h5>
         </div>
@@ -313,17 +294,9 @@
         <div class="d-flex align-items-baseline">
           <h5 class="text-left"><a href="{{ site.slack_url }}">Systems</a></h5>
         </div>
-        <p class="card-text"></p>
-
-        <div class="d-flex align-items-baseline">
-          <h5 class="text-left"><a href="{{ site.slack_url }}">Breaking Changes</a></h5>
-        </div>
-        <p class="card-text"></p>
-
         <div class="d-flex align-items-baseline">
           <h5 class="text-left"><a href="{{ site.slack_url }}">Conformance Criteria Changes</a></h5>
         </div>
-        <p class="card-text"></p>
       </div>
     </div>
     <div class="card mb-3">
@@ -332,12 +305,6 @@
           <h5 class="text-left"><a href="{{ site.slack_url }}">Web UI</a></h5>
         </div>
         <p class="card-text"></p>
-
-        <div class="d-flex align-items-baseline">
-          <h5 class="text-left"><a href="{{ site.slack_url }}">Breaking Changes</a></h5>
-        </div>
-        <p class="card-text"></p>
-
         <div class="d-flex align-items-baseline">
           <h5 class="text-left"><a href="{{ site.slack_url }}">Conformance Criteria Changes</a></h5>
         </div>
