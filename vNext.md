@@ -123,11 +123,10 @@
             requirePluginModuleCallback function no longer need to provide the plugin name in a separate variable
             (this.pluginNmForUseInCallback = pluginName)<br />
             before binding the class (this.requirePluginModuleCallback.bind(this)).<br />
-            Instead they can call this.requirePluginModuleCallback(pluginName)
-          <li>
+            Instead they can call this.requirePluginModuleCallback(pluginName)</li>          
         </ul>
         </p>
-        <p>Common usage: ConfigurationLoader.load<br /><br /></p>
+        <p>Common usage: ConfigurationLoader.load</p>
         <p><b>Before:</b><br />
           this.pluginNmForUseInCallback = pluginName<br />
           ConfigurationLoader.load(null,pkgJsonData,this.requirePluginModuleCallback.bind(this))<br /></p>
