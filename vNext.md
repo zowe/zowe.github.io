@@ -11,50 +11,48 @@
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Latest Announcements</h2>
     <p>The preview of the docs-site is available at: <a href="https://docs.zowe.org/v2.0.x/getting-started/overview">Docs-site</a></p>
-    <p>Download the latest release at: final</p>
+    <p>Download the latest release at: <a href="download.html">Download</a></p>
   </div>
 
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Compatibility statements</h2>
-    If you want to learn more about what you can expect compatibility wise, the statement is <a href="https://zowe.org/downalod.html#compatibility-extensions">here</a>
+    If you want to learn more about what you can expect compatibility wise, the statement is <a href="download.html#compatibility-extensions">here</a>
   </div>
 
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Frequently Asked Questions</h2>
-    <ul>
-      <li>1. What is the “official” date of Zowe V2 LTS?</li>
-      <li>&nbsp; a. The official date is TBD, the target is Feb 28, 2022; look for the official announcement at Zowe.orglanding page announcement banner</li>
-      <li>2. Where can I find the current (V1) and new (V2) LTS conformance criteria?<li>
-      <li>a.The Zowe Squads have prepared XLS spreadsheets with conformance criteria for all Zowe extensionsincluding:  CLI, APIs, App Framework, and Explorerfor VS Code.  The spreadsheets clearly show the prior / V1 criteria alongside the new / V2 criteria.  Please be aware, there are additions, deletions, and CHANGES to the criteria.  In some cases the change issimply thata BEST PRACTICE has been deemed REQUIRED.  Use the light-GREEN highlights to easily identify the changes.See the FOR EXTENDERSsection at Zowe.org/vNext.</li>
-      <li>3.Will my V1 conformant extension automatically work with V2?</li>
-      <li>a.NO.  We recommend testing all V1 conformant extensions.  See the COMPATIBILITYsection at Zowe.org/Vnext</li>
-      <li>4.What if my extension does not work with Zowe V2?</li>
-      <li>a.See the recommendations in the COMPATIBILITYsection at Zowe.org/Vnext</li>
-      <li>5.How can I test my current plug-in and/or extension with Zowe V2?</li>
-      <li>a.Obtain the pre-GA Zowe V2 release; for detailssee the pre-GA DOWNLOADsection at Zowe.org/Vnext</li>
-      <li>6.Do I need to reapply for conformance?</li>
-      <li>a.YES, we expect the Zowe V2 Conformance program to be available in early Feb 2022.  We will announce when extenders my pre-apply in the LATEST ANNOUNCEMENTSsection at Zowe.org/Vnext</li>
-      <li>7.What happens to my V1 conformance badge?</li>
-      <li>a.All Zowe V1 conformance badges will remain at the Open Mainframe Project Interactive Landscape; we recommend documenting a Zowe compatibility matrixto ensure clients are aware of any/all compatibility issues between your V1 conformant apps and Zowe V2</li>
-      <li>8.Will I be able to pre-apply for Zowe V2 conformance?</li>
-      <li>a.Yes, We will announce when extenders my pre-apply in the LATEST ANNOUNCEMENTSsection at <a href="https://zowe.org/vNext.html">Zowe.org/Vnext</a></li>
-      <li>9.When can I share this information with my customers?</li>
-      <li>a.Anytime.  Zowe is an Open Source project managed by a transparent, Open Source Community.</li>
-      <li>10.How long willV1LTS be supported?</li>
-      <li>a.The V1 LTS Maintenancetimeline runs through July 2024.  See RELEASE TIMELINE at <a href="https://zowe.org/download.html">Zowe.org/download</a></li>
-      <li>11.What if my extension does not qualify for V2 conformance?</li>
-      <li>a.You have several options:</li>
-      <li>i.Notify your customer base and advise them to remain on Zowe V1 LTS until you are able to make the necessary modifications to satisfy all of the new requirements (Note:  extenders can choose NOT to be “day-1” V2 conformant )</li>
-      <li>ii.Notify your customer base of V2 compatibility concerns (or lack thereof) and advise accordingly (e.g. extension operates but will not leverage V2 features etc.)</li>
-      <li>iii.Replace your extension with a V2 conformant extension and indicate it as such</li>
-      <li>12.Where can I go for more informationor get interactive help?  (my question is not listed here)</li>
-      <li>a.You have several options:</li>
-      <li>i.Attend one (or more) of the (7) bi-weekly Zowe V2 OFFICE HOURS meetings offered on Wednesdays at 12pm ET.  Kickoff is scheduled for 12/8.  Following (6) meetings are scheduled for:  12/15, 12/29(?), 1/12, 1/26, 2/9, 2/23</li>
-      <li>ii.Interact with a Zowe Community Member via SLACK. Click on the COMMUNITYtab at Zowe.org, navigate to the SLACK box and click #zowe-onboarding</li>
-      <li>iii.Join a Zowe Squad call.  Click on the COMMUNITYtab at zowe.org, navigate to the JOIN A SQUAD CALLsection on this page.Click on one of the calendar entries for Zoom meeting links</li>
-      <li>13.Will the Zowe V2 Office Hours be recorded?  (Howdo I find the recording?)</li>
-      <li>i.Yes.  Recordings can be provided on request.  Click on the COMMUNITYtab at Zowe.org, navigate to the SLACK box and click #zowe-onboardingand request the recording.</li>
-    </ul>
+    <p>1. What is the “official” date of Zowe V2 LTS?</p>
+    <p>&nbsp;&nbsp;&nbsp;a. The official date is TBD, the target is Feb 28, 2022; look for the official announcement at Zowe.orglanding page announcement banner</p>
+    <p>2. Where can I find the current (V1) and new (V2) LTS conformance criteria?</p>
+    <p>&nbsp;&nbsp;&nbsp;a.The Zowe Squads have prepared XLS spreadsheets with conformance criteria for all Zowe extensionsincluding:  CLI, APIs, App Framework, and Explorerfor VS Code.  The spreadsheets clearly show the prior / V1 criteria alongside the new / V2 criteria.  Please be aware, there are additions, deletions, and CHANGES to the criteria.  In some cases the change issimply thata BEST PRACTICE has been deemed REQUIRED.  Use the light-GREEN highlights to easily identify the changes.See the FOR EXTENDERSsection at Zowe.org/vNext.</p>
+    <p>3.Will my V1 conformant extension automatically work with V2?</p>
+    <p>&nbsp;&nbsp;&nbsp;a.NO.  We recommend testing all V1 conformant extensions.  See the COMPATIBILITYsection at Zowe.org/Vnext</p>
+    <p>4.What if my extension does not work with Zowe V2?</p>
+    <p>&nbsp;&nbsp;&nbsp;a.See the recommendations in the COMPATIBILITYsection at Zowe.org/Vnext</p>
+    <p>5.How can I test my current plug-in and/or extension with Zowe V2?</p>
+    <p>&nbsp;&nbsp;&nbsp;a.Obtain the pre-GA Zowe V2 release; for details see the pre-GA DOWNLOADsection at Zowe.org/Vnext</p>
+    <p>6.Do I need to reapply for conformance?</p>
+    <p>&nbsp;&nbsp;&nbsp;a.YES, we expect the Zowe V2 Conformance program to be available in early Feb 2022.  We will announce when extenders my pre-apply in the LATEST ANNOUNCEMENTSsection at Zowe.org/Vnext</p>
+    <p>7.What happens to my V1 conformance badge?</p>
+    <p>&nbsp;&nbsp;&nbsp;a.All Zowe V1 conformance badges will remain at the Open Mainframe Project Interactive Landscape; we recommend documenting a Zowe compatibility matrixto ensure clients are aware of any/all compatibility issues between your V1 conformant apps and Zowe V2</p>
+    <p>8.Will I be able to pre-apply for Zowe V2 conformance?</p>
+    <p>&nbsp;&nbsp;&nbsp;a.Yes, We will announce when extenders my pre-apply in the LATEST ANNOUNCEMENTSsection at <a href="vNext.html">Zowe.org/Vnext</a></p>
+    <p>9.When can I share this information with my customers?</p>
+    <p>&nbsp;&nbsp;&nbsp;a.Anytime.  Zowe is an Open Source project managed by a transparent, Open Source Community.</p>
+    <p>10.How long willV1LTS be supported?</p>
+    <p>&nbsp;&nbsp;&nbsp;a.The V1 LTS Maintenancetimeline runs through July 2024.  See RELEASE TIMELINE at <a href="download.html">Zowe.org/download</a></p>
+    <p>11.What if my extension does not qualify for V2 conformance?</p>
+    <p>&nbsp;&nbsp;&nbsp;a.You have several options:</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.Notify your customer base and advise them to remain on Zowe V1 LTS until you are able to make the necessary modifications to satisfy all of the new requirements (Note:  extenders can choose NOT to be “day-1” V2 conformant )</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii.Notify your customer base of V2 compatibility concerns (or lack thereof) and advise accordingly (e.g. extension operates but will not leverage V2 features etc.)</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii.Replace your extension with a V2 conformant extension and indicate it as such</p>
+    <p>12.Where can I go for more information or get interactive help?  (my question is not listed here)</p>
+    <p>&nbsp;&nbsp;&nbsp;a.You have several options:</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.Attend one (or more) of the (7) bi-weekly Zowe V2 OFFICE HOURS meetings offered on Wednesdays at 12pm ET.  Kickoff is scheduled for 12/8.  Following (6) meetings are scheduled for:  12/15, 12/29(?), 1/12, 1/26, 2/9, 2/23</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii.Interact with a Zowe Community Member via SLACK. Click on the COMMUNITYtab at Zowe.org, navigate to the SLACK box and click #zowe-onboarding</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii.Join a Zowe Squad call.  Click on the COMMUNITYtab at zowe.org, navigate to the JOIN A SQUAD CALLsection on this page.Click on one of the calendar entries for Zoom meeting links</p>
+    <p>13.Will the Zowe V2 Office Hours be recorded?  (Howdo I find the recording?)</p>
+    <p>a.Yes.  Recordings can be provided on request.  Click on the COMMUNITYtab at Zowe.org, navigate to the SLACK box and click #zowe-onboardingand request the recording.</p>
   </div>
 
   <h2>For Users</h2>
@@ -66,6 +64,12 @@
         <h5 class="text-left"><a href="{{ site.slack_url }}">API Mediation Layer</a></h5>
       </div>
       <p class="card-text">V2 Highlights</p>
+      <ul>
+        <li>Remove support for the old path pattern</li>
+        <li>Move to the Material UI from Mineral UI</li>
+        <li>New change password as a part of the API Catalog</li>
+        <li>Remove the support for different authentication schemas for different instances of service</li>
+      </ul>
     </div>
   </div>
   <div class="card mb-3">
@@ -73,7 +77,75 @@
       <div class="d-flex align-items-baseline">
         <h5 class="text-left"><a href="{{ site.omp_calendar_url }}">CLI</a></h5>
       </div>
-      <p class="card-text">V2 Highlights</p>
+      <p class="card-text">Zowe CLI - End User Breaking Changes</p>
+      <p>
+      <ul>      
+        <li>`zowe config` no longer manages app settings (Imperative & CLI)</li>
+        <li>`fail-on-error` default changed to true for `zowe plugins validate` (Imperative & CLI)</li>
+        <li>Default Imperative and CLI log level changed from DEBUG to WARN (Imperative & CLI) - just potentially changes troubleshooting steps for providing info to support.</li>
+      </ul>
+      </p>
+      <p class="card-text">Breaking Changes that could prevent a V1 plug-in (or SDK) from working in V2</p>
+      <p>
+      <ul>
+<li>CLI package should be removed as a plug-in peer dep (Imperative)</li>
+<li>AbstractRestClient.mDecode defaults to true - so any plugin with custom RestClient implementation that adds gzip decompression may break</li>
+<li>Any command with --dcd will not behave the way you expect it to (undocumented global option for Daemon Mode Current Directory - to be mentioned in updated conformance criteria)</li>
+<li>PluginManagementFacility.requirePluginModuleCallback - return value changed. 
+Context:
+Application (and Plugin) developers requiring a module from a plugin’s relative path using the requirePluginModuleCallback function no longer need to provide the plugin name in a separate variable (this.pluginNmForUseInCallback = pluginName)
+before binding the class (this.requirePluginModuleCallback.bind(this)).
+Instead they can call this.requirePluginModuleCallback(pluginName)<li>
+</ul>
+</p>
+<p>
+Common usage: ConfigurationLoader.load<br/>
+<br/>
+<p><b>Before:</b>
+this.pluginNmForUseInCallback = pluginName
+ConfigurationLoader.load(null,pkgJsonData,this.requirePluginModuleCallback.bind(this))
+</p><p><b>After:</b>
+pluginConfig = ConfigurationLoader.load(null,pkgJsonData,this.requirePluginModuleCallback(pluginName))
+</p>
+<p class="card-text">All changes below were marked for deprecation in the zowe-v1-lts release. These changes are also less likely to impact plug-ins.</p>
+<p>
+<ul>
+<li>AbstractRestClient.performRest -> AbstractRestClient.request </li>
+<li>AbstractSession.HTTP_PROTOCOL -> SessConstants.HTTP_Protocol </li>
+<li>AbstractSession.HTTPS_PROTOCOL -> SessConstants.HTTPS_Protocol </li>
+<li>AbstractSession.TYPE_NONE -> SessConstants.AUTH_TYPE_NONE </li>
+<li>AbstractSession.TYPE_BASIC -> SessConstants.AUTH_TYPE_BASIC </li>
+<li>AbstractSession.TYPE_BEARER -> SessConstants.AUTH_TYPE_BEARER</li>
+<li>AbstractSession.TYPE_TOKEN -> SessConstants.AUTH_TYPE_TOKEN </li>
+<li>ICliLoadProfile.ICliILoadProfile -> ICliLoadProfile.ICliLoadProfile </li>
+<li>IImperativeErrorParms.suppressReport -> removed </li>
+<li>IImperativeConfig.pluginBaseCliVersion -> removed </li>
+<li>CliUtils.promptForInput -> CliUtils.readPrompt </li>
+<li>CliUtils.promptWithTimeout -> CliUtils.readPrompt </li>
+<li>(zosmf) IZosfmMessages -> IZosmfMessages  </li>
+<li>(workflows) listWorkflows -> getWorkflows </li>
+<li>(workflows) getResourcesQuery -> getResourceQuery </li>
+<li>(workflows) archiveWorfklowByKey -> archiveWorkflowByKey </li>
+<li>(uss) createBasicSshSession -> createSshSessCfgFromArgs </li>
+<li>(uss) createBasicSshSessionFromArguments -> createSshSessCfgFromArgs </li>
+<li>(zosmf) createBasicZosmfSession -> createSessCfgFromArgs </li>
+<li>(zosmf) createBasicZosmfSessionFromArguments -> createSessCfgFromArgs </li>
+<li>(files) bufferToUSSFile -> bufferToUssFile </li>
+<li>(files) streamToUSSFile -> streamToUssFile</li>
+<li>(files) fileToUSSFile -> fileToUssFile </li>
+</ul>
+</p>
+
+<p class="card-text">Zowe CLI & Imperative - Plug-in Developer Breaking Changes (V2-V2 - these changes only impacted early adopters of `@next` as these are breaking changes made during the technical preview validation phase - thanks to the community for their feedback)</p>
+<p>
+<ul>
+<li>`tokenType` and `tokenValue` were combined into `authToken` and we later reverted this change (Imperative & CLI) </li>
+<li>Options in “zowe config” group renamed: `--user` -> `--user-config` and `--global` -> `--global-config`</li>
+<li>Zowe.schema.json format changed a few times (version 2, version 3)
+ConfigSchemas.loadProfileSchemas -> ConfigSchemas.loadSchema
+Config.set no longer coerces string values to other types unless parseString = true (potential SDK impact - not CLI Plug-in impact)</li>
+</ul>
+</p>
     </div>
   </div>
   <div class="card mb-3">
@@ -82,6 +154,16 @@
         <h5 class="text-left"><a href="{{ site.slack_url }}">Explorers</a></h5>
       </div>
       <p class="card-text">V2 Highlights</p>
+      <p>
+        <ul>
+<li>Describes the change & what will break</li>
+<li>Changes to settings keys - automated migration of settings when user opens Zowe Explorer v2: PR 1450 (includes documentation) - Merged</li>
+<li>(optional) Tips on how to make the transition process easier</li>
+<li>Describes the change & what will break</li>
+<li>See doc items marked with "Early Access" here: https://github.com/zowe/vscode-extension-for-zowe/tree/next/docs</li>
+<li>(optional) Tips on how to make the transition process easier</li>
+        </ul>
+      </p>
     </div>
   </div>
   <div class="card mb-3">
@@ -90,6 +172,14 @@
         <h5 class="text-left"><a href="{{ site.slack_url }}">Systems</a></h5>
       </div>
       <p class="card-text">V2 Highlights</p>
+      <p>
+      <ul>
+      <li>Zowe v2: Review usage of z/OS System resources</li>
+<li>Start building 'v2' Zowe</li>
+<li>Spike: propose v2 changes and discuss with community</li>
+<li>Define new FMID AZWE002 for Zowe v2</li>
+</ul>
+      </p>
     </div>
   </div>
   <div class="card mb-3">
@@ -98,6 +188,20 @@
         <h5 class="text-left"><a href="{{ site.slack_url }}">Web UI</a></h5>
       </div>
       <p class="card-text">V2 Highlights</p>
+      <p>
+      <ul>
+    <li>zpdt tune option such as to reduce process/thread count (like not using "cluster mode")
+    desktop library removal: bootstrap... bootstrap infects root, making it challenging to use other style libraries. Can have apps bring their own bootstrap as a solution, but is breaking as a result.</li>
+    <li>update all var names to be ZWE_ and ZWED and ZWES consistently</li>
+    <li>rename or get rid of zowe_explorer_host</li>
+    <li>expose more zss configuration as parameters in instance.yaml</li>
+    <li>Consolidation of web explorer servers (node code rolled into app-server) to reduce process count... breaking due to change of URLs (bookmarks break) #97</li>
+    <li>Making the explorer java servers optional, by making the web explorers utilize zosmf instead</li>
+    <li>desktop library upgrades (angular 6->10?, corejs 2->3)... can break plugins, but could choose minor upgrades that are less likely to do so #704</li>
+    <li>eliminate loopback routing in favor of internal routing #706 ~75% done</li>
+    <li>zss 64 bit #703 ~90% done</li>
+    </ul>
+      </p> 
     </div>
   </div>
   </div>
