@@ -19,10 +19,7 @@ jobs:
       - name: check permission
         uses: zowe-actions/shared-actions/permission-check@main
         with:
-          user: ${{ github.actor }}
-          github-repo: ${{ github.repository }}
-          github-user: ${{ secrets.ZOWE_ROBOT_USER }}
-          github-passwd: ${{ secrets.ZOWE_ROBOT_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}  
 
   # Set the job key. The key is displayed as the job name
   build:
