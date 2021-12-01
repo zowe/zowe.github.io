@@ -22,6 +22,11 @@
   </div>
 
   <div>
+    <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Office Hours Recordings</h2>
+    This is the place where you find Recordings of the Office Hours
+  </div>
+
+  <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Frequently Asked Questions</h2>
     <p>1. What is the “official” date of Zowe V2 LTS?</p>
     <p>&nbsp;&nbsp;&nbsp;a. The official date is TBD, the target is Feb 28, 2022; look for the official announcement at
