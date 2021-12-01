@@ -23,7 +23,22 @@
 
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Office Hours Recordings</h2>
-    This is the place where you find Recordings of the Office Hours
+    <table>
+    <tr>
+    <td>
+    Date
+    </td>
+    <td>
+    Topic
+    </td>
+    <td>
+    Link to the calendar entry
+    </td>
+    <td>
+    Link to the recording
+    </td>
+    </tr>
+    </table>
   </div>
 
   <div>
