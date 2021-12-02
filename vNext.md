@@ -149,6 +149,7 @@ table, th, td {
           Config.set no longer coerces string values to other types unless parseString = true (potential SDK impact -
           not CLI Plug-in impact)</li>
       </ul>
+      </p>
     </div>
   </div>
 
@@ -231,7 +232,6 @@ table, th, td {
       <div class="d-flex align-items-baseline">
         <h5 class="text-left">CLI</h5>
       </div>
-      <p class="card-text"></p>
     </div>
   </div>
 
@@ -240,7 +240,6 @@ table, th, td {
       <div class="d-flex align-items-baseline">
         <h5 class="text-left">Explorers</h5>
       </div>        
-      <p class="card-text"></p>
     </div>
   </div>
 
