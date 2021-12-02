@@ -14,7 +14,7 @@ table, th, td {
   display: none;
 }
 
-.bluebackground h5, .bluebackground .card-text {
+.bluebackground h5, .bluebackground .card-text, .bluebackground p, .bluebackground .card-body {
   color: #145391;
 }
 </style>
@@ -337,12 +337,15 @@ table, th, td {
 
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Frequently Asked Questions</h2>
+    <div>
     <button onclick="toggle('question-1')" class="w3-button w3-block w3-left-align">
     1. What is the “official” date of Zowe V2 LTS?</button>
     <div id="question-1" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;a. The official date is TBD, the target is Feb 28, 2022; look for the official announcement at
       <a href="/">Zowe.org</a> landing page announcement banner</p>
     </div>
+    </div>
+    <div>
     <button onclick="toggle('question-2')" class="w3-button w3-block w3-left-align">
     2. Where can I find the current (V1) and new (V2) LTS conformance criteria?</button>
     <div id="question-2" class="w3-container faq-hide">
@@ -352,29 +355,39 @@ table, th, td {
       criteria. In some cases the change is simply that a BEST PRACTICE has been deemed REQUIRED. Use the light-GREEN
       highlights to easily identify the changes. See the <a href="#conformance-changes">Changes to the Conformance Criteria</a> section at <a href="/vNext">Zowe.org/vNext.</a></p>
     </div>
+    </div>
+    <div>
     <button onclick="toggle('question-3')" class="w3-button w3-block w3-left-align">
     3. Will my V1 conformant extension automatically work with V2?</button>
     <div id="question-3" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;a. NO. We recommend testing all V1 conformant extensions. See the <a href="#coming-changes">Coming changes (For Users)</a> section at
       <a href="/vNext">Zowe.org/Vnext</a></p>
     </div>
+    </div>
+    <div>
     <button onclick="toggle('question-4')" class="w3-button w3-block w3-left-align">
     4. What if my extension does not work with Zowe V2?</button>
     <div id="question-4" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;a. See the recommendations in the <a href="#coming-changes">Coming changes (For Users)</a> section at <a href="/vNext">Zowe.org/Vnext</a></p>
     </div>
+    </div>
+    <div>
     <button onclick="toggle('question-5')" class="w3-button w3-block w3-left-align">
     5. How can I test my current plug-in and/or extension with Zowe V2?</button>
     <div id="question-5" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;a. Obtain the pre-GA Zowe V2 release; for details see the pre-GA DOWNLOAD section at
       <a href="/vNext">Zowe.org/Vnext</a></p>
     </div>
+    </div>
+    <div>
     <button onclick="toggle('question-6')" class="w3-button w3-block w3-left-align">
     6. Do I need to reapply for conformance?</button>
     <div id="question-6" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;a. YES, we expect the Zowe V2 Conformance program to be available in early Feb 2022. We will
       announce when extenders my pre-apply in the LATEST ANNOUNCEMENTS section at <a href="/vNext">Zowe.org/Vnext</a></p>
     </div>
+    </div>
+    <div>
     <button onclick="toggle('question-7')" class="w3-button w3-block w3-left-align">
     7. What happens to my V1 conformance badge?</button>
     <div id="question-7" class="w3-container faq-hide">
@@ -382,23 +395,31 @@ table, th, td {
       Landscape; we recommend documenting a Zowe compatibility matrixto ensure clients are aware of any/all
       compatibility issues between your V1 conformant apps and Zowe V2<</p>
     </div>
+    </div>
+    <div>
     <button onclick="toggle('question-8')" class="w3-button w3-block w3-left-align">
     8. Will I be able to pre-apply for Zowe V2 conformance?</button>
     <div id="question-8" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;a. Yes, We will announce when extenders my pre-apply in the LATEST ANNOUNCEMENTS section at <a
         href="vNext.html">Zowe.org/Vnext</a></p>
     </div>
+    </div>
+    <div>
     <button onclick="toggle('question-9')" class="w3-button w3-block w3-left-align">
     9. When can I share this information with my customers?</button>
     <div id="question-9" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;a. Anytime. Zowe is an Open Source project managed by a transparent, Open Source Community.</p>
     </div>
+    </div>
+    <div>
     <button onclick="toggle('question-10')" class="w3-button w3-block w3-left-align">
     10. How long will V1 LTS be supported?</button>
     <div id="question-10" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;a. The V1 LTS Maintenance timeline runs through July 2024. See RELEASE TIMELINE at <a
         href="download.html">Zowe.org/download</a></p>
     </div>
+    </div>
+    <div>
     <button onclick="toggle('question-11')" class="w3-button w3-block w3-left-align">
     11. What if my extension does not qualify for V2 conformance?</button>
     <div id="question-11" class="w3-container faq-hide">
@@ -411,6 +432,8 @@ table, th, td {
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii. Replace your extension with a V2 conformant extension and indicate it as
       such</p>
     </div>
+    </div>
+    <div>
     <button onclick="toggle('question-12')" class="w3-button w3-block w3-left-align">
     12. Where can I go for more information or get interactive help? (my question is not listed here)</button>
     <div id="question-12" class="w3-container faq-hide">
@@ -423,11 +446,14 @@ table, th, td {
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii. Join a Zowe Squad call. Click on the COMMUNITYtab at zowe.org, navigate
       to the JOIN A SQUAD CALLsection on this page.Click on one of the calendar entries for Zoom meeting links</p>
     </div>
+    </div>
+    <div>
     <button onclick="toggle('question-13')" class="w3-button w3-block w3-left-align">
     13. Will the Zowe V2 Office Hours be recorded? (Howdo I find the recording?)</button>
     <div id="question-13" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;a. Yes. Recordings can be provided on request. Click on the COMMUNITY tab at <a href="https://zowe.org">Zowe.org</a>, navigate to the SLACK box
       and click #zowe-onboarding and request the recording.</p>
+    </div>
     </div>
   </div>
 
