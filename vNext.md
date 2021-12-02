@@ -14,7 +14,7 @@ table, th, td {
   display: none;
 }
 
-.bluebackground h5, .bluebackground .card-text, .bluebackground p, .bluebackground .card-body {
+.bluebackground.conformance-criteria h5, .bluebackground.conformance-criteria .card-text, .bluebackground.conformance-criteria p, .bluebackground.conformance-criteria .card-body {
   color: #145391;
 }
 </style>
@@ -213,7 +213,7 @@ table, th, td {
     </div>
   </div>
 
-<section class="bluebackground">
+<section class="bluebackground conformance-criteria">
 
   <h2 id="conformance-changes">Changes to the Conformance Criteria (For Extenders) </h2>
 
@@ -279,43 +279,43 @@ table, th, td {
     <tr>
     <td>12/8</td>
     <td>Kickoff</td>
-    <td>https://zoom.us/j/94312528890</td>
+    <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
     <td></td>
     </tr>
     <tr>
     <td>12/15</td>
     <td>CLI</td>
-    <td>https://zoom.us/j/94312528890</td>
+    <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
     <td></td>
     </tr>
     <tr>
     <td>12/29</td>
     <td>API Mediation Layer</td>
-    <td>https://zoom.us/j/94312528890</td>
+    <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
     <td></td>
     </tr>    
     <tr>
     <td>1/12</td>
     <td>Explorers</td>
-    <td>https://zoom.us/j/94312528890</td>
+    <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
     <td></td>
     </tr>
     <tr>
     <td>1/26</td>
     <td>Web UI (App Framework)</td>
-    <td>https://zoom.us/j/94312528890</td>
+    <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
     <td></td>
     </tr>
     <tr>
     <td>2/9</td>
     <td>Systems / Install</td>
-    <td>https://zoom.us/j/94312528890</td>
+    <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
     <td></td>
     </tr>
     <tr>
     <td>2/23</td>
     <td>General Wrap-up</td>
-    <td>https://zoom.us/j/94312528890</td>
+    <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
     <td></td>
     </tr>
     </table>
