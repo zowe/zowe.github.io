@@ -8,6 +8,17 @@
   <h1 id="download" style="margin-bottom: 1.5rem">Version 2 Information</h1>
   <p>Everything you need in order to be ready for the next major version release</p>
 
+  # Test heading
+
+  | Name | Time | Problem |
+  | a | 1| t | 
+
+  <p>Create table of content</p>
+  <p>Structure go down with FAQs</p>
+  <p>Changes/Conformance Criteria instead of For Users and For Extenders</p>
+  <p>Update FAQ to be hidden the same way we have in docs-site for the questions and answers</p>
+  <p>Ask Jelly about sharing the voting for our solution</p>
+
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Latest Announcements</h2>
     <p>The preview of the docs-site is available at: <a
@@ -23,6 +34,7 @@
 
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Office Hours Recordings</h2>
+    // Update the information here to make sure it's visible. 
     <table>
     <tr>
     <td>
