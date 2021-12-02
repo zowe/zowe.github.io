@@ -7,10 +7,15 @@
 <style>
 table, th, td {
   border: 1px solid black;
+  padding: 4px;
 }
 
 .faq-hide {
   display: none;
+}
+
+.bluebackground h5 {
+  font-color: blue;
 }
 </style>
 
@@ -368,7 +373,7 @@ table, th, td {
     6. Do I need to reapply for conformance?</button>
     <div id="question-6" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;a. YES, we expect the Zowe V2 Conformance program to be available in early Feb 2022. We will
-      announce when extenders my pre-apply in the LATEST ANNOUNCEMENTSsection at <a href="/vNext">Zowe.org/Vnext</a></p>
+      announce when extenders my pre-apply in the LATEST ANNOUNCEMENTS section at <a href="/vNext">Zowe.org/Vnext</a></p>
     </div>
     <button onclick="toggle('question-7')" class="w3-button w3-block w3-left-align">
     7. What happens to my V1 conformance badge?</button>
@@ -391,7 +396,7 @@ table, th, td {
     <button onclick="toggle('question-10')" class="w3-button w3-block w3-left-align">
     10. How long will V1 LTS be supported?</button>
     <div id="question-10" class="w3-container faq-hide">
-      <p>&nbsp;&nbsp;&nbsp;a. The V1 LTS Maintenancetimeline runs through July 2024. See RELEASE TIMELINE at <a
+      <p>&nbsp;&nbsp;&nbsp;a. The V1 LTS Maintenance timeline runs through July 2024. See RELEASE TIMELINE at <a
         href="download.html">Zowe.org/download</a></p>
     </div>
     <button onclick="toggle('question-11')" class="w3-button w3-block w3-left-align">
