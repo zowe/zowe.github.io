@@ -14,8 +14,12 @@ table, th, td {
   display: none;
 }
 
-.bluebackground.conformance-criteria h5, .bluebackground.conformance-criteria .card-text, .bluebackground.conformance-criteria p, .bluebackground.conformance-criteria .card-body {
+.bluebackground.conformance-criteria h5, .bluebackground.conformance-criteria .card-text, .bluebackground.conformance-criteria .card-body {
   color: #145391;
+}
+
+p .card-black {
+  color: black;
 }
 </style>
 
@@ -227,6 +231,7 @@ table, th, td {
         <h5 class="text-left">API Mediation Layer</h5>
       </div>
       <h5>Changed</h5>
+      <p class="card-black">
       <table>
       <tr>
       <td>Item Number</td>
@@ -248,6 +253,7 @@ table, th, td {
         the first place in the path, before the service version (all formats)</td>
       </tr>
       </table>
+      </p>
     </div>
   </div>
 
@@ -255,6 +261,7 @@ table, th, td {
     <div class="card-body">
       <div class="d-flex align-items-baseline">
         <h5 class="text-left">CLI</h5>
+        <p class="card-black">The changes to the CLI Conformance Criteria are available: <a href="https://ibm.box.com/s/fwlub33qln51r276c1qkijdcq7pgql0i">here</a></p>
       </div>
     </div>
   </div>
