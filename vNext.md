@@ -330,58 +330,92 @@ table, th, td {
       <p>&nbsp;&nbsp;&nbsp;a. The official date is TBD, the target is Feb 28, 2022; look for the official announcement at
       Zowe.orglanding page announcement banner</p>
     </div>
-    <p>1. What is the “official” date of Zowe V2 LTS?</p>
-    <p></p>
-    <p>2. Where can I find the current (V1) and new (V2) LTS conformance criteria?</p>
-    <p>&nbsp;&nbsp;&nbsp;a.The Zowe Squads have prepared XLS spreadsheets with conformance criteria for all Zowe
+    <button onclick="toggle('question-2')" class="w3-button w3-block w3-left-align">
+    2. Where can I find the current (V1) and new (V2) LTS conformance criteria?</button>
+    <div id="question-2" class="w3-container faq-hide">
+      <p>&nbsp;&nbsp;&nbsp;a.The Zowe Squads have prepared XLS spreadsheets with conformance criteria for all Zowe
       extensionsincluding: CLI, APIs, App Framework, and Explorerfor VS Code. The spreadsheets clearly show the prior /
       V1 criteria alongside the new / V2 criteria. Please be aware, there are additions, deletions, and CHANGES to the
       criteria. In some cases the change issimply thata BEST PRACTICE has been deemed REQUIRED. Use the light-GREEN
       highlights to easily identify the changes.See the FOR EXTENDERSsection at Zowe.org/vNext.</p>
-    <p>3.Will my V1 conformant extension automatically work with V2?</p>
-    <p>&nbsp;&nbsp;&nbsp;a.NO. We recommend testing all V1 conformant extensions. See the COMPATIBILITYsection at
+    </div>
+    <button onclick="toggle('question-3')" class="w3-button w3-block w3-left-align">
+    3.Will my V1 conformant extension automatically work with V2?</button>
+    <div id="question-3" class="w3-container faq-hide">
+      <p>&nbsp;&nbsp;&nbsp;a.NO. We recommend testing all V1 conformant extensions. See the COMPATIBILITYsection at
       Zowe.org/Vnext</p>
-    <p>4.What if my extension does not work with Zowe V2?</p>
-    <p>&nbsp;&nbsp;&nbsp;a.See the recommendations in the COMPATIBILITYsection at Zowe.org/Vnext</p>
-    <p>5.How can I test my current plug-in and/or extension with Zowe V2?</p>
-    <p>&nbsp;&nbsp;&nbsp;a.Obtain the pre-GA Zowe V2 release; for details see the pre-GA DOWNLOADsection at
+    </div>
+    <button onclick="toggle('question-4')" class="w3-button w3-block w3-left-align">
+    4.What if my extension does not work with Zowe V2?</button>
+    <div id="question-4" class="w3-container faq-hide">
+      <p>&nbsp;&nbsp;&nbsp;a.See the recommendations in the COMPATIBILITYsection at Zowe.org/Vnext</p>
+    </div>
+    <button onclick="toggle('question-5')" class="w3-button w3-block w3-left-align">
+    5.How can I test my current plug-in and/or extension with Zowe V2?</button>
+    <div id="question-5" class="w3-container faq-hide">
+      <p>&nbsp;&nbsp;&nbsp;a.Obtain the pre-GA Zowe V2 release; for details see the pre-GA DOWNLOADsection at
       Zowe.org/Vnext</p>
-    <p>6.Do I need to reapply for conformance?</p>
-    <p>&nbsp;&nbsp;&nbsp;a.YES, we expect the Zowe V2 Conformance program to be available in early Feb 2022. We will
+    </div>
+    <button onclick="toggle('question-6')" class="w3-button w3-block w3-left-align">
+    6.Do I need to reapply for conformance?</button>
+    <div id="question-6" class="w3-container faq-hide">
+      <p>&nbsp;&nbsp;&nbsp;a.YES, we expect the Zowe V2 Conformance program to be available in early Feb 2022. We will
       announce when extenders my pre-apply in the LATEST ANNOUNCEMENTSsection at Zowe.org/Vnext</p>
-    <p>7.What happens to my V1 conformance badge?</p>
-    <p>&nbsp;&nbsp;&nbsp;a.All Zowe V1 conformance badges will remain at the Open Mainframe Project Interactive
+    </div>
+    <button onclick="toggle('question-7')" class="w3-button w3-block w3-left-align">
+    7.What happens to my V1 conformance badge?</button>
+    <div id="question-7" class="w3-container faq-hide">
+      <p>&nbsp;&nbsp;&nbsp;a.All Zowe V1 conformance badges will remain at the Open Mainframe Project Interactive
       Landscape; we recommend documenting a Zowe compatibility matrixto ensure clients are aware of any/all
-      compatibility issues between your V1 conformant apps and Zowe V2</p>
-    <p>8.Will I be able to pre-apply for Zowe V2 conformance?</p>
-    <p>&nbsp;&nbsp;&nbsp;a.Yes, We will announce when extenders my pre-apply in the LATEST ANNOUNCEMENTSsection at <a
+      compatibility issues between your V1 conformant apps and Zowe V2<</p>
+    </div>
+    <button onclick="toggle('question-8')" class="w3-button w3-block w3-left-align">
+    8.Will I be able to pre-apply for Zowe V2 conformance?</button>
+    <div id="question-8" class="w3-container faq-hide">
+      <p>&nbsp;&nbsp;&nbsp;a. Yes, We will announce when extenders my pre-apply in the LATEST ANNOUNCEMENTSsection at <a
         href="vNext.html">Zowe.org/Vnext</a></p>
-    <p>9.When can I share this information with my customers?</p>
-    <p>&nbsp;&nbsp;&nbsp;a.Anytime. Zowe is an Open Source project managed by a transparent, Open Source Community.</p>
-    <p>10.How long willV1LTS be supported?</p>
-    <p>&nbsp;&nbsp;&nbsp;a.The V1 LTS Maintenancetimeline runs through July 2024. See RELEASE TIMELINE at <a
+    </div>
+    <button onclick="toggle('question-9')" class="w3-button w3-block w3-left-align">
+    9.When can I share this information with my customers?</button>
+    <div id="question-9" class="w3-container faq-hide">
+      <p>&nbsp;&nbsp;&nbsp;a.Anytime. Zowe is an Open Source project managed by a transparent, Open Source Community.</p>
+    </div>
+    <button onclick="toggle('question-10')" class="w3-button w3-block w3-left-align">
+    10.How long will V1 LTS be supported?</button>
+    <div id="question-10" class="w3-container faq-hide">
+      <p>&nbsp;&nbsp;&nbsp;a.The V1 LTS Maintenancetimeline runs through July 2024. See RELEASE TIMELINE at <a
         href="download.html">Zowe.org/download</a></p>
-    <p>11.What if my extension does not qualify for V2 conformance?</p>
-    <p>&nbsp;&nbsp;&nbsp;a.You have several options:</p>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.Notify your customer base and advise them to remain on Zowe V1 LTS until
+    </div>
+    <button onclick="toggle('question-11')" class="w3-button w3-block w3-left-align">
+    11.What if my extension does not qualify for V2 conformance?</button>
+    <div id="question-11" class="w3-container faq-hide">
+      <p>&nbsp;&nbsp;&nbsp;a.You have several options:</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.Notify your customer base and advise them to remain on Zowe V1 LTS until
       you are able to make the necessary modifications to satisfy all of the new requirements (Note: extenders can
       choose NOT to be “day-1” V2 conformant )</p>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii.Notify your customer base of V2 compatibility concerns (or lack thereof)
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii.Notify your customer base of V2 compatibility concerns (or lack thereof)
       and advise accordingly (e.g. extension operates but will not leverage V2 features etc.)</p>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii.Replace your extension with a V2 conformant extension and indicate it as
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii.Replace your extension with a V2 conformant extension and indicate it as
       such</p>
-    <p>12.Where can I go for more information or get interactive help? (my question is not listed here)</p>
-    <p>&nbsp;&nbsp;&nbsp;a.You have several options:</p>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.Attend one (or more) of the (7) bi-weekly Zowe V2 OFFICE HOURS meetings
+    </div>
+    <button onclick="toggle('question-12')" class="w3-button w3-block w3-left-align">
+    12.Where can I go for more information or get interactive help? (my question is not listed here)</button>
+    <div id="question-12" class="w3-container faq-hide">
+      <p>&nbsp;&nbsp;&nbsp;a.You have several options:</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.Attend one (or more) of the (7) bi-weekly Zowe V2 OFFICE HOURS meetings
       offered on Wednesdays at 12pm ET. Kickoff is scheduled for 12/8. Following (6) meetings are scheduled for: 12/15,
       12/29(?), 1/12, 1/26, 2/9, 2/23</p>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii.Interact with a Zowe Community Member via SLACK. Click on the COMMUNITYtab
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii.Interact with a Zowe Community Member via SLACK. Click on the COMMUNITYtab
       at Zowe.org, navigate to the SLACK box and click #zowe-onboarding</p>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii.Join a Zowe Squad call. Click on the COMMUNITYtab at zowe.org, navigate
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii.Join a Zowe Squad call. Click on the COMMUNITYtab at zowe.org, navigate
       to the JOIN A SQUAD CALLsection on this page.Click on one of the calendar entries for Zoom meeting links</p>
-    <p>13.Will the Zowe V2 Office Hours be recorded? (Howdo I find the recording?)</p>
-    <p>a.Yes. Recordings can be provided on request. Click on the COMMUNITYtab at Zowe.org, navigate to the SLACK box
+    </div>
+    <button onclick="toggle('question-13')" class="w3-button w3-block w3-left-align">
+    13.Will the Zowe V2 Office Hours be recorded? (Howdo I find the recording?)</button>
+    <div id="question-13" class="w3-container faq-hide">
+      <p>&nbsp;&nbsp;&nbsp;a.Yes. Recordings can be provided on request. Click on the COMMUNITYtab at Zowe.org, navigate to the SLACK box
       and click #zowe-onboardingand request the recording.</p>
+    </div>
   </div>
 
   
