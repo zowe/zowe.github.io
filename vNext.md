@@ -57,7 +57,6 @@ table, th, td {
         <li>New change password as a part of the API Catalog</li>
         <li>Remove the support for different authentication schemas for different instances of service</li>
       </ul>
-      </p>
     </div>
   </div>
 
@@ -141,7 +140,6 @@ table, th, td {
           Config.set no longer coerces string values to other types unless parseString = true (potential SDK impact -
           not CLI Plug-in impact)</li>
       </ul>
-      </p>
     </div>
   </div>
 
@@ -160,7 +158,6 @@ table, th, td {
           https://github.com/zowe/vscode-extension-for-zowe/tree/next/docs</li>
         <li>(optional) Tips on how to make the transition process easier</li>
       </ul>
-      </p>
     </div>
   </div>
 
@@ -175,7 +172,6 @@ table, th, td {
         <li>Spike: propose v2 changes and discuss with community</li>
         <li>Define new FMID AZWE002 for Zowe v2</li>
       </ul>
-      </p>
     </div>
   </div>
 
@@ -199,7 +195,6 @@ table, th, td {
         <li>eliminate loopback routing in favor of internal routing #706 ~75% done</li>
         <li>zss 64 bit #703 ~90% done</li>
       </ul>
-      </p>
     </div>
   </div>
 
@@ -331,7 +326,7 @@ table, th, td {
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Frequently Asked Questions</h2>
     <button onclick="toggle('question-1')" class="w3-button w3-block w3-left-align">
     1. What is the “official” date of Zowe V2 LTS?</button>
-    <div id="question-1" class="w3-container w3-hide">
+    <div id="question-1" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;a. The official date is TBD, the target is Feb 28, 2022; look for the official announcement at
       Zowe.orglanding page announcement banner</p>
     </div>
