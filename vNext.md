@@ -15,7 +15,7 @@ table, th, td {
 }
 
 .bluebackground h5, .bluebackground .card-text {
-  color: ##145391;
+  color: #145391;
 }
 </style>
 
