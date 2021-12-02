@@ -8,6 +8,10 @@
 table, th, td {
   border: 1px solid black;
 }
+
+.faq-hide {
+  display: none;
+}
 </style>
 
 <section class="whitebackground">
@@ -33,9 +37,9 @@ table, th, td {
 
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="general-information">General Information</h2>
-    <p>The preview of the docs-site is available at: <a
+    <!-- <p>The preview of the docs-site is available at: <a
         href="https://docs.zowe.org/v2.0.x/getting-started/overview">Docs-site</a></p>
-    <p>Download the latest release at: <a href="download.html">Download</a></p>
+    <p>Download the latest release at: <a href="download.html">Download</a></p> -->
     <p>If you want to learn more about what you can expect compatibility wise, the statement is <a
       href="download.html#compatibility-extensions">here</a></p>
   </div>
@@ -47,8 +51,6 @@ table, th, td {
       <div class="d-flex align-items-baseline">
         <h5 class="text-left"><a href="{{ site.slack_url }}">API Mediation Layer</a></h5>
       </div>
-      <p class="card-text">V2 Highlights</p>
-      <p>
       <ul>
         <li>Remove support for the old path pattern</li>
         <li>Move to the Material UI from Mineral UI</li>
@@ -58,6 +60,7 @@ table, th, td {
       </p>
     </div>
   </div>
+
   <div class="card mb-3">
     <div class="card-body">
       <div class="d-flex align-items-baseline">
@@ -147,8 +150,6 @@ table, th, td {
       <div class="d-flex align-items-baseline">
         <h5 class="text-left"><a href="{{ site.slack_url }}">Explorers</a></h5>
       </div>
-      <p class="card-text">V2 Highlights</p>
-      <p>
       <ul>
         <li>Describes the change & what will break</li>
         <li>Changes to settings keys - automated migration of settings when user opens Zowe Explorer v2: PR 1450
@@ -168,8 +169,6 @@ table, th, td {
       <div class="d-flex align-items-baseline">
         <h5 class="text-left"><a href="{{ site.slack_url }}">Systems</a></h5>
       </div>
-      <p class="card-text">V2 Highlights</p>
-      <p>
       <ul>
         <li>Zowe v2: Review usage of z/OS System resources</li>
         <li>Start building 'v2' Zowe</li>
@@ -185,8 +184,6 @@ table, th, td {
       <div class="d-flex align-items-baseline">
         <h5 class="text-left"><a href="{{ site.slack_url }}">Web UI</a></h5>
       </div>
-      <p class="card-text">V2 Highlights</p>
-      <p>
       <ul>
         <li>zpdt tune option such as to reduce process/thread count (like not using "cluster mode")
           desktop library removal: bootstrap... bootstrap infects root, making it challenging to use other style
@@ -208,15 +205,12 @@ table, th, td {
 
 <section class="bluebackground">
 
-  <h2 id="conformance-changes">Changes to the Conformance Criteria</h2>
+  <h2 id="conformance-changes">Changes to the Conformance Criteria (For Extenders) </h2>
 
   <div class="card mb-3">
     <div class="card-body">
       <div class="d-flex align-items-baseline">
         <h5 class="text-left"><a href="{{ site.slack_url }}">API Mediation Layer</a></h5>
-      </div>
-      <div class="d-flex align-items-baseline">
-        <h5 class="text-left"><a href="{{ site.slack_url }}">Conformance Criteria Changes</a></h5>
       </div>
       <p class="card-text">Change to Item number 8: For versioned and non-versioned APIs, service URLs must contain a
         service version before the service ID (all formats)
@@ -233,9 +227,6 @@ table, th, td {
       <div class="d-flex align-items-baseline">
         <h5 class="text-left"><a href="{{ site.omp_calendar_url }}">CLI</a></h5>
       </div>
-      <div class="d-flex align-items-baseline">
-        <h5 class="text-left"><a href="{{ site.slack_url }}">Conformance Criteria Changes</a></h5>
-      </div>
       <p class="card-text"></p>
     </div>
   </div>
@@ -245,9 +236,6 @@ table, th, td {
       <div class="d-flex align-items-baseline">
         <h5 class="text-left"><a href="{{ site.slack_url }}">Explorers</a></h5>
       </div>        
-      <div class="d-flex align-items-baseline">
-        <h5 class="text-left"><a href="{{ site.slack_url }}">Conformance Criteria Changes</a></h5>
-      </div>
       <p class="card-text"></p>
     </div>
   </div>
@@ -257,9 +245,6 @@ table, th, td {
       <div class="d-flex align-items-baseline">
         <h5 class="text-left"><a href="{{ site.slack_url }}">Systems</a></h5>
       </div>
-      <div class="d-flex align-items-baseline">
-        <h5 class="text-left"><a href="{{ site.slack_url }}">Conformance Criteria Changes</a></h5>
-      </div>
     </div>
   </div>
 
@@ -268,11 +253,6 @@ table, th, td {
       <div class="d-flex align-items-baseline">
         <h5 class="text-left"><a href="{{ site.slack_url }}">Web UI</a></h5>
       </div>
-      <p class="card-text"></p>
-      <div class="d-flex align-items-baseline">
-        <h5 class="text-left"><a href="{{ site.slack_url }}">Conformance Criteria Changes</a></h5>
-      </div>
-      <p class="card-text"></p>
     </div>
   </div>
 
@@ -336,11 +316,27 @@ table, th, td {
 </section>
 <section class="bluebackground">
 
+  <script>
+    function toggle(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("faq-hide") == -1) {
+        x.className += " faq-hide";
+      } else {
+        x.className = x.className.replace(" faq-hide", "");
+      }
+    }
+  </script>
+
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Frequently Asked Questions</h2>
-    <p>1. What is the “official” date of Zowe V2 LTS?</p>
-    <p>&nbsp;&nbsp;&nbsp;a. The official date is TBD, the target is Feb 28, 2022; look for the official announcement at
+    <button onclick="toggle('question-1')" class="w3-button w3-block w3-left-align">
+    1. What is the “official” date of Zowe V2 LTS?</button>
+    <div id="question-1" class="w3-container w3-hide">
+      <p>&nbsp;&nbsp;&nbsp;a. The official date is TBD, the target is Feb 28, 2022; look for the official announcement at
       Zowe.orglanding page announcement banner</p>
+    </div>
+    <p>1. What is the “official” date of Zowe V2 LTS?</p>
+    <p></p>
     <p>2. Where can I find the current (V1) and new (V2) LTS conformance criteria?</p>
     <p>&nbsp;&nbsp;&nbsp;a.The Zowe Squads have prepared XLS spreadsheets with conformance criteria for all Zowe
       extensionsincluding: CLI, APIs, App Framework, and Explorerfor VS Code. The spreadsheets clearly show the prior /
