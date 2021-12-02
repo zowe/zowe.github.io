@@ -14,8 +14,8 @@ table, th, td {
   display: none;
 }
 
-.bluebackground h5 {
-  font-color: blue;
+.bluebackground h5, .bluebackground .card-text {
+  color: ##145391;
 }
 </style>
 
@@ -430,7 +430,5 @@ table, th, td {
       and click #zowe-onboarding and request the recording.</p>
     </div>
   </div>
-
-  
 
 </section>
