@@ -298,7 +298,7 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
 <button type="button" class="btn btn-outline-light" href="{{ site.lts_url }}">Learn more</button>
 </section>
 
-<section class="bluebackground" id="compatibility-extensions">
+<section class="whitebackground" id="compatibility-extensions">
 <h1>Zowe Extensions Vnext Compatibility, Conformance, and Availability Statement</h1>
 <b>General</b><br/>
 <i>Backward Compatibility</i><br/>
@@ -322,7 +322,7 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
 
 </section>
 
-<section class="whitebackground">
+<section class="bluebackground">
 <h1 id="builds">Nightly Builds</h1>
 <p>Visit the Zowe Artifactory <a class="white" href="{{ site.nightly_build_url }}">nightly build folder</a> to find the most recent build.</p>
 <p>Please note:
