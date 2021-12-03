@@ -261,28 +261,29 @@ p .card-black {
     <div class="card-body">
       <div class="d-flex align-items-baseline">
         <h5 class="text-left">CLI</h5>
-        <div class="ritz grid-container" dir="ltr">
+      </div>
+      <div class="ritz grid-container" dir="ltr" style="width: 100%;overflow: scroll;height: 400px;" >
           <table class="waffle" cellspacing="0" cellpadding="0">
               <tbody>
                   <tr style="height: 19px">
                       <td class="s0 softmerge">
-                          <div class="softmerge-inner" style="width:67px;left:-36px">Item Number</div>
+                          <div class="softmerge-inner" style="width:67px;left:-36px">Item</div>
                       </td>
                       <td class="s1 softmerge">
-                          <div class="softmerge-inner" style="width:24px;left:-3px">Version</div>
+                          <div class="softmerge-inner" style="width:24px;left:-3px">V</div>
                       </td>
                       <td class="s1 softmerge">
-                          <div class="softmerge-inner" style="width:24px;left:-3px">Required</div>
+                          <div class="softmerge-inner" style="width:24px;left:-3px">Req</div>
                       </td>
                       <td class="s1 softmerge">
                           <div class="softmerge-inner" style="width:59px;left:-3px">Best Practice</div>
                       </td>
                       <td class="s1"></td>
                       <td class="s2 softmerge">
-                          <div class="softmerge-inner" style="width:45px;left:-14px">Version</div>
+                          <div class="softmerge-inner" style="width:45px;left:-14px">V</div>
                       </td>
                       <td class="s3 softmerge">
-                          <div class="softmerge-inner" style="width:34px;left:-3px">Required<br></div>
+                          <div class="softmerge-inner" style="width:34px;left:-3px">Req<br></div>
                       </td>
                       <td class="s4 softmerge">
                           <div class="softmerge-inner" style="width:23px;left:-1px">Best Practice</div>
@@ -894,9 +895,8 @@ p .card-black {
                         Zowe Docs - https://github.com/zowe/zowe-cli-web-help-generator</a></td>
                 <td class="s25"></td>
             </tr>
-        </tbody>
-    </table>
-</div>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
