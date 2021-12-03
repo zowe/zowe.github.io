@@ -765,28 +765,8 @@
 </style>
 <div class="ritz grid-container" dir="ltr">
     <table class="waffle" cellspacing="0" cellpadding="0">
-        <thead>
-            <tr>
-                <th class="row-header"></th>
-                <th id="1286238345C0" style="width:35px;" class="column-headers-background">A</th>
-                <th id="1286238345C1" style="width:25px;" class="column-headers-background">B</th>
-                <th id="1286238345C2" style="width:25px;" class="column-headers-background">C</th>
-                <th id="1286238345C3" style="width:25px;" class="column-headers-background">D</th>
-                <th id="1286238345C4" style="width:35px;" class="column-headers-background">E</th>
-                <th id="1286238345C5" style="width:35px;" class="column-headers-background">F</th>
-                <th id="1286238345C6" style="width:35px;" class="column-headers-background">G</th>
-                <th id="1286238345C7" style="width:26px;" class="column-headers-background">H</th>
-                <th id="1286238345C8" style="width:38px;" class="column-headers-background">I</th>
-                <th class="freezebar-cell frozen-column-cell freezebar-vertical-handle"></th>
-                <th id="1286238345C9" style="width:340px;" class="column-headers-background">J</th>
-                <th id="1286238345C10" style="width:156px;" class="column-headers-background">K</th>
-            </tr>
-        </thead>
         <tbody>
             <tr style="height: 19px">
-                <th id="1286238345R0" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">1</div>
-                </th>
                 <td class="s0 softmerge">
                     <div class="softmerge-inner" style="width:67px;left:-36px">Item Number</div>
                 </td>
@@ -817,7 +797,6 @@
                 <td class="s6">Notes</td>
             </tr>
             <tr>
-                <th style="height:3px;" class="freezebar-cell freezebar-horizontal-handle"></th>
                 <td class="freezebar-cell"></td>
                 <td class="freezebar-cell"></td>
                 <td class="freezebar-cell"></td>
@@ -832,9 +811,6 @@
                 <td class="freezebar-cell"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R1" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">2</div>
-                </th>
                 <td class="s7"></td>
                 <td class="s8"></td>
                 <td class="s8"></td>
@@ -849,9 +825,6 @@
                 <td class="s14"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R2" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">3</div>
-                </th>
                 <td class="s15">1</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -866,9 +839,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R3" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">4</div>
-                </th>
                 <td class="s15">2</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -883,9 +853,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R4" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">5</div>
-                </th>
                 <td class="s15">3</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -901,9 +868,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R5" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">6</div>
-                </th>
                 <td class="s15">4</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -923,9 +887,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R6" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">7</div>
-                </th>
                 <td class="s15">5</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -942,9 +903,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R7" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">8</div>
-                </th>
                 <td class="s15">6</td>
                 <td class="s16">v2</td>
                 <td class="s16"></td>
@@ -962,9 +920,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R8" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">9</div>
-                </th>
                 <td class="s15" dir="ltr">7</td>
                 <td class="s16" dir="ltr">v2</td>
                 <td class="s16"></td>
@@ -980,9 +935,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R9" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">10</div>
-                </th>
                 <td class="s24"></td>
                 <td class="s27"></td>
                 <td class="s27"></td>
@@ -997,9 +949,6 @@
                 <td class="s14"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R10" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">11</div>
-                </th>
                 <td class="s15" dir="ltr">8</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -1014,9 +963,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R11" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">12</div>
-                </th>
                 <td class="s15" dir="ltr">9</td>
                 <td class="s16"> </td>
                 <td class="s16"></td>
@@ -1037,9 +983,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R12" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">13</div>
-                </th>
                 <td class="s15" dir="ltr">10</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -1059,9 +1002,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R13" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">14</div>
-                </th>
                 <td class="s15" dir="ltr">11</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -1076,9 +1016,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R14" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">15</div>
-                </th>
                 <td class="s15" dir="ltr">12</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -1110,9 +1047,6 @@
                         access features planned for the next major release</span></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R15" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">16</div>
-                </th>
                 <td class="s24"></td>
                 <td class="s27"></td>
                 <td class="s27"></td>
@@ -1127,9 +1061,6 @@
                 <td class="s14"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R16" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">17</div>
-                </th>
                 <td class="s15" dir="ltr">13</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -1145,9 +1076,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R17" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">18</div>
-                </th>
                 <td class="s15" dir="ltr">14</td>
                 <td class="s16">v2</td>
                 <td class="s16"></td>
@@ -1164,9 +1092,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R18" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">19</div>
-                </th>
                 <td class="s15" dir="ltr">15</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -1182,9 +1107,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R19" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">20</div>
-                </th>
                 <td class="s24"></td>
                 <td class="s27"></td>
                 <td class="s27"></td>
@@ -1199,9 +1121,6 @@
                 <td class="s14"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R20" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">21</div>
-                </th>
                 <td class="s15" dir="ltr">16</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -1217,9 +1136,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R21" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">22</div>
-                </th>
                 <td class="s15" dir="ltr">17</td>
                 <td class="s16">v2</td>
                 <td class="s16"></td>
@@ -1235,9 +1151,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R22" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">23</div>
-                </th>
                 <td class="s15" dir="ltr">18</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -1256,9 +1169,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R23" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">24</div>
-                </th>
                 <td class="s15" dir="ltr">19</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -1275,9 +1185,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R24" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">25</div>
-                </th>
                 <td class="s15" dir="ltr">20</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -1294,9 +1201,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R25" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">26</div>
-                </th>
                 <td class="s15" dir="ltr">21</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -1313,9 +1217,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R26" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">27</div>
-                </th>
                 <td class="s15" dir="ltr">22</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -1332,9 +1233,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R27" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">28</div>
-                </th>
                 <td class="s15" dir="ltr">23</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -1354,9 +1252,6 @@
                 <td class="s40"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R28" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">29</div>
-                </th>
                 <td class="s15" dir="ltr">24</td>
                 <td class="s16">v2</td>
                 <td class="s16"></td>
@@ -1375,9 +1270,6 @@
                 <td class="s41"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R29" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">30</div>
-                </th>
                 <td class="s15" dir="ltr">25</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -1392,9 +1284,6 @@
                 <td class="s20">Should work if other conformance criteria are met.</td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R30" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">31</div>
-                </th>
                 <td class="s15" dir="ltr">26</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -1409,9 +1298,6 @@
                 <td class="s42"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R31" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">32</div>
-                </th>
                 <td class="s15" dir="ltr">27</td>
                 <td class="s16">v2</td>
                 <td class="s16"></td>
@@ -1431,9 +1317,6 @@
                         blog</a></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R32" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">33</div>
-                </th>
                 <td class="s15" dir="ltr">28</td>
                 <td class="s16">v2</td>
                 <td class="s16">x</td>
@@ -1455,9 +1338,6 @@
                 <td class="s38"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R33" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">34</div>
-                </th>
                 <td class="s44"></td>
                 <td class="s27"></td>
                 <td class="s27"></td>
@@ -1472,9 +1352,6 @@
                 <td class="s14"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R34" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">35</div>
-                </th>
                 <td class="s45" dir="ltr">29</td>
                 <td class="s46">v2</td>
                 <td class="s46">x</td>
@@ -1490,9 +1367,6 @@
                 <td class="s21"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R35" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">36</div>
-                </th>
                 <td class="s44"></td>
                 <td class="s27"></td>
                 <td class="s27"></td>
@@ -1507,9 +1381,6 @@
                 <td class="s14"></td>
             </tr>
             <tr style="height: 19px">
-                <th id="1286238345R36" style="height: 19px;" class="row-headers-background">
-                    <div class="row-header-wrapper" style="line-height: 19px">37</div>
-                </th>
                 <td class="s45" dir="ltr">30</td>
                 <td class="s45">v2</td>
                 <td class="s45"></td>
