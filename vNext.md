@@ -73,11 +73,15 @@ p .card-black {
       <div class="d-flex align-items-baseline">
         <h5 class="text-left">API Mediation Layer</h5>
       </div>
+      <h5>Breaking changes</h5>
       <ul>
-        <li>Remove support for the old path pattern</li>
-        <li>Move to the Material UI from Mineral UI</li>
-        <li>New change password as a part of the API Catalog</li>
-        <li>Remove the support for different authentication schemas for different instances of service</li>
+        <li>Remove support for the old path pattern (<a href="https://github.com/zowe/api-layer/issues/1770">#1770</a>)</li>
+        <li>Remove the support for different authentication schemas for different instances of service (<a href="https://github.com/zowe/api-layer/issues/1051">#1051</a>)</li>
+      </ul>
+      <h5>Important updates</h5>
+      <ul>
+        <li>Move to the Material UI from Mineral UI (<a href="https://github.com/zowe/api-layer/issues/1169">#1169</a>)</li>
+        <li>New change password as a part of the API Catalog (<a href="https://github.com/zowe/api-layer/issues/1531">#1531</a>)</li>
       </ul>
     </div>
   </div>
@@ -172,14 +176,9 @@ p .card-black {
         <h5 class="text-left">Explorers</h5>
       </div>
       <ul>
-        <li>Describes the change & what will break</li>
-        <li>Changes to settings keys - automated migration of settings when user opens Zowe Explorer v2: PR 1450
-          (includes documentation) - Merged</li>
-        <li>(optional) Tips on how to make the transition process easier</li>
-        <li>Describes the change & what will break</li>
-        <li>See doc items marked with "Early Access" here:
-          https://github.com/zowe/vscode-extension-for-zowe/tree/next/docs</li>
-        <li>(optional) Tips on how to make the transition process easier</li>
+        <li>Changes to settings keys - automated migration of settings when user opens Zowe Explorer v2: (includes documentation) (<a href="https://github.com/zowe/vscode-extension-for-zowe/pull/1450">#PR 1450</a>)</li>
+        <li><a href="https://github.com/zowe/vscode-extension-for-zowe/blob/next/docs/Early%20Access%20-%20Using%20Global%20Profile%20Configuration.md">Using Global Profiel Configuration</a></li>
+        <li><a href="https://github.com/zowe/vscode-extension-for-zowe/blob/next/docs/Early%20Access%20-%20Changes%20Affecting%20Extenders.md">Changes Affecting Extenders</a></li>
       </ul>
     </div>
   </div>
@@ -190,10 +189,9 @@ p .card-black {
         <h5 class="text-left">Systems</h5>
       </div>
       <ul>
-        <li>Zowe v2: Review usage of z/OS System resources</li>
-        <li>Start building 'v2' Zowe</li>
-        <li>Spike: propose v2 changes and discuss with community</li>
         <li>Define new FMID AZWE002 for Zowe v2</li>
+        <li>Start building 'v2' Zowe</li>
+        <li>Zowe v2: Review usage of z/OS System resources</li>
       </ul>
     </div>
   </div>
@@ -204,19 +202,18 @@ p .card-black {
         <h5 class="text-left">Web UI</h5>
       </div>
       <ul>
-        <li>zpdt tune option such as to reduce process/thread count (like not using "cluster mode")
+        <li>Zpdt tune option such as to reduce process/thread count (like not using "cluster mode")
           desktop library removal: bootstrap... bootstrap infects root, making it challenging to use other style
           libraries. Can have apps bring their own bootstrap as a solution, but is breaking as a result.</li>
-        <li>update all var names to be ZWE_ and ZWED and ZWES consistently</li>
-        <li>rename or get rid of zowe_explorer_host</li>
-        <li>expose more zss configuration as parameters in instance.yaml</li>
-        <li>Consolidation of web explorer servers (node code rolled into app-server) to reduce process count...
-          breaking due to change of URLs (bookmarks break) #97</li>
+        <li>Update all var names to be ZWE_ and ZWED and ZWES consistently</li>
+        <li>Rename or get rid of zowe_explorer_host</li>
+        <li>Expose more zss configuration as parameters in instance.yaml</li>
+        <li>Consolidation of web explorer servers (node code rolled into app-server) to reduce process count... breaking due to change of URLs (bookmarks break) #97</li>
         <li>Making the explorer java servers optional, by making the web explorers utilize zosmf instead</li>
-        <li>desktop library upgrades (angular 6->10?, corejs 2->3)... can break plugins, but could choose minor
-          upgrades that are less likely to do so #704</li>
-        <li>eliminate loopback routing in favor of internal routing #706 ~75% done</li>
-        <li>zss 64 bit #703 ~90% done</li>
+        <li>Desktop library upgrades (angular 6->10?, corejs 2->3)... can break plugins, but could choose minor
+          upgrades that are less likely to do so (<a href="https://github.com/zowe/zlux/issues/704">#704</a>)</li>
+        <li>Eliminate loopback routing in favor of internal routing (<a href="https://github.com/zowe/zlux/issues/706">#706</a>)</li>
+        <li>Zss 64 bit (<a href="https://github.com/zowe/zlux/issues/703">#703</a>)</li>
       </ul>
     </div>
   </div>
@@ -938,46 +935,58 @@ p .card-black {
     <td><b>Link to the recording</b></td>
     </tr>
     <tr>
-    <td>12/8</td>
-    <td>Kickoff</td>
-    <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-    <td></td>
+      <td>12/8</td>
+      <td>Kickoff</td>
+      <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
+      <td></td>
     </tr>
     <tr>
-    <td>12/15</td>
-    <td>CLI</td>
-    <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-    <td></td>
+      <td>01/05</td>
+      <td>CLI</td>
+      <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
+      <td></td>
     </tr>
     <tr>
-    <td>12/29</td>
-    <td>API Mediation Layer</td>
-    <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-    <td></td>
+      <td>01/12</td>
+      <td>API Mediation Layer</td>
+      <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
+      <td></td>
     </tr>    
     <tr>
-    <td>1/12</td>
-    <td>Explorers</td>
-    <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-    <td></td>
+      <td>01/19</td>
+      <td>Explorers</td>
+      <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
+      <td></td>
     </tr>
     <tr>
-    <td>1/26</td>
-    <td>Web UI (App Framework)</td>
-    <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-    <td></td>
+      <td>01/26</td>
+      <td>Web UI (App Framework)</td>
+      <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
+      <td></td>
     </tr>
     <tr>
-    <td>2/9</td>
-    <td>Systems / Install</td>
-    <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-    <td></td>
+      <td>02/02</td>
+      <td>Systems / Install</td>
+      <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
+      <td></td>
     </tr>
     <tr>
-    <td>2/23</td>
-    <td>General Wrap-up</td>
-    <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-    <td></td>
+      <td>02/09</td>
+      <td>*Optional:* General Information</td>
+      <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>02/16</td>
+      <td>*Optional:* General Information</td>
+      <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>02/23</td>
+      <td>General Wrap-up</td>
+      <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
+      <td></td>
     </tr>
     </table>
   </div>
@@ -1100,8 +1109,8 @@ p .card-black {
     <div id="question-12" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;a.You have several options:</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. Attend one (or more) of the (7) bi-weekly Zowe V2 OFFICE HOURS meetings
-      offered on Wednesdays at 12pm ET. Kickoff is scheduled for 12/8. Following (6) meetings are scheduled for: 12/15,
-      12/29, 1/12, 1/26, 2/9, 2/23</p>
+      offered on Wednesdays at 12pm ET. Kickoff is scheduled for 12/8. Following (6) meetings are scheduled for: 1/05,
+      1/12, 1/19, 1/26, 2/2, 2/23 There are 2 more optional meetings plannes for 2/9, 2/16</p> 
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii. Interact with a Zowe Community Member via SLACK. Click on the COMMUNITY tab
       at Zowe.org, navigate to the SLACK box and click #zowe-onboarding</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii. Join a Zowe Squad call. Click on the COMMUNITYtab at zowe.org, navigate
