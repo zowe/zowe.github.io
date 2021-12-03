@@ -262,6 +262,7 @@ p .card-black {
       <div class="d-flex align-items-baseline">
         <h5 class="text-left">CLI</h5>
         <p class="card-black">The changes to the CLI Conformance Criteria are available: <a href="https://ibm.box.com/s/fwlub33qln51r276c1qkijdcq7pgql0i">here</a></p>
+        <a href="cli-conformance">CLI Conformance</a>
       </div>
     </div>
   </div>
