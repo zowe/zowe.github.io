@@ -2,9 +2,7 @@
 # Any kind of links should NOT be in ""
 - announcement: "For Zowe CLI users and Zowe developers: NPM had a dependency security vulnerability Nov 4th to Nov 5th. For more information about the vulnerability and the resolution, click"
   link: https://github.com/zowe/community/discussions/1362#discussion-3675014
-- announcement: "Interested in Zowe V2? Watch the Oct 20th Quarterly Update Webinar replay"
-  link: https://www.youtube.com/playlist?list=PL8REpLGaY9QHtnElqPosteBFpITStkAxo 
-- announcement: "Zowe Conformant Support Provider Program is LIVE"
-  link: https://www.openmainframeproject.org/projects/zowe/conformant-support-provider
-  announcement: "IT'S TIME TO SHARE YOUR FEEDBACK! Complete the 2021OCT Zowe semi-annual Survey today"
-  link: https://www.surveymonkey.com/r/2021Oct-Zowe
+- announcement: "Get ready for Zowe v2. Kickoff community webinar with news for vendors and customers. Dec 8th 12:00pm EST"
+  link: https://lists.openmainframeproject.org/g/zowe-dev/viewevent?eventid=1348885&calstart=2021-12-08
+- announcement: "Zowe Conformance Program launched for Visual Studio Code Zowe Explorer extensions. 13 vendor extensions already available!"
+  link: https://www.zowe.org/extend.html
