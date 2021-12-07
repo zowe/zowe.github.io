@@ -71,115 +71,136 @@ p .card-black {
   <div class="card mb-3">
     <div class="card-body">
       <div class="d-flex align-items-baseline">
-        <h5 class="text-left">API Mediation Layer</h5>
+        <h5 class="text-left"><a href="/#apiml-intro">API Mediation Layer</a></h5>
       </div>
-      <h5>Breaking changes</h5>
-      <ul>
-        <li>Remove support for the old path pattern (<a href="https://github.com/zowe/api-layer/issues/1770">#1770</a>)</li>
-        <li>Remove the support for different authentication schemas for different instances of service (<a href="https://github.com/zowe/api-layer/issues/1051">#1051</a>)</li>
-      </ul>
-      <h5>Important updates</h5>
-      <ul>
-        <li>Move to the Material UI from Mineral UI (<a href="https://github.com/zowe/api-layer/issues/1169">#1169</a>)</li>
-        <li>New change password as a part of the API Catalog (<a href="https://github.com/zowe/api-layer/issues/1531">#1531</a>)</li>
-      </ul>
+      <div class="row">
+        <div class="col-md-7 col-sm order-last order-sm-first">
+          <h5>Breaking changes</h5>
+          <ul>
+            <li>Remove support for the old path pattern (<a href="https://github.com/zowe/api-layer/issues/1770">#1770</a>)</li>
+            <li>Remove the support for different authentication schemas for different instances of service (<a href="https://github.com/zowe/api-layer/issues/1051">#1051</a>)</li>
+          </ul>
+          <h5>Important updates</h5>
+          <ul>
+            <li>Move to the Material UI from Mineral UI (<a href="https://github.com/zowe/api-layer/issues/1169">#1169</a>)</li>
+            <li>New change password as a part of the API Catalog (<a href="https://github.com/zowe/api-layer/issues/1531">#1531</a>)</li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm order-first order-sm-last">
+          <img class="image-zowe-use" src="assets/img/zowe-apiml-image.png">
+        </div>
+      </div>
     </div>
   </div>
 
   <div class="card mb-3">
     <div class="card-body">
       <div class="d-flex align-items-baseline">
-        <h5 class="text-left">CLI</h5>
+        <h5 class="text-left"><a href="/#cli-intro">CLI</h5>
       </div>
-      <p class="card-text">Zowe CLI - End User Breaking Changes</p>
-      <p>
-      <ul>
-        <li>`zowe config` no longer manages app settings (Imperative & CLI)</li>
-        <li>`fail-on-error` default changed to true for `zowe plugins validate` (Imperative & CLI)</li>
-        <li>Default Imperative and CLI log level changed from DEBUG to WARN (Imperative & CLI) - just potentially
-          changes troubleshooting steps for providing info to support.</li>
-      </ul>
-      </p>
-      <p class="card-text">Breaking Changes that could prevent a V1 plug-in (or SDK) from working in V2</p>
-      <p>
-      <ul>
-        <li>CLI package should be removed as a plug-in peer dep (Imperative)</li>
-        <li>AbstractRestClient.mDecode defaults to true - so any plugin with custom RestClient implementation that
-          adds gzip decompression may break</li>
-        <li>Any command with --dcd will not behave the way you expect it to (undocumented global option for Daemon
-          Mode Current Directory - to be mentioned in updated conformance criteria)</li>
-        <li>PluginManagementFacility.requirePluginModuleCallback - return value changed. <br />
-          Context:<br />
-          Application (and Plugin) developers requiring a module from a plugin’s relative path using the
-          requirePluginModuleCallback function no longer need to provide the plugin name in a separate variable
-          (this.pluginNmForUseInCallback = pluginName)<br />
-          before binding the class (this.requirePluginModuleCallback.bind(this)).<br />
-          Instead they can call this.requirePluginModuleCallback(pluginName)</li>          
-      </ul>
-      </p>
-      <p>Common usage: ConfigurationLoader.load</p>
-      <p><b>Before:</b><br />
-        this.pluginNmForUseInCallback = pluginName<br />
-        ConfigurationLoader.load(null,pkgJsonData,this.requirePluginModuleCallback.bind(this))<br /></p>
-      <p><b>After:</b> pluginConfig =
-        ConfigurationLoader.load(null,pkgJsonData,this.requirePluginModuleCallback(pluginName))</p>
-      <p class="card-text">All changes below were marked for deprecation in the zowe-v1-lts release. These changes are
-        also less likely to impact plug-ins.</p>
-      <p>
-      <ul>
-        <li>AbstractRestClient.performRest -> AbstractRestClient.request </li>
-        <li>AbstractSession.HTTP_PROTOCOL -> SessConstants.HTTP_Protocol </li>
-        <li>AbstractSession.HTTPS_PROTOCOL -> SessConstants.HTTPS_Protocol </li>
-        <li>AbstractSession.TYPE_NONE -> SessConstants.AUTH_TYPE_NONE </li>
-        <li>AbstractSession.TYPE_BASIC -> SessConstants.AUTH_TYPE_BASIC </li>
-        <li>AbstractSession.TYPE_BEARER -> SessConstants.AUTH_TYPE_BEARER</li>
-        <li>AbstractSession.TYPE_TOKEN -> SessConstants.AUTH_TYPE_TOKEN </li>
-        <li>ICliLoadProfile.ICliILoadProfile -> ICliLoadProfile.ICliLoadProfile </li>
-        <li>IImperativeErrorParms.suppressReport -> removed </li>
-        <li>IImperativeConfig.pluginBaseCliVersion -> removed </li>
-        <li>CliUtils.promptForInput -> CliUtils.readPrompt </li>
-        <li>CliUtils.promptWithTimeout -> CliUtils.readPrompt </li>
-        <li>(zosmf) IZosfmMessages -> IZosmfMessages  </li>
-        <li>(workflows) listWorkflows -> getWorkflows </li>
-        <li>(workflows) getResourcesQuery -> getResourceQuery </li>
-        <li>(workflows) archiveWorfklowByKey -> archiveWorkflowByKey </li>
-        <li>(uss) createBasicSshSession -> createSshSessCfgFromArgs </li>
-        <li>(uss) createBasicSshSessionFromArguments -> createSshSessCfgFromArgs </li>
-        <li>(zosmf) createBasicZosmfSession -> createSessCfgFromArgs </li>
-        <li>(zosmf) createBasicZosmfSessionFromArguments -> createSessCfgFromArgs </li>
-        <li>(files) bufferToUSSFile -> bufferToUssFile </li>
-        <li>(files) streamToUSSFile -> streamToUssFile</li>
-        <li>(files) fileToUSSFile -> fileToUssFile </li>
-      </ul>
-      </p>
-      <p class="card-text">Zowe CLI & Imperative - Plug-in Developer Breaking Changes (V2-V2 - these changes only
-        impacted early adopters of `@next` as these are breaking changes made during the technical preview validation
-        phase - thanks to the community for their feedback)</p>
-      <p>
-      <ul>
-        <li>`tokenType` and `tokenValue` were combined into `authToken` and we later reverted this change (Imperative
-          & CLI) </li>
-        <li>Options in “zowe config” group renamed: `--user` -> `--user-config` and `--global` -> `--global-config`
-        </li>
-        <li>Zowe.schema.json format changed a few times (version 2, version 3)
-          ConfigSchemas.loadProfileSchemas -> ConfigSchemas.loadSchema
-          Config.set no longer coerces string values to other types unless parseString = true (potential SDK impact -
-          not CLI Plug-in impact)</li>
-      </ul>
-      </p>
+      <div class="row">
+        <div class="col-md-7 col-sm order-last order-sm-first">
+          <p class="card-text">Zowe CLI - End User Breaking Changes</p>
+          <p>
+          <ul>
+            <li>`zowe config` no longer manages app settings (Imperative & CLI)</li>
+            <li>`fail-on-error` default changed to true for `zowe plugins validate` (Imperative & CLI)</li>
+            <li>Default Imperative and CLI log level changed from DEBUG to WARN (Imperative & CLI) - just potentially
+              changes troubleshooting steps for providing info to support.</li>
+          </ul>
+          </p>
+          <p class="card-text">Breaking Changes that could prevent a V1 plug-in (or SDK) from working in V2</p>
+          <p>
+          <ul>
+            <li>CLI package should be removed as a plug-in peer dep (Imperative)</li>
+            <li>AbstractRestClient.mDecode defaults to true - so any plugin with custom RestClient implementation that
+              adds gzip decompression may break</li>
+            <li>Any command with --dcd will not behave the way you expect it to (undocumented global option for Daemon
+              Mode Current Directory - to be mentioned in updated conformance criteria)</li>
+            <li>PluginManagementFacility.requirePluginModuleCallback - return value changed. <br />
+              Context:<br />
+              Application (and Plugin) developers requiring a module from a plugin’s relative path using the
+              requirePluginModuleCallback function no longer need to provide the plugin name in a separate variable
+              (this.pluginNmForUseInCallback = pluginName)<br />
+              before binding the class (this.requirePluginModuleCallback.bind(this)).<br />
+              Instead they can call this.requirePluginModuleCallback(pluginName)</li>          
+          </ul>
+          </p>
+          <p>Common usage: ConfigurationLoader.load</p>
+          <p><b>Before:</b><br />
+            this.pluginNmForUseInCallback = pluginName<br />
+            ConfigurationLoader.load(null,pkgJsonData,this.requirePluginModuleCallback.bind(this))<br /></p>
+          <p><b>After:</b> pluginConfig =
+            ConfigurationLoader.load(null,pkgJsonData,this.requirePluginModuleCallback(pluginName))</p>
+          <p class="card-text">All changes below were marked for deprecation in the zowe-v1-lts release. These changes are
+            also less likely to impact plug-ins.</p>
+          <p>
+          <ul>
+            <li>AbstractRestClient.performRest -> AbstractRestClient.request </li>
+            <li>AbstractSession.HTTP_PROTOCOL -> SessConstants.HTTP_Protocol </li>
+            <li>AbstractSession.HTTPS_PROTOCOL -> SessConstants.HTTPS_Protocol </li>
+            <li>AbstractSession.TYPE_NONE -> SessConstants.AUTH_TYPE_NONE </li>
+            <li>AbstractSession.TYPE_BASIC -> SessConstants.AUTH_TYPE_BASIC </li>
+            <li>AbstractSession.TYPE_BEARER -> SessConstants.AUTH_TYPE_BEARER</li>
+            <li>AbstractSession.TYPE_TOKEN -> SessConstants.AUTH_TYPE_TOKEN </li>
+            <li>ICliLoadProfile.ICliILoadProfile -> ICliLoadProfile.ICliLoadProfile </li>
+            <li>IImperativeErrorParms.suppressReport -> removed </li>
+            <li>IImperativeConfig.pluginBaseCliVersion -> removed </li>
+            <li>CliUtils.promptForInput -> CliUtils.readPrompt </li>
+            <li>CliUtils.promptWithTimeout -> CliUtils.readPrompt </li>
+            <li>(zosmf) IZosfmMessages -> IZosmfMessages  </li>
+            <li>(workflows) listWorkflows -> getWorkflows </li>
+            <li>(workflows) getResourcesQuery -> getResourceQuery </li>
+            <li>(workflows) archiveWorfklowByKey -> archiveWorkflowByKey </li>
+            <li>(uss) createBasicSshSession -> createSshSessCfgFromArgs </li>
+            <li>(uss) createBasicSshSessionFromArguments -> createSshSessCfgFromArgs </li>
+            <li>(zosmf) createBasicZosmfSession -> createSessCfgFromArgs </li>
+            <li>(zosmf) createBasicZosmfSessionFromArguments -> createSessCfgFromArgs </li>
+            <li>(files) bufferToUSSFile -> bufferToUssFile </li>
+            <li>(files) streamToUSSFile -> streamToUssFile</li>
+            <li>(files) fileToUSSFile -> fileToUssFile </li>
+          </ul>
+          </p>
+          <p class="card-text">Zowe CLI & Imperative - Plug-in Developer Breaking Changes (V2-V2 - these changes only
+            impacted early adopters of `@next` as these are breaking changes made during the technical preview validation
+            phase - thanks to the community for their feedback)</p>
+          <p>
+          <ul>
+            <li>`tokenType` and `tokenValue` were combined into `authToken` and we later reverted this change (Imperative
+              & CLI) </li>
+            <li>Options in “zowe config” group renamed: `--user` -> `--user-config` and `--global` -> `--global-config`
+            </li>
+            <li>Zowe.schema.json format changed a few times (version 2, version 3)
+              ConfigSchemas.loadProfileSchemas -> ConfigSchemas.loadSchema
+              Config.set no longer coerces string values to other types unless parseString = true (potential SDK impact -
+              not CLI Plug-in impact)</li>
+          </ul>
+          </p>
+        </div>
+        <div class="col-md-3 col-sm order-first order-sm-last">
+          <img class="image-zowe-use" src="assets/img/zowe-cli.png">
+        </div>
+      </div>
     </div>
   </div>
 
   <div class="card mb-3">
     <div class="card-body">
       <div class="d-flex align-items-baseline">
-        <h5 class="text-left">Explorers</h5>
+        <h5 class="text-left"><a href="/#zowe-explorer-intro">Explorers</a></h5>
       </div>
-      <ul>
-        <li>Changes to settings keys - automated migration of settings when user opens Zowe Explorer v2: (includes documentation) (<a href="https://github.com/zowe/vscode-extension-for-zowe/pull/1450">#PR 1450</a>)</li>
-        <li><a href="https://github.com/zowe/vscode-extension-for-zowe/blob/next/docs/Early%20Access%20-%20Using%20Global%20Profile%20Configuration.md">Using Global Profiel Configuration</a></li>
-        <li><a href="https://github.com/zowe/vscode-extension-for-zowe/blob/next/docs/Early%20Access%20-%20Changes%20Affecting%20Extenders.md">Changes Affecting Extenders</a></li>
-      </ul>
+      <div class="row">
+        <div class="col-md-7 col-sm order-last order-sm-first">
+          <ul>
+            <li>Changes to settings keys - automated migration of settings when user opens Zowe Explorer v2: (includes documentation) (<a href="https://github.com/zowe/vscode-extension-for-zowe/pull/1450">#PR 1450</a>)</li>
+            <li><a href="https://github.com/zowe/vscode-extension-for-zowe/blob/next/docs/Early%20Access%20-%20Using%20Global%20Profile%20Configuration.md">Using Global Profiel Configuration</a></li>
+            <li><a href="https://github.com/zowe/vscode-extension-for-zowe/blob/next/docs/Early%20Access%20-%20Changes%20Affecting%20Extenders.md">Changes Affecting Extenders</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm order-first order-sm-last">
+          <img class="image-zowe-use" src="assets/img/zowe-explorer-image.png">
+        </div>
+      </div>
     </div>
   </div>
 
@@ -199,24 +220,28 @@ p .card-black {
   <div class="card mb-3">
     <div class="card-body">
       <div class="d-flex align-items-baseline">
-        <h5 class="text-left">Web UI</h5>
+        <h5 class="text-left"><a href="/#app-framework-intro">Web UI</a></h5>
       </div>
-      <ul>
-        <li>Zpdt tune option such as to reduce process/thread count (like not using "cluster mode")
-          desktop library removal: bootstrap... bootstrap infects root, making it challenging to use other style
-          libraries. Can have apps bring their own bootstrap as a solution, but is breaking as a result.</li>
-        <li>Update all var names to be ZWE_ and ZWED and ZWES consistently</li>
-        <li>Rename or get rid of zowe_explorer_host</li>
-        <li>Expose more zss configuration as parameters in instance.yaml</li>
-        <li>Consolidation of web explorer servers (node code rolled into app-server) to reduce process count... breaking due to change of URLs (bookmarks break) #97</li>
-        <li>Making the explorer java servers optional, by making the web explorers utilize zosmf instead</li>
-        <li>Desktop library upgrades (angular 6->10?, corejs 2->3)... can break plugins, but could choose minor
-          upgrades that are less likely to do so (<a href="https://github.com/zowe/zlux/issues/704">#704</a>)</li>
-        <li>Eliminate loopback routing in favor of internal routing (<a href="https://github.com/zowe/zlux/issues/706">#706</a>)</li>
-        <li>Zss 64 bit (<a href="https://github.com/zowe/zlux/issues/703">#703</a>)</li>
-      </ul>
-      <div class="col-md-5 col-sm order-first order-sm-last">
-        <img class="image-zowe-use" src="assets/img/zowe-desktop-image.png">
+      <div class="row">
+        <div class="col-md-7 col-sm order-last order-sm-first">
+        <ul>
+          <li>Zpdt tune option such as to reduce process/thread count (like not using "cluster mode")
+            desktop library removal: bootstrap... bootstrap infects root, making it challenging to use other style
+            libraries. Can have apps bring their own bootstrap as a solution, but is breaking as a result.</li>
+          <li>Update all var names to be ZWE_ and ZWED and ZWES consistently</li>
+          <li>Rename or get rid of zowe_explorer_host</li>
+          <li>Expose more zss configuration as parameters in instance.yaml</li>
+          <li>Consolidation of web explorer servers (node code rolled into app-server) to reduce process count... breaking due to change of URLs (bookmarks break) #97</li>
+          <li>Making the explorer java servers optional, by making the web explorers utilize zosmf instead</li>
+          <li>Desktop library upgrades (angular 6->10?, corejs 2->3)... can break plugins, but could choose minor
+            upgrades that are less likely to do so (<a href="https://github.com/zowe/zlux/issues/704">#704</a>)</li>
+          <li>Eliminate loopback routing in favor of internal routing (<a href="https://github.com/zowe/zlux/issues/706">#706</a>)</li>
+          <li>Zss 64 bit (<a href="https://github.com/zowe/zlux/issues/703">#703</a>)</li>
+        </ul>
+        </div>
+        <div class="col-md-3 col-sm order-first order-sm-last">
+          <img class="image-zowe-use" src="assets/img/zowe-desktop-image.png">
+        </div>
       </div>
     </div>
   </div>
