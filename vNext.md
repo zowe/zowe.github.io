@@ -215,6 +215,9 @@ p .card-black {
         <li>Eliminate loopback routing in favor of internal routing (<a href="https://github.com/zowe/zlux/issues/706">#706</a>)</li>
         <li>Zss 64 bit (<a href="https://github.com/zowe/zlux/issues/703">#703</a>)</li>
       </ul>
+      <div class="col-md-5 col-sm order-first order-sm-last">
+        <img class="image-zowe-use" src="assets/img/zowe-desktop-image.png">
+      </div>
     </div>
   </div>
 
