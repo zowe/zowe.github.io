@@ -224,7 +224,7 @@ p .card-black {
       </div>
       <div class="row">
         <div class="col-md-7 col-sm order-last order-sm-first">
-          <h6 class="text-left">New features</h6>
+          <h6 class="text-left"><b>New features</b></h6>
           <p>Summary: Major install & configuration simplication due to various improvements. Reduced overhead and increased performance due to reduction in server count, optimised networking, and 64 bit ZSS</p>
           <ul>
             <li>Consolidation of Web Explorer Servers: Explorer USS, MVS, and JES no longer have node servers (3 less servers), due to utilizing app-server for hosting.Consolidation of web explorer servers</li>
@@ -239,7 +239,7 @@ p .card-black {
             <li>ZSS 64 bit: ZSS 64 bit version now exists alongside prior 31-bit version. Better performance and higher memory limit. Now utilizes 64-bit cross-memory to ZIS</li>
             <li>New desktop library versions: Angular 6->12, Corejs 2->3, Typescript 2->4</li>
           </ul>
-          <h6 class="text-left">Breaking Changes</h6>
+          <h6 class="text-left"><b>Breaking Changes</b></h6>
           <p>Some configuration, such as port and IP values, are different by default but can be reconfigured to old values.
           But, some app framework extensions may not work in v2 without enhancements.</p>
           <ul>
