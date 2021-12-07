@@ -262,6 +262,8 @@ p .card-black {
 
   <h2 id="conformance-changes">Changes to the Conformance Criteria (For Extenders) </h2>
 
+  <p>ALl the changes are available here: <a href="https://ibm.box.com/s/4e3vvki81ds0zowrdpqu3ubitn9f51qe">Box Excel Sheet</a></p>
+
   <div class="card mb-3">
     <div class="card-body">
       <div class="d-flex align-items-baseline">
