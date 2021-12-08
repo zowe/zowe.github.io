@@ -55,16 +55,20 @@
             document.getElementById('download_file_message').innerHTML = 'You are downloading zowe-containerization-' +
                 params.get('version') + '.zip';
         } else if (params.has('type') && params.get('type') == "pswi") {
-         // https://zowe.jfrog.io/ui/native/libs-release-local/org/zowe/pswi/1.24.0-TP
+         // https://zowe.jfrog.io/ui/native/libs-release-local/org/zowe/pswi/1.24.0-TP  - change to variable
          // https://github.com/zowe/zowe-install-packaging/blob/master/zowe_pswi_tech_prev.md
             document.getElementById('download_button').href =
-                "https://github.com/zowe/zowe-install-packaging/blob/master/zowe_pswi_tech_prev.md"
+                "https://docs.zowe.org/stable/user-guide/install-zos.html"
             document.getElementById('download_button').onclick = function () {
-                ga && ga('send', 'event', 'download', 'Zowe PSWI ' + params.get('version'), 'zowe-PSWI-1.24.0.pax.Z');
-                window.open("https://zowe.jfrog.io/ui/native/libs-release-local/org/zowe/pswi/1.24.0-TP/zowe-PSWI-1.24.0.pax.Z", 
-                    '_blank');
+                ga && ga('send', 'event', 'download', 'Zowe PSWI ' + params.get('version'), 'zowe-PSWI-' +
+                params.get(
+                        'version') + '.pax.Z');
+                window.open("https://zowe.jfrog.io/ui/native/libs-release-local/org/zowe/pswi/" + params.get('version') +
+                '/zowe-PSWI-' + params.get('version') + '.pax.Z', '_blank');
             }
-            document.getElementById('download_file_message').innerHTML = 'You are downloading Zowe PSWI Technical Preview 1.24.0';
+            document.getElementById('download_file_message').innerHTML = 'You are downloading zowe-PSWI-' +
+                params
+                .get('version') + '.pax.Z';
         } else if (params.has('type') && params.get('type') == "python-sdk") {
             document.getElementById('download_button').href = "https://docs.zowe.org/stable/user-guide/sdks-using.html"
             document.getElementById('download_button').onclick = function () {
