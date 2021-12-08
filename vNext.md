@@ -220,7 +220,7 @@ p .card-black {
   <div class="card mb-3">
     <div class="card-body">
       <div class="d-flex align-items-baseline">
-        <h5 class="text-left"><a href="/#app-framework-intro">Web UI</a></h5>
+        <h5 class="text-left"><a href="/#app-framework-intro">Application Framework</a></h5>
       </div>
       <div class="row">
         <div class="col-md-7 col-sm order-last order-sm-first">
@@ -959,7 +959,7 @@ p .card-black {
   <div class="card mb-3">
     <div class="card-body">
       <div class="d-flex align-items-baseline">
-        <h5 class="text-left">Web UI</h5>
+        <h5 class="text-left">Application Framework</h5>
       </div>
     </div>
   </div>
@@ -1002,7 +1002,7 @@ p .card-black {
     </tr>
     <tr>
       <td>01/26</td>
-      <td>Web UI (App Framework)</td>
+      <td>Application Framework</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
       <td></td>
     </tr>
