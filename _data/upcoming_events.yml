@@ -5,12 +5,16 @@
     \ For users who have installed Zowe v1 and want to hear about v2 improvements.\
     \ This call is community wide. Future v2 updates will be squad specific."
   url: https://zoom.us/j/94312528890
-- event: Zowe Quarterly Update (October 2021 Webinar)
-  schedule: October 20 @ 08:30 AM - 09:30 AM
-  description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
-    \ in what\u2019s happening with Zowe \u2013 we invite you to the next Quarterly\
-    \ Update Webinar on Wednesday, October 20 at 8:30 am PT /11:30 am ET (US and Canada)...."
-  url: https://www.openmainframeproject.org/event/zowe-quarterly-update-october-2021-webinar
+- event: OSS Japan Summit. What Does the Future of Mainframe Development Look Like ?
+  schedule: December 15 @ 15:30 PM - 16:20 PM
+  description: "Meet the women of the Zowe Explorer Squad. In this session,\
+  \ the panelists will share valuable insights on navigating the challenges of\
+  \ modernizing the mainframe developer experience. The session will cover topics\
+  \ such as collaborating in the Zowe Explorer project, building a positive culture\
+  \ across different companies, managing open source commitments with internal\ 
+  \ priorities, overcoming time zone barriers, embracing the team diversity, and\
+  \ feeling confident in making decisions about the future of the project"
+  url: https://ossalsjp21.sched.com/event/pehL/women-explorers-what-does-the-future-of-mainframe-development-look-like-richelle-anne-craw-katelyn-nienaber-jessielaine-punongbayan-broadcom-lauren-li-billie-jean-simmons-ibm?es_id=6b31acc751
 - event: SHARE Virtual
   schedule: August 09 - August 14
   description: The SHARE virtual conference (#SHAREvirtual21) is hosting its summer
@@ -18,6 +22,12 @@
     presentations focused on a variety of topics related to mainframes. Several Open
     Mainframe Project community leaders...
   url: https://www.openmainframeproject.org/event/share-virtual
+- event: Zowe Quarterly Update (October 2021 Webinar)
+  schedule: October 20 @ 08:30 AM - 09:30 AM
+  description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
+    \ in what\u2019s happening with Zowe \u2013 we invite you to the next Quarterly\
+    \ Update Webinar on Wednesday, October 20 at 8:30 am PT /11:30 am ET (US and Canada)...."
+  url: https://www.openmainframeproject.org/event/zowe-quarterly-update-october-2021-webinar
 - event: VM Workshop 2021
   schedule: June 10 - June 12
   description: The annual VM Workshop, which originally was planned for in-person
