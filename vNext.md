@@ -36,7 +36,7 @@ p .card-black {
       </a>
       <a href="#coming-changes" class="card-link">
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
-      Coming changes (For Users)
+      Coming changes to the functionality
       </a>
       <a href="#conformance-changes" class="card-link">
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
@@ -64,7 +64,7 @@ p .card-black {
       href="download.html#compatibility-extensions">here</a></p>
   </div>
 
-  <h2 id="coming-changes">Coming changes (For Users)</h2>
+  <h2 id="coming-changes">Coming changes to the functionality</h2>
   <div class="card mb-3">
     <div class="card-body">
       <div class="d-flex align-items-baseline">
@@ -959,59 +959,69 @@ p .card-black {
     <td><b>Topic</b></td>
     <td><b>Link to the meeting</b></td>
     <td><b>Link to the recording</b></td>
+    <td><b>Links to the materials</b></td>
     </tr>
     <tr>
-      <td>12/08/2021</td>
+      <td>12/08/2021 12PM - 1PM ET</td>
       <td>Kickoff</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td></td>
+      <td><a href="https://zoom.us/rec/share/C73P7DSi8O9Xu5kMNw1qbqO1WMsGEXMKxoKsY4dTYvxcylI3FijadFyAHZepPWfh.pd6FzlhBC7FTjo0p?startTime=1638982278000">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/ke07mfjyn7hsp5xr48h8ts23zyacfwvo">Presentation</a></td>
     </tr>
     <tr>
-      <td>01/05/2022</td>
+      <td>01/05/2022 12PM - 1PM ET</td>
       <td>CLI</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
       <td></td>
+      <td></td>
     </tr>
     <tr>
-      <td>01/12/2022</td>
+      <td>01/12/2022 12PM - 1PM ET</td>
       <td>API Mediation Layer</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
       <td></td>
+      <td></td>
     </tr>    
     <tr>
-      <td>01/19/2022</td>
+      <td>01/19/2022 12PM - 1PM ET</td>
       <td>Explorers</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
       <td></td>
+      <td></td>
     </tr>
     <tr>
-      <td>01/26/2022</td>
+      <td>01/26/2022 12PM - 1PM ET</td>
       <td>Web UI (Zowe Application Framework)</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
       <td></td>
+      <td></td>
     </tr>
     <tr>
-      <td>02/02/2022</td>
+      <td>02/02/2022 12PM - 1PM ET</td>
       <td>Systems / Install</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
       <td></td>
-    </tr>
-    <tr>
-      <td>02/09/2022</td>
-      <td>*Optional:* General Information</td>
-      <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
       <td></td>
     </tr>
     <tr>
-      <td>02/16/2022</td>
+      <td>02/09/2022 12PM - 1PM ET</td>
       <td>*Optional:* General Information</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
       <td></td>
+      <td></td>
     </tr>
     <tr>
-      <td>02/23/2022</td>
+      <td>02/16/2022 12PM - 1PM ET</td>
+      <td>*Optional:* General Information</td>
+      <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>02/23/2022 12PM - 1PM ET</td>
       <td>General Wrap-up</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
+      <td></td>
       <td></td>
     </tr>
     </table>
@@ -1153,6 +1163,28 @@ p .card-black {
     <div id="question-13" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;Yes. Recordings can be provided on request. Click on the COMMUNITY tab at <a href="https://zowe.org">Zowe.org</a>, navigate to the SLACK box
       and click #zowe-onboarding and request the recording.</p>
+    </div>
+    </div>
+    <div>
+    <button onclick="toggle('question-14')" class="w3-button w3-block w3-left-align">
+    14. Will there be a means to migrate (or convert?) existing / old-style profiles to the V2 team config for Zowe CLI? Will it handle profiles that are secured by SCS?</button>
+    <div id="question-14" class="w3-container faq-hide">
+      <p>&nbsp;&nbsp;&nbsp;Yes, we plan to introduce a "zowe config convert-profiles" command, which will be available in the v2 release.</p>
+    </div>
+    </div>
+    <div>
+    <button onclick="toggle('question-15')" class="w3-button w3-block w3-left-align">
+    15. Will (CLI)Daemon mode be integrated seamlessly into v2 and enabled by default?</button>
+    <div id="question-15" class="w3-container faq-hide">
+      <p>&nbsp;&nbsp;&nbsp;This work is still in progress-we are working on a "zowe daemon enable" command to make the daemon installation process as seamless as possible. Daemon mode will be disabled by default, the command must be run to enable it.</p>
+    </div>
+    </div>
+    <div>
+    <button onclick="toggle('question-16')" class="w3-button w3-block w3-left-align">
+    16. The V1 version of Zowe Explorer offers a text input area, where a user can enter some of the data / attributes (host, port, etc.) necessary to create the old-style profiles.  With Team Config what options are available for users to edit the config file?  Is it manual? Is there a UI?</button>
+    <div id="question-16" class="w3-container faq-hide">
+      <p>&nbsp;&nbsp;&nbsp;The recommended approach for editing the config file is to launch it in VS Code from Zowe Explorer and make modifications there. The designated user responsible for creating and maintaining the config (we recommend a team lead or Administrator) will be able to leverage the built-in “intellisense” when editing the file. <i>Note: <b>Team Config fundamentally changes the paradigm on profile creation & management.</b> Prior to Team Config, <b>all users</b> were required to understand, create, test, trouble-shoot, and manage their own profiles. Team Config was designed to scale all of these tasks back, remove the burden from individual users and centralize it. Once the config is distributed most users should not need to make any significant edits.</i></p>
+      <p>&nbsp;&nbsp;&nbsp;Join the discussion on this topic here: <a href="https://github.com/zowe/vscode-extension-for-zowe/discussions/1535">https://github.com/zowe/vscode-extension-for-zowe/discussions/1535</a></p>
     </div>
     </div>
   </div>
