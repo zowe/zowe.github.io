@@ -232,6 +232,7 @@ p .card-black {
             <li>Scripts that wrote to <code>server.json</code> will be broken, adapt them to write to <code>zowe.yaml</code> instead</li>
             <li>Incompatible desktop library version upgrades: Angular 12, corejs, and typescript were updated in the Desktop, and non-iframe plugins that depend on them may break</li>
             <li>ZSS cookie name change: ZSS cookie name now includes a suffix of either port name or HA/FT ID to distinguish between unrelated ZSS servers</li>
+            <li>Internationalization, using Angular, has changed from 6 (<code>TranslationService</code> etc.) to 12 (<code>L10TranslationService</code> etc.). For help in updating your Desktop apps to match new internationalization usage, please reference: <a href="https://github.com/zowe/sample-angular-app/pull/69/files">Sample Angular App example</a></li>
           </ul>
         </div>
         <div class="col-md-3 col-sm order-first order-sm-last">
