@@ -274,8 +274,8 @@ p .card-black {
     <div class="card-body">
       <div class="d-flex align-items-baseline">
         <h5 class="text-left">Zowe Explorer</h5>
-        The Explorer related conformance Criteria are on: <a href="https://ibm.box.com/s/4e3vvki81ds0zowrdpqu3ubitn9f51qe">Box Excel Sheet</a> on the tab V2 ZOWE Explorer Conform (16)
       </div>        
+      The Explorer related conformance Criteria are on: <a href="https://ibm.box.com/s/4e3vvki81ds0zowrdpqu3ubitn9f51qe">Box Excel Sheet</a> on the tab V2 ZOWE Explorer Conform (16)
     </div>
   </div>
 
