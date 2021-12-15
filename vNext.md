@@ -441,7 +441,7 @@ p .card-black {
     1. Do I need to reapply for conformance?</button>
     <div id="question-6" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;YES, we expect the Zowe V2 Conformance program to be available in early Feb 2022. We will
-      announce when extenders can pre-apply in the <a href="latest-announcements">LATEST ANNOUNCEMENTS</a> section at <a href="vNext.html">Zowe.org/vNext</a>.</p>
+      announce when extenders can pre-apply in the <a href="#latest-announcements">LATEST ANNOUNCEMENTS</a> section at <a href="vNext.html">Zowe.org/vNext</a>.</p>
     </div>
     </div>
     <div>
@@ -457,7 +457,7 @@ p .card-black {
     <button onclick="toggle('question-8')" class="w3-button w3-block w3-left-align">
     1. Will I be able to pre-apply for Zowe V2 conformance?</button>
     <div id="question-8" class="w3-container faq-hide">
-      <p>Yes, We will announce when extenders can pre-apply in the <a href="latest-announcements">LATEST ANNOUNCEMENTS</a> section at <a
+      <p>Yes, We will announce when extenders can pre-apply in the <a href="#latest-announcements">LATEST ANNOUNCEMENTS</a> section at <a
         href="vNext.html">Zowe.org/vNext</a>.</p>
     </div>
     </div>
