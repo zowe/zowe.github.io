@@ -1,10 +1,33 @@
-- event: Open Source Summit + Automotive Linux Summit Japan (Virtual)
-  schedule: December 14 - December 16
-  description: Open Source Summit + Automotive Linux Summit Japan 2021 is a Virtual
-    Experience, happening December 14-15 on the Japan Standard Time Zone (UTC+09:00).
-    Open Mainframe Project will be represented by a few Zowe community members and
-    ambssadors. The session has...
-  url: https://www.openmainframeproject.org/event/open-source-summit-automotive-linux-summit-japan-virtual
+- event: Zowe 1.26 Live System Demo
+  schedule: January 5, 2022 @ 9:00AM to 10:30AM
+  description: Open Mainframe Project is excited to announce that Zowe version 1.26 release
+    is now available! On January 5 at 9:00-10:30 am EST, Zowe squads will share the new 
+    features in the release. Attend this virtual demo to see how the new features work,  
+    and ask any questions you have.
+  url: https://lists.openmainframeproject.org/g/zowe-dev/viewevent?eventid=1354041&calstart=2022-01-05
+- event: OSS Japan Summit. What Does the Future of Mainframe Development Look Like?
+  schedule: December 15 @ 15:30 PM - 16:20 PM
+  description: "Meet the women of the Zowe Explorer Squad. In this session,\
+  \ the panelists will share valuable insights on navigating the challenges of\
+  \ modernizing the mainframe developer experience. The session will cover topics\
+  \ such as collaborating in the Zowe Explorer project, building a positive culture\
+  \ across different companies, managing open source commitments with internal\ 
+  \ priorities, overcoming time zone barriers, embracing the team diversity, and\
+  \ feeling confident in making decisions about the future of the project"
+  url: https://ossalsjp21.sched.com/event/pehL/women-explorers-what-does-the-future-of-mainframe-development-look-like-richelle-anne-craw-katelyn-nienaber-jessielaine-punongbayan-broadcom-lauren-li-billie-jean-simmons-ibm?es_id=6b31acc751
+- event: v2 LTS Update for Extenders - kickoff
+  schedule: December 8th @ 12:00 PM - 1:00 PM EST
+  description: "Kickoff for first of of six sessions dedicated to Zowe v2 readiness.\
+    \ For vendors who have extended Zowe v1, come learn about v2 conformance changes.\
+    \ For users who have installed Zowe v1 and want to hear about v2 improvements.\
+    \ This call is community wide. Future v2 updates will be squad specific."
+  url: https://zoom.us/j/94312528890
+- event: Zowe Quarterly Update (October 2021 Webinar)
+  schedule: October 20 @ 08:30 AM - 09:30 AM
+  description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
+    \ in what\u2019s happening with Zowe \u2013 we invite you to the next Quarterly\
+    \ Update Webinar on Wednesday, October 20 at 8:30 am PT /11:30 am ET (US and Canada)...."
+  url: https://www.openmainframeproject.org/event/zowe-quarterly-update-october-2021-webinar
 - event: SHARE Virtual
   schedule: August 09 - August 14
   description: The SHARE virtual conference (#SHAREvirtual21) is hosting its summer
@@ -80,9 +103,3 @@
     deep dives into topics at the forefront of the industry. Open Mainframe Project
     Ambassador Joe Winchester, a Senior...
   url: https://www.openmainframeproject.org/event/idug-virtual-australasia-db2-tech-conference
-- event: Zowe Quarterly Update (October 2021 Webinar)
-  schedule: October 20 @ 08:30 AM - 09:30 AM
-  description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
-    \ in what\u2019s happening with Zowe \u2013 we invite you to the next Quarterly\
-    \ Update Webinar on Wednesday, October 20 at 8:30 am PT /11:30 am ET (US and Canada)...."
-  url: https://www.openmainframeproject.org/event/zowe-quarterly-update-october-2021-webinar
