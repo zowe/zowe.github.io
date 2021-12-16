@@ -204,11 +204,11 @@ Test the latest Zowe features and provide feedback. Technical previews are <b>fo
   <div class="card bg-light border-light mb-3">
   <h4 class="card-header">Zowe - Portable Software Instance</h4>
     <div class="card-body">
-    <p class="card-text">The Zowe Portable Software Instance (PSWI) is a new way of z/OS component distribution. The technology preview allows the full installation as you are used to from SMP/E build, but it uses the new standard for mainframe software distribution.</p>
+    <p class="card-text">The Zowe Portable Software Instance (PSWI) is a new way of z/OS component distribution. The PSWI allows the full installation as you are used to from SMP/E build, but it uses the new standard for mainframe software distribution.</p>
         <div class="row">
           <div class="card-body">
             <h5 class="card-title">Download the PSWI</h5>
-            <p><a class="btn btn-primary" href="{{ site.pswi_download_uri }}">Zowe PSWI 1.24.0 Technical Preview {{ site.zowe_fmid }}</a></p>
+            <p><a class="btn btn-primary" href="{{ site.pswi_download_uri }}">Zowe PSWI {{ site.pswi_version }} {{ site.zowe_fmid }}</a></p>
             <div>
               <a href="{{ site.pswi_install_doc_url }}" class="card-link">
               <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
@@ -222,7 +222,7 @@ Test the latest Zowe features and provide feedback. Technical previews are <b>fo
 </div>
 
 
-<h1>Previous Releases</h1>
+<h1 id="releases">Previous Releases</h1>
 <p>Download previous releases of Zowe by version number.</p>
 <p>
 Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds. Zowe version 1.9.0 is the beginning of the Active Long-Term Support (LTS) release and it provides an SMP/E build with an FMID of AZWE001. The SMP/E build is the same content as the Zowe 1.9.0 convenience build. Updates in subsequent releases are made available as co-requisite PTFs as well as in convenience builds. Also, starting in 1.9.0, Zowe CLI core and plug-in packages are distributed separately.
@@ -274,7 +274,7 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
 </section>
 
 <section class="bluebackground">
-<h1>Release Timeline</h1>
+<h1 id="timeline">Release Timeline</h1>
 <p><img src="assets/img/major_releases.png" width="90%" /></p>
 <p><b>Version timeframe, Active , Maintenance</b></p>
 <ul>
@@ -298,8 +298,32 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
 <button type="button" class="btn btn-outline-light" href="{{ site.lts_url }}">Learn more</button>
 </section>
 
-<section class="whitebackground">
-<h1>Nightly Builds</h1>
+<section class="whitebackground" id="compatibility-extensions">
+<h1>Zowe Extensions Vnext Compatibility, Conformance, and Availability Statement</h1>
+<b>General</b><br/>
+<i>Backward Compatibility</i><br/>
+<p>Zowe v1 conformant extensions / plug-ins <b>are not guaranteed</b> to be compatible with Zowe v2 and therefore may not be operable.  In general, plug-ins/extensions which leverage v2 APIs that have known “breaking changes” are at <i>high risk</i> of incompatibility and unpredictable results. </p>
+<p><u>Recommendation:</u>  ALL v1 extenders test with the Zowe v2, identify any issues, and disclose results to consumers to clearly indicate backward compatibility status in the extension documentation.  If unable to test, clearly document as such.</p>
+<br/>
+<i>Forward Compatibility</i><br/>
+<p>Zowe v2 conformant (planning to earn conformance) extensions / plug-ins <b>are not guaranteed</b> to be compatible with Zowe v1 LTS.  In general, plug-ins / extensions with no known dependency on any newly introduced Zowe v2 functions are at <i>minimum risk</i>.</p>
+<p><u>Recommendation:</u>  All v2 extenders test with Zowe v1 LTS, identify any issues, and disclose results to consumers to clearly indicate forward compatibility status in the extension documentation. If unable to test, clearly document as such.</p>
+<br/>
+<i>Conformance Compatibility</i><br/>
+<p>Zowe v1 conformant extensions / plug-ins are likely to require changes to meet Zowe v2 conformance criteria.  All extensions (regardless of v1 conformance status) must apply for v2 conformance and satisfy all required v2 testing criteria.</p>
+<p><u>Recommendation:</u> All extenders interested in earning v2 conformance review the v2 conformance criteria, determine if technical changes are necessary, make appropriate modifications and prepare to apply for v2 conformance prior to v2 LTS publication.</p>
+<b>Zowe Vnext Availability to Extenders</b><br/>
+<i>Early Access Software </i><br/>
+<p>Several pre-GA releases of Zowe v2 will be made available to Zowe extenders and the general public prior* to the actual Zowe v2 GA release delivery to allow extenders time to perform Zowe v2 testing with their extensions and disclose their compatibility status. (*dates to-be-determined)</p>
+<i>Early Access Conformance Criteria</i><br/>
+<p>The Zowe v2 conformance criteria for all extensions/plugins participating in the conformance program will be made available to all Zowe v1 conformant extenders prior* to the Zowe v2 GA release to give extenders time to adapt to applicable changes. (*dates to-be-determined) Note:  See Zowe Support Provider conformance section below for details on v2 Support Provider conformance.</p>
+<b>More Information</b>
+<p>Visit the Zowe v2 release page at <a href="https://zowe.org/vNext.html">https://zowe.org/vNext.html</a> for comprehensive information related to the V2 release.</p>
+
+</section>
+
+<section class="bluebackground">
+<h1 id="builds">Nightly Builds</h1>
 <p>Visit the Zowe Artifactory <a class="white" href="{{ site.nightly_build_url }}">nightly build folder</a> to find the most recent build.</p>
 <p>Please note:
   <ul>

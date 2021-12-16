@@ -1,10 +1,9 @@
 # Announcements
 # Any kind of links should NOT be in ""
-- announcement: "For Zowe CLI users and Zowe developers: NPM had a dependency security vulnerability Nov 4th to Nov 5th. For more information about the vulnerability and the resolution, click"
-  link: https://github.com/zowe/community/discussions/1362#discussion-3675014
-- announcement: "Interested in Zowe V2? Watch the Oct 20th Quarterly Update Webinar replay"
-  link: https://www.youtube.com/playlist?list=PL8REpLGaY9QHtnElqPosteBFpITStkAxo 
-- announcement: "Zowe Conformant Support Provider Program is LIVE"
-  link: https://www.openmainframeproject.org/projects/zowe/conformant-support-provider
-  announcement: "IT'S TIME TO SHARE YOUR FEEDBACK! Complete the 2021OCT Zowe semi-annual Survey today"
-  link: https://www.surveymonkey.com/r/2021Oct-Zowe
+- announcement: Zowe is NOT affected by the recently published log4j vulnerability. For more information, click 
+  link: https://github.com/zowe/community/issues/1381
+- announcement: "VOTE FOR ZOWE! #22 Best DevOps for Mainframe Solution @ DevOps Dozen Awards" 
+  link: https://medium.com/zowe/vote-zowe-6d8cf30be3ba
+- announcement: "Mark your calendars for the next Zowe v2 Office Hours Wed Jan 5th 12:00pm EST"
+  link: https://lists.openmainframeproject.org/g/zowe-dev/viewevent?eventid=1350351&calstart=2022-01-05
+- announcement: "Happy Holidays from the Zowe Community!"
