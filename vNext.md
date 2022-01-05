@@ -258,7 +258,7 @@ p .card-black {
             <li>Zowe now allows fine-grained customization of log, workspace, and configuration directories. By default, these directories remain grouped under an `instance` directory (same as Zowe v1).</li>
             <li>Environment variables are reorganized to better describe itself. All zowe.yaml configuration entries will be automatically converted to environment variables for easy consumption.</li>
             <li>Check with us what are the new alternative variable names.</li>
-            <li>During Zowe configuration, redundant `ip` fields will be removed or consolidated in favor of `hostname` or`’domains`.</li>
+            <li>During Zowe configuration, redundant `ip` fields will be removed or consolidated in favor of `hostname` or `domains`.</li>
             <li>Component or extension manifest is mandatory. End user must use `zwe components install` command to install the extension.</li>
           </ul>
         </ul>
