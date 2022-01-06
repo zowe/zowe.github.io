@@ -1,8 +1,8 @@
 - event: Zowe V2 Office Hours: API Mediation Layer Focus
   schedule: January 12, 2022 @ 12PM to 1:00PM EST
-  description: "For vendors who have extended Zowe v1 API Mediation Layer, come learn\
-    \ about v2 changes. For users who have installed Zowe v1 API Mediation Layer, join\
-    \ this call to hear about v2 improvements."
+  description: For vendors who have extended Zowe v1 API Mediation Layer, come learn
+    about v2 changes. For users who have installed Zowe v1 API Mediation Layer, join
+    this call to hear about v2 improvements.
   url: https://zoom.us/j/94312528890
 - event: Zowe 1.26 Live System Demo
   schedule: January 5, 2022 @ 9:00AM to 10:30AM EST
