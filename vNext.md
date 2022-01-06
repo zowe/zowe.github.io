@@ -323,7 +323,7 @@ p .card-black {
       <td>CLI</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
       <td></td>
-      <td></td>
+      <td><a href="https://ibm.box.com/s/yjh6taumnosny9zt38u4sjolu3vhang6"></a></td>
     </tr>
     <tr>
       <td>01/12/2022 12PM - 1PM ET</td>
@@ -534,6 +534,14 @@ p .card-black {
     <button onclick="toggle('question-16')" class="w3-button w3-block w3-left-align">
     16.  The V1 version of Zowe Explorer offers a text input area, where a user can enter some of the data / attributes (host, port, etc.) necessary to create the old-style profiles.  With Team Config what options are available for users to edit the config file?  Is it manual? Is there a UI?</button>
     <div id="question-16" class="w3-container faq-hide">
+      <p>&nbsp;&nbsp;&nbsp;The recommended approach for editing the config file is to launch it in VS Code from Zowe Explorer and make modifications there. The designated user responsible for creating and maintaining the config (we recommend a team lead or Administrator) will be able to leverage the built-in “intellisense” when editing the file. <i>Note: <b>Team Config fundamentally changes the paradigm on profile creation & management.</b> Prior to Team Config, <b>all users</b> were required to understand, create, test, trouble-shoot, and manage their own profiles. Team Config was designed to scale all of these tasks back, remove the burden from individual users and centralize it. Once the config is distributed most users should not need to make any significant edits.</i></p>
+      <p>&nbsp;&nbsp;&nbsp;Join the discussion on this topic here: <a href="https://github.com/zowe/vscode-extension-for-zowe/discussions/1535">https://github.com/zowe/vscode-extension-for-zowe/discussions/1535</a></p>
+    </div>
+    </div>
+    <div>
+    <button onclick="toggle('questions-cli')" class="w3-button w3-block w3-left-align">
+    FAQs from the CLI related office hours on 2022/01/05</button>
+    <div id="questions-cli" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;The recommended approach for editing the config file is to launch it in VS Code from Zowe Explorer and make modifications there. The designated user responsible for creating and maintaining the config (we recommend a team lead or Administrator) will be able to leverage the built-in “intellisense” when editing the file. <i>Note: <b>Team Config fundamentally changes the paradigm on profile creation & management.</b> Prior to Team Config, <b>all users</b> were required to understand, create, test, trouble-shoot, and manage their own profiles. Team Config was designed to scale all of these tasks back, remove the burden from individual users and centralize it. Once the config is distributed most users should not need to make any significant edits.</i></p>
       <p>&nbsp;&nbsp;&nbsp;Join the discussion on this topic here: <a href="https://github.com/zowe/vscode-extension-for-zowe/discussions/1535">https://github.com/zowe/vscode-extension-for-zowe/discussions/1535</a></p>
     </div>
