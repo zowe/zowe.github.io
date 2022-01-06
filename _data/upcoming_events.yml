@@ -65,11 +65,11 @@
   url: https://www.openmainframeproject.org/event/ibm-techu
 - event: Code PaLOUsa 2021
   schedule: August 18 - August 21
-  description: Codepalousa is a multi-day software development conference designed
-    to cover all aspects of software development regardless of technology stack. The
-    conference features presentations from well-known professionals in the software
-    development community and virtual booths where leading software development companies
-    come...
+  description: "Codepalousa is a multi-day software development conference designed\
+    \ to cover all aspects of software development regardless of technology stack. The\
+    \ conference features presentations from well-known professionals in the software\
+    \ development community and virtual booths where leading software development companies\
+    \ come..."
   url: https://www.openmainframeproject.org/event/code-palousa-2021
 - event: Zowe Quarterly Update - July 2021
   schedule: July 21 @ 08:30 AM - 09:30 AM
@@ -79,9 +79,9 @@
   url: https://www.openmainframeproject.org/event/zowe-quarterly-update-july-2021
 - event: IBM Z Day 2021 (Virtual)
   schedule: September 15 - September 16
-  description: IBM Z Day, which takes place on September 15, is a free virtual Enterprise
-    Computing conference with a lineup of more than 100+ global thought leaders that
-    will highlight industry trends and innovation. Last year, IBM Z Day had more...
+  description: "IBM Z Day, which takes place on September 15, is a free virtual Enterprise\
+    \ Computing conference with a lineup of more than 100+ global thought leaders that\
+    \ will highlight industry trends and innovation. Last year, IBM Z Day had more..."
   url: https://www.openmainframeproject.org/event/ibm-z-day-2021-virtual
 - event: Zowe Quarterly Update Webinar
   schedule: April 21 @ 08:30 AM - 09:30 AM
@@ -91,10 +91,10 @@
   url: https://www.openmainframeproject.org/event/zowe-quarterly-update-webinar
 - event: Open Source Summit + Automotive Linux Summit Japan (Virtual)
   schedule: December 14 - December 16
-  description: Open Source Summit + Automotive Linux Summit Japan 2021 is a Virtual
-    Experience, happening December 14-15 on the Japan Standard Time Zone (UTC+09:00).
-    Open Mainframe Project will be represented by a few Zowe community members and
-    ambssadors. The session has...
+  description: "Open Source Summit + Automotive Linux Summit Japan 2021 is a Virtual\
+    \ Experience, happening December 14-15 on the Japan Standard Time Zone (UTC+09:00).\
+    \ Open Mainframe Project will be represented by a few Zowe community members and\
+    \ ambssadors. The session has..."
   url: https://www.openmainframeproject.org/event/open-source-summit-automotive-linux-summit-japan-virtual
 - event: SHARE Virtual Summit March 2021
   schedule: March 01 - March 25
@@ -105,10 +105,10 @@
   url: https://www.openmainframeproject.org/event/share-virtual-summit-march-2021
 - event: IDUG Virtual Australasia Db2 Tech Conference
   schedule: March 15 - March 21
-  description: The IDUG Virtual Australasia Db2 Tech Conference, which is being held
-    on March 15-19, features presentations from top international experts and technical
-    deep dives into topics at the forefront of the industry. Open Mainframe Project
-    Ambassador Joe Winchester, a Senior...
+  description: "The IDUG Virtual Australasia Db2 Tech Conference, which is being held\
+    \ on March 15-19, features presentations from top international experts and technical\
+    \ deep dives into topics at the forefront of the industry. Open Mainframe Project\
+    \ Ambassador Joe Winchester, a Senior..."
   url: https://www.openmainframeproject.org/event/idug-virtual-australasia-db2-tech-conference
 - event: Zowe Quarterly Update (October 2021 Webinar)
   schedule: October 20 @ 08:30 AM - 09:30 AM
