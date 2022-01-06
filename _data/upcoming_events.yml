@@ -1,25 +1,25 @@
 - event: Zowe V2 Office Hours: API Mediation Layer Focus
   schedule: January 12, 2022 @ 12PM to 1:00PM EST
-  description: For vendors who have extended Zowe v1 API Mediation Layer, come learn
-    about v2 changes. For users who have installed Zowe v1 API Mediation Layer, join
-    this call to hear about v2 improvements.
+  description: "For vendors who have extended Zowe v1 API Mediation Layer, come learn\
+    \ about v2 changes. For users who have installed Zowe v1 API Mediation Layer, join\
+    \ this call to hear about v2 improvements."
   url: https://zoom.us/j/94312528890
 - event: Zowe 1.26 Live System Demo
   schedule: January 5, 2022 @ 9:00AM to 10:30AM EST
-  description: Open Mainframe Project is excited to announce that Zowe version 1.26 release
-    is now available! On January 5 at 9:00-10:30 am EST, Zowe squads will share the new 
-    features in the release. Attend this virtual demo to see how the new features work,  
-    and ask any questions you have.
+  description: "Open Mainframe Project is excited to announce that Zowe version 1.26 release\
+    \ is now available! On January 5 at 9:00-10:30 am EST, Zowe squads will share the new\ 
+    \ features in the release. Attend this virtual demo to see how the new features work,\  
+    \ and ask any questions you have."
   url: https://lists.openmainframeproject.org/g/zowe-dev/viewevent?eventid=1354041&calstart=2022-01-05
 - event: OSS Japan Summit. What Does the Future of Mainframe Development Look Like?
   schedule: December 15 @ 15:30 PM - 16:20 PM
   description: "Meet the women of the Zowe Explorer Squad. In this session,\
-  \ the panelists will share valuable insights on navigating the challenges of\
-  \ modernizing the mainframe developer experience. The session will cover topics\
-  \ such as collaborating in the Zowe Explorer project, building a positive culture\
-  \ across different companies, managing open source commitments with internal\ 
-  \ priorities, overcoming time zone barriers, embracing the team diversity, and\
-  \ feeling confident in making decisions about the future of the project"
+    \ the panelists will share valuable insights on navigating the challenges of\
+    \ modernizing the mainframe developer experience. The session will cover topics\
+    \ such as collaborating in the Zowe Explorer project, building a positive culture\
+    \ across different companies, managing open source commitments with internal\ 
+    \ priorities, overcoming time zone barriers, embracing the team diversity, and\
+    \ feeling confident in making decisions about the future of the project"
   url: https://ossalsjp21.sched.com/event/pehL/women-explorers-what-does-the-future-of-mainframe-development-look-like-richelle-anne-craw-katelyn-nienaber-jessielaine-punongbayan-broadcom-lauren-li-billie-jean-simmons-ibm?es_id=6b31acc751
 - event: v2 LTS Update for Extenders - kickoff
   schedule: December 8th @ 12:00 PM - 1:00 PM EST
@@ -36,24 +36,18 @@
   url: https://www.openmainframeproject.org/event/zowe-quarterly-update-october-2021-webinar
 - event: SHARE Virtual
   schedule: August 09 - August 14
-  description: The SHARE virtual conference (#SHAREvirtual21) is hosting its summer
-    session on August 9-13. There will be more than 100 live sessions and 100 on-demand
-    presentations focused on a variety of topics related to mainframes. Several Open
-    Mainframe Project community leaders...
+  description: "The SHARE virtual conference (#SHAREvirtual21) is hosting its summer\
+  \ session on August 9-13. There will be more than 100 live sessions and 100 on-demand\
+  \ presentations focused on a variety of topics related to mainframes. Several Open
+  \ Mainframe Project community leaders..."
   url: https://www.openmainframeproject.org/event/share-virtual
 - event: VM Workshop 2021
   schedule: June 10 - June 12
-  description: The annual VM Workshop, which originally was planned for in-person
-    at Ohio State University, will now take place virtually on June 10-11. Open Mainframe
-    Project will be represented at the conference as several community leaders will
-    be giving presentations. Check...
+  description: "The annual VM Workshop, which originally was planned for in-person\
+    \ at Ohio State University, will now take place virtually on June 10-11. Open Mainframe\
+    \ Project will be represented at the conference as several community leaders will\
+    \ be giving presentations. Check..."
   url: https://www.openmainframeproject.org/event/vm-workshop-2021
-- event: Zowe 1.23 Live System Demo
-  schedule: August 04 @ 06:00 AM - 07:00 AM
-  description: Open Mainframe Project is excited to announce that Zowe 1.23 release
-    is now available! OnAugust 4 at 6-7 am PST/ 9-10 am EST, Zowe squads will share
-    the new benefits of the release as well as live demos to see...
-  url: https://www.openmainframeproject.org/event/zowe-1-23-live-system-demo
 - event: 'I am a Mainframer: Personal Stories and Lessons from the Next Generation
     of Mainframe Developers'
   schedule: August 18 @ 08:00 AM - 09:00 AM
