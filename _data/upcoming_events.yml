@@ -1,3 +1,9 @@
+- event: Zowe V2 Office Hours - API Mediation Layer Focus
+  schedule: January 12, 2022 @ 12PM to 1:00PM EST
+  description: For vendors who have extended Zowe v1 API Mediation Layer, come learn
+    about v2 changes. For users who have installed Zowe v1 API Mediation Layer, join
+    this call to hear about v2 improvements.
+  url: https://zoom.us/j/94312528890
 - event: Zowe 1.26 Live System Demo
   schedule: January 5, 2022 @ 9:00AM to 10:30AM EST
   description: Open Mainframe Project is excited to announce that Zowe version 1.26 release
@@ -89,6 +95,13 @@
     \ in what\u2019s happening with Zowe \u2013 we invite you to the next Quarterly\
     \ Update Webinar on April 21 at 8:30 am PT /11:30 am ET (US and Canada)! This..."
   url: https://www.openmainframeproject.org/event/zowe-quarterly-update-webinar
+- event: Open Source Summit + Automotive Linux Summit Japan (Virtual)
+  schedule: December 14 - December 16
+  description: Open Source Summit + Automotive Linux Summit Japan 2021 is a Virtual
+    Experience, happening December 14-15 on the Japan Standard Time Zone (UTC+09:00).
+    Open Mainframe Project will be represented by a few Zowe community members and
+    ambssadors. The session has...
+  url: https://www.openmainframeproject.org/event/open-source-summit-automotive-linux-summit-japan-virtual
 - event: SHARE Virtual Summit March 2021
   schedule: March 01 - March 25
   description: "SHARE Virtual Summit takes place in March 2-4, 9-11, 16-17 and 23-24.\
@@ -103,3 +116,9 @@
     deep dives into topics at the forefront of the industry. Open Mainframe Project
     Ambassador Joe Winchester, a Senior...
   url: https://www.openmainframeproject.org/event/idug-virtual-australasia-db2-tech-conference
+- event: Zowe Quarterly Update (October 2021 Webinar)
+  schedule: October 20 @ 08:30 AM - 09:30 AM
+  description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
+    \ in what\u2019s happening with Zowe \u2013 we invite you to the next Quarterly\
+    \ Update Webinar on Wednesday, October 20 at 8:30 am PT /11:30 am ET (US and Canada)...."
+  url: https://www.openmainframeproject.org/event/zowe-quarterly-update-october-2021-webinar
