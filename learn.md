@@ -64,7 +64,7 @@
     <h2 style="margin-bottom: 1.5rem">Supporting resources</h2>
     <p>Here are some great resources to build your knowledge and skills for modern mainframe development!</p>
     <div class="row">
-      <a class="col-sm-4" href="{{ site.master_the_mainframe_url }}"><strong>Master The Mainframe</strong></a>
+      <a class="col-sm-4" href="{{ site.master_the_mainframe_url }}"><strong>IBM Z Xplore</strong></a>
       <p class="col-sm-8">New to mainframe development? This course is the place to start!</p>
     </div>
     <div class="row">

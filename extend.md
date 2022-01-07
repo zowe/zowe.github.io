@@ -15,6 +15,7 @@
   <p style="margin-bottom: 0rem">1. Extend the Zowe Command Line Interface.</p>
   <p style="margin-bottom: 0rem">2. Add a REST API service to the API Mediation Layer.</p>
   <p>3. Add an application plug-in to the Zowe Desktop.</p>
+  <p>4. Extend the Zowe Explorer.</p>
   </div>
   <p>Learn more and get started with the <a href="{{ site.zowe_extend_doc_url }}">Extending documentation</a>.</p>
 
