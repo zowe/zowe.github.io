@@ -198,9 +198,70 @@ p .card-black {
         <h5 class="text-left">Systems</h5>
       </div>
       <ul>
-        <li>Define new FMID AZWE002 for Zowe v2</li>
-        <li>Start building 'v2' Zowe</li>
-        <li>Zowe v2: Review usage of z/OS System resources</li>
+        <li><strong>CI/CD</strong></li>
+        <ul>
+          <li>Define new FMID AZWE002 for Zowe v2</li>
+          <li>Start building 'v2' Zowe</li>
+          <li>Zowe v2: Review usage of z/OS system resources</li>
+        </ul>
+        <li><strong>Install and Packaging</strong></li>
+        <ul>
+          <li><strong>New Feature:</strong> Introduced a new server command “zwe” to balance between simplification and flexibility on installation and configuration.</li>
+          <ul>
+            <li>Almost all Zowe utility scripts in v1 are consolidated into new “zwe” server command. This new command defines consistent help messages, logging options, and so on.</li>
+            <ul>
+              <li>You can type `zwe -h` to get help messages anytime you feel lost.</li>
+              <li>Consistent `-log-dir|-l` to allow you to write logs to the target directory.</li>
+            </ul>
+            <li>Provides shell function library to help extensions to achieve common tasks. For example, execute TSO command, operator command, submit job and check job completion, and so on.</li>
+            <ul>
+              <li>Keep away from commands/functions marked as experimental and internal.</li>
+            </ul>
+            <li>Installation / Configuration changes</li>
+            <ul>
+              <li>During installation, no new runtime directory will be created.</li>
+              <li>A zowe.yaml file can be used to centralize all configuration options. This configuration is compatible with all Zowe use cases (including high availability and containerization).</li>
+              <li>For almost all Zowe configuration steps, an automation option “zwe init” command is provided.</li>
+              <li>You can still choose to run all steps one by one.</li>
+              <li>The `--security-dry-run` mode allows you to generate security commands and pass along to your system admin.</li>
+              <li>You can run all steps from USS now.</li>
+            </ul>
+          </ul>
+          <li><strong>New Feature:</strong> A Zowe component or extension can use manifest.yaml to define how it interacts with Zowe and other components.</li>
+          <ul>
+            <li>The component or extension must define a manifest.yaml or manifest.json file to describe itself.</li>
+            <li>The manifest allows you to define:</li>
+            <ul>
+              <li>how to register on Zowe APIML Discovery</li>
+              <li>how to register under Zowe Desktop</li>
+              <li>whether it’s Java extension library for APIML, and so on</li>
+            </ul>
+            <li>Components can define their own `configs` in manifest.yaml which shows the user how to customize this component and provides default value if they are not defined.</li>
+            <ul>
+              <li>This option is compatible with Zowe running in high availability mode.</li>
+            </ul>
+          </ul>
+          <li><strong>New Feature:</strong> Introduced new data sets to better organize the contents.</li>
+          <ul>
+            <li>Added `SZWEEXEC` to contain few utility tools.</li>
+            <li>You can customize your own PARMLIB, APF Authorized LOADLIB and APF-authorized ZIS plug-ins library.</li>
+            <li>`CUST.JCLIB` is a data set where Zowe will store temporary JCLs.</li>
+          </ul>
+          <li><strong>Breaking changes</strong></li>
+          <ul>
+            <li>You must pass `-ppx` when you unpax the Zowe convenience build to preserve extended file attributes.</li>
+            <li>All utility scripts, like `zowe-install.sh`, `zowe-install-xmem.sh`, `zowe-install-proc.sh`, `validate-directory-is-accessible.sh`, and so on, are removed and migrated to the new `zwe` server command format.</li>
+            <li>If you rely on some of the scripts, please find the alternative new “zwe” command or shell library functions.</li>
+            <li>`ZWESVSTC` is removed and `ZWESLSTC` will replace it to start Zowe.</li>
+            <li>Must use the `P` command to terminate Zowe instead of using the `C` cancel command.</li>
+            <li>`instance.env` is deprecated and replaced by `zowe.yml`.</li>
+            <li>Zowe now allows fine-grained customization of log, workspace, and configuration directories. By default, these directories remain grouped under an `instance` directory (same as Zowe v1).</li>
+            <li>Environment variables are reorganized to better describe itself. All zowe.yaml configuration entries will be automatically converted to environment variables for easy consumption.</li>
+            <li>Check with the community what the new alternative variable names are.</li>
+            <li>During Zowe configuration, redundant `ip` fields will be removed or consolidated in favor of `hostname` or `domains`.</li>
+            <li>Component or extension manifest is mandatory. End user must use the `zwe components install` command to install the extension.</li>
+          </ul>
+        </ul>
       </ul>
     </div>
   </div>
