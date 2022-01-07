@@ -82,7 +82,7 @@
             </div>
           </div>        
           <div class="card-body">
-            <h5 class="card-title">Zowe Client SDKs</h5>
+            <h5 class="card-title" id="zowe-client-sdks-download">Zowe Client SDKs</h5>
             <p class="card-text">Download the Zowe Software Development Kits (SDKs) for use in development and automation.</p>
             <p><a class="btn btn-primary" href="{{ site.zowe_node_sdk_download_url }}{{ site.data.releases[0].node_sdk_version }}">Zowe {{ site.data.releases[0].node_sdk_version }} Node.js Client SDK</a></p>
             <p><a class="btn btn-primary" href="{{ site.zowe_python_sdk_download_url }}{{ site.data.releases[0].python_sdk_version }}">Zowe {{ site.data.releases[0].python_sdk_version }} Python Client SDK</a></p>
@@ -94,7 +94,7 @@
             </div>
           </div>
           <div class="card-body">
-            <h5 class="card-title">Zowe Explorer</h5>
+            <h5 class="card-title" id="zowe-explorer-download">Zowe Explorer</h5>
             <p class="card-text">Installed directly to VSCode within the GUI</p>
             <p><a class="btn btn-primary" href="{{ site.vscode_marketplace_url }}">Visual Studio Code Marketplace</a></p>
             <div>
@@ -116,14 +116,14 @@
 {% endif %}
 <p> </p>
 
-<h2>Zowe Technical Preview</h2>
+<h2 id="zowe-technical-preview">Zowe Technical Preview</h2>
 <p>
 Test the latest Zowe features and provide feedback. Technical previews are <b>for testing only</b> and not ready for production.</p>
 <p>Explore the upcoming production-ready release below and provide feedback to the community on the documentation, user experience, and desired features that can be implemented in future releases. Any feedback that you can provide is highly appreciated. Let us know via Slack or GitHub!
 </p>
 <div class="card-deck">
   <div class="card bg-light border-light mb-3">
-    <h4 class="card-header">Zowe Docker build</h4>
+    <h4 class="card-header" id="zowe-docker">Zowe Docker build</h4>
     <div class="card-body">
       <p class="card-text">The Zowe Docker build enables you to run a subset of the Zowe server-side components outside z/OS. The Docker build runs in combination with the convenience or S MP/E build. Learn more about the relationship of the builds in the docs.</p>
       <p class="card-text">You can download the build directly via the tarball, or as a cloud download from Docker Hub. Separate downloads exist for z/Linux ("s390x") and other Linux ("amd64" for intel & amd systems).</p>
@@ -147,7 +147,7 @@ Test the latest Zowe features and provide feedback. Technical previews are <b>fo
     </div>
   </div>
   <div class="card bg-light border-light mb-3">
-    <h4 class="card-header">Zowe v2 LTS Preview</h4>
+    <h4 class="card-header" id="zowe-v2-preview">Zowe v2 LTS Preview</h4>
     <div class="card-body">
       <p class="card-text">Preview early access features planned for the next Long Term Support release of Zowe.</p>
       <p class="card-text">These downloads were last updated on {{ site.zowe_next_release_date | date: "%d %b %Y" }}.</p>
@@ -202,7 +202,7 @@ Test the latest Zowe features and provide feedback. Technical previews are <b>fo
       </div>
   </div>
   <div class="card bg-light border-light mb-3">
-  <h4 class="card-header">Zowe - Portable Software Instance</h4>
+  <h4 class="card-header" id="zowe-pswi">Zowe - Portable Software Instance</h4>
     <div class="card-body">
     <p class="card-text">The Zowe Portable Software Instance (PSWI) is a new way of z/OS component distribution. The PSWI allows the full installation as you are used to from SMP/E build, but it uses the new standard for mainframe software distribution.</p>
         <div class="row">
