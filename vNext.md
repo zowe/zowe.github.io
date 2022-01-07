@@ -383,8 +383,8 @@ p .card-black {
       <td>01/05/2022 12PM - 1PM ET</td>
       <td>CLI</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td></td>
-      <td></td>
+      <td><a href="https://zoom.us/rec/share/5jx4WW-JJiZX7tDJ8Y-BUf2laCoomsMtwhigUGRJ9YL2NHKQp37NJUsgx8Q_IDN5.3BEbWsVe6H9S_65F">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/yjh6taumnosny9zt38u4sjolu3vhang6"></a></td>
     </tr>
     <tr>
       <td>01/12/2022 12PM - 1PM ET</td>
