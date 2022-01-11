@@ -602,12 +602,12 @@ p .card-black {
     <div>
     <button onclick="toggle('questions-cli')" class="w3-button w3-block w3-left-align">
     Zowe CLI Office Hours Frequently Asked Questions</button>
-    <div id="question-cli" class="w3-container faq-hide">
+    <div id="questions-cli" class="w3-container faq-hide">
       <div>
         <button onclick="toggle('questions-cli-1')" class="w3-button w3-block w3-left-align">
           1. Will daemon mode pre-load profiles?
         </button>
-        <div id="question-cli-1" class="w3-container faq-hide">
+        <div id="questions-cli-1" class="w3-container faq-hide">
           <p>No, team config will be reloaded for every command</p>
         </div>
       </div>
@@ -615,7 +615,7 @@ p .card-black {
         <button onclick="toggle('questions-cli-2')" class="w3-button w3-block w3-left-align">
           2. Will it be possible to override the built-in Secure Credentials if you are using something else?
         </button>
-        <div id="question-cli-2" class="w3-container faq-hide">
+        <div id="questions-cli-2" class="w3-container faq-hide">
           <p>Team Config will likely support alternates defined in the settings json file, administrators will probably need to hand-edit the configuration file to set a new credential manager</p>
         </div>
       </div>
@@ -623,7 +623,7 @@ p .card-black {
         <button onclick="toggle('questions-cli-3')" class="w3-button w3-block w3-left-align">
           3. How do you expect consumers to migrate from the (V1) old Secure Credentials to the new (V2 team config) configuration? Is there a migration process?
         </button>
-        <div id="question-cli-3" class="w3-container faq-hide">
+        <div id="questions-cli-3" class="w3-container faq-hide">
           <p>A migration utility is available - it will translate profiles (1 for 1) to new  (team config) format AND (optionally) clean-up old profiles and old SCS entries.</p>
         </div>
       </div>
@@ -631,7 +631,7 @@ p .card-black {
         <button onclick="toggle('questions-cli-4')" class="w3-button w3-block w3-left-align">
           4. Is migration to the new profile format required?
         </button>
-        <div id="question-cli-4" class="w3-container faq-hide">
+        <div id="questions-cli-4" class="w3-container faq-hide">
           <p>Migration to the new profile format is NOT required immediately - the old profiles will work UNLESS a team config is created - that said, the old profiles will not be used if a new team config is available. Simply stated - if a team config is not located, CLI will fall back to using the prior profiles</p>
         </div>
       </div>
@@ -639,7 +639,7 @@ p .card-black {
         <button onclick="toggle('questions-cli-5')" class="w3-button w3-block w3-left-align">
           5. Will V2 be able to use the old (V1) Secure Credentials?
         </button>
-        <div id="question-cli-5" class="w3-container faq-hide">
+        <div id="questions-cli-5" class="w3-container faq-hide">
           <p>Yes - CLI can read the old and the new format</p>
         </div>
       </div>
@@ -647,7 +647,7 @@ p .card-black {
         <button onclick="toggle('questions-cli-6')" class="w3-button w3-block w3-left-align">
           6. Will my username/password be saved in 2 different locations if I do not use the --delete (after the migration)?
         </button>
-        <div id="question-cli-6" class="w3-container faq-hide">
+        <div id="questions-cli-6" class="w3-container faq-hide">
           <p>Yes (recommend this is cleaned up)</p>
         </div>
       </div>
@@ -655,7 +655,7 @@ p .card-black {
         <button onclick="toggle('questions-cli-7')" class="w3-button w3-block w3-left-align">
           7. For the keyword base-path, does it remain camel case or transition to something else?
         </button>
-        <div id="question-cli-7" class="w3-container faq-hide">
+        <div id="questions-cli-7" class="w3-container faq-hide">
           <p>CLI option name is "base-path", property name in config is "basePath"</p>
         </div>
       </div>
