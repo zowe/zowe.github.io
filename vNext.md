@@ -66,7 +66,7 @@ p .card-black {
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="latest-announcements">Latest Announcements</h2>
     <p>Starting from 12/08, the Zowe Onboarding Squad will hold the Office Hours to discuss the details about the upcoming V2 release. More information can be found in the <a href="#office-hours">Office Hour</a> section.</p>
-    <p>The V2 documentation site is available at <a href="https://deploy-preview-1961--zowe-docs-master.netlify.app/">V2 Docs Site Preview</a>
+    <p>The V2 documentation site is available at <a href="https://deploy-preview-1961--zowe-docs-master.netlify.app/">V2 Docs Site Preview</a></p>
   </div>
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="general-information">General Information</h2>
@@ -738,7 +738,6 @@ p .card-black {
           <p>Existing (V1) APIs will continue to work </p>
         </div>
       </div>
-    </div>
     </div>
   </div>
 
