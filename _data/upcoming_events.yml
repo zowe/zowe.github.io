@@ -1,10 +1,12 @@
-- event: Zowe V2 Office Hours: App Framework Focus
+- event: Zowe V2 Office Hours - App Framework Focus
   schedule: January 26, 2022 @ 12:00PM to 1:00PM EST
-  description: For all users of Zowe Application Framework, come and learn about v2 improvements. 
+  description: For all users and vendors of Zowe Application Framework, come and 
+    learn about v2 improvements. 
   url: https://zoom.us/j/94312528890
 - event: Zowe V2 Office Hours - Zowe Explorer Focus
   schedule: January 19, 2022 @ 12:00PM to 1:00PM EST
-  description: For the Zowe Explorer users, come to learn about what's new in v2. 
+  description: For all users and vendors of Zowe Explorer users, come to learn about 
+    what is new in v2. 
   url: https://zoom.us/j/94312528890
 - event: Zowe V2 Office Hours - API Mediation Layer Focus
   schedule: January 12, 2022 @ 12PM to 1:00PM EST
