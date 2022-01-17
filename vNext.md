@@ -54,6 +54,10 @@ p .card-black {
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
       Frequently Asked Questions - CLI
       </a>
+      <a href="#questions-apiml-hours" class="card-link" style="margin-left: 30px;">
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+      Frequently Asked Questions - API Mediation Layer
+      </a>
       <a href="#download-availability" class="card-link">
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
       Download Availability
@@ -62,6 +66,7 @@ p .card-black {
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="latest-announcements">Latest Announcements</h2>
     <p>Starting from 12/08, the Zowe Onboarding Squad will hold the Office Hours to discuss the details about the upcoming V2 release. More information can be found in the <a href="#office-hours">Office Hour</a> section.</p>
+    <p>The V2 documentation site is available at <a href="https://deploy-preview-1961--zowe-docs-master.netlify.app/">V2 Docs Site Preview</a></p>
   </div>
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="general-information">General Information</h2>
@@ -116,7 +121,6 @@ p .card-black {
           <ul>
             <li>CLI package should be removed as a plug-in peer dep (Imperative)</li>
             <li><code>AbstractRestClient.mDecode</code> defaults to true so any plugin with custom RestClient implementation that adds gzip decompression may break</li>
-            <li>Any command with <code>--dcd</code> will not behave the way you expect it to (undocumented global option for Daemon Mode Current Directory - to be mentioned in updated conformance criteria)</li>
             <li><code>The return value for PluginManagementFacility.requirePluginModuleCallback</code> changed. <br />
               Context:<br />
               Application (and Plugin) developers requiring a module from a plug-in’s relative path using the
@@ -388,14 +392,14 @@ p .card-black {
       <td>CLI</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
       <td><a href="https://zoom.us/rec/share/5jx4WW-JJiZX7tDJ8Y-BUf2laCoomsMtwhigUGRJ9YL2NHKQp37NJUsgx8Q_IDN5.3BEbWsVe6H9S_65F">Zoom recording</a></td>
-      <td><a href="https://ibm.box.com/s/yjh6taumnosny9zt38u4sjolu3vhang6"></a></td>
+      <td><a href="https://ibm.box.com/s/yjh6taumnosny9zt38u4sjolu3vhang6">Presentation</a></td>
     </tr>
     <tr>
       <td>01/12/2022 12PM - 1PM ET</td>
       <td>API Mediation Layer</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td></td>
-      <td></td>
+      <td><a href="https://zoom.us/rec/share/uBSJbqosQhXaHcHKz9ZkjRfBrJ-2s0Fjar29hCo1dsyJiDGkTBI6JRrnupmCYRA1.wtuWWLSMqi7PBmNW?startTime=1642006561000">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/0s12w45o4yod59bn1y2mprz2bq4wprb9">Presentation</a></td>
     </tr>    
     <tr>
       <td>01/19/2022 12PM - 1PM ET</td>
@@ -664,6 +668,76 @@ p .card-black {
         </div>
       </div>
     </div>
+    </div>
+  </div>
+  <div>
+    <button id="questions-apiml-hours" onclick="toggle('questions-apiml')" class="w3-button w3-block w3-left-align">
+    Zowe API Mediation Layer Office Hours Frequently Asked Questions</button>
+    <div id="questions-apiml" class="w3-container faq-hide">
+      <div>
+        <button onclick="toggle('questions-apiml-1')" class="w3-button w3-block w3-left-align">
+          1. Does the Service ID apply to zlux as well?
+        </button>
+        <div id="questions-apiml-1" class="w3-container faq-hide">
+          <p>Yes</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-apiml-2')" class="w3-button w3-block w3-left-align">
+          2. Is the “BCM” prefix for Broadcom required for V2 or can we continue to use "CA"?
+        </button>
+        <div id="questions-apiml-2" class="w3-container faq-hide">
+          <p>The BCM prefix for V2 is required</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-apiml-3')" class="w3-button w3-block w3-left-align">
+          3. For SSO - basic authentication, is switching to JWT tokens required for conformance or is it considered a best practice?
+        </button>
+        <div id="questions-apiml-3" class="w3-container faq-hide">
+          <p>Yes, this a requirement for V2 conformance, however Pass Tickets can be used and it is possible to leverage the basic authentication to properly participate. The configuration is here: <a href="https://docs.zowe.org/stable/extend/extend-apiml/api-mediation-passtickets/#api-services-that-support-passtickets">https://docs.zowe.org/stable/extend/extend-apiml/api-mediation-passtickets/#api-services-that-support-passtickets</a> <i>The API ML will issue a passticket for the user when service is accessed as long as the user provides a valid JWT token. We recommend this route (minimally) to give the users a seamless signon experience.</i></p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-apiml-4')" class="w3-button w3-block w3-left-align">
+          4. Will Pass Tickets continue to work?
+        </button>
+        <div id="questions-apiml-4" class="w3-container faq-hide">
+          <p>Yes</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-apiml-5')" class="w3-button w3-block w3-left-align">
+          5. Where is the API ID field located, is it ID in the manifest.yaml?
+        </button>
+        <div id="questions-apiml-5" class="w3-container faq-hide">
+          <p>It is part of your configuration yaml - it is a unique identifier for your service that helps to identify your service and uses the format: <i>companyprefix.productname</i> (Note: it is used for documentation only, has no impact on interacting with API-ML)</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-apiml-6')" class="w3-button w3-block w3-left-align">
+          6. Can you use the same API ID name for different instances of your service?
+        </button>
+        <div id="questions-apiml-6" class="w3-container faq-hide">
+          <p>TBD</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-apiml-7')" class="w3-button w3-block w3-left-align">
+          7. Is there a way to ensure compatibility with V1 Zowe CLI plug-ins?
+        </button>
+        <div id="questions-apiml-7" class="w3-container faq-hide">
+          <p>Cross-version compatibility may be possible but is not guarenteed; recommend upgrading both</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-apiml-8')" class="w3-button w3-block w3-left-align">
+          8. Will the V2 Mediation Layer will require V2 APIs or will it work with existing (V1) APIs?
+        </button>
+        <div id="questions-apiml-8" class="w3-container faq-hide">
+          <p>Existing (V1) APIs will continue to work </p>
+        </div>
+      </div>
     </div>
   </div>
 
