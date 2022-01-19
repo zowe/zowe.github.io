@@ -20,6 +20,10 @@
 <div style="padding-top: 3%">
     <h3 style="margin-bottom: 1.5rem">Disclosure policy</h3>
     <p>Coming soon...</p>
+   <div style="padding-top: 3%">
+    <h4 style="margin-bottom: 1.5rem">Comments on this policy</h4>
+    <p>If you have suggestions on how this process could be improved, please file an issue to discuss.</p>
+   </div>
 </div>
 
 <div style="padding-top: 3%">
