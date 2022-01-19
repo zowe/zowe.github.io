@@ -26,7 +26,8 @@ cli_plugins_download_url: legal.html?type=cli-plugins&version=
 cli_active_development_download_url: legal.html?type=cli-active-development&version=
 smpe_download_url: legal.html?type=smpe&version=
 pswi_download_uri: legal.html?type=pswi&version=1.24.0-TP
-pswi_install_doc_url: https://github.com/zowe/zowe-install-packaging/blob/master/zowe_pswi_tech_prev.md
+pswi_install_doc_url: https://docs.zowe.org/stable/user-guide/install-zos.html
+pswi_version: 1.24.0
 zowe_node_sdk_download_url: legal.html?type=nodejs-sdk&version=
 zowe_python_sdk_download_url: legal.html?type=python-sdk&version=
 nightly_build_url: https://zowe.jfrog.io/zowe/webapp/#/artifacts/browse/tree/General/libs-release-local/org/zowe/nightly
@@ -84,7 +85,7 @@ zowe_video_deck_url: https://docs.zowe.org/Zowe_introduction_video_deck.pptx
 zowe_video_transcript_url: https://docs.zowe.org/Zowe_introduction_video_script.txt
 learn_page_get_started: https://docs.zowe.org/stable/getting-started/zowe-getting-started.html
 zowe_medium_blog_url: https://medium.com/zowe
-master_the_mainframe_url: https://www.ibm.com/it-infrastructure/z/education/master-the-mainframe
+master_the_mainframe_url: https://www.ibm.com/it-infrastructure/z/education/zxplore
 visual_studio_code_url: https://code.visualstudio.com/
 web_dev_node_url: https://nodejs.org/
 zowe_extend_doc_url: https://docs.zowe.org/stable/extend/extend-zowe-overview.html
@@ -105,7 +106,7 @@ zowe_doc_slack_url: https://openmainframeproject.slack.com/archives/CC961JYMQ
 zowe_metrics_url: https://www.metrics.zowe.org/
 zowe_cli_next_features_doc_url: https://github.com/zowe/zowe-cli#early-access-features
 zowe_node_sdk_next_reference_doc_url: https://docs.zowe.org/stable/typedoc_next/index.html
-zowe_next_release_date: 2021-10-18
+zowe_next_release_date: 2021-12-10
 
 
 

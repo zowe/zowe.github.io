@@ -14,7 +14,8 @@
   <div style="margin-left: 1%">
   <p style="margin-bottom: 0rem">1. Extend the Zowe Command Line Interface.</p>
   <p style="margin-bottom: 0rem">2. Add a REST API service to the API Mediation Layer.</p>
-  <p>3. Add an application plug-in to the Zowe Desktop.</p>
+  <p style="margin-bottom: 0rem">3. Add an application plug-in to the Zowe Desktop.</p>
+  <p>4. Extend the Zowe Explorer.</p>
   </div>
   <p>Learn more and get started with the <a href="{{ site.zowe_extend_doc_url }}">Extending documentation</a>.</p>
 
@@ -26,7 +27,6 @@
         <p><strong>Modern DevOps practices</strong> - Automate your CI/CD pipeline with modern tools like Jenkins.</p>
         <p><strong>Aligned with new developers</strong> - The next generation of mainframe developers is using Zowe, and will be the ones who implement and use your extension.</p>
       </div>
-      <p>Learn more and get started with the <a href="{{ site.zowe_extend_doc_url }}">Extending documentation</a>.</p>
   </div>
 
   <section style="padding-top: 3%;">
