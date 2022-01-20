@@ -58,6 +58,10 @@ p .card-black {
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
       Frequently Asked Questions - API Mediation Layer
       </a>
+      <a href="#questions-explorers-hours" class="card-link" style="margin-left: 30px;">
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+      Frequently Asked Questions - Explorers
+      </a>
       <a href="#download-availability" class="card-link">
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
       Download Availability
@@ -405,8 +409,8 @@ p .card-black {
       <td>01/19/2022 12PM - 1PM ET</td>
       <td>Explorers</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td></td>
-      <td></td>
+      <td><a href="https://zoom.us/rec/share/bY4w_elSqY1EWlu46WTud3384hK3u6lijXDCZQsPXeMGOutO_GOUnlEYiAIaXLZY.0_at4MEk3LSYDNZg?startTime=1642610929000">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/4qzo7u8olahf85srcpvcsg904ke6o63t">Presentation</a></td>
     </tr>
     <tr>
       <td>01/26/2022 12PM - 1PM ET</td>
@@ -738,6 +742,131 @@ p .card-black {
           <p>Existing (V1) APIs will continue to work </p>
         </div>
       </div>
+    </div>
+  </div>
+
+  
+  <div>
+    <button id="questions-explorers-hours" onclick="toggle('questions-explorers')" class="w3-button w3-block w3-left-align">
+    Zowe Explorers Office Hours Frequently Asked Questions</button>
+    <div id="questions-explorers" class="w3-container faq-hide">
+      <div>
+        <button onclick="toggle('questions-explorers-1')" class="w3-button w3-block w3-left-align">
+          1. Will Zowe Explorer function properly if you do not want to leverage the Zowe credential manager? (Secure Credential Store)?
+        </button>
+        <div id="questions-explorers-1" class="w3-container faq-hide">
+          <p>Yes</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-explorers-2')" class="w3-button w3-block w3-left-align">
+          2. Will Zowe Explorer (V2) require the installation of Zowe CLI (V2) for any features?
+        </button>
+        <div id="questions-explorers-2" class="w3-container faq-hide">
+          <p>No. Zowe CLI offers more robust functionality for Team Configuration initialization specifically when configuring for MFA/token support, however it is NOT required. Zowe Explorer users interested in configuring for MFA/Tokens can manually update their Team Configuration</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-explorers-3')" class="w3-button w3-block w3-left-align">
+          3. Will consumers need to change the way they obtain new releases of Zowe Explorer from the VS Code Marketplace in order to obtain the Zowe V2 version?
+        </button>
+        <div id="questions-explorers-3" class="w3-container faq-hide">
+          <p>No. The Zowe Explorer download experience will not change.</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-explorers-4')" class="w3-button w3-block w3-left-align">
+          4. Will my existing Zowe Explorer profiles be updated to the new format automatically when I download Zowe Explorer V2?
+        </button>
+        <div id="questions-explorers-4" class="w3-container faq-hide">
+          <p>No. Users must plan to convert to the Team Configuration (profiles) format.</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-explorers-5')" class="w3-button w3-block w3-left-align">
+          5. Will my existing (yaml) Zowe Explorer profiles continue to work with V2 and subsequent Zowe releases? Is the same true for Zowe CLI profiles?
+        </button>
+        <div id="questions-explorers-5" class="w3-container faq-hide">
+          <p>The V1-style profiles will remain backward compatible for the duration of the Zowe V2 ACTIVE and MAINTENANCE time period (~4 years), however they will be identified as “deprecated” in Zowe V2 which means they will not be backwards compatible with Zowe V3 and beyond. The same is true for Zowe CLI profiles.</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-explorers-6')" class="w3-button w3-block w3-left-align">
+          6. What if a user has both the V1-style profiles and the V2 Team Configuration?
+        </button>
+        <div id="questions-explorers-6" class="w3-container faq-hide">
+          <p>The presence of a Team Configuration renders all V1 profiles unusable. When you opt in to the V2 Team configuration, you cannot revert back.</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-explorers-7')" class="w3-button w3-block w3-left-align">
+          7. Can I create or update V1-style profiles in Zowe Explorer V2?
+        </button>
+        <div id="questions-explorers-7" class="w3-container faq-hide">
+          <p>To be answered</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-explorers-8')" class="w3-button w3-block w3-left-align">
+          8. How will a user know what type of profiles they are using?
+        </button>
+        <div id="questions-explorers-8" class="w3-container faq-hide">
+          <p>Zowe Explorer users may not know. In the CLI, if a V2 profile is found, and a V1 profiles command is issued, an error similar to the following will be displayed:</p>
+          <p>-> zowe profiles list zosmf<br/>
+          An error occurred trying to list profiles.<br/>
+          Profile IO Error: A Zowe V1 profile operation was attempted with a Zowe V2 configuration in use.</p>
+          <p>Warning: The command 'profiles list' is deprecated.<br/>
+          Recommended replacement: The 'config list' command</p>
+          <p>If only V1 profiles exist, the command will work, but a deprecation warning will be displayed:</p>
+          <p>-> zowe profiles list zosmf<br/>
+          sys1_zosmf<br/>
+          sys2_zosmf (default)<br/>
+          sys3_zosmf</p>
+          <p>Warning: The command 'profiles list' is deprecated.
+          Recommended replacement: The 'config list' command</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-explorers-9')" class="w3-button w3-block w3-left-align">
+          9. Is there a profile conversion utility available?
+        </button>
+        <div id="questions-explorers-9" class="w3-container faq-hide">
+          <p>Yes, the CLI has a conversion utility.  At the present time, Zowe Explorer users who wish to convert over and do not use Zowe CLI will need to create their profiles from scratch OR install Zowe CLI and use the Zowe CLI conversion utility.</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-explorers-10')" class="w3-button w3-block w3-left-align">
+          10. Where can a user obtain / download Zowe Explorer?
+        </button>
+        <div id="questions-explorers-10" class="w3-container faq-hide">
+          <p>Zowe Explorer is available for download at the VisualStudio Marketplace: <a href="https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe">https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe</a> and the Open VSX Registry: <a href="https://open-vsx.org/extension/Zowe/vscode-extension-for-zowe">https://open-vsx.org/extension/Zowe/vscode-extension-for-zowe</a></p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-explorers-11')" class="w3-button w3-block w3-left-align">
+          11. Will the Zowe V2 JSON schema get populated with the appropriate configuration information for a given extension like the V1 META.YAML file gets updated - i.e. whenever a user installs a conformant Zowe extension?
+        </button>
+        <div id="questions-explorers-11" class="w3-container faq-hide">
+          <p>For Zowe CLI Extensions: the JSON schema file is automatically updated when a Zowe CLI plug-in is installed; more specifically the global schema is dynamically updated -- individual project schemas are not). For Zowe Explorer Extensions: we have plans to automatically insert configuration information into the schema, but at the current time this information will need to be manually added.</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-explorers-12')" class="w3-button w3-block w3-left-align">
+          12. What if I install a new plug-in after initializing my Team Configuration?  How do I ensure the configuration has the new plug-in information?
+        </button>
+        <div id="questions-explorers-12" class="w3-container faq-hide">
+          <p>To be answered</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-explorers-13')" class="w3-button w3-block w3-left-align">
+          13. Does the base schema allow me to add my own set of properties?
+        </button>
+        <div id="questions-explorers-13" class="w3-container faq-hide">
+          <p>Yes. Example will be added later.</p>
+        </div>
+      </div>
+      
     </div>
   </div>
 
