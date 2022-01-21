@@ -803,7 +803,7 @@ p .card-black {
           7. Can I create or update V1-style profiles in Zowe Explorer V2?
         </button>
         <div id="questions-explorers-7" class="w3-container faq-hide">
-          <p>To be answered</p>
+          <p>Yes, as long as there is no team config file present.</p>
         </div>
       </div>
       <div>
@@ -855,7 +855,7 @@ p .card-black {
           12. What if I install a new plug-in after initializing my Team Configuration?  How do I ensure the configuration has the new plug-in information?
         </button>
         <div id="questions-explorers-12" class="w3-container faq-hide">
-          <p>To be answered</p>
+          <p>For Zowe CLI, the global schema is updated when the new plug-in is installed. New init commands will include the new plug-in profile(s) in the generated zowe.config.json. Project-level schema is not updated at plug-in install time. To update, run zowe config update-schemas. The plan for Zowe Explorer is similar but is still being discussed.</p>
         </div>
       </div>
       <div>
@@ -863,7 +863,7 @@ p .card-black {
           13. Does the base schema allow me to add my own set of properties?
         </button>
         <div id="questions-explorers-13" class="w3-container faq-hide">
-          <p>Yes. Example will be added later.</p>
+          <p>Yes.</p>
         </div>
       </div>
       
