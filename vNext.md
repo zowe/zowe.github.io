@@ -62,6 +62,10 @@ p .card-black {
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
       Frequently Asked Questions - Explorers
       </a>
+      <a href="#questions-webui-hours" class="card-link" style="margin-left: 30px;">
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+      Frequently Asked Questions - Web UI / App Framework
+      </a>
       <a href="#download-availability" class="card-link">
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
       Download Availability
@@ -71,6 +75,7 @@ p .card-black {
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="latest-announcements">Latest Announcements</h2>
     <p>Starting from 12/08, the Zowe Onboarding Squad will hold the Office Hours to discuss the details about the upcoming V2 release. More information can be found in the <a href="#office-hours">Office Hour</a> section.</p>
     <p>The V2 documentation site is available at <a href="https://deploy-preview-1961--zowe-docs-master.netlify.app/">V2 Docs Site Preview</a></p>
+    <p>First preview build of Zowe is available at: <a href="https://zowe.jfrog.io/zowe/libs-snapshot-local/org/zowe/2.0.0-PR-2568/zowe-2.0.0-pr-2568-7-20220124181541.pax">https://zowe.jfrog.io/zowe/libs-snapshot-local/org/zowe/2.0.0-PR-2568/zowe-2.0.0-pr-2568-7-20220124181541.pax</a>. It's just a preview and we are still working on the build. We will announce version ready for testing extensions early. 
   </div>
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="general-information">General Information</h2>
@@ -416,8 +421,8 @@ p .card-black {
       <td>01/26/2022 12PM - 1PM ET</td>
       <td>Web UI (Zowe Application Framework)</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td></td>
-      <td></td>
+      <td><a href="https://zoom.us/rec/share/4DVEejYeWsIPgjc7Xohnm1eSEtyxmofJ_18lMjM3LhdvdCNK7UDaYEOVsid1bSEs.j0Id62QGqNMdagGF?startTime=1643216346000">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/cnhssr07pzejbliwnfc48y785twtxz38">Presentation</a></td>
     </tr>
     <tr>
       <td>02/02/2022 12PM - 1PM ET</td>
@@ -866,7 +871,69 @@ p .card-black {
           <p>Yes.</p>
         </div>
       </div>
-      
+    </div>
+  </div>
+
+  <div>
+    <button id="questions-webui-hours" onclick="toggle('questions-webui')" class="w3-button w3-block w3-left-align">
+    Zowe App Framework Office Hours Frequently Asked Questions</button>
+    <div id="questions-webui" class="w3-container faq-hide">
+      <div>
+        <button onclick="toggle('questions-webui-1')" class="w3-button w3-block w3-left-align">
+          1. Will we be able to specify individual ports rather than initial+offset? We have a funky pattern we're using.
+        </button>
+        <div id="questions-webui-1" class="w3-container faq-hide">
+          <p>Yes, specifying individual ports will continue to be supported</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-webui-2')" class="w3-button w3-block w3-left-align">
+          2. Can the zwe components install command be executed in a batch job, too?
+        </button>
+        <div id="questions-webui-2" class="w3-container faq-hide">
+          <p>Yes, should be able to run via SHELL or via a batch job</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-webui-3')" class="w3-button w3-block w3-left-align">
+          3. If ZWE_LAUNCH_COMPONENTS is a list of all components, does the zwe components install command handle whether to add a new component to that ZWE_LAUNCH_COMPONENTS variable as necessary?
+        </button>
+        <div id="questions-webui-3" class="w3-container faq-hide">
+          <p>Most-likely, yes (will need to be confirmed)</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-webui-4')" class="w3-button w3-block w3-left-align">
+          4. Does the zwe components install command also handle ZIS and ZSS components?
+        </button>
+        <div id="questions-webui-4" class="w3-container faq-hide">
+          <p>Yes</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-webui-5')" class="w3-button w3-block w3-left-align">
+          5. Where is zowe.yaml located if the instance directory (where it used to be) no longer exists?
+        </button>
+        <div id="questions-webui-5" class="w3-container faq-hide">
+          <p>Zowe.yaml is a centralized file containing parameters utilized by the ZWE command - you determine where it resides. V2 no longer requires an instance directory.</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-webui-6')" class="w3-button w3-block w3-left-align">
+          6. Is there a Zowe preview build available yet?
+        </button>
+        <div id="questions-webui-6" class="w3-container faq-hide">
+          <p>Yes: https://zowe.jfrog.io/zowe/libs-snapshot-local/org/zowe/2.0.0-PR-2568/zowe-2.0.0-pr-2568-7-20220124181541.pax</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-webui-7')" class="w3-button w3-block w3-left-align">
+          7. Who can we reach out to if we have questions?  
+        </button>
+        <div id="questions-webui-7" class="w3-container faq-hide">
+          <p>Zowe Slack Channel: openmainframeproject.slack.com #zowe-user OR Sean’s email address: sgrady@rocketsofware.com</p>
+        </div>
+      </div>
     </div>
   </div>
 
