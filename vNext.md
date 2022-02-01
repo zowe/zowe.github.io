@@ -954,20 +954,20 @@ p .card-black {
     <p>This part show basic information about the installation of the first version of the PAX. We will provide more details and add link to the proper sections in docs-site in coming weeks</p>
     <h2>Prepare</h2>
     <h3>Extract Zowe convenience build</h3>
-      <p>When extracting Zowe convenience build (<pre>zowe-&lt;version&gt;.pax</pre>), please note you should always <i>preserve extended attributes and file mode</i> with <pre>-ppx</pre> option. For example, <pre>pax -ppx -rf zowe-&lt;version&gt;.pax</pre>.</p>
+      <p>When extracting Zowe convenience build (<code>zowe-&lt;version&gt;.pax</code>), please note you should always <i>preserve extended attributes and file mode</i> with <code>-ppx</code> option. For example, <code>pax -ppx -rf zowe-&lt;version&gt;.pax</code>.</p>
     <h3>PATH environment</h3>
-      <p>After extract Zowe convenience build or applied SMPE, you can add Zowe bin directory to your<pre>PATH</pre> environment variable:<br/>
-      <pre>export PATH=${PATH}:/path/to/my/zowe/bin</pre><br/>
-      Once this is done, you can access Zowe server command <pre>zwe</pre> from any USS directory. Type <pre>zwe --help</pre> or <pre>zwe -h</pre> to learn how to use this command.</p>
+      <p>After extract Zowe convenience build or applied SMPE, you can add Zowe bin directory to your<code>PATH</code> environment variable:<br/>
+      <code>export PATH=${PATH}:/path/to/my/zowe/bin</code><br/>
+      Once this is done, you can access Zowe server command <code>zwe</code> from any USS directory. Type <code>zwe --help</code> or <code>zwe -h</code> to learn how to use this command.</p>
     <h3>zowe.yaml</h3>
-      <p>Zowe uses a YAML file, usually mentioned as <pre>zowe.yaml</pre> to instruct Zowe how to install, configure and start Zowe.</p>
-      <p>Copy the <pre>example-zowe.yaml</pre> located in Zowe <pre>bin</pre> directory to your preferred location, for example, your home directory. You can modify the file based on your environment and then move to next step.</p>
+      <p>Zowe uses a YAML file, usually mentioned as <code>zowe.yaml</code> to instruct Zowe how to install, configure and start Zowe.</p>
+      <p>Copy the <code>example-zowe.yaml</code> located in Zowe <code>bin</code> directory to your preferred location, for example, your home directory. You can modify the file based on your environment and then move to next step.</p>
     <h2>Install and initialize</h2>
-      <p>If you are using Zowe convenience build, you should run <pre>zwe install --config /path/to/my/zowe.yaml</pre> command to initialize Zowe MVS data sets. If you are using Zowe SMPE build, you can move on to next command.</p>
-      <p>Run <pre>zwe init --config /path/to/my/zowe.yaml</pre> command to initialize environment and permissions required by Zowe. Type <pre>zwe init --help</pre> to learn more about the command.</p>
-      <p><pre>zwe init</pre> command is a combination of multiple sub-commands: `mvs`, `certificate`, `security`, `vsam`, `apfauth`, and `stc`. Type <pre>zwe init &lt;sub-command&gt; --help</pre> (for example, <pre>zwe init stc --help</pre>) to learn how to run <pre>zwe init</pre> command step by step.</p>
+      <p>If you are using Zowe convenience build, you should run <code>zwe install --config /path/to/my/zowe.yaml</code> command to initialize Zowe MVS data sets. If you are using Zowe SMPE build, you can move on to next command.</p>
+      <p>Run <code>zwe init --config /path/to/my/zowe.yaml</code> command to initialize environment and permissions required by Zowe. Type <code>zwe init --help</code> to learn more about the command.</p>
+      <p><code>zwe init</code> command is a combination of multiple sub-commands: `mvs`, `certificate`, `security`, `vsam`, `apfauth`, and `stc`. Type <code>zwe init &lt;sub-command&gt; --help</code> (for example, <code>zwe init stc --help</code>) to learn how to run <code>zwe init</code> command step by step.</p>
     <h2>Start and stop</h2>
-      <p>- Run <pre>zwe start --config /path/to/my/zowe.yaml</pre> command to start Zowe.</p>
-      <p>- Run <pre>zwe stop --config /path/to/my/zowe.yaml</pre> command to stop Zowe.</p>
+      <p>- Run <code>zwe start --config /path/to/my/zowe.yaml</code> command to start Zowe.</p>
+      <p>- Run <code>zwe stop --config /path/to/my/zowe.yaml</code> command to stop Zowe.</p>
   </div>
 </section>
