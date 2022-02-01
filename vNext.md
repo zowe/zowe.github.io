@@ -70,12 +70,16 @@ p .card-black {
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
       Download Availability
       </a>
+      <a href="#release-installation" class="card-link" style="margin-left: 30px;">
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+      Preview - Installation Instructions
+      </a>
   </div>
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="latest-announcements">Latest Announcements</h2>
     <p>Starting from 12/08, the Zowe Onboarding Squad will hold the Office Hours to discuss the details about the upcoming V2 release. More information can be found in the <a href="#office-hours">Office Hour</a> section.</p>
     <p>The V2 documentation site is available at <a href="https://deploy-preview-1961--zowe-docs-master.netlify.app/">V2 Docs Site Preview</a></p>
-    <p>First preview build of Zowe is available at: <a href="https://zowe.jfrog.io/zowe/libs-snapshot-local/org/zowe/2.0.0-PR-2568/zowe-2.0.0-pr-2568-7-20220124181541.pax">https://zowe.jfrog.io/zowe/libs-snapshot-local/org/zowe/2.0.0-PR-2568/zowe-2.0.0-pr-2568-7-20220124181541.pax</a>. It's just a preview and we are still working on the build. We will announce version ready for testing extensions early. 
+    <p>First preview build of Zowe is available at: <a href="https://zowe.jfrog.io/zowe/libs-snapshot-local/org/zowe/2.0.0-PR-2568/zowe-2.0.0-pr-2568-7-20220124181541.pax">https://zowe.jfrog.io/zowe/libs-snapshot-local/org/zowe/2.0.0-PR-2568/zowe-2.0.0-pr-2568-7-20220124181541.pax</a>. It's just a preview and we are still working on the build. We will announce version ready for testing extensions early.</p> 
   </div>
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="general-information">General Information</h2>
@@ -482,7 +486,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-2')" class="w3-button w3-block w3-left-align">
-    2. Where can I find the current (V1) and new (V2) LTS conformance criteria?</button>
+    1. Where can I find the current (V1) and new (V2) LTS conformance criteria?</button>
     <div id="question-2" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;The Zowe Squads have prepared XLS spreadsheets with conformance criteria for all Zowe
       extensions including: CLI, APIs, App Framework, and Explorerfor VS Code. The spreadsheets clearly show the prior /
@@ -493,7 +497,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-3')" class="w3-button w3-block w3-left-align">
-    3. Will my V1 conformant extension automatically work with V2?</button>
+    1. Will my V1 conformant extension automatically work with V2?</button>
     <div id="question-3" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;NO. We recommend testing all V1 conformant extensions. See the <a href="#coming-changes">Coming changes (For Users)</a> section at
       <a href="/vNext">Zowe.org/vNext</a>.</p>
@@ -501,14 +505,14 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-4')" class="w3-button w3-block w3-left-align">
-    4. What if my extension does not work with Zowe V2?</button>
+    1. What if my extension does not work with Zowe V2?</button>
     <div id="question-4" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;See the recommendations in the <a href="#coming-changes">Coming changes</a> section at <a href="/vNext">Zowe.org/vNext</a>.</p>
     </div>
     </div>
     <div>
     <button onclick="toggle('question-5')" class="w3-button w3-block w3-left-align">
-    5. How can I test my current plug-in and/or extension with Zowe V2?</button>
+    1. How can I test my current plug-in and/or extension with Zowe V2?</button>
     <div id="question-5" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;Obtain the pre-GA Zowe V2 release; for details see the pre-GA <a href="#download-availability">Download Availability</a> section at
       <a href="/vNext">Zowe.org/vNext</a>.</p>
@@ -516,7 +520,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-6')" class="w3-button w3-block w3-left-align">
-    6. Do I need to reapply for conformance?</button>
+    1. Do I need to reapply for conformance?</button>
     <div id="question-6" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;YES, we expect the Zowe V2 Conformance program to be available in early Feb 2022. We will
       announce when extenders can pre-apply in the <a href="#latest-announcements">LATEST ANNOUNCEMENTS</a> section at <a href="vNext.html">Zowe.org/vNext</a>.</p>
@@ -524,7 +528,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-7')" class="w3-button w3-block w3-left-align">
-    7. What happens to my V1 conformance badge?</button>
+    1. What happens to my V1 conformance badge?</button>
     <div id="question-7" class="w3-container faq-hide">
       <p>All Zowe V1 conformance badges will remain at the Open Mainframe Project Interactive
       Landscape; we recommend documenting a Zowe compatibility matrix to ensure clients are aware of any/all
@@ -533,7 +537,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-8')" class="w3-button w3-block w3-left-align">
-    8. Will I be able to pre-apply for Zowe V2 conformance?</button>
+    1. Will I be able to pre-apply for Zowe V2 conformance?</button>
     <div id="question-8" class="w3-container faq-hide">
       <p>Yes, We will announce when extenders can pre-apply in the <a href="#latest-announcements">LATEST ANNOUNCEMENTS</a> section at <a
         href="vNext.html">Zowe.org/vNext</a>.</p>
@@ -541,14 +545,14 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-9')" class="w3-button w3-block w3-left-align">
-    9. When can I share this information with my customers?</button>
+    1. When can I share this information with my customers?</button>
     <div id="question-9" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;Anytime. Zowe is an open source project managed by a transparent, open source community.</p>
     </div>
     </div>
     <div>
     <button onclick="toggle('question-10')" class="w3-button w3-block w3-left-align">
-    10.  How long will V1 LTS be supported?</button>
+    1.   How long will V1 LTS be supported?</button>
     <div id="question-10" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;The V1 LTS Maintenance timeline runs through July 2024. See RELEASE TIMELINE at <a
         href="download.html">Zowe.org/download</a>.</p>
@@ -556,7 +560,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-11')" class="w3-button w3-block w3-left-align">
-    11.  What if my extension does not qualify for V2 conformance?</button>
+    1.   What if my extension does not qualify for V2 conformance?</button>
     <div id="question-11" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;You have several options:</p>
       <ol>
@@ -572,7 +576,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-12')" class="w3-button w3-block w3-left-align">
-    12.  Where can I go for more information or get interactive help? (my question is not listed here)</button>
+    1.   Where can I go for more information or get interactive help? (my question is not listed here)</button>
     <div id="question-12" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;You have several options:</p>
       <ol>
@@ -588,7 +592,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-13')" class="w3-button w3-block w3-left-align">
-    13.  Will the Zowe V2 Office Hours be recorded? (How do I find the recording?)</button>
+    1.   Will the Zowe V2 Office Hours be recorded? (How do I find the recording?)</button>
     <div id="question-13" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;Yes. Recordings can be provided on request. Click on the COMMUNITY tab at <a href="https://zowe.org">Zowe.org</a>, navigate to the SLACK box
       and click #zowe-onboarding and request the recording.</p>
@@ -596,21 +600,21 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-14')" class="w3-button w3-block w3-left-align">
-    14.  Will there be a means to migrate (or convert?) existing / old-style profiles to the V2 team config for Zowe CLI? Will it handle profiles that are secured by SCS?</button>
+    1.   Will there be a means to migrate (or convert?) existing / old-style profiles to the V2 team config for Zowe CLI? Will it handle profiles that are secured by SCS?</button>
     <div id="question-14" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;Yes, we plan to introduce a "zowe config convert-profiles" command, which will be available in the v2 release.</p>
     </div>
     </div>
     <div>
     <button onclick="toggle('question-15')" class="w3-button w3-block w3-left-align">
-    15.  Will (CLI)Daemon mode be integrated seamlessly into v2 and enabled by default?</button>
+    1.   Will (CLI)Daemon mode be integrated seamlessly into v2 and enabled by default?</button>
     <div id="question-15" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;This work is still in progress-we are working on a "zowe daemon enable" command to make the daemon installation process as seamless as possible. Daemon mode will be disabled by default, the command must be run to enable it.</p>
     </div>
     </div>
     <div>
     <button onclick="toggle('question-16')" class="w3-button w3-block w3-left-align">
-    16.  The V1 version of Zowe Explorer offers a text input area, where a user can enter some of the data / attributes (host, port, etc.) necessary to create the old-style profiles.  With Team Config what options are available for users to edit the config file?  Is it manual? Is there a UI?</button>
+    1.   The V1 version of Zowe Explorer offers a text input area, where a user can enter some of the data / attributes (host, port, etc.) necessary to create the old-style profiles.  With Team Config what options are available for users to edit the config file?  Is it manual? Is there a UI?</button>
     <div id="question-16" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;The recommended approach for editing the config file is to launch it in VS Code from Zowe Explorer and make modifications there. The designated user responsible for creating and maintaining the config (we recommend a team lead or Administrator) will be able to leverage the built-in “intellisense” when editing the file. <i>Note: <b>Team Config fundamentally changes the paradigm on profile creation & management.</b> Prior to Team Config, <b>all users</b> were required to understand, create, test, trouble-shoot, and manage their own profiles. Team Config was designed to scale all of these tasks back, remove the burden from individual users and centralize it. Once the config is distributed most users should not need to make any significant edits.</i></p>
       <p>&nbsp;&nbsp;&nbsp;Join the discussion on this topic here: <a href="https://github.com/zowe/vscode-extension-for-zowe/discussions/1535">https://github.com/zowe/vscode-extension-for-zowe/discussions/1535</a></p>
@@ -630,7 +634,7 @@ p .card-black {
       </div>
       <div>
         <button onclick="toggle('questions-cli-2')" class="w3-button w3-block w3-left-align">
-          2. Will it be possible to override the built-in Secure Credentials if you are using something else?
+          1. Will it be possible to override the built-in Secure Credentials if you are using something else?
         </button>
         <div id="questions-cli-2" class="w3-container faq-hide">
           <p>Team Config will likely support alternates defined in the settings json file, administrators will probably need to hand-edit the configuration file to set a new credential manager</p>
@@ -638,7 +642,7 @@ p .card-black {
       </div>
       <div>
         <button onclick="toggle('questions-cli-3')" class="w3-button w3-block w3-left-align">
-          3. How do you expect consumers to migrate from the (V1) old Secure Credentials to the new (V2 team config) configuration? Is there a migration process?
+          1. How do you expect consumers to migrate from the (V1) old Secure Credentials to the new (V2 team config) configuration? Is there a migration process?
         </button>
         <div id="questions-cli-3" class="w3-container faq-hide">
           <p>A migration utility is available - it will translate profiles (1 for 1) to new  (team config) format AND (optionally) clean-up old profiles and old SCS entries.</p>
@@ -646,7 +650,7 @@ p .card-black {
       </div>
       <div>
         <button onclick="toggle('questions-cli-4')" class="w3-button w3-block w3-left-align">
-          4. Is migration to the new profile format required?
+          1. Is migration to the new profile format required?
         </button>
         <div id="questions-cli-4" class="w3-container faq-hide">
           <p>Migration to the new profile format is NOT required immediately - the old profiles will work UNLESS a team config is created - that said, the old profiles will not be used if a new team config is available. Simply stated - if a team config is not located, CLI will fall back to using the prior profiles</p>
@@ -654,7 +658,7 @@ p .card-black {
       </div>
       <div>
         <button onclick="toggle('questions-cli-5')" class="w3-button w3-block w3-left-align">
-          5. Will V2 be able to use the old (V1) Secure Credentials?
+          1. Will V2 be able to use the old (V1) Secure Credentials?
         </button>
         <div id="questions-cli-5" class="w3-container faq-hide">
           <p>Yes - CLI can read the old and the new format</p>
@@ -662,7 +666,7 @@ p .card-black {
       </div>
       <div>
         <button onclick="toggle('questions-cli-6')" class="w3-button w3-block w3-left-align">
-          6. Will my username/password be saved in 2 different locations if I do not use the --delete (after the migration)?
+          1. Will my username/password be saved in 2 different locations if I do not use the --delete (after the migration)?
         </button>
         <div id="questions-cli-6" class="w3-container faq-hide">
           <p>Yes (recommend this is cleaned up)</p>
@@ -670,7 +674,7 @@ p .card-black {
       </div>
       <div>
         <button onclick="toggle('questions-cli-7')" class="w3-button w3-block w3-left-align">
-          7. For the keyword base-path, does it remain camel case or transition to something else?
+          1. For the keyword base-path, does it remain camel case or transition to something else?
         </button>
         <div id="questions-cli-7" class="w3-container faq-hide">
           <p>CLI option name is "base-path", property name in config is "basePath"</p>
@@ -942,7 +946,28 @@ p .card-black {
 <section class="whitebackground">
   <div id="download-availability">
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Download Availability</h2>
-    <p>The Pre-GA V2 Zowe package is available only for CLI (Zowe v2 LTS Preview section on <a href="https://www.zowe.org/download.html">Download</a>) and Explorers (Zowe Explorer section on <a href="https://www.zowe.org/download.html">Download</a>) at the moment. The Server-side PAX availability will be announced here and on Slack.</p>
+    <p>The Pre-GA V2 Zowe package is available for CLI (Zowe v2 LTS Preview section on <a href="https://www.zowe.org/download.html">Download</a>) and Explorers (Zowe Explorer section on <a href="https://www.zowe.org/download.html">Download</a>). 
+    The Server-side PAX is available here <a href="https://zowe.jfrog.io/zowe/libs-snapshot-local/org/zowe/2.0.0-PR-2568/zowe-2.0.0-pr-2568-7-20220124181541.pax">https://zowe.jfrog.io/zowe/libs-snapshot-local/org/zowe/2.0.0-PR-2568/zowe-2.0.0-pr-2568-7-20220124181541.pax</a> Keep in mind we are still working on it and improving it. There is a section below with some of the information on the installation.</p>
   </div>
 
+  <div id="release-installation">
+    <p>This part show basic information about the installation of the first version of the PAX. We will provide more details and add link to the proper sections in docs-site in coming weeks</p>
+    <h2>Prepare</h2>
+    <h3>Extract Zowe convenience build</h3>
+      <p>When extracting Zowe convenience build (<pre>zowe-<version>.pax</pre>), please note you should always <i>preserve extended attributes and file mode</i> with `-ppx` option. For example, <pre>pax -ppx -rf zowe-<version>.pax</pre>.</p>
+    <h3>PATH environment</h3>
+      <p>After extract Zowe convenience build or applied SMPE, you can add Zowe bin directory to your<pre>PATH</pre> environment variable:<br/>
+      <pre>export PATH=${PATH}:/path/to/my/zowe/bin</pre><br/>
+      Once this is done, you can access Zowe server command <pre>zwe</pre> from any USS directory. Type <pre>zwe --help</pre> or <pre>zwe -h</pre> to learn how to use this command.</p>
+    <h3>zowe.yaml</h3>
+      <p>Zowe uses a YAML file, usually mentioned as <pre>zowe.yaml</pre> to instruct Zowe how to install, configure and start Zowe.</p>
+      <p>Copy the <pre>example-zowe.yaml</pre> located in Zowe <pre>bin</pre> directory to your preferred location, for example, your home directory. You can modify the file based on your environment and then move to next step.</p>
+    <h2>Install and initialize</h2>
+      <p>If you are using Zowe convenience build, you should run <pre>zwe install --config /path/to/my/zowe.yaml</pre> command to initialize Zowe MVS data sets. If you are using Zowe SMPE build, you can move on to next command.</p>
+      <p>Run <pre>zwe init --config /path/to/my/zowe.yaml</pre> command to initialize environment and permissions required by Zowe. Type <pre>zwe init --help</pre> to learn more about the command.</p>
+      <p><pre>zwe init</pre> command is a combination of multiple sub-commands: `mvs`, `certificate`, `security`, `vsam`, `apfauth`, and `stc`. Type <pre>zwe init <sub-command> --help</pre> (for example, <pre>zwe init stc --help</pre>) to learn how to run <pre>zwe init</pre> command step by step.</p>
+    <h2>Start and stop</h2>
+      <p>- Run <pre>zwe start --config /path/to/my/zowe.yaml</pre> command to start Zowe.</p>
+      <p>- Run <pre>zwe stop --config /path/to/my/zowe.yaml</pre> command to stop Zowe.</p>
+  </div>
 </section>
