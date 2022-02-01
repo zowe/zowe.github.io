@@ -552,7 +552,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-10')" class="w3-button w3-block w3-left-align">
-    10.   How long will V1 LTS be supported?</button>
+    10.  How long will V1 LTS be supported?</button>
     <div id="question-10" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;The V1 LTS Maintenance timeline runs through July 2024. See RELEASE TIMELINE at <a
         href="download.html">Zowe.org/download</a>.</p>
@@ -560,7 +560,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-11')" class="w3-button w3-block w3-left-align">
-    11.   What if my extension does not qualify for V2 conformance?</button>
+    11.  What if my extension does not qualify for V2 conformance?</button>
     <div id="question-11" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;You have several options:</p>
       <ol>
@@ -576,7 +576,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-12')" class="w3-button w3-block w3-left-align">
-    12.   Where can I go for more information or get interactive help? (my question is not listed here)</button>
+    12.  Where can I go for more information or get interactive help? (my question is not listed here)</button>
     <div id="question-12" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;You have several options:</p>
       <ol>
@@ -592,7 +592,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-13')" class="w3-button w3-block w3-left-align">
-    13.   Will the Zowe V2 Office Hours be recorded? (How do I find the recording?)</button>
+    13.  Will the Zowe V2 Office Hours be recorded? (How do I find the recording?)</button>
     <div id="question-13" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;Yes. Recordings can be provided on request. Click on the COMMUNITY tab at <a href="https://zowe.org">Zowe.org</a>, navigate to the SLACK box
       and click #zowe-onboarding and request the recording.</p>
@@ -600,21 +600,21 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-14')" class="w3-button w3-block w3-left-align">
-    14.   Will there be a means to migrate (or convert?) existing / old-style profiles to the V2 team config for Zowe CLI? Will it handle profiles that are secured by SCS?</button>
+    14.  Will there be a means to migrate (or convert?) existing / old-style profiles to the V2 team config for Zowe CLI? Will it handle profiles that are secured by SCS?</button>
     <div id="question-14" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;Yes, we plan to introduce a "zowe config convert-profiles" command, which will be available in the v2 release.</p>
     </div>
     </div>
     <div>
     <button onclick="toggle('question-15')" class="w3-button w3-block w3-left-align">
-    15.   Will (CLI)Daemon mode be integrated seamlessly into v2 and enabled by default?</button>
+    15.  Will (CLI)Daemon mode be integrated seamlessly into v2 and enabled by default?</button>
     <div id="question-15" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;This work is still in progress-we are working on a "zowe daemon enable" command to make the daemon installation process as seamless as possible. Daemon mode will be disabled by default, the command must be run to enable it.</p>
     </div>
     </div>
     <div>
     <button onclick="toggle('question-16')" class="w3-button w3-block w3-left-align">
-    16.   The V1 version of Zowe Explorer offers a text input area, where a user can enter some of the data / attributes (host, port, etc.) necessary to create the old-style profiles.  With Team Config what options are available for users to edit the config file?  Is it manual? Is there a UI?</button>
+    16.  The V1 version of Zowe Explorer offers a text input area, where a user can enter some of the data / attributes (host, port, etc.) necessary to create the old-style profiles.  With Team Config what options are available for users to edit the config file?  Is it manual? Is there a UI?</button>
     <div id="question-16" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;The recommended approach for editing the config file is to launch it in VS Code from Zowe Explorer and make modifications there. The designated user responsible for creating and maintaining the config (we recommend a team lead or Administrator) will be able to leverage the built-in “intellisense” when editing the file. <i>Note: <b>Team Config fundamentally changes the paradigm on profile creation & management.</b> Prior to Team Config, <b>all users</b> were required to understand, create, test, trouble-shoot, and manage their own profiles. Team Config was designed to scale all of these tasks back, remove the burden from individual users and centralize it. Once the config is distributed most users should not need to make any significant edits.</i></p>
       <p>&nbsp;&nbsp;&nbsp;Join the discussion on this topic here: <a href="https://github.com/zowe/vscode-extension-for-zowe/discussions/1535">https://github.com/zowe/vscode-extension-for-zowe/discussions/1535</a></p>
