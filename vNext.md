@@ -954,7 +954,7 @@ p .card-black {
     <p>This part show basic information about the installation of the first version of the PAX. We will provide more details and add link to the proper sections in docs-site in coming weeks</p>
     <h2>Prepare</h2>
     <h3>Extract Zowe convenience build</h3>
-      <p>When extracting Zowe convenience build (<pre>zowe-<version>.pax</pre>), please note you should always <i>preserve extended attributes and file mode</i> with <pre>-ppx</pre> option. For example, <pre>pax -ppx -rf zowe-<version>.pax</pre>.</p>
+      <p>When extracting Zowe convenience build (<pre>zowe-&lt;version&gt;.pax</pre>), please note you should always <i>preserve extended attributes and file mode</i> with <pre>-ppx</pre> option. For example, <pre>pax -ppx -rf zowe-&lt;version&gt;.pax</pre>.</p>
     <h3>PATH environment</h3>
       <p>After extract Zowe convenience build or applied SMPE, you can add Zowe bin directory to your<pre>PATH</pre> environment variable:<br/>
       <pre>export PATH=${PATH}:/path/to/my/zowe/bin</pre><br/>
@@ -965,7 +965,7 @@ p .card-black {
     <h2>Install and initialize</h2>
       <p>If you are using Zowe convenience build, you should run <pre>zwe install --config /path/to/my/zowe.yaml</pre> command to initialize Zowe MVS data sets. If you are using Zowe SMPE build, you can move on to next command.</p>
       <p>Run <pre>zwe init --config /path/to/my/zowe.yaml</pre> command to initialize environment and permissions required by Zowe. Type <pre>zwe init --help</pre> to learn more about the command.</p>
-      <p><pre>zwe init</pre> command is a combination of multiple sub-commands: `mvs`, `certificate`, `security`, `vsam`, `apfauth`, and `stc`. Type <pre>zwe init <sub-command> --help</pre> (for example, <pre>zwe init stc --help</pre>) to learn how to run <pre>zwe init</pre> command step by step.</p>
+      <p><pre>zwe init</pre> command is a combination of multiple sub-commands: `mvs`, `certificate`, `security`, `vsam`, `apfauth`, and `stc`. Type <pre>zwe init &lt;sub-command&gt; --help</pre> (for example, <pre>zwe init stc --help</pre>) to learn how to run <pre>zwe init</pre> command step by step.</p>
     <h2>Start and stop</h2>
       <p>- Run <pre>zwe start --config /path/to/my/zowe.yaml</pre> command to start Zowe.</p>
       <p>- Run <pre>zwe stop --config /path/to/my/zowe.yaml</pre> command to stop Zowe.</p>
