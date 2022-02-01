@@ -954,7 +954,7 @@ p .card-black {
     <p>This part show basic information about the installation of the first version of the PAX. We will provide more details and add link to the proper sections in docs-site in coming weeks</p>
     <h2>Prepare</h2>
     <h3>Extract Zowe convenience build</h3>
-      <p>When extracting Zowe convenience build (<pre>zowe-<version>.pax</pre>), please note you should always <i>preserve extended attributes and file mode</i> with `-ppx` option. For example, <pre>pax -ppx -rf zowe-<version>.pax</pre>.</p>
+      <p>When extracting Zowe convenience build (<pre>zowe-<version>.pax</pre>), please note you should always <i>preserve extended attributes and file mode</i> with <pre>-ppx</pre> option. For example, <pre>pax -ppx -rf zowe-<version>.pax</pre>.</p>
     <h3>PATH environment</h3>
       <p>After extract Zowe convenience build or applied SMPE, you can add Zowe bin directory to your<pre>PATH</pre> environment variable:<br/>
       <pre>export PATH=${PATH}:/path/to/my/zowe/bin</pre><br/>
