@@ -1002,7 +1002,7 @@ p .card-black {
           7. When will the pre-GA V2 Zowe package be available?
         </button>
         <div id="questions-systems-7" class="w3-container faq-hide">
-          <p>It is available now, see: https://www.zowe.org/vnext#download-availability</p>
+          <p>It is available now, see: <a href="https://www.zowe.org/vnext#download-availability">https://www.zowe.org/vnext#download-availability</a></p>
         </div>
       </div>
       <div>
@@ -1010,7 +1010,7 @@ p .card-black {
           8. How do we provide feedback / communicate issues? Where can we ask questions? 
         </button>
         <div id="questions-systems-8" class="w3-container faq-hide">
-          <p>Use this SLACK CHANNEL for interacting with the team: https://openmainframeproject.slack.com/archives/CH9R3FD1V Use this Github Repo for posting issues: https://github.com/zowe/zowe-install-packaging</p>
+          <p>Use this SLACK CHANNEL for interacting with the team: <a href="https://openmainframeproject.slack.com/archives/CH9R3FD1V">https://openmainframeproject.slack.com/archives/CH9R3FD1V</a> Use this Github Repo for posting issues: <a href="https://github.com/zowe/zowe-install-packaging">https://github.com/zowe/zowe-install-packaging</a></p>
         </div>
       </div>
     </div>
