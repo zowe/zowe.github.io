@@ -1002,7 +1002,7 @@ p .card-black {
           7. When will the pre-GA V2 Zowe package be available?
         </button>
         <div id="questions-systems-7" class="w3-container faq-hide">
-          <p>It is available now, see: <a href="https://www.zowe.org/vNext#download-availability">https://www.zowe.org/vNext#download-availability</a></p>
+          <p>It is available now, see: <a href="#download-availability">#download-availability</a></p>
         </div>
       </div>
       <div>
