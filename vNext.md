@@ -993,7 +993,7 @@ p .card-black {
           5. If PARMLIB is used can we consider eliminating zowe.yaml?
         </button>
         <div id="questions-systems-5" class="w3-container faq-hide">
-          <p>Allowing PARMLIB doesn't change the way how Zowe uses zowe.yaml behind the scene, it's more like a new user interface to configure Zowe. The content in PARMLIB will be concatenated, merged into a temporary zowe.yaml and fed to Zowe. That means it won't change the way how components / extensions read configurations. On the other side, since we may enhance the configuration interface like allowing PARMLIB, reading or updating zowe.yaml directly is not recommended, instead the component installer should use relevant zwe commands or library functions to update zowe configurations. For example, `zwe components enable` will be compatible no matter the end-user is using a zowe.yaml or PARMLIB to configure Zowe.</p>
+          <p>Allowing PARMLIB doesn't change the way how Zowe uses zowe.yaml behind the scene, it's more like a new user interface to configure Zowe. The content in PARMLIB will be concatenated, merged into a temporary zowe.yaml and fed to Zowe. That means it won't change the way how components / extensions read configurations. On the other side, since we may enhance the configuration interface like allowing PARMLIB, it's not recommended for a component installer to read or update zowe.yaml directly. Instead, a component installer should read `ZWE_` environment variables to understand configurations, and use relevant zwe commands or library functions to update. For example, `zwe components enable` can be used to enable your component, and it's compatible with both USS zowe.yaml or PARMLIB configuration.</p>
         </div>
       </div>
       <div>
