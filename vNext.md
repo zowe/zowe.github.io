@@ -272,6 +272,13 @@ p .card-black {
             <li>You can customize your own PARMLIB, APF Authorized LOADLIB and APF-authorized ZIS plug-ins library.</li>
             <li>`CUST.JCLIB` is a data set where Zowe will store temporary JCLs.</li>
           </ul>
+          <li><strong>New Feature:</strong> Use PARMLIB to configure Zowe.</li>
+          <ul>
+            <li>With traditional PARMLIB concatenation, system programmers can plan their Zowe rollout more like other z/OS products.</li>
+            <li>Multiple YAML configurations will be concatenated and merged.</li>
+            <li>JSON Schema is introduces to help on validating user customized configurations.</li>
+            <li>We are also investigating full Non-USS ways to install/configure Zowe for SMPE users.</li>
+          </ul>
           <li><strong>Breaking changes</strong></li>
           <ul>
             <li>You must pass `-ppx` when you unpax the Zowe convenience build to preserve extended file attributes.</li>
@@ -970,7 +977,7 @@ p .card-black {
           3. We deploy 40+ unique deployments at the same time, each includes its own ZOWE deploy. We do this by changing the STC name - can we still do that?
         </button>
         <div id="questions-systems-3" class="w3-container faq-hide">
-          <p>Yes, they can be defined in zowe.yaml as `zowe.setup.security.stcs'</p>
+          <p>Yes, they can be defined in zowe.yaml as `zowe.setup.security.stcs' which lets you set their names, e.g. `zowe.setup.security.stcs.zowe: ZWEMYSTC`</p>
         </div>
       </div>
       <div>
@@ -978,7 +985,7 @@ p .card-black {
           4. We currently have to modify the various install scripts to change specific dataset names to accomplish this multiple-run scenario - will we be able to do this?
         </button>
         <div id="questions-systems-4" class="w3-container faq-hide">
-          <p>Yes, all data set names used by zowe are configurable in zowe.yaml - so you can configure your multiple-run scenario with multiple zowe.yaml files</p>
+          <p>Yes, all data set names used by zowe are configurable in zowe.yaml - so you can configure your multiple-run scenario with multiple zowe.yaml files where each has its own stc and data set names.</p>
         </div>
       </div>
       <div>
@@ -986,7 +993,7 @@ p .card-black {
           5. If PARMLIB is used can we consider eliminating zowe.yaml?
         </button>
         <div id="questions-systems-5" class="w3-container faq-hide">
-          <p>Perhaps, however, the Community is responding to requirements that necessitate a configuration file with more flexibility - limiting the configuration to a single location like PARMLIB is unlikely.</p>
+          <p>Allowing PARMLIB doesn't change the way how Zowe uses zowe.yaml behind the scene, it's more like a new user interface to configure Zowe. The content in PARMLIB will be concatenated, merged into a temporary zowe.yaml and fed to Zowe. That means it won't change the way how components / extensions read configurations. On the other side, since we may enhance the configuration interface like allowing PARMLIB, reading or updating zowe.yaml directly is not recommended, instead the component installer should use relevant zwe commands or library functions to update zowe configurations. For example, `zwe components enable` will be compatible no matter the end-user is using a zowe.yaml or PARMLIB to configure Zowe.</p>
         </div>
       </div>
       <div>
@@ -994,7 +1001,7 @@ p .card-black {
           6. We are very concerned about the new requirement "must use the “P” command to terminate Zowe instead of “C” to cancel because some users may simply use C out of habit. Can you review this decision with IBM and possibly consider an alternative?
         </button>
         <div id="questions-systems-6" class="w3-container faq-hide">
-          <p>We can review with IBM - that said, we also have plans to help prevent accidental “C”- cancel commands. Why did we do this? Zowe components need specific resource and recovery management handling - the “P” command sends the proper signal to Zowe to ensure all components are shut down appropriately.</p>
+          <p>We can review with IBM - that said, we also have plans to help prevent accidental “C”- cancel commands. Why did we do this? Zowe components need specific resource and recovery management handling - the “P” command sends the proper signal to Zowe to ensure all components are shut down appropriately. We'll investigate this more so many thanks for the feedback.</p>
         </div>
       </div>
       <div>
