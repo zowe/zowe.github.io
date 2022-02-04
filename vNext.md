@@ -977,7 +977,7 @@ p .card-black {
           3. We deploy 40+ unique deployments at the same time, each includes its own ZOWE deploy. We do this by changing the STC name - can we still do that?
         </button>
         <div id="questions-systems-3" class="w3-container faq-hide">
-          <p>Yes, they can be defined in zowe.yaml as `zowe.setup.security.stcs' which lets you set their names, e.g. `zowe.setup.security.stcs.zowe: ZWEMYSTC`</p>
+          <p>Yes, they can be defined in zowe.yaml as `zowe.setup.security.stcs` which lets you set their names, e.g. `zowe.setup.security.stcs.zowe: ZWEMYSTC`</p>
         </div>
       </div>
       <div>
