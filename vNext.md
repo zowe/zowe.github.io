@@ -947,7 +947,7 @@ p .card-black {
 
   <div>
     <button id="questions-systems-hours" onclick="toggle('questions-systems')" class="w3-button w3-block w3-left-align">
-    Zowe Systems (Installation and Configuration) Office Hours Frequently Asked Questions</button>
+    Zowe Systems (Installation and Configuration) Office Hours Frequently Asked Questionsn </button>
     <div id="questions-systems" class="w3-container faq-hide">
       <div>
         <button onclick="toggle('questions-systems-1')" class="w3-button w3-block w3-left-align">
