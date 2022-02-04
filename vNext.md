@@ -276,7 +276,7 @@ p .card-black {
           <ul>
             <li>With traditional PARMLIB concatenation, system programmers can plan their Zowe rollout more like other z/OS products.</li>
             <li>Multiple YAML configurations will be concatenated and merged.</li>
-            <li>JSON Schema is introduces to help on validating user customized configurations.</li>
+            <li>JSON Schema is introduced to help on validating user customized configurations.</li>
             <li>We are also investigating full Non-USS ways to install/configure Zowe for SMPE users.</li>
           </ul>
           <li><strong>Breaking changes</strong></li>
