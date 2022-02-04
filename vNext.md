@@ -66,6 +66,10 @@ p .card-black {
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
       Frequently Asked Questions - Web UI / App Framework
       </a>
+      <a href="#questions-systems-hours" class="card-link" style="margin-left: 30px;">
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+      Frequently Asked Questions - Systems (Install and Configure)
+      </a>
       <a href="#download-availability" class="card-link">
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
       Download Availability
@@ -432,12 +436,12 @@ p .card-black {
       <td>02/02/2022 12PM - 1PM ET</td>
       <td>Systems / Install</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td></td>
-      <td></td>
+      <td><a href="https://zoom.us/rec/share/aV82ZIsnU8LIqUEmaRZNC1kehfZDUUbkxRZeflReobItFIzc3zSEvfHCbgwQCHEz.0LcsG0NGKLF9Di7f?startTime=1643820670000">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/h1qok7t35j52kk5i00pln1ktxgc8r519">Presentation</a></td>
     </tr>
     <tr>
       <td>02/09/2022 12PM - 1PM ET</td>
-      <td>*Optional:* General Information</td>
+      <td>All you wanted to know about SSO in API ML</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
       <td></td>
       <td></td>
@@ -936,6 +940,77 @@ p .card-black {
         </button>
         <div id="questions-webui-7" class="w3-container faq-hide">
           <p>Zowe Slack Channel: openmainframeproject.slack.com #zowe-user OR Sean’s email address: sgrady@rocketsofware.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <button id="questions-systems-hours" onclick="toggle('questions-systems')" class="w3-button w3-block w3-left-align">
+    Zowe Systems (Installation and Configuration) Office Hours Frequently Asked Questions</button>
+    <div id="questions-systems" class="w3-container faq-hide">
+      <div>
+        <button onclick="toggle('questions-systems-1')" class="w3-button w3-block w3-left-align">
+          1. The workspaceDirectory example (screen shot in the presentation) had the word "instance" in the path. Is that deliberate?
+        </button>
+        <div id="questions-systems-1" class="w3-container faq-hide">
+          <p>NO, that is an error - we will correct this!</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-systems-2')" class="w3-button w3-block w3-left-align">
+          2. If the manifest.yaml is key for knowing what components are there - how "live" (aka "dynamic") can we be about adding components/plugins without being required to restart the Zowe server?
+        </button>
+        <div id="questions-systems-2" class="w3-container faq-hide">
+          <p>At present time, adding components/plugins to the manifest.yaml will require a restart of the [corresponding] Zowe server. We will plan to enhance Zowe to offer a more dynamic approach (i.e. automatically re-read the manifest.yaml for any server that can handle changes without requiring a restart)</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-systems-3')" class="w3-button w3-block w3-left-align">
+          3. We deploy 40+ unique deployments at the same time, each includes its own ZOWE deploy. We do this by changing the STC name - can we still do that?
+        </button>
+        <div id="questions-systems-3" class="w3-container faq-hide">
+          <p>Yes, they can be defined in zowe.yaml as `zowe.setup.security.stcs'</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-systems-4')" class="w3-button w3-block w3-left-align">
+          4. We currently have to modify the various install scripts to change specific dataset names to accomplish this multiple-run scenario - will we be able to do this?
+        </button>
+        <div id="questions-systems-4" class="w3-container faq-hide">
+          <p>Yes, all data set names used by zowe are configurable in zowe.yaml - so you can configure your multiple-run scenario with multiple zowe.yaml files</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-systems-5')" class="w3-button w3-block w3-left-align">
+          5. If PARMLIB is used can we consider eliminating zowe.yaml?
+        </button>
+        <div id="questions-systems-5" class="w3-container faq-hide">
+          <p>Perhaps, however, the Community is responding to requirements that necessitate a configuration file with more flexibility - limiting the configuration to a single location like PARMLIB is unlikely.</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-systems-6')" class="w3-button w3-block w3-left-align">
+          6. We are very concerned about the new requirement "must use the “P” command to terminate Zowe instead of “C” to cancel because some users may simply use C out of habit. Can you review this decision with IBM and possibly consider an alternative?
+        </button>
+        <div id="questions-systems-6" class="w3-container faq-hide">
+          <p>We can review with IBM - that said, we also have plans to help prevent accidental “C”- cancel commands. Why did we do this? Zowe components need specific resource and recovery management handling - the “P” command sends the proper signal to Zowe to ensure all components are shut down appropriately.</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-systems-7')" class="w3-button w3-block w3-left-align">
+          7. When will the pre-GA V2 Zowe package be available?
+        </button>
+        <div id="questions-systems-7" class="w3-container faq-hide">
+          <p>It is available now, see: https://www.zowe.org/vnext#download-availability</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-systems-8')" class="w3-button w3-block w3-left-align">
+          8. How do we provide feedback / communicate issues? Where can we ask questions? 
+        </button>
+        <div id="questions-systems-8" class="w3-container faq-hide">
+          <p>Use this SLACK CHANNEL for interacting with the team: https://openmainframeproject.slack.com/archives/CH9R3FD1V Use this Github Repo for posting issues: https://github.com/zowe/zowe-install-packaging</p>
         </div>
       </div>
     </div>
