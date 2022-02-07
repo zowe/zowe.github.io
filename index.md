@@ -46,7 +46,7 @@ redirect_from:
     padding: 5px;
   }
 
-  .slider-post a {
+  .slider-post a.post-image {
     display: block;
     height: 300px;
     background-size: contain;
