@@ -357,8 +357,8 @@ redirect_from:
   </div>
   <div id="retainable-rss-embed" data-rss="https://medium.com/feed/zowe"
       data-maxcols="3" 
-      data-layout="grid" 
-      data-poststyle="inline" 
+      data-layout="slider" 
+      data-poststyle="modal" 
       data-readmore="Read the rest" 
       data-buttonclass="btn btn-primary" 
       data-offset="-100">
