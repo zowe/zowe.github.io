@@ -491,8 +491,8 @@ p .card-black {
     <button onclick="toggle('question-1')" class="w3-button w3-block w3-left-align">
     1. What is the “official” date of Zowe V2 LTS?</button>
     <div id="question-1" class="w3-container faq-hide">
-      <p>&nbsp;&nbsp;&nbsp;The official date is TBD, the target is Feb 28, 2022; look for the official announcement at
-      <a href="/">Zowe.org</a> landing page announcement banner.</p>
+      <p>&nbsp;&nbsp;&nbsp;The official date is TBD, the target is April 25, 2022; look for the official announcement at
+      <a href="/">Zowe.org</a> landing page announcement banner.</p> We are sorry for the delay and any inconvenience coming out of it. 
     </div>
     </div>
     <div>
