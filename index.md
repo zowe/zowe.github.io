@@ -40,6 +40,19 @@ redirect_from:
     });
 </script>
 
+
+<style>
+  .slider-post {
+    padding: 5px;
+  }
+
+  .slider-post a {
+    display: block;
+    height: 300px;
+    background-size: contain;
+  }
+</style>
+
 <div class="announcementsection">
   <h1>Announcements</h1>
   <strong>Zowe {{ site.data.releases[0].version }} is now available. You can download the installers and PTFs ({{ site.data.releases[0].smpe_numbers }}) for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="https://docs.zowe.org/stable/getting-started/release-notes/{{ site.data.releases[0].release_notes }}.html">Release notes</a>.<br></strong>
@@ -373,17 +386,6 @@ redirect_from:
 
 <script src="assets/retainable.js" />
 <link rel="stylesheet" href="assets/src/retainable.css" />
-<style>
-  .slider-post {
-    padding: 5px;
-  }
-
-  .slider-post a {
-    display: block;
-    height: 300px;
-    background-size: contain;
-  }
-</style>
   
 <div>
 
