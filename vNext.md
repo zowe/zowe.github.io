@@ -455,7 +455,7 @@ p .card-black {
     </tr>
     <tr>
       <td>02/16/2022 12PM - 1PM ET</td>
-      <td>All you wanted to know about SSO in API ML</td>
+      <td>Zowe V2 Office Hours: APIML V2 SSO Conformance Requirements</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
       <td></td>
       <td></td>
