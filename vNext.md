@@ -954,46 +954,46 @@ p .card-black {
 
   <div>
     <button id="questions-systems-hours" onclick="toggle('questions-systems')" class="w3-button w3-block w3-left-align">
-    Zowe Systems (Installation and Configuration) Office Hours Frequently Asked Questionsn </button>
+    Zowe Systems (Installation and Configuration) Office Hours Frequently Asked Questions </button>
     <div id="questions-systems" class="w3-container faq-hide">
       <div>
         <button onclick="toggle('questions-systems-1')" class="w3-button w3-block w3-left-align">
           1. The workspaceDirectory example (screen shot in the presentation) had the word "instance" in the path. Is that deliberate?
         </button>
         <div id="questions-systems-1" class="w3-container faq-hide">
-          <p>NO, that is an error - we will correct this!</p>
+          <p>NO, that is an error. We will correct this!</p>
         </div>
       </div>
       <div>
         <button onclick="toggle('questions-systems-2')" class="w3-button w3-block w3-left-align">
-          2. If the manifest.yaml is key for knowing what components are there - how "live" (aka "dynamic") can we be about adding components/plugins without being required to restart the Zowe server?
+          2. If the manifest.yaml is key for knowing what components are there, how "live" (aka "dynamic") can we be about adding components/plug-ins without being required to restart the Zowe server?
         </button>
         <div id="questions-systems-2" class="w3-container faq-hide">
-          <p>At present time, adding components/plugins to the manifest.yaml will require a restart of the [corresponding] Zowe server. We will plan to enhance Zowe to offer a more dynamic approach (i.e. automatically re-read the manifest.yaml for any server that can handle changes without requiring a restart)</p>
+          <p>At present time, adding components/plug-ins to the manifest.yaml will require a restart of the [corresponding] Zowe server. We will plan to enhance Zowe to offer a more dynamic approach (i.e. automatically re-read the manifest.yaml for any server that can handle changes without requiring a restart).</p>
         </div>
       </div>
       <div>
         <button onclick="toggle('questions-systems-3')" class="w3-button w3-block w3-left-align">
-          3. We deploy 40+ unique deployments at the same time, each includes its own ZOWE deploy. We do this by changing the STC name - can we still do that?
+          3. We deploy 40+ unique deployments at the same time. Each includes its own ZOWE deploy. We do this by changing the STC name. Can we still do that?
         </button>
         <div id="questions-systems-3" class="w3-container faq-hide">
-          <p>Yes, they can be defined in zowe.yaml as `zowe.setup.security.stcs` which lets you set their names, e.g. `zowe.setup.security.stcs.zowe: ZWEMYSTC`</p>
+          <p>Yes, they can be defined in zowe.yaml as `zowe.setup.security.stcs` which lets you set their names, e.g. `zowe.setup.security.stcs.zowe: ZWEMYSTC`.</p>
         </div>
       </div>
       <div>
         <button onclick="toggle('questions-systems-4')" class="w3-button w3-block w3-left-align">
-          4. We currently have to modify the various install scripts to change specific dataset names to accomplish this multiple-run scenario - will we be able to do this?
+          4. We currently have to modify the various install scripts to change specific dataset names to accomplish this multiple-run scenario. Will we be able to do this?
         </button>
         <div id="questions-systems-4" class="w3-container faq-hide">
-          <p>Yes, all data set names used by zowe are configurable in zowe.yaml - so you can configure your multiple-run scenario with multiple zowe.yaml files where each has its own stc and data set names.</p>
+          <p>Yes, all data set names used by Zowe are configurable in zowe.yaml so you can configure your multiple-run scenario with multiple zowe.yaml files where each has its own stc and data set names.</p>
         </div>
       </div>
       <div>
         <button onclick="toggle('questions-systems-5')" class="w3-button w3-block w3-left-align">
-          5. If PARMLIB is used can we consider eliminating zowe.yaml?
+          5. If PARMLIB is used, can we consider eliminating zowe.yaml?
         </button>
         <div id="questions-systems-5" class="w3-container faq-hide">
-          <p>Allowing PARMLIB doesn't change the way how Zowe uses zowe.yaml behind the scene, it's more like a new user interface to configure Zowe. The content in PARMLIB will be concatenated, merged into a temporary zowe.yaml and fed to Zowe. That means it won't change the way how components / extensions read configurations. On the other side, since we may enhance the configuration interface like allowing PARMLIB, it's not recommended for a component installer to read or update zowe.yaml directly. Instead, a component installer should read `ZWE_` environment variables to understand configurations, and use relevant zwe commands or library functions to update. For example, `zwe components enable` can be used to enable your component, and it's compatible with both USS zowe.yaml or PARMLIB configuration.</p>
+          <p>Allowing PARMLIB doesn't change the way how Zowe uses zowe.yaml behind the scene. It's more like a new user interface to configure Zowe. The content in PARMLIB will be concatenated, merged into a temporary zowe.yaml and fed to Zowe. That means it won't change the way how components / extensions read configurations. On the other side, since we may enhance the configuration interface like allowing PARMLIB, it's not recommended for a component installer to read or update zowe.yaml directly. Instead, a component installer should read `ZWE_` environment variables to understand configurations, and use relevant zwe commands or library functions to update. For example, `zwe components enable` can be used to enable your component, and it's compatible with both USS zowe.yaml or PARMLIB configuration.</p>
         </div>
       </div>
       <div>
@@ -1014,10 +1014,11 @@ p .card-black {
       </div>
       <div>
         <button onclick="toggle('questions-systems-8')" class="w3-button w3-block w3-left-align">
-          8. How do we provide feedback / communicate issues? Where can we ask questions? 
+          8. How do we provide feedback or communicate issues? Where can we ask questions? 
         </button>
         <div id="questions-systems-8" class="w3-container faq-hide">
-          <p>Use this SLACK CHANNEL for interacting with the team: <a href="https://openmainframeproject.slack.com/archives/CH9R3FD1V">https://openmainframeproject.slack.com/archives/CH9R3FD1V</a> Use this Github Repo for posting issues: <a href="https://github.com/zowe/zowe-install-packaging">https://github.com/zowe/zowe-install-packaging</a></p>
+          <p>Use this SLACK CHANNEL for interacting with the team: <a href="https://openmainframeproject.slack.com/archives/CH9R3FD1V">
+#zowe-install-rework</a> Use this GitHub repo for posting issues: <a href="https://github.com/zowe/zowe-install-packaging">https://github.com/zowe/zowe-install-packaging</a></p>
         </div>
       </div>
     </div>
@@ -1033,7 +1034,7 @@ p .card-black {
   </div>
 
   <div id="release-installation">
-    <p>This part show basic information about the installation of the first version of the PAX. We will provide more details and add link to the proper sections in docs-site in coming weeks</p>
+    <p>This part shows basic information about the installation of the first version of the PAX. We will provide more details and add link to the proper sections on Zowe doc site in coming weeks.</p>
     <h2>Prepare</h2>
     <h3>Extract Zowe convenience build</h3>
       <p>When extracting Zowe convenience build (<code>zowe-&lt;version&gt;.pax</code>), please note you should always <i>preserve extended attributes and file mode</i> with <code>-ppx</code> option. For example, <code>pax -ppx -rf zowe-&lt;version&gt;.pax</code>.</p>
