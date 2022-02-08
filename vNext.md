@@ -66,6 +66,10 @@ p .card-black {
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
       Frequently Asked Questions - Web UI / App Framework
       </a>
+      <a href="#questions-systems-hours" class="card-link" style="margin-left: 30px;">
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+      Frequently Asked Questions - Systems (Install and Configure)
+      </a>
       <a href="#download-availability" class="card-link">
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
       Download Availability
@@ -268,6 +272,13 @@ p .card-black {
             <li>You can customize your own PARMLIB, APF Authorized LOADLIB and APF-authorized ZIS plug-ins library.</li>
             <li>`CUST.JCLIB` is a data set where Zowe will store temporary JCLs.</li>
           </ul>
+          <li><strong>New Feature:</strong> Use PARMLIB to configure Zowe.</li>
+          <ul>
+            <li>With traditional PARMLIB concatenation, system programmers can plan their Zowe rollout more like other z/OS products.</li>
+            <li>Multiple YAML configurations will be concatenated and merged.</li>
+            <li>JSON Schema is introduced to help on validating user customized configurations.</li>
+            <li>We are also investigating full Non-USS ways to install/configure Zowe for SMPE users.</li>
+          </ul>
           <li><strong>Breaking changes</strong></li>
           <ul>
             <li>You must pass `-ppx` when you unpax the Zowe convenience build to preserve extended file attributes.</li>
@@ -432,8 +443,8 @@ p .card-black {
       <td>02/02/2022 12PM - 1PM ET</td>
       <td>Systems / Install</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td></td>
-      <td></td>
+      <td><a href="https://zoom.us/rec/share/aV82ZIsnU8LIqUEmaRZNC1kehfZDUUbkxRZeflReobItFIzc3zSEvfHCbgwQCHEz.0LcsG0NGKLF9Di7f?startTime=1643820670000">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/h1qok7t35j52kk5i00pln1ktxgc8r519">Presentation</a></td>
     </tr>
     <tr>
       <td>02/09/2022 12PM - 1PM ET</td>
@@ -444,7 +455,7 @@ p .card-black {
     </tr>
     <tr>
       <td>02/16/2022 12PM - 1PM ET</td>
-      <td>*Optional:* General Information</td>
+      <td>Zowe V2 Office Hours: APIML V2 SSO Conformance Requirements</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
       <td></td>
       <td></td>
@@ -480,8 +491,8 @@ p .card-black {
     <button onclick="toggle('question-1')" class="w3-button w3-block w3-left-align">
     1. What is the “official” date of Zowe V2 LTS?</button>
     <div id="question-1" class="w3-container faq-hide">
-      <p>&nbsp;&nbsp;&nbsp;The official date is TBD, the target is Feb 28, 2022; look for the official announcement at
-      <a href="/">Zowe.org</a> landing page announcement banner.</p>
+      <p>&nbsp;&nbsp;&nbsp;The official date is TBD, the target is April 25, 2022; look for the official announcement at
+      <a href="/">Zowe.org</a> landing page announcement banner.</p> We are sorry for the delay and any inconvenience coming out of it. 
     </div>
     </div>
     <div>
@@ -941,6 +952,78 @@ p .card-black {
     </div>
   </div>
 
+  <div>
+    <button id="questions-systems-hours" onclick="toggle('questions-systems')" class="w3-button w3-block w3-left-align">
+    Zowe Systems (Installation and Configuration) Office Hours Frequently Asked Questions </button>
+    <div id="questions-systems" class="w3-container faq-hide">
+      <div>
+        <button onclick="toggle('questions-systems-1')" class="w3-button w3-block w3-left-align">
+          1. The workspaceDirectory example (screen shot in the presentation) had the word "instance" in the path. Is that deliberate?
+        </button>
+        <div id="questions-systems-1" class="w3-container faq-hide">
+          <p>NO, that is an error. We will correct this!</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-systems-2')" class="w3-button w3-block w3-left-align">
+          2. If the manifest.yaml is key for knowing what components are there, how "live" (aka "dynamic") can we be about adding components/plug-ins without being required to restart the Zowe server?
+        </button>
+        <div id="questions-systems-2" class="w3-container faq-hide">
+          <p>At present time, adding components/plug-ins to the manifest.yaml will require a restart of the [corresponding] Zowe server. We will plan to enhance Zowe to offer a more dynamic approach (i.e. automatically re-read the manifest.yaml for any server that can handle changes without requiring a restart).</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-systems-3')" class="w3-button w3-block w3-left-align">
+          3. We deploy 40+ unique deployments at the same time. Each includes its own ZOWE deploy. We do this by changing the STC name. Can we still do that?
+        </button>
+        <div id="questions-systems-3" class="w3-container faq-hide">
+          <p>Yes, they can be defined in zowe.yaml as `zowe.setup.security.stcs` which lets you set their names, e.g. `zowe.setup.security.stcs.zowe: ZWEMYSTC`.</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-systems-4')" class="w3-button w3-block w3-left-align">
+          4. We currently have to modify the various install scripts to change specific dataset names to accomplish this multiple-run scenario. Will we be able to do this?
+        </button>
+        <div id="questions-systems-4" class="w3-container faq-hide">
+          <p>Yes, all data set names used by Zowe are configurable in zowe.yaml so you can configure your multiple-run scenario with multiple zowe.yaml files where each has its own stc and data set names.</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-systems-5')" class="w3-button w3-block w3-left-align">
+          5. If PARMLIB is used, can we consider eliminating zowe.yaml?
+        </button>
+        <div id="questions-systems-5" class="w3-container faq-hide">
+          <p>Allowing PARMLIB doesn't change the way how Zowe uses zowe.yaml behind the scene. It's more like a new user interface to configure Zowe. The content in PARMLIB will be concatenated, merged into a temporary zowe.yaml and fed to Zowe. That means it won't change the way how components / extensions read configurations. On the other side, since we may enhance the configuration interface like allowing PARMLIB, it's not recommended for a component installer to read or update zowe.yaml directly. Instead, a component installer should read `ZWE_` environment variables to understand configurations, and use relevant zwe commands or library functions to update. For example, `zwe components enable` can be used to enable your component, and it's compatible with both USS zowe.yaml or PARMLIB configuration.</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-systems-6')" class="w3-button w3-block w3-left-align">
+          6. We are very concerned about the new requirement "must use the “P” command to terminate Zowe instead of “C” to cancel because some users may simply use C out of habit. Can you review this decision with IBM and possibly consider an alternative?
+        </button>
+        <div id="questions-systems-6" class="w3-container faq-hide">
+          <p>We can review with IBM - that said, we also have plans to help prevent accidental “C”- cancel commands. Why did we do this? Zowe components need specific resource and recovery management handling - the “P” command sends the proper signal to Zowe to ensure all components are shut down appropriately. We'll investigate this more so many thanks for the feedback.</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-systems-7')" class="w3-button w3-block w3-left-align">
+          7. When will the pre-GA V2 Zowe package be available?
+        </button>
+        <div id="questions-systems-7" class="w3-container faq-hide">
+          <p>It is available now, see: <a href="#download-availability">#download-availability</a></p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-systems-8')" class="w3-button w3-block w3-left-align">
+          8. How do we provide feedback or communicate issues? Where can we ask questions? 
+        </button>
+        <div id="questions-systems-8" class="w3-container faq-hide">
+          <p>Use this SLACK CHANNEL for interacting with the team: <a href="https://openmainframeproject.slack.com/archives/CH9R3FD1V">
+#zowe-install-rework</a> Use this GitHub repo for posting issues: <a href="https://github.com/zowe/zowe-install-packaging">https://github.com/zowe/zowe-install-packaging</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <section class="whitebackground">
@@ -951,7 +1034,7 @@ p .card-black {
   </div>
 
   <div id="release-installation">
-    <p>This part show basic information about the installation of the first version of the PAX. We will provide more details and add link to the proper sections in docs-site in coming weeks</p>
+    <p>This part shows basic information about the installation of the first version of the PAX. We will provide more details and add link to the proper sections on Zowe doc site in coming weeks.</p>
     <h2>Prepare</h2>
     <h3>Extract Zowe convenience build</h3>
       <p>When extracting Zowe convenience build (<code>zowe-&lt;version&gt;.pax</code>), please note you should always <i>preserve extended attributes and file mode</i> with <code>-ppx</code> option. For example, <code>pax -ppx -rf zowe-&lt;version&gt;.pax</code>.</p>
