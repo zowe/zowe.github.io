@@ -70,6 +70,10 @@ p .card-black {
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
       Frequently Asked Questions - Systems (Install and Configure)
       </a>
+      <a href="#questions-general-0209" class="card-link" style="margin-left: 30px;">
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+      Frequently Asked Questions - General Information (02/09)
+      </a>
       <a href="#download-availability" class="card-link">
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
       Download Availability
@@ -448,10 +452,10 @@ p .card-black {
     </tr>
     <tr>
       <td>02/09/2022 12PM - 1PM ET</td>
-      <td>*Optional:* General Information</td>
+      <td>V2 General Information</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td></td>
-      <td></td>
+      <td><a href="https://zoom.us/rec/share/LJ-hWU5E1Ep1o40oZJDmIrLXGVbUwdZdq0xWSVJx7MwSlOmlfXP57nDWunep5hg8.CHAzjPI53jqBHNri?startTime=1644425857000">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/0i44r0i1shynsx0gr7vnc9qrt48r4yg7">Presentation</a></td>
     </tr>
     <tr>
       <td>02/16/2022 12PM - 1PM ET</td>
@@ -1023,6 +1027,36 @@ p .card-black {
       </div>
     </div>
   </div>
+
+  <div>
+    <button id="questions-general-0209" onclick="toggle('questions-general-0209-detail')" class="w3-button w3-block w3-left-align">
+    Zowe V2 LTS General Office Hours Frequently Asked Questions </button>
+    <div id="questions-general-0209-detail" class="w3-container faq-hide">
+      <div>
+        <button onclick="toggle('questions-general-0209-1')" class="w3-button w3-block w3-left-align">
+          1. I want to ensure my Zowe extensions function with both V1 and V2.  What’s the best approach?  Provide two versions of my extension (one supporting each release) OR can an extender determine which LTS version of Zowe they are interacting with and offer one version that supports both?
+        </button>
+        <div id="questions-general-0209-1" class="w3-container faq-hide">
+          <p>We recommend extensions create a dedicated package for Zowe v2 - this is the most straight-forward way to address all of the breaking changes. We recognize this presents the challenge of maintaining 2 sets of packages. If you prefer not to maintain 2 sets of packages, we believe it's possible to maintain one version of an extension which works for both Zowe v1 and v2. However, the lifecycle code will be complicated - comprehensive testing should be performed. </p>
+          <p><b>PLEASE BE AWARE</b> The Zowe V2 app framework desktop upgraded from angular version 6 to angular version 12 for support & security -  websites have  a “1 version of a library”  limitation.  This means that <u>plugins dependent upon angular must be coded for either v6 or v12</u> [not both] thus <b>the single version approach is not applicable.</b></p>
+          <p>If the lifecycle scripts are the main concern, the following steps outline requirements and our recommendations for the single version approach:</p>
+          <ol>
+            <li>Package manifest.yaml is required. This is a hard requirement for Zowe v2. If you define lifecycle scripts with default names, for example, use bin/start.sh as `commands.start`, it should work for v1.</li>
+            <li>Revisit all environment variables used in the lifecycle scripts and apply fallback variables. For example, if you use $ROOT_DIR in Zowe v1, this should be changed to ${ZWE_zowe_runtimeDirectory:-${ROOT_DIR}} to make it compatible with both versions. Other variables like $EXPLORER_HOST should be changed to ${ZWE_haInstance_hostname:-${EXPLORER_HOST}} or ${ZWE_externalDomains_0:-${EXPLORER_HOST}} based on purpose.</li>
+            <li>A Zowe v2 recommendation is defining extension configurations in the  manifest.yaml "configs" section and use ${ZWE_configs_*} variables to access them. This feature does not exist in Zowe v1. So if you use ${ZWE_configs_*} variables, it should fall back to the matching environment variable used in v1.</li>
+            <li>For installation, Zowe v2 recommends defining a "commands.install" lifecycle script to handle Extension installation. This lifecycle script will be executed by `zwe components install`. In v1, this also exists if the end-user uses zowe-install-components.sh utility to install an Extension. So if we consider one Extension package working for both Zowe v1 and v2, this install lifecycle script should also be compatible with both v1 and v2. Or consider instructing the user to not use zowe-install-components.sh with Zowe v1.</li>
+            <li>As discussed in slack, a new v2 variable ${ZWE_VERSION} may help you determine if the user is using Zowe v2 or v1. This variable does not exist in Zowe v1.
+              <ul>
+                <li>By knowing the Zowe version, the lifecycle scripts can implement logic to source v1 or v2 dedicated scripts to avoid handling fallbacks in the same script. This could be a cleaner way to avoid complicated compatibility version checks, and it could be easier in the future should you decide to drop Zowe v1 support.</li>
+              </ul>
+            </li>
+          </ol>
+          <p>We are planning to release a comprehensive “migration guidance” section on docs.zowe.org to help Extenders facing these challenges.  Your feedback on this section is greatly appreciated.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 </section>
 
