@@ -461,8 +461,8 @@ p .card-black {
       <td>02/16/2022 12PM - 1PM ET</td>
       <td>Zowe V2 Office Hours: APIML V2 SSO Conformance Requirements</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td></td>
-      <td></td>
+      <td><a href="https://zoom.us/rec/share/HnjeQF3ifgJLCdRMnPVqRW76BhQmf9-b4zYM6ZLv9o0j1JE8K1E1dDQTXGG8MYsK.NKmWwZQXL8ku-Oiu?startTime=1645030329000">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/c39z34bshf2g865bwzsiwkirny9zb9cj">Presentation</a></td>
     </tr>
     <tr>
       <td>02/23/2022 12PM - 1PM ET</td>
