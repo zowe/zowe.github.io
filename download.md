@@ -163,7 +163,7 @@
           <div class="card-body">
             <h5 class="card-title">Convenience build</h5>
             <p class="card-text">PAX archive format installed on the z/OS server</p>
-            <p><a class="btn btn-primary" href="{{ site.v2_pax_preview_url }}">Zowe v2.0.0 z/OS convenience build</a></p>
+            <p><a class="btn btn-primary" href="{{ site.v2_pax_preview_url }}">Zowe v2.0.0-TP1 z/OS convenience build</a></p>
             <div>
               <a href="{{ site.v2_zos_component_install_doc_url }}" class="card-link">
               <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
@@ -175,8 +175,8 @@
           <div class="card-body">
             <h5 class="card-title">SMP/E build</h5>
             <p class="card-text">SMP/E format installed on the z/OS server</p>
-            <p class="card-text">Download the base FMID AZWE002 (based on v2.0.0)</p>
-            <p><a class="btn btn-primary" href="{{ site.v2_smpe_download_url }}">Zowe v2.0.0 FMID</a></p>
+            <p class="card-text">Download the base FMID AZWE002 (based on v2.0.0-TP1)</p>
+            <p><a class="btn btn-primary" href="{{ site.v2_smpe_download_url }}">Zowe v2.0.0-TP1 FMID</a></p>
             <div>
               <a href="{{ site.v2_zos_component_install_doc_url }}" class="card-link">
               <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
@@ -189,7 +189,7 @@
           <div class="card-body">
             <h5 class="card-title">Containerization build</h5>
             <p class="card-text">Files to launch Zowe in a container environment like Kubernetes</p>
-            <p><a class="btn btn-primary" href="{{ site.v2_containerization_download_url }}">Zowe v2.0.0 containerization build</a></p>
+            <p><a class="btn btn-primary" href="{{ site.v2_containerization_download_url }}">Zowe v2.0.0-TP1 containerization build</a></p>
             <div>
               <a href="{{ site.v2_containerization_install_doc_url }}" class="card-link">
               <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
