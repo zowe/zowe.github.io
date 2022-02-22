@@ -171,7 +171,7 @@
               </a>
             </div>
           </div>
-          <div class="row">
+          <!--div class="row">
           <div class="card-body">
             <h5 class="card-title">SMP/E build</h5>
             <p class="card-text">SMP/E format installed on the z/OS server</p>
@@ -197,7 +197,7 @@
               </a>
             </div>
           </div>
-          </div>
+          </div-->
         </div>
       </div>
     </div>
