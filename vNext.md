@@ -87,7 +87,7 @@ p .card-black {
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="latest-announcements">Latest Announcements</h2>
     <p>Starting from 12/08, the Zowe Onboarding Squad will hold the Office Hours to discuss the details about the upcoming V2 release. More information can be found in the <a href="#office-hours">Office Hour</a> section.</p>
     <p>The V2 documentation site is available at <a href="https://deploy-preview-1961--zowe-docs-master.netlify.app/">V2 Docs Site Preview</a></p>
-    <p>First preview build of Zowe is available at: <a href="https://zowe.jfrog.io/zowe/libs-snapshot-local/org/zowe/2.0.0-PR-2568/zowe-2.0.0-pr-2568-7-20220124181541.pax">https://zowe.jfrog.io/zowe/libs-snapshot-local/org/zowe/2.0.0-PR-2568/zowe-2.0.0-pr-2568-7-20220124181541.pax</a>. It's just a preview and we are still working on the build. We will announce version ready for testing extensions early.</p> 
+    <p>First preview build of Zowe is available <a href="{{ site.v2_pax_preview_url }}">here</a>. It's just a preview and we are still working on the build. We will announce version ready for testing extensions early.</p> 
   </div>
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="general-information">General Information</h2>
@@ -95,7 +95,7 @@ p .card-black {
         href="https://docs.zowe.org/v2.0.x/getting-started/overview">Docs-site</a></p>
     <p>Download the latest release at: <a href="download.html">Download</a></p> -->
     <p>If you want to learn more about what you can expect compatibility wise, the statement is <a
-      href="download.html#compatibility-extensions">here</a></p>
+      href="download.html#compatibility-extensions">here</a>.</p>
   </div>
 
   <h2 id="coming-changes">Coming changes to the functionality</h2>
@@ -942,7 +942,7 @@ p .card-black {
           6. Is there a Zowe preview build available yet?
         </button>
         <div id="questions-webui-6" class="w3-container faq-hide">
-          <p>Yes: https://zowe.jfrog.io/zowe/libs-snapshot-local/org/zowe/2.0.0-PR-2568/zowe-2.0.0-pr-2568-7-20220124181541.pax</p>
+          <p>Yes. You can get a preview build <a href="{{ site.v2_pax_preview_url }}">here</a>.</p>
         </div>
       </div>
       <div>
@@ -1063,8 +1063,7 @@ p .card-black {
 <section class="whitebackground">
   <div id="download-availability">
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Download Availability</h2>
-    <p>The Pre-GA V2 Zowe package is available for CLI (Zowe v2 LTS Preview section on <a href="https://www.zowe.org/download.html">Download</a>) and Explorers (Zowe Explorer section on <a href="https://www.zowe.org/download.html">Download</a>). 
-    The Server-side PAX is available here <a href="https://zowe.jfrog.io/zowe/libs-snapshot-local/org/zowe/2.0.0-PR-2568/zowe-2.0.0-pr-2568-7-20220124181541.pax">https://zowe.jfrog.io/zowe/libs-snapshot-local/org/zowe/2.0.0-PR-2568/zowe-2.0.0-pr-2568-7-20220124181541.pax</a> Keep in mind we are still working on it and improving it. There is a section below with some of the information on the installation.</p>
+    <p>The Pre-GA V2 Zowe packages are available on the <a href="download.html#download-v2">Zowe V2 Preview</a> section of the <a href="https://www.zowe.org/download.html">Download</a> page. Keep in mind we are still working on V2 and improving it. There is a section below with some of the information on the installation of the PAX convenience build.</p>
   </div>
 
   <div id="release-installation">
