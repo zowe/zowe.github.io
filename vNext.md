@@ -468,8 +468,8 @@ p .card-black {
       <td>02/23/2022 12PM - 1PM ET</td>
       <td>General Wrap-up</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td></td>
-      <td></td>
+      <td><a href="https://zoom.us/rec/share/m_GRf5qqNR2ZSoqm-O5KkOSJsIb903ePwtuPubbeDZKvpJLZ1MvPLn3WrUONgHge.PPavL6ldvUNtDztg?startTime=1645641871000">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/ggjc951q5xk92jyzqeaxhcvvnmwzxpod">Presentation</a></td>
     </tr>
     </table>
   </div>
