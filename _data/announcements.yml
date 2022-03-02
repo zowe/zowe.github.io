@@ -1,6 +1,6 @@
 # Announcements
 # Any kind of links should NOT be in ""
-- announcement: "Mark your calendars for the next Zowe v2 Office Hours Wed Jan 19th 12:00pm EST"
-  link: https://lists.openmainframeproject.org/g/zowe-dev/viewevent?eventid=1350447&calstart=2022-01-20
+- announcement: "**Stop Press*  Zowe v2 is coming.  Learn more every Wednesday 12pm EST and join our mailing list. "
+  link: https://www.zowe.org/vnext#office-hours
 - announcement: "Zowe is NOT affected by the recently published log4j vulnerability. For more information, click" 
   link: https://github.com/zowe/community/issues/1381
