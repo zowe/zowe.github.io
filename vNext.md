@@ -400,7 +400,7 @@ p .card-black {
   <div id="office-hours">
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Office Hours</h2>
     <p>Check out the <a href="https://lists.openmainframeproject.org/g/zowe-dev/calendar">OMP Calendar</a> for specific time of the V2 office hours.</p>
-    <h3 style="margin-bottom: 1.5rem; margin-top: 2%">Consumer Focused Office Hours</h2>
+    <h3 style="margin-bottom: 1.5rem; margin-top: 2%">Consumer Focused Office Hours</h3>
     <table>
     <tr>
     <td><b>Date</b></td>
@@ -438,7 +438,7 @@ p .card-black {
       <td></td>
     </tr>
     </table>
-    <h3 style="margin-bottom: 1.5rem; margin-top: 2%">Extender Focused Office Hours</h2>
+    <h3 style="margin-bottom: 1.5rem; margin-top: 2%">Extender Focused Office Hours</h3>
     <table>
     <tr>
     <td><b>Date</b></td>
