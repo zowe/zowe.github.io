@@ -409,53 +409,39 @@ p .card-black {
     <td><b>Links to the materials</b></td>
     </tr>
     <tr>
-      <td>12/08/2021 12PM - 1PM ET</td>
-      <td>Kickoff</td>
+      <td>04/27/2022 12PM - 1PM ET</td>
+      <td>Zowe Web UI for Consumers</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td><a href="https://zoom.us/rec/share/C73P7DSi8O9Xu5kMNw1qbqO1WMsGEXMKxoKsY4dTYvxcylI3FijadFyAHZepPWfh.pd6FzlhBC7FTjo0p?startTime=1638982278000">Zoom recording</a></td>
-      <td><a href="https://ibm.box.com/s/ke07mfjyn7hsp5xr48h8ts23zyacfwvo">Presentation</a></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <td>01/05/2022 12PM - 1PM ET</td>
-      <td>CLI</td>
+      <td>04/20/2022 12PM - 1PM ET</td>
+      <td>Zowe Explorers for Consumers</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td><a href="https://zoom.us/rec/share/5jx4WW-JJiZX7tDJ8Y-BUf2laCoomsMtwhigUGRJ9YL2NHKQp37NJUsgx8Q_IDN5.3BEbWsVe6H9S_65F">Zoom recording</a></td>
-      <td><a href="https://ibm.box.com/s/yjh6taumnosny9zt38u4sjolu3vhang6">Presentation</a></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <td>01/12/2022 12PM - 1PM ET</td>
-      <td>API Mediation Layer</td>
+      <td>04/13/2022 12PM - 1PM ET</td>
+      <td>Zowe CLI for Consumers</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td><a href="https://zoom.us/rec/share/uBSJbqosQhXaHcHKz9ZkjRfBrJ-2s0Fjar29hCo1dsyJiDGkTBI6JRrnupmCYRA1.wtuWWLSMqi7PBmNW?startTime=1642006561000">Zoom recording</a></td>
-      <td><a href="https://ibm.box.com/s/0s12w45o4yod59bn1y2mprz2bq4wprb9">Presentation</a></td>
-    </tr>    
-    <tr>
-      <td>01/19/2022 12PM - 1PM ET</td>
-      <td>Explorers</td>
-      <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td><a href="https://zoom.us/rec/share/bY4w_elSqY1EWlu46WTud3384hK3u6lijXDCZQsPXeMGOutO_GOUnlEYiAIaXLZY.0_at4MEk3LSYDNZg?startTime=1642610929000">Zoom recording</a></td>
-      <td><a href="https://ibm.box.com/s/4qzo7u8olahf85srcpvcsg904ke6o63t">Presentation</a></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <td>01/26/2022 12PM - 1PM ET</td>
-      <td>Web UI (Zowe Application Framework)</td>
+      <td>04/06/2022 12PM - 1PM ET</td>
+      <td>Zowe API Mediation Layer for Consumers</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td><a href="https://zoom.us/rec/share/4DVEejYeWsIPgjc7Xohnm1eSEtyxmofJ_18lMjM3LhdvdCNK7UDaYEOVsid1bSEs.j0Id62QGqNMdagGF?startTime=1643216346000">Zoom recording</a></td>
-      <td><a href="https://ibm.box.com/s/cnhssr07pzejbliwnfc48y785twtxz38">Presentation</a></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <td>02/02/2022 12PM - 1PM ET</td>
-      <td>Systems / Install</td>
+      <td>02/23/2022 12PM - 1PM ET</td>
+      <td>General Wrap-up</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td><a href="https://zoom.us/rec/share/aV82ZIsnU8LIqUEmaRZNC1kehfZDUUbkxRZeflReobItFIzc3zSEvfHCbgwQCHEz.0LcsG0NGKLF9Di7f?startTime=1643820670000">Zoom recording</a></td>
-      <td><a href="https://ibm.box.com/s/h1qok7t35j52kk5i00pln1ktxgc8r519">Presentation</a></td>
-    </tr>
-    <tr>
-      <td>02/09/2022 12PM - 1PM ET</td>
-      <td>V2 General Information</td>
-      <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td><a href="https://zoom.us/rec/share/LJ-hWU5E1Ep1o40oZJDmIrLXGVbUwdZdq0xWSVJx7MwSlOmlfXP57nDWunep5hg8.CHAzjPI53jqBHNri?startTime=1644425857000">Zoom recording</a></td>
-      <td><a href="https://ibm.box.com/s/0i44r0i1shynsx0gr7vnc9qrt48r4yg7">Presentation</a></td>
+      <td><a href="https://zoom.us/rec/share/m_GRf5qqNR2ZSoqm-O5KkOSJsIb903ePwtuPubbeDZKvpJLZ1MvPLn3WrUONgHge.PPavL6ldvUNtDztg?startTime=1645641871000">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/ggjc951q5xk92jyzqeaxhcvvnmwzxpod">Presentation</a></td>
     </tr>
     <tr>
       <td>02/16/2022 12PM - 1PM ET</td>
@@ -465,11 +451,53 @@ p .card-black {
       <td><a href="https://ibm.box.com/s/c39z34bshf2g865bwzsiwkirny9zb9cj">Presentation</a></td>
     </tr>
     <tr>
-      <td>02/23/2022 12PM - 1PM ET</td>
-      <td>General Wrap-up</td>
+      <td>02/09/2022 12PM - 1PM ET</td>
+      <td>V2 General Information</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td><a href="https://zoom.us/rec/share/m_GRf5qqNR2ZSoqm-O5KkOSJsIb903ePwtuPubbeDZKvpJLZ1MvPLn3WrUONgHge.PPavL6ldvUNtDztg?startTime=1645641871000">Zoom recording</a></td>
-      <td><a href="https://ibm.box.com/s/ggjc951q5xk92jyzqeaxhcvvnmwzxpod">Presentation</a></td>
+      <td><a href="https://zoom.us/rec/share/LJ-hWU5E1Ep1o40oZJDmIrLXGVbUwdZdq0xWSVJx7MwSlOmlfXP57nDWunep5hg8.CHAzjPI53jqBHNri?startTime=1644425857000">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/0i44r0i1shynsx0gr7vnc9qrt48r4yg7">Presentation</a></td>
+    </tr>
+    <tr>
+      <td>02/02/2022 12PM - 1PM ET</td>
+      <td>Systems / Install</td>
+      <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
+      <td><a href="https://zoom.us/rec/share/aV82ZIsnU8LIqUEmaRZNC1kehfZDUUbkxRZeflReobItFIzc3zSEvfHCbgwQCHEz.0LcsG0NGKLF9Di7f?startTime=1643820670000">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/h1qok7t35j52kk5i00pln1ktxgc8r519">Presentation</a></td>
+    </tr>
+    <tr>
+      <td>01/26/2022 12PM - 1PM ET</td>
+      <td>Web UI (Zowe Application Framework)</td>
+      <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
+      <td><a href="https://zoom.us/rec/share/4DVEejYeWsIPgjc7Xohnm1eSEtyxmofJ_18lMjM3LhdvdCNK7UDaYEOVsid1bSEs.j0Id62QGqNMdagGF?startTime=1643216346000">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/cnhssr07pzejbliwnfc48y785twtxz38">Presentation</a></td>
+    </tr>   
+    <tr>
+      <td>01/19/2022 12PM - 1PM ET</td>
+      <td>Explorers</td>
+      <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
+      <td><a href="https://zoom.us/rec/share/bY4w_elSqY1EWlu46WTud3384hK3u6lijXDCZQsPXeMGOutO_GOUnlEYiAIaXLZY.0_at4MEk3LSYDNZg?startTime=1642610929000">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/4qzo7u8olahf85srcpvcsg904ke6o63t">Presentation</a></td>
+    </tr>
+    <tr>
+      <td>01/12/2022 12PM - 1PM ET</td>
+      <td>API Mediation Layer</td>
+      <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
+      <td><a href="https://zoom.us/rec/share/uBSJbqosQhXaHcHKz9ZkjRfBrJ-2s0Fjar29hCo1dsyJiDGkTBI6JRrnupmCYRA1.wtuWWLSMqi7PBmNW?startTime=1642006561000">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/0s12w45o4yod59bn1y2mprz2bq4wprb9">Presentation</a></td>
+    </tr> 
+    <tr>
+      <td>01/05/2022 12PM - 1PM ET</td>
+      <td>CLI</td>
+      <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
+      <td><a href="https://zoom.us/rec/share/5jx4WW-JJiZX7tDJ8Y-BUf2laCoomsMtwhigUGRJ9YL2NHKQp37NJUsgx8Q_IDN5.3BEbWsVe6H9S_65F">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/yjh6taumnosny9zt38u4sjolu3vhang6">Presentation</a></td>
+    </tr>
+    <tr>
+      <td>12/08/2021 12PM - 1PM ET</td>
+      <td>Kickoff</td>
+      <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
+      <td><a href="https://zoom.us/rec/share/C73P7DSi8O9Xu5kMNw1qbqO1WMsGEXMKxoKsY4dTYvxcylI3FijadFyAHZepPWfh.pd6FzlhBC7FTjo0p?startTime=1638982278000">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/ke07mfjyn7hsp5xr48h8ts23zyacfwvo">Presentation</a></td>
     </tr>
     </table>
   </div>
