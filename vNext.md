@@ -400,6 +400,7 @@ p .card-black {
   <div id="office-hours">
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Office Hours</h2>
     <p>Check out the <a href="https://lists.openmainframeproject.org/g/zowe-dev/calendar">OMP Calendar</a> for specific time of the V2 office hours.</p>
+    <h3 style="margin-bottom: 1.5rem; margin-top: 2%">Consumer Focused Office Hours</h2>
     <table>
     <tr>
     <td><b>Date</b></td>
@@ -435,6 +436,16 @@ p .card-black {
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
       <td></td>
       <td></td>
+    </tr>
+    </table>
+    <h3 style="margin-bottom: 1.5rem; margin-top: 2%">Extender Focused Office Hours</h2>
+    <table>
+    <tr>
+    <td><b>Date</b></td>
+    <td><b>Topic</b></td>
+    <td><b>Link to the meeting</b></td>
+    <td><b>Link to the recording</b></td>
+    <td><b>Links to the materials</b></td>
     </tr>
     <tr>
       <td>02/23/2022 12PM - 1PM ET</td>
