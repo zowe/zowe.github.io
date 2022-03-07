@@ -1,7 +1,14 @@
-- event: Zowe V2 Office Hours - App Framework Focus
-  schedule: January 26, 2022 @ 12:00PM to 1:00PM EST
-  description: For all users and vendors of Zowe Application Framework, come and 
-    learn about v2 improvements. 
+- event: Zowe V2 Office Hours - Zowe Explorers for Consumers
+  schedule: April 20, 2022 @ 12:00PM to 1:00PM EST
+  description: For all consumers, come to learn more about Zowe Explorers in V2.
+  url: https://zoom.us/j/94312528890
+- event: Zowe V2 Office Hours - Zowe CLI for Consumers
+  schedule: April 13, 2022 @ 12:00PM to 1:00PM EST
+  description: For all consumers, come to learn more about Zowe CLI in V2.
+  url: https://zoom.us/j/94312528890
+- event: Zowe V2 Office Hours - Zowe API Mediation Layer for Consumers
+  schedule: April 6, 2022 @ 12:00PM to 1:00PM EST
+  description: For all consumers, come to learn more about API Mediation Layer in V2.
   url: https://zoom.us/j/94312528890
 - event: Zowe V2 Office Hours - Zowe Explorer Focus
   schedule: January 19, 2022 @ 12:00PM to 1:00PM EST
