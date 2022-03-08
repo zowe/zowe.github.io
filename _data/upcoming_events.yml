@@ -1,7 +1,15 @@
-- event: Zowe Consumer Focused Office Hours
+- event: Zowe V2 Office Hours - Zowe API Mediation Layer for Consumers
   schedule: April 6, 2022 @ 12:00PM to 1:00PM EST
-  description: The weekly v2 office hours are coming. On April 6 at 12-1PM EST, the community will talk about 
-    v2 features and improvements for Zowe API Mediation Layer for Zowe consumers. 
+  description: The weekly V2 office hours series is coming. On April 6 at 12-1PM EST, the community will talk about 
+    V2 features and improvements for Zowe API Mediation Layer for Zowe consumers. 
+  url: https://zoom.us/j/94312528890
+- event: Zowe V2 Office Hours - Zowe CLI for Consumers
+  schedule: April 13, 2022 @ 12:00PM to 1:00PM EST
+  description: For all Zowe consumers, come to learn more about Zowe CLI features and improvements in V2.
+  url: https://zoom.us/j/94312528890
+- event: Zowe V2 Office Hours - Zowe Explorers for Consumers
+  schedule: April 20, 2022 @ 12:00PM to 1:00PM EST
+  description: For all Zowe consumers, come to learn more about Zowe Explorers features and improvements in V2.
   url: https://zoom.us/j/94312528890
 - event: SHARE Dallas 2022
   schedule: March 27 - March 31
