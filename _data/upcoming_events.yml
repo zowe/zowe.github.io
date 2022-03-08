@@ -1,3 +1,14 @@
+- event: Zowe Consumer Focused Office Hours
+  schedule: April 6, 2022 @ 12:00PM to 1:00PM EST
+  description: The weekly v2 office hours are coming. On April 6 at 12-1PM EST, the community will talk about 
+    v2 features and improvements for Zowe API Mediation Layer for Zowe consumers. 
+  url: https://zoom.us/j/94312528890
+- event: SHARE Dallas 2022
+  schedule: March 27 - March 31
+  description: SHARE 2022 will take place on March 27-30 in person in Dallas and virtually.
+    To register for the event or to learn more, visit https://www.share.org/Events/SHARE-Dallas-2022/Registration.
+    As always, Open Mainframe Project will have a presence at the event as many of...
+  url: https://www.openmainframeproject.org/event/share-dallas-2022
 - event: Zowe V2 Office Hours - App Framework Focus
   schedule: January 26, 2022 @ 12:00PM to 1:00PM EST
   description: For all users and vendors of Zowe Application Framework, come and 
@@ -119,6 +130,12 @@
     \ in the Enterprise, Open Source on Z and Zowe CICS. Open Mainframe Project\u2019\
     s Zowe will..."
   url: https://www.openmainframeproject.org/event/share-virtual-summit-march-2021
+- event: Zowe Office Hours
+  schedule: February 16 @ 09:00 AM - 10:00 AM
+  description: 'Join the Zowe community on Wednesday, February 16 at 9-10 am PT/ 12-1
+    pm ET. Zowe App Framework / Web UI experts will be on-hand to respond to questions
+    and concerns. Please see below for the details. When: Wednesday, February...'
+  url: https://www.openmainframeproject.org/event/zowe-office-hours
 - event: IDUG Virtual Australasia Db2 Tech Conference
   schedule: March 15 - March 21
   description: The IDUG Virtual Australasia Db2 Tech Conference, which is being held
