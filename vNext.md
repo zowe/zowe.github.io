@@ -85,10 +85,9 @@ p .card-black {
   </div>
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="latest-announcements">Latest Announcements</h2>
-    <p>Starting from 12/08, the Zowe Onboarding Squad will hold the Office Hours to discuss the details about the upcoming V2 release. More information can be found in the <a href="#office-hours">Office Hour</a> section.</p>
-    <p>The V2 documentation site is available at <a href="https://deploy-preview-1961--zowe-docs-master.netlify.app/">V2 Docs Site Preview</a></p>
-    <p>First preview build of Zowe is available <a href="{{ site.v2_pax_preview_url }}">here</a>. It's just a preview and we are still working on the build. We will announce version ready for testing extensions early.</p> 
-    <p>Starting from 04/06, the Zowe Onboarding Squad will hold the Office Hours focused on Consumers of the Zowe in V2. More information can be found in the <a href="#office-hours">Office Hour</a> section.</p>
+    <p>The V2 documentation site is available at <a href="https://deploy-preview-1961--zowe-docs-master.netlify.app/">V2 Docs Site Preview</a>.</p>
+    <p>The Second Technical Preview is available. The available packages are noted under <a href="#download-availability">Download Availability</a> and on the <a href="https://www.zowe.org/download.html">Download</a> page.</p>
+    <p>Starting from April 6, the Zowe Onboarding Squad will hold the Office Hours focused on Consumers of Zowe in V2. More information can be found in the <a href="#office-hours">Office Hour</a> section.</p>
   </div>
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="general-information">General Information</h2>
@@ -1104,6 +1103,7 @@ p .card-black {
   <div id="download-availability">
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Download Availability</h2>
     <p>The Pre-GA V2 Zowe packages are available on the <a href="download.html#download-v2">Zowe V2 Preview</a> section of the <a href="https://www.zowe.org/download.html">Download</a> page. Keep in mind we are still working on V2 and improving it. There is a section below with some of the information on the installation of the PAX convenience build.</p>
+    <p>The <a href="https://zowe.jfrog.io/artifactory/libs-release-local/org/zowe/2.0.0-TP2/zowe-2.0.0-TP2.pax">PAX</a>, <a href="https://zowe.jfrog.io/artifactory/libs-release-local/org/zowe/2.0.0-TP2/zowe-smpe-2.0.0-TP2.zip">SMP/E</a> and <a href="https://zowe.jfrog.io/artifactory/libs-release-local/org/zowe/2.0.0-TP2/zowe-containerization-2.0.0-TP2.zip">Containerization</a> builds are available in the second technical preview.</p>
   </div>
 
   <div id="release-installation">
