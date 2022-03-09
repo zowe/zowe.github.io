@@ -87,6 +87,7 @@ p .card-black {
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="latest-announcements">Latest Announcements</h2>
     <p>The V2 documentation site is available at <a href="https://deploy-preview-1961--zowe-docs-master.netlify.app/">V2 Docs Site Preview</a></p>
     <p>The Second Technical Preview is available. The available packages are noted under <a href="#download-availability">Download Availability</a> and on the <a href="https://www.zowe.org/download.html">Downloads Page</a></p>
+    <p>Starting from 04/06, the Zowe Onboarding Squad will hold the Office Hours focused on Consumers of the Zowe in V2. More information can be found in the <a href="#office-hours">Office Hour</a> section.</p>
   </div>
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="general-information">General Information</h2>
@@ -409,28 +410,28 @@ p .card-black {
     <td><b>Links to the materials</b></td>
     </tr>
     <tr>
-      <td>04/27/2022 12PM - 1PM ET</td>
+      <td>04/27/2022 12:00PM - 12:30PM ET</td>
       <td>Zowe Web UI for Consumers</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>04/20/2022 12PM - 1PM ET</td>
+      <td>04/20/2022 12:00PM - 12:30PM ET</td>
       <td>Zowe Explorers for Consumers</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>04/13/2022 12PM - 1PM ET</td>
+      <td>04/13/2022 12:00PM - 12:30PM ET</td>
       <td>Zowe CLI for Consumers</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>04/06/2022 12PM - 1PM ET</td>
+      <td>04/06/2022 12:00PM - 12:30PM ET</td>
       <td>Zowe API Mediation Layer for Consumers</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
       <td></td>
