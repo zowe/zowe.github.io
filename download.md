@@ -374,7 +374,7 @@ Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds
 </li>
 <li>Production applications should only use <b>Active</b> or <b>Maintenance </b> releases due to the contract with extender products remaining functional and the community’s commitment to fix critical defects.</li>
 </ul>
-<button type="button" class="btn btn-outline-light" href="{{ site.lts_url }}">Learn more</button>
+<button type="button" class="btn btn-outline-light" href="https://github.com/zowe/community/blob/master/Technical-Steering-Committee/release.md">Learn more</button>
 </section>
 
 <section class="whitebackground" id="compatibility-extensions">
