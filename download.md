@@ -187,7 +187,7 @@
           </div>
           <div class="row">
           <div class="card-body">
-            <h5 class="card-header" id="zowe-pswi">Zowe Portable Software Instance</h5>
+            <h5 class="card-title" id="zowe-pswi">Zowe Portable Software Instance</h5>
             <p class="card-text">The Zowe Portable Software Instance (PSWI) is a new way of z/OS component distribution. The PSWI allows the full installation as you are used to from SMP/E build, but it uses the new standard for mainframe software distribution.</p>
             <p class="card-text">Download the PSWI based on FMID AZWE002</p>
             <p><a class="btn btn-primary" href="{{ site.v2_pswi_download_url }}">Zowe PSWI v2.0.0-TP2</a></p>
