@@ -108,7 +108,7 @@ p .card-black {
         <div class="col-md-7 col-sm order-last order-sm-first">
           <h6 class="text-left"><b>Breaking changes</b></h6>
           <ul>
-            <li>Removed the support for the old path pattern (<a href="https://github.com/zowe/api-layer/issues/1770">#1770</a>)</li>
+            <li>Removed the support for the old path pattern (<a href="https://github.com/zowe/api-layer/issues/1770">#1770</a>). This includes the changes to the endpoints used in ZAAS client. If your application uses ZAAS client please verify whether the configuration properties use the new path pattern (/gateway/api/v1 instead of /api/v1/gateway)</li>
             <li>Removed the support for different authentication schemas for different instances of service (<a href="https://github.com/zowe/api-layer/issues/1051">#1051</a>)</li>
           </ul>
           <h6 class="text-left"><b>Important updates</b></h6>
