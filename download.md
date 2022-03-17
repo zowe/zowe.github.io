@@ -247,6 +247,7 @@
         <div class="card-body">
           <h5 class="card-title">Zowe Explorer</h5>
           <p class="card-text">Zowe Explorer vNext enables you to adopt the team configuration file, recently developed by the Zowe CLI Squad, to make profile management more centralized and much simpler.</p>
+          <p class="card-text">To download the V2 preview version of the FTP extension, click <b>Zowe Explorer vNext release</b>.</p>
     <p class="card-text">You can download the <em>.vsix</em> files directly from the GitHub release page with the tag <b>"Pre-release"</b>. Separate downloads are available for Zowe Explorer and Zowe Explorer Extension for FTP.</p>
     <p class="card-text">To install the <em>.vsix</em> files, use <b>Extensions > Install from vsix</b> within VS Code.</p>
         <div class="row">
