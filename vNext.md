@@ -88,6 +88,7 @@ p .card-black {
     <p>The V2 documentation site is available at <a href="https://deploy-preview-1961--zowe-docs-master.netlify.app/">V2 Docs Site Preview</a>.</p>
     <p>The Second Technical Preview is available. The available packages are noted under <a href="#download-availability">Download Availability</a> and on the <a href="https://www.zowe.org/download.html">Download</a> page.</p>
     <p>Starting from April 6, the Zowe Onboarding Squad will hold the Office Hours focused on Consumers of Zowe in V2. More information can be found in the <a href="#office-hours">Office Hour</a> section.</p>
+    <p>The final <a href="#conformance-changes">V2 Conformance Criteria</a> are available</p>
   </div>
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="general-information">General Information</h2>
