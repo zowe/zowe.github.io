@@ -347,14 +347,14 @@ p .card-black {
 
   <h2 id="conformance-changes">Changes to the Conformance Criteria (For Extenders) </h2>
 
-  <p>All the changes are available here: <a href="https://ibm.box.com/s/4e3vvki81ds0zowrdpqu3ubitn9f51qe">Box Excel Sheet</a></p>
+  <p>The final version of V2 Conformance Criteria is published here. Each of the section links to th PDF for the specific criteria.</p>
 
   <div class="card mb-3">
     <div class="card-body">
       <div class="d-flex align-items-baseline">
         <h5 class="text-left">Zowe API Mediation Layer</h5>
       </div>
-      The API Mediation Layer related conformance Criteria are on: <a href="https://ibm.box.com/s/4e3vvki81ds0zowrdpqu3ubitn9f51qe">Box Excel Sheet</a> on the tab V2 ZOWE API-ML Conform (xx)
+      The API Mediation Layer related conformance Criteria are <a href="https://ibm.box.com/s/rdb7zfkcxzzbiro4idat9o7xd0qig3mt">here</a>
     </div>
   </div>
 
@@ -363,7 +363,7 @@ p .card-black {
       <div class="d-flex align-items-baseline">
         <h5 class="text-left">Zowe CLI</h5>
       </div>
-      The CLI related conformance Criteria are on: <a href="https://ibm.box.com/s/4e3vvki81ds0zowrdpqu3ubitn9f51qe">Box Excel Sheet</a> on the tab V2 Zowe CLI Conformance (29)
+      The CLI related conformance Criteria are <a href="https://ibm.box.com/s/st4jkk6xmughrg8ngcefvgt7fczicrk7">here</a>
     </div>
   </div>
 
@@ -372,7 +372,7 @@ p .card-black {
       <div class="d-flex align-items-baseline">
         <h5 class="text-left">Zowe Explorer</h5>
       </div>        
-      The Explorer related conformance Criteria are on: <a href="https://ibm.box.com/s/4e3vvki81ds0zowrdpqu3ubitn9f51qe">Box Excel Sheet</a> on the tab V2 ZOWE Explorer Conform (16)
+      The Explorer related conformance Criteria are <a href="https://ibm.box.com/s/0yuz16hwo522jegrtkysn36hto20qg6l">here</a>
     </div>
   </div>
 
