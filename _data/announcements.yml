@@ -1,7 +1,7 @@
 # Announcements
 # Any kind of links should NOT be in ""
 - announcement: "*ATTENTION ZOWE EXTENDERS* Finalized Zowe V2 Conformance Criteria is now available"
-link: https://www.zowe.org/vnext#conformance-changes
+link: https://www.zowe.org/vNext.html#conformance-changes
 - announcement: "Mark your calendars - the next weekly series of Zowe v2 Office Hours begins Wed Apr 6th 12:00pm EST"
   link: https://www.zowe.org/vNext.html#office-hours
 - announcement: "Zowe is NOT affected by the recently published log4j vulnerability. For more information, click" 
