@@ -29,8 +29,35 @@
       </div>
   </div>
 
-  <section style="padding-top: 3%;">
-    <h2 style="margin-bottom: 1.5rem;">Zowe Conformance Program</h2>
+  <section style="padding-top: 3%; width: 49%">
+    <h2 style="margin-bottom: 1.5rem;">Zowe Conformance Program V2</h2>
+        <p>Administered by the Open Mainframe Project, the Zowe Conformance Program gives users the confidence that when they use a product, app, or distribution that extends Zowe, they can expect a high level of common functionality, interoperability, and user experience.</p>
+        <p>As a vendor, getting a Zowe Conformance Badge for your application also ensures that your extension will continue to be supported as Zowe changes and grows.</p>
+        <p>Getting a Zowe Conformance Badge happens in 3 steps:</p>
+        <div style="color: black !important;"> 
+          <div class="row">
+            <div class="col-md text-center">
+              <a class="col-md-3" href="{{ site.conformance_v2_step1_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">1) Review program terms and conditions</button></a>
+            </div>
+            <div class="col-md text-center">
+              <a class="col-md-3" href="{{ site.conformance_v2_step2_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">2) Complete test evaluation guide</button></a>
+            </div>
+            <div class="col-md text-center">
+              <a class="col-md-3" href="{{ site.conformance_v2_step3_url }}"><button type="button" class="btn btn-primary btn-lg btn-block" style="white-space: break-spaces">3) Submit the participation form</button></a>
+            </div>
+         </div>
+       </div>
+    <p style="margin-top: 1rem;">Learn more about the program at the <a href="{{ site.conformance_page_v2_url }}">&nbsp;Zowe Conformance Program website</a>.</p>
+    <div>
+      <div>
+      <h3 style="text-align: left;">The following products have earned Zowe Conformant status</h3>
+      <iframe frameBorder="0" id="landscape" scrolling="no" style="width: 1px; min-width: 100%" src="https://landscape.openmainframeproject.org/pages/zowe-conformant"></iframe><script src="https://landscape.openmainframeproject.org/iframeResizer.js"></script>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top: 3%; width: 49%; float: right;">
+    <h2 style="margin-bottom: 1.5rem;">Zowe Conformance Program V1</h2>
         <p>Administered by the Open Mainframe Project, the Zowe Conformance Program gives users the confidence that when they use a product, app, or distribution that extends Zowe, they can expect a high level of common functionality, interoperability, and user experience.</p>
         <p>As a vendor, getting a Zowe Conformance Badge for your application also ensures that your extension will continue to be supported as Zowe changes and grows.</p>
         <p>Getting a Zowe Conformance Badge happens in 3 steps:</p>
@@ -48,13 +75,11 @@
          </div>
        </div>
     <p style="margin-top: 1rem;">Learn more about the program at the <a href="{{ site.conformance_page_url }}">&nbsp;Zowe Conformance Program website</a>.</p>
-
-  <div>
-	  <div>
-		<h3 style="text-align: left;">The following products have earned Zowe Conformant status</h3>
-    <iframe frameBorder="0" id="landscape" scrolling="no" style="width: 1px; min-width: 100%" src="https://landscape.openmainframeproject.org/pages/zowe-conformant"></iframe><script src="https://landscape.openmainframeproject.org/iframeResizer.js"></script>
-	  </div>
-  </div>
-
-</section>
+    <div>
+      <div>
+      <h3 style="text-align: left;">The following products have earned Zowe Conformant status</h3>
+      <iframe frameBorder="0" id="landscape" scrolling="no" style="width: 1px; min-width: 100%" src="https://landscape.openmainframeproject.org/pages/zowe-conformant"></iframe><script src="https://landscape.openmainframeproject.org/iframeResizer.js"></script>
+      </div>
+    </div>
+  </section>
 </section>
