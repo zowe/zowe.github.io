@@ -78,7 +78,7 @@
     <div>
       <div>
       <h3 style="text-align: left;">The following products have earned Zowe Conformant status</h3>
-      <iframe frameBorder="0" id="landscape" scrolling="no" style="width: 1px; min-width: 100%" src="https://landscape.openmainframeproject.org/pages/zowe-conformant"></iframe><script src="https://landscape.openmainframeproject.org/iframeResizer.js"></script>
+      <iframe frameBorder="0" id="landscape" scrolling="no" style="width: 1px; min-width: 100%; min-height: 600px" src="https://landscape.openmainframeproject.org/pages/zowe-conformant"></iframe><script src="https://landscape.openmainframeproject.org/iframeResizer.js"></script>
       </div>
     </div>
   </section>
