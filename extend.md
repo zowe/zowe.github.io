@@ -29,7 +29,7 @@
       </div>
   </div>
 
-  <section style="padding-top: 3%; width: 49%">
+  <section style="padding-top: 3%; width: 49%; float: left">
     <h2 style="margin-bottom: 1.5rem;">Zowe Conformance Program V2</h2>
         <p>Administered by the Open Mainframe Project, the Zowe Conformance Program gives users the confidence that when they use a product, app, or distribution that extends Zowe, they can expect a high level of common functionality, interoperability, and user experience.</p>
         <p>As a vendor, getting a Zowe Conformance Badge for your application also ensures that your extension will continue to be supported as Zowe changes and grows.</p>
