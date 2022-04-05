@@ -38,9 +38,9 @@ jobs:
       uses: jerryjvl/jekyll-build-action@v1
 
     - name: Setup JFrog Artifactory CLI
-      uses: jfrog/setup-jfrog-cli@v1
+      uses: jfrog/setup-jfrog-cli@v2
       env:
-        JF_ARTIFACTORY_1: ${{ secrets.JF_ARTIFACTORY_TOKEN }}
+        JF_ENV_1: ${{ secrets.JF_ARTIFACTORY_TOKEN }}
 
     - name: Publish Release to Artifactory
       uses: markackert/shared-actions/publish@user/markackert/customize-publish-filename
