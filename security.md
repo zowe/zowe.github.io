@@ -59,8 +59,9 @@ security vulnerabilities and issues. The requirements are governed by internal p
             <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span>
             Zowe encourages the community users to perform security testing and report potential vulnerabilities as described bellow.  
             <p>
+                <ul>
                 Please direct all security issues to <code>zowe-security@lists.openmainframeproject.org</code>.
-                <br/>#TODO: Alternatively use Zowe report form 
+                <br/>#TODO: Alternatively use Zowe report form if we have one 
                 <br/>
                 After your report is received, a member of the security team will reply to acknowledge receipt of the report.
                 <br/>
@@ -77,37 +78,46 @@ security vulnerabilities and issues. The requirements are governed by internal p
                 <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV)</span>
                 <span style="display:none"> (Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV-AEV)</span>
                 <span style="display:none"> (NIST-SSF: #REF: SSDF:RV.2.1)</span>
-                <div>Any issues found during testing and reviewing the code, must be assessed and for severity, exploitability and impact on the respective components and the whole Zowe system.</div>
+                <div>Any issues found during testing and reviewing the code, must be assessed for severity, exploitability and impact on the respective components and the whole Zowe system.</div>
                 <br/>
                 <div>The assessment results reports will be collected and stored for evidence and measurement of the product security state and hardening.</div>
             </p>
         </li>
-    </ul> 
-</div>
-
-<div style="padding-top: 3%">
-    <a id="DISCLOSE"/><h2>Security issues disclosure</h2>
-    <h3 style="margin-bottom: 1.5rem">Disclosure policy</h3>
-    <p>Zowe adopts a variant/modification (in case we modify it) of the <a href="https://en.wikipedia.org/wiki/Coordinated_vulnerability_disclosure">Coordinated Vulnerability Disclosure Policy</a></p>
-    ALTERNATIVELY:
-    <p>The Zowe Vulnerability Disclosure Policy is (based on / a modification of) the <a href="">Responsible or Coordinated Vulnerability Disclosure (CVD) Policy</a></p>
-    <br/>
-    The project maintainers would disclose a confirmed vulnerability in the code by first by creating a draft security advisory in the package's repository in GitHub/other CMS.
-    GitHub Security Advisories allow repository maintainers to privately discuss and fix a security vulnerability in a project.
-    <br/>See https://docs.github.com/en/code-security/repository-security-advisories/creating-a-repository-security-advisory
-    <br/>
-    After collaborating on a fix, repository maintainers can publish the security advisory to publicly disclose the security vulnerability to the project's community.
-   <div></div>
+    </ul>
 </div>
 
 <div style="padding-top: 3%">
     <a id="REMEDIATE"/><h2>Security issues remediation</h2>
     <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV)</span>
     <span style="display:none">(NIST-SSF #REF: SSF-A.4.2-B)</span>
-    <div>Projects SHOULD fix all critical vulnerabilities rapidly after they are reported. [vulnerabilities_critical_fixed]</div>
+    <div>Projects MUST/SHOULD fix all critical vulnerabilities rapidly after they are reported. [vulnerabilities_critical_fixed]</div>
     <br/>
     <span style="display:none">(NIST-SSF #REF: SSF-A.4.1-B)</span>
     <div>There MUST be no un-patched vulnerabilities of medium or higher severity that have been publicly known for more than 60 days. [vulnerabilities_fixed_60_days]</div>
+</div>
+
+<div style="padding-top: 3%">
+    <a id="DISCLOSE"/><h2>Security issues disclosure</h2>
+    <h3 style="margin-bottom: 1.5rem">Disclosure policy</h3>
+    <p>Zowe adopts a variant/modification (in case we modify it) of the <a href="https://en.wikipedia.org/wiki/Coordinated_vulnerability_disclosure">Coordinated Vulnerability Disclosure Policy</a></p>
+    #ALTERNATIVE TEXTING:
+    <span>The Zowe Vulnerability Disclosure Policy is (based on / a modification of) the <a href="">Responsible or Coordinated Vulnerability Disclosure (CVD) Policy</a></span>
+    <br/>
+    <br/>
+    The project maintainers would disclose a confirmed vulnerability by first creating a draft security advisory in the package's repository in GitHub/other CMS.
+    GitHub Security Advisories allow repository maintainers to privately discuss and fix a security vulnerability in a project.
+    <br/>See https://docs.github.com/en/code-security/repository-security-advisories/creating-a-repository-security-advisory
+    <br/>
+    After collaborating on a fix, repository maintainers can publish the security advisory to publicly disclose the security vulnerability to the project's community.
+   <div></div>
+    <div>
+     Alternatives to the Coordinated disclosure are:
+        <ul>
+            <li>Private Disclosure</li>
+            <li>Full Disclosure</li>
+        </ul>
+        Will we consider these or some own brew of all three above?
+    </div>
 </div>
 
 <div style="padding-top: 3%">
