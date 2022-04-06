@@ -25,31 +25,44 @@ security vulnerabilities and issues. The requirements are governed by internal p
 
 <div style="padding-top: 3%">
     <a id="IDENTIFY"/><h2>Security issues identification</h2>
+    <span style="display:none">(Zowe-SSDP-SDLC - #ID: ZSSD-LP:RV-ICV)</span>
     <ul>    
         <li> 
             <h3 style="margin-bottom: 1.5rem"> Code Review and Tests</h3>
             <p> 
-                <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-CRT)</span>
-                The Zowe product teams must/will continuously perform security testing of their products' code and configuration for security issues. 
+                <span style="display:none">(Zowe-SSDP-SDLC: C7. Test Executable Code - #ID: ZSSD-LP:PW-TEC)</span>
+                <span style="display:none">(Zowe-SSDP-SDLC - #ID: ZSSD-LP:RV-ICV-CRT)</span>
+                The Zowe product teams must/will continuously perform security testing of their products' code and configuration for security issues.
+                <br/>
                 Irregularly but at least before each major release a full penetration testing must be performed.
+                <br/>
             </p>
         </li>
         <li> 
-            <h3 style="margin-bottom: 1.5rem">Vulnerability sources Monitoring</h3>
+            <h3 style="margin-bottom: 1.5rem">Potential vulnerability sources Monitoring</h3>
             <p> 
                 <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span>
                 <div>The Zowe product teams must/will continuously monitor well know sources of information about freshly discovered or otherwise severe security issues.</div>
                 <br/>
-                <div>Any issues found to be potentially impacting the respective products, must be booked and further analyzed without unnecessary delay.</div>
+                Some sources a listed below:
+                <ul>
+                    <li><a href="https://nvd.nist.gov/vuln">NIST National Vulnerability Database</a></li>
+                    <li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">CISA Exploited Vulnerabilities Catalog</a></li>
+                    <li>#TODO: Add other</li>
+                </ul>
+                <br/>
+                <div>Any issues found to be potentially impacting the respective products, must be further analyzed without unnecessary delay.</div>
             </p>
         </li>
         <li> 
             <h3 style="margin-bottom: 1.5rem">Security issues reporting</h3>
             <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span>
+            Zowe encourages the community users to perform security testing and report potential vulnerabilities as described bellow.  
             <p>
-                Please direct all security issues to <code>zowe-security@lists.openmainframeproject.org</code>. 
+                Please direct all security issues to <code>zowe-security@lists.openmainframeproject.org</code>.
+                <br/>#TODO: Alternatively use Zowe report form 
                 <br/>
-                After your report is received, a member of the security team will reply to acknowledge receipt of the vulnerability.
+                After your report is received, a member of the security team will reply to acknowledge receipt of the report.
                 <br/>
                 Without unnecessary delay the report will be analyzed and you may be contacted for clarification.
                 <br/>
@@ -104,9 +117,21 @@ security vulnerabilities and issues. The requirements are governed by internal p
     For more information, see "About GitHub Security Advisories for repositories."
     <p>Security notifications will be distributed via the following methods.</p>
     <ul>
+    <li>
+        Publishing component specific advisories in the corresponding component GitHub repository Security page.
+    </li>
+        For example you can find the Zowe API Mediation Layer related security advisories here: https://github.com/zowe/api-layer/security/advisories   
     <li><code>zowe-user@lists.openmainframeproject.org</code></li>
     <li><code>zowe-dev@lists.openmainframeproject.org</code></li>
     </ul>
 </div>
 
 </section>
+
+-----------------------------------
+-----------------------------------
+Additional sources:
+<ol>
+<li>https://en.wikipedia.org/wiki/Coordinated_vulnerability_disclosure</li>
+<li>https://cheatsheetseries.owasp.org/cheatsheets/Vulnerability_Disclosure_Cheat_Sheet.html</li>
+</ol>ol>
