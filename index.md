@@ -40,6 +40,19 @@ redirect_from:
     });
 </script>
 
+
+<style>
+  .slider-post {
+    padding: 5px;
+  }
+
+  .slider-post a.post-image {
+    display: block;
+    height: 300px;
+    background-size: contain;
+  }
+</style>
+
 <div class="announcementsection">
   <h1>Announcements</h1>
   <strong>Zowe {{ site.data.releases[0].version }} is now available. You can download the installers and PTFs ({{ site.data.releases[0].smpe_numbers }}) for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="https://docs.zowe.org/stable/getting-started/release-notes/{{ site.data.releases[0].release_notes }}.html">Release notes</a>.<br></strong>
@@ -355,14 +368,25 @@ redirect_from:
   <div style="margin-bottom: 4%">
     <h2 class="text-center" style="color: black !important; margin-bottom: 5%">From Zowe blog</h2>
   </div>
-  <div id="medium-widget" style="margin-top: 5%"></div>
-    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/zowe","postsPerLine":2,"limit":4,"picture":"small","fields":["description","publishAt"],"ratio":"landscape"}})</script>
+  <div>
+    <div id="retainable-rss-embed" data-rss="https://medium.com/feed/zowe"
+        data-maxcols="3" 
+        data-layout="slider" 
+        data-poststyle="external" 
+        data-readmore="Read the rest" 
+        data-buttonclass="btn btn-primary" 
+        data-offset="-100">
+    </div>
+  </div>
+  
   <div style="margin-bottom: 4%">
     <a href="{{ site.zowe_medium_blog_url }}"><h5 class="text-right"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg> Check our other blogs</h5></a>
-  </div>
-    
+  </div>    
 </div>
+
+<script src="assets/retainable.js" />
+<link rel="stylesheet" href="assets/src/retainable.css" />
+  
 <div>
 
 

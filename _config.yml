@@ -65,6 +65,7 @@ zowe_explorer_github_url: https://github.com/zowe/vscode-extension-for-zowe
 zowe_explorer_slack_url: https://openmainframeproject.slack.com/archives/CUVE37Z5F
 zowe_explorer_next_github_url: https://github.com/zowe/vscode-extension-for-zowe/releases
 zowe_explorer_next_doc_url: https://github.com/zowe/vscode-extension-for-zowe/tree/next/docs/Early%20Access%20-%20Using%20Global%20Profile%20Configuration.md
+zowe_cics_explorer_next_github_url: https://github.com/zowe/vscode-extension-for-cics/releases
 zowe_sdk_doc_url: https://docs.zowe.org/stable/getting-started/overview.html#zowe-client-software-development-kits-sdks
 zowe_sdk_github_url: https://github.com/zowe/zowe-cli
 zowe_sdk_slack_url: https://openmainframeproject.slack.com/archives/C010AUS5MK5
@@ -106,9 +107,13 @@ zowe_doc_slack_url: https://openmainframeproject.slack.com/archives/CC961JYMQ
 zowe_metrics_url: https://www.metrics.zowe.org/
 zowe_cli_next_features_doc_url: https://github.com/zowe/zowe-cli#early-access-features
 zowe_node_sdk_next_reference_doc_url: https://docs.zowe.org/stable/typedoc_next/index.html
-zowe_next_release_date: 2021-12-10
-
-
+zowe_next_release_date: 2022-03-25
+v2_pax_preview_url: https://zowe.jfrog.io/zowe/libs-release-local/org/zowe/2.0.0-TP2/zowe-2.0.0-TP2.pax
+v2_zos_component_install_doc_url: https://deploy-preview-1961--zowe-docs-master.netlify.app/stable/user-guide/install-zos
+v2_smpe_download_url: https://zowe.jfrog.io/zowe/libs-release-local/org/zowe/2.0.0-TP2/zowe-smpe-2.0.0-TP2.zip
+v2_pswi_download_url: https://zowe.jfrog.io/zowe/libs-release-local/org/zowe/2.0.0-TP2/zowe-PSWI-2.0.0-TP2.pax.Z
+v2_containerization_download_url: https://zowe.jfrog.io/zowe/libs-release-local/org/zowe/2.0.0-TP2/zowe-containerization-2.0.0-TP2.zip
+v2_containerization_install_doc_url: https://deploy-preview-1961--zowe-docs-master.netlify.app/stable/user-guide/k8s-introduction
 
 plugins:
   # Redirect plugin
