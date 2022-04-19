@@ -1103,9 +1103,9 @@ p .card-black {
 <div>
   <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="faq-users">Frequently Asked Questions - User Focused</h2>
   <div>
-    <button id="questions-apiml-users" onclick="toggle('questions-apiml-users')" class="w3-button w3-block w3-left-align">
+    <button id="questions-apiml-users" onclick="toggle('questions-apiml-users-detail')" class="w3-button w3-block w3-left-align">
     Zowe V2 LTS API ML for Users Frequently Asked Questions </button>
-    <div id="questions-apiml-users" class="w3-container faq-hide">
+    <div id="questions-apiml-users-detail" class="w3-container faq-hide">
       <div>
         <button onclick="toggle('questions-apiml-users-1')" class="w3-button w3-block w3-left-align">
           1. With respect to the use of keyrings / certificates and certificate authentication - what happens if a personal certificate is not supplied / not used?  
@@ -1155,9 +1155,9 @@ p .card-black {
   </div>
 
   <div>
-    <button id="questions-cli-users" onclick="toggle('questions-cli-users')" class="w3-button w3-block w3-left-align">
+    <button id="questions-cli-users" onclick="toggle('questions-cli-users-detail')" class="w3-button w3-block w3-left-align">
     Zowe V2 CLI for Users Frequently Asked Questions </button>
-    <div id="questions-cli-users" class="w3-container faq-hide">
+    <div id="questions-cli-users-detail" class="w3-container faq-hide">
       <div>
         <button onclick="toggle('questions-cli-users-1')" class="w3-button w3-block w3-left-align">
           1. How do the Zowe CLI features (like Team Config) impact VS Code offerings that include Zowe client technologies i.e. CLI & Explorer?
