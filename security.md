@@ -3,12 +3,13 @@
 
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- Copyright Contributors to the Zowe project. -->
+# Zowe Security Policy
 
-#Zowe Respond to Vulnerabilities security policy
+## Respond to Vulnerabilities
 
-<span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV)</span>
+<div style="display:none">(Zowe-SSDP-SDLC ID: ZSSD-LP:RV)</div>
 
-The Zowe Respond to Vulnerabilities Security Policy consists of the following interrelated topics/sub-policies:
+The Zowe Respond to Vulnerabilities Security Policy consists of the following topics:
 
   - <a href="#IDENTIFY">Security issues identification <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span></a>
   - <a href="#REMEDIATE">Security issues remediation </a>
@@ -20,10 +21,10 @@ security vulnerabilities and issues.
 
 The requirements are governed by internal processes and guidance for the issues reporters.
 
-##Security issues identification
+### Security issues identification
 <span style="display:none">(Zowe-SSDP-SDLC - #ID: ZSSD-LP:RV-ICV)</span>
 
-###Code Review and Tests
+#### Code Review and Tests
 <div style="display: none;">(Zowe-SSDP-SDLC: C7. Test Executable Code - #ID: ZSSD-LP:PW-TEC)</div>
 <span style="display:none">(Zowe-SSDP-SDLC - #ID: ZSSD-LP:RV-ICV-CRT)</span>
 
@@ -33,7 +34,7 @@ Additionaly the teams must continuously perform security testing of their produc
 
 Irregularly but at least before each major release a full penetration testing must be performed.
 
-###Potential vulnerability sources Monitoring</h3>
+#### Potential vulnerability sources Monitoring</h3>
 <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span>
 
 The Zowe product teams must/will continuously monitor well know sources of information about freshly discovered or otherwise severe security issues.
@@ -46,7 +47,7 @@ Some sources a listed below:
 
 Any issues found to be potentially impacting the respective products, must be further analyzed without unnecessary delay.
     
-###Security issues reporting
+#### Security issues reporting
 <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span>
 
 Zowe encourages the community users to perform security testing and report potential vulnerabilities as described bellow.  
@@ -63,7 +64,7 @@ After the issue is sufficiently documented, our security team will coordinate re
 
 Please do not file a public issue disclosing potential vulnerabilities as this may be misused by violent attackers. 
 
-###Issues assessment and evidence
+#### Issues assessment and evidence
 <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV)</span>
 <span style="display:none"> (Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV-AEV)</span>
 <span style="display:none"> (NIST-SSF: #REF: SSDF:RV.2.1)</span>
@@ -77,7 +78,7 @@ The issues collected through testing, monitoring and user reports are discussed 
   - **Medium and Low:** fixed when the squad decides to fix
 
 
-##Security issues remediation
+### Security issues remediation
 <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV)</span>
 <span style="display:none">(NIST-SSF #REF: SSF-A.4.2-B)</span>
 
@@ -86,8 +87,8 @@ Projects MUST/SHOULD fix all Critical vulnerabilities rapidly after they are rep
 
 There MUST be no un-patched vulnerabilities of High severity that have been publicly known for more than 60 days. [vulnerabilities_fixed_60_days]
 
-#Security issues disclosure
-##Disclosure policy
+## Security issues disclosure
+### Disclosure policy
 The Zowe Vulnerability Disclosure Policy is (based on / a modification of) the <a href="">Responsible or Coordinated Vulnerability Disclosure (CVD) Policy</a>
 
 The project maintainers would disclose a confirmed vulnerability by first creating a draft security advisory in the package's repository in GitHub/other CMS.
@@ -105,8 +106,8 @@ the users upgrade Zowe.
 When the new release of Zowe is public we will publish the vulnerabilities fixed in the previous release. For example
 when we release Zowe 2.3 we will publish the list of vulnerabilities that were fixed in the 2.2 versions of Zowe
 
-##Solution advisory publishing
-###Receive security updates 
+### Solution advisory publishing
+#### Receive security updates 
 By publishing security advisories, repository maintainers make it easier for their community to update package dependencies and research the impact of the security vulnerabilities. 
 For more information, see "About GitHub Security Advisories for repositories."
 Security notifications will be distributed via the following methods.
@@ -116,7 +117,6 @@ Security notifications will be distributed via the following methods.
   - <code>zowe-user@lists.openmainframeproject.org</code>
   - <code>zowe-dev@lists.openmainframeproject.org</code>
 
-</section>
 -----------------------------------
 -----------------------------------
 Additional sources:
