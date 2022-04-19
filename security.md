@@ -4,32 +4,32 @@
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- Copyright Contributors to the Zowe project. -->
 
-<section class="whitebackground" style="float: none;">
-
 #Zowe Respond to Vulnerabilities security policy
+
 <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV)</span>
 
-This Zowe Respond to Vulnerabilities Security Policy consists of the following interrelated topics/sub-policies:
+The Zowe Respond to Vulnerabilities Security Policy consists of the following interrelated topics/sub-policies:
 
   - <a href="#IDENTIFY">Security issues identification <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span></a>
   - <a href="#REMEDIATE">Security issues remediation </a>
   - <a href="#DISCLOSE">Security issues disclosure <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-VDR)</span></a>
   - <a href="#ADVISE">Solution publication</a>
 
-
 The individual sub-policies contain sets of interrelated applicable requirements on how the Zowe project and organization treat 
 security vulnerabilities and issues. 
 
-The requirements are governed by internal processes and guidance for the users and other reporters.
+The requirements are governed by internal processes and guidance for the issues reporters.
 
 ##Security issues identification
 <span style="display:none">(Zowe-SSDP-SDLC - #ID: ZSSD-LP:RV-ICV)</span>
 
 ###Code Review and Tests
-<span style="display:none">(Zowe-SSDP-SDLC: C7. Test Executable Code - #ID: ZSSD-LP:PW-TEC)</span>
+<div style="display: none;">(Zowe-SSDP-SDLC: C7. Test Executable Code - #ID: ZSSD-LP:PW-TEC)</div>
 <span style="display:none">(Zowe-SSDP-SDLC - #ID: ZSSD-LP:RV-ICV-CRT)</span>
 
-The Zowe product teams must/will continuously perform security testing of their products' code and configuration for security issues.
+The Zowe product teams must perform security code review of newly implemented features and other code changes.
+
+Additionaly the teams must continuously perform security testing of their products' code and configuration for security issues.
 
 Irregularly but at least before each major release a full penetration testing must be performed.
 
