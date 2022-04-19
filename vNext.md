@@ -46,9 +46,21 @@ p .card-black {
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
       Office Hours
       </a>
+      <a href="#faq-users" class="card-link">
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+      Frequently Asked Questions - User focused
+      </a>
+      <a href="#questions-apiml-users" class="card-link" style="margin-left: 30px;">
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+      API Mediation Layer for Users
+      </a>
+      <a href="#questions-cli-users" class="card-link" style="margin-left: 30px;">
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+      CLI for Users
+      </a>
       <a href="#faq" class="card-link">
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
-      Frequently Asked Questions
+      Frequently Asked Questions - Extender focused
       </a>
       <a href="#questions-cli-hours" class="card-link" style="margin-left: 30px;">
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
@@ -419,15 +431,15 @@ p .card-black {
       <td>04/13/2022 12:00PM - 12:30PM ET</td>
       <td>Zowe CLI for Consumers</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td></td>
-      <td></td>
+      <td><a href="https://zoom.us/rec/share/RdrLjSLouMku0AVu0EAvsc7xR_3dJAS8DWddkb7FuErz1Je-JpEW2bvfiFfOMOc.aH9QT4sJjPZhGI5q?startTime=1649865177000">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/9rj6mvj3sx7xny5jochjppzum25ux43d">Presentation</a></td>
     </tr>
     <tr>
       <td>04/06/2022 12:00PM - 12:30PM ET</td>
       <td>Zowe API Mediation Layer for Consumers</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td></td>
-      <td></td>
+      <td><a href="https://zoom.us/rec/share/20SzIK38fhPD7RdNVRG0kFtaM5cC7bYsSbPCOQs2v-pJsJn-0GqvlAj-HGanAWuD.wSTgajcTaccDfYkT?startTime=1649260398000">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/9v5is8v5flyc4hhygn5v98h4ksjd3oln">Presentation</a></td>
     </tr>
     </table>
     <h3 style="margin-bottom: 1.5rem; margin-top: 2%">Extender Focused Office Hours</h3>
@@ -1088,6 +1100,75 @@ p .card-black {
     </div>
   </div>
 
+<div>
+  <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="faq-users">Frequently Asked Questions - User Focused</h2>
+  <div>
+    <button id="questions-apiml-users" onclick="toggle('questions-apiml-users-detail')" class="w3-button w3-block w3-left-align">
+    Zowe V2 LTS API ML for Users Frequently Asked Questions </button>
+    <div id="questions-apiml-users-detail" class="w3-container faq-hide">
+      <div>
+        <button onclick="toggle('questions-apiml-users-1')" class="w3-button w3-block w3-left-align">
+          1. With respect to the use of keyrings / certificates and certificate authentication - what happens if a personal certificate is not supplied / not used?  
+        </button>
+        <div id="questions-apiml-users-1" class="w3-container faq-hide">
+          <p>The API-ML uses the first certificate found in the keyring if the details about the certificate aren't supplied</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-apiml-users-2')" class="w3-button w3-block w3-left-align">
+          2. Is there a quick and easy way for a User to see all of the registered UI endpoints to determine if they’ve been successfully registered?
+        </button>
+        <div id="questions-apiml-users-2" class="w3-container faq-hide">
+          <p>Not really, if properly onboarded, they would be mentioned in the Swagger DOC but you’d have to first locate the appropriate tile (via the API catalog); There is a feature/request in the backlog that may satisfy this request - if you would like this prioritized please review and upvote this github issue: https://github.com/zowe/api-layer/issues/647 and possibly https://github.com/zowe/api-layer/issues/1129</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-apiml-users-3')" class="w3-button w3-block w3-left-align">
+          3. Is there a way to determine when the API-ML is entirely available vs. just some of the services?  (i.e. we are looking for a WTO message to write automation rules)
+        </button>
+        <div id="questions-apiml-users-3" class="w3-container faq-hide">
+          <p>There are several ways to confirm API-ML is ”up and running”:</p>
+          <ul>
+            <li>Manually via the catalog, all services will show “green”</li>
+            <li>And endpoint is available for API access that can be leveraged for automation use-cases</li>
+            <li>There is a feature/request in the backlog for a WTO message - if you would like this prioritized please review and upvote this github issue: https://github.com/zowe/api-layer/issues/1633</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-apiml-users-4')" class="w3-button w3-block w3-left-align">
+          4. What are the mainframe password use cases that are not yet managed by the API-ML User Interface?
+        </button>
+        <div id="questions-apiml-users-4" class="w3-container faq-hide">
+          <p>The main use case we were unable to address due to technical limitations is the ability to detect an upcoming expiration and immediately offer a password change action, ahead of the actual expiration event. We have two other password change related enhancements as yet unplanned. Please review and upvote if you would like these prioritized: https://github.com/zowe/api-layer/issues/2020 and https://github.com/zowe/api-layer/issues/2018.</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-apiml-users-5')" class="w3-button w3-block w3-left-align">
+          5. We have configured static services with passtickets and are interested in a quick and easy way to confirm they have been configured correctly.  Does the API-ML offer a capability that allows a user or administrator to verify passticket configuration? 
+        </button>
+        <div id="questions-apiml-users-5" class="w3-container faq-hide">
+          <p>No.  There is a feature/request in the backlog for such a capability - if you would like this prioritized please review and upvote this github issue: https://github.com/zowe/api-layer/issues/647 and also consider this one:  https://github.com/zowe/api-layer/issues/2059</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <button id="questions-cli-users" onclick="toggle('questions-cli-users-detail')" class="w3-button w3-block w3-left-align">
+    Zowe V2 CLI for Users Frequently Asked Questions </button>
+    <div id="questions-cli-users-detail" class="w3-container faq-hide">
+      <div>
+        <button onclick="toggle('questions-cli-users-1')" class="w3-button w3-block w3-left-align">
+          1. How do the Zowe CLI features (like Team Config) impact VS Code offerings that include Zowe client technologies i.e. CLI & Explorer?
+        </button>
+        <div id="questions-cli-users-1" class="w3-container faq-hide">
+          <p>VS Code extensions and code pack solutions that rely on the Zowe Explorer (mainframe files and jobs) are interested in and have added capabilities that leverage Team Config.  Recommend attending/reviewing the Zowe Explorer V2 office hours (scheduled for 4/20) for further details.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </section>
 
