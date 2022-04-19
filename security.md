@@ -52,9 +52,54 @@ Any issues found to be potentially impacting the respective products, must be fu
 
 Zowe encourages the community users to perform security testing and report potential vulnerabilities as described bellow.  
 
-Please direct all security issues to <code>zowe-security@lists.openmainframeproject.org</code>.
+<span style="display: none;">#TODO: Alternatively use Zowe report form if we have one</span>
+<span style="display: none;">#TODO: Publish the reporting process on the project web-site: Open SSF: FLOSS Best Practices Criteria  - Vulnerability report process</span>
 
-    #TODO: Alternatively use Zowe report form if we have one 
+Please direct all security issues to <code>zowe-security@lists.openmainframeproject.org</code>.
+  -
+To help Zowe developers understand and resolve the issues in most efficient way, please provide the information the following sections as accurately as possible:
+
+**Vulnerability report template:**
+````
+  - General
+    - Date discovered
+    - 
+  - Reporter information
+    - Full name 
+    - Contact - preferably e-mail address
+    - Customer ID
+    
+  - Product related
+    - Zowe version
+    - Product name and version
+    - Vulnerable sub-component name and version
+    - Operating environment 
+      - z/OS version
+      - Security manager
+      - 
+
+  - Issue description   
+    - Short (one liner) summary
+    - Detailed information - pre-conditions, access rights,   
+    - Steps to reproduce
+    - Severity
+````
+
+Additional hints and recommendations:
+    - While testing or hunting the vulnerability take notes. ...
+    - Start with a summary. ...
+    - Detail the narrative. ...
+    - Follow the form. ...
+    - Proofread. ...
+    - Avoid emotional language. ...
+    - Avoid abbreviations and conjunctions. ...
+    - Be prompt.
+
+<div style="display: none;">
+  - References:
+    - https://ossf.github.io/osv-schema/
+    - https://github.com/CVEProject/cve-schema
+</div>
 
 After your report is received, a member of the security team will reply to acknowledge receipt of the report.
 
