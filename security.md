@@ -147,18 +147,15 @@ There MUST be no un-patched vulnerabilities of High severity that have been publ
 The project maintainers will disclose a confirmed vulnerability by first creating a draft security advisory in the package's repository in GitHub/other CMS.
 GitHub Security Advisories allow repository maintainers to privately discuss and fix a security vulnerability in a project.
 
-See https://docs.github.com/en/code-security/repository-security-advisories/creating-a-repository-security-advisory
+After collaborating on a fix, repository maintainers can publish the security advisory to publicly disclose the security vulnerability advisory in a project specific place.
+Projects hosted in GitHub will take advantage of the GH features providing specilal pages security advisory dedicated pages.   
+**See:** https://docs.github.com/en/code-security/repository-security-advisories/creating-a-repository-security-advisory
 
-After collaborating on a fix, repository maintainers can publish the security advisory to publicly disclose the security vulnerability to the project's community.
-
-Zowe discloses the vulnerabilities in a timely manner but giving the user time to upgrade. The fixed vulnerabilities
-will be published on the [zowe security page](https://www.zowe.org/security.html). Zowe won't disclose the
+Zowe discloses the vulnerabilities in a timely manner while giving the user time to plan their upgrades. Zowe won't disclose the
 vulnerabilities fixed in the latest release as we respect the need for at least 45 days to decide when and how will
-the users upgrade Zowe.
-
-When the new release of Zowe is public we will publish the vulnerabilities fixed in the previous release. For example
-when we release Zowe 2.3 we will publish the list of vulnerabilities that were fixed in the 2.2 versions of Zowe. 
-The issues that were fixed will be also published in out [Zowe security reports](https://github.com/zowe/security-reports/blob/master/security-vulnerabilities.md) repository listing.
+the users upgrade Zowe. When a new release of Zowe is published, we will list the vulnerabilities fixed in the previous release. 
+For example when we release Zowe 2.3 we will publish the list of vulnerabilities that were fixed in the 2.2 versions of Zowe. 
+The issues that were fixed will be published in out [Zowe security reports](https://github.com/zowe/security-reports/blob/master/security-vulnerabilities.md) repository listing.
 
 #### Security updates 
 By publishing security advisories, repository maintainers make it easier for their community to update package dependencies and research the impact of the security vulnerabilities. 
