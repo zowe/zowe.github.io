@@ -15,18 +15,18 @@ Zowe adapts the 5 steps CVD process and maps it to the NIST SSDF Respond to Vuln
 
 The Zowe Respond to Vulnerabilities Security Policy consists of the following topics:
   - <a href="#IDENTIFY">Security issues Identification
-  - [Security issues Identification](#Security-issues-Identification) <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span>
-  - [Security issues Analysis and Assessment](#Security-issues-Analysis-and-Assessment)
-  - [Security issues Mitigation](#Security-issues-Mitigation)
-  - [Security issues Disclosure](#Security-issues-Disclosure) <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-VDR)</span>
-  - [Solution Publication](#Solution-Publication)
+  - [Security issues identification](#Security-issues-identification) <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span>
+  - [Security issues analysis and assessment](#Security-issues-analysis-and-assessment)
+  - [Security issues mitigation](#Security-issues-mitigation)
+  - [Security issues disclosure](#Security-issues-disclosure) <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-VDR)</span>
+  - [Solution publication](#Solution-publication)
 
 ????The individual topics contain sets of applicable requirements, the fulfilment of which is governed by internal processes and guidance for the Zowe users and security issues reporters.
 
 ### Security issues identification
 <span style="display:none">(Zowe-SSDP-SDLC - #ID: ZSSD-LP:RV-ICV)</span>
 
-#### Code Review and Tests
+#### Code review and tests
 <div style="display: none;">(Zowe-SSDP-SDLC: C7. Test Executable Code - #ID: ZSSD-LP:PW-TEC)</div>
 <span style="display:none">(Zowe-SSDP-SDLC - #ID: ZSSD-LP:RV-ICV-CRT)</span>
 
@@ -38,7 +38,7 @@ Additionally, the teams must continuously perform security testing of their prod
 
 Irregularly but at least before each major release a full penetration testing must be performed.
 
-#### Potential vulnerability sources Monitoring</h3>
+#### Potential vulnerability sources monitoring</h3>
 <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span>
 
 The Zowe product teams must/will continuously monitor well know sources of information about freshly discovered or otherwise severe security issues.
@@ -115,7 +115,7 @@ After the issue is sufficiently documented, our security team will coordinate re
 
 Please do not file a public issue disclosing potential vulnerabilities as this may be misused by violent attackers. 
 
-###Security issues Analysis and Assessment 
+### Security issues analysis and assessment 
 <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV)</span>
 <span style="display:none"> (Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV-AEV)</span>
 <span style="display:none"> (NIST-SSF: #REF: SSDF:RV.2.1)</span>
@@ -130,7 +130,7 @@ The priority with which the issues will be fixed is based on the combination of 
 
 The assessment results reports will be created and stored for evidence and measurement of the product security state and hardening.
 
-### Security issues Mitigation
+### Security issues mitigation
 <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV)</span>
 <span style="display:none">(NIST-SSF #REF: SSF-A.4.2-B)</span>
 
@@ -139,12 +139,12 @@ Projects MUST/SHOULD fix all Critical vulnerabilities rapidly after they are rep
 
 There MUST be no un-patched vulnerabilities of High severity that have been publicly known for more than 60 days. [vulnerabilities_fixed_60_days]
 
-### Security Issues Disclosure
+### Security issues disclosure
 
 
 
 ### Solution advisory and updates publishing
-#### Security Advisory
+#### Security advisory
 The project maintainers will disclose a confirmed vulnerability by first creating a draft security advisory in the package's repository in GitHub/other CMS.
 GitHub Security Advisories allow repository maintainers to privately discuss and fix a security vulnerability in a project.
 
