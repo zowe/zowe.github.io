@@ -5,6 +5,13 @@
 <!-- Copyright Contributors to the Zowe project. -->
 # Zowe Security Policy
 
+```` #TODO
+Security issues disclosure
+The Zowe Vulnerability Disclosure Policy is based on the <a href="https://en.wikipedia.org/wiki/Coordinated_vulnerability_disclosure">Responsible or Coordinated Vulnerability Disclosure (CVD) Policy</a>
+
+WIP: CVD description
+````
+
 ## Respond to Vulnerabilities
 
 <div style="display:none">(Zowe-SSDP-SDLC ID: ZSSD-LP:RV)</div>
@@ -64,7 +71,7 @@ To help Zowe developers understand and resolve the issues in most efficient way,
   - General
     - Date discovered
     - 
-  - Reporter information
+  - Reporter information  
     - Full name 
     - Contact - preferably e-mail address
     - Customer ID
@@ -86,6 +93,7 @@ To help Zowe developers understand and resolve the issues in most efficient way,
 ````
 
 Additional hints and recommendations:
+````
     - While testing or hunting the vulnerability take notes. ...
     - Start with a summary. ...
     - Detail the narrative. ...
@@ -94,11 +102,13 @@ Additional hints and recommendations:
     - Avoid emotional language. ...
     - Avoid abbreviations and conjunctions. ...
     - Be prompt.
+````
 
 <div style="display: none;">
   - References:
     - https://ossf.github.io/osv-schema/
     - https://github.com/CVEProject/cve-schema
+    - https://security.googleblog.com/2021/06/announcing-unified-vulnerability-schema.html
 </div>
 
 After your report is received, a member of the security team will reply to acknowledge receipt of the report.
@@ -114,16 +124,17 @@ Please do not file a public issue disclosing potential vulnerabilities as this m
 <span style="display:none"> (Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV-AEV)</span>
 <span style="display:none"> (NIST-SSF: #REF: SSDF:RV.2.1)</span>
 
-Issues found during testing and reviewing the code, must be assessed for severity, exploitability and impact on the respective components and the whole Zowe system.
+Any issue reported or identified by internal testing or code review, must be analyzed/assessed/triaged within the security workgroup.<br/> 
+The issues' assessment outcome is the values of the severity, exploitability and impact of the issue on the respective components and the whole Zowe system.<br/>
+The priority with which the issues will be fixed is based on the combination of the above factors (severity, exploitability and impact) and falls in one of the following categories:
 
-The assessment results reports will be collected and stored for evidence and measurement of the product security state and hardening.
-The issues collected through testing, monitoring and user reports are discussed within the security workgroup and fixed based on the severity:
-  - **Critical:** fixed as early as possible
-  - **High:** fixed within next minor/patch release
-  - **Medium and Low:** fixed when the squad decides to fix
+- **Critical:** fixed as early as possible
+- **High:** fixed within next minor/patch release
+- **Medium and Low:** fixed when the squad decides to fix
 
+The assessment results reports will be created and stored for evidence and measurement of the product security state and hardening.
 
-### Security issues remediation
+### Security issues mitigation
 <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV)</span>
 <span style="display:none">(NIST-SSF #REF: SSF-A.4.2-B)</span>
 
@@ -132,10 +143,10 @@ Projects MUST/SHOULD fix all Critical vulnerabilities rapidly after they are rep
 
 There MUST be no un-patched vulnerabilities of High severity that have been publicly known for more than 60 days. [vulnerabilities_fixed_60_days]
 
-## Security issues disclosure
-### Disclosure policy
-The Zowe Vulnerability Disclosure Policy is (based on / a modification of) the <a href="">Responsible or Coordinated Vulnerability Disclosure (CVD) Policy</a>
 
+## Security Issues Disclosure Policy
+
+### Solution advisory publishing
 The project maintainers would disclose a confirmed vulnerability by first creating a draft security advisory in the package's repository in GitHub/other CMS.
 GitHub Security Advisories allow repository maintainers to privately discuss and fix a security vulnerability in a project.
 
@@ -151,8 +162,7 @@ the users upgrade Zowe.
 When the new release of Zowe is public we will publish the vulnerabilities fixed in the previous release. For example
 when we release Zowe 2.3 we will publish the list of vulnerabilities that were fixed in the 2.2 versions of Zowe
 
-### Solution advisory publishing
-#### Receive security updates 
+### Security updates publishing 
 By publishing security advisories, repository maintainers make it easier for their community to update package dependencies and research the impact of the security vulnerabilities. 
 For more information, see "About GitHub Security Advisories for repositories."
 Security notifications will be distributed via the following methods.
@@ -165,5 +175,5 @@ Security notifications will be distributed via the following methods.
 -----------------------------------
 -----------------------------------
 Additional sources:
-  - https://en.wikipedia.org/wiki/Coordinated_vulnerability_disclosure
   - https://cheatsheetseries.owasp.org/cheatsheets/Vulnerability_Disclosure_Cheat_Sheet.html
+  - 
