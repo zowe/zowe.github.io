@@ -14,10 +14,11 @@ adopted also by many other organizations, <a href="https://www.cisa.gov/coordina
 Zowe adapts the 5 steps CVD process and maps it to the NIST SSDF Respond to Vulnerability (RV) Best practices.
 
 The Zowe Respond to Vulnerabilities Security Policy consists of the following topics:
-  - <a href="#IDENTIFY">Security issues Identification<span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span></a>
+  - <a href="#IDENTIFY">Security issues Identification
+  - [Security issues Identification](Security-issues-Identification) <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span>
   - <a href="#ASSESS">Security issues Analysis and Assessment</a>
   - <a href="#MITIGATE">Security issues Mitigation</a>
-  - <a href="#DISCLOSE">Security issues Disclosure<span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-VDR)</span></a>
+  - <a href="#DISCLOSE">Security issues Disclosure</a> <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-VDR)</span>
   - <a href="#ADVISE">Solution Publication</a>
 
 ????The individual topics contain sets of applicable requirements, the fulfilment of which is governed by internal processes and guidance for the Zowe users and security issues reporters.
