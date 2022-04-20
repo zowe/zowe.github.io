@@ -19,7 +19,7 @@ The Zowe Respond to Vulnerabilities Security Policy consists of the following to
   - [Security issues analysis and assessment](#Security-issues-analysis-and-assessment)
   - [Security issues mitigation](#Security-issues-mitigation)
   - [Security issues disclosure](#Security-issues-disclosure) <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-VDR)</span>
-  - [Solution publication](#Solution-publication)
+  - [Solution publishing](#Solution-publishing)
 
 ????The individual topics contain sets of applicable requirements, the fulfilment of which is governed by internal processes and guidance for the Zowe users and security issues reporters.
 
@@ -143,7 +143,7 @@ There MUST be no un-patched vulnerabilities of High severity that have been publ
 
 
 
-### Solution advisory and updates publishing
+### Solution publishing
 #### Security advisory
 The project maintainers will disclose a confirmed vulnerability by first creating a draft security advisory in the package's repository in GitHub/other CMS.
 GitHub Security Advisories allow repository maintainers to privately discuss and fix a security vulnerability in a project.
