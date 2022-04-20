@@ -58,7 +58,11 @@ Zowe encourages the community users to perform security testing and report poten
 <span style="display: none;">#TODO: Alternatively use Zowe report form if we have one</span>
 <span style="display: none;">#TODO: Publish the reporting process on the project web-site: Open SSF: FLOSS Best Practices Criteria  - Vulnerability report process</span>
 
-To help Zowe developers understand and resolve the issues in most efficient way, please provide the information the following sections as accurately as possible:
+Please direct all security issues to <code>zowe-security@lists.openmainframeproject.org</code>.
+
+To help Zowe developers understand and resolve the issues in most efficient way, please provide sufficient and accurate details about 
+the issue and the approach to reproduce it. 
+Please fill in as much as you can of the following template fields:
 
 **Vulnerability report template:**
 ````
@@ -67,8 +71,8 @@ To help Zowe developers understand and resolve the issues in most efficient way,
     - 
   - Reporter information  
     - Full name 
-    - Contact - preferably e-mail address
-    - Customer ID
+    - Contact - preferably e-mail
+    - Customer ID (optional)
     
   - Product related
     - Zowe version
@@ -105,7 +109,6 @@ Additional hints and recommendations:
     - https://security.googleblog.com/2021/06/announcing-unified-vulnerability-schema.html
 </div>
 
-Please direct all security issues to <code>zowe-security@lists.openmainframeproject.org</code>.
 
 After your report is received, a member of the security team will reply to acknowledge receipt of the report.
 
