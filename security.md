@@ -15,7 +15,7 @@ Zowe adapts the 5 steps CVD process and maps it to the NIST SSDF Respond to Vuln
 
 The Zowe Respond to Vulnerabilities Security Policy consists of the following topics:
   - <a href="#IDENTIFY">Security issues Identification
-  - [Security issues Identification](Security-issues-Identification) <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span>
+  - [Security issues Identification](#Security-issues-Identification) <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span>
   - <a href="#ASSESS">Security issues Analysis and Assessment</a>
   - <a href="#MITIGATE">Security issues Mitigation</a>
   - <a href="#DISCLOSE">Security issues Disclosure</a> <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-VDR)</span>
