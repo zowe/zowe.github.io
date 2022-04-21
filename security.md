@@ -144,6 +144,11 @@ There MUST be no un-patched vulnerabilities of High severity that have been publ
 
 ### Security issues disclosure
 
+Zowe discloses the vulnerabilities in a timely manner while giving the user time to plan their upgrades. Zowe won't disclose the
+vulnerabilities fixed in the latest release as we respect the need for at least 45 days to decide when and how will
+the users upgrade Zowe. When a new release of Zowe is published, we will list the vulnerabilities fixed in the previous release.
+For example when we release Zowe 2.3 we will publish the list of vulnerabilities that were fixed in the 2.2 versions of Zowe.
+The issues that were fixed will be published in out [Zowe security reports](https://github.com/zowe/security-reports/blob/master/security-vulnerabilities.md) repository listing.
 
 
 ### Solution publishing
@@ -155,11 +160,6 @@ After collaborating on a fix, repository maintainers can publish the security ad
 Projects hosted in GitHub will take advantage of the GH features providing specilal pages security advisory dedicated pages.   
 **See:** https://docs.github.com/en/code-security/repository-security-advisories/creating-a-repository-security-advisory
 
-Zowe discloses the vulnerabilities in a timely manner while giving the user time to plan their upgrades. Zowe won't disclose the
-vulnerabilities fixed in the latest release as we respect the need for at least 45 days to decide when and how will
-the users upgrade Zowe. When a new release of Zowe is published, we will list the vulnerabilities fixed in the previous release. 
-For example when we release Zowe 2.3 we will publish the list of vulnerabilities that were fixed in the 2.2 versions of Zowe. 
-The issues that were fixed will be published in out [Zowe security reports](https://github.com/zowe/security-reports/blob/master/security-vulnerabilities.md) repository listing.
 
 #### Security updates 
 By publishing security advisories, repository maintainers make it easier for their community to update package dependencies and research the impact of the security vulnerabilities. 
