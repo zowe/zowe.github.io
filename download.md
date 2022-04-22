@@ -86,10 +86,6 @@
   <!--V2 download as follows -->
   <h2 id="download-v2">Zowe V2</h2>
   {% if site.data.releases[0].cli_version and site.data.releases[0].cli_plugins_version and site.data.releases[0].zos_version and site.data.releases[0].smpe_version and site.data.releases[0].node_sdk_version and site.data.releases[0].python_sdk_version %}
-  <p>Explore the upcoming production-ready V2 Long Term Support release below and provide feedback to the community on
-    the documentation, user experience, and desired features that can be implemented in future releases. Any feedback
-    that you can provide is highly appreciated. Let us know via Slack or GitHub!
-  </p>
   <div class="card-deck">
     <div class="card bg-light border-light mb-3">
       <h4 class="card-header" id="zowe-zos-build-download">Server-side component installer</h4>
@@ -100,7 +96,7 @@
           <div class="card-body">
             <h5 class="card-title">Convenience build</h5>
             <p class="card-text">PAX archive format installed on the z/OS server</p>
-            <p><a class="btn btn-primary" href="{{ site.v2_pax_preview_url }}">Zowe v2.0.0-TP2 z/OS convenience
+            <p><a class="btn btn-primary" href="{{ site.v2_pax_preview_url }}">Zowe v2.0.0 z/OS convenience
                 build</a></p>
             <div>
               <a href="{{ site.v2_zos_component_install_doc_url }}" class="card-link">
@@ -118,8 +114,8 @@
             <div class="card-body">
               <h5 class="card-title">SMP/E build</h5>
               <p class="card-text">SMP/E format installed on the z/OS server</p>
-              <p class="card-text">Download the base FMID AZWE002 (based on v2.0.0-TP2)</p>
-              <p><a class="btn btn-primary" href="{{ site.v2_smpe_download_url }}">Zowe v2.0.0-TP2 FMID</a></p>
+              <p class="card-text">Download the base FMID AZWE002 (based on v2.0.0)</p>
+              <p><a class="btn btn-primary" href="{{ site.v2_smpe_download_url }}">Zowe v2.0.0 FMID</a></p>
               <div>
                 <a href="{{ site.v2_zos_component_install_doc_url }}" class="card-link">
                   <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
@@ -141,7 +137,7 @@
                 distribution. The PSWI allows the full installation as you are used to from SMP/E build, but it uses the
                 new standard for mainframe software distribution.</p>
               <p class="card-text">Download the PSWI based on FMID AZWE002</p>
-              <p><a class="btn btn-primary" href="{{ site.v2_pswi_download_url }}">Zowe PSWI v2.0.0-TP2</a></p>
+              <p><a class="btn btn-primary" href="{{ site.v2_pswi_download_url }}">Zowe PSWI v2.0.0</a></p>
               <div>
                 <a href="{{ site.v2_zos_component_install_doc_url }}" class="card-link">
                   <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
@@ -223,9 +219,9 @@
           </div>
           <div class="card-body">
             <h5 class="card-title">Zowe Explorer</h5>
-            <p class="card-text">Zowe Explorer vNext enables you to adopt the team configuration file, recently
+            <p class="card-text">Zowe Explorer v2.0 enables you to adopt the team configuration file, recently
               developed by the Zowe CLI Squad, to make profile management more centralized and much simpler.</p>
-            <p class="card-text">To download the V2 preview version of the FTP extension, click <b>Zowe Explorer vNext
+            <p class="card-text">To download the V2 version of the FTP extension, click <b>Zowe Explorer vNext
                 release</b>.</p>
             <p class="card-text">You can download the <em>.vsix</em> files directly from the GitHub release page with
               the tag <b>"Pre-release"</b>. Separate downloads are available for Zowe Explorer and Zowe Explorer
@@ -282,7 +278,7 @@
                   href="{{ site.zos_download_url }}{{ site.data.releases[0].zos_version }}">Zowe
                   {{ site.data.releases[0].zos_version }} z/OS Convenience build</a></p>
               <div>
-                <a href="{{ site.zos_component_install_doc_url }}" class="card-link">
+                <a href="https://docs.zowe.org/v1.27.x/user-guide/install-zos" class="card-link">
                   <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
@@ -306,7 +302,7 @@
                   {{ site.data.releases[0].zos_version }} {{ site.data.releases[0].smpe_sysmod }}
                   {{ site.data.releases[0].smpe_numbers }}</a></p>
               <div>
-                <a href="{{ site.zos_component_install_doc_url }}" class="card-link">
+                <a href="https://docs.zowe.org/v1.27.x/user-guide/install-zos" class="card-link">
                   <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
@@ -325,7 +321,7 @@
                   href="{{ site.containerization_download_url }}{{ site.data.releases[0].zos_version }}">Zowe
                   {{ site.data.releases[0].zos_version }} Containerization build</a></p>
               <div>
-                <a href="{{ site.zowe_containerization_install_doc_url }}" class="card-link">
+                <a href="https://docs.zowe.org/v1.27.x/user-guide/k8s-introduction/" class="card-link">
                   <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
@@ -359,7 +355,7 @@
                   href="{{ site.cli_plugins_download_url }}{{ site.data.releases[0].cli_plugins_version }}">Zowe
                   {{ site.data.releases[0].cli_plugins_version }} CLI Plug-ins</a></p>
               <div>
-                <a href="{{ site.zowe_cli_install_doc_url }}" class="card-link">
+                <a href="https://docs.zowe.org/v1.27.x/user-guide/cli-installcli/" class="card-link">
                   <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
@@ -382,7 +378,7 @@
                   href="{{ site.zowe_python_sdk_download_url }}{{ site.data.releases[0].python_sdk_version }}">Zowe
                   {{ site.data.releases[0].python_sdk_version }} Python Client SDK</a></p>
               <div>
-                <a href="{{ site.zowe_sdk_install_doc_url }}" class="card-link">
+                <a href="https://docs.zowe.org/v1.27.x/user-guide/sdks-using/" class="card-link">
                   <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
@@ -400,7 +396,7 @@
               <p><a class="btn btn-primary" href="{{ site.vscode_marketplace_url }}">Visual Studio Code Marketplace</a>
               </p>
               <div>
-                <a href="{{ site.zowe_explorer_install_doc_url }}" class="card-link">
+                <a href="https://docs.zowe.org/v1.27.x/user-guide/ze-install/" class="card-link">
                   <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
