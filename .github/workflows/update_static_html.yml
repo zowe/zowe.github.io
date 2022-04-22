@@ -44,14 +44,16 @@ jobs:
 
     - name: Publish Release to Artifactory
       uses: zowe-actions/shared-actions/publish@main
+      env:
+        DEBUG: 'zowe-actions:shared-actions:publish'
       if: ${{ github.ref == 'refs/heads/master' }}
       with:
         perform-release: true
         artifacts: |
           _site/post_download.html
           _site/legal.html
-        publish-target-path-pattern: libs-release-local/org/zowe/download/
-        publish-target-file-pattern: "{filename}{fileext}"
+        publish-target-path-pattern: 'libs-release-local/org/zowe/download/'
+        publish-target-file-pattern: '{filename}{fileext}'
 
     - name: Publish Snapshot to Artifactory
       uses: zowe-actions/shared-actions/publish@main
@@ -61,4 +63,4 @@ jobs:
         artifacts: |
           _site/post_download.html
           _site/legal.html
-        publish-target-path-pattern: libs-snapshot-local/org/zowe/download/
+        publish-target-path-pattern: 'libs-snapshot-local/org/zowe/download/'
