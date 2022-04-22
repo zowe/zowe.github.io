@@ -1157,6 +1157,7 @@ p .card-black {
   <div>
     <button id="questions-cli-users" onclick="toggle('questions-cli-users-detail')" class="w3-button w3-block w3-left-align">
     Zowe V2 CLI for Users Frequently Asked Questions </button>
+    
     <div id="questions-cli-users-detail" class="w3-container faq-hide">
       <div>
         <button onclick="toggle('questions-cli-users-1')" class="w3-button w3-block w3-left-align">
