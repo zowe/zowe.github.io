@@ -149,7 +149,7 @@
               new standard for mainframe software distribution.</p>
             <p class="card-text">Download the PSWI based on FMID AZWE002</p>
             <p><a class="btn btn-primary"
-                href="{{ site.pswi_download_uri }}{{ site.data.releases.v2[0].zos_version }}">Zowe PSWI v2.0.0</a></p>
+                href="{{ site.pswi_download_uri }}{{ site.data.releases.v2[0].zos_version }}">Zowe PSWI {{ site.data.releases.v2[0].zos_version }}</a></p>
             <div>
               <a href="{{ site.pswi_install_doc_url }}" class="card-link">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
@@ -203,10 +203,10 @@
               IMS, MQ, z/OS FTP, and so on) to gain more capabilities.</p>
             <p><a class="btn btn-primary"
                 href="{{ site.cli_download_url }}{{ site.data.releases.v2[0].cli_version }}">Zowe
-                v2.0.0 CLI Core</a></p>
+                {{ site.data.releases.v2[0].cli_plugins_version }} CLI Core</a></p>
             <p><a class="btn btn-primary"
                 href="{{ site.cli_plugins_download_url }}{{ site.data.releases.v2[0].cli_plugins_version }}">Zowe
-                v2.0.0 CLI Plug-ins</a></p>
+                {{ site.data.releases.v2[0].cli_plugins_version }} CLI Plug-ins</a></p>
             <div>
               <a href="{{ site.zowe_cli_next_features_doc_url }}" class="card-link">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
@@ -215,7 +215,7 @@
                   <path fill-rule="evenodd"
                     d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
                   <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" /></svg>
-                Review early access features
+                Read installation docs
               </a>
             </div>
           </div>
@@ -225,7 +225,10 @@
               automation.</p>
             <p><a class="btn btn-primary"
                 href="{{ site.zowe_node_sdk_download_url }}{{ site.data.releases.v2[0].node_sdk_version }}">Zowe
-                v2.0.0 Node.js Client SDK</a></p>
+                {{ site.data.releases.v2[0].node_sdk_version }} Node.js Client SDK</a></p>
+            <p><a class="btn btn-primary"
+                href="{{ site.zowe_python_sdk_download_url }}{{ site.data.releases.v1[0].python_sdk_version }}">Zowe
+                {{ site.data.releases.v2[0].python_sdk_version }} Python Client SDK</a></p>
             <div>
               <a href="https://docs.zowe.org/stable/user-guide/cli-installcli/" class="card-link">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
@@ -240,7 +243,7 @@
           </div>
           <div class="card-body">
             <h5 class="card-title">Zowe Explorer</h5>
-            <p class="card-text">Zowe Explorer v2.0 enables you to adopt the team configuration file, recently
+            <p class="card-text">Zowe Explorer v2.0.0 enables you to adopt the team configuration file, recently
               developed by the Zowe CLI Squad, to make profile management more centralized and much simpler.</p>
             <p class="card-text">To download the V2 version of the FTP extension, click <b>Zowe Explorer vNext
                 release</b>.</p>
@@ -252,10 +255,10 @@
             <div class="row">
               <div class="card-body">
                 <h5 class="card-title">Direct download</h5>
-                <p><a class="btn btn-primary" href="{{ site.zowe_explorer_next_github_url }}">Zowe Explorer vNext
-                    release</a></p>
+                <p><a class="btn btn-primary" href="{{ site.zowe_explorer_next_github_url }}">Zowe Explorer {{ site.data.releases.v2[0].explorer_version }}
+                    </a></p>
                 <p><a class="btn btn-primary" href=" {{ site.zowe_cics_explorer_next_github_url }}">Zowe Explorer for
-                    IBM CICS vNext release</a></p>
+                    IBM CICS {{ site.data.releases.v2[0].explorer_version }}</a></p>
                 <div>
                   <a href="{{ site.zowe_explorer_next_doc_url }}" class="card-link">
                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle"
@@ -266,7 +269,7 @@
                         d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
                       <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" />
                     </svg>
-                    Review early access features
+                    Review installation docs
                   </a>
                 </div>
               </div>
@@ -496,7 +499,7 @@
           <div class="row">
             <div class="card-body">
               <h5 class="card-title">Download the PSWI</h5>
-              <p><a class="btn btn-primary" href="{{ site.pswi_download_uri }}">Zowe PSWI {{ site.pswi_version }}
+              <p><a class="btn btn-primary" href="{{ site.pswi_download_uri }}">Zowe PSWI {{ site.data.releases.v1[0].zos_version }}
                   {{ site.zowe_fmid }}</a></p>
               <div>
                 <a href="{{ site.pswi_install_doc_url }}" class="card-link">
@@ -525,7 +528,7 @@
   <div style="overflow-x: auto">
     <table class="table table-hover table-sm">
       {% endif %}
-     
+
       <tr>
         <td>Zowe {{release.version}} ({{release.release_date}})</td>
         {% if release.zos_version %}
@@ -557,7 +560,7 @@
         {% endif %}
         <td><a href="https://docs.zowe.org/{{release.documentation}}">Documentation</a></td>
       </tr>
-     
+
       {% if forloop.last %}
     </table>
   </div>
@@ -579,7 +582,7 @@
 <div style="overflow-x: auto">
   <table class="table table-hover table-sm">
     {% endif %}
-   
+
     <tr>
       <td>Zowe {{release.version}} ({{release.release_date}})</td>
       {% if release.zos_version %}

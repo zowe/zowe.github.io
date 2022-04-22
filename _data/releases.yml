@@ -8,6 +8,7 @@ v2:
     smpe_numbers: AZWE002
     cli_version: 2.0.0-RC2
     cli_plugins_version: 2.0.0-RC2
+    explorer_version: 2.0.0-RC2
     node_sdk_version: 2.0.0-RC2
     python_sdk_version: 2.0.0-RC2
     release_date: 2022-04-26
