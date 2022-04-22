@@ -25,7 +25,7 @@ cli_download_url:  legal.html?type=cli&version=
 cli_plugins_download_url: legal.html?type=cli-plugins&version=
 cli_active_development_download_url: legal.html?type=cli-active-development&version=
 smpe_download_url: legal.html?type=smpe&version=
-pswi_download_uri: legal.html?type=pswi&version=1.24.0-TP
+pswi_download_uri: legal.html?type=pswi&version=
 pswi_install_doc_url: https://docs.zowe.org/stable/user-guide/install-zos.html
 pswi_version: 1.24.0
 zowe_node_sdk_download_url: legal.html?type=nodejs-sdk&version=
@@ -114,6 +114,13 @@ v2_smpe_download_url: https://zowe.jfrog.io/zowe/libs-release-local/org/zowe/2.0
 v2_pswi_download_url: https://zowe.jfrog.io/zowe/libs-release-local/org/zowe/2.0.0-TP2/zowe-PSWI-2.0.0-TP2.pax.Z
 v2_containerization_download_url: https://zowe.jfrog.io/zowe/libs-release-local/org/zowe/2.0.0-TP2/zowe-containerization-2.0.0-TP2.zip
 v2_containerization_install_doc_url: https://deploy-preview-1961--zowe-docs-master.netlify.app/stable/user-guide/k8s-introduction
+
+v1:
+
+
+
+v2:
+
 
 plugins:
   # Redirect plugin
