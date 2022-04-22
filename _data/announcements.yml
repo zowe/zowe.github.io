@@ -1,7 +1,8 @@
 # Announcements
 # Any kind of links should NOT be in ""
-- announcement: "*ATTENTION ZOWE EXTENDERS* Zowe V2 Conformance Pre-Application is NOT yet available. Please check back for updates."
-- announcement: "Mark your calendars - the next weekly series of Zowe v2 Office Hours begins Wed Apr 6th 12:00pm EST"
+- announcement: "*ATTENTION ZOWE EXTENDERS* Zowe V2 Conformance Pre-Application is OPEN! Reference your email notification OR #zowe onboarding channel"
+  link: https://slack.openmainframeproject.org/
+- announcement: "The next weekly series of Zowe v2 Office Hours is in-progress & replays are now available!"
   link: https://www.zowe.org/vNext.html#office-hours
 - announcement: "Zowe is NOT affected by the recently published log4j vulnerability. For more information, click" 
   link: https://github.com/zowe/community/issues/1381
