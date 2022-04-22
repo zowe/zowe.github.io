@@ -104,6 +104,7 @@ Additional hints and recommendations:
 
 <div style="display: none;">
   - References:
+    - https://owasp.org/www-community/vulnerabilities/Vulnerability_template
     - https://ossf.github.io/osv-schema/
     - https://github.com/CVEProject/cve-schema
     - https://security.googleblog.com/2021/06/announcing-unified-vulnerability-schema.html
