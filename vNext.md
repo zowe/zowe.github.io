@@ -1211,7 +1211,7 @@ p .card-black {
       </div>
       <div>
         <button onclick="toggle('questions-explorers-users-5')" class="w3-button w3-block w3-left-align">
-          5. Who is expected to configure the "Team" profiles?
+          5. Who is expected to configure the "Team" profiles? 
         </button>
         <div id="questions-explorers-users-5" class="w3-container faq-hide">
           <p>Ideally, for Team Configuration a designated Administrator who has access to the appropriate connection information and is familiar with configuring profiles - this will enable developers to get started with Zowe Explorer without having to learn about profiles and will ensure all developers are configured with their organizations required authentication policy.</p>
