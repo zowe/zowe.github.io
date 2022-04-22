@@ -58,6 +58,10 @@ p .card-black {
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
       CLI for Users
       </a>
+      <a href="#questions-cli-explorers" class="card-link" style="margin-left: 30px;">
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+      VS Code Explorer for Users
+      </a>
       <a href="#faq" class="card-link">
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
       Frequently Asked Questions - Extender focused
@@ -424,8 +428,8 @@ p .card-black {
       <td>04/20/2022 12:00PM - 12:30PM ET</td>
       <td>Zowe Explorers for Consumers</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td></td>
-      <td></td>
+      <td><a href="https://zoom.us/rec/share/_obkOAHY6aI2oeQIjSZiNh3zouWtN8WyYmqOLbXN9GSV-W-qqa-nxGK1-276D8ln.kP--nSkSX3qkdBhL?startTime=1650469958000">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/zv05p8s17le72j6l7iwn0n6okl2n0hcp">Presentation</a></td>
     </tr>
     <tr>
       <td>04/13/2022 12:00PM - 12:30PM ET</td>
@@ -1164,6 +1168,53 @@ p .card-black {
         </button>
         <div id="questions-cli-users-1" class="w3-container faq-hide">
           <p>VS Code extensions and code pack solutions that rely on the Zowe Explorer (mainframe files and jobs) are interested in and have added capabilities that leverage Team Config.  Recommend attending/reviewing the Zowe Explorer V2 office hours (scheduled for 4/20) for further details.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <button id="questions-explorers-users" onclick="toggle('questions-explorers-users-detail')" class="w3-button w3-block w3-left-align">
+    Zowe V2 LTS VS Code Explorer for Users Frequently Asked Questions </button>
+    <div id="questions-explorers-users-detail" class="w3-container faq-hide">
+      <div>
+        <button onclick="toggle('questions-explorers-users-1')" class="w3-button w3-block w3-left-align">
+          1. What is the authentication experience for Users who have already stored their USER & PASSWORD in a profile and then they (or their Administrator) has configured an API Mediation Layer service login afterwards?  I.e. When the user logs out and then tries to login again, will Zowe Explorer fall back to the original USER & PASSWORD experience or prompt for a token?
+        </button>
+        <div id="questions-explorers-users-1" class="w3-container faq-hide">
+          <p>If USER & PASSWORD are already stored in profiles for authentication and the User tries to use a token for login, Zowe Explorer will issue a message indicating <i>“This profile does not support token authentication”</i>.  In order to enable token authentication the SECURE array in the the configuration file (<i>either zowe.config.user.json</i> OR <i>zowe.config.json</i>)  needs to be updated with tokenValue in place of USER & PASSWORD.   Default authentication is USER & PASSWORD</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-explorers-users-2')" class="w3-button w3-block w3-left-align">
+          2. Does Zowe Explorer offer any visual indicator (i.e. an icon or decoration) that helps the user to understand which method of authentication is being used?
+        </button>
+        <div id="questions-explorers-users-2" class="w3-container faq-hide">
+          <p>No, there is no visual / decoration indicating authentication method.  In general if USER & PASSWORD is configured, the User will be prompted for them.</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-explorers-users-3')" class="w3-button w3-block w3-left-align">
+          3. In addition to support for Team Config (replacement for profiles) are there other distinct Zowe Explorer features that may impact the User experience in Zowe V2?
+        </button>
+        <div id="questions-explorers-users-3" class="w3-container faq-hide">
+          <p>The Zowe Explorer (for VS Code) Squad has added usability features throughout the Zowe V1 (continuous delivery) LTS release, including adding commands and functions to process multiple items, adding progress bars, and refresh capabilities.  The comprehensive list of features can be viewed in the changelog at the VS Code Marketplace:  <a href="https://marketplace.visualstudio.com/items/Zowe.vscode-extension-for-zowe/changelog">https://marketplace.visualstudio.com/items/Zowe.vscode-extension-for-zowe/changelog</a> ; it is important to note that a new LTS release gives all squads the opportunity to introduce changes that may require an upgrade or result in a significant change in behavior - the Zowe community refers to these as “breaking changes”.  In the case of Zowe V2 LTS, the significant change for Zowe Explorer is the introduction of and support for Team Profile Configurations & setting updates as well as. </p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-explorers-users-4')" class="w3-button w3-block w3-left-align">
+          4. After Zowe V2 is introduced, will I automatically obtain the V2 LTS version of Zowe Explorer?
+        </button>
+        <div id="questions-explorers-users-4" class="w3-container faq-hide">
+          <p>Provided the User has not changed the auto update (extensions.autoUpdate) default setting in their Zowe Explorer USER SETTINGS to false, Zowe Explorer will automatically be updated to V2.  If the auto update setting has been changed to “false”, the user can decide when to update Zowe Explorer - they do this manually by clicking the “UPDATE” button. (The UPDATE button will show once Zowe V2 LTS is available).</p>
+        </div>
+      </div>
+      <div>
+        <button onclick="toggle('questions-explorers-users-5')" class="w3-button w3-block w3-left-align">
+          5. Who is expected to configure the "Team" profiles?
+        </button>
+        <div id="questions-explorers-users-5" class="w3-container faq-hide">
+          <p>Ideally, for Team Configuration a designated Administrator who has access to the appropriate connection information and is familiar with configuring profiles - this will enable developers to get started with Zowe Explorer without having to learn about profiles and will ensure all developers are configured with their organizations required authentication policy.</p>
         </div>
       </div>
     </div>
