@@ -43,7 +43,7 @@ jobs:
         JF_ENV_1: ${{ secrets.JF_ARTIFACTORY_TOKEN }}
 
     - name: Publish Release to Artifactory
-      uses: zowe-actions/shared-actions/publis
+      uses: zowe-actions/shared-actions/publish@main
       if: ${{ github.ref == 'refs/heads/master' }}
       with:
         perform-release: true
@@ -54,7 +54,7 @@ jobs:
         publish-target-file-pattern: "{filename}{fileext}"
 
     - name: Publish Snapshot to Artifactory
-      uses: zowe-actions/shared-actions/publish
+      uses: zowe-actions/shared-actions/publish@main
       if: ${{ github.ref != 'refs/heads/master' }}
       with:
         perform-release: false
