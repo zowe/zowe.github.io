@@ -555,7 +555,6 @@
   </div>
   {% endif %}
   {% endfor %}
-</section>
 
 <h1 id="all-v1-releases">All Zowe V1.x Releases</h1>
 <p>Download previous releases of Zowe v1.x by version number.</p>
