@@ -101,6 +101,7 @@ p .card-black {
   </div>
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="latest-announcements">Latest Announcements</h2>
+    <p>Zowe v2 is NOW LIVE - please visit the <a href="https://www.zowe.org/download.html">Download</a> page for the latest artifacts and documentation.</p>
     <p>The V2 documentation site is available at <a href="https://deploy-preview-1961--zowe-docs-master.netlify.app/">V2 Docs Site Preview</a>.</p>
     <p>The Second Technical Preview is available. The available packages are noted under <a href="#download-availability">Download Availability</a> and on the <a href="https://www.zowe.org/download.html">Download</a> page.</p>
     <p>Starting from April 6, the Zowe Onboarding Squad will hold the Office Hours focused on Consumers of Zowe in V2. More information can be found in the <a href="#office-hours">Office Hour</a> section.</p>
@@ -228,7 +229,7 @@ p .card-black {
         <div class="col-md-7 col-sm order-last order-sm-first">
           <ul>
             <li>Changes to settings keys - automated migration of settings when user opens Zowe Explorer v2: (includes documentation) (<a href="https://github.com/zowe/vscode-extension-for-zowe/pull/1450">#PR 1450</a>)</li>
-            <li><a href="https://github.com/zowe/vscode-extension-for-zowe/blob/next/docs/Early%20Access%20-%20Using%20Global%20Profile%20Configuration.md">Using Global Profiel Configuration</a></li>
+            <li><a href="https://github.com/zowe/vscode-extension-for-zowe/blob/next/docs/Early%20Access%20-%20Using%20Global%20Profile%20Configuration.md">Using Global Profile Configuration</a></li>
             <li><a href="https://github.com/zowe/vscode-extension-for-zowe/blob/next/docs/Early%20Access%20-%20Changes%20Affecting%20Extenders.md">Changes Affecting Extenders</a></li>
           </ul>
         </div>

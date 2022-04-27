@@ -1,302 +1,317 @@
 # List of Zowe releases - update here and it will update the entire site :-)
 # Note - keep this in order as the latest release is pulled from the first item in the list!
-- version: 1.27.3
-  zos_version: 1.27.1
-  smpe_version: 1.27.1
-  smpe_sysmod: PTF
-  smpe_numbers: UO02000 UO02020
-  cli_version: 1.27.3
-  cli_plugins_version: 1.27.3
-  node_sdk_version: 1.27.3
-  python_sdk_version: 1.27.3
-  release_date: 2022-04-05
-  documentation: stable
-  release_notes: v1_27_3
-- version: 1.27.2
-  zos_version: 1.27.1
-  smpe_version: 1.27.1
-  smpe_sysmod: PTF
-  smpe_numbers: UO02000 UO02020
-  cli_version: 1.27.2
-  cli_plugins_version: 1.27.2
-  node_sdk_version: 1.27.2
-  python_sdk_version: 1.27.2
-  release_date: 2022-02-17
-  documentation: stable
-  release_notes: v1_27_2
-- version: 1.27.1
-  zos_version: 1.27.1
-  smpe_version: 1.27.1
-  smpe_sysmod: PTF
-  smpe_numbers: UO02000 UO02020
-  cli_version: 1.27.1
-  cli_plugins_version: 1.27.1
-  node_sdk_version: 1.27.1
-  python_sdk_version: 1.27.1
-  release_date: 2022-02-08
-  documentation: stable
-  release_notes: v1_27_1
-- version: 1.27.0
-  zos_version: 1.27.0
-  smpe_version: 1.27.0
-  smpe_sysmod: PE-PTF
-  smpe_numbers: UO01998 UO01999
-  cli_version: 1.27.0
-  cli_plugins_version: 1.27.0
-  node_sdk_version: 1.27.0
-  python_sdk_version: 1.27.0
-  release_date: 2022-01-24
-  documentation: stable
-  release_notes: v1_27
-- version: 1.26.0
-  zos_version: 1.26.0
-  smpe_version: 1.26.0
-  smpe_sysmod: PTF
-  smpe_numbers: UO01996 UO01997
-  cli_version: 1.26.0
-  cli_plugins_version: 1.26.0
-  node_sdk_version: 1.26.0
-  python_sdk_version: 1.26.0
-  release_date: 2021-12-13
-  documentation: v1.26.x/getting-started/overview
-  release_notes: v1_26
-- version: 1.25.0
-  zos_version: 1.25.0
-  smpe_version: 1.25.0
-  smpe_sysmod: PTF
-  smpe_numbers: UO01994 UO01995
-  cli_version: 1.25.0
-  cli_plugins_version: 1.25.0
-  node_sdk_version: 1.25.0
-  python_sdk_version: 1.25.0
-  release_date: 2021-10-25
-  documentation: v1.25.x/getting-started/overview
-  release_notes: v1_25
-- version: 1.24.0
-  zos_version: 1.24.0
-  smpe_version: 1.24.0
-  smpe_sysmod: PTF
-  smpe_numbers: UO01992 UO01993
-  cli_version: 1.24.0
-  cli_plugins_version: 1.24.0
-  node_sdk_version: 1.24.0
-  python_sdk_version: 1.24.0
-  release_date: 2021-09-15
-  documentation: v1.24.x/getting-started/overview
-  release_notes: v1_24
-- version: 1.23.0
-  zos_version: 1.23.0
-  smpe_version: 1.23.0
-  smpe_sysmod: PTF
-  smpe_numbers: UO01984 UO01991
-  cli_version: 1.23.0
-  cli_plugins_version: 1.23.0
-  node_sdk_version: 1.23.0
-  python_sdk_version: 1.23.0
-  release_date: 2021-07-26
-  documentation: v1.23.x/getting-started/overview
-  release_notes: v1_23
-- version: 1.22.0
-  zos_version: 1.22.0
-  smpe_version: 1.22.0
-  smpe_sysmod: PTF
-  smpe_numbers: UO01982 UO01983
-  cli_version: 1.22.0
-  cli_plugins_version: 1.22.0
-  node_sdk_version: 1.22.0
-  python_sdk_version: 1.22.0
-  release_date: 2021-06-14
-  documentation: v1.22.x/getting-started/overview
-- version: 1.21.0
-  zos_version: 1.21.0
-  smpe_version: 1.21.0
-  smpe_sysmod: PTF
-  smpe_numbers: UO01981
-  cli_version: 1.21.0
-  cli_plugins_version: 1.21.0
-  node_sdk_version: 1.21.0
-  python_sdk_version: 1.21.0
-  release_date: 2021-04-27
-  documentation: versions
-- version: 1.20.1
-  zos_version: 1.20.1
-  smpe_version: 1.20.1
-  smpe_sysmod: PTF
-  smpe_numbers: UO01980
-  cli_version: 1.20.1
-  cli_plugins_version: 1.20.1
-  node_sdk_version: 1.20.1
-  python_sdk_version: 1.20.1
-  release_date: 2021-03-29
-  documentation: versions
-- version: 1.20.0
-  zos_version: 1.20.0
-  smpe_version: 1.20.0
-  smpe_sysmod: PTF
-  smpe_numbers: UO01970
-  cli_version: 1.20.0
-  cli_plugins_version: 1.20.0
-  node_sdk_version: 1.20.0
-  python_sdk_version: 1.20.0
-  release_date: 2021-03-24
-  documentation: versions
-- version: 1.19.1
-  zos_version: 1.19.1
-  smpe_version: 1.19.1
-  smpe_sysmod: PTF
-  smpe_numbers: UO01969
-  cli_version: 1.19.1
-  cli_plugins_version: 1.19.1
-  node_sdk_version: 1.19.1
-  python_sdk_version: 1.19.1
-  release_date: 2021-02-11
-  documentation: versions
-- version: 1.19.0
-  zos_version: 1.19.0
-  smpe_version: 1.19.0
-  smpe_sysmod: PTF
-  smpe_numbers: UO01967 and UO01968
-  cli_version: 1.19.0
-  cli_plugins_version: 1.19.0
-  node_sdk_version: 1.19.0
-  python_sdk_version: 1.19.0
-  release_date: 2021-01-29
-  documentation: versions
-- version: 1.18.0
-  smpe_version: 1.18.0
-  smpe_sysmod: PE-PTF
-  smpe_numbers: UO01965 and UO01966
-  cli_version: 1.18.0
-  cli_plugins_version: 1.18.0
-  node_sdk_version: 1.18.0
-  python_sdk_version: 1.18.0
-  release_date: 2021-01-07
-  documentation: versions
-- version: 1.17.0
-  smpe_version: 1.17.0
-  smpe_sysmod: PE-PTF
-  smpe_numbers: UO01958 and UO01959
-  cli_version: 1.17.0
-  cli_plugins_version: 1.17.0
-  node_sdk_version: 1.17.0
-  python_sdk_version: 1.17.0
-  release_date: 2020-12-07
-  documentation: versions
-- version: 1.16.0
-  smpe_version: 1.16.0
-  smpe_sysmod: PE-PTF
-  smpe_numbers: UO01955 and UO01956
-  cli_version: 1.16.0
-  cli_plugins_version: 1.16.0
-  node_sdk_version: 1.16.0
-  python_sdk_version: 1.16.0
-  release_date: 2020-10-13
-  documentation: versions
-- version: 1.15.0
-  zos_version: 1.15.0
-  smpe_version: 1.15.0
-  smpe_sysmod: PTF
-  smpe_numbers: UO01953 and UO01954
-  cli_version: 1.15.0
-  cli_plugins_version: 1.15.0
-  release_date: 2020-09-11
-  documentation: versions
-- version: 1.14.0
-  zos_version: 1.14.0
-  smpe_version: 1.14.0
-  smpe_sysmod: PTF
-  smpe_numbers: UO01951 and UO01952
-  cli_version: 1.14.0
-  cli_plugins_version: 1.14.0
-  release_date: 2020-08-11
-  documentation: versions
-- version: 1.13.0
-  zos_version: 1.13.0
-  smpe_version: 1.13.0
-  smpe_sysmod: PTF
-  smpe_numbers: UO01948 and UO01949
-  cli_version: 1.13.0
-  cli_plugins_version: 1.13.0
-  release_date: 2020-07-10
-  documentation: versions
-- version: 1.12.0
-  zos_version: 1.12.0
-  smpe_version: 1.12.0
-  smpe_sysmod: PTF
-  smpe_numbers: UO01945 and UO01946
-  cli_version: 1.12.0
-  cli_plugins_version: 1.12.0
-  release_date: 2020-06-12
-  documentation: versions
-- version: 1.11.0
-  zos_version: 1.11.0
-  smpe_version: 1.11.0
-  smpe_sysmod: PTF
-  smpe_numbers: UO01942 and UO01943
-  cli_version: 1.11.0
-  cli_plugins_version: 1.11.0
-  release_date: 2020-05-01
-  documentation: versions
-- version: 1.10.0
-  zos_version: 1.10.0
-  smpe_version: 1.10.0
-  smpe_sysmod: PTF
-  smpe_numbers: UO01939 and UO01940
-  cli_version: 1.10.0
-  cli_plugins_version: 1.10.0
-  release_date: 2020-04-08
-  documentation: versions
-- version: 1.9.0
-  zos_version: 1.9.0
-  smpe_version: 1.9.0
-  smpe_sysmod: FMID
-  smpe_numbers: AZWE001
-  cli_version: 1.9.0
-  cli_plugins_version: 1.9.0
-  release_date: 2020-02-28
-  documentation: versions
-- version: 1.8.0
-  zos_version: 1.8.0
-  cli_version: 1.8.1
-  release_date: 2020-02-07
-  documentation: versions
-- version: 1.7.1
-  zos_version: 1.7.1
-  release_date: 2019-12-04
-  documentation: versions
-- version: 1.7.0
-  zos_version: 1.7.0
-  release_date: 2019-11-18
-  documentation: versions
-- version: 1.6.0
-  zos_version: 1.6.0
-  release_date: 2019-10-24
-  documentation: versions
-- version: 1.5.0
-  zos_version: 1.5.0
-  release_date: 2019-10-03
-  documentation: versions
-- version: 1.4.0
-  zos_version: 1.4.0
-  release_date: 2019-08-09
-  documentation: versions
-- version: 1.3.0
-  zos_version: 1.3.0
-  release_date: 2019-06-13
-  documentation: versions
-- version: 1.2.0
-  zos_version: 1.2.0
-  release_date: 2019-05-03
-  documentation: versions
-- version: 1.1.0
-  zos_version: 1.1.0
-  release_date: 2019-04-03
-  documentation: versions
-- version: 1.0.1
-  zos_version: 1.0.1
-  release_date: 2019-03-07
-  documentation: versions
-- version: 1.0.0
-  zos_version: 1.0.0
-  release_date: 2019-02-08
-  documentation: versions
+v2:
+  - version: 2.0.0
+    zos_version: 2.0.0
+    smpe_version: 2.0.0
+    smpe_sysmod: FMID
+    smpe_numbers: AZWE002
+    cli_version: 2.0.0
+    cli_plugins_version: 2.0.0
+    explorer_version: 2.0.0
+    node_sdk_version: 2.0.0
+    python_sdk_version: 2.0.0
+    release_date: 2022-04-27
+    documentation: stable
+    release_notes: v2_0_0
+v1:
+  - version: 1.27.3
+    zos_version: 1.27.1
+    smpe_version: 1.27.1
+    smpe_sysmod: PTF
+    smpe_numbers: UO02000 UO02020
+    cli_version: 1.27.3
+    cli_plugins_version: 1.27.3
+    node_sdk_version: 1.27.3
+    python_sdk_version: 1.27.3
+    release_date: 2022-04-05
+    documentation: v1.27.x
+    release_notes: v1_27_3
+  - version: 1.27.2
+    zos_version: 1.27.1
+    smpe_version: 1.27.1
+    smpe_sysmod: PTF
+    smpe_numbers: UO02000 UO02020
+    cli_version: 1.27.2
+    cli_plugins_version: 1.27.2
+    node_sdk_version: 1.27.2
+    python_sdk_version: 1.27.2
+    release_date: 2022-02-17
+    documentation: v1.27.x
+    release_notes: v1_27_2
+  - version: 1.27.1
+    zos_version: 1.27.1
+    smpe_version: 1.27.1
+    smpe_sysmod: PTF
+    smpe_numbers: UO02000 UO02020
+    cli_version: 1.27.1
+    cli_plugins_version: 1.27.1
+    node_sdk_version: 1.27.1
+    python_sdk_version: 1.27.1
+    release_date: 2022-02-08
+    documentation: v1.27.x
+    release_notes: v1_27_1
+  - version: 1.27.0
+    zos_version: 1.27.0
+    smpe_version: 1.27.0
+    smpe_sysmod: PE-PTF
+    smpe_numbers: UO01998 UO01999
+    cli_version: 1.27.0
+    cli_plugins_version: 1.27.0
+    node_sdk_version: 1.27.0
+    python_sdk_version: 1.27.0
+    release_date: 2022-01-24
+    documentation: v1.27.x
+    release_notes: v1_27
+  - version: 1.26.0
+    zos_version: 1.26.0
+    smpe_version: 1.26.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO01996 UO01997
+    cli_version: 1.26.0
+    cli_plugins_version: 1.26.0
+    node_sdk_version: 1.26.0
+    python_sdk_version: 1.26.0
+    release_date: 2021-12-13
+    documentation: v1.26.x
+    release_notes: v1_26
+  - version: 1.25.0
+    zos_version: 1.25.0
+    smpe_version: 1.25.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO01994 UO01995
+    cli_version: 1.25.0
+    cli_plugins_version: 1.25.0
+    node_sdk_version: 1.25.0
+    python_sdk_version: 1.25.0
+    release_date: 2021-10-25
+    documentation: v1.25.x
+    release_notes: v1_25
+  - version: 1.24.0
+    zos_version: 1.24.0
+    smpe_version: 1.24.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO01992 UO01993
+    cli_version: 1.24.0
+    cli_plugins_version: 1.24.0
+    node_sdk_version: 1.24.0
+    python_sdk_version: 1.24.0
+    release_date: 2021-09-15
+    documentation: v1.24.x
+    release_notes: v1_24
+  - version: 1.23.0
+    zos_version: 1.23.0
+    smpe_version: 1.23.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO01984 UO01991
+    cli_version: 1.23.0
+    cli_plugins_version: 1.23.0
+    node_sdk_version: 1.23.0
+    python_sdk_version: 1.23.0
+    release_date: 2021-07-26
+    documentation: v1.23.x
+    release_notes: v1_23
+  - version: 1.22.0
+    zos_version: 1.22.0
+    smpe_version: 1.22.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO01982 UO01983
+    cli_version: 1.22.0
+    cli_plugins_version: 1.22.0
+    node_sdk_version: 1.22.0
+    python_sdk_version: 1.22.0
+    release_date: 2021-06-14
+    documentation: v1.22.x
+  - version: 1.21.0
+    zos_version: 1.21.0
+    smpe_version: 1.21.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO01981
+    cli_version: 1.21.0
+    cli_plugins_version: 1.21.0
+    node_sdk_version: 1.21.0
+    python_sdk_version: 1.21.0
+    release_date: 2021-04-27
+    documentation: versions
+  - version: 1.20.1
+    zos_version: 1.20.1
+    smpe_version: 1.20.1
+    smpe_sysmod: PTF
+    smpe_numbers: UO01980
+    cli_version: 1.20.1
+    cli_plugins_version: 1.20.1
+    node_sdk_version: 1.20.1
+    python_sdk_version: 1.20.1
+    release_date: 2021-03-29
+    documentation: versions
+  - version: 1.20.0
+    zos_version: 1.20.0
+    smpe_version: 1.20.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO01970
+    cli_version: 1.20.0
+    cli_plugins_version: 1.20.0
+    node_sdk_version: 1.20.0
+    python_sdk_version: 1.20.0
+    release_date: 2021-03-24
+    documentation: versions
+  - version: 1.19.1
+    zos_version: 1.19.1
+    smpe_version: 1.19.1
+    smpe_sysmod: PTF
+    smpe_numbers: UO01969
+    cli_version: 1.19.1
+    cli_plugins_version: 1.19.1
+    node_sdk_version: 1.19.1
+    python_sdk_version: 1.19.1
+    release_date: 2021-02-11
+    documentation: versions
+  - version: 1.19.0
+    zos_version: 1.19.0
+    smpe_version: 1.19.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO01967 and UO01968
+    cli_version: 1.19.0
+    cli_plugins_version: 1.19.0
+    node_sdk_version: 1.19.0
+    python_sdk_version: 1.19.0
+    release_date: 2021-01-29
+    documentation: versions
+  - version: 1.18.0
+    smpe_version: 1.18.0
+    smpe_sysmod: PE-PTF
+    smpe_numbers: UO01965 and UO01966
+    cli_version: 1.18.0
+    cli_plugins_version: 1.18.0
+    node_sdk_version: 1.18.0
+    python_sdk_version: 1.18.0
+    release_date: 2021-01-07
+    documentation: versions
+  - version: 1.17.0
+    smpe_version: 1.17.0
+    smpe_sysmod: PE-PTF
+    smpe_numbers: UO01958 and UO01959
+    cli_version: 1.17.0
+    cli_plugins_version: 1.17.0
+    node_sdk_version: 1.17.0
+    python_sdk_version: 1.17.0
+    release_date: 2020-12-07
+    documentation: versions
+  - version: 1.16.0
+    smpe_version: 1.16.0
+    smpe_sysmod: PE-PTF
+    smpe_numbers: UO01955 and UO01956
+    cli_version: 1.16.0
+    cli_plugins_version: 1.16.0
+    node_sdk_version: 1.16.0
+    python_sdk_version: 1.16.0
+    release_date: 2020-10-13
+    documentation: versions
+  - version: 1.15.0
+    zos_version: 1.15.0
+    smpe_version: 1.15.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO01953 and UO01954
+    cli_version: 1.15.0
+    cli_plugins_version: 1.15.0
+    release_date: 2020-09-11
+    documentation: versions
+  - version: 1.14.0
+    zos_version: 1.14.0
+    smpe_version: 1.14.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO01951 and UO01952
+    cli_version: 1.14.0
+    cli_plugins_version: 1.14.0
+    release_date: 2020-08-11
+    documentation: versions
+  - version: 1.13.0
+    zos_version: 1.13.0
+    smpe_version: 1.13.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO01948 and UO01949
+    cli_version: 1.13.0
+    cli_plugins_version: 1.13.0
+    release_date: 2020-07-10
+    documentation: versions
+  - version: 1.12.0
+    zos_version: 1.12.0
+    smpe_version: 1.12.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO01945 and UO01946
+    cli_version: 1.12.0
+    cli_plugins_version: 1.12.0
+    release_date: 2020-06-12
+    documentation: versions
+  - version: 1.11.0
+    zos_version: 1.11.0
+    smpe_version: 1.11.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO01942 and UO01943
+    cli_version: 1.11.0
+    cli_plugins_version: 1.11.0
+    release_date: 2020-05-01
+    documentation: versions
+  - version: 1.10.0
+    zos_version: 1.10.0
+    smpe_version: 1.10.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO01939 and UO01940
+    cli_version: 1.10.0
+    cli_plugins_version: 1.10.0
+    release_date: 2020-04-08
+    documentation: versions
+  - version: 1.9.0
+    zos_version: 1.9.0
+    smpe_version: 1.9.0
+    smpe_sysmod: FMID
+    smpe_numbers: AZWE001
+    cli_version: 1.9.0
+    cli_plugins_version: 1.9.0
+    release_date: 2020-02-28
+    documentation: versions
+  - version: 1.8.0
+    zos_version: 1.8.0
+    cli_version: 1.8.1
+    release_date: 2020-02-07
+    documentation: versions
+  - version: 1.7.1
+    zos_version: 1.7.1
+    release_date: 2019-12-04
+    documentation: versions
+  - version: 1.7.0
+    zos_version: 1.7.0
+    release_date: 2019-11-18
+    documentation: versions
+  - version: 1.6.0
+    zos_version: 1.6.0
+    release_date: 2019-10-24
+    documentation: versions
+  - version: 1.5.0
+    zos_version: 1.5.0
+    release_date: 2019-10-03
+    documentation: versions
+  - version: 1.4.0
+    zos_version: 1.4.0
+    release_date: 2019-08-09
+    documentation: versions
+  - version: 1.3.0
+    zos_version: 1.3.0
+    release_date: 2019-06-13
+    documentation: versions
+  - version: 1.2.0
+    zos_version: 1.2.0
+    release_date: 2019-05-03
+    documentation: versions
+  - version: 1.1.0
+    zos_version: 1.1.0
+    release_date: 2019-04-03
+    documentation: versions
+  - version: 1.0.1
+    zos_version: 1.0.1
+    release_date: 2019-03-07
+    documentation: versions
+  - version: 1.0.0
+    zos_version: 1.0.0
+    release_date: 2019-02-08
+    documentation: versions
