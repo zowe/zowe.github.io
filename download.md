@@ -212,7 +212,7 @@
                 href="{{ site.cli_plugins_download_url }}{{ site.data.releases.v2[0].cli_plugins_version }}">Zowe
                 {{ site.data.releases.v2[0].cli_plugins_version }} CLI Plug-ins</a></p>
             <div>
-              <a href="{{ site.zowe_cli_next_features_doc_url }}" class="card-link">
+              <a href="{{ site.zowe_cli_install_doc_url }}" class="card-link">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -234,7 +234,7 @@
                 href="{{ site.zowe_python_sdk_download_url }}{{ site.data.releases.v1[0].python_sdk_version }}">Zowe
                 {{ site.data.releases.v2[0].python_sdk_version }} Python Client SDK</a></p>
             <div>
-              <a href="https://docs.zowe.org/{{ site.data.releases.v2[0].documentation }}/user-guide/cli-installcli/"
+              <a href="{{ site.zowe_sdk_install_doc_url }}"
                 class="card-link">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg">
@@ -242,7 +242,7 @@
                   <path fill-rule="evenodd"
                     d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
                   <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" /></svg>
-                Browse SDK reference
+                Browse SDK docs
               </a>
             </div>
           </div>
@@ -266,7 +266,7 @@
                 <p><a class="btn btn-primary" href=" {{ site.zowe_cics_explorer_next_github_url }}">Zowe Explorer for
                     IBM CICS {{ site.data.releases.v2[0].explorer_version }}</a></p>
                 <div>
-                  <a href="{{ site.zowe_explorer_next_doc_url }}" class="card-link">
+                  <a href="{{ site.zowe_explorer_install_doc_url }}" class="card-link">
                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle"
                       fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd"
@@ -487,7 +487,7 @@
               <p><a class="btn btn-primary" href="{{ site.zowe_dockerhub_download_url }}">Zowe v1.x LTS Docker Hub</a>
               </p>
               <div>
-                <a href="{{ site.docker_install_doc_url }}" class="card-link">
+                <a href="https://docs.zowe.org/{{ site.data.releases.v1[0].documentation }}/user-guide/install-docker" class="card-link">
                   <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
@@ -515,7 +515,7 @@
                   {{ site.data.releases.v1[0].zos_version }}
                   {{ site.zowe_fmid }}</a></p>
               <div>
-                <a href="{{ site.pswi_install_doc_url }}" class="card-link">
+                <a href="https://docs.zowe.org/{{ site.data.releases.v1[0].documentation }}/user-guide/install-zowe-pswi" class="card-link">
                   <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
@@ -523,7 +523,7 @@
                     <path fill-rule="evenodd"
                       d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
                     <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" /></svg>
-                  Read installation notes
+                  Read installation docs
                 </a>
               </div>
             </div>
@@ -535,7 +535,7 @@
 
 
   <h1 id="all-v2-releases">All Zowe V2.x Releases</h1>
-  <p>Download previous releases of Zowe v2.x by version number.</p>
+  <p>Download releases of Zowe v2.x by version number.</p>
   {% for release in site.data.releases.v2 %}
   {% if forloop.first %}
   <div style="overflow-x: auto">
@@ -583,10 +583,9 @@
   </div>
   {% endif %}
   {% endfor %}
-</section>
 
 <h1 id="all-v1-releases">All Zowe V1.x Releases</h1>
-<p>Download previous releases of Zowe v1.x by version number.</p>
+<p>Download releases of Zowe v1.x by version number.</p>
 <p>
   Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds. Zowe version 1.9.0 is the
   beginning of the Active Long-Term Support (LTS) release and it provides an SMP/E build with an FMID of AZWE001. The
@@ -707,19 +706,6 @@
   <p><u>Recommendation:</u> All extenders interested in earning v2 conformance review the v2 conformance criteria,
     determine if technical changes are necessary, make appropriate modifications and prepare to apply for v2 conformance
     prior to v2 LTS publication.</p>
-  <b>Zowe Vnext Availability to Extenders</b><br />
-  <i>Early Access Software </i><br />
-  <p>Several pre-GA releases of Zowe v2 will be made available to Zowe extenders and the general public prior* to the
-    actual Zowe v2 GA release delivery to allow extenders time to perform Zowe v2 testing with their extensions and
-    disclose their compatibility status. (*dates to-be-determined)</p>
-  <i>Early Access Conformance Criteria</i><br />
-  <p>The Zowe v2 conformance criteria for all extensions/plugins participating in the conformance program will be made
-    available to all Zowe v1 conformant extenders prior* to the Zowe v2 GA release to give extenders time to adapt to
-    applicable changes. (*dates to-be-determined) Note: See Zowe Support Provider conformance section below for details
-    on v2 Support Provider conformance.</p>
-  <b>More Information</b>
-  <p>Visit the Zowe v2 release page at <a href="https://zowe.org/vNext.html">https://zowe.org/vNext.html</a> for
-    comprehensive information related to the V2 release.</p>
 
 </section>
 

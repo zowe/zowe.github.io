@@ -26,7 +26,7 @@ cli_plugins_download_url: legal.html?type=cli-plugins&version=
 cli_active_development_download_url: legal.html?type=cli-active-development&version=
 smpe_download_url: legal.html?type=smpe&version=
 pswi_download_uri: legal.html?type=pswi&version=
-pswi_install_doc_url: https://docs.zowe.org/stable/user-guide/install-zos.html
+pswi_install_doc_url: https://docs.zowe.org/stable/user-guide/install-zowe-pswi
 pswi_version: 1.24.0
 zowe_node_sdk_download_url: legal.html?type=nodejs-sdk&version=
 zowe_python_sdk_download_url: legal.html?type=python-sdk&version=
@@ -37,9 +37,9 @@ zowe_fmid: AZWE001
 zowe_fmid_oss_version: 1.9.0
 zos_component_install_doc_url: https://docs.zowe.org/stable/user-guide/install-zos.html
 zowe_containerization_install_doc_url: https://docs.zowe.org/stable/user-guide/k8s-introduction
-zowe_cli_install_doc_url: https://docs.zowe.org/stable/user-guide/cli-installcli.html
-zowe_explorer_install_doc_url: https://docs.zowe.org/stable/user-guide/ze-install.html
-zowe_sdk_install_doc_url: https://docs.zowe.org/stable/user-guide/sdks-using.html
+zowe_cli_install_doc_url: https://docs.zowe.org/stable/user-guide/cli-install-cli-checklist
+zowe_explorer_install_doc_url: https://docs.zowe.org/stable/user-guide/ze-install
+zowe_sdk_install_doc_url: https://docs.zowe.org/stable/user-guide/sdks-using
 vscode_marketplace_url: https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe
 zowe_docker_download_url: https://zowe.jfrog.io/zowe/libs-release-local/org/zowe
 zowe_dockerhub_download_url: https://hub.docker.com/r/ompzowe/server-bundle
