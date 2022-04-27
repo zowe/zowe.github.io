@@ -4,7 +4,7 @@ v2:
   - version: 2.0.0-RC2
     zos_version: 2.0.0-RC2
     smpe_version: 2.0.0-RC2
-    smpe_sysmod: PTF
+    smpe_sysmod: FMID
     smpe_numbers: AZWE002
     cli_version: 2.0.0-RC2
     cli_plugins_version: 2.0.0-RC2
