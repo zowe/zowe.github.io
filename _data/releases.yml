@@ -1,17 +1,17 @@
 # List of Zowe releases - update here and it will update the entire site :-)
 # Note - keep this in order as the latest release is pulled from the first item in the list!
 v2:
-  - version: 2.0.0-RC2
-    zos_version: 2.0.0-RC2
-    smpe_version: 2.0.0-RC2
+  - version: 2.0.0
+    zos_version: 2.0.0
+    smpe_version: 2.0.0
     smpe_sysmod: FMID
     smpe_numbers: AZWE002
-    cli_version: 2.0.0-RC2
-    cli_plugins_version: 2.0.0-RC2
-    explorer_version: 2.0.0-RC2
-    node_sdk_version: 2.0.0-RC2
-    python_sdk_version: 2.0.0-RC2
-    release_date: 2022-04-26
+    cli_version: 2.0.0
+    cli_plugins_version: 2.0.0
+    explorer_version: 2.0.0
+    node_sdk_version: 2.0.0
+    python_sdk_version: 2.0.0
+    release_date: 2022-04-27
     documentation: stable
     release_notes: v2_0_0
 v1:
