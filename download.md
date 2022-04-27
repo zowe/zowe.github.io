@@ -154,7 +154,7 @@
                 href="{{ site.v2.pswi_download_uri }}{{ site.data.releases.v2[0].zos_version }}">Zowe PSWI
                 {{ site.data.releases.v2[0].zos_version }}</a></p>
             <div>
-              <a href="https://docs.zowe.org/{{ site.data.releases.v2[0].documentation }}/user-guide/install-zos" class="card-link">
+              <a href="https://docs.zowe.org/{{ site.data.releases.v2[0].documentation }}/user-guide/install-zowe-pswi" class="card-link">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />

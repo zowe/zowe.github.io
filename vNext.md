@@ -228,7 +228,7 @@ p .card-black {
         <div class="col-md-7 col-sm order-last order-sm-first">
           <ul>
             <li>Changes to settings keys - automated migration of settings when user opens Zowe Explorer v2: (includes documentation) (<a href="https://github.com/zowe/vscode-extension-for-zowe/pull/1450">#PR 1450</a>)</li>
-            <li><a href="https://github.com/zowe/vscode-extension-for-zowe/blob/next/docs/Early%20Access%20-%20Using%20Global%20Profile%20Configuration.md">Using Global Profiel Configuration</a></li>
+            <li><a href="https://github.com/zowe/vscode-extension-for-zowe/blob/next/docs/Early%20Access%20-%20Using%20Global%20Profile%20Configuration.md">Using Global Profile Configuration</a></li>
             <li><a href="https://github.com/zowe/vscode-extension-for-zowe/blob/next/docs/Early%20Access%20-%20Changes%20Affecting%20Extenders.md">Changes Affecting Extenders</a></li>
           </ul>
         </div>
