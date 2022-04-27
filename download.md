@@ -681,7 +681,7 @@
 </section>
 
 <section class="whitebackground" id="compatibility-extensions">
-  <h1>Zowe Extensions Vnext Compatibility, Conformance, and Availability Statement</h1>
+  <h1>Zowe Extensions V2 Compatibility and Conformance Statement</h1>
   <b>General</b><br />
   <i>Backward Compatibility</i><br />
   <p>Zowe v1 conformant extensions / plug-ins <b>are not guaranteed</b> to be compatible with Zowe v2 and therefore may
