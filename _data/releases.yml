@@ -37,7 +37,7 @@ v1:
     node_sdk_version: 1.27.2
     python_sdk_version: 1.27.2
     release_date: 2022-02-17
-    documentation: stable
+    documentation: v1.27.x
     release_notes: v1_27_2
   - version: 1.27.1
     zos_version: 1.27.1
@@ -49,7 +49,7 @@ v1:
     node_sdk_version: 1.27.1
     python_sdk_version: 1.27.1
     release_date: 2022-02-08
-    documentation: stable
+    documentation: v1.27.x
     release_notes: v1_27_1
   - version: 1.27.0
     zos_version: 1.27.0
@@ -61,7 +61,7 @@ v1:
     node_sdk_version: 1.27.0
     python_sdk_version: 1.27.0
     release_date: 2022-01-24
-    documentation: stable
+    documentation: v1.27.x
     release_notes: v1_27
   - version: 1.26.0
     zos_version: 1.26.0
@@ -73,7 +73,7 @@ v1:
     node_sdk_version: 1.26.0
     python_sdk_version: 1.26.0
     release_date: 2021-12-13
-    documentation: v1.26.x/getting-started/overview
+    documentation: v1.26.x
     release_notes: v1_26
   - version: 1.25.0
     zos_version: 1.25.0
@@ -85,7 +85,7 @@ v1:
     node_sdk_version: 1.25.0
     python_sdk_version: 1.25.0
     release_date: 2021-10-25
-    documentation: v1.25.x/getting-started/overview
+    documentation: v1.25.x
     release_notes: v1_25
   - version: 1.24.0
     zos_version: 1.24.0
@@ -97,7 +97,7 @@ v1:
     node_sdk_version: 1.24.0
     python_sdk_version: 1.24.0
     release_date: 2021-09-15
-    documentation: v1.24.x/getting-started/overview
+    documentation: v1.24.x
     release_notes: v1_24
   - version: 1.23.0
     zos_version: 1.23.0
@@ -109,7 +109,7 @@ v1:
     node_sdk_version: 1.23.0
     python_sdk_version: 1.23.0
     release_date: 2021-07-26
-    documentation: v1.23.x/getting-started/overview
+    documentation: v1.23.x
     release_notes: v1_23
   - version: 1.22.0
     zos_version: 1.22.0
@@ -121,7 +121,7 @@ v1:
     node_sdk_version: 1.22.0
     python_sdk_version: 1.22.0
     release_date: 2021-06-14
-    documentation: v1.22.x/getting-started/overview
+    documentation: v1.22.x
   - version: 1.21.0
     zos_version: 1.21.0
     smpe_version: 1.21.0
