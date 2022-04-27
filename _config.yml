@@ -26,8 +26,8 @@ cli_plugins_download_url: legal.html?type=cli-plugins&version=
 cli_active_development_download_url: legal.html?type=cli-active-development&version=
 smpe_download_url: legal.html?type=smpe&version=
 pswi_download_uri: legal.html?type=pswi&version=
+
 pswi_install_doc_url: https://docs.zowe.org/stable/user-guide/install-zos.html
-pswi_version: 1.24.0
 zowe_node_sdk_download_url: legal.html?type=nodejs-sdk&version=
 zowe_python_sdk_download_url: legal.html?type=python-sdk&version=
 nightly_build_url: https://zowe.jfrog.io/zowe/webapp/#/artifacts/browse/tree/General/libs-release-local/org/zowe/nightly
@@ -109,12 +109,9 @@ zowe_cli_next_features_doc_url: https://github.com/zowe/zowe-cli#early-access-fe
 zowe_node_sdk_next_reference_doc_url: https://docs.zowe.org/stable/typedoc_next/index.html
 zowe_next_release_date: 2022-04-25
 
+# not in use, place variables here if you need to distinguish based on Zowe release
 v1:
-
-
-
 v2:
-
 
 plugins:
   # Redirect plugin
