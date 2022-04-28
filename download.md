@@ -48,7 +48,7 @@
               <path fill-rule="evenodd"
                 d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
               <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" /></svg>
-            All Zowe v2.x Releases
+            All Zowe V2.x Releases
           </a>
           <a href="#all-v1-releases" class="card-link">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
@@ -57,7 +57,7 @@
               <path fill-rule="evenodd"
                 d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
               <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" /></svg>
-            All Zowe v1.x Releases
+            All Zowe V1.x Releases
           </a>
           <a href="#timeline" class="card-link">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
@@ -75,7 +75,7 @@
               <path fill-rule="evenodd"
                 d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
               <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" /></svg>
-            Zowe Extensions v2 Compatibility, Conformance, and Availability Statement
+            Zowe Extensions V2 Compatibility, Conformance, and Availability Statement
           </a>
           <a href="#builds" class="card-link">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
@@ -161,7 +161,7 @@
                   <path fill-rule="evenodd"
                     d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
                   <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" /></svg>
-                Read installation notes
+                Read installation docs
               </a>
             </div>
        
@@ -189,7 +189,7 @@
                 href="{{ site.cli_plugins_download_url }}{{ site.data.releases.v2[0].cli_plugins_version }}">Zowe
                 {{ site.data.releases.v2[0].cli_plugins_version }} CLI Plug-ins</a></p>
             <div>
-              <a href="{{ site.zowe_cli_next_features_doc_url }}" class="card-link">
+              <a href="{{ site.zowe_cli_install_doc_url }}" class="card-link">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -211,7 +211,7 @@
                 href="{{ site.zowe_python_sdk_download_url }}{{ site.data.releases.v2[0].python_sdk_version }}">Zowe
                 {{ site.data.releases.v2[0].python_sdk_version }} Python Client SDK</a></p>
             <div>
-              <a href="https://docs.zowe.org/{{ site.data.releases.v2[0].documentation }}/user-guide/cli-installcli/"
+              <a href="{{ site.zowe_sdk_install_doc_url }}"
                 class="card-link">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg">
@@ -219,18 +219,15 @@
                   <path fill-rule="evenodd"
                     d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
                   <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" /></svg>
-                Browse SDK reference
+                Browse SDK docs
               </a>
             </div>
           </div>
           <div class="card-body">
             <h5 class="card-title">Zowe Explorer</h5>
-            <p class="card-text">Zowe Explorer v2.0.0 enables you to adopt the team configuration file, recently
+            <p class="card-text">Zowe Explorer V2 enables you to adopt the team configuration file, recently
               developed by the Zowe CLI Squad, to make profile management more centralized and much simpler.</p>
-            <p class="card-text">To download the V2 version of the FTP extension, click <b>Zowe Explorer v2
-                release</b>.</p>
-            <p class="card-text">You can download the <em>.vsix</em> files directly from the GitHub release page with
-              the tag <b>"Pre-release"</b>. Separate downloads are available for Zowe Explorer and Zowe Explorer
+            <p class="card-text">To download the V2 version of the FTP extension, click <b>Zowe Explorer 2.0.0</b>. Separate downloads are available for Zowe Explorer and Zowe Explorer
               Extension for FTP.</p>
             <p class="card-text">To install the <em>.vsix</em> files, use <b>Extensions > Install from vsix</b> within
               VS Code.</p>
@@ -243,7 +240,7 @@
                 <p><a class="btn btn-primary" href=" {{ site.zowe_cics_explorer_next_github_url }}">Zowe Explorer for
                     IBM CICS {{ site.data.releases.v2[0].explorer_version }}</a></p>
                 <div>
-                  <a href="{{ site.zowe_explorer_next_doc_url }}" class="card-link">
+                  <a href="{{ site.zowe_explorer_install_doc_url }}" class="card-link">
                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle"
                       fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd"
@@ -252,7 +249,7 @@
                         d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
                       <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" />
                     </svg>
-                    Review installation docs
+                    Read installation docs
                   </a>
                 </div>
               </div>
@@ -464,7 +461,7 @@
               <p><a class="btn btn-primary" href="{{ site.zowe_dockerhub_download_url }}">Zowe v1.x LTS Docker Hub</a>
               </p>
               <div>
-                <a href="{{ site.docker_install_doc_url }}" class="card-link">
+                <a href="https://docs.zowe.org/{{ site.data.releases.v1[0].documentation }}/user-guide/install-docker" class="card-link">
                   <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
@@ -484,7 +481,7 @@
 
 
   <h1 id="all-v2-releases">All Zowe V2.x Releases</h1>
-  <p>Download previous releases of Zowe v2.x by version number.</p>
+  <p>Download releases of Zowe V2.x by version number.</p>
   {% for release in site.data.releases.v2 %}
   {% if forloop.first %}
   <div style="overflow-x: auto">
@@ -534,7 +531,7 @@
   {% endfor %}
 
 <h1 id="all-v1-releases">All Zowe V1.x Releases</h1>
-<p>Download previous releases of Zowe v1.x by version number.</p>
+<p>Download releases of Zowe V1.x by version number.</p>
 <p>
   Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds. Zowe version 1.9.0 is the
   beginning of the Active Long-Term Support (LTS) release and it provides an SMP/E build with an FMID of AZWE001. The
@@ -630,7 +627,7 @@
 </section>
 
 <section class="whitebackground" id="compatibility-extensions">
-  <h1>Zowe Extensions v2 (previously vNext ) Compatibility, Conformance, and Availability Statement</h1>
+  <h1>Zowe Extensions V2 (previously vNext ) Compatibility, Conformance, and Availability Statement</h1>
   <b>General</b><br />
   <i>Backward Compatibility</i><br />
   <p>Zowe v1 conformant extensions / plug-ins <b>are not guaranteed</b> to be compatible with Zowe v2 and therefore may

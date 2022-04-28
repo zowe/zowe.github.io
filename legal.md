@@ -28,11 +28,11 @@ extraJs: legal-script.html
 
       <p>Applicable Licenses for the Binaries and other information that may be necessary for compliance with the
         Applicable Licenses are listed at: <a
-          href="https://docs.zowe.org/stable/appendix/tpsr.html">https://docs.zowe.org/stable/appendix/tpsr.html</a>.
+          href="https://github.com/zowe/docs-site/tree/master/tpsr">https://github.com/zowe/docs-site/tree/master/tpsr</a>.
       </p>
 
       <p>The text of the Applicable Licenses is available at: <a
-          href="https://docs.zowe.org/stable/appendix/tpsr.html">https://docs.zowe.org/stable/appendix/tpsr.html</a>.
+          href="https://github.com/zowe/docs-site/tree/master/tpsr">https://github.com/zowe/docs-site/tree/master/tpsr</a>.
       </p>
 
       <p>The Source code may be obtained, free of charge, by accessing the source repository at: <a
