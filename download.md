@@ -208,7 +208,7 @@
                 href="{{ site.zowe_node_sdk_download_url }}{{ site.data.releases.v2[0].node_sdk_version }}">Zowe
                 {{ site.data.releases.v2[0].node_sdk_version }} Node.js Client SDK</a></p>
             <p><a class="btn btn-primary"
-                href="{{ site.zowe_python_sdk_download_url }}{{ site.data.releases.v1[0].python_sdk_version }}">Zowe
+                href="{{ site.zowe_python_sdk_download_url }}{{ site.data.releases.v2[0].python_sdk_version }}">Zowe
                 {{ site.data.releases.v2[0].python_sdk_version }} Python Client SDK</a></p>
             <div>
               <a href="https://docs.zowe.org/{{ site.data.releases.v2[0].documentation }}/user-guide/cli-installcli/"
