@@ -83,6 +83,9 @@ zebra_demo_url: https://zebra.talktothemainframe.com/
 workflow_wizard_github_url: https://github.com/zowe/workflow-wizard
 workflow_wizard_slack_url: https://openmainframeproject.slack.com/archives/C01T5F2RU5D
 workflow_wizard_doc_url: https://github.com/zowe/workflow-wizard/raw/main/doc/Workflow%20Templates%20Reference.docx
+intellij_github_url: https://github.com/zowe/zowe-explorer-intellij
+intellij_slack_url: https://join.slack.com/t/iba-mainframe-tools/shared_invite/zt-pejbtt4j-l7KuizvDedJSCxwGtxmMBg
+intellij_doc_url: https://plugins.jetbrains.com/plugin/18688-zowe-explorer
 zowe_video_deck_url: https://docs.zowe.org/Zowe_introduction_video_deck.pptx
 zowe_video_transcript_url: https://docs.zowe.org/Zowe_introduction_video_script.txt
 learn_page_get_started: https://docs.zowe.org/stable/getting-started/zowe-getting-started.html
