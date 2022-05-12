@@ -327,7 +327,7 @@ redirect_from:
     </div>
     <hr class="w-75 mt-5 mb-5">
     <div class="row" style="margin-bottom: 4%">
-      <div class="col-md-7 col-sm order-first order-sm-last">
+      <div class="col-md-7 col-sm">
         <a id="intellij-intro"><h4>Zowe IntelliJ Plugin (Incubator)</h4></a>
         <p style="margin: 1rem auto">A plugin is dedicated to facilitate working with z/OS datasets through providing a possibility to work with them in any IntelliJ IDE.
 The plugin provides such abilities as working with z/OS datasets and USS files, exploring and managing JES Jobs.</p>
@@ -337,10 +337,11 @@ The plugin provides such abilities as working with z/OS datasets and USS files, 
             <a href="{{ site.intellij_doc_url }}">Learn more</a>&nbsp;|&nbsp;
           </p>
       </div>
-       <div class="col-md-5 col-sm order-last order-sm-first">
+      <div class="col-md-5 col-sm">
         <img class="image-zowe-use" src="assets/img/intellij_squad.png">
       </div>
     </div>
+    <hr class="w-75 mt-5 mb-5">
     <div class="row" style="margin-bottom: 4%">
       <div class="col-md-5 col-sm order-last order-sm-first">
         <img class="image-zowe-use" src="assets/img/chat-thumbnail-v1.png">
