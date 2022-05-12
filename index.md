@@ -343,7 +343,7 @@ The plugin provides such abilities as working with z/OS datasets and USS files, 
     </div>
     <div class="row" style="margin-bottom: 4%">
       <div class="col-md-5 col-sm order-last order-sm-first">
-        <img class="image-zowe-use" src="assets/img/chat-mockup-final-preview.png">
+        <img class="image-zowe-use" src="assets/img/chat-thumbnail-v1.png">
       </div>
       <div class="col-md-7 col-sm order-first order-sm-last">
         <a id="chatops-intro"><h4>Zowe ChatOps Incubator</h4></a>
