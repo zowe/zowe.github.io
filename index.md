@@ -117,7 +117,11 @@ redirect_from:
       </a>
       <a href="#intellij-intro" class="card-link">
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
-      Zowe IntelliJ Plugin - Incubator
+      Zowe IntelliJ&#x00AE; Plugin - Incubator
+      </a>
+      <a href="#chat-intro" class="card-link">
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
+      Zowe Chat - Incubator
       </a>
     </div>
   </div>
@@ -323,10 +327,7 @@ redirect_from:
     </div>
     <hr class="w-75 mt-5 mb-5">
     <div class="row" style="margin-bottom: 4%">
-      <div class="col-md-5 col-sm order-last order-sm-first">
-        <img class="image-zowe-use" src="assets/img/intellij_squad.png">
-      </div>
-      <div class="col-md-7 col-sm order-first order-sm-last">
+      <div class="col-md-7 col-sm">
         <a id="intellij-intro"><h4>Zowe IntelliJ Plugin (Incubator)</h4></a>
         <p style="margin: 1rem auto">A plugin is dedicated to facilitate working with z/OS datasets through providing a possibility to work with them in any IntelliJ IDE.
 The plugin provides such abilities as working with z/OS datasets and USS files, exploring and managing JES Jobs.</p>
@@ -334,6 +335,25 @@ The plugin provides such abilities as working with z/OS datasets and USS files, 
             <a href="{{ site.intellij_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
             <a href="{{ site.intellij_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
             <a href="{{ site.intellij_doc_url }}">Learn more</a>&nbsp;|&nbsp;
+          </p>
+      </div>
+      <div class="col-md-5 col-sm">
+        <img class="image-zowe-use" src="assets/img/intellij_squad.png">
+      </div>
+    </div>
+    <hr class="w-75 mt-5 mb-5">
+    <div class="row" style="margin-bottom: 4%">
+      <div class="col-md-5 col-sm order-last order-sm-first">
+        <img class="image-zowe-use" src="assets/img/chat-thumbnail-v1.png">
+      </div>
+      <div class="col-md-7 col-sm order-first order-sm-last">
+        <a id="chat-intro"><h4>Zowe Chat Incubator</h4></a>
+        <p style="margin: 1rem auto">An incubator focused on working with the mainframe from popular chat clients such as Slack&#x00AE; , Microsoft Teams&#x00AE; , and Mattermost&#x00AE; . Whether you're collaborating with your team to diagnose issues, need a quick read on the state of a system, or want push notifications from your monitoring tools, Zowe Chat will simplify those experiences and integrate directly into your chat clients. Stay tuned, more to come!
+        </p>
+          <p>
+            <a href="{{ site.chat_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
+            <a href="{{ site.chat_slack_url }}">Connect on Slack</a>&nbsp;<!--|&nbsp;-->
+            <!--<a href="{{ site.intellij_doc_url }}">Learn more</a>&nbsp;|&nbsp; -->
           </p>
       </div>
     </div>
