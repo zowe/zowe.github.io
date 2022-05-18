@@ -6,8 +6,9 @@
 # Zowe Security Policy
 
 ## Respond to Vulnerabilities Policy
-
+```{toggle}
 <div style="display:none" hidden>(Zowe-SSDP-SDLC ID: ZSSD-LP:RV)</div>
+```
 
 The Zowe Respond to Vulnerability Policy is based on the <a href="https://en.wikipedia.org/wiki/Coordinated_vulnerability_disclosure">Coordinated Vulnerability Disclosure (CVD) Policy</a>
 adopted also by many other organizations, <a href="https://www.cisa.gov/coordinated-vulnerability-disclosure-process">CISA</a> and <a href="https://www.etsi.org/standards/coordinated-vulnerability-disclosure">ETSI</a> among them. 
