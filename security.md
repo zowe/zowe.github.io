@@ -10,7 +10,7 @@
 
 The Zowe Respond to Vulnerability Policy is based on the <a href="https://en.wikipedia.org/wiki/Coordinated_vulnerability_disclosure">Coordinated Vulnerability Disclosure (CVD) Policy</a>
 adopted also by many other organizations, <a href="https://www.cisa.gov/coordinated-vulnerability-disclosure-process">CISA</a> and <a href="https://www.etsi.org/standards/coordinated-vulnerability-disclosure">ETSI</a> among them. 
-Zowe adapts the 5 steps CVD process and maps it to the NIST SSDF Respond to Vulnerability (RV) Best practices.
+Zowe adapts the 5 steps CVD process and maps it to the NIST SSDF Respond to Vulnerability (RV) Best practices. 
 
 The Zowe Respond to Vulnerabilities Security Policy consists of the following topics:
   - [Security issues identification](#Security-issues-identification) <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span>
@@ -185,4 +185,6 @@ Security notifications will be distributed via the following methods.
 -----------------------------------
 Additional sources:
   - https://cheatsheetseries.owasp.org/cheatsheets/Vulnerability_Disclosure_Cheat_Sheet.html
-  - 
+  - https://bestpractices.coreinfrastructure.org/en
+  - https://openssf.org/
+  - https://github.com/coreinfrastructure/best-practices-badge 
