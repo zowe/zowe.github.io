@@ -25,8 +25,10 @@ The individual topics listed above contain sets of applicable requirements, the 
 <!--<span style="display:none" hidden>(Zowe-SSDP-SDLC - #ID: ZSSD-LP:RV-ICV)</span>-->
 
 #### Code review and tests
+<!--
 <div style="display: none;">(Zowe-SSDP-SDLC: C7. Test Executable Code - #ID: ZSSD-LP:PW-TEC)</div>
 <span style="display:none">(Zowe-SSDP-SDLC - #ID: ZSSD-LP:RV-ICV-CRT)</span>
+-->
 
 **#Q: Make following statements a bullet list?** 
 
@@ -37,7 +39,7 @@ Additionally, the teams must continuously perform security testing of their prod
 Irregularly but at least before each major release a full penetration testing must be performed.
 
 #### Potential vulnerability sources monitoring</h3>
-<span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span>
+<!-- <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span> -->
 
 The Zowe product teams must/will continuously monitor well know sources of information about freshly discovered or otherwise severe security issues.
 
@@ -49,7 +51,7 @@ Some sources a listed below:
 Any issues found to be potentially impacting the respective products, must be further [analyzed](#Security-issues-Analysis-and-Assessment) without unnecessary delay.
     
 #### Security issues reporting
-<span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span>
+<!-- <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span> -->
 
 Zowe encourages the community users to perform security testing and report potential vulnerabilities as described bellow.  
 
@@ -118,9 +120,11 @@ After the issue is sufficiently documented, our security team will coordinate re
 Please do not file a public issue disclosing potential vulnerabilities as this may be misused by violent attackers. 
 
 ### Security issues analysis and assessment 
+<!--
 <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV)</span>
 <span style="display:none"> (Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV-AEV)</span>
 <span style="display:none"> (NIST-SSF: #REF: SSDF:RV.2.1)</span>
+-->
 
 Any issue reported or identified by internal testing or code review, must be analyzed/assessed/triaged within the security workgroup.<br/> 
 The issues' assessment outcome is the values of the severity, exploitability and impact of the issue on the respective components and the whole Zowe system.<br/>
@@ -133,11 +137,15 @@ The priority with which the issues will be fixed is based on the combination of 
 The assessment results reports will be created and stored for evidence and measurement of the product security state and hardening.
 
 ### Security issues mitigation
+<!--
 <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV)</span>
 <span style="display:none">(NIST-SSF #REF: SSF-A.4.2-B)</span>
+-->
 
 Projects MUST/SHOULD fix all Critical vulnerabilities rapidly after they are reported. [vulnerabilities_critical_fixed]
+<!--
 <span style="display:none">(NIST-SSF #REF: SSF-A.4.1-B)</span>
+-->
 
 There MUST be no un-patched vulnerabilities of High severity that have been publicly known for more than 60 days. [vulnerabilities_fixed_60_days]
 
@@ -172,6 +180,7 @@ Security notifications will be distributed via the following methods.
 
 
 <br/>
+
 -----------------------------------
 -----------------------------------
 Additional sources:
