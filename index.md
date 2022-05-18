@@ -392,10 +392,9 @@ redirect_from:
   </div>
   <div class="row">
     <div class="col-md text-center">
-      <a style="color: initial; text-decoration: none" href="{{ site.slack_url }}"><img style="width:15%" src="assets/img/logo-slack-black.svg" />
-        <h3 class="mb-0" id="slack-members"></h3>
+      <img style="width:15%" src="assets/img/logo-slack-black.svg" />
+        <h3 class="mb-0">10000+</h3>
         <h6>Slack Community Members</h6>
-      </a>
     </div>
     <div class="col-md text-center">
       <a style="color: initial; text-decoration: none" href="{{ site.github_repo_url }}"><img style="width:15%" src="assets/img/logo-github-back.svg" />
