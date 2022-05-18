@@ -9,19 +9,18 @@
 
 <div style="display:none">(Zowe-SSDP-SDLC ID: ZSSD-LP:RV)</div>
 
-The Zowe Respond to Vulnerability Policy is based on the Responsible or Coordinated Vulnerability Disclosure (CVD) Policy <a href="https://en.wikipedia.org/wiki/Coordinated_vulnerability_disclosure">Wikipedia article</a>
+The Zowe Respond to Vulnerability Policy is based on the <a href="https://en.wikipedia.org/wiki/Coordinated_vulnerability_disclosure">Coordinated Vulnerability Disclosure (CVD) Policy</a>
 adopted also by many other organizations, <a href="https://www.cisa.gov/coordinated-vulnerability-disclosure-process">CISA</a> and <a href="https://www.etsi.org/standards/coordinated-vulnerability-disclosure">ETSI</a> among them. 
 Zowe adapts the 5 steps CVD process and maps it to the NIST SSDF Respond to Vulnerability (RV) Best practices.
 
 The Zowe Respond to Vulnerabilities Security Policy consists of the following topics:
-  - <a href="#IDENTIFY">Security issues Identification
   - [Security issues identification](#Security-issues-identification) <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span>
   - [Security issues analysis and assessment](#Security-issues-analysis-and-assessment)
   - [Security issues mitigation](#Security-issues-mitigation)
   - [Security issues disclosure](#Security-issues-disclosure) <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-VDR)</span>
   - [Solution publishing](#Solution-publishing)
 
-????The individual topics contain sets of applicable requirements, the fulfilment of which is governed by internal processes and guidance for the Zowe users and security issues reporters.
+The individual topics listed above contain sets of applicable requirements, the fulfilment of which is governed by internal processes and guidance for the Zowe users and security issues reporters.
 
 ### Security issues identification
 <span style="display:none">(Zowe-SSDP-SDLC - #ID: ZSSD-LP:RV-ICV)</span>
