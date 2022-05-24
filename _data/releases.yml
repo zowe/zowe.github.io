@@ -25,8 +25,8 @@ v1:
     node_sdk_version: 1.28.0
     python_sdk_version: 1.28.0
     release_date: 2022-05-23
-    documentation: stable
-    release_notes: v1_28
+    documentation: v1.28.x
+    release_notes: v1_28_0
 
   - version: 1.27.3
     zos_version: 1.27.1

@@ -4,5 +4,3 @@
   link: https://slack.openmainframeproject.org/
 - announcement: "The Zowe v2 Consumer-focused Office Hours series has concluded. All replays will be posted at the vNext page."
   link: https://www.zowe.org/vNext.html#office-hours
-- announcement: "Zowe is NOT affected by the log4j vulnerability. For more information, click" 
-  link: https://github.com/zowe/community/issues/1381
