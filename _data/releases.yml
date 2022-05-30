@@ -15,6 +15,19 @@ v2:
     documentation: stable
     release_notes: v2_0_0
 v1:
+  - version: 1.28.0
+    zos_version: 1.28.0
+    smpe_version: 1.28.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO02023 UO02024
+    cli_version: 1.28.0
+    cli_plugins_version: 1.28.0
+    node_sdk_version: 1.28.0
+    python_sdk_version: 1.28.0
+    release_date: 2022-05-23
+    documentation: v1.28.x
+    release_notes: v1_28_0
+
   - version: 1.27.3
     zos_version: 1.27.1
     smpe_version: 1.27.1

@@ -56,6 +56,8 @@ redirect_from:
 <div class="announcementsection">
   <h1>Announcements</h1>
   <strong>Zowe version {{ site.data.releases.v2[0].version }} is now available. You can download the installers for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="https://docs.zowe.org/stable/getting-started/release-notes/v2_0_0">Release notes</a>.<br></strong>
+  <hr class="w-100" style="margin-top: 0.25rem; margin-bottom: 0.25rem; border-top: 1px solid rgb(0 0 0 / 20%)">
+  <strong>Zowe version {{ site.data.releases.v1[0].version }} is now available. You can download the installers for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="https://docs.zowe.org/v1.28.x/getting-started/release-notes/v1_28_0">Release notes</a>.<br></strong>
   {% if site.data.announcements %}
     {% for announcement in site.data.announcements %}
     <hr class="w-100" style="margin-top: 0.25rem; margin-bottom: 0.25rem; border-top: 1px solid rgb(0 0 0 / 20%)">
