@@ -47,6 +47,7 @@
             </div>
          </div>
        </div>
+    <p style="margin-top: 1rem;">The current version of Zowe Conformance is ZOWE V2, which covers Zowe version 2 and later. The previous <a href="https://www.openmainframeproject.org/all-projects/zowe/conformance/v1">Zowe Conformance ZOWE V1 Program</a> covers Zowe v1 version 1.9 and later, and the <a href="https://www.openmainframeproject.org/all-projects/zowe/conformance/2019-2">Zowe Conformance 2019</a> program covers Zowe version 1.0 through 1.8.</p>
     <p style="margin-top: 1rem;">Learn more about the program at the <a href="{{ site.conformance_page_url }}">&nbsp;Zowe Conformance Program website</a>.</p>
 
   <div>
