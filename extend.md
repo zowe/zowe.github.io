@@ -60,23 +60,23 @@
     }  
   </script>
 
-  <div>
-    <div id="landscape-v2-tab" style="float: left; font-weight: bold;" onclick="toggleLandscape('landscape-v2', 'landscape-v1')">V2 Landscape</div>
-    <div id="landscape-v1-tab" style="float: left;" onclick="toggleLandscape('landscape-v1', 'landscape-v2')">V1 Landscape</div>
-  </div>
-
-  <div id="landscape-v2-full" style="display: block;">
-	  <div>
-		<h3 style="text-align: left;">The following products have earned Zowe Conformant status for Zowe V2</h3>
-    <iframe frameBorder="0" id="landscape-v2" style="width: 1px; min-width: 100%; height: 900px;" src="https://landscape.openmainframeproject.org/pages/zowe-conformant"></iframe>
-	  </div>
-  </div>
-
-  <div id="landscape-v1-full" style="display: none;">
-    <div>
-      <h3 style="text-align: left;">The following products have earned Zowe Conformant status for Zowe V1</h3>
-      <iframe frameBorder="0" id="landscape-v1" style="width: 1px; min-width: 100%; height: 900px;" src="https://landscape.openmainframeproject.org/pages/zowe-conformant-v1"></iframe>
-	  </div>
+  <div style="border: 2px black;">
+    <div style="border: 2px black; background-color: gray;">
+      <div id="landscape-v2-tab" style="float: left; font-weight: bold; font-size: 24px;" onclick="toggleLandscape('landscape-v2', 'landscape-v1')">V2 Landscape</div>
+      <div id="landscape-v1-tab" style="float: left; font-size: 24px;" onclick="toggleLandscape('landscape-v1', 'landscape-v2')">V1 Landscape</div>
+    </div>
+    <div id="landscape-v2-full" style="display: block;">
+      <div>
+      <h3 style="text-align: left;">The following products have earned Zowe Conformant status for Zowe V2</h3>
+      <iframe frameBorder="0" id="landscape-v2" style="width: 1px; min-width: 100%; height: 900px;" src="https://landscape.openmainframeproject.org/pages/zowe-conformant"></iframe>
+      </div>
+    </div>
+    <div id="landscape-v1-full" style="display: none;">
+      <div>
+        <h3 style="text-align: left;">The following products have earned Zowe Conformant status for Zowe V1</h3>
+        <iframe frameBorder="0" id="landscape-v1" style="width: 1px; min-width: 100%; height: 900px;" src="https://landscape.openmainframeproject.org/pages/zowe-conformant-v1"></iframe>
+      </div>
+    </div>
   </div>
 
 </section>
