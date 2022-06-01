@@ -62,7 +62,7 @@
 
   <div>
     <div id="landscape-v2-tab" style="float: left; font-weight: bold;" onclick="toggleLandscape('landscape-v2', 'landscape-v1')">V2 Landscape</div>
-    <div id="landscape-v1-tab" style="float: left;" onclick="toggleLandscape('landscape-v1', 'landscape-v2)">V1 Landscape</div>
+    <div id="landscape-v1-tab" style="float: left;" onclick="toggleLandscape('landscape-v1', 'landscape-vA2')">V1 Landscape</div>
   </div>
 
   <div id="landscape-v2-full" style="display: block;">
