@@ -52,10 +52,17 @@
 
   <div>
 	  <div>
-		<h3 style="text-align: left;">The following products have earned Zowe Conformant status</h3>
-    <iframe frameBorder="0" id="landscape" scrolling="no" style="width: 1px; min-width: 100%" src="https://landscape.openmainframeproject.org/pages/zowe-conformant"></iframe><script src="https://landscape.openmainframeproject.org/iframeResizer.js"></script>
+		<h3 style="text-align: left;">The following products have earned Zowe Conformant status for Zowe V2</h3>
+    <iframe frameBorder="0" id="landscape" scrolling="no" style="width: 1px; min-width: 100%; height: 800px;" src="https://landscape.openmainframeproject.org/pages/zowe-conformant"></iframe>
 	  </div>
   </div>
+
+  <div>
+    <div>
+      <h3 style="text-align: left;">The following products have earned Zowe Conformant status for Zowe V1</h3>
+      <iframe frameBorder="0" id="landscape" scrolling="no" style="width: 1px; min-width: 100%; height: 800px;" src="https://landscape.openmainframeproject.org/pages/zowe-conformant-v1"></iframe>
+	  </div>
+  </div
 
 </section>
 </section>
