@@ -56,7 +56,7 @@
       document.getElementById(idToHide+'-full').classList.remove('active');
 
       document.getElementById(idToShow+'-tab').classList.add('active');
-      document.getElementById(idToHide+'-tab').classList.remove('active);
+      document.getElementById(idToHide+'-tab').classList.remove('active');
     }  
   </script>
 
