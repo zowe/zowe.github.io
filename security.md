@@ -133,15 +133,23 @@ Additional hints and recommendations:
 -->
 
 * Any issue reported or reported by external reporters or identified by internal testing or code review, must be analyzed/assessed/triaged within the security workgroup.<br/> 
-* The issues' assessment outcome is the values of the risk/exploitability and the severity/impact of the issue on the respective components and the whole Zowe system.<br/>
-* The priority with which the issues will be fixed is based on the combination of the above factors (exploitability and impact) and falls in one of the following categories:
-  * **Critical:** must be fixed as early as possible
-  * **High:** must be fixed within next minor/patch release as latest. 
-      Alternatively, There MUST be no un-patched vulnerabilities of High severity that have been publicly known for more than 60 days. [vulnerabilities_fixed_60_days policy]
-  * **Medium** fixed when the squad decides to fix 
-  * **Low:** fixed when the squad decides to fix
+* The issues' assessment outcome is the value of the risk severity measured by the combination of exploitability and impact of the issue on the respective components and the whole Zowe system. The exploitability must be carefully investigated taking into account the component specific usage of the vulnerable code. The severity can be one of the: 
 
-An assessment reports will be created and stored for evidence and measurement of the component security state and hardening.
+    * Critical (C) - An event that, if it occurred, would cause program failure (inability to achieve minimum acceptable requirements).
+    * Serious (S) - An event that, if it occurred, would cause major cost and schedule increases. Secondary requirements may not be achieved.
+    * Moderate (Mo) - An event that, if it occurred, would cause moderate cost and schedule increases, but important requirements would still be met.
+    * Minor (Mi) - An event that, if it occurred, would cause only a small cost and schedule increase. Requirements would still be achieved.
+    * Negligible (N) - An event that, if it occurred, would have no effect on program.
+  
+* The priority with which the issues will be fixed is based on the combination of the above factors (exploitability and impact) and falls in one of the following categories:
+  
+    * Critical: must be fixed as early as possible
+    * High: must be fixed within next minor/patch release as latest. 
+      Alternatively, There MUST be no un-patched vulnerabilities of High severity that have been publicly known for more than 60 days. [vulnerabilities_fixed_60_days policy]
+    * Medium: fixed when the squad decides to fix 
+    * Low: fixed when the squad decides to fix
+
+* An assessment reports will be created and stored for evidence and measurement of the component security state and hardening.
 
 ## Security issues mitigation
 <!--
@@ -149,7 +157,8 @@ An assessment reports will be created and stored for evidence and measurement of
     <span style="display:none">(NIST-SSF #REF: SSF-A.4.2-B)</span>
 -->
 
-Zowe squads must fix the relevant security issues according to their assessed priority. [vulnerabilities_critical_fixed policy]
+Zowe squads must fix the relevant security issues according to their assessed priority and its defined timeframe. [vulnerabilities_critical_fixed policy]
+
 <!-- 
     <span style="display:none">(NIST-SSF #REF: SSF-A.4.1-B)</span> 
 -->
