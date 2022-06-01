@@ -103,7 +103,7 @@
 
     .landscape-heading {
       border-bottom: 2px black solid; 
-      background-color: lightgray;
+      background-color: #eee;
     }
 
     .landscape-overall {
