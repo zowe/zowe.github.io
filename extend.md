@@ -50,19 +50,34 @@
     <p style="margin-top: 1rem;">The current version of Zowe Conformance is ZOWE V2, which covers Zowe version 2 and later. The previous <a href="https://www.openmainframeproject.org/all-projects/zowe/conformance/v1">Zowe Conformance ZOWE V1 Program</a> covers Zowe v1 version 1.9 and later, and the <a href="https://www.openmainframeproject.org/all-projects/zowe/conformance/2019-2">Zowe Conformance 2019</a> program covers Zowe version 1.0 through 1.8.</p>
     <p style="margin-top: 1rem;">Learn more about the program at the <a href="{{ site.conformance_page_url }}">&nbsp;Zowe Conformance Program website</a>.</p>
 
+  <script>
+    function toggleLandscape(idToShow, idToHide) {
+      document.getElementById(idToShow).style.display = "block";
+      document.getElementById(idToHide).style.display = "none";
+
+      document.getElementById(idToShow+'-tab').style.fontWeight = "bold";
+      document.getElementById(idToHide+'-tab').style.fontWeight = "normal";
+    }  
+  </script>
+
   <div>
+    <div id="landscape-v2-tab" style="float: left; font-weight: bold;" onclick="toggleLandscape('landscape-v2', 'landscape-v1')">V2 Landscape</div>
+    <div id="landscape-v1-tab" style="float: left;" onclick="toggleLandscape('landscape-v2')">V1 Landscape</div>
+  </div>
+
+  <div id="landscape-v2-full" style="display: block;">
 	  <div>
 		<h3 style="text-align: left;">The following products have earned Zowe Conformant status for Zowe V2</h3>
-    <iframe frameBorder="0" id="landscape" scrolling="no" style="width: 1px; min-width: 100%; height: 800px;" src="https://landscape.openmainframeproject.org/pages/zowe-conformant"></iframe>
+    <iframe frameBorder="0" id="landscape-v2" style="width: 1px; min-width: 100%; height: 900px;" src="https://landscape.openmainframeproject.org/pages/zowe-conformant"></iframe>
 	  </div>
   </div>
 
-  <div>
+  <div id="landscape-v1-full" style="display: none;">
     <div>
       <h3 style="text-align: left;">The following products have earned Zowe Conformant status for Zowe V1</h3>
-      <iframe frameBorder="0" id="landscape" scrolling="no" style="width: 1px; min-width: 100%; height: 800px;" src="https://landscape.openmainframeproject.org/pages/zowe-conformant-v1"></iframe>
+      <iframe frameBorder="0" id="landscape-v1" style="width: 1px; min-width: 100%; height: 900px;" src="https://landscape.openmainframeproject.org/pages/zowe-conformant-v1"></iframe>
 	  </div>
-  </div
+  </div>
 
 </section>
 </section>
