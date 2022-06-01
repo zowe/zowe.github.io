@@ -52,8 +52,8 @@
 
   <script>
     function toggleLandscape(idToShow, idToHide) {
-      document.getElementById(idToShow).style.display = "block";
-      document.getElementById(idToHide).style.display = "none";
+      document.getElementById(idToShow+'-full').style.display = "block";
+      document.getElementById(idToHide+'-full').style.display = "none";
 
       document.getElementById(idToShow+'-tab').style.fontWeight = "bold";
       document.getElementById(idToHide+'-tab').style.fontWeight = "normal";
@@ -62,7 +62,7 @@
 
   <div>
     <div id="landscape-v2-tab" style="float: left; font-weight: bold;" onclick="toggleLandscape('landscape-v2', 'landscape-v1')">V2 Landscape</div>
-    <div id="landscape-v1-tab" style="float: left;" onclick="toggleLandscape('landscape-v2')">V1 Landscape</div>
+    <div id="landscape-v1-tab" style="float: left;" onclick="toggleLandscape('landscape-v1', 'landscape-v2)">V1 Landscape</div>
   </div>
 
   <div id="landscape-v2-full" style="display: block;">
