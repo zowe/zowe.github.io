@@ -113,7 +113,7 @@
 
   <div class="landscape-overall">
     <div class="landscape-heading" >
-      <span class="landscape-tab" id="landscape-v2-tab" onclick="toggleLandscape('landscape-v2', 'landscape-v1')">V2 Landscape</span>
+      <span class="landscape-tab active" id="landscape-v2-tab" onclick="toggleLandscape('landscape-v2', 'landscape-v1')">V2 Landscape</span>
       <span class="landscape-tab" id="landscape-v1-tab" onclick="toggleLandscape('landscape-v1', 'landscape-v2')">V1 Landscape</span>
     </div>
     <div class="landscape-content active" id="landscape-v2-full">
