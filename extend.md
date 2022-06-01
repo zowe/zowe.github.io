@@ -52,29 +52,80 @@
 
   <script>
     function toggleLandscape(idToShow, idToHide) {
-      document.getElementById(idToShow+'-full').style.display = "block";
-      document.getElementById(idToHide+'-full').style.display = "none";
+      document.getElementById(idToShow+'-full').classList.add('active');
+      document.getElementById(idToHide+'-full').classList.remove('active');
 
-      document.getElementById(idToShow+'-tab').style.fontWeight = "bold";
-      document.getElementById(idToHide+'-tab').style.fontWeight = "normal";
+      document.getElementById(idToShow+'-tab').classList.add('active');
+      document.getElementById(idToHide+'-tab').classList.remove('active);
     }  
   </script>
 
-  <div style="border: 2px black;">
-    <div style="border: 2px black; background-color: gray;">
-      <div id="landscape-v2-tab" style="float: left; font-weight: bold; font-size: 24px;" onclick="toggleLandscape('landscape-v2', 'landscape-v1')">V2 Landscape</div>
-      <div id="landscape-v1-tab" style="float: left; font-size: 24px;" onclick="toggleLandscape('landscape-v1', 'landscape-v2')">V1 Landscape</div>
+  <style>
+    .landscape-tab {
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 24px;
+    }
+
+    .landscape-tab.active {
+      background-color: gray;
+      color: white;
+    }
+
+    .landscape-tab:hover {
+      background-color: #ccc;
+    }
+
+    .landscape-tab.active:hover {
+      background-color: #ccc;
+      color: black;
+    }
+
+    .landscape-content {
+       padding: 5px;
+       display: none;
+    }
+
+    .landscape-content h3 {
+      text-align: left; 
+      padding-left: 10px;
+    }
+
+    .landscape-content iframe {
+      width: 1px; 
+      min-width: 100%; 
+      height: 900px;
+    }
+
+    .landscape-content.active {
+      display: block;
+    }
+
+    .landscape-heading {
+      border-bottom: 2px black solid; 
+      background-color: lightgray;
+    }
+
+    .landscape-overall {
+      border: 2px black solid;
+    }
+  </style>
+
+  <div class="landscape-overall">
+    <div class="landscape-heading" >
+      <span class="landscape-tab" id="landscape-v2-tab" onclick="toggleLandscape('landscape-v2', 'landscape-v1')">V2 Landscape</span>
+      <span class="landscape-tab" id="landscape-v1-tab" onclick="toggleLandscape('landscape-v1', 'landscape-v2')">V1 Landscape</span>
     </div>
-    <div id="landscape-v2-full" style="display: block;">
+    <div class="landscape-content active" id="landscape-v2-full">
       <div>
-      <h3 style="text-align: left;">The following products have earned Zowe Conformant status for Zowe V2</h3>
-      <iframe frameBorder="0" id="landscape-v2" style="width: 1px; min-width: 100%; height: 900px;" src="https://landscape.openmainframeproject.org/pages/zowe-conformant"></iframe>
+      <h3>The following products have earned Zowe Conformant status for Zowe V2</h3>
+      <iframe frameBorder="0" id="landscape-v2" src="https://landscape.openmainframeproject.org/pages/zowe-conformant"></iframe>
       </div>
     </div>
-    <div id="landscape-v1-full" style="display: none;">
+    <div class="landscape-content" id="landscape-v1-full">
       <div>
-        <h3 style="text-align: left;">The following products have earned Zowe Conformant status for Zowe V1</h3>
-        <iframe frameBorder="0" id="landscape-v1" style="width: 1px; min-width: 100%; height: 900px;" src="https://landscape.openmainframeproject.org/pages/zowe-conformant-v1"></iframe>
+        <h3>The following products have earned Zowe Conformant status for Zowe V1</h3>
+        <iframe frameBorder="0" id="landscape-v1" src="https://landscape.openmainframeproject.org/pages/zowe-conformant-v1"></iframe>
       </div>
     </div>
   </div>
