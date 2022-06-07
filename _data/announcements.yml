@@ -1,6 +1,6 @@
 # Announcements
 # Any kind of links should NOT be in ""
-- announcement: "*ATTENTION ZOWE EXTENDERS* Zowe V2 Conformance Pre-Application is OPEN! Reference your email notification OR #zowe onboarding channel"
-  link: https://slack.openmainframeproject.org/
-- announcement: "The Zowe v2 Consumer-focused Office Hours series has concluded. All replays will be posted at the vNext page."
-  link: https://www.zowe.org/vNext.html#office-hours
+- announcement: "*ATTENTION ZOWE EXTENDERS* The Zowe V2 Conformance Program is OPEN! Visit the Zowe Conformance Program site for Testing Criteria and Participation Forms"
+  link: https://www.openmainframeproject.org/all-projects/zowe/conformance
+- announcement: "SAVE THE DATE! The next Zowe Quarterly Update Webinar is scheduled for 6/22 at 11:30 ET"
+  link: https://lists.openmainframeproject.org/g/zowe-dev/calendar
