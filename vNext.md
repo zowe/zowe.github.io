@@ -549,7 +549,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-2')" class="w3-button w3-block w3-left-align">
-    1. Where can I find the current (V1) and new (V2) LTS conformance criteria?</button>
+    2. Where can I find the current (V1) and new (V2) LTS conformance criteria?</button>
     <div id="question-2" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;The Zowe Squads have prepared XLS spreadsheets with conformance criteria for all Zowe
       extensions including: CLI, APIs, App Framework, and Explorerfor VS Code. The spreadsheets clearly show the prior /
@@ -560,7 +560,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-3')" class="w3-button w3-block w3-left-align">
-    1. Will my V1 conformant extension automatically work with V2?</button>
+    3. Will my V1 conformant extension automatically work with V2?</button>
     <div id="question-3" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;NO. We recommend testing all V1 conformant extensions. See the <a href="#coming-changes">Coming changes (For Users)</a> section at
       <a href="/vNext">Zowe.org/vNext</a>.</p>
@@ -568,14 +568,14 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-4')" class="w3-button w3-block w3-left-align">
-    1. What if my extension does not work with Zowe V2?</button>
+    4. What if my extension does not work with Zowe V2?</button>
     <div id="question-4" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;See the recommendations in the <a href="#coming-changes">Coming changes</a> section at <a href="/vNext">Zowe.org/vNext</a>.</p>
     </div>
     </div>
     <div>
     <button onclick="toggle('question-5')" class="w3-button w3-block w3-left-align">
-    1. How can I test my current plug-in and/or extension with Zowe V2?</button>
+    5. How can I test my current plug-in and/or extension with Zowe V2?</button>
     <div id="question-5" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;Obtain the pre-GA Zowe V2 release; for details see the pre-GA <a href="#download-availability">Download Availability</a> section at
       <a href="/vNext">Zowe.org/vNext</a>.</p>
@@ -583,7 +583,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-6')" class="w3-button w3-block w3-left-align">
-    1. Do I need to reapply for conformance?</button>
+    6. Do I need to reapply for conformance?</button>
     <div id="question-6" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;YES, we expect the Zowe V2 Conformance program to be available in early Feb 2022. We will
       announce when extenders can pre-apply in the <a href="#latest-announcements">LATEST ANNOUNCEMENTS</a> section at <a href="vNext.html">Zowe.org/vNext</a>.</p>
@@ -591,7 +591,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-7')" class="w3-button w3-block w3-left-align">
-    1. What happens to my V1 conformance badge?</button>
+    7. What happens to my V1 conformance badge?</button>
     <div id="question-7" class="w3-container faq-hide">
       <p>All Zowe V1 conformance badges will remain at the Open Mainframe Project Interactive
       Landscape; we recommend documenting a Zowe compatibility matrix to ensure clients are aware of any/all
@@ -600,7 +600,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-8')" class="w3-button w3-block w3-left-align">
-    1. Will I be able to pre-apply for Zowe V2 conformance?</button>
+    8. Will I be able to pre-apply for Zowe V2 conformance?</button>
     <div id="question-8" class="w3-container faq-hide">
       <p>Yes, We will announce when extenders can pre-apply in the <a href="#latest-announcements">LATEST ANNOUNCEMENTS</a> section at <a
         href="vNext.html">Zowe.org/vNext</a>.</p>
@@ -615,7 +615,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-10')" class="w3-button w3-block w3-left-align">
-    1.   How long will V1 LTS be supported?</button>
+    10.   How long will V1 LTS be supported?</button>
     <div id="question-10" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;The V1 LTS Maintenance timeline runs through July 2024. See RELEASE TIMELINE at <a
         href="download.html">Zowe.org/download</a>.</p>
@@ -623,7 +623,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-11')" class="w3-button w3-block w3-left-align">
-    1.   What if my extension does not qualify for V2 conformance?</button>
+    11.   What if my extension does not qualify for V2 conformance?</button>
     <div id="question-11" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;You have several options:</p>
       <ol>
@@ -639,7 +639,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-12')" class="w3-button w3-block w3-left-align">
-    1.   Where can I go for more information or get interactive help? (my question is not listed here)</button>
+    12.   Where can I go for more information or get interactive help? (my question is not listed here)</button>
     <div id="question-12" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;You have several options:</p>
       <ol>
@@ -655,7 +655,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-13')" class="w3-button w3-block w3-left-align">
-    1.   Will the Zowe V2 Office Hours be recorded? (How do I find the recording?)</button>
+    13.   Will the Zowe V2 Office Hours be recorded? (How do I find the recording?)</button>
     <div id="question-13" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;Yes. Recordings can be provided on request. Click on the COMMUNITY tab at <a href="https://zowe.org">Zowe.org</a>, navigate to the SLACK box
       and click #zowe-onboarding and request the recording.</p>
@@ -663,21 +663,21 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-14')" class="w3-button w3-block w3-left-align">
-    1.   Will there be a means to migrate (or convert?) existing / old-style profiles to the V2 team config for Zowe CLI? Will it handle profiles that are secured by SCS?</button>
+    14.   Will there be a means to migrate (or convert?) existing / old-style profiles to the V2 team config for Zowe CLI? Will it handle profiles that are secured by SCS?</button>
     <div id="question-14" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;Yes, we plan to introduce a "zowe config convert-profiles" command, which will be available in the v2 release.</p>
     </div>
     </div>
     <div>
     <button onclick="toggle('question-15')" class="w3-button w3-block w3-left-align">
-    1.   Will (CLI)Daemon mode be integrated seamlessly into v2 and enabled by default?</button>
+    15.   Will (CLI)Daemon mode be integrated seamlessly into v2 and enabled by default?</button>
     <div id="question-15" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;This work is still in progress-we are working on a "zowe daemon enable" command to make the daemon installation process as seamless as possible. Daemon mode will be disabled by default, the command must be run to enable it.</p>
     </div>
     </div>
     <div>
     <button onclick="toggle('question-16')" class="w3-button w3-block w3-left-align">
-    1.   The V1 version of Zowe Explorer offers a text input area, where a user can enter some of the data / attributes (host, port, etc.) necessary to create the old-style profiles.  With Team Config what options are available for users to edit the config file?  Is it manual? Is there a UI?</button>
+    16.   The V1 version of Zowe Explorer offers a text input area, where a user can enter some of the data / attributes (host, port, etc.) necessary to create the old-style profiles.  With Team Config what options are available for users to edit the config file?  Is it manual? Is there a UI?</button>
     <div id="question-16" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;The recommended approach for editing the config file is to launch it in VS Code from Zowe Explorer and make modifications there. The designated user responsible for creating and maintaining the config (we recommend a team lead or Administrator) will be able to leverage the built-in “intellisense” when editing the file. <i>Note: <b>Team Config fundamentally changes the paradigm on profile creation & management.</b> Prior to Team Config, <b>all users</b> were required to understand, create, test, trouble-shoot, and manage their own profiles. Team Config was designed to scale all of these tasks back, remove the burden from individual users and centralize it. Once the config is distributed most users should not need to make any significant edits.</i></p>
       <p>&nbsp;&nbsp;&nbsp;Join the discussion on this topic here: <a href="https://github.com/zowe/vscode-extension-for-zowe/discussions/1535">https://github.com/zowe/vscode-extension-for-zowe/discussions/1535</a></p>
@@ -697,7 +697,7 @@ p .card-black {
       </div>
       <div>
         <button onclick="toggle('questions-cli-2')" class="w3-button w3-block w3-left-align">
-          1. Will it be possible to override the built-in Secure Credentials if you are using something else?
+          2. Will it be possible to override the built-in Secure Credentials if you are using something else?
         </button>
         <div id="questions-cli-2" class="w3-container faq-hide">
           <p>Team Config will likely support alternates defined in the settings json file, administrators will probably need to hand-edit the configuration file to set a new credential manager</p>
@@ -705,7 +705,7 @@ p .card-black {
       </div>
       <div>
         <button onclick="toggle('questions-cli-3')" class="w3-button w3-block w3-left-align">
-          1. How do you expect consumers to migrate from the (V1) old Secure Credentials to the new (V2 team config) configuration? Is there a migration process?
+          3. How do you expect consumers to migrate from the (V1) old Secure Credentials to the new (V2 team config) configuration? Is there a migration process?
         </button>
         <div id="questions-cli-3" class="w3-container faq-hide">
           <p>A migration utility is available - it will translate profiles (1 for 1) to new  (team config) format AND (optionally) clean-up old profiles and old SCS entries.</p>
@@ -713,7 +713,7 @@ p .card-black {
       </div>
       <div>
         <button onclick="toggle('questions-cli-4')" class="w3-button w3-block w3-left-align">
-          1. Is migration to the new profile format required?
+          4. Is migration to the new profile format required?
         </button>
         <div id="questions-cli-4" class="w3-container faq-hide">
           <p>Migration to the new profile format is NOT required immediately - the old profiles will work UNLESS a team config is created - that said, the old profiles will not be used if a new team config is available. Simply stated - if a team config is not located, CLI will fall back to using the prior profiles</p>
@@ -721,7 +721,7 @@ p .card-black {
       </div>
       <div>
         <button onclick="toggle('questions-cli-5')" class="w3-button w3-block w3-left-align">
-          1. Will V2 be able to use the old (V1) Secure Credentials?
+          5. Will V2 be able to use the old (V1) Secure Credentials?
         </button>
         <div id="questions-cli-5" class="w3-container faq-hide">
           <p>Yes - CLI can read the old and the new format</p>
@@ -729,7 +729,7 @@ p .card-black {
       </div>
       <div>
         <button onclick="toggle('questions-cli-6')" class="w3-button w3-block w3-left-align">
-          1. Will my username/password be saved in 2 different locations if I do not use the --delete (after the migration)?
+          6. Will my username/password be saved in 2 different locations if I do not use the --delete (after the migration)?
         </button>
         <div id="questions-cli-6" class="w3-container faq-hide">
           <p>Yes (recommend this is cleaned up)</p>
@@ -737,7 +737,7 @@ p .card-black {
       </div>
       <div>
         <button onclick="toggle('questions-cli-7')" class="w3-button w3-block w3-left-align">
-          1. For the keyword base-path, does it remain camel case or transition to something else?
+          7. For the keyword base-path, does it remain camel case or transition to something else?
         </button>
         <div id="questions-cli-7" class="w3-container faq-hide">
           <p>CLI option name is "base-path", property name in config is "basePath"</p>
