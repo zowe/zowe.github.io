@@ -40,39 +40,34 @@ or the responsibilities could be split between multiple participants as describe
 <span style="display:none">(Zowe-SSDP-SDLC - #ID: ZSSD-LP:RV-ICV-CRT)</span>
 -->
 
-* The architecture of any Zowe component's security features designed by the Zowe squads is reviewed by the Zowe Security Workgroup.
-
-####TODO: KEEP ONLY ONE OF:  THE ONE ABOVE OR THE ONE BELLOW 
-
-* The security architecture of Zowe component is reviewed by the Zowe Security Workgroup.
- 
+* The security architecture of all Zowe components is reviewed by the Security Workgroup.
 * The Zowe squads perform internal security code review of newly implemented features and other security related code changes.
-* The code reviews are performed by squad members other than the ones who created the code.
+* The code reviews are performed by squad members other than the individuals who created the code.
 * The Zowe squads continuously perform security testing of their components' code and configuration for security issues.
-* Irregularly but at least before each major release a full penetration testing is performed by the Zowe Security Workgroup.
+* A full penetration testing is performed by the Zowe Security Workgroup before each major release.
 
-### Potential vulnerability sources monitoring</h3>
+### Vulnerability monitoring</h3>
 <!-- <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span> -->
 
-* The Zowe Security Workgroup continuously monitors well known sources of information about freshly discovered or otherwise severe security issues. Some sources a listed below:
+* The Zowe Security Workgroup continuously monitors well known sources of information about discovered or otherwise severe security issues. Some sources a listed below:
   * [NIST National Vulnerability Database](https://nvd.nist.gov/vuln)
   * [MITRE CVE List](https://cve.mitre.org/)
   * [Snyk Vulnerability DB](https://security.snyk.io/)
   * [CISA Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
-* Any issues found to potentially have impact on Zowe components, are further [analyzed](#Security-Issues-Analysis-And-Assessment) without unnecessary delay.
-* Information about any identified issues found to be of high severity and/or impact are propagated by the Zowe Security Workgroup to all Zowe squads.  
+* Any issues found to have impact on Zowe components, are further [analyzed](#Security-Issues-Analysis-And-Assessment) without unnecessary delay.
+* Information about any identified issues is propagated by the Security Workgroup to all Zowe squads.  
     
 ### Security issues reporting
 <!-- <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span> -->
 
-Zowe encourages the community, users and other security researchers to perform security testing and report potential vulnerabilities of the Zowe components.  
+Zowe encourages the community, users and security researchers to perform testing and report vulnerabilities.  
 
 <!-- <span style="display: none;">#TODO: Alternatively use Zowe report form if we have one</span> -->
 <!-- <span style="display: none;">#TODO: Publish the reporting process on the project web-site: Open SSF: FLOSS Best Practices Criteria  - Vulnerability report process</span> -->
 
 Please direct all security issues to <code>zowe-security@lists.openmainframeproject.org</code>.
 
-To help Zowe developers understand and resolve the issues in most efficient way, please provide sufficient and accurate details about the issue and the approach to reproduce it. 
+To help Zowe developers understand and resolve the issues, please provide accurate details. 
 
 #### Security report template
 
@@ -118,6 +113,7 @@ Additional hints and recommendations:
 ````
 
 **IMPORTANT:**  Please do not file a public issue [disclosing vulnerabilities](#Security-issues-disclosure) as this may be misused by violent attackers.
+We encourage the community to work with the Zowe Security team to resolve the issue before going publicly with it.
 
 <!--
 <div style="display: none;">
@@ -132,18 +128,21 @@ Additional hints and recommendations:
 #### What happens after security report is received by Zowe Security Workgroup 
 * After your report is received, a member of the Zowe security team replies to acknowledge receipt of the report.
 * Without unnecessary delay the report is [analyzed](Security-issues-analysis-and_assessment). Please expect to be contacted for clarification.
-* After the issue is sufficiently documented, the Zowe security team coordinates the issue [mitigation](#Security-issues-mitigation) with the affected project.
+* After the issue is sufficiently documented, the Zowe security team coordinates the issue [mitigation](#Security-issues-mitigation).
 
-## Security issues analysis and assessment 
+## Analysis and assessment 
 <!--
     <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV)</span>
     <span style="display:none"> (Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV-AEV)</span>
     <span style="display:none"> (NIST-SSF: #REF: SSDF:RV.2.1)</span>
 -->
 
-* Any issue reported by external reporters or identified by internal testing or code review, is analyzed/assessed/triaged within the security workgroup.<br/> 
-* The issues' assessment outcome is the value of the risk severity measured by the combination of exploitability and impact of the issue on the respective components and the whole Zowe system. 
-The exploitability is be carefully investigated taking into account the component's specific usage of the vulnerable code. The severity can be one of the: 
+* Reported issues are analyzed within the security workgroup.<br/> 
+* The issues' analyzes outcome is determined by the risk severity measured by the combination of exploitability and impact. 
+The severity can be one of the: 
+  
+    #  TOD:O: Synch and merge the Prio and Severity into one topic 
+ 
 
     * Critical (C) - An event that, if it occurred, would cause program failure (inability to achieve minimum acceptable requirements).
     * Serious (S) - An event that, if it occurred, would cause major cost and schedule increases. Secondary requirements may not be achieved.
@@ -160,7 +159,7 @@ The priority falls into one of the following categories:
     * Medium: fixed when the squad decides to fix 
     * Low: fixed when the squad decides to fix
 
-* An assessment reports are created and stored for evidence and measurement of the component security state and hardening.
+* #TODO: reformulate or remove if doesn't sound appropriate: An assessment reports are created and stored for evidence and measurement of the component security state and hardening.
 
 ## Security issues mitigation
 <!--
