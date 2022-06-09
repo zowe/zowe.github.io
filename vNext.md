@@ -390,7 +390,7 @@ p .card-black {
       <div class="d-flex align-items-baseline">
         <h5 class="text-left">Zowe Explorer</h5>
       </div>        
-      The Explorer related conformance Criteria are <a href="https://ibm.box.com/s/0yuz16hwo522jegrtkysn36hto20qg6l">here</a>
+      The Explorer related conformance Criteria are <a href="https://ibm.box.com/s/euros5vvutyvk6ixih7vixwhxvuuog4n">here</a>
     </div>
   </div>
 
