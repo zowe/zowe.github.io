@@ -261,7 +261,7 @@
                     {{ site.data.releases.v2[0].explorer_version }}
                   </a></p>
                 <p><a class="btn btn-primary" href=" {{ site.zowe_cics_explorer_next_github_url }}">Zowe Explorer for
-                    IBM CICS {{ site.data.releases.v2[0].explorer_version }}</a></p>
+                    IBM CICS 2.0.0</a></p>
                 <div>
                   <a href="{{ site.zowe_explorer_install_doc_url }}" class="card-link">
                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle"
