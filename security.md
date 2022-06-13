@@ -2,16 +2,16 @@
 <!-- Copyright Contributors to the Zowe project. -->
 <!-- # Zowe Security Policy-->
 
-# Zowe Respond to Vulnerabilities Policy
+# Respond to Vulnerabilities Policy
 <!--<div style="display:none" hidden>(Zowe-SSDP-SDLC ID: ZSSD-LP:RV)</div>-->
 
-This Respond to Vulnerability Policy governs how Zowe handles vulnerabilities identification, mitigation and disclosure.
+The Policy governs how Zowe handles vulnerabilities identification, mitigation and disclosure.
 
 Our policy is based on the <a href="https://en.wikipedia.org/wiki/Coordinated_vulnerability_disclosure">Coordinated Vulnerability Disclosure (CVD) Policy</a>
 which is also adopted by many other organizations, <a href="https://www.cisa.gov/coordinated-vulnerability-disclosure-process">CISA</a> and <a href="https://www.etsi.org/standards/coordinated-vulnerability-disclosure">ETSI</a> among them. 
 Zowe adapts the following 5 CVD topics used to declare complete set of requirements:
 * [Security issues identification](#Security-issues-identification) <!-- <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span> -->
-* [Security issues analysis and assessment](#Security-issues-analysis-and-assessment)
+* [Security issues analysis and assessment](#Analysis-and-assessment)
 * [Security issues mitigation](#Security-issues-mitigation)
 * [Security issues disclosure](#Security-issues-disclosure) <!-- <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-VDR)</span> -->
 * [Solution publishing](#Solution-publishing)
@@ -19,18 +19,18 @@ Zowe adapts the following 5 CVD topics used to declare complete set of requireme
 The topics listed above contain sets of applicable requirements. Where appropriate the fulfilment of these requirements may be governed by internal processes and guidance. 
 In such cases, a detailed description of the corresponding processes and guidance is provided in separate documents.
 
-The main participants in the CVD related processes are:
-* Zowe Security Workgroup
-* Zowe squads 
-* External researchers and reporters
- 
-Each requirement listed under the individual topics may be a responsibility of a single participant 
-or the responsibilities could be split between multiple participants as described where appropriate.    
-
     NOTE: Wherever appropriate the policy requirements are mapped to the NIST SSDF Respond to Vulnerabilities (RV) Best practices - see https://csrc.nist.gov/publications/detail/sp/800-218/final 
           and/or to the Open Source Security Foundation (OpenSSF) Best Practices] - see https://openssf.org/ (former Core Infrastructure Iniitative) - see https://www.coreinfrastructure.org/.
           The mappings are part of this document but are provided as comments and those are not rendered in the markdown viewer. 
 
+The individual requirements corresponding to the topics listed above may be a responsibility of a single participant
+or the responsibilities could be split between multiple cooperating participants.
+
+The main participants in the CVD related processes are:
+* The Zowe Security Workgroup
+* The Zowe squads 
+* External researchers and reporters
+ 
 ## Security issues identification
 <!-- <span style="display:none" hidden>(Zowe-SSDP-SDLC - #ID: ZSSD-LP:RV-ICV)</span> -->
 
@@ -43,7 +43,7 @@ or the responsibilities could be split between multiple participants as describe
 * The security architecture of all Zowe components is reviewed by the Security Workgroup.
 * The squads perform internal security code review of newly implemented features and other security related code changes.
 * The code reviews are performed by squad members other than the individuals who created the code.
-* The squads continuously perform security testing of their components' code and configuration for security issues.
+* The squads continuously perform security testing for security issues in their components' code and configuration.
 * A full penetration testing is performed by the Security Workgroup before each major release.
 
 ### Vulnerability monitoring</h3>
@@ -55,7 +55,7 @@ or the responsibilities could be split between multiple participants as describe
   * [Snyk Vulnerability DB](https://security.snyk.io/)
   * [CISA Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
 * Any issues found to have impact on Zowe components, are further [analyzed](#Security-Issues-Analysis-And-Assessment) without unnecessary delay.
-* Information about any identified issues is propagated by the Security Workgroup to all squads.  
+* Information about any identified issues is propagated by the Security Workgroup to the squads.  
     
 ### Security issues reporting
 <!-- <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span> -->
@@ -111,13 +111,13 @@ Additional hints and recommendations:
     - Be prompt.
 ````
 
-#### What happens after security report is received by Zowe Security Workgroup 
-* After your report is received, a member of the Zowe Security Workgroup replies to acknowledge receipt of the report.
-* Without unnecessary delay the report is [analyzed](Security-issues-analysis-and_assessment). Please expect to be contacted for clarification.
-* After the issue is sufficiently documented, the Zowe security team coordinates the issue [mitigation](#Security-issues-mitigation).
+#### What happens after security report is received by the Security Workgroup 
+* After your report is received, a member of the Security Workgroup replies to acknowledge receipt of the report.
+* The reporter may be contacted for clarification.
+* Without unnecessary delay the report is [analyzed](Analysis-and_assessment).
 
 <!-- **IMPORTANT:**  Please do not file a public issue [disclosing vulnerabilities](#Security-issues-disclosure) as this may be misused by violent attackers. -->
-We encourage the community to work with the Security Workgroup team to resolve the issue before going publicly with it.
+    Note: We encourage the reporters to work with the Security Workgroup team to resolve the issue before going publicly with it.
 
 ## Analysis and assessment 
 <!--
@@ -127,37 +127,47 @@ We encourage the community to work with the Security Workgroup team to resolve t
 -->
 
 * Reported issues are analyzed within the security workgroup.<br/> 
-* The issues' analyzes outcome is determined by the risk severity measured by the combination of exploitability and impact. 
+* The issues' analyzes outcome is determined by the risk severity measured by the combination of vulnerability exploitability and its impact. 
 
 The severity can be one of the: 
   
-    #  TODO: Synch and merge the Prio and Severity into one topic 
- 
-    * Critical (C) - An event that, if it occurred, would cause program failure (inability to achieve minimum acceptable requirements).
-    * Serious (S) - An event that, if it occurred, would cause major cost and schedule increases. Secondary requirements may not be achieved.
-    * Moderate (Mo) - An event that, if it occurred, would cause moderate cost and schedule increases, but important requirements would still be met.
-    * Minor (Mi) - An event that, if it occurred, would cause only a small cost and schedule increase. Requirements would still be achieved.
-    * Negligible (N) - An event that, if it occurred, would have no effect on program.
+  * Critical (C) - An event that, if it occurred, would cause program failure (inability to achieve minimum acceptable requirements).
   
-* 
-* The priority with which the issues are fixed is based on the combination of the vulnerability exploitability and impact. 
-    The priority falls into one of the following categories:
-  
-    * Critical: fixed as early as possible
-    * High: fixed within next minor/patch release as latest. 
-      Alternatively, There are no un-patched vulnerabilities of High severity that have been publicly known for more than 60 days. [vulnerabilities_fixed_60_days policy]
-    * Medium: fixed when the squad decides to fix 
-    * Low: fixed when the squad decides to fix
+        Critical issues are fixed as early as possible
 
-* #TODO: reformulate or remove if doesn't sound appropriate: An assessment reports are created and stored for evidence and measurement of the component security state and hardening.
+  * High (H) - An event that, if it occurred, would cause major cost and schedule increases. Secondary requirements may not be achieved.
+  
+        High issues are fixed within next minor/patch release as latest. 
+        Alternatively, There are no un-patched vulnerabilities of High severity that have been publicly known for more than 60 days. [vulnerabilities_fixed_60_days policy]
+
+  * Medium (M) - An event that, if it occurred, would cause moderate cost and schedule increases, but important requirements would still be met.
+    
+        Medium issues are fixed when the squad decides to fix 
+
+  * Low (L) - An event that, if it occurred, would cause only a small cost and schedule increase. Requirements would still be achieved.   
+
+        Low issues are fixed when the squad decides to fix
+ 
+<!--
+  * The priority with which the issues are fixed is based on the combination of the vulnerability exploitability and impact. 
+      The priority falls into one of the following categories:
+  
+      * Critical: fixed as early as possible
+      * High: fixed within next minor/patch release as latest. 
+        Alternatively, There are no un-patched vulnerabilities of High severity that have been publicly known for more than 60 days. [vulnerabilities_fixed_60_days policy]
+      * Medium: fixed when the squad decides to fix 
+      * Low: fixed when the squad decides to fix
+-->
 
 ## Security issues mitigation
+
+ After the issue is sufficiently documented, the Security Workgroup coordinates the issue [mitigation](#Security-issues-mitigation).
 <!--
     <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV)</span>
     <span style="display:none">(NIST-SSF #REF: SSF-A.4.2-B)</span>
 -->
 
-Zowe squads strive to fix the relevant security issues according to their assessed priority within a predefined timeframe. [vulnerabilities_critical_fixed policy]
+The Zowe squads strive to fix the relevant security issues according to their assessed priority within a predefined timeframe. [vulnerabilities_critical_fixed policy]
 
 <!-- 
     <span style="display:none">(NIST-SSF #REF: SSF-A.4.1-B)</span> 
@@ -166,16 +176,16 @@ Zowe squads strive to fix the relevant security issues according to their assess
 ## Security issues disclosure
 
 * Zowe discloses fixed vulnerabilities in a timely manner giving the users sufficient time to plan their upgrades. 
-* Zowe however won't disclose the vulnerabilities fixed in the latest release as we respect the need for at least 45 days to decide when and how will the users upgrade Zowe. 
-* When a new release of Zowe is published, we list the vulnerabilities fixed in the previous release.
+* We however don't disclose the vulnerabilities fixed in the latest release as we respect the need for at least 45 days to decide when and how will the users upgrade. 
+* When a new release is published, we list the vulnerabilities fixed in the previous release.
     
-      For example when we'd release Zowe 2.3 we'd publish the list of vulnerabilities that were fixed in the 2.2 versions of Zowe.
-          The issues that were fixed would be published in the [Zowe security reports](https://github.com/zowe/security-reports/blob/master/security-vulnerabilities.md) repository listing.
+      For example when we'd release Zowe v2.3 we'd publish the list of vulnerabilities that were fixed in the version 2.2 .
+      The issues that were fixed would be published in the [Zowe security reports](https://github.com/zowe/security-reports/blob/master/security-vulnerabilities.md) repository listing.
 
 ## Solution publishing
 ### Security advisory
 * For critical priority vulnerability, security patches are created as soon as the issue is fixed in code and configuration.
-* The security fixes become an integral part of the nearest next Zowe distribution.
+* The security fixes become an integral part of the nearest Zowe distribution.
 * The component's squad(project maintainers) disclose a confirmed vulnerability by first creating a draft security advisory in the component repository in GitHub or other CMS that is used by the project.
 
 
@@ -192,7 +202,7 @@ Security notifications are distributed via the following methods.
 * Publishing component specific advisories in the corresponding component GitHub repository Security page.
 
 
-    For example you can find the Zowe API Mediation Layer related security advisories here: https://github.com/zowe/api-layer/security/advisories   
+    For example you can find the API Mediation Layer related security advisories here: https://github.com/zowe/api-layer/security/advisories   
 * Notification to Zowe users who explicitly signed in for receiving security alerts and advisories. 
        
           #TODO: Subscribe to the mailing lists or apply using  form to apply???
