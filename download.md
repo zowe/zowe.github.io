@@ -130,10 +130,10 @@
                 the latest version. </p>
             <p><a class="btn btn-primary" href="{{ site.smpe_download_url }}{{ site.zowe_v2_fmid_oss_version }}">Zowe 2.0.0
                 FMID {{ site.zowe_v2_fmid }}</a></p>
-            <p><a class="btn btn-primary"
+            <!-- <p><a class="btn btn-primary"
                   href="{{ site.smpe_download_url }}{{ site.data.releases.v2[0].smpe_version }}">Zowe
                   {{ site.data.releases.v2[0].zos_version }} {{ site.data.releases.v2[0].smpe_sysmod }}
-                  {{ site.data.releases.v2[0].smpe_numbers }}</a></p>
+                  {{ site.data.releases.v2[0].smpe_numbers }}</a></p> -->
             <div>
               <a href="https://docs.zowe.org/{{ site.data.releases.v2[0].documentation }}/user-guide/install-zos"
                 class="card-link">
