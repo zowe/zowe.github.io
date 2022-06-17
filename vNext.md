@@ -26,16 +26,6 @@ p .card-black {
 <section class="whitebackground">
   <h1 id="download" style="margin-bottom: 1.5rem">Table of Contents</h1>
 
-  <div>
-    <h2>Test</h2>
-    {% if site.data.core %}
-      {% for core in site.data.core %}
-      <strong>{{ core.name }}</strong>
-      <p>{{ core.description }}</p>
-      {% endfor %}
-    {% endif %}
-  </div>
-
   <div class="d-flex flex-column">
       <a href="#latest-announcements" class="card-link" style="margin-left: 1.25rem">
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
@@ -112,6 +102,11 @@ p .card-black {
   </div>
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="latest-announcements">Latest Announcements</h2>
+    {% if site.data.vnext_announcements %}
+      {% for announcement in site.data.vnext_announcements %}
+      <p>{{ announcement.announcement }}</p>
+      {% endfor %}
+    {% endif %}
     <p>Zowe v2 is NOW LIVE - please visit the <a href="https://www.zowe.org/download.html">Download</a> page for the latest artifacts and documentation.</p>
     <p>The V2 documentation site is available at <a href="https://deploy-preview-1961--zowe-docs-master.netlify.app/">V2 Docs Site Preview</a>.</p>
     <p>The Second Technical Preview is available. The available packages are noted under <a href="#download-availability">Download Availability</a> and on the <a href="https://www.zowe.org/download.html">Download</a> page.</p>
@@ -619,7 +614,7 @@ p .card-black {
     </div>
     <div>
     <button onclick="toggle('question-9')" class="w3-button w3-block w3-left-align">
-    9. When can I share this information with my customers?</button>
+    1. When can I share this information with my customers?</button>
     <div id="question-9" class="w3-container faq-hide">
       <p>&nbsp;&nbsp;&nbsp;Anytime. Zowe is an open source project managed by a transparent, open source community.</p>
     </div>
