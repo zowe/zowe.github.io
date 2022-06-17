@@ -23,13 +23,6 @@ p .card-black {
 }
 </style>
 <script src="https://cdn.jsdelivr.net/remarkable/1.7.1/remarkable.min.js"></script>
-<script type="text/javascript" defer>
-  var md = new Remarkable();
-  var elementsToTransform = document.getElementsByClassName("md-transform");
-  for (var i = 0; i < elementsToTransform.length; i++) {
-    elementsToTransform[i].innerHTML = md.transform(elementsToTransform[i].innerHTML);
-  }
-</script>
 
 <section class="whitebackground">
   <h1 id="download" style="margin-bottom: 1.5rem">Table of Contents</h1>
@@ -1266,3 +1259,11 @@ p .card-black {
       <p>- Run <code>zwe stop --config /path/to/my/zowe.yaml</code> command to stop Zowe.</p>
   </div>
 </section>
+
+<script type="text/javascript" defer>
+  var md = new Remarkable();
+  var elementsToTransform = document.getElementsByClassName("md-transform");
+  for (var i = 0; i < elementsToTransform.length; i++) {
+    elementsToTransform[i].innerHTML = md.transform(elementsToTransform[i].innerHTML);
+  }
+</script>
