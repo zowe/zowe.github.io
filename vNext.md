@@ -108,7 +108,7 @@ p .card-black {
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="latest-announcements">Latest Announcements</h2>
     {% if site.data.vnext_announcements %}
       {% for announcement in site.data.vnext_announcements %}
-      <p><script>md.render({{ announcement.announcement }})</script></p>
+      <p>md.render({{ announcement.announcement }})</p>
       {% endfor %}
     {% endif %}
     <p>Zowe v2 is NOW LIVE - please visit the <a href="https://www.zowe.org/download.html">Download</a> page for the latest artifacts and documentation.</p>
