@@ -155,7 +155,9 @@
               distribution. The PSWI allows the full installation as you are used to from SMP/E build, but it uses the
               new standard for mainframe software distribution.</p>
             <p class="card-text">Download the PSWI based on FMID AZWE002</p>
-            <p>We are in process of regenerating PSWI. When it's done we will provide the link here.</p>
+            <p><a class="btn btn-primary"
+                href="{{ site.pswi_download_uri }}{{ site.data.releases.v2[0].zos_version }}">Zowe PSWI
+                {{ site.data.releases.v2[0].zos_version }}</a></p>
             <div>
               <a href="https://docs.zowe.org/{{ site.data.releases.v2[0].documentation }}/user-guide/install-zowe-pswi" class="card-link">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
