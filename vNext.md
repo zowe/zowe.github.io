@@ -1264,6 +1264,6 @@ p .card-black {
   var md = new Remarkable();
   var elementsToTransform = document.getElementsByClassName("md-transform");
   for (var i = 0; i < elementsToTransform.length; i++) {
-    elementsToTransform[i].innerHTML = md.transform(elementsToTransform[i].innerHTML);
+    elementsToTransform[i].innerHTML = md.render(elementsToTransform[i].innerHTML);
   }
 </script>
