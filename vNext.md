@@ -231,8 +231,8 @@ p .card-black {
 
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="faq">Frequently Asked Questions</h2>
-    <% if site.data.vnext_faq.general %>
-      <% for question in site.data.vnext_faq.general %>
+    {% if site.data.vnext_faq.general %}
+      {% for question in site.data.vnext_faq.general %}
       <div>
         <button onclick="toggle('question-{{ question.number }}')" class="w3-button w3-block w3-left-align">
         {{ question.number }}. {{ question.question }}</button>
@@ -240,8 +240,8 @@ p .card-black {
           {{ question.answer }}
         </div>
       </div>
-      <% endfor %>
-    <% endif %>
+      {% endfor %}
+    {% endif %}
     <div>
     {% if site.data.vnext_faq.consumers %}
       {% for consumer in site.data.vnext_faq.consumers %}
