@@ -2,13 +2,12 @@
   homepage_link: /#apiml-intro
   image: https://www.zowe.org/assets/img/zowe-apiml-image.png
   description: |
-    ## Zowe API Mediation Layer
-    ### Breaking changes
+    **Breaking changes**
 
     - Removed the support for the old path pattern ([#1770](https://github.com/zowe/api-layer/issues/1770)). This includes the changes to the endpoints used in ZAAS client. If your application uses ZAAS client please verify whether the configuration properties use the new path pattern (/gateway/api/v1 instead of /api/v1/gateway)
     - Removed the support for different authentication schemas for different instances of service ([#1051](https://github.com/zowe/api-layer/issues/1051))
 
-    ### Important updates
+    **Important updates**
 
     - Moved to the Material UI from Mineral UI ([#1169](https://github.com/zowe/api-layer/issues/1169))
     - New change password as a part of the API Catalog ([#1531](https://github.com/zowe/api-layer/issues/1531))
@@ -17,8 +16,6 @@
   homepage_link: /#cli-intro
   image: https://www.zowe.org/assets/img/zowe-cli.png
   description: |
-    ## Zowe CLI
-
     Breaking changes for Zowe CLI end users
 
     - *zowe config* no longer manages app settings (Imperative & CLI)
@@ -76,3 +73,96 @@
     - Zowe.schema.json format changed a few times (version 2, version 3): *ConfigSchemas.loadProfileSchemas* → *ConfigSchemas.loadSchema*
 
       Config.set no longer coerces string values to other types unless parseString = true (potential SDK impact - not CLI Plug-in impact)
+
+- name: Zowe Explorer
+  homepage_link: /#zowe-explorer-intro
+  image: /assets/img/zowe-explorer-image.png
+  description: |
+    - Changes to settings keys - automated migration of settings when user opens Zowe Explorer v2: (includes documentation) ([#PR 1450](https://github.com/zowe/vscode-extension-for-zowe/pull/1450))
+    - [Using Global Profile Configuration](https://github.com/zowe/vscode-extension-for-zowe/blob/next/docs/Early%20Access%20-%20Using%20Global%20Profile%20Configuration.md)
+    - [Changes Affecting Extenders](https://github.com/zowe/vscode-extension-for-zowe/blob/next/docs/Early%20Access%20-%20Changes%20Affecting%20Extenders.md)
+
+- name: Systems
+  homepage_link: 
+  image: /assets/img/zowe-explorer-image.png
+  description: |
+    - **CI/CD**
+       - Define new FMID AZWE002 for Zowe v2
+       - Start building 'v2' Zowe
+       - Zowe v2: Review usage of z/OS system resources
+    - **Install and Packaging**
+       - **New Feature:** Introduced a new server command “zwe” to balance between simplification and flexibility on installation and configuration.
+           - Almost all Zowe utility scripts in v1 are consolidated into new “zwe” server command. This new command defines consistent help messages, logging options, and so on.
+               - You can type `zwe -h` to get help messages anytime you feel lost.
+               - Consistent `-log-dir|-l` to allow you to write logs to the target directory.
+           - Provides shell function library to help extensions to achieve common tasks. For example, execute TSO command, operator command, submit job and check job completion, and so on.
+               - Keep away from commands/functions marked as experimental and internal.
+           - Installation / Configuration changes
+               - During installation, no new runtime directory will be created.
+               - A zowe.yaml file can be used to centralize all configuration options. This configuration is compatible with all Zowe use cases (including high availability and containerization).
+               - For almost all Zowe configuration steps, an automation option “zwe init” command is provided.
+               - You can still choose to run all steps one by one.
+               - The `--security-dry-run` mode allows you to generate security commands and pass along to your system admin.
+               - You can run all steps from USS now.
+        - **New Feature:** A Zowe component or extension can use manifest.yaml to define how it interacts with Zowe and other components.
+            - The component or extension must define a manifest.yaml or manifest.json file to describe itself.
+            - The manifest allows you to define:
+               - how to register on Zowe APIML Discovery
+               - how to register under Zowe Desktop
+               - whether it’s Java extension library for APIML, and so on
+            - Components can define their own `configs` in manifest.yaml which shows the user how to customize this component and provides default value if they are not defined.
+               - This option is compatible with Zowe running in high availability mode.
+        - **New Feature:** Introduced new data sets to better organize the contents.
+            - Added `SZWEEXEC` to contain few utility tools.
+            - You can customize your own PARMLIB, APF Authorized LOADLIB and APF-authorized ZIS plug-ins library.
+            - `CUST.JCLIB` is a data set where Zowe will store temporary JCLs.
+        - **New Feature**: Use PARMLIB to configure Zowe.
+            - With traditional PARMLIB concatenation, system programmers can plan their Zowe rollout more like other z/OS products.
+            - Multiple YAML configurations will be concatenated and merged.
+            - JSON Schema is introduced to help on validating user customized configurations.
+            - We are also investigating full Non-USS ways to install/configure Zowe for SMPE users.
+        - **Breaking changes**
+            - You must pass `-ppx` when you unpax the Zowe convenience build to preserve extended file attributes.
+            - All utility scripts, like `zowe-install.sh`, `zowe-install-xmem.sh`, `zowe-install-proc.sh`, `validate-directory-is-accessible.sh`, and so on, are removed and migrated to the new `zwe` server command format.
+            - If you rely on some of the scripts, please find the alternative new “zwe” command or shell library functions.
+            - `ZWESVSTC` is removed and `ZWESLSTC` will replace it to start Zowe.
+            - Must use the `P` command to terminate Zowe instead of using the `C` cancel command.
+            - `instance.env` is deprecated and replaced by `zowe.yml`.
+            - Zowe now allows fine-grained customization of log, workspace, and configuration directories. By default, these directories remain grouped under an `instance` directory (same as Zowe v1).
+            - Environment variables are reorganized to better describe itself. All zowe.yaml configuration entries will be automatically converted to environment variables for easy consumption.
+            - Check with the community what the new alternative variable names are.
+            - During Zowe configuration, redundant `ip` fields will be removed or consolidated in favor of `hostname` or `domains`.
+            - Component or extension manifest is mandatory. End user must use the `zwe components install` command to install the extension.
+
+- name: Application Framework
+  homepage_link: /#app-framework-intro
+  image: /assets/img/zowe-desktop-image.png
+  description: |
+    
+    **New features**
+
+    Summary: Major install & configuration simplication due to various improvements. Reduced overhead and increased performance due to reduction in server count, optimised networking, and 64 bit ZSS
+
+    - Consolidation of Web Explorer Servers: Explorer USS, MVS, and JES no longer have node servers (3 less servers), due to utilizing app-server for hosting.Consolidation of web explorer servers
+    - Jobs & Datasets APIs now disabled by default (2 less servers), and Explorers do not rely on them
+    - Replace referrer security check with 'samesite' cookie option: No longer need to specify external hostname to pass security check
+    - Remove "loopback routing" in app-server: Resolves bugs around use of a loopback IP when running app-server
+    - Can specify advanced app-server & zss config in zowe.yaml: Simplify/Unify app framework configuration by using 1 config file rather than 2 (instance.env, server.json)
+    - Contiguous default ports: App framework ports (formerly 85xx) now follow APIML ports (75xx)
+    - App-server bind to IP_ADDRESS by default: Instead of '0.0.0.0', app-server now uses same IP as rest of Zowe servers
+    - Consistent environment variable names: Standardize environment variable names around ZWED_, and ZWES_ prefixes for consistency. Aliases to previous names
+    - Informative desktop login messages: Desktop login failures now print useful troubleshooting details about server communication issues
+    - ZSS 64 bit: ZSS 64 bit version now exists alongside prior 31-bit version. Better performance and higher memory limit. Now utilizes 64-bit cross-memory to ZIS
+    - New desktop library versions: Angular 6->12, Corejs 2->3, Typescript 2->4
+
+    **Breaking changes**
+
+    Some configuration, such as port and IP values, are different by default but can be reconfigured to old values. But, some app framework extensions may not work in v2 without enhancements.
+
+    - Consolidation of Web Explorer Servers: Bookmarks to USS, MVS, JES explorers will be broken, due to URL change
+    - "loopback routing" disabled: Loopback routing alternative may not be 100% compatible, can be disabled via config parameter node.internalRouting=false
+    - Server.json removed: The now-mandatory zowe.yaml can contain the same content as server.json, within the objects components.app-server and components.zss
+    - Scripts that wrote to *server.json* will be broken, adapt them to write to *zowe.yaml* instead
+    - Incompatible desktop library version upgrades: Angular 12, corejs, and typescript were updated in the Desktop, and non-iframe plugins that depend on them may break
+    - ZSS cookie name change: ZSS cookie name now includes a suffix of either port name or HA/FT ID to distinguish between unrelated ZSS servers
+    - Internationalization, using Angular, has changed from 6 (*TranslationService* etc.) to 12 (*L10TranslationService* etc.). For help in updating your Desktop apps to match new internationalization usage, please reference: [Sample Angular App example](https://github.com/zowe/sample-angular-app/pull/69/files)
