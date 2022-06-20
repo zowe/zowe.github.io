@@ -32,10 +32,6 @@ p .card-black {
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
       Latest Announcements 
       </a>
-      <a href="#general-information" class="card-link">
-      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
-      General Information 
-      </a>
       <a href="#coming-changes" class="card-link">
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
       Coming changes to the functionality
@@ -108,125 +104,29 @@ p .card-black {
       <p class="md-transform">{{ announcement.announcement }}</p>
       {% endfor %}
     {% endif %}
-    <p>Zowe v2 is NOW LIVE - please visit the <a href="https://www.zowe.org/download.html">Download</a> page for the latest artifacts and documentation.</p>
-    <p>The V2 documentation site is available at <a href="https://deploy-preview-1961--zowe-docs-master.netlify.app/">V2 Docs Site Preview</a>.</p>
-    <p>The Second Technical Preview is available. The available packages are noted under <a href="#download-availability">Download Availability</a> and on the <a href="https://www.zowe.org/download.html">Download</a> page.</p>
-    <p>Starting from April 6, the Zowe Onboarding Squad will hold the Office Hours focused on Consumers of Zowe in V2. More information can be found in the <a href="#office-hours">Office Hour</a> section.</p>
-    <p>The final <a href="#conformance-changes">V2 Conformance Criteria</a> are available</p>
-  </div>
-  <div>
-    <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="general-information">General Information</h2>
-    <!-- <p>The preview of the docs-site is available at: <a
-        href="https://docs.zowe.org/v2.0.x/getting-started/overview">Docs-site</a></p>
-    <p>Download the latest release at: <a href="download.html">Download</a></p> -->
-    <p>If you want to learn more about what you can expect compatibility wise, the statement is <a
-      href="download.html#compatibility-extensions">here</a>.</p>
   </div>
 
   <h2 id="coming-changes">Coming changes to the functionality</h2>
-  <div class="card mb-3">
-    <div class="card-body">
-      <div class="d-flex align-items-baseline">
-        <h5 class="text-left"><a href="/#apiml-intro">Zowe API Mediation Layer</a></h5>
-      </div>
-      <div class="row">
-        <div class="col-md-7 col-sm order-last order-sm-first">
-          <h6 class="text-left"><b>Breaking changes</b></h6>
-          <ul>
-            <li>Removed the support for the old path pattern (<a href="https://github.com/zowe/api-layer/issues/1770">#1770</a>). This includes the changes to the endpoints used in ZAAS client. If your application uses ZAAS client please verify whether the configuration properties use the new path pattern (/gateway/api/v1 instead of /api/v1/gateway)</li>
-            <li>Removed the support for different authentication schemas for different instances of service (<a href="https://github.com/zowe/api-layer/issues/1051">#1051</a>)</li>
-          </ul>
-          <h6 class="text-left"><b>Important updates</b></h6>
-          <ul>
-            <li>Moved to the Material UI from Mineral UI (<a href="https://github.com/zowe/api-layer/issues/1169">#1169</a>)</li>
-            <li>New change password as a part of the API Catalog (<a href="https://github.com/zowe/api-layer/issues/1531">#1531</a>)</li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-sm order-first order-sm-last">
-          <img class="image-zowe-use" src="assets/img/zowe-apiml-image.png">
+  {% if site.data.vnext_changes %}
+    {% for squad in site.data.vnext_changes %}
+      <div class="card mb-3">
+        <div class="card-body">
+          <div class="d-flex align-items-baseline">
+            <h5 class="text-left"><a href="/#{{squad.id}}-intro">{{squad.name}}</a></h5>
+          </div>
+          <div class="row">
+            <div class="col-md-7 col-sm order-last order-sm-first md-transform">
+              {{ squad.description}}
+            </div>
+            <div class="col-md-3 col-sm order-first order-sm-last">
+              <img class="image-zowe-use" src="{{ squad.image }}">
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="card mb-3">
-    <div class="card-body">
-      <div class="d-flex align-items-baseline">
-        <h5 class="text-left"><a href="/#cli-intro">Zowe CLI</a></h5>
-      </div>
-      <div class="row">
-        <div class="col-md-7 col-sm order-last order-sm-first">
-          <p class="card-text">Breaking changes for Zowe CLI end users</p>
-          <p>
-          <ul>
-            <li><code>zowe config</code> no longer manages app settings (Imperative & CLI)</li>
-            <li><code>fail-on-error</code> default changed to true for <code>zowe plugins validate</code> (Imperative & CLI)</li>
-            <li>Default Imperative and CLI log level changed from DEBUG to WARN (Imperative & CLI), which potentially changes troubleshooting steps for providing information to support.</li>
-          </ul>
-          </p>
-          <p class="card-text">Breaking changes that could prevent a V1 plug-in (or SDK) from working in V2</p>
-          <ul>
-            <li>CLI package should be removed as a plug-in peer dep (Imperative)</li>
-            <li><code>AbstractRestClient.mDecode</code> defaults to true so any plugin with custom RestClient implementation that adds gzip decompression may break</li>
-            <li><code>The return value for PluginManagementFacility.requirePluginModuleCallback</code> changed. <br />
-              Context:<br />
-              Application (and Plugin) developers requiring a module from a plug-in’s relative path using the
-              requirePluginModuleCallback function no longer need to provide the plug-in name in a separate variable
-              <i>this.pluginNmForUseInCallback = pluginName</i><br />
-              before binding the class <code>this.requirePluginModuleCallback.bind(this)</code>.<br />
-              Instead they can call <code>this.requirePluginModuleCallback(pluginName)</code>.
-              <p>Common usage: ConfigurationLoader.load</p>
-              <p><b>Before:</b><br />
-                 this.pluginNmForUseInCallback = pluginName<br />
-                 ConfigurationLoader.load(null,pkgJsonData,this.requirePluginModuleCallback.bind(this))<br /></p>
-             <p><b>After:</b><br /> pluginConfig = ConfigurationLoader.load(null,pkgJsonData,this.requirePluginModuleCallback(pluginName))</p>
-            </li>          
-          </ul>
-          <p class="card-text">The following changes were marked for deprecation in the zowe-v1-lts release. These changes are also less likely to impact plug-ins.</p>
-          <p>
-          <ul>
-            <li>AbstractRestClient.performRest &#8594; AbstractRestClient.request </li>
-            <li>AbstractSession.HTTP_PROTOCOL &#8594; SessConstants.HTTP_Protocol </li>
-            <li>AbstractSession.HTTPS_PROTOCOL &#8594; SessConstants.HTTPS_Protocol </li>
-            <li>AbstractSession.TYPE_NONE &#8594; SessConstants.AUTH_TYPE_NONE </li>
-            <li>AbstractSession.TYPE_BASIC &#8594; SessConstants.AUTH_TYPE_BASIC </li>
-            <li>AbstractSession.TYPE_BEARER &#8594; SessConstants.AUTH_TYPE_BEARER</li>
-            <li>AbstractSession.TYPE_TOKEN &#8594; SessConstants.AUTH_TYPE_TOKEN </li>
-            <li>ICliLoadProfile.ICliILoadProfile &#8594; ICliLoadProfile.ICliLoadProfile </li>
-            <li>IImperativeErrorParms.suppressReport &#8594; removed </li>
-            <li>IImperativeConfig.pluginBaseCliVersion &#8594; removed </li>
-            <li>CliUtils.promptForInput &#8594; CliUtils.readPrompt </li>
-            <li>CliUtils.promptWithTimeout &#8594; CliUtils.readPrompt </li>
-            <li>(zosmf) IZosfmMessages &#8594; IZosmfMessages  </li>
-            <li>(workflows) listWorkflows &#8594; getWorkflows </li>
-            <li>(workflows) getResourcesQuery &#8594; getResourceQuery </li>
-            <li>(workflows) archiveWorfklowByKey &#8594; archiveWorkflowByKey </li>
-            <li>(uss) createBasicSshSession &#8594; createSshSessCfgFromArgs </li>
-            <li>(uss) createBasicSshSessionFromArguments &#8594; createSshSessCfgFromArgs </li>
-            <li>(zosmf) createBasicZosmfSession &#8594; createSessCfgFromArgs </li>
-            <li>(zosmf) createBasicZosmfSessionFromArguments &#8594; createSessCfgFromArgs </li>
-            <li>(files) bufferToUSSFile &#8594; bufferToUssFile </li>
-            <li>(files) streamToUSSFile &#8594; streamToUssFile</li>
-            <li>(files) fileToUSSFile &#8594; fileToUssFile </li>
-          </ul>
-          </p>
-          <p class="card-text">Breaking changes for Zowe CLI & Imperative plug-in developers (V2-V2 - these changes only impacted early adopters of <code>@next</code> as these are breaking changes made during the technical preview validation phase - thanks to the community for their feedback)</p>
-          <p>
-            <ul>
-            <li><code>tokenType</code> and <code>tokenValue</code> were combined into <code>authToken</code> and we later reverted this change (Imperative & CLI) </li>
-            <li>Options in <code>zowe config</code> group renamed: <code>--user</code> &#8594; <code>--user-config</code> and <code>--global</code> &#8594; <code>--global-config</code>
-            </li>
-            <li>Zowe.schema.json format changed a few times (version 2, version 3): 
-              <code>ConfigSchemas.loadProfileSchemas</code> &#8594; <code>ConfigSchemas.loadSchema</code>
-              <p>Config.set no longer coerces string values to other types unless parseString = true (potential SDK impact - not CLI Plug-in impact)</p></li>
-            </ul>
-          </p>
-        </div>
-        <div class="col-md-3 col-sm order-first order-sm-last">
-          <img class="image-zowe-use" src="assets/img/zowe-cli.png">
-        </div>
-      </div>
-    </div>
-  </div>
+    {% endfor %}
+  {% endif %}
+  
   <div class="card mb-3">
     <div class="card-body">
       <div class="d-flex align-items-baseline">
