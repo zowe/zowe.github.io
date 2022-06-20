@@ -1,5 +1,6 @@
 - squad: 
-    header: [API Mediation Layer](/#apiml-intro)
+    name: API Mediation Layer
+    homepage_link: /#apiml-intro
     image: https://www.zowe.org/assets/img/zowe-apiml-image.png
     description: |
       
@@ -15,7 +16,8 @@
       - New change password as a part of the API Catalog ([#1531](https://github.com/zowe/api-layer/issues/1531))
 
 - squad: 
-    header: [CLI](/#cli-intro)
+    name: CLI
+    homepage_link: /#cli-intro
     image: https://www.zowe.org/assets/img/zowe-cli.png
     description: |
       
