@@ -173,7 +173,8 @@ p .card-black {
           </td>
           <td>
             {% if meeting.materials_link %}
-            <a href="{{ meeting.materials_link }}">Presentation</a>
+              <a href="{{ meeting.materials_link }}">Presentation</a>
+            {% endif %}
           </td>
         </tr>
       {% endfor %}
@@ -201,7 +202,8 @@ p .card-black {
           </td>
           <td>
             {% if meeting.materials_link %}
-            <a href="{{ meeting.materials_link }}">Presentation</a>
+              <a href="{{ meeting.materials_link }}">Presentation</a>
+            {% endif %}
           </td>
         </tr>
       {% endfor %}
