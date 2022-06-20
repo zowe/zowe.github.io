@@ -1,82 +1,78 @@
-- squad: 
-    name: API Mediation Layer
-    homepage_link: /#apiml-intro
-    image: https://www.zowe.org/assets/img/zowe-apiml-image.png
-    description: |
-      
-      ## Zowe API Mediation Layer
-      ### Breaking changes
+- name: API Mediation Layer
+  homepage_link: /#apiml-intro
+  image: https://www.zowe.org/assets/img/zowe-apiml-image.png
+  description: |
+    ## Zowe API Mediation Layer
+    ### Breaking changes
 
-      - Removed the support for the old path pattern ([#1770](https://github.com/zowe/api-layer/issues/1770)). This includes the changes to the endpoints used in ZAAS client. If your application uses ZAAS client please verify whether the configuration properties use the new path pattern (/gateway/api/v1 instead of /api/v1/gateway)
-      - Removed the support for different authentication schemas for different instances of service ([#1051](https://github.com/zowe/api-layer/issues/1051))
+    - Removed the support for the old path pattern ([#1770](https://github.com/zowe/api-layer/issues/1770)). This includes the changes to the endpoints used in ZAAS client. If your application uses ZAAS client please verify whether the configuration properties use the new path pattern (/gateway/api/v1 instead of /api/v1/gateway)
+    - Removed the support for different authentication schemas for different instances of service ([#1051](https://github.com/zowe/api-layer/issues/1051))
 
-      ### Important updates
+    ### Important updates
 
-      - Moved to the Material UI from Mineral UI ([#1169](https://github.com/zowe/api-layer/issues/1169))
-      - New change password as a part of the API Catalog ([#1531](https://github.com/zowe/api-layer/issues/1531))
+    - Moved to the Material UI from Mineral UI ([#1169](https://github.com/zowe/api-layer/issues/1169))
+    - New change password as a part of the API Catalog ([#1531](https://github.com/zowe/api-layer/issues/1531))
 
-- squad: 
-    name: CLI
-    homepage_link: /#cli-intro
-    image: https://www.zowe.org/assets/img/zowe-cli.png
-    description: |
-      
-      ## Zowe CLI
+- name: CLI
+  homepage_link: /#cli-intro
+  image: https://www.zowe.org/assets/img/zowe-cli.png
+  description: |
+    ## Zowe CLI
 
-      Breaking changes for Zowe CLI end users
+    Breaking changes for Zowe CLI end users
 
-      - *zowe config* no longer manages app settings (Imperative & CLI)
-      - *fail-on-error* default changed to true for *zowe plugins validate* (Imperative & CLI)
-      - Default Imperative and CLI log level changed from DEBUG to WARN (Imperative & CLI), which potentially changes troubleshooting steps for providing information to support.
+    - *zowe config* no longer manages app settings (Imperative & CLI)
+    - *fail-on-error* default changed to true for *zowe plugins validate* (Imperative & CLI)
+    - Default Imperative and CLI log level changed from DEBUG to WARN (Imperative & CLI), which potentially changes troubleshooting steps for providing information to support.
 
-      Breaking changes that could prevent a V1 plug-in (or SDK) from working in V2
+    Breaking changes that could prevent a V1 plug-in (or SDK) from working in V2
 
-      - CLI package should be removed as a plug-in peer dep (Imperative)
-      - *AbstractRestClient.mDecode* defaults to true so any plugin with custom RestClient implementation that adds gzip decompression may break
-      - *The return value for PluginManagementFacility.requirePluginModuleCallback* changed. 
-          Context:
-          Application (and Plugin) developers requiring a module from a plug-in’s relative path using the requirePluginModuleCallback function no longer need to provide the plug-in name in a separate variable this.pluginNmForUseInCallback = pluginName
-          before binding the class *this.requirePluginModuleCallback.bind(this)*.
-          Instead they can call *this.requirePluginModuleCallback(pluginName)*.
-          Common usage: ConfigurationLoader.load
+    - CLI package should be removed as a plug-in peer dep (Imperative)
+    - *AbstractRestClient.mDecode* defaults to true so any plugin with custom RestClient implementation that adds gzip decompression may break
+    - *The return value for PluginManagementFacility.requirePluginModuleCallback* changed. 
+        Context:
+        Application (and Plugin) developers requiring a module from a plug-in’s relative path using the requirePluginModuleCallback function no longer need to provide the plug-in name in a separate variable this.pluginNmForUseInCallback = pluginName
+        before binding the class *this.requirePluginModuleCallback.bind(this)*.
+        Instead they can call *this.requirePluginModuleCallback(pluginName)*.
+        Common usage: ConfigurationLoader.load
 
-          **Before:**
-          this.pluginNmForUseInCallback = pluginName
-          ConfigurationLoader.load(null,pkgJsonData,this.requirePluginModuleCallback.bind(this))
+        **Before:**
+        this.pluginNmForUseInCallback = pluginName
+        ConfigurationLoader.load(null,pkgJsonData,this.requirePluginModuleCallback.bind(this))
 
-          **After:**
-          pluginConfig = ConfigurationLoader.load(null,pkgJsonData,this.requirePluginModuleCallback(pluginName))
+        **After:**
+        pluginConfig = ConfigurationLoader.load(null,pkgJsonData,this.requirePluginModuleCallback(pluginName))
 
-      The following changes were marked for deprecation in the zowe-v1-lts release. These changes are also less likely to impact plug-ins.
+    The following changes were marked for deprecation in the zowe-v1-lts release. These changes are also less likely to impact plug-ins.
 
-      - AbstractRestClient.performRest → AbstractRestClient.request 
-      - AbstractSession.HTTP_PROTOCOL → SessConstants.HTTP_Protocol 
-      - AbstractSession.HTTPS_PROTOCOL → SessConstants.HTTPS_Protocol 
-      - AbstractSession.TYPE_NONE → SessConstants.AUTH_TYPE_NONE 
-      - AbstractSession.TYPE_BASIC → SessConstants.AUTH_TYPE_BASIC 
-      - AbstractSession.TYPE_BEARER → SessConstants.AUTH_TYPE_BEARER
-      - AbstractSession.TYPE_TOKEN → SessConstants.AUTH_TYPE_TOKEN 
-      - ICliLoadProfile.ICliILoadProfile → ICliLoadProfile.ICliLoadProfile 
-      - IImperativeErrorParms.suppressReport → removed 
-      - IImperativeConfig.pluginBaseCliVersion → removed 
-      - CliUtils.promptForInput → CliUtils.readPrompt 
-      - CliUtils.promptWithTimeout → CliUtils.readPrompt 
-      - (zosmf) IZosfmMessages → IZosmfMessages  
-      - (workflows) listWorkflows → getWorkflows 
-      - (workflows) getResourcesQuery → getResourceQuery 
-      - (workflows) archiveWorfklowByKey → archiveWorkflowByKey 
-      - (uss) createBasicSshSession → createSshSessCfgFromArgs 
-      - (uss) createBasicSshSessionFromArguments → createSshSessCfgFromArgs 
-      - (zosmf) createBasicZosmfSession → createSessCfgFromArgs 
-      - (zosmf) createBasicZosmfSessionFromArguments → createSessCfgFromArgs 
-      - (files) bufferToUSSFile → bufferToUssFile 
-      - (files) streamToUSSFile → streamToUssFile
-      - (files) fileToUSSFile → fileToUssFile 
+    - AbstractRestClient.performRest → AbstractRestClient.request 
+    - AbstractSession.HTTP_PROTOCOL → SessConstants.HTTP_Protocol 
+    - AbstractSession.HTTPS_PROTOCOL → SessConstants.HTTPS_Protocol 
+    - AbstractSession.TYPE_NONE → SessConstants.AUTH_TYPE_NONE 
+    - AbstractSession.TYPE_BASIC → SessConstants.AUTH_TYPE_BASIC 
+    - AbstractSession.TYPE_BEARER → SessConstants.AUTH_TYPE_BEARER
+    - AbstractSession.TYPE_TOKEN → SessConstants.AUTH_TYPE_TOKEN 
+    - ICliLoadProfile.ICliILoadProfile → ICliLoadProfile.ICliLoadProfile 
+    - IImperativeErrorParms.suppressReport → removed 
+    - IImperativeConfig.pluginBaseCliVersion → removed 
+    - CliUtils.promptForInput → CliUtils.readPrompt 
+    - CliUtils.promptWithTimeout → CliUtils.readPrompt 
+    - (zosmf) IZosfmMessages → IZosmfMessages  
+    - (workflows) listWorkflows → getWorkflows 
+    - (workflows) getResourcesQuery → getResourceQuery 
+    - (workflows) archiveWorfklowByKey → archiveWorkflowByKey 
+    - (uss) createBasicSshSession → createSshSessCfgFromArgs 
+    - (uss) createBasicSshSessionFromArguments → createSshSessCfgFromArgs 
+    - (zosmf) createBasicZosmfSession → createSessCfgFromArgs 
+    - (zosmf) createBasicZosmfSessionFromArguments → createSessCfgFromArgs 
+    - (files) bufferToUSSFile → bufferToUssFile 
+    - (files) streamToUSSFile → streamToUssFile
+    - (files) fileToUSSFile → fileToUssFile 
 
-      Breaking changes for Zowe CLI & Imperative plug-in developers (V2-V2 - these changes only impacted early adopters of @next as these are breaking changes made during the technical preview validation phase - thanks to the community for their feedback)
+    Breaking changes for Zowe CLI & Imperative plug-in developers (V2-V2 - these changes only impacted early adopters of @next as these are breaking changes made during the technical preview validation phase - thanks to the community for their feedback)
 
-      - *tokenType* and *tokenValue* were combined into *authToken* and we later reverted this change (Imperative & CLI) 
-      - Options in *zowe config* group renamed: *--user* → *--user-config* and *--global* → *--global-config*
-      - Zowe.schema.json format changed a few times (version 2, version 3): *ConfigSchemas.loadProfileSchemas* → *ConfigSchemas.loadSchema*
+    - *tokenType* and *tokenValue* were combined into *authToken* and we later reverted this change (Imperative & CLI) 
+    - Options in *zowe config* group renamed: *--user* → *--user-config* and *--global* → *--global-config*
+    - Zowe.schema.json format changed a few times (version 2, version 3): *ConfigSchemas.loadProfileSchemas* → *ConfigSchemas.loadSchema*
 
-        Config.set no longer coerces string values to other types unless parseString = true (potential SDK impact - not CLI Plug-in impact)
+      Config.set no longer coerces string values to other types unless parseString = true (potential SDK impact - not CLI Plug-in impact)
