@@ -1,6 +1,6 @@
 - squad: 
     name: API Mediation Layer
-    id: apiml
+    homepage_link: /#apiml-intro
     image: https://www.zowe.org/assets/img/zowe-apiml-image.png
     description: |
       
@@ -17,7 +17,7 @@
 
 - squad: 
     name: CLI
-    id: cli
+    homepage_link: /#cli-intro
     image: https://www.zowe.org/assets/img/zowe-cli.png
     description: |
       
