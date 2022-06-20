@@ -422,8 +422,8 @@ p .card-black {
       <td>04/27/2022 12:00PM - 12:30PM ET</td>
       <td>Zowe Web UI for Consumers</td>
       <td><a href="https://zoom.us/j/94312528890">https://zoom.us/j/94312528890</a></td>
-      <td></td>
-      <td></td>
+      <td><a href="https://zoom.us/rec/share/XP8u1Nh3b7jUf8yJ-MTaYYM8K12kHVmVaGJV_-x7aBaYYKD8V3FXXFTOrT_8FDrJ.v0xDj7ti0OCXWZ83?startTime=1651074511000">Zoom recording</a></td>
+      <td><a href="https://ibm.box.com/s/3l68kyofmvqacrhun64lwzzdt6z8c594">Presentation</a></td>
     </tr>
     <tr>
       <td>04/20/2022 12:00PM - 12:30PM ET</td>
