@@ -133,42 +133,18 @@ p .card-black {
 
   <p>The final version of V2 Conformance Criteria is published here. Each of the section links to th PDF for the specific criteria.</p>
 
-  <div class="card mb-3">
-    <div class="card-body">
-      <div class="d-flex align-items-baseline">
-        <h5 class="text-left">Zowe API Mediation Layer</h5>
+  {% if site.data.vnext_conformance_criteria %}
+    {% for conformance in site.data.vnext_conformance_criteria %}
+      <div class="card mb-3">
+        <div class="card-body">
+          <div class="d-flex align-items-baseline">
+            <h5 class="text-left">{{ conformance.name }}</h5>
+          </div>
+          <div class="md-transform">{{ conformance.description }}</div>
+        </div>
       </div>
-      The API Mediation Layer related conformance Criteria are <a href="https://ibm.box.com/s/rdb7zfkcxzzbiro4idat9o7xd0qig3mt">here</a>
-    </div>
-  </div>
-
-  <div class="card mb-3">
-    <div class="card-body">
-      <div class="d-flex align-items-baseline">
-        <h5 class="text-left">Zowe CLI</h5>
-      </div>
-      The CLI related conformance Criteria are <a href="https://ibm.box.com/s/st4jkk6xmughrg8ngcefvgt7fczicrk7">here</a>
-    </div>
-  </div>
-
-  <div class="card mb-3">
-    <div class="card-body">
-      <div class="d-flex align-items-baseline">
-        <h5 class="text-left">Zowe Explorer</h5>
-      </div>        
-      The Explorer related conformance Criteria are <a href="https://ibm.box.com/s/euros5vvutyvk6ixih7vixwhxvuuog4n">here</a>
-    </div>
-  </div>
-
-  <div class="card mb-3">
-    <div class="card-body">
-      <div class="d-flex align-items-baseline">
-        <h5 class="text-left">Zowe Application Framework</h5>
-      </div>
-      The Application Framework related conformance Criteria are <a href="https://ibm.box.com/s/1om2ruoi8g2c8cjsh976q9cpg2vfbgl3">here</a>
-    </div>
-  </div>
-
+    {% endfor %}
+  {% endif %}
 </section>
 
 <section class="whitebackground">
