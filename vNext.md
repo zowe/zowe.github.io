@@ -112,7 +112,7 @@ p .card-black {
       <div class="card mb-3">
         <div class="card-body">
           <div class="d-flex align-items-baseline">
-            <h5 class="text-left"><a href={{squad.homepage_link}}>{{squad.name}}</a></h5>
+            <h5 class="text-left md-transform">{{ squad.header }}</h5>
           </div>
           <div class="row">
             <div class="col-md-7 col-sm order-last order-sm-first md-transform">
