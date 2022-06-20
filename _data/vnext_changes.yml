@@ -2,6 +2,7 @@
   homepage_link: /#apiml-intro
   image: https://www.zowe.org/assets/img/zowe-apiml-image.png
   description: |
+  
     **Breaking changes**
 
     - Removed the support for the old path pattern ([#1770](https://github.com/zowe/api-layer/issues/1770)). This includes the changes to the endpoints used in ZAAS client. If your application uses ZAAS client please verify whether the configuration properties use the new path pattern (/gateway/api/v1 instead of /api/v1/gateway)
@@ -16,6 +17,7 @@
   homepage_link: /#cli-intro
   image: https://www.zowe.org/assets/img/zowe-cli.png
   description: |
+
     Breaking changes for Zowe CLI end users
 
     - *zowe config* no longer manages app settings (Imperative & CLI)
@@ -78,6 +80,7 @@
   homepage_link: /#zowe-explorer-intro
   image: /assets/img/zowe-explorer-image.png
   description: |
+
     - Changes to settings keys - automated migration of settings when user opens Zowe Explorer v2: (includes documentation) ([#PR 1450](https://github.com/zowe/vscode-extension-for-zowe/pull/1450))
     - [Using Global Profile Configuration](https://github.com/zowe/vscode-extension-for-zowe/blob/next/docs/Early%20Access%20-%20Using%20Global%20Profile%20Configuration.md)
     - [Changes Affecting Extenders](https://github.com/zowe/vscode-extension-for-zowe/blob/next/docs/Early%20Access%20-%20Changes%20Affecting%20Extenders.md)
@@ -86,6 +89,7 @@
   homepage_link: 
   image: /assets/img/zowe-explorer-image.png
   description: |
+
     - **CI/CD**
        - Define new FMID AZWE002 for Zowe v2
        - Start building 'v2' Zowe
