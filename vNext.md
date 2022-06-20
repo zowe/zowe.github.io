@@ -228,150 +228,17 @@ p .card-black {
 
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="faq">Frequently Asked Questions</h2>
-    <div>
-    <button onclick="toggle('question-1')" class="w3-button w3-block w3-left-align">
-    1. What is the “official” date of Zowe V2 LTS?</button>
-    <div id="question-1" class="w3-container faq-hide">
-      <p>&nbsp;&nbsp;&nbsp;The official date is TBD, the target is April 25, 2022; look for the official announcement at
-      <a href="/">Zowe.org</a> landing page announcement banner.</p> We are sorry for the delay and any inconvenience coming out of it. 
-    </div>
-    </div>
-    <div>
-    <button onclick="toggle('question-2')" class="w3-button w3-block w3-left-align">
-    1. Where can I find the current (V1) and new (V2) LTS conformance criteria?</button>
-    <div id="question-2" class="w3-container faq-hide">
-      <p>&nbsp;&nbsp;&nbsp;The Zowe Squads have prepared XLS spreadsheets with conformance criteria for all Zowe
-      extensions including: CLI, APIs, App Framework, and Explorerfor VS Code. The spreadsheets clearly show the prior /
-      V1 criteria alongside the new / V2 criteria. Please be aware, there are additions, deletions, and CHANGES to the
-      criteria. In some cases the change is simply that a BEST PRACTICE has been deemed REQUIRED. Use the light-GREEN
-      highlights to easily identify the changes. See the <a href="#conformance-changes">Changes to the Conformance Criteria</a> section at <a href="/vNext">Zowe.org/vNext.</a></p>
-    </div>
-    </div>
-    <div>
-    <button onclick="toggle('question-3')" class="w3-button w3-block w3-left-align">
-    1. Will my V1 conformant extension automatically work with V2?</button>
-    <div id="question-3" class="w3-container faq-hide">
-      <p>&nbsp;&nbsp;&nbsp;NO. We recommend testing all V1 conformant extensions. See the <a href="#coming-changes">Coming changes (For Users)</a> section at
-      <a href="/vNext">Zowe.org/vNext</a>.</p>
-    </div>
-    </div>
-    <div>
-    <button onclick="toggle('question-4')" class="w3-button w3-block w3-left-align">
-    1. What if my extension does not work with Zowe V2?</button>
-    <div id="question-4" class="w3-container faq-hide">
-      <p>&nbsp;&nbsp;&nbsp;See the recommendations in the <a href="#coming-changes">Coming changes</a> section at <a href="/vNext">Zowe.org/vNext</a>.</p>
-    </div>
-    </div>
-    <div>
-    <button onclick="toggle('question-5')" class="w3-button w3-block w3-left-align">
-    1. How can I test my current plug-in and/or extension with Zowe V2?</button>
-    <div id="question-5" class="w3-container faq-hide">
-      <p>&nbsp;&nbsp;&nbsp;Obtain the pre-GA Zowe V2 release; for details see the pre-GA <a href="#download-availability">Download Availability</a> section at
-      <a href="/vNext">Zowe.org/vNext</a>.</p>
-    </div>
-    </div>
-    <div>
-    <button onclick="toggle('question-6')" class="w3-button w3-block w3-left-align">
-    1. Do I need to reapply for conformance?</button>
-    <div id="question-6" class="w3-container faq-hide">
-      <p>&nbsp;&nbsp;&nbsp;YES, we expect the Zowe V2 Conformance program to be available in early Feb 2022. We will
-      announce when extenders can pre-apply in the <a href="#latest-announcements">LATEST ANNOUNCEMENTS</a> section at <a href="vNext.html">Zowe.org/vNext</a>.</p>
-    </div>
-    </div>
-    <div>
-    <button onclick="toggle('question-7')" class="w3-button w3-block w3-left-align">
-    1. What happens to my V1 conformance badge?</button>
-    <div id="question-7" class="w3-container faq-hide">
-      <p>All Zowe V1 conformance badges will remain at the Open Mainframe Project Interactive
-      Landscape; we recommend documenting a Zowe compatibility matrix to ensure clients are aware of any/all
-      compatibility issues between your V1 conformant apps and Zowe V2.</p>
-    </div>
-    </div>
-    <div>
-    <button onclick="toggle('question-8')" class="w3-button w3-block w3-left-align">
-    1. Will I be able to pre-apply for Zowe V2 conformance?</button>
-    <div id="question-8" class="w3-container faq-hide">
-      <p>Yes, We will announce when extenders can pre-apply in the <a href="#latest-announcements">LATEST ANNOUNCEMENTS</a> section at <a
-        href="vNext.html">Zowe.org/vNext</a>.</p>
-    </div>
-    </div>
-    <div>
-    <button onclick="toggle('question-9')" class="w3-button w3-block w3-left-align">
-    1. When can I share this information with my customers?</button>
-    <div id="question-9" class="w3-container faq-hide">
-      <p>&nbsp;&nbsp;&nbsp;Anytime. Zowe is an open source project managed by a transparent, open source community.</p>
-    </div>
-    </div>
-    <div>
-    <button onclick="toggle('question-10')" class="w3-button w3-block w3-left-align">
-    1.   How long will V1 LTS be supported?</button>
-    <div id="question-10" class="w3-container faq-hide">
-      <p>&nbsp;&nbsp;&nbsp;The V1 LTS Maintenance timeline runs through July 2024. See RELEASE TIMELINE at <a
-        href="download.html">Zowe.org/download</a>.</p>
-    </div>
-    </div>
-    <div>
-    <button onclick="toggle('question-11')" class="w3-button w3-block w3-left-align">
-    1.   What if my extension does not qualify for V2 conformance?</button>
-    <div id="question-11" class="w3-container faq-hide">
-      <p>&nbsp;&nbsp;&nbsp;You have several options:</p>
-      <ol>
-      <li>Notify your customer base and advise them to remain on Zowe V1 LTS until
-      you are able to make the necessary modifications to satisfy all of the new requirements (Note: extenders can
-      choose NOT to be “day-1” V2 conformant )</li>
-      <li>Notify your customer base of V2 compatibility concerns (or lack thereof)
-      and advise accordingly (e.g. extension operates but will not leverage V2 features etc.)</li>
-      <li>Replace your extension with a V2 conformant extension and indicate it as
-      such</li>
-      </ol>
-    </div>
-    </div>
-    <div>
-    <button onclick="toggle('question-12')" class="w3-button w3-block w3-left-align">
-    1.   Where can I go for more information or get interactive help? (my question is not listed here)</button>
-    <div id="question-12" class="w3-container faq-hide">
-      <p>&nbsp;&nbsp;&nbsp;You have several options:</p>
-      <ol>
-      <li>Attend one (or more) of the (7) bi-weekly Zowe V2 OFFICE HOURS meetings
-      offered on Wednesdays at 12pm ET. Kickoff is scheduled for 12/8. Following (6) meetings are scheduled for: 1/05,
-      1/12, 1/19, 1/26, 2/2, 2/23 There are 2 more optional meetings plannes for 2/9, 2/16</li> 
-      <li>Interact with a Zowe Community Member via SLACK. Click on the COMMUNITY tab
-      at Zowe.org, navigate to the SLACK box and click #zowe-onboarding</li>
-      <li>Join a Zowe Squad call. Click on the COMMUNITY tab at zowe.org, navigate
-      to the JOIN A SQUAD CALL section on this page. Click on one of the calendar entries for Zoom meeting links.</li>
-      </ol>
-    </div>
-    </div>
-    <div>
-    <button onclick="toggle('question-13')" class="w3-button w3-block w3-left-align">
-    1.   Will the Zowe V2 Office Hours be recorded? (How do I find the recording?)</button>
-    <div id="question-13" class="w3-container faq-hide">
-      <p>&nbsp;&nbsp;&nbsp;Yes. Recordings can be provided on request. Click on the COMMUNITY tab at <a href="https://zowe.org">Zowe.org</a>, navigate to the SLACK box
-      and click #zowe-onboarding and request the recording.</p>
-    </div>
-    </div>
-    <div>
-    <button onclick="toggle('question-14')" class="w3-button w3-block w3-left-align">
-    1.   Will there be a means to migrate (or convert?) existing / old-style profiles to the V2 team config for Zowe CLI? Will it handle profiles that are secured by SCS?</button>
-    <div id="question-14" class="w3-container faq-hide">
-      <p>&nbsp;&nbsp;&nbsp;Yes, we plan to introduce a "zowe config convert-profiles" command, which will be available in the v2 release.</p>
-    </div>
-    </div>
-    <div>
-    <button onclick="toggle('question-15')" class="w3-button w3-block w3-left-align">
-    1.   Will (CLI)Daemon mode be integrated seamlessly into v2 and enabled by default?</button>
-    <div id="question-15" class="w3-container faq-hide">
-      <p>&nbsp;&nbsp;&nbsp;This work is still in progress-we are working on a "zowe daemon enable" command to make the daemon installation process as seamless as possible. Daemon mode will be disabled by default, the command must be run to enable it.</p>
-    </div>
-    </div>
-    <div>
-    <button onclick="toggle('question-16')" class="w3-button w3-block w3-left-align">
-    1.   The V1 version of Zowe Explorer offers a text input area, where a user can enter some of the data / attributes (host, port, etc.) necessary to create the old-style profiles.  With Team Config what options are available for users to edit the config file?  Is it manual? Is there a UI?</button>
-    <div id="question-16" class="w3-container faq-hide">
-      <p>&nbsp;&nbsp;&nbsp;The recommended approach for editing the config file is to launch it in VS Code from Zowe Explorer and make modifications there. The designated user responsible for creating and maintaining the config (we recommend a team lead or Administrator) will be able to leverage the built-in “intellisense” when editing the file. <i>Note: <b>Team Config fundamentally changes the paradigm on profile creation & management.</b> Prior to Team Config, <b>all users</b> were required to understand, create, test, trouble-shoot, and manage their own profiles. Team Config was designed to scale all of these tasks back, remove the burden from individual users and centralize it. Once the config is distributed most users should not need to make any significant edits.</i></p>
-      <p>&nbsp;&nbsp;&nbsp;Join the discussion on this topic here: <a href="https://github.com/zowe/vscode-extension-for-zowe/discussions/1535">https://github.com/zowe/vscode-extension-for-zowe/discussions/1535</a></p>
-    </div>
-    </div>
+    <% if site.data.vnext_faq.general %>
+      <% for question in site.data.vnext_faq.general %>
+      <div>
+        <button onclick="toggle('question-{{ question.number }}')" class="w3-button w3-block w3-left-align">
+        {{ question.number }}. {{ question.question }}</button>
+        <div id="question-{{ question.number }}" class="w3-container faq-hide md-transform">
+          {{ question.answer }}
+        </div>
+      </div>
+      <% endfor %>
+    <% endif %>
     <div>
     <button id="questions-cli-hours" onclick="toggle('questions-cli')" class="w3-button w3-block w3-left-align">
     Zowe CLI Office Hours Frequently Asked Questions</button>

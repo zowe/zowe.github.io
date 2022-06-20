@@ -1,0 +1,133 @@
+general:
+  - number: 1
+    question: What is the “official” date of Zowe V2 LTS? 
+    answer: |
+      
+      The official date is TBD, the target is April 25, 2022; look for the official announcement at [Zowe.org](/) landing page announcement banner.
+      
+      We are sorry for the delay and any inconvenience coming out of it. 
+  - number: 2
+    question: Where can I find the current (V1) and new (V2) LTS conformance criteria?
+    answer: |
+      
+      The Zowe Squads have prepared XLS spreadsheets with conformance criteria for all Zowe
+      extensions including: CLI, APIs, App Framework, and Explorerfor VS Code. The spreadsheets clearly show the prior /
+      V1 criteria alongside the new / V2 criteria. Please be aware, there are additions, deletions, and CHANGES to the
+      criteria. In some cases the change is simply that a BEST PRACTICE has been deemed REQUIRED. Use the light-GREEN
+      highlights to easily identify the changes. See the [Changes to the Conformance Criteria](#conformance-changes) section at [Zowe.org/vNext](/vNext).
+  - number: 3
+    question: Will my V1 conformant extension automatically work with V2?
+    answer: |
+      
+      NO. We recommend testing all V1 conformant extensions. See the [Coming changes (For Users)](#coming-changes) section at
+      [Zowe.org/vNext](/vNext).
+
+  - number: 4
+    question: What if my extension does not work with Zowe V2?
+    answer: |
+      
+      See the recommendations in the [Coming changes](#coming-changes) section at [Zowe.org/vNext](/vNext).
+
+  - number: 5
+    question: How can I test my current plug-in and/or extension with Zowe V2?
+    answer: |
+      
+      Obtain the pre-GA Zowe V2 release; for details see the pre-GA [Download Availability](#download-availability) section at
+      [Zowe.org/vNext](/vNext).
+  
+  - number: 6
+    question: Do I need to reapply for conformance?
+    answer: |
+      
+      YES, we expect the Zowe V2 Conformance program to be available in early Feb 2022. We will
+      announce when extenders can pre-apply in the [LATEST ANNOUNCEMENTS](#latest-announcements) section at [Zowe.org/vNext](/vNext).
+
+  - number: 7
+    question: What happens to my V1 conformance badge?
+    answer: |
+      
+      All Zowe V1 conformance badges will remain at the Open Mainframe Project Interactive
+      Landscape; we recommend documenting a Zowe compatibility matrix to ensure clients are aware of any/all
+      compatibility issues between your V1 conformant apps and Zowe V2.
+
+  - number: 8
+    question: Will I be able to pre-apply for Zowe V2 conformance?
+    answer: |
+      
+      Yes, We will announce when extenders can pre-apply in the [LATEST ANNOUNCEMENTS](#latest-announcements) section at 
+        [Zowe.org/vNext](/vNext).
+
+  - number: 9
+    question: When can I share this information with my customers?
+    answer: |
+      
+      Anytime. Zowe is an open source project managed by a transparent, open source community.
+
+  - number: 10
+    question: How long will V1 LTS be supported?
+    answer: |
+      
+      The V1 LTS Maintenance timeline runs through July 2024. See RELEASE TIMELINE at [Zowe.org/download](download.html).
+
+  - number: 11
+    question: What if my extension does not qualify for V2 conformance?
+    answer: |
+      
+      You have several options:
+
+      - Notify your customer base and advise them to remain on Zowe V1 LTS until
+      you are able to make the necessary modifications to satisfy all of the new requirements (Note: extenders can
+      choose NOT to be “day-1” V2 conformant )
+      - Notify your customer base of V2 compatibility concerns (or lack thereof)
+      and advise accordingly (e.g. extension operates but will not leverage V2 features etc.)
+      - Replace your extension with a V2 conformant extension and indicate it as
+      such
+
+  - number: 12
+    question: Where can I go for more information or get interactive help? (my question is not listed here)
+    answer: |
+      
+      You have several options:
+
+      - Attend one (or more) of the (7) bi-weekly Zowe V2 OFFICE HOURS meetings
+      offered on Wednesdays at 12pm ET. Kickoff is scheduled for 12/8. Following (6) meetings are scheduled for: 1/05,
+      1/12, 1/19, 1/26, 2/2, 2/23 There are 2 more optional meetings plannes for 2/9, 2/16
+      - Interact with a Zowe Community Member via SLACK. Click on the COMMUNITY tab
+      at Zowe.org, navigate to the SLACK box and click #zowe-onboarding
+      - Join a Zowe Squad call. Click on the COMMUNITY tab at zowe.org, navigate
+      to the JOIN A SQUAD CALL section on this page. Click on one of the calendar entries for Zoom meeting links.
+
+  - number: 13
+    question: Will the Zowe V2 Office Hours be recorded? (How do I find the recording?)
+    answer: |
+      
+      Yes. Recordings can be provided on request. Click on the COMMUNITY tab at [Zowe.org](https://zowe.org), navigate to the SLACK box
+      and click #zowe-onboarding and request the recording.
+
+  - number: 14
+    question: Will there be a means to migrate (or convert?) existing / old-style profiles to the V2 team config for Zowe CLI? Will it handle profiles that are secured by SCS?
+    answer: |
+      
+      Yes, we plan to introduce a "zowe config convert-profiles" command, which will be available in the v2 release.
+
+  - number: 15
+    question: Will (CLI)Daemon mode be integrated seamlessly into v2 and enabled by default?
+    answer: |
+      
+      This work is still in progress-we are working on a "zowe daemon enable" command to make the daemon installation process as seamless as possible. Daemon mode will be disabled by default, the command must be run to enable it.
+
+  - number: 16
+    question: The V1 version of Zowe Explorer offers a text input area, where a user can enter some of the data / attributes (host, port, etc.) necessary to create the old-style profiles.  With Team Config what options are available for users to edit the config file?  Is it manual? Is there a UI?
+    answer: |
+      
+      The recommended approach for editing the config file is to launch it in VS Code from Zowe Explorer and make modifications there. The designated user responsible for creating and maintaining the config (we recommend a team lead or Administrator) will be able to leverage the built-in “intellisense” when editing the file. *Note: **Team Config fundamentally changes the paradigm on profile creation & management.** Prior to Team Config, **all users** were required to understand, create, test, trouble-shoot, and manage their own profiles. Team Config was designed to scale all of these tasks back, remove the burden from individual users and centralize it. Once the config is distributed most users should not need to make any significant edits.*
+
+      Join the discussion on this topic here: [https://github.com/zowe/vscode-extension-for-zowe/discussions/1535](https://github.com/zowe/vscode-extension-for-zowe/discussions/1535)
+
+
+
+extenders:
+  - name: 
+    id: 
+
+consumers:
