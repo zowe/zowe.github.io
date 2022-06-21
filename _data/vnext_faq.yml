@@ -273,7 +273,24 @@ extenders:
          answer: |
            
            Zowe Explorer users may not know. In the CLI, if a V2 profile is found, and a V1 profiles command is issued, an error similar to the following will be displayed:
-         
+
+           -> zowe profiles list zosmf.  
+           An error occurred trying to list profiles.  
+           'Profile IO Error: A Zowe V1 profile operation was attempted with a Zowe V2 configuration in use.'
+
+           'Warning: The command 'profiles list' is deprecated.'  
+           "Recommended replacement: The 'config list' command"
+
+           'If only V1 profiles exist, the command will work, but a deprecation warning will be displayed:'
+
+           -> zowe profiles list zosmf  
+           sys1_zosmf  
+           sys2_zosmf (default)  
+           sys3_zosmf
+
+           "Warning: The command 'profiles list' is deprecated."  
+           "Recommended replacement: The 'config list' command"
+
        - number: 9
          question: Is there a profile conversion utility available?
          answer: |
