@@ -32,8 +32,7 @@ general:
     question: How can I test my current plug-in and/or extension with Zowe V2?
     answer: |
       
-      Obtain the pre-GA Zowe V2 release; for details see the pre-GA [Download Availability](#download-availability) section at
-      [Zowe.org/vNext](/vNext).
+      Obtain the Zowe V2 LTS release
   
   - number: 6
     question: Do I need to reapply for conformance?
@@ -412,7 +411,7 @@ extenders:
          question: When will the pre-GA V2 Zowe package be available?
          answer: |
            
-           It is available now, see: [#download-availability](#download-availability)
+           The LTS release is available now.
 
        - number: 8
          question: How do we provide feedback or communicate issues? Where can we ask questions? 
@@ -444,8 +443,84 @@ extenders:
              - By knowing the Zowe version, the lifecycle scripts can implement logic to source v1 or v2 dedicated scripts to avoid handling fallbacks in the same script. This could be a cleaner way to avoid complicated compatibility version checks, and it could be easier in the future should you decide to drop Zowe v1 support.
            6. We are planning to release a comprehensive “migration guidance” section on docs.zowe.org to help Extenders facing these challenges.  Your feedback on this section is greatly appreciated.
 
-
-
-
 consumers:
+   - name: API ML for Users Frequently Asked Questions
+     id: questions-apiml-users
+     questions: 
+       - number: 1
+         question: With respect to the use of keyrings / certificates and certificate authentication - what happens if a personal certificate is not supplied / not used?  
+         answer: |
+           
+           The API-ML uses the first certificate found in the keyring if the details about the certificate aren't supplied
+
+       - number: 2
+         question: Is there a quick and easy way for a User to see all of the registered UI endpoints to determine if they’ve been successfully registered?
+         answer: |
+           
+           "Not really, if properly onboarded, they would be mentioned in the Swagger DOC but you’d have to first locate the appropriate tile (via the API catalog); There is a feature/request in the backlog that may satisfy this request - if you would like this prioritized please review and upvote this github issue: [https://github.com/zowe/api-layer/issues/647](https://github.com/zowe/api-layer/issues/647) and possibly [https://github.com/zowe/api-layer/issues/1129](https://github.com/zowe/api-layer/issues/1129)"
+
+       - number: 3
+         question: Is there a way to determine when the API-ML is entirely available vs. just some of the services?  (i.e. we are looking for a WTO message to write automation rules)
+         answer: |
+           
+           'There are several ways to confirm API-ML is ”up and running”:'
+
+           - Manually via the catalog, all services will show “green”
+           - And endpoint is available for API access that can be leveraged for automation use-cases
+           - 'There is a feature/request in the backlog for a WTO message - if you would like this prioritized please review and upvote this github issue: [https://github.com/zowe/api-layer/issues/1633](https://github.com/zowe/api-layer/issues/1633)'
+
+       - number: 4
+         question: What are the mainframe password use cases that are not yet managed by the API-ML User Interface?
+         answer: |
+           
+           The main use case we were unable to address due to technical limitations is the ability to detect an upcoming expiration and immediately offer a password change action, ahead of the actual expiration event. We have two other password change related enhancements as yet unplanned. Please review and upvote if you would like these prioritized: [https://github.com/zowe/api-layer/issues/2020](https://github.com/zowe/api-layer/issues/2020) and [https://github.com/zowe/api-layer/issues/2018](https://github.com/zowe/api-layer/issues/2018).
+
+       - number: 5
+         question: We have configured static services with passtickets and are interested in a quick and easy way to confirm they have been configured correctly.  Does the API-ML offer a capability that allows a user or administrator to verify passticket configuration?
+         answer: |
+           
+           No. There is a feature/request in the backlog for such a capability - if you would like this prioritized please review and upvote this github issue: [https://github.com/zowe/api-layer/issues/647](https://github.com/zowe/api-layer/issues/647) and also consider this one:  [https://github.com/zowe/api-layer/issues/2059](https://github.com/zowe/api-layer/issues/2059)
+
+   - name: CLI for Users Frequently Asked Questions
+     id: questions-cli-users
+     questions: 
+       - number: 1
+         question: How do the Zowe CLI features (like Team Config) impact VS Code offerings that include Zowe client technologies i.e. CLI & Explorer?
+         answer: |
+           
+           VS Code extensions and code pack solutions that rely on the Zowe Explorer (mainframe files and jobs) are interested in and have added capabilities that leverage Team Config.  Recommend attending/reviewing the Zowe Explorer V2 office hours (scheduled for 4/20) for further details.
+
+   - name: VS Code Explorer for Users Frequently Asked Questions
+     id: questions-explorers-users
+     questions: 
+       - number: 1
+         question: What is the authentication experience for Users who have already stored their USER & PASSWORD in a profile and then they (or their Administrator) has configured an API Mediation Layer service login afterwards?  I.e. When the user logs out and then tries to login again, will Zowe Explorer fall back to the original USER & PASSWORD experience or prompt for a token?
+         answer: |
+           
+           If USER & PASSWORD are already stored in profiles for authentication and the User tries to use a token for login, Zowe Explorer will issue a message indicating *“This profile does not support token authentication”*.  In order to enable token authentication the SECURE array in the the configuration file (*either zowe.config.user.json* OR *zowe.config.json*) needs to be updated with tokenValue in place of USER & PASSWORD.   Default authentication is USER & PASSWORD
+
+       - number: 2
+         question: Does Zowe Explorer offer any visual indicator (i.e. an icon or decoration) that helps the user to understand which method of authentication is being used?
+         answer: |
+           
+           No, there is no visual / decoration indicating authentication method.  In general if USER & PASSWORD is configured, the User will be prompted for them.
+
+       - number: 3
+         question: In addition to support for Team Config (replacement for profiles) are there other distinct Zowe Explorer features that may impact the User experience in Zowe V2?
+         answer: |
+           
+           The Zowe Explorer (for VS Code) Squad has added usability features throughout the Zowe V1 (continuous delivery) LTS release, including adding commands and functions to process multiple items, adding progress bars, and refresh capabilities.  The comprehensive list of features can be viewed in the changelog at the VS Code Marketplace: [https://marketplace.visualstudio.com/items/Zowe.vscode-extension-for-zowe/changelog](https://marketplace.visualstudio.com/items/Zowe.vscode-extension-for-zowe/changelog) ; it is important to note that a new LTS release gives all squads the opportunity to introduce changes that may require an upgrade or result in a significant change in behavior - the Zowe community refers to these as “breaking changes”.  In the case of Zowe V2 LTS, the significant change for Zowe Explorer is the introduction of and support for Team Profile Configurations & setting updates as well as. 
+
+       - number: 4
+         question: After Zowe V2 is introduced, will I automatically obtain the V2 LTS version of Zowe Explorer?
+         answer: |
+           
+           Provided the User has not changed the auto update (extensions.autoUpdate) default setting in their Zowe Explorer USER SETTINGS to false, Zowe Explorer will automatically be updated to V2.  If the auto update setting has been changed to “false”, the user can decide when to update Zowe Explorer - they do this manually by clicking the “UPDATE” button. (The UPDATE button will show once Zowe V2 LTS is available).
+
+       - number: 5
+         question: Who is expected to configure the "Team" profiles? 
+         answer: |
+           
+           Ideally, for Team Configuration a designated Administrator who has access to the appropriate connection information and is familiar with configuring profiles - this will enable developers to get started with Zowe Explorer without having to learn about profiles and will ensure all developers are configured with their organizations required authentication policy.
+
 
