@@ -99,8 +99,8 @@
     <div class="card bg-light border-light mb-3">
       <h4 class="card-header" id="zowe-zos-build-download">Server-side component installer</h4>
       <div class="card-body">
-        <p class="card-text">Install Zowe z/OS components from the <b>convenience build</b>, the <b>SMP/E build</b> or
-          the <b> PSWI build </b> depending on your need.</p>
+        <p class="card-text">Install Zowe z/OS components from the <b>convenience build</b>, the <b>SMP/E build</b>,
+          the <b> PSWI build </b> or the <b> containerization build </b> depending on your need.</p>
         <div class="row">
           <div class="card-body">
             <h5 class="card-title">Convenience build</h5>
@@ -126,9 +126,14 @@
           <div class="card-body">
             <h5 class="card-title">SMP/E build</h5>
             <p class="card-text">SMP/E format installed on the z/OS server</p>
-            <p class="card-text">Download the base FMID AZWE002 (based on v2.0.0)</p>
+            <p class="card-text">Download the base FMID AZWE002 (based on v2.0.0) first and then apply the PTFs to get
+                the latest version. </p>
             <p><a class="btn btn-primary" href="{{ site.smpe_download_url }}{{ site.zowe_v2_fmid_oss_version }}">Zowe 2.0.0
                 FMID {{ site.zowe_v2_fmid }}</a></p>
+            <p><a class="btn btn-primary"
+                  href="{{ site.smpe_download_url }}{{ site.data.releases.v2[0].smpe_version }}">Zowe
+                  {{ site.data.releases.v2[0].zos_version }} {{ site.data.releases.v2[0].smpe_sysmod }}
+                  {{ site.data.releases.v2[0].smpe_numbers }}</a></p>
             <div>
               <a href="https://docs.zowe.org/{{ site.data.releases.v2[0].documentation }}/user-guide/install-zos"
                 class="card-link">
@@ -164,9 +169,27 @@
                 Read installation docs
               </a>
             </div>
-       
           </div>
-
+          <div class="card-body">
+              <h5 class="card-title">Containerization build</h5>
+              <p class="card-text">Files to launch Zowe in a container environment like Kubernetes</p>
+              <p><a class="btn btn-primary"
+                  href="{{ site.containerization_download_url }}{{ site.data.releases.v2[0].zos_version }}">Zowe
+                  {{ site.data.releases.v2[0].zos_version }} Containerization build</a></p>
+              <div>
+                <a href="https://docs.zowe.org/{{ site.data.releases.v2[0].documentation }}/user-guide/k8s-introduction/"
+                  class="card-link">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path fill-rule="evenodd"
+                      d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
+                    <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" /></svg>
+                  Read installation docs
+                </a>
+              </div>
+            </div>
         </div>
       </div>
     </div>
@@ -227,7 +250,7 @@
             <h5 class="card-title">Zowe Explorer</h5>
             <p class="card-text">Zowe Explorer V2 enables you to adopt the team configuration file, recently
               developed by the Zowe CLI Squad, to make profile management more centralized and much simpler.</p>
-            <p class="card-text">To download the V2 version of the FTP extension, click <b>Zowe Explorer 2.0.0</b>. Separate downloads are available for Zowe Explorer and Zowe Explorer
+            <p class="card-text">To download the V2 version of the FTP extension, click <b>Zowe Explorer {{ site.data.releases.v2[0].explorer_version }}</b>. Separate downloads are available for Zowe Explorer and Zowe Explorer
               Extension for FTP.</p>
             <p class="card-text">To install the <em>.vsix</em> files, use <b>Extensions > Install from vsix</b> within
               VS Code.</p>
@@ -238,7 +261,7 @@
                     {{ site.data.releases.v2[0].explorer_version }}
                   </a></p>
                 <p><a class="btn btn-primary" href=" {{ site.zowe_cics_explorer_next_github_url }}">Zowe Explorer for
-                    IBM CICS {{ site.data.releases.v2[0].explorer_version }}</a></p>
+                    IBM CICS 2.0.0</a></p>
                 <div>
                   <a href="{{ site.zowe_explorer_install_doc_url }}" class="card-link">
                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle"
