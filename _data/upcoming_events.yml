@@ -1,15 +1,21 @@
-- event: Zowe V2 Office Hours - Zowe API Mediation Layer for Consumers
-  schedule: April 6, 2022 @ 12:00PM to 1:00PM EST
-  description: The weekly V2 office hours series is coming. On April 6 at 12-1PM EST, the community will talk about 
-    V2 features and improvements for Zowe API Mediation Layer for Zowe consumers. 
+- event: Zowe Q2 Webinar
+  schedule: June 22 @ 08:30 AM - 09:30 AM
+  description: "Whether you are a Zowe User, Contributor, Extender, or simply interested\
+    \ in what\u2019s happening with Zowe \u2013 please join us for our next Zowe Quarterly\
+    \ Update Webinar on June 22 at 8:30 am PT (11:30 am ET). Register here: https://zoom.us/webinar/register/WN_gJ6M2U5jQMmw42t7LnZOnw..."
+  url: https://www.openmainframeproject.org/event/zowe-q2-webinar
+- event: Zowe V2 Office Hours - Zowe Explorers for Consumers
+  schedule: April 20, 2022 @ 12:00PM to 1:00PM EST
+  description: For all Zowe consumers, come to learn more about Zowe Explorers features and improvements in V2.
   url: https://zoom.us/j/94312528890
 - event: Zowe V2 Office Hours - Zowe CLI for Consumers
   schedule: April 13, 2022 @ 12:00PM to 1:00PM EST
   description: For all Zowe consumers, come to learn more about Zowe CLI features and improvements in V2.
   url: https://zoom.us/j/94312528890
-- event: Zowe V2 Office Hours - Zowe Explorers for Consumers
-  schedule: April 20, 2022 @ 12:00PM to 1:00PM EST
-  description: For all Zowe consumers, come to learn more about Zowe Explorers features and improvements in V2.
+- event: Zowe V2 Office Hours - Zowe API Mediation Layer for Consumers
+  schedule: April 6, 2022 @ 12:00PM to 1:00PM EST
+  description: The weekly V2 office hours series is coming. On April 6 at 12-1PM EST, the community will talk about 
+    V2 features and improvements for Zowe API Mediation Layer for Zowe consumers. 
   url: https://zoom.us/j/94312528890
 - event: SHARE Dallas 2022
   schedule: March 27 - March 31
