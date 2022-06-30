@@ -2,8 +2,6 @@
 <!-- Copyright Contributors to the Zowe project. -->
 <!-- # Zowe Security Policy-->
 
-#TODO: Find where to put the text that we may create CVE if we find the vulnerability and need to create CVW in NIST etc.
-
 # Respond to Vulnerabilities Policy
 <!--<div style="display:none" hidden>(Zowe-SSDP-SDLC ID: ZSSD-LP:RV)</div>-->
 
@@ -32,6 +30,7 @@ The main participants in the CVD related processes are:
 * The Zowe squads 
 * External researchers and reporters
  
+# Zowe Respond to Vulnerability Policy
 ## Security issues identification
 <!-- <span style="display:none" hidden>(Zowe-SSDP-SDLC - #ID: ZSSD-LP:RV-ICV)</span> -->
 
@@ -121,7 +120,9 @@ Additional hints and recommendations:
 * Without unnecessary delay the report is [analyzed](#Analysis-And-Assessment).
 
 <!-- **IMPORTANT:**  Please do not file a public issue [disclosing vulnerabilities](#Security-issues-disclosure) as this may be misused by violent attackers. -->
-    Note: We encourage the reporters to work with the Security Workgroup team to resolve the issue before going publicly with it.
+    Note 1: We encourage the reporters to work with the Security Workgroup team to resolve the issue before going publicly with it.
+
+    Note 2: Security vulnerabilities identified through own testing or reported by community members, and which don't yet have assigned a CVE, are reported by the Zowe Security Workgroup to a CVE Numbering Authorityu (CNA).     
 
 ## Analysis and assessment 
 <!--
