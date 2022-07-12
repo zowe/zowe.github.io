@@ -65,8 +65,6 @@ Information about any identified issues is propagated by the Security Workgroup 
 
 Zowe encourages the community, users and security researchers to perform testing and report vulnerabilities.  
 
-<!-- #TODO: Publish the reporting process on the project web-site: Open SSF: FLOSS Best Practices Criteria  - Vulnerability report process -->
-
 Please direct all security issues to <code>zowe-security@lists.openmainframeproject.org</code>.
 
 To help Zowe developers understand and resolve the issues, please provide accurate details. 
@@ -115,7 +113,7 @@ Additional hints and recommendations:
 ````
 
 #### What happens after security report is received by the Security Workgroup 
-* After your report is received, a member of the Security Workgroup replies to acknowledge receipt of the report.
+* After your report is received, a member of the Security Workgroup replies to acknowledge receipt of the report. 
 * The reporter may be contacted for clarification.
 * Without unnecessary delay the report is [analyzed](#Analysis-And-Assessment).
 
@@ -184,24 +182,21 @@ The Zowe squads strive to fix the relevant security issues according to their as
 
     Note: GitHub Security Advisories allow the squad to privately discuss and fix a security vulnerability in their project.
 * After collaborating on a fix, the project maintainers publish the security advisory to a project specific place.
-  * Will add them to NIST list of issues. TODO: CHeck how is this done.
-  * Publish the one that we already fixed. See Mitre: https://cveform.mitre.org/
+* New vulnerabilities discovered in Zowe projects are reported to the CVE repository by a Zowe founding organization acting as a CNA (CVE Numbering Authority). See Mitre: https://cveform.mitre.org/
         
 
     Note: Projects hosted in GitHub take advantage of the GH features providing special security advisory dedicated pages.   
           See: https://docs.github.com/en/code-security/repository-security-advisories/creating-a-repository-security-advisory
 
-### Security updates 
+### Security updates
 Security notifications are distributed by the following methods.
 
 * Publishing project specific advisories in the corresponding project GitHub repository Security page.
-  * TODO: Check GitHub allows security page for a project
 
 
-    For example you can find the API Mediation Layer related security advisories here: https://github.com/zowe/api-layer/security/advisories   
-* Notification to Zowe users who explicitly signed in for receiving security alerts and advisories. 
-       
-          #TODO: Subscribe to the mailing lists or apply using  form to apply???
+    For example you can find the API Mediation Layer related security advisories here: https://github.com/zowe/api-layer/security/advisories
+
+* Notification to Zowe users who explicitly requested receiving security alerts and advisories by subscribing to:
   * <code>zowe-user@lists.openmainframeproject.org</code>
   * <code>zowe-dev@lists.openmainframeproject.org</code>
 
