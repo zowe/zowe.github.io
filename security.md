@@ -182,7 +182,6 @@ The Zowe squads strive to fix the relevant security issues according to their as
 
     Note: GitHub Security Advisories allow the squad to privately discuss and fix a security vulnerability in their project.
 * After collaborating on a fix, the project maintainers publish the security advisory to a project specific place.
-* New vulnerabilities discovered in Zowe projects are reported to the CVE repository by a Zowe founding organization acting as a CNA (CVE Numbering Authority). See Mitre: https://cveform.mitre.org/
         
 
     Note: Projects hosted in GitHub take advantage of the GH features providing special security advisory dedicated pages.   
