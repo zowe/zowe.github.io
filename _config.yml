@@ -25,21 +25,22 @@ cli_download_url:  legal.html?type=cli&version=
 cli_plugins_download_url: legal.html?type=cli-plugins&version=
 cli_active_development_download_url: legal.html?type=cli-active-development&version=
 smpe_download_url: legal.html?type=smpe&version=
-pswi_download_uri: legal.html?type=pswi&version=1.24.0-TP
-pswi_install_doc_url: https://docs.zowe.org/stable/user-guide/install-zos.html
-pswi_version: 1.24.0
+pswi_download_uri: legal.html?type=pswi&version=
+
 zowe_node_sdk_download_url: legal.html?type=nodejs-sdk&version=
 zowe_python_sdk_download_url: legal.html?type=python-sdk&version=
 nightly_build_url: https://zowe.jfrog.io/zowe/webapp/#/artifacts/browse/tree/General/libs-release-local/org/zowe/nightly
 zowe_build_slack_url: https://openmainframeproject.slack.com/archives/CC9QW5NJE
 lts_url: https://github.com/zowe/community/blob/master/Technical-Steering-Committee/release.md
-zowe_fmid: AZWE001
-zowe_fmid_oss_version: 1.9.0
+zowe_v1_fmid: AZWE001
+zowe_v1_fmid_oss_version: 1.9.0
+zowe_v2_fmid: AZWE002
+zowe_v2_fmid_oss_version: 2.0.0
 zos_component_install_doc_url: https://docs.zowe.org/stable/user-guide/install-zos.html
 zowe_containerization_install_doc_url: https://docs.zowe.org/stable/user-guide/k8s-introduction
-zowe_cli_install_doc_url: https://docs.zowe.org/stable/user-guide/cli-installcli.html
-zowe_explorer_install_doc_url: https://docs.zowe.org/stable/user-guide/ze-install.html
-zowe_sdk_install_doc_url: https://docs.zowe.org/stable/user-guide/sdks-using.html
+zowe_cli_install_doc_url: https://docs.zowe.org/stable/user-guide/cli-install-cli-checklist
+zowe_explorer_install_doc_url: https://docs.zowe.org/stable/user-guide/ze-install
+zowe_sdk_install_doc_url: https://docs.zowe.org/stable/user-guide/sdks-using
 vscode_marketplace_url: https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe
 zowe_docker_download_url: https://zowe.jfrog.io/zowe/libs-release-local/org/zowe
 zowe_dockerhub_download_url: https://hub.docker.com/r/ompzowe/server-bundle
@@ -82,6 +83,11 @@ zebra_demo_url: https://zebra.talktothemainframe.com/
 workflow_wizard_github_url: https://github.com/zowe/workflow-wizard
 workflow_wizard_slack_url: https://openmainframeproject.slack.com/archives/C01T5F2RU5D
 workflow_wizard_doc_url: https://github.com/zowe/workflow-wizard/raw/main/doc/Workflow%20Templates%20Reference.docx
+intellij_github_url: https://github.com/zowe/zowe-explorer-intellij
+intellij_slack_url: https://join.slack.com/t/iba-mainframe-tools/shared_invite/zt-pejbtt4j-l7KuizvDedJSCxwGtxmMBg
+intellij_doc_url: https://plugins.jetbrains.com/plugin/18688-zowe-explorer
+chat_github_url: https://github.com/zowe/zowe-chat
+chat_slack_url: https://openmainframeproject.slack.com/archives/C03NNABMN0J
 zowe_video_deck_url: https://docs.zowe.org/Zowe_introduction_video_deck.pptx
 zowe_video_transcript_url: https://docs.zowe.org/Zowe_introduction_video_script.txt
 learn_page_get_started: https://docs.zowe.org/stable/getting-started/zowe-getting-started.html
@@ -107,13 +113,11 @@ zowe_doc_slack_url: https://openmainframeproject.slack.com/archives/CC961JYMQ
 zowe_metrics_url: https://www.metrics.zowe.org/
 zowe_cli_next_features_doc_url: https://github.com/zowe/zowe-cli#early-access-features
 zowe_node_sdk_next_reference_doc_url: https://docs.zowe.org/stable/typedoc_next/index.html
-zowe_next_release_date: 2022-03-25
-v2_pax_preview_url: https://zowe.jfrog.io/zowe/libs-release-local/org/zowe/2.0.0-TP2/zowe-2.0.0-TP2.pax
-v2_zos_component_install_doc_url: https://deploy-preview-1961--zowe-docs-master.netlify.app/stable/user-guide/install-zos
-v2_smpe_download_url: https://zowe.jfrog.io/zowe/libs-release-local/org/zowe/2.0.0-TP2/zowe-smpe-2.0.0-TP2.zip
-v2_pswi_download_url: https://zowe.jfrog.io/zowe/libs-release-local/org/zowe/2.0.0-TP2/zowe-PSWI-2.0.0-TP2.pax.Z
-v2_containerization_download_url: https://zowe.jfrog.io/zowe/libs-release-local/org/zowe/2.0.0-TP2/zowe-containerization-2.0.0-TP2.zip
-v2_containerization_install_doc_url: https://deploy-preview-1961--zowe-docs-master.netlify.app/stable/user-guide/k8s-introduction
+zowe_next_release_date: 2022-04-25
+
+# not in use, place variables here if you need to distinguish based on Zowe release
+v1:
+v2:
 
 plugins:
   # Redirect plugin

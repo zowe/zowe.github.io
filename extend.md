@@ -47,13 +47,87 @@
             </div>
          </div>
        </div>
+    <p style="margin-top: 1rem;">The current version of Zowe Conformance is ZOWE V2, which covers Zowe version 2 and later. The previous <a href="https://www.openmainframeproject.org/all-projects/zowe/conformance/v1">Zowe Conformance ZOWE V1 Program</a> covers Zowe v1 version 1.9 and later, and the <a href="https://www.openmainframeproject.org/all-projects/zowe/conformance/2019-2">Zowe Conformance 2019</a> program covers Zowe version 1.0 through 1.8.</p>
     <p style="margin-top: 1rem;">Learn more about the program at the <a href="{{ site.conformance_page_url }}">&nbsp;Zowe Conformance Program website</a>.</p>
 
-  <div>
-	  <div>
-		<h3 style="text-align: left;">The following products have earned Zowe Conformant status</h3>
-    <iframe frameBorder="0" id="landscape" scrolling="no" style="width: 1px; min-width: 100%" src="https://landscape.openmainframeproject.org/pages/zowe-conformant"></iframe><script src="https://landscape.openmainframeproject.org/iframeResizer.js"></script>
-	  </div>
+  <script>
+    function toggleLandscape(idToShow, idToHide) {
+      document.getElementById(idToShow+'-full').classList.add('active');
+      document.getElementById(idToHide+'-full').classList.remove('active');
+
+      document.getElementById(idToShow+'-tab').classList.add('active');
+      document.getElementById(idToHide+'-tab').classList.remove('active');
+    }  
+  </script>
+
+  <style>
+    .landscape-tab {
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 24px;
+    }
+
+    .landscape-tab.active {
+      background-color: gray;
+      color: white;
+    }
+
+    .landscape-tab:hover {
+      background-color: #ccc;
+    }
+
+    .landscape-tab.active:hover {
+      background-color: #ccc;
+      color: black;
+    }
+
+    .landscape-content {
+       padding: 5px;
+       display: none;
+    }
+
+    .landscape-content h3 {
+      text-align: left; 
+      padding-left: 10px;
+    }
+
+    .landscape-content iframe {
+      width: 1px; 
+      min-width: 100%; 
+      height: 900px;
+    }
+
+    .landscape-content.active {
+      display: block;
+    }
+
+    .landscape-heading {
+      border-bottom: 2px black solid; 
+      background-color: #eee;
+    }
+
+    .landscape-overall {
+      border: 2px black solid;
+    }
+  </style>
+
+  <div class="landscape-overall">
+    <div class="landscape-heading" >
+      <span class="landscape-tab active" id="landscape-v2-tab" onclick="toggleLandscape('landscape-v2', 'landscape-v1')">V2 Landscape</span>
+      <span class="landscape-tab" id="landscape-v1-tab" onclick="toggleLandscape('landscape-v1', 'landscape-v2')">V1 Landscape</span>
+    </div>
+    <div class="landscape-content active" id="landscape-v2-full">
+      <div>
+      <h3>The following products have earned Zowe Conformant status for Zowe V2</h3>
+      <iframe frameBorder="0" id="landscape-v2" src="https://landscape.openmainframeproject.org/pages/zowe-conformant"></iframe>
+      </div>
+    </div>
+    <div class="landscape-content" id="landscape-v1-full">
+      <div>
+        <h3>The following products have earned Zowe Conformant status for Zowe V1</h3>
+        <iframe frameBorder="0" id="landscape-v1" src="https://landscape.openmainframeproject.org/pages/zowe-conformant-v1"></iframe>
+      </div>
+    </div>
   </div>
 
 </section>
