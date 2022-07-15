@@ -75,9 +75,7 @@ security vulnerabilities and issues. The requirements are governed by internal p
 <div style="padding-top: 3%">
     <a id="DISCLOSE"/><h2>Security issues disclosure</h2>
     <h3 style="margin-bottom: 1.5rem">Disclosure policy</h3>
-    <p>Zowe adopts a variant/modification (in case we modify it) of the <a href="https://en.wikipedia.org/wiki/Coordinated_vulnerability_disclosure">Coordinated Vulnerability Disclosure Policy</a></p>
-    ALTERNATIVELY:
-    <p>The Zowe Vulnerability Disclosure Policy is (based on / a modification of) the <a href="">Responsible or Coordinated Vulnerability Disclosure (CVD) Policy</a></p>
+    <p>The Zowe Vulnerability Disclosure Policy is based on the <a href="">Responsible or Coordinated Vulnerability Disclosure (CVD) Policy</a></p>
     <br/>
     The project maintainers would disclose a confirmed vulnerability in the code by first by creating a draft security advisory in the package's repository in GitHub/other CMS.
     GitHub Security Advisories allow repository maintainers to privately discuss and fix a security vulnerability in a project.
