@@ -79,7 +79,7 @@ security vulnerabilities and issues. The requirements are governed by internal p
     <br/>
     The project maintainers would disclose a confirmed vulnerability in the code by first by creating a draft security advisory in the package's repository in GitHub/other CMS.
     GitHub Security Advisories allow repository maintainers to privately discuss and fix a security vulnerability in a project.
-    <br/>See https://docs.github.com/en/code-security/repository-security-advisories/creating-a-repository-security-advisory
+    <br/>See <a href="https://docs.github.com/en/code-security/repository-security-advisories/creating-a-repository-security-advisory" target="_blank">https://docs.github.com/en/code-security/repository-security-advisories/creating-a-repository-security-advisory</a>
     <br/>
     After collaborating on a fix, repository maintainers can publish the security advisory to publicly disclose the security vulnerability to the project's community.
    <div></div>
