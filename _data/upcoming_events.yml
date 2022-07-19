@@ -1,74 +1,3 @@
-- event: Zowe Q2 Webinar
-  schedule: June 22 @ 08:30 AM - 09:30 AM
-  description: "Whether you are a Zowe User, Contributor, Extender, or simply interested\
-    \ in what\u2019s happening with Zowe \u2013 please join us for our next Zowe Quarterly\
-    \ Update Webinar on June 22 at 8:30 am PT (11:30 am ET). Register here: https://zoom.us/webinar/register/WN_gJ6M2U5jQMmw42t7LnZOnw..."
-  url: https://www.openmainframeproject.org/event/zowe-q2-webinar
-- event: Zowe V2 Office Hours - Zowe Explorers for Consumers
-  schedule: April 20, 2022 @ 12:00PM to 1:00PM EST
-  description: For all Zowe consumers, come to learn more about Zowe Explorers features and improvements in V2.
-  url: https://zoom.us/j/94312528890
-- event: Zowe V2 Office Hours - Zowe CLI for Consumers
-  schedule: April 13, 2022 @ 12:00PM to 1:00PM EST
-  description: For all Zowe consumers, come to learn more about Zowe CLI features and improvements in V2.
-  url: https://zoom.us/j/94312528890
-- event: Zowe V2 Office Hours - Zowe API Mediation Layer for Consumers
-  schedule: April 6, 2022 @ 12:00PM to 1:00PM EST
-  description: The weekly V2 office hours series is coming. On April 6 at 12-1PM EST, the community will talk about 
-    V2 features and improvements for Zowe API Mediation Layer for Zowe consumers. 
-  url: https://zoom.us/j/94312528890
-- event: SHARE Dallas 2022
-  schedule: March 27 - March 31
-  description: SHARE 2022 will take place on March 27-30 in person in Dallas and virtually.
-    To register for the event or to learn more, visit https://www.share.org/Events/SHARE-Dallas-2022/Registration.
-    As always, Open Mainframe Project will have a presence at the event as many of...
-  url: https://www.openmainframeproject.org/event/share-dallas-2022
-- event: Zowe V2 Office Hours - App Framework Focus
-  schedule: January 26, 2022 @ 12:00PM to 1:00PM EST
-  description: For all users and vendors of Zowe Application Framework, come and 
-    learn about v2 improvements. 
-  url: https://zoom.us/j/94312528890
-- event: Zowe V2 Office Hours - Zowe Explorer Focus
-  schedule: January 19, 2022 @ 12:00PM to 1:00PM EST
-  description: For all users and vendors of Zowe Explorer users, come to learn about 
-    what is new in v2. 
-  url: https://zoom.us/j/94312528890
-- event: Zowe V2 Office Hours - API Mediation Layer Focus
-  schedule: January 12, 2022 @ 12PM to 1:00PM EST
-  description: For vendors who have extended Zowe v1 API Mediation Layer, come learn
-    about v2 changes. For users who have installed Zowe v1 API Mediation Layer, join
-    this call to hear about v2 improvements.
-  url: https://zoom.us/j/94312528890
-- event: Zowe 1.26 Live System Demo
-  schedule: January 5, 2022 @ 9:00AM to 10:30AM EST
-  description: Open Mainframe Project is excited to announce that Zowe version 1.26 release
-    is now available! On January 5 at 9:00-10:30 am EST, Zowe squads will share the new 
-    features in the release. Attend this virtual demo to see how the new features work,  
-    and ask any questions you have.
-  url: https://lists.openmainframeproject.org/g/zowe-dev/viewevent?eventid=1354041&calstart=2022-01-05
-- event: OSS Japan Summit. What Does the Future of Mainframe Development Look Like?
-  schedule: December 15 @ 15:30 PM - 16:20 PM
-  description: "Meet the women of the Zowe Explorer Squad. In this session,\
-  \ the panelists will share valuable insights on navigating the challenges of\
-  \ modernizing the mainframe developer experience. The session will cover topics\
-  \ such as collaborating in the Zowe Explorer project, building a positive culture\
-  \ across different companies, managing open source commitments with internal\ 
-  \ priorities, overcoming time zone barriers, embracing the team diversity, and\
-  \ feeling confident in making decisions about the future of the project"
-  url: https://ossalsjp21.sched.com/event/pehL/women-explorers-what-does-the-future-of-mainframe-development-look-like-richelle-anne-craw-katelyn-nienaber-jessielaine-punongbayan-broadcom-lauren-li-billie-jean-simmons-ibm?es_id=6b31acc751
-- event: v2 LTS Update for Extenders - kickoff
-  schedule: December 8th @ 12:00 PM - 1:00 PM EST
-  description: "Kickoff for first of of six sessions dedicated to Zowe v2 readiness.\
-    \ For vendors who have extended Zowe v1, come learn about v2 conformance changes.\
-    \ For users who have installed Zowe v1 and want to hear about v2 improvements.\
-    \ This call is community wide. Future v2 updates will be squad specific."
-  url: https://zoom.us/j/94312528890
-- event: Zowe Quarterly Update (October 2021 Webinar)
-  schedule: October 20 @ 08:30 AM - 09:30 AM
-  description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
-    \ in what\u2019s happening with Zowe \u2013 we invite you to the next Quarterly\
-    \ Update Webinar on Wednesday, October 20 at 8:30 am PT /11:30 am ET (US and Canada)...."
-  url: https://www.openmainframeproject.org/event/zowe-quarterly-update-october-2021-webinar
 - event: SHARE Virtual
   schedule: August 09 - August 14
   description: The SHARE virtual conference (#SHAREvirtual21) is hosting its summer
@@ -76,6 +5,12 @@
     presentations focused on a variety of topics related to mainframes. Several Open
     Mainframe Project community leaders...
   url: https://www.openmainframeproject.org/event/share-virtual
+- event: SHARE Dallas 2022
+  schedule: March 27 - March 31
+  description: SHARE 2022 will take place on March 27-30 in person in Dallas and virtually.
+    To register for the event or to learn more, visit https://www.share.org/Events/SHARE-Dallas-2022/Registration.
+    As always, Open Mainframe Project will have a presence at the event as many of...
+  url: https://www.openmainframeproject.org/event/share-dallas-2022
 - event: VM Workshop 2021
   schedule: June 10 - June 12
   description: The annual VM Workshop, which originally was planned for in-person
@@ -118,6 +53,12 @@
     \ in what\u2019s happening with Zowe \u2013 we invite you to the next Quarterly\
     \ Update Webinar on July 21 at 8:30 am PT /11:30 am ET (US and Canada). This..."
   url: https://www.openmainframeproject.org/event/zowe-quarterly-update-july-2021
+- event: Zowe Q2 Webinar
+  schedule: June 22 @ 08:30 AM - 09:30 AM
+  description: "Whether you are a Zowe User, Contributor, Extender, or simply interested\
+    \ in what\u2019s happening with Zowe \u2013 please join us for our next Zowe Quarterly\
+    \ Update Webinar on June 22 at 8:30 am PT (11:30 am ET). Register here: https://zoom.us/webinar/register/WN_gJ6M2U5jQMmw42t7LnZOnw..."
+  url: https://www.openmainframeproject.org/event/zowe-q2-webinar
 - event: IBM Z Day 2021 (Virtual)
   schedule: September 15 - September 16
   description: IBM Z Day, which takes place on September 15, is a free virtual Enterprise
