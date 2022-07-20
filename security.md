@@ -49,7 +49,7 @@ The main participants in the CVD related processes are:
 ### Vulnerability monitoring</h3>
 <!-- Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM -->
 
-The Security Workgroup continuously monitors well known sources of information about discovered or otherwise severe security issues. Some sources a listed below:
+The Security Workgroup continuously monitors well-known sources of information about discovered or otherwise severe security issues. Some sources a listed below:
   * [NIST National Vulnerability Database](https://nvd.nist.gov/vuln)
   * [MITRE CVE List](https://cve.mitre.org/)
   * [Snyk Vulnerability DB](https://security.snyk.io/)
