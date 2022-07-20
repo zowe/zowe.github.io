@@ -1,110 +1,207 @@
----
----
-
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- Copyright Contributors to the Zowe project. -->
+<!-- # Zowe Security Policy-->
 
-<section class="whitebackground" style="float: none;">
-  <h1 id="download" style="margin-bottom: 2rem">Zowe Security</h1>
+# Respond to Vulnerabilities Policy
+<!--<div style="display:none" hidden>(Zowe-SSDP-SDLC ID: ZSSD-LP:RV)</div>-->
 
-<div style="padding-top: 3%">
-    <h3 style="margin-bottom: 1.5rem">Zowe Respond to Vulnerabilities <div style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV)</div> security policy</h3>
-    This Zowe Respond to Vulnerabilities Security Policy consists of the following interrelated topics/sub-policies:
-    <ul>
-        <li><a href="#IDENTIFY">Security issues identification <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span></a></li>
-        <li><a href="#DISCLOSE">Security issues disclosure <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-VDR)</span></a></li>
-        <li><a href="#REMEDIATE">Security issues remediation </a></li>
-        <li><a href="#ADVISE">Solution publication</a></li>
-    </ul>
-</div>
+This Security Policy governs how Zowe handles vulnerabilities identification, mitigation and disclosure.
 
-<div>
-The individual sub-policies contain sets of interrelated applicable requirements on how the Zowe project and organization treat 
-security vulnerabilities and issues. The requirements are governed by internal processes and guidance for the users and other reporters.
-</div>
+Our policy is based on the <a href="https://en.wikipedia.org/wiki/Coordinated_vulnerability_disclosure">Coordinated Vulnerability Disclosure (CVD) Policy</a>
+which is also adopted by many other organizations, <a href="https://www.cisa.gov/coordinated-vulnerability-disclosure-process">CISA</a> and <a href="https://www.etsi.org/standards/coordinated-vulnerability-disclosure">ETSI</a> among them. 
+Zowe adapts the following 5 CVD topics to declare complete set of policy requirements for Respond to Vulnerabilities:
+* [Security issues identification](#Security-issues-identification) <!-- <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span> -->
+* [Security issues analysis and assessment](#Analysis-and-assessment)
+* [Security issues mitigation](#Security-issues-mitigation)
+* [Security issues disclosure](#Security-issues-disclosure) <!-- <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-VDR)</span> -->
+* [Solution publishing](#Solution-publishing)
 
-<div style="padding-top: 3%">
-    <a id="IDENTIFY"/><h2>Security issues identification</h2>
-    <ul>    
-        <li> 
-            <h3 style="margin-bottom: 1.5rem"> Code Review and Tests</h3>
-            <p> 
-                <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-CRT)</span>
-                The Zowe product teams must/will continuously perform security testing of their products' code and configuration for security issues. 
-                Irregularly but at least before each major release a full penetration testing must be performed.
-            </p>
-        </li>
-        <li> 
-            <h3 style="margin-bottom: 1.5rem">Vulnerability sources Monitoring</h3>
-            <p> 
-                <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span>
-                <div>The Zowe product teams must/will continuously monitor well know sources of information about freshly discovered or otherwise severe security issues.</div>
-                <br/>
-                <div>Any issues found to be potentially impacting the respective products, must be booked and further analyzed without unnecessary delay.</div>
-            </p>
-        </li>
-        <li> 
-            <h3 style="margin-bottom: 1.5rem">Security issues reporting</h3>
-            <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span>
-            <p>
-                Please direct all security issues to <code>zowe-security@lists.openmainframeproject.org</code>. 
-                <br/>
-                After your report is received, a member of the security team will reply to acknowledge receipt of the vulnerability.
-                <br/>
-                Without unnecessary delay the report will be analyzed and you may be contacted for clarification.
-                <br/>
-                After the issue is sufficiently documented, our security team will coordinate remediation with the affected project.
-                <br/>
-                Please do not file a public issue disclosing potential vulnerabilities as this may be misused by violent attackers. 
-            </p>
-        </li>
-        <li> 
-            <h3 style="margin-bottom: 1.5rem"> Issues assessment and evidence</h3>
-            <p> 
-                <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV)</span>
-                <span style="display:none"> (Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV-AEV)</span>
-                <span style="display:none"> (NIST-SSF: #REF: SSDF:RV.2.1)</span>
-                <div>Any issues found during testing and reviewing the code, must be assessed and for severity, exploitability and impact on the respective components and the whole Zowe system.</div>
-                <br/>
-                <div>The assessment results reports will be collected and stored for evidence and measurement of the product security state and hardening.</div>
-            </p>
-        </li>
-    </ul> 
-</div>
+The topics listed above contain sets of applicable requirements. Where appropriate the fulfilment of these requirements may be governed by internal processes and guidance. 
+In such cases, a detailed description of the corresponding processes and guidance is provided in separate documents.
 
-<div style="padding-top: 3%">
-    <a id="DISCLOSE"/><h2>Security issues disclosure</h2>
-    <h3 style="margin-bottom: 1.5rem">Disclosure policy</h3>
-    <p>The Zowe Vulnerability Disclosure Policy is based on the <a href="">Responsible or Coordinated Vulnerability Disclosure (CVD) Policy</a></p>
-    <br/>
-    The project maintainers would disclose a confirmed vulnerability in the code by first by creating a draft security advisory in the package's repository in GitHub/other CMS.
-    GitHub Security Advisories allow repository maintainers to privately discuss and fix a security vulnerability in a project.
-    <br/>See <a href="https://docs.github.com/en/code-security/repository-security-advisories/creating-a-repository-security-advisory" target="_blank">https://docs.github.com/en/code-security/repository-security-advisories/creating-a-repository-security-advisory</a>
-    <br/>
-    After collaborating on a fix, repository maintainers can publish the security advisory to publicly disclose the security vulnerability to the project's community.
-   <div></div>
-</div>
+    NOTE: Wherever appropriate, the policy requirements are mapped to the NIST SSDF Respond to Vulnerabilities (RV) Best practices - see https://csrc.nist.gov/publications/detail/sp/800-218/final 
+          and/or to the Open Source Security Foundation (OpenSSF) Best Practices] - see https://openssf.org/ (former Core Infrastructure Iniitative) - see https://www.coreinfrastructure.org/.
+          The mappings are part of this document but are provided as comments and those are not rendered in the markdown viewer. 
 
-<div style="padding-top: 3%">
-    <a id="REMEDIATE"/><h2>Security issues remediation</h2>
-    <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV)</span>
-    <span style="display:none">(NIST-SSF #REF: SSF-A.4.2-B)</span>
-    <div>Projects SHOULD fix all critical vulnerabilities rapidly after they are reported. [vulnerabilities_critical_fixed]</div>
-    <br/>
-    <span style="display:none">(NIST-SSF #REF: SSF-A.4.1-B)</span>
-    <div>There MUST be no un-patched vulnerabilities of medium or higher severity that have been publicly known for more than 60 days. [vulnerabilities_fixed_60_days]</div>
-</div>
+The individual requirements may be a responsibility of a single participant or the responsibilities could be shared between multiple cooperating participants.
 
-<div style="padding-top: 3%">
-    <a id="ADVISE"/><h2>Solution advisory publishing</h2>
-    <h3 style="margin-bottom: 1.5rem">Receive security updates</h3> 
-    By publishing security advisories, repository maintainers make it easier for their community to update package dependencies and research the impact of the security vulnerabilities. 
-    For more information, see "About GitHub Security Advisories for repositories."
-    <p>Security notifications will be distributed via the following methods.</p>
-    <ul>
-    <li><code>zowe-user@lists.openmainframeproject.org</code></li>
-    <li><code>zowe-dev@lists.openmainframeproject.org</code></li>
-    </ul>
-</div>
+The main participants in the CVD related processes are:
+* The Zowe Security Workgroup
+* The Zowe squads 
+* External researchers and reporters
+ 
+# Zowe Respond to Vulnerability Policy
+## Security issues identification
+<!-- <span style="display:none" hidden>(Zowe-SSDP-SDLC - #ID: ZSSD-LP:RV-ICV)</span> -->
 
-</section>
+### Code review and tests
+<!--
+<div style="display: none;">(Zowe-SSDP-SDLC: C7. Test Executable Code - #ID: ZSSD-LP:PW-TEC)</div>
+<span style="display:none">(Zowe-SSDP-SDLC - #ID: ZSSD-LP:RV-ICV-CRT)</span>
+-->
+
+* The security architecture of all Zowe projects is reviewed by the Security Workgroup.
+* The squads perform internal security code review of newly implemented features and other security related code changes.
+* The code reviews are performed by squad members other than the individuals who created the code.
+* The squads continuously perform security testing for security issues in their projects' code and configuration.
+* A full penetration testing is performed by the Security Workgroup before each major release.
+
+### Vulnerability monitoring</h3>
+<!-- Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM -->
+
+The Security Workgroup continuously monitors well known sources of information about discovered or otherwise severe security issues. Some sources a listed below:
+  * [NIST National Vulnerability Database](https://nvd.nist.gov/vuln)
+  * [MITRE CVE List](https://cve.mitre.org/)
+  * [Snyk Vulnerability DB](https://security.snyk.io/)
+  * [CISA Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
+   
+   
+Any issues found to have impact on Zowe projects, are further [analyzed](#Analysis-And-Assessment) without unnecessary delay.
+
+Information about any identified issues is propagated by the Security Workgroup to the squads for [mitigation](#Security-Issues-Mitigation).  
+    
+### Security issues reporting
+<!-- Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM -->
+
+Zowe encourages the community, users and security researchers to perform testing and report vulnerabilities.  
+
+Please direct all security issues to <code>zowe-security@lists.openmainframeproject.org</code>.
+
+To help Zowe developers understand and resolve the issues, please provide accurate details. 
+
+#### Security report template
+
+Please fill in as much as you can of the following template fields:
+````
+  - General
+    - Date discovered
+    - Severity
+    - Impact
+      
+  - Reporter information  
+    - Full name 
+    - Contact - preferably e-mail
+    - Organization (optional)
+    
+  - Environment
+    - Operating platform: Win (32/64), Linux (flavor), MacOS (pre-M1 / M1)
+    - Hosted (optional):  (y,n,N/A) - (Eclipse Che, Theia, CRW, ...)
+    - z/OS (optional) 
+      - Version
+      - Security manager 
+      - Related products names and versions
+    - Zowe
+      - Version
+      - Sub-component/s name and version
+  
+  - Issue description   
+    - Short (one liner) summary
+    - Detailed information - pre-conditions, access rights,   
+    - Steps to reproduce
+````
+
+Additional hints and recommendations:
+````
+    - While testing or replicating the vulnerability take notes, snapshots, collect log files.
+    - Start with a summary.
+    - Detail the narrative.
+    - Follow the form.
+    - Proofread.
+    - Avoid emotional language.
+    - Avoid abbreviations and conjunctions.
+    - Be prompt.
+````
+
+#### What happens after security report is received by the Security Workgroup 
+* After your report is received, a member of the Security Workgroup replies to acknowledge receipt of the report. 
+* The reporter may be contacted for clarification.
+* Without unnecessary delay the report is [analyzed](#Analysis-And-Assessment).
+
+<!-- **IMPORTANT:**  Please do not file a public issue [disclosing vulnerabilities](#Security-issues-disclosure) as this may be misused by violent attackers. -->
+    Note 1: We encourage the reporters to work with the Security Workgroup team to resolve the issue before going publicly with it.
+
+    Note 2: Security vulnerabilities identified through own testing or reported by community members, and which don't yet have assigned a CVE, are reported by the Zowe Security Workgroup to a CVE Numbering Authorityu (CNA).     
+
+## Analysis and assessment 
+<!--
+    (Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV)
+    (Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV-AEV)
+    (NIST-SSF: #REF: SSDF:RV.2.1)
+-->
+
+* Reported issues are analyzed within the security workgroup.
+* The issues' analyzes outcome is determined by the risk severity measured by the combination of vulnerability exploitability and its impact. 
+
+The severity can be one of the:
+  * Critical (C) - An event that, if it occurred, would cause program failure (inability to achieve minimum acceptable requirements).
+  
+        Critical issues are fixed as early as possible
+
+  * High (H) - An event that, if it occurred, would cause major cost and schedule increases. Secondary requirements may not be achieved.
+  
+        High issues are fixed within next minor/patch release as latest. 
+        Alternatively, There are no un-patched vulnerabilities of High severity that have been publicly known for more than 60 days. [vulnerabilities_fixed_60_days policy]
+
+  * Medium (M) - An event that, if it occurred, would cause moderate cost and schedule increases, but important requirements would still be met.
+    
+        Medium issues are fixed when the squad decides to fix 
+
+  * Low (L) - An event that, if it occurred, would cause only a small cost and schedule increase. Requirements would still be achieved.   
+
+        Low issues are fixed when the squad decides to fix
+ 
+## Security issues mitigation
+
+ After the issue is sufficiently documented, the Security Workgroup coordinates the issue [mitigation](#Security-issues-mitigation).
+<!--
+    (Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV)
+    (NIST-SSF #REF: SSF-A.4.2-B)
+-->
+
+The Zowe squads strive to fix the relevant security issues according to their assessed priority within a predefined timeframe. [vulnerabilities_critical_fixed policy]
+
+<!-- 
+    (NIST-SSF #REF: SSF-A.4.1-B)
+-->
+
+## Security issues disclosure
+
+* Zowe discloses fixed vulnerabilities in a timely manner giving the users sufficient time to plan their upgrades. 
+* We however don't disclose the vulnerabilities fixed in the latest release as we respect the need for at least 45 days to decide when and how will the users upgrade. 
+* When a new release is published, the project list the vulnerabilities fixed in the previous release.
+    
+      For example when we'd release Zowe v2.3 we'd publish the list of vulnerabilities that were fixed in the version 2.2 .
+      The issues that were fixed would be published in the [Zowe security reports](https://github.com/zowe/security-reports/blob/master/security-vulnerabilities.md) repository listing.
+
+## Solution publishing
+### Security advisory
+* The project's squad discloses a vulnerability by first creating a draft security advisory in the project repository in GitHub.
+* For critical priority vulnerability, security patches are created as soon as the issue is fixed in code and configuration.
+* The security fixes become an integral part of the latest Zowe distribution.
+
+
+    Note: GitHub Security Advisories allow the squad to privately discuss and fix a security vulnerability in their project.
+* After collaborating on a fix, the project maintainers publish the security advisory to a project specific place.
+        
+
+    Note: Projects hosted in GitHub take advantage of the GH features providing special security advisory dedicated pages.   
+          See: https://docs.github.com/en/code-security/repository-security-advisories/creating-a-repository-security-advisory
+
+### Security updates
+Security notifications are distributed by the following methods.
+
+* Publishing project specific advisories in the corresponding project GitHub repository Security page.
+
+
+    For example you can find the API Mediation Layer related security advisories here: https://github.com/zowe/api-layer/security/advisories
+
+* Notification to Zowe users who explicitly requested receiving security alerts and advisories by subscribing to:
+  * <code>zowe-user@lists.openmainframeproject.org</code>
+  * <code>zowe-dev@lists.openmainframeproject.org</code>
+
+## Additional sources:
+  - https://cheatsheetseries.owasp.org/cheatsheets/Vulnerability_Disclosure_Cheat_Sheet.html
+  - https://bestpractices.coreinfrastructure.org/en
+  - https://openssf.org/
+  - https://github.com/coreinfrastructure/best-practices-badge
+  - https://www.apache.org/security/
