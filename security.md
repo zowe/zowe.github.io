@@ -30,7 +30,7 @@ The main participants in the CVD related processes are:
 * The Zowe squads 
 * External researchers and reporters
  
-# Zowe Respond to Vulnerability Policy
+# Zowe Response to Vulnerability Policy
 ## Security issues identification
 <!-- <span style="display:none" hidden>(Zowe-SSDP-SDLC - #ID: ZSSD-LP:RV-ICV)</span> -->
 
@@ -180,7 +180,7 @@ The Zowe squads strive to fix the relevant security issues according to their as
 * The security fixes become an integral part of the latest Zowe distribution.
 
 
-    Note: GitHub Security Advisories allow the squad to privately discuss and fix a security vulnerability in their project.
+    Note: <a href="https://docs.github.com/en/code-security/repository-security-advisories/about-github-security-advisories-for-repositories#about-github-security-advisories">GitHub Security Advisories</a> allow the squad to privately discuss and fix a security vulnerability in their project.
 * After collaborating on a fix, the project maintainers publish the security advisory to a project specific place.
         
 
