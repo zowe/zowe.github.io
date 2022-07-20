@@ -199,7 +199,6 @@ Security notifications are distributed by the following methods.
   * <code>zowe-user@lists.openmainframeproject.org</code>
   * <code>zowe-dev@lists.openmainframeproject.org</code>
 
------------------------------------
 ## Additional sources:
   - https://cheatsheetseries.owasp.org/cheatsheets/Vulnerability_Disclosure_Cheat_Sheet.html
   - https://bestpractices.coreinfrastructure.org/en
