@@ -135,20 +135,19 @@ Additional hints and recommendations:
 The severity can be one of the:
   * Critical (C) - An event that, if it occurred, would cause program failure (inability to achieve minimum acceptable requirements).
   
-        Critical issues are fixed as early as possible
+        Critical issues are fixed as early as possible and not later than 30 days after the issue acknowledgment
 
   * High (H) - An event that, if it occurred, would cause major cost and schedule increases. Secondary requirements may not be achieved.
   
-        High issues are fixed within next minor/patch release as latest. 
-        Alternatively, There are no un-patched vulnerabilities of High severity that have been publicly known for more than 60 days. [vulnerabilities_fixed_60_days policy]
+        High issues are fixed within next minor/patch release within 30 days of the issue acknowledgment. 
 
   * Medium (M) - An event that, if it occurred, would cause moderate cost and schedule increases, but important requirements would still be met.
     
-        Medium issues are fixed when the squad decides to fix 
+        Medium issues are fixed within 90 days, basically with the next regular release of the project.
 
   * Low (L) - An event that, if it occurred, would cause only a small cost and schedule increase. Requirements would still be achieved.   
 
-        Low issues are fixed when the squad decides to fix
+        Low issues are fixed when the squad decides to fix but not later than 180 days from issue acknowledgment.
  
 ## Security issues mitigation
 
