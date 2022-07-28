@@ -2,6 +2,8 @@
 <!-- Copyright Contributors to the Zowe project. -->
 <!-- # Zowe Security Policy-->
 
+<div class="row" style="padding: 5%">
+
 # Respond to Vulnerabilities Policy
 <!--<div style="display:none" hidden>(Zowe-SSDP-SDLC ID: ZSSD-LP:RV)</div>-->
 
@@ -10,7 +12,11 @@ This Security Policy governs how Zowe handles vulnerabilities identification, mi
 Our policy is based on the <a href="https://en.wikipedia.org/wiki/Coordinated_vulnerability_disclosure">Coordinated Vulnerability Disclosure (CVD) Policy</a>
 which is also adopted by many other organizations, <a href="https://www.cisa.gov/coordinated-vulnerability-disclosure-process">CISA</a> and <a href="https://www.etsi.org/standards/coordinated-vulnerability-disclosure">ETSI</a> among them. 
 Zowe adapts the following 5 CVD topics to declare complete set of policy requirements for Respond to Vulnerabilities:
-
+* [Security issues identification](#security-issues-identification) <!-- <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span> -->
+* [Security issues analysis and assessment](#analysis-and-assessment)
+* [Security issues mitigation](#security-issues-mitigation)
+* [Security issues disclosure](#security-issues-disclosure) <!-- <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-VDR)</span> -->
+* [Solution publishing](#solution-publishing)
 
 The topics listed above contain sets of applicable requirements. Where appropriate the fulfilment of these requirements may be governed by internal processes and guidance. 
 In such cases, a detailed description of the corresponding processes and guidance is provided in separate documents.
@@ -52,9 +58,9 @@ The Security Workgroup continuously monitors well-known sources of information a
   * [CISA Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
    
    
-Any issues found to have impact on Zowe projects, are further without unnecessary delay.
+Any issues found to have impact on Zowe projects, are further [analyzed](#analysis-and-assessment) without unnecessary delay.
 
-Information about any identified issues is propagated by the Security Workgroup to the squads for .  
+Information about any identified issues is propagated by the Security Workgroup to the squads for [mitigation](#security-issues-mitigation).  
     
 ### Security issues reporting
 <!-- Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM -->
@@ -111,9 +117,9 @@ Additional hints and recommendations:
 #### What happens after security report is received by the Security Workgroup 
 * After your report is received, a member of the Security Workgroup replies to acknowledge receipt of the report. 
 * The reporter may be contacted for clarification.
-* Without unnecessary delay the report is .
+* Without unnecessary delay the report is [analyzed](#analysis-and-assessment).
 
-<!-- **IMPORTANT:**  Please do not file a public issue as this may be misused by violent attackers. -->
+<!-- **IMPORTANT:**  Please do not file a public issue [disclosing vulnerabilities](#Security-issues-disclosure) as this may be misused by violent attackers. -->
     Note 1: We encourage the reporters to work with the Security Workgroup team to resolve the issue before going publicly with it.
 
     Note 2: Security vulnerabilities identified through own testing or reported by community members, and which don't yet have assigned a CVE, are reported by the Zowe Security Workgroup to a CVE Numbering Authorityu (CNA).     
@@ -147,7 +153,7 @@ The severity can be one of the:
  
 ## Security issues mitigation
 
- After the issue is sufficiently documented, the Security Workgroup coordinates the issue .
+ After the issue is sufficiently documented, the Security Workgroup coordinates the issue [mitigation](#security-issues-mitigation).
 <!--
     (Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV)
     (NIST-SSF #REF: SSF-A.4.2-B)
@@ -200,3 +206,5 @@ Security notifications are distributed by the following methods.
   - https://openssf.org/
   - https://github.com/coreinfrastructure/best-practices-badge
   - https://www.apache.org/security/
+
+</div>
