@@ -2,8 +2,6 @@
 <!-- Copyright Contributors to the Zowe project. -->
 <!-- # Zowe Security Policy-->
 
-<div class="row" style="padding: 5%">
-
 # Respond to Vulnerabilities Policy
 <!--<div style="display:none" hidden>(Zowe-SSDP-SDLC ID: ZSSD-LP:RV)</div>-->
 
@@ -206,5 +204,3 @@ Security notifications are distributed by the following methods.
   - https://openssf.org/
   - https://github.com/coreinfrastructure/best-practices-badge
   - https://www.apache.org/security/
-
-</div>
