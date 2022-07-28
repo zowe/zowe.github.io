@@ -52,9 +52,9 @@ The Security Workgroup continuously monitors well-known sources of information a
   * [CISA Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
    
    
-Any issues found to have impact on Zowe projects, are further [analyzed](#Analysis-And-Assessment) without unnecessary delay.
+Any issues found to have impact on Zowe projects, are further without unnecessary delay.
 
-Information about any identified issues is propagated by the Security Workgroup to the squads for [mitigation](#Security-Issues-Mitigation).  
+Information about any identified issues is propagated by the Security Workgroup to the squads for .  
     
 ### Security issues reporting
 <!-- Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM -->
@@ -111,9 +111,9 @@ Additional hints and recommendations:
 #### What happens after security report is received by the Security Workgroup 
 * After your report is received, a member of the Security Workgroup replies to acknowledge receipt of the report. 
 * The reporter may be contacted for clarification.
-* Without unnecessary delay the report is [analyzed](#Analysis-And-Assessment).
+* Without unnecessary delay the report is .
 
-<!-- **IMPORTANT:**  Please do not file a public issue [disclosing vulnerabilities](#Security-issues-disclosure) as this may be misused by violent attackers. -->
+<!-- **IMPORTANT:**  Please do not file a public issue as this may be misused by violent attackers. -->
     Note 1: We encourage the reporters to work with the Security Workgroup team to resolve the issue before going publicly with it.
 
     Note 2: Security vulnerabilities identified through own testing or reported by community members, and which don't yet have assigned a CVE, are reported by the Zowe Security Workgroup to a CVE Numbering Authorityu (CNA).     
@@ -147,7 +147,7 @@ The severity can be one of the:
  
 ## Security issues mitigation
 
- After the issue is sufficiently documented, the Security Workgroup coordinates the issue [mitigation](#Security-issues-mitigation).
+ After the issue is sufficiently documented, the Security Workgroup coordinates the issue .
 <!--
     (Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV)
     (NIST-SSF #REF: SSF-A.4.2-B)
