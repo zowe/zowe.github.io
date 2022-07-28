@@ -10,11 +10,7 @@ This Security Policy governs how Zowe handles vulnerabilities identification, mi
 Our policy is based on the <a href="https://en.wikipedia.org/wiki/Coordinated_vulnerability_disclosure">Coordinated Vulnerability Disclosure (CVD) Policy</a>
 which is also adopted by many other organizations, <a href="https://www.cisa.gov/coordinated-vulnerability-disclosure-process">CISA</a> and <a href="https://www.etsi.org/standards/coordinated-vulnerability-disclosure">ETSI</a> among them. 
 Zowe adapts the following 5 CVD topics to declare complete set of policy requirements for Respond to Vulnerabilities:
-* [Security issues identification](#Security-issues-identification) <!-- <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span> -->
-* [Security issues analysis and assessment](#Analysis-and-assessment)
-* [Security issues mitigation](#Security-issues-mitigation)
-* [Security issues disclosure](#Security-issues-disclosure) <!-- <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-VDR)</span> -->
-* [Solution publishing](#Solution-publishing)
+
 
 The topics listed above contain sets of applicable requirements. Where appropriate the fulfilment of these requirements may be governed by internal processes and guidance. 
 In such cases, a detailed description of the corresponding processes and guidance is provided in separate documents.
