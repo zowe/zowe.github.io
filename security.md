@@ -4,6 +4,8 @@
 
 # Respond to Vulnerabilities Policy
 <!--<div style="display:none" hidden>(Zowe-SSDP-SDLC ID: ZSSD-LP:RV)</div>-->
+<script src="https://cdn.jsdelivr.net/remarkable/1.7.1/remarkable.min.js"></script>
+<div class="md-transform">
 
 This Security Policy governs how Zowe handles vulnerabilities identification, mitigation and disclosure.
 
@@ -19,8 +21,8 @@ Zowe adapts the following 5 CVD topics to declare complete set of policy require
 The topics listed above contain sets of applicable requirements. Where appropriate the fulfilment of these requirements may be governed by internal processes and guidance. 
 In such cases, a detailed description of the corresponding processes and guidance is provided in separate documents.
 
-    NOTE: Wherever appropriate, the policy requirements are mapped to the NIST SSDF Respond to Vulnerabilities (RV) Best practices - see https://csrc.nist.gov/publications/detail/sp/800-218/final 
-          and/or to the Open Source Security Foundation (OpenSSF) Best Practices] - see https://openssf.org/ (former Core Infrastructure Iniitative) - see https://www.coreinfrastructure.org/.
+    NOTE: Wherever appropriate, the policy requirements are mapped to the NIST SSDF Respond to Vulnerabilities (RV) Best practices - see [https://csrc.nist.gov/publications/detail/sp/800-218/final](https://csrc.nist.gov/publications/detail/sp/800-218/final)
+          and/or to the Open Source Security Foundation (OpenSSF) Best Practices] - see [https://openssf.org/](https://openssf.org/) (former Core Infrastructure Iniitative) - see [https://www.coreinfrastructure.org/](https://www.coreinfrastructure.org/).
           The mappings are part of this document but are provided as comments and those are not rendered in the markdown viewer. 
 
 The individual requirements may be a responsibility of a single participant or the responsibilities could be shared between multiple cooperating participants.
@@ -44,7 +46,7 @@ The main participants in the CVD related processes are:
 * The squads perform internal security code review of newly implemented features and other security related code changes.
 * The code reviews are performed by squad members other than the individuals who created the code.
 * The squads continuously perform security testing for security issues in their projects' code and configuration.
-* A full penetration testing is performed by the Security Workgroup before each major release.
+* Before each major release, the Security Workgroup conducts full penetration testing.
 
 ### Vulnerability monitoring</h3>
 <!-- Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM -->
@@ -192,15 +194,24 @@ Security notifications are distributed by the following methods.
 * Publishing project specific advisories in the corresponding project GitHub repository Security page.
 
 
-    For example you can find the API Mediation Layer related security advisories here: https://github.com/zowe/api-layer/security/advisories
+    For example you can find the API Mediation Layer related security advisories here: [https://github.com/zowe/api-layer/security/advisories](https://github.com/zowe/api-layer/security/advisories)
 
 * Notification to Zowe users who explicitly requested receiving security alerts and advisories by subscribing to:
   * <code>zowe-user@lists.openmainframeproject.org</code>
   * <code>zowe-dev@lists.openmainframeproject.org</code>
 
 ## Additional sources:
-  - https://cheatsheetseries.owasp.org/cheatsheets/Vulnerability_Disclosure_Cheat_Sheet.html
-  - https://bestpractices.coreinfrastructure.org/en
-  - https://openssf.org/
-  - https://github.com/coreinfrastructure/best-practices-badge
-  - https://www.apache.org/security/
+  - [https://cheatsheetseries.owasp.org/cheatsheets/Vulnerability_Disclosure_Cheat_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Vulnerability_Disclosure_Cheat_Sheet.html)
+  - [https://bestpractices.coreinfrastructure.org/en](https://bestpractices.coreinfrastructure.org/en)
+  - [https://openssf.org/](https://openssf.org/)
+  - [https://github.com/coreinfrastructure/best-practices-badge](https://github.com/coreinfrastructure/best-practices-badge)
+  - [https://www.apache.org/security/](https://www.apache.org/security/)
+
+</div>
+<script type="text/javascript" defer>
+  var md = new Remarkable();
+  var elementsToTransform = document.getElementsByClassName("md-transform");
+  for (var i = 0; i < elementsToTransform.length; i++) {
+    elementsToTransform[i].innerHTML = md.render(elementsToTransform[i].innerHTML);
+  }
+</script>
