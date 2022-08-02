@@ -4,7 +4,7 @@
 
 <!-- <div style="display:none" hidden>(Zowe-SSDP-SDLC ID: ZSSD-LP:RV)</div> -->
 
-<div class="row">
+<div class="row" style="padding: 4% 7% 5% 7%">
 <div class="col-md-12">
 <h1>Zowe Security Policy</h1>
 
