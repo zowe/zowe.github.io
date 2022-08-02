@@ -42,7 +42,7 @@ In such cases, a detailed description of the corresponding processes and guidanc
 
 <h1>Zowe Response to Vulnerability Policy</h1>
 
-<h2>Security issues identification</h2>
+<h2 id="security-issues-identification">Security issues identification</h2>
 
 <!-- <span style="display:none" hidden>(Zowe-SSDP-SDLC - #ID: ZSSD-LP:RV-ICV)</span> -->
 
@@ -146,7 +146,7 @@ Note 1: We encourage the reporters to work with the Security Workgroup team to r
 <pre><code>Note 2: Security vulnerabilities identified through own testing or reported by community members, and which don't yet have assigned a CVE, are reported by the Zowe Security Workgroup to a CVE Numbering Authorityu (CNA).     
 </code></pre>
 
-<h2>Analysis and assessment</h2>
+<h2 id="analysis-and-assessment">Analysis and assessment</h2>
 
 <!--
 (Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ARV)
@@ -176,7 +176,7 @@ Note 1: We encourage the reporters to work with the Security Workgroup team to r
 </code></pre></li>
 </ul>
 
-<h2>Security issues mitigation</h2>
+<h2 id="security-issues-mitigation">Security issues mitigation</h2>
 
 <p>After the issue is sufficiently documented, the Security Workgroup coordinates the issue <a href="#security-issues-mitigation">mitigation</a>.
 <!--
@@ -190,7 +190,7 @@ Note 1: We encourage the reporters to work with the Security Workgroup team to r
 (NIST-SSF #REF: SSF-A.4.1-B)
 -->
 
-<h2>Security issues disclosure</h2>
+<h2 id="security-issues-disclosure">Security issues disclosure</h2>
 
 <ul>
   <li><p>Zowe discloses fixed vulnerabilities in a timely manner giving the users sufficient time to plan their upgrades.</p></li>
@@ -201,7 +201,7 @@ The issues that were fixed would be published in the [Zowe security reports](htt
 </code></pre></li>
 </ul>
 
-<h2>Solution publishing</h2>
+<h2 id="solution-publishing">Solution publishing</h2>
 
 <h3>Security advisory</h3>
 
