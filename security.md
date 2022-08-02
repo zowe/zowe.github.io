@@ -2,11 +2,11 @@
 <!-- Copyright Contributors to the Zowe project. -->
 <!-- # Zowe Security Policy-->
 
-<h1>Zowe Security Policy</h1>
-
 <!-- <div style="display:none" hidden>(Zowe-SSDP-SDLC ID: ZSSD-LP:RV)</div> -->
 
 <div class="row">
+<div class="col-md-12">
+<h1>Zowe Security Policy</h1>
 
 <p>This Security Policy governs how Zowe handles vulnerabilities identification, mitigation and disclosure.</p>
 
@@ -252,4 +252,5 @@ The issues that were fixed would be published in the [Zowe security reports](htt
   <li><a href="https://www.apache.org/security/">https://www.apache.org/security/</a></li>
 </ul>
 
+</div>
 </div>
