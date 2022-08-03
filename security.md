@@ -197,7 +197,7 @@ Note 1: We encourage the reporters to work with the Security Workgroup team to r
   <li><p>We however don't disclose the vulnerabilities fixed in the latest release as we respect the need for at least 45 days to decide when and how will the users upgrade.</p></li>
   <li><p>When a new release is published, the project list the vulnerabilities fixed in the previous release.</p>
 <pre><code>For example when we'd release Zowe v2.3 we'd publish the list of vulnerabilities that were fixed in the version 2.2 .
-The issues that were fixed would be published in the <a href="https://github.com/zowe/security-reports/blob/master/security-vulnerabilities.md">Zowe security reports</a> repository listing.
+The issues that were fixed would be published in the Zowe Docs in the Release Note section.
 </code></pre></li>
 </ul>
 
