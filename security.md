@@ -25,7 +25,7 @@ Zowe adapts the following 5 CVD topics to declare complete set of policy require
 <p>The topics listed above contain sets of applicable requirements. Where appropriate the fulfilment of these requirements may be governed by internal processes and guidance.
 In such cases, a detailed description of the corresponding processes and guidance is provided in separate documents.</p>
 
-<p style="font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;">NOTE: Wherever appropriate, the policy requirements are mapped to the NIST SSDF Respond to Vulnerabilities (RV) Best practices - see <a href="https://csrc.nist.gov/publications/detail/sp/800-218/final">https://csrc.nist.gov/publications/detail/sp/800-218/final</a>
+<p style='font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace' >NOTE: Wherever appropriate, the policy requirements are mapped to the NIST SSDF Respond to Vulnerabilities (RV) Best practices - see <a href="https://csrc.nist.gov/publications/detail/sp/800-218/final">https://csrc.nist.gov/publications/detail/sp/800-218/final</a>
       and/or to the Open Source Security Foundation (OpenSSF) Best Practices - see <a href="https://openssf.org/">https://openssf.org/</a> (former Core Infrastructure Initative) - see <a href="https://www.coreinfrastructure.org/">https://www.coreinfrastructure.org/</a>.
       The mappings are part of this document but are provided as comments and those are not rendered in the markdown viewer. 
 </p>
