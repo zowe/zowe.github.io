@@ -26,7 +26,7 @@ Zowe adapts the following 5 CVD topics to declare complete set of policy require
 In such cases, a detailed description of the corresponding processes and guidance is provided in separate documents.</p>
 
 <pre><code>NOTE: Wherever appropriate, the policy requirements are mapped to the NIST SSDF Respond to Vulnerabilities (RV) Best practices - see <a href="https://csrc.nist.gov/publications/detail/sp/800-218/final">https://csrc.nist.gov/publications/detail/sp/800-218/final</a>
-      and/or to the Open Source Security Foundation (OpenSSF) Best Practices - see <a href="https://openssf.org/">https://openssf.org/</a> (former Core Infrastructure Iniitative) - see <a href="https://www.coreinfrastructure.org/">https://www.coreinfrastructure.org/</a>.
+      and/or to the Open Source Security Foundation (OpenSSF) Best Practices - see <a href="https://openssf.org/">https://openssf.org/</a> (former Core Infrastructure Initative) - see <a href="https://www.coreinfrastructure.org/">https://www.coreinfrastructure.org/</a>.
       The mappings are part of this document but are provided as comments and those are not rendered in the markdown viewer. 
 </code></pre>
 
@@ -143,7 +143,7 @@ In such cases, a detailed description of the corresponding processes and guidanc
 <p><!-- <strong>IMPORTANT:</strong>  Please do not file a public issue <a href="#Security-issues-disclosure">disclosing vulnerabilities</a> as this may be misused by violent attackers. -->
 Note 1: We encourage the reporters to work with the Security Workgroup team to resolve the issue before going publicly with it.</p>
 
-<p>Note 2: Security vulnerabilities identified through own testing or reported by community members, and which don't yet have assigned a CVE, are reported by the Zowe Security Workgroup to a CVE Numbering Authorityu (CNA).     
+<p>Note 2: Security vulnerabilities identified through own testing or reported by community members, and which don't yet have assigned a CVE, are reported by the Zowe Security Workgroup to a CVE Numbering Authority (CNA).     
 </p>
 
 <h2 id="analysis-and-assessment">Analysis and assessment</h2>
@@ -184,7 +184,7 @@ Note 1: We encourage the reporters to work with the Security Workgroup team to r
 (NIST-SSF #REF: SSF-A.4.2-B)
 --></p>
 
-<p>The Zowe squads strive to fix the relevant security issues according to their assessed priority within a predefined timeframe. [vulnerabilities_critical_fixed policy]</p>
+<p>The Zowe squads strive to fix the relevant security issues according to their assessed priority within a predefined timeframe.</p>
 
 <!--
 (NIST-SSF #REF: SSF-A.4.1-B)
@@ -196,7 +196,7 @@ Note 1: We encourage the reporters to work with the Security Workgroup team to r
   <li><p>Zowe discloses fixed vulnerabilities in a timely manner giving the users sufficient time to plan their upgrades.</p></li>
   <li><p>We however don't disclose the vulnerabilities fixed in the latest release as we respect the need for at least 45 days to decide when and how will the users upgrade.</p></li>
   <li><p>When a new release is published, the project list the vulnerabilities fixed in the previous release.</p>
-<pre><code>For example when we'd release Zowe v2.3 we'd publish the list of vulnerabilities that were fixed in the version 2.2 .
+<pre><code>For example when we'd release Zowe v2.3 we'd publish the list of vulnerabilities that were fixed in the version 2.2.
 The issues that were fixed would be published in the Zowe Docs in the Release Note section.
 </code></pre></li>
 </ul>
