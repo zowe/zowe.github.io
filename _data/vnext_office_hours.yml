@@ -49,8 +49,8 @@ consumers:
   - date: 04/27/2022 12:00PM - 12:30PM ET
     topic: Zowe Web UI for Consumers
     meeting_link: https://zoom.us/j/94312528890
-    recording_link: 
-    materials_link:
+    recording_link: https://zoom.us/rec/share/XP8u1Nh3b7jUf8yJ-MTaYYM8K12kHVmVaGJV_-x7aBaYYKD8V3FXXFTOrT_8FDrJ.v0xDj7ti0OCXWZ83?startTime=1651074511000
+    materials_link: https://ibm.box.com/s/3l68kyofmvqacrhun64lwzzdt6z8c594
   - date: 04/20/2022 12:00PM - 12:30PM ET
     topic: Zowe Explorers for Consumers
     meeting_link: https://zoom.us/j/94312528890
