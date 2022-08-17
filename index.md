@@ -53,6 +53,10 @@ redirect_from:
   }
 </style>
 
+<div style="">
+  <iframe src="https://www.surveymonkey.com/r/zowev2plans"></iframe>
+</div>
+
 <div class="announcementsection">
   <h1>Announcements</h1>
   <strong>Zowe version {{ site.data.releases.v2[0].version }} is now available. You can download the installers for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="https://docs.zowe.org/stable/getting-started/release-notes/{{ site.data.releases.v2[0].release_notes }}">Release notes</a>.<br></strong>
