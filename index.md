@@ -51,10 +51,71 @@ redirect_from:
     height: 300px;
     background-size: contain;
   }
+
+  #feedback {
+    position: fixed; 
+    bottom: 10px; 
+    right: 10px; 
+    border: 2px #212529 solid; 
+    height: 600px;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+  }
+
+  #feedback-closed {
+    position: fixed; 
+    bottom: 10px; 
+    right: 10px;
+    display: none;
+    border-radius: 5px;
+    border: 2px #212529 solid; 
+    z-index: 1000;
+    background-color: white;
+    font-size: 24px;
+    margin: 2px;
+    font-weight: bold;
+    padding-left: 6px;
+    padding-right: 6px;
+    cursor: pointer;
+  }
+
+  #feedback-closed.feedback-hide, #feedback.feedback-hide {
+    display: none;
+  }
+
+  .feedback-header {
+    font-size: 24px;
+    margin: 2px;
+    font-weight: bold;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  @media (min-width: 1024px) and (min-height: 768px) {
+    #feedback-closed { 
+      display: block;
+    }
+
+    #feedback {
+      display: block;
+    }
+  }
 </style>
 
-<div style="">
-  <iframe src="https://www.surveymonkey.com/r/zowev2plans"></iframe>
+<script src="https://kit.fontawesome.com/f449f80794.js" crossorigin="anonymous"></script>
+
+<!-- When it's closed it should be possible to open again -->
+<div id="feedback-closed" onclick="toggleFeedback();">
+  Looking for feedback 
+</div>
+
+<div id="feedback">
+  <div class="feedback-header">Looking for feedback <div style="float: right; cursor: pointer;" onClick="toggleFeedback();"><i class="fa-solid fa-circle-xmark"></i></div></div>
+  <div>
+    <iframe src="https://www.surveymonkey.com/r/zowev2plans" style="height: 557px;"></iframe>
+  </div>
 </div>
 
 <div class="announcementsection">
@@ -392,6 +453,24 @@ The plugin provides such abilities as working with z/OS datasets and USS files, 
   </div>    
 </div>
 
+<script>
+  function toggleFeedback() {
+    toggle('feedback'); 
+    toggle('feedback-closed');
+  }
+
+  function toggle(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("feedback-hide") == -1) {
+      x.className += " feedback-hide";
+    } else {
+      x.className = x.className.replace(" feedback-hide", "");
+    }
+  }
+
+  toggle('feedback-closed');
+  // Keep the information that the user closed the feedback so we don't make them unhappy. 
+</script>
 <script src="assets/retainable.js" />
 <link rel="stylesheet" href="assets/src/retainable.css" />
   
