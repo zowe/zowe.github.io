@@ -71,10 +71,30 @@ redirect_from:
   {% endif %}
 </div>
 
-<div style="text-align: center; padding: 3%; background-image: url('assets/img/bg2.png'); background-repeat: no-repeat; background-size: cover; color: white !important"> 
-  <h1 id="conformance" style="margin-bottom: 2%">Open, Simple, Familiar</h1>
-  <h4 style="">Combining the past and the present to build the future of mainframe</h4>
-</div>
+<div id="intents" style="padding: 4% 7% 5% 7%" class="bg-light">
+    <h2 class="text-center" style="color: black !important; margin-bottom: 5%">What would you like to do with Zowe?</h2>
+    <div class="row">
+      <div class="col-sm text-center">
+        <a href="/learn"><button type="button" class="btn btn-primary btn-lg btn-block">Learn</button></a>
+        <p style="margin-top: 1rem">Learn how Zowe works and what it can do for you</p>
+      </div>
+      <div class="col-sm text-center">
+        <a href="https://docs.zowe.org/stable/user-guide/installandconfig.html"><button type="button" class="btn btn-primary btn-lg btn-block">Use</button></a>
+        <p style="margin-top: 1rem">Get started with installing and using Zowe</p>
+      </div>
+      <div class="col-sm text-center">
+        <a href="/extend"><button type="button" class="btn btn-primary btn-lg btn-block">Extend</button></a>
+        <p style="margin-top: 1rem">Build the next generation of mainframe tooling on top of Zowe</p>
+      </div>
+      <div class="col-sm text-center">
+        <a href="/contribute"><button type="button" class="btn btn-primary btn-lg btn-block">Contribute</button></a>
+        <p style="margin-top: 1rem">Contribute to the open source community developing Zowe</p>
+      </div>
+    </div>
+    <div style="margin-top: 3%" class="text-right">
+    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg> <a href="https://github.com/zowe/community/issues">Report Zowe issue</a> | <a href="https://github.com/zowe/zowe.github.io/issues">Report website issue</a>
+    </div>
+</div> 
 
 <div class="row" style="padding: 5%">
   <div class="col-12 col-md-8">
@@ -128,30 +148,11 @@ redirect_from:
   </div>
 </div>
 
-<div id="intents" style="padding: 4% 7% 5% 7%" class="bg-light">
-    <h2 class="text-center" style="color: black !important; margin-bottom: 5%">What would you like to do with Zowe?</h2>
-    <div class="row">
-      <div class="col-sm text-center">
-        <a href="/learn"><button type="button" class="btn btn-primary btn-lg btn-block">Learn</button></a>
-        <p style="margin-top: 1rem">Learn how Zowe works and what it can do for you</p>
-      </div>
-      <div class="col-sm text-center">
-        <a href="https://docs.zowe.org/stable/user-guide/installandconfig.html"><button type="button" class="btn btn-primary btn-lg btn-block">Use</button></a>
-        <p style="margin-top: 1rem">Get started with installing and using Zowe</p>
-      </div>
-      <div class="col-sm text-center">
-        <a href="/extend"><button type="button" class="btn btn-primary btn-lg btn-block">Extend</button></a>
-        <p style="margin-top: 1rem">Build the next generation of mainframe tooling on top of Zowe</p>
-      </div>
-      <div class="col-sm text-center">
-        <a href="/contribute"><button type="button" class="btn btn-primary btn-lg btn-block">Contribute</button></a>
-        <p style="margin-top: 1rem">Contribute to the open source community developing Zowe</p>
-      </div>
-    </div>
-    <div style="margin-top: 3%" class="text-right">
-    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg> <a href="https://github.com/zowe/community/issues">Report Zowe issue</a> | <a href="https://github.com/zowe/zowe.github.io/issues">Report website issue</a>
-    </div>
-</div> 
+
+<div style="text-align: center; padding: 3%; background-image: url('assets/img/bg2.png'); background-repeat: no-repeat; background-size: cover; color: white !important"> 
+  <h1 id="conformance" style="margin-bottom: 2%">Open, Simple, Familiar</h1>
+  <h4 style="">Combining the past and the present to build the future of mainframe</h4>
+</div>
 
   {% if site.data.upcoming_events.size >= 1 %}
   <section id="events" style="margin-top: 3%">
