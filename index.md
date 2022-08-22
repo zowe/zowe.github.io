@@ -114,16 +114,22 @@ redirect_from:
 
 <script src="https://kit.fontawesome.com/f449f80794.js" crossorigin="anonymous"></script>
 
-<div id="feedback-closed" class=" feedback-hide" onclick="toggleFeedback();">
+{% if site.data.question_of_month %}  
+  <div id="feedback-closed" class=" feedback-hide" onclick="toggleFeedback();">
+    Looking for feedback 
   Looking for feedback 
-</div>
-
-<div id="feedback">
-  <div class="feedback-header" onclick="toggleFeedback();">Looking for feedback <div style="float: right; cursor: pointer;"><i class="fa-solid fa-circle-xmark"></i></div></div>
-  <div>
-    <iframe src="https://www.surveymonkey.com/r/zowev2plans" style="height: 557px;"></iframe>
+    Looking for feedback 
+  Looking for feedback 
+    Looking for feedback 
   </div>
-</div>
+
+  <div id="feedback">
+    <div class="feedback-header" onclick="toggleFeedback();">Looking for feedback <div style="float: right; cursor: pointer;"><i class="fa-solid fa-circle-xmark"></i></div></div>
+    <div>
+      <iframe src="{{site.data.question_of_month.link}}" style="height: 557px;"></iframe>
+    </div>
+  </div>
+{% endif %}
 
 <div class="announcementsection">
   <h1>Announcements</h1>
