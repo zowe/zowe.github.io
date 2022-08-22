@@ -116,15 +116,11 @@ redirect_from:
 
 {% if site.data.question_of_month %}  
   <div id="feedback-closed" class=" feedback-hide" onclick="toggleFeedback();">
-    Looking for feedback 
-  Looking for feedback 
-    Looking for feedback 
-  Looking for feedback 
-    Looking for feedback 
+    <span class="question-name">Question for September</span>
   </div>
 
   <div id="feedback">
-    <div class="feedback-header" onclick="toggleFeedback();">Looking for feedback <div style="float: right; cursor: pointer;"><i class="fa-solid fa-circle-xmark"></i></div></div>
+    <div class="feedback-header" onclick="toggleFeedback();"><span class="question-name">Question for August</span> <div style="float: right; cursor: pointer;"><i class="fa-solid fa-circle-xmark"></i></div></div>
     <div>
       <iframe src="{{site.data.question_of_month.link}}" style="height: 557px;"></iframe>
     </div>
