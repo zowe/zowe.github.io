@@ -1,21 +1,3 @@
-- event: SHARE Columbus 22
-  schedule: August 21   - August 14
-  description: Join us for SHARE Columbus, August 21-26, 2022, for a week-long program 
-    of unmatched education, face-to-face networking opportunities, live technical sessions 
-    and receptions. 
-  url: https://www.share.org/Events/SHARE-Columbus-2022
-- event: Open Mainframe Summit 22
-  schedule: September 21 - September 22
-  description: The Open Mainframe Summit brings together all of the different types of 
-    mainframers – from students to hobbyists, seasoned professionals to new engineers, 
-    developers, and educators – to share best practices, discuss hot topics, learn technical 
-    insight from the best, and network with like-minded individuals who are passionate about 
-    the mainframe industry.
-  url: https://events.linuxfoundation.org/open-mainframe-summit/
-- event: GSE UK
-  schedule: November 01 - November 03
-  description: Mainframes are MAD – Modern, Adaptable, Diverse
-  url: https://conferences.gse.org.uk/2022
 - event: SHARE Virtual
   schedule: August 09 - August 14
   description: The SHARE virtual conference (#SHAREvirtual21) is hosting its summer
