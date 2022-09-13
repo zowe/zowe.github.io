@@ -90,7 +90,7 @@ chat_github_url: https://github.com/zowe/zowe-chat
 chat_slack_url: https://openmainframeproject.slack.com/archives/C03NNABMN0J
 zowe_video_deck_url: https://docs.zowe.org/Zowe_introduction_video_deck.pptx
 zowe_video_transcript_url: https://docs.zowe.org/Zowe_introduction_video_script.txt
-learn_page_get_started: https://docs.zowe.org/stable/getting-started/zowe-getting-started.html
+learn_page_get_started: https://docs.zowe.org/stable/getting-started/overview.html
 zowe_medium_blog_url: https://medium.com/zowe
 master_the_mainframe_url: https://www.ibm.com/it-infrastructure/z/education/zxplore
 visual_studio_code_url: https://code.visualstudio.com/
