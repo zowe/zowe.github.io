@@ -11,7 +11,7 @@ v2:
     explorer_version: 2.3.0
     node_sdk_version: 2.3.0
     python_sdk_version: 2.3.0
-    release_date: 2022-09-??
+    release_date: 2022-09-21
     documentation: stable
     release_notes: v2_3_0
   - version: 2.2.0
