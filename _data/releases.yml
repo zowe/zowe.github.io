@@ -13,7 +13,7 @@ v2:
     python_sdk_version: 2.3.0
     release_date: 2022-09-29
     documentation: stable
-    release_notes: v2_3_0
+    release_notes: v2_3_1
   - version: 2.3.0
     zos_version: 2.3.0
     smpe_version: 2.3.0
