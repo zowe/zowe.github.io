@@ -57,7 +57,7 @@ redirect_from:
     bottom: 10px; 
     right: 10px; 
     border: 2px #212529 solid; 
-    height: 600px;
+    height: 400px;
     background-color: white;
     border-radius: 5px;
     z-index: 1000;
@@ -94,6 +94,10 @@ redirect_from:
     cursor: pointer;
   }
 
+  .v3theme, survey-page, survey-page-body {
+    padding: 14px 14px 0 14px !important;
+  }
+
   #intents {
     padding-left: 7%;
     padding-right: 7%;
@@ -101,7 +105,7 @@ redirect_from:
     padding-bottom: 1%;
   }
 
-  @media (min-width: 1024px) and (min-height: 768px) {
+  @media (min-width: 896px) and (min-height: 530px) {
     #feedback-closed { 
       display: block;
     }
@@ -120,9 +124,9 @@ redirect_from:
   </div>
 
   <div id="feedback">
-    <div class="feedback-header" onclick="toggleFeedback();"><span class="question-name">Question for August</span> <div style="float: right; cursor: pointer;"><i class="fa-solid fa-circle-xmark"></i></div></div>
+    <div class="feedback-header" onclick="toggleFeedback();"><span class="question-name" style="font-size: smaller;">Question for August</span> <div style="float: right; cursor: pointer;"><i class="fa-solid fa-circle-xmark"></i></div></div>
     <div>
-      <iframe src="{{site.data.question_of_month.link}}" style="height: 557px;"></iframe>
+      <iframe src="{{site.data.question_of_month.link}}" style="height: 357px; width: 270px;"></iframe>
     </div>
   </div>
 {% endif %}
