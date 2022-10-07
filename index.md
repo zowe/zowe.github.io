@@ -94,10 +94,6 @@ redirect_from:
     cursor: pointer;
   }
 
-  .v3theme, survey-page, survey-page-body {
-    padding: 14px 14px 0 14px !important;
-  }
-
   #intents {
     padding-left: 7%;
     padding-right: 7%;
