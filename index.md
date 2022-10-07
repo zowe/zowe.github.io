@@ -385,7 +385,7 @@ The plugin provides such abilities as working with z/OS datasets and USS files, 
         <img class="image-zowe-use" src="assets/img/chat-thumbnail-v1.png">
       </div>
       <div class="col-md-7 col-sm order-first order-sm-last">
-        <a id="chat-intro"><h4>Zowe Chat Incubator</h4></a>
+        <a id="chat-intro"><h4>Zowe Chat (Incubator)</h4></a>
         <p style="margin: 1rem auto">An incubator focused on working with the mainframe from popular chat clients such as Slack&#x00AE; , Microsoft Teams&#x00AE; , and Mattermost&#x00AE; . Whether you're collaborating with your team to diagnose issues, need a quick read on the state of a system, or want push notifications from your monitoring tools, Zowe Chat will simplify those experiences and integrate directly into your chat clients. Stay tuned, more to come!
         </p>
           <p>
