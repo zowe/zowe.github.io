@@ -261,7 +261,7 @@ redirect_from:
       <div class="col-md-7 col-sm order-last order-sm-first">
         <a id="app-framework-intro"><h4>Zowe Application Framework</h4></a>
         <p style="margin: 1rem auto">  
-        A web user interface (UI) that provides a virtual desktop containing a number of apps allowing access to z/OS function. Base Zowe includes apps for traditional access such as a 3270 terminal and a VT Terminal, as well as an editor and explorers for working with JES, MVS Data Sets and Unix System Services.
+        A web user interface (UI) that provides a virtual desktop containing a number of apps allowing access to z/OS functionality. Base Zowe includes apps for traditional usecases like a 3270 Terminal and a VT Terminal, as well as an Editor and Explorers for working with JES, MVS Data Sets and Unix System Services.
         </p>
         <p>
           <a href="{{ site.app_framework_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
