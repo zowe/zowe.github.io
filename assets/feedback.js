@@ -20,10 +20,8 @@ function getCurrentDate() {
 }
 
 const feedbackOpen = localStorage.getItem("zowe-feedback-open");
-// Hide feedback when already shown in this month
-if (feedbackOpen === getCurrentDate()) {
-    toggleFeedback();
-}
+// For more friendly first-time user UX, always leave feedback box closed on default
+toggleFeedback();
 
 const dateObj = new Date();
 const monthNameLong = dateObj.toLocaleString("en-US", { month: "long" });
