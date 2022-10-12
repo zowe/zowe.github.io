@@ -462,10 +462,11 @@ The plugin provides such abilities as working with z/OS datasets and USS files, 
   </div>    
 </div>
 
-<script src="assets/feedback.js" />
-<script src="assets/retainable.js" />
-<link rel="stylesheet" href="assets/src/retainable.css" />
+<script src="assets/retainable.js" ></script>
+<script src="assets/feedback.js" ></script>
   
+<link rel="stylesheet" href="assets/src/retainable.css" />
+
 <div>
 
 
