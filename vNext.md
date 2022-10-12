@@ -157,7 +157,7 @@ p .card-black {
           <td><a href="{{ meeting.meeting_link }}">{{ meeting.meeting_link }}</a></td>
           <td>
             {% if meeting.recording_link %}
-              <a href="{{ meeting.meeting_link }}">Zoom recording</a>
+              <a href="{{ meeting.recording_link }}">Zoom recording</a>
             {% endif %}
           </td>
           <td>
@@ -186,7 +186,7 @@ p .card-black {
           <td><a href="{{ meeting.meeting_link }}">{{ meeting.meeting_link }}</a></td>
           <td>
             {% if meeting.recording_link %}
-              <a href="{{ meeting.meeting_link }}">Zoom recording</a>
+              <a href="{{ meeting.recording_link }}">Zoom recording</a>
             {% endif %}
           </td>
           <td>
