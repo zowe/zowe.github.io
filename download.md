@@ -458,7 +458,7 @@
     <p>
       Test the latest Zowe features and provide feedback. Technical previews are <b>for testing only</b> and not ready
       for production.</p>
-    <div class="card-deck w-50">
+    <div class="card-deck">
       <div class="card bg-light border-light mb-3">
         <h4 class="card-header" id="zowe-docker">Zowe Docker build</h4>
         <div class="card-body">
@@ -496,19 +496,18 @@
             </div>
           </div>
         </div>
-      </div>      
-    </div>
-    <div class="card bg-light border-light mb-3">
+      </div> 
+      <div class="card bg-light border-light mb-3">
         <h4 class="card-header" id="zowe-chat">Zowe Chat</h4>
         <div class="card-body">
           <p class="card-text">Zowe Chat enables you to work with the mainframe from popular chat clients such as Slack , Microsoft Teams, and Mattermost.</p>
           <p>
             <a class="btn btn-primary"
-                  href="{{ site.zowe_chat_download_url }}">Zowe chat tarball</a>
+                  href="{{ site.zowe_chat_download_url }}">Zowe Chat tarball</a>
           </p>
          </div>
          <div>
-            <a href="https://docs.zowe.org/user-guide/zowe-chat/chat_install_overview"
+            <a href="https://docs.zowe.org/stable/user-guide/zowe-chat/chat_install_overview"
                   class="card-link">
               <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
@@ -521,8 +520,8 @@
             </a>
           </div>
      </div>      
+     </div>     
     </div>
-  </div>
 
   <h1 id="all-v2-releases">All Zowe V2.x Releases</h1>
   <p>Download releases of Zowe V2.x by version number.</p>
