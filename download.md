@@ -500,8 +500,8 @@
       <div class="card bg-light border-light mb-3">
         <h4 class="card-header" id="zowe-chat">Zowe Chat</h4>
          <div class="card-body">
-          <h5 class="card-title">Direct download</h5>
           <p class="card-text">Zowe Chat enables you to work with the mainframe from popular chat clients such as Slack , Microsoft Teams, and Mattermost.</p>
+          <h5 class="card-title">Direct download</h5>
           <p>
             <a class="btn btn-primary"
                   href="{{ site.zowe_chat_download_url }}">Zowe Chat tarball</a>
