@@ -26,7 +26,7 @@ cli_plugins_download_url: legal.html?type=cli-plugins&version=
 cli_active_development_download_url: legal.html?type=cli-active-development&version=
 smpe_download_url: legal.html?type=smpe&version=
 pswi_download_uri: legal.html?type=pswi&version=
-zowe_chat_download_url: 
+zowe_chat_download_url: legal.html?type=chat&version=tp1
 
 zowe_node_sdk_download_url: legal.html?type=nodejs-sdk&version=
 zowe_python_sdk_download_url: legal.html?type=python-sdk&version=
