@@ -518,7 +518,7 @@
                   href="{{ site.zowe_chat_download_url }}">Zowe Chat tarball</a>
           </p>
           <div>
-            <a href="https://docs.zowe.org/stable/user-guide/zowe-chat/chat_install_overview"
+            <a href="https://docs.zowe.org/stable/user-guide/zowe-chat/introduction"
                   class="card-link">
               <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
