@@ -89,6 +89,7 @@ intellij_slack_url: https://join.slack.com/t/iba-mainframe-tools/shared_invite/z
 intellij_doc_url: https://plugins.jetbrains.com/plugin/18688-zowe-explorer
 chat_github_url: https://github.com/zowe/zowe-chat
 chat_slack_url: https://openmainframeproject.slack.com/archives/C03NNABMN0J
+chat_doc_url: https://docs.zowe.org/stable/getting-started/overview#zowe-chat-technical-preview
 zowe_video_deck_url: https://docs.zowe.org/Zowe_introduction_video_deck.pptx
 zowe_video_transcript_url: https://docs.zowe.org/Zowe_introduction_video_script.txt
 learn_page_get_started: https://docs.zowe.org/stable/getting-started/overview.html
