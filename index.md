@@ -382,7 +382,7 @@ The plugin provides such abilities as working with z/OS datasets and USS files, 
     <hr class="w-75 mt-5 mb-5">
     <div class="row" style="margin-bottom: 4%">
       <div class="col-md-5 col-sm order-last order-sm-first">
-        <img class="image-zowe-use" src="assets/img/chat-thumbnail-v1.png">
+        <img class="image-zowe-use" src="assets/img/chat-thumbnail-v2.png">
       </div>
       <div class="col-md-7 col-sm order-first order-sm-last">
         <a id="chat-intro"><h4>Zowe Chat (Incubator)</h4></a>
@@ -390,7 +390,8 @@ The plugin provides such abilities as working with z/OS datasets and USS files, 
         </p>
           <p>
             <a href="{{ site.chat_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
-            <a href="{{ site.chat_slack_url }}">Connect on Slack</a>&nbsp;<!--|&nbsp;-->
+            <a href="{{ site.chat_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
+            <a href="{{ site.chat_doc_url }}">Learn more</a><!--|&nbsp;-->
             <!--<a href="{{ site.intellij_doc_url }}">Learn more</a>&nbsp;|&nbsp; -->
           </p>
       </div>

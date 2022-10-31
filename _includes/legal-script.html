@@ -74,15 +74,15 @@
                 params
                 .get('version') + '.pax.Z';
         } else if (params.has('type') && params.get('type') == "chat") {
-            // https://zowe.jfrog.io/artifactory/libs-release-local/org/zowe/chat/tp1/zowe-chat-tp1.tar.gz
+            // https://zowe.jfrog.io/artifactory/libs-release-local/org/zowe/chat/tp1/zowe-chat-tech-preview-1.tar.gz
             document.getElementById('download_button').href =
                 "https://docs.zowe.org/stable/user-guide/zowe-chat/introduction"
             document.getElementById('download_button').onclick = function () {
                 ga && ga('send', 'event', 'download', 'Zowe Chat ' + params.get('version'),
                     'zowe-chat-' +
                     params.get('version') + '.tar.gz');
-                window.open("https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/chat" + params.get('version') +
-                    '/zowe-chat-' + params.get('version') + '.tar.gz', '_blank');
+                window.open("https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/chat/" + params.get('version') +
+                    '/zowe-chat-' + 'tech-preview-1.tar.gz', '_blank'); // + params.get('version') + '.tar.gz', '_blank');
             }
             document.getElementById('download_file_message').innerHTML = 'You are downloading zowe-chat-' +
                 params.get('version') + '.tar.gz';
