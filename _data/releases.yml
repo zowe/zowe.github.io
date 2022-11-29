@@ -89,7 +89,7 @@ v1:
     cli_plugins_version: 1.28.2
     node_sdk_version: 1.28.2
     python_sdk_version: 1.28.2
-    release_date: 2022-11-28
+    release_date: 2022-11-29
     documentation: v1.28.x
     release_notes: v1_28_2
   - version: 1.28.1
