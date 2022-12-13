@@ -1,6 +1,19 @@
 # List of Zowe releases - update here and it will update the entire site :-)
 # Note - keep this in order as the latest release is pulled from the first item in the list!
 v2:
+  - version: 2.5.0
+    zos_version: 2.5.0
+    smpe_version: 2.5.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO02058 UO02059
+    cli_version: 2.5.0
+    cli_plugins_version: 2.5.0
+    explorer_version: 2.4.1
+    node_sdk_version: 2.5.0
+    python_sdk_version: 2.5.0
+    release_date: 2022-12-12
+    documentation: stable
+    release_notes: v2_5_0
   - version: 2.4.0
     zos_version: 2.4.0
     smpe_version: 2.4.0
@@ -12,7 +25,7 @@ v2:
     node_sdk_version: 2.4.0
     python_sdk_version: 2.4.0
     release_date: 2022-10-19
-    documentation: stable
+    documentation: v2.4.x
     release_notes: v2_4_0
   - version: 2.3.1
     zos_version: 2.3.1
@@ -25,7 +38,7 @@ v2:
     node_sdk_version: 2.3.0
     python_sdk_version: 2.3.0
     release_date: 2022-09-29
-    documentation: v2_3_x
+    documentation: v2.3.x
     release_notes: v2_3_1
   - version: 2.3.0
     zos_version: 2.3.0
@@ -38,7 +51,7 @@ v2:
     node_sdk_version: 2.3.0
     python_sdk_version: 2.3.0
     release_date: 2022-09-21
-    documentation: v2_3_x
+    documentation: v2.3.x
     release_notes: v2_3_0
   - version: 2.2.0
     zos_version: 2.2.0
