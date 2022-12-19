@@ -21,31 +21,33 @@ body html {
   background-color: lightblue;
 }
 
-.nav-item > .nav-link:hover {
+.nav-item:hover {
   background-color: #eeeeee;
+}
+
+.nav-item > .nav-link:hover {
+  color: black;
   cursor: pointer;
 }
 
 .nav-item > .nav-link {
-  color: white !important;
+  color: white;
   font-size: large;
   font-weight: 500;
   margin-right: 10px;
 }
 
 .navbar-nav {
-  margin-left: 30px;
   width: 100%;
 }
 
 .nav-item {
-  width: 10%;
+  width: 11.1%;
+  text-align: center;
 }
 
-@media (max-width:900px) {
-  .navbar-nav {
-    margin-left: 10px;
-  }
+nav.navbar {
+  padding: 0px;
 }
 
 .socialheader {

@@ -97,13 +97,6 @@ a:hover{
 .announcementsection {
   background-color:#eeeeee;
   padding-bottom:0.5%;
-  margin-left: 30px
-}
-
-@media (max-width:900px) {
-  .announcementsection {
-    margin-left: 10px;
-  }
 }
 
 .announcementsection strong {

@@ -110,6 +110,11 @@ redirect_from:
       display: block;
     }
   }
+
+  #menu-overview {
+    background-color: #eeeeee;
+    color: black;
+  }
 </style>
 
 <script src="https://kit.fontawesome.com/f449f80794.js" crossorigin="anonymous"></script>
@@ -127,14 +132,14 @@ redirect_from:
   </div>
 {% endif %}
 
-<div class="announcementsection">
+<div class="announcementsection row" style="padding-left: 5%">
   <div class="row" >
-    <div class="col-12 col-md-1">
+    <div class="col-12 col-md-2">
       <div style="padding-top: 10px; padding-left: 10px; padding-botom: 10px; cursor: pointer;" onclick="toggle('remaining-rows');">
         <i class="fa-solid fa-chevron-down"></i> Announcements
       </div>
     </div>
-    <div class="col-12 col-md-11" style="padding-top: 10px;">
+    <div class="col-12 col-md-10" style="padding-top: 10px;">
       <div id="first-row">
           <strong>Zowe version {{ site.data.releases.v2[0].version }} is now available. You can download the installers for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="https://docs.zowe.org/stable/getting-started/release-notes/{{ site.data.releases.v2[0].release_notes }}">Release notes</a>.<br></strong>
       </div>
@@ -157,73 +162,15 @@ redirect_from:
   </div>
 </div>
 
-<div id="intents" class="bg-light">
-    <h2 class="text-center" style="color: black !important; margin-bottom: 1.5%">What would you like to do with Zowe?</h2>
-    <div class="row">
-      <div class="col-sm text-center">
-        <a href="/learn"><button type="button" class="btn btn-primary btn-lg btn-block">Learn</button></a>
-        <p style="margin-top: 1rem">Learn how Zowe works and what it can do for you</p>
-      </div>
-      <div class="col-sm text-center">
-        <a href="https://docs.zowe.org/stable/user-guide/installandconfig.html"><button type="button" class="btn btn-primary btn-lg btn-block">Use</button></a>
-        <p style="margin-top: 1rem">Get started with installing and using Zowe</p>
-      </div>
-      <div class="col-sm text-center">
-        <a href="/extend"><button type="button" class="btn btn-primary btn-lg btn-block">Extend</button></a>
-        <p style="margin-top: 1rem">Build the next generation of mainframe tooling on top of Zowe</p>
-      </div>
-      <div class="col-sm text-center">
-        <a href="/contribute"><button type="button" class="btn btn-primary btn-lg btn-block">Contribute</button></a>
-        <p style="margin-top: 1rem">Contribute to the open source community developing Zowe</p>
-      </div>
-    </div>
-    <div style="margin-top: 1.5%" class="text-left">
-    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg> <a href="https://github.com/zowe/community/issues">Report Zowe issue</a> | <a href="https://github.com/zowe/zowe.github.io/issues">Report website issue</a>
-    </div>
-</div> 
-
 <div class="row" style="padding: 5%">
   <div class="col-12 col-md-8">
-    <p>Zowe is an integrated and extensible open source framework for z/OS. Zowe, like Mac OS or Windows, comes with a set of APIs and OS capabilities that applications build on and also includes some applications out of the box. 
+    <p>Zowe, the integrated and extensible open source framework for z/OS, combines the past and present to build the future of mainframes.
+    Like Mac OS, Windows, and others, Zowe comes with a core set of applications out of the box in combination with the APIs and OS capabilities 
+    future applications will depend on.   
     </p>
     <br>
     <p>Zowe offers modern interfaces to interact with z/OS and allows you to work with z/OS in a way that is similar to what you experience on cloud platforms today. You can use these interfaces as delivered or through plug-ins and extensions that are created by clients or third-party vendors. 
     </p>
-    <p>Zowe is composed of several components, each improving the learning ability, accessibility, and possibility of mainframe development.</p>
-    <div class="d-flex flex-column">
-      <a href="#app-framework-intro" class="card-link" style="margin-left: 1.25rem">
-      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
-      Zowe Application Framework
-      </a>
-      <a href="#apiml-intro" class="card-link">
-      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
-      Zowe API Mediation Layer
-      </a>
-      <a href="#cli-intro" class="card-link">
-      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
-      Zowe CLI
-      </a>
-      <a href="#zowe-explorer-intro" class="card-link">
-      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
-      Zowe Explorer
-      </a>
-      <a href="#zowe-client-sdk-intro" class="card-link">
-      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
-      Zowe Client SDKs - under development
-      </a>
-      <a href="#zebra-intro" class="card-link">
-      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
-      ZEBRA (Zowe Embedded Browser for RMF/SMF and APIs) - Incubator
-      </a>
-      <a href="#intellij-intro" class="card-link">
-      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
-      Zowe IntelliJ&#x00AE; Plugin - Incubator
-      </a>
-      <a href="#chat-intro" class="card-link">
-      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>
-      Zowe Chat - Incubator
-      </a>
-    </div>
   </div>
   <div class="col-12 col-md-4 zowe-video">
     <iframe title="Introduction to Zowe" src="{{ site. latest_video_embed }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: -webkit-fill-available; height: 100%"></iframe>
@@ -234,10 +181,30 @@ redirect_from:
   </div>
 </div>
 
-<div style="text-align: center; padding: 3%; background-image: url('assets/img/bg2.png'); background-repeat: no-repeat; background-size: cover; color: white !important"> 
-  <h1 id="conformance" style="margin-bottom: 2%">Open, Simple, Familiar</h1>
-  <h4 style="">Combining the past and the present to build the future of mainframe</h4>
-</div>
+<div id="intents" class="bg-light">
+    <h2 class="text-center" style="color: black !important; margin-bottom: 1.5%">What would you like to do with Zowe?</h2>
+    <div class="row">
+      <div class="col-sm text-center">
+        <a href="/learn"><button type="button" class="btn btn-primary btn-lg btn-block">Learn</button></a>
+        <p style="margin-top: 1rem">Learn how Zowe works and what it can do for you</p>
+      </div>
+      <div class="col-sm text-center">
+        <a href="https://docs.zowe.org/stable/user-guide/installandconfig.html"><button type="button" class="btn btn-primary btn-lg btn-block">Use</button></a>
+        <p style="margin-top: 1rem">Get started from planning to install and use Zowe</p>
+      </div>
+      <div class="col-sm text-center">
+        <a href="/extend"><button type="button" class="btn btn-primary btn-lg btn-block">Create</button></a>
+        <p style="margin-top: 1rem">Build extensions, services, plug-ins or apps on top of Zowe</p>
+      </div>
+      <div class="col-sm text-center">
+        <a href="/contribute"><button type="button" class="btn btn-primary btn-lg btn-block">Contribute</button></a>
+        <p style="margin-top: 1rem">Contribute to the open source community developing Zowe</p>
+      </div>
+    </div>
+    <div style="margin-top: 1.5%" class="text-left">
+    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg> <a href="https://github.com/zowe/community/issues">Report Zowe issue</a> | <a href="https://github.com/zowe/zowe.github.io/issues">Report website issue</a>
+    </div>
+</div> 
 
   {% if site.data.upcoming_events.size >= 1 %}
   <section id="events" style="margin-top: 3%">
