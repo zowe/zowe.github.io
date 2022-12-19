@@ -81,7 +81,7 @@ redirect_from:
     cursor: pointer;
   }
 
-  #feedback-closed.feedback-hide, #feedback.feedback-hide {
+  #feedback-closed.feedback-hide, #feedback.feedback-hide, .announcementsection .feedback-hide {
     display: none;
   }
 
@@ -128,21 +128,33 @@ redirect_from:
 {% endif %}
 
 <div class="announcementsection">
-  <h1>Announcements</h1>
-  <strong>Zowe version {{ site.data.releases.v2[0].version }} is now available. You can download the installers for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="https://docs.zowe.org/stable/getting-started/release-notes/{{ site.data.releases.v2[0].release_notes }}">Release notes</a>.<br></strong>
-  <hr class="w-100" style="margin-top: 0.25rem; margin-bottom: 0.25rem; border-top: 1px solid rgb(0 0 0 / 20%)">
-  <strong>Zowe version {{ site.data.releases.v1[0].version }} is now available. You can download the installers for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="https://docs.zowe.org/v1.28.x/getting-started/release-notes/v1_28_1">Release notes</a>.<br></strong>
-  {% if site.data.announcements %}
-    {% for announcement in site.data.announcements %}
-    <hr class="w-100" style="margin-top: 0.25rem; margin-bottom: 0.25rem; border-top: 1px solid rgb(0 0 0 / 20%)">
-    <strong>{{ announcement.announcement }}
-      {% if announcement.link %}
-        <a href="{{ announcement.link }}">Learn More</a>
-      {% endif %}
-      <br>
-    </strong>
-    {% endfor %}
-  {% endif %}
+  <div class="row" >
+    <div class="col-12 col-md-1">
+      <div style="padding-top: 10px; padding-left: 10px; padding-botom: 10px; cursor: pointer;" onclick="toggle('remaining-rows');">
+        <i class="fa-solid fa-chevron-down"></i> Announcements
+      </div>
+    </div>
+    <div class="col-12 col-md-11" style="padding-top: 10px;">
+      <div id="first-row">
+          <strong>Zowe version {{ site.data.releases.v2[0].version }} is now available. You can download the installers for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="https://docs.zowe.org/stable/getting-started/release-notes/{{ site.data.releases.v2[0].release_notes }}">Release notes</a>.<br></strong>
+      </div>
+      <div id="remaining-rows" class=" feedback-hide">
+        <hr class="w-100" style="margin-top: 0.25rem; margin-bottom: 0.25rem; border-top: 1px solid rgb(0 0 0 / 20%)">
+        <strong>Zowe version {{ site.data.releases.v1[0].version }} is now available. You can download the installers for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="https://docs.zowe.org/v1.28.x/getting-started/release-notes/v1_28_1">Release notes</a>.<br></strong>
+        {% if site.data.announcements %}
+          {% for announcement in site.data.announcements %}
+          <hr class="w-100" style="margin-top: 0.25rem; margin-bottom: 0.25rem; border-top: 1px solid rgb(0 0 0 / 20%)">
+          <strong>{{ announcement.announcement }}
+            {% if announcement.link %}
+              <a href="{{ announcement.link }}">Learn More</a>
+            {% endif %}
+            <br>
+          </strong>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
 </div>
 
 <div id="intents" class="bg-light">

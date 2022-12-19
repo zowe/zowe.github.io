@@ -27,30 +27,30 @@ a:hover{
   padding-right:5%;
 }
 
-.lfheader{
-  background-color:#777777;
-  width:100%;
+.lfheader {
+  background-color: blue;
+  width: 100%;
 }
 
-.lfheader img{
-
+.lfheader img {
   width:20%;
   padding-top:0.5%;
   padding-left:2%;
 }
- .copyright {
-   width:90% !important;
-   margin-top:2%;
-   font-size:0.8em;
-   display:block;
-   line-height:1.5em;
-   float:left;
-   color:white !important;
- }
 
- .copyright a {
-   color:white !important;
- }
+.copyright {
+  width:90% !important;
+  margin-top:2%;
+  font-size:0.8em;
+  display:block;
+  line-height:1.5em;
+  float:left;
+  color:white !important;
+}
+
+.copyright a {
+  color:white !important;
+}
 
 .navigation-top {
   border-bottom:0px solid white !important;
@@ -96,10 +96,14 @@ a:hover{
 
 .announcementsection {
   background-color:#eeeeee;
-  padding-left:7%;
-  padding-right:7%;
-  padding-top:1.5%;
-  padding-bottom:1.5%;
+  padding-bottom:0.5%;
+  margin-left: 30px
+}
+
+@media (max-width:900px) {
+  .announcementsection {
+    margin-left: 10px;
+  }
 }
 
 .announcementsection strong {
@@ -479,4 +483,20 @@ a.back-to-top {
   .zowe-video {
     max-height: inherit;
   }
+}
+
+#navbarSupportedContent {
+  margin: 0px;
+  padding: 0px;
+}
+
+.img-top {
+  vertical-align: top;
+  display: block;
+}
+
+.img-middle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

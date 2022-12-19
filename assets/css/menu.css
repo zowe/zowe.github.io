@@ -15,12 +15,14 @@ body html {
 .nav {
   padding-bottom: 0px;
   width: 100%;
-  background-color: #333;
   position: relative;
+  margin: 0px;
+  padding: 0px;
+  background-color: lightblue;
 }
 
 .nav-item > .nav-link:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #eeeeee;
   cursor: pointer;
 }
 
@@ -33,6 +35,11 @@ body html {
 
 .navbar-nav {
   margin-left: 30px;
+  width: 100%;
+}
+
+.nav-item {
+  width: 10%;
 }
 
 @media (max-width:900px) {
