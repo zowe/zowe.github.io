@@ -4,6 +4,17 @@
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- Copyright Contributors to the Zowe project. -->
 
+<style>
+  #menu-extend a.nav-link {
+    background-color: #eeeeee;
+    color: black !important;
+  }
+
+  #menu-extend.nav-item {
+    background-color: #eeeeee;
+  }
+</style>
+
 <section class="whitebackground" style="float: none;">
   <h1 id="download" style="margin-bottom: 2rem">Extending Zowe</h1>
 

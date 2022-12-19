@@ -4,6 +4,17 @@
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- Copyright Contributors to the Zowe project. -->
 
+<style>
+  #menu-download a.nav-link {
+    background-color: #eeeeee;
+    color: black !important;
+  }
+
+  #menu-download.nav-item {
+    background-color: #eeeeee;
+  }
+</style>
+
 <section class="whitebackground" style="padding-top:1%">
   <h1 id="download">Download Zowe</h1>
   <div class="card">

@@ -94,13 +94,6 @@ redirect_from:
     cursor: pointer;
   }
 
-  #intents {
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-  }
-
   @media (min-width: 896px) and (min-height: 530px) {
     #feedback-closed { 
       display: block;
@@ -111,9 +104,13 @@ redirect_from:
     }
   }
 
-  #menu-overview {
+  #menu-overview a.nav-link {
     background-color: #eeeeee;
-    color: black;
+    color: black !important;
+  }
+
+  #menu-overview.nav-item {
+    background-color: #eeeeee;
   }
 </style>
 
@@ -181,23 +178,27 @@ redirect_from:
   </div>
 </div>
 
-<div id="intents" class="bg-light">
-    <h2 class="text-center" style="color: black !important; margin-bottom: 1.5%">What would you like to do with Zowe?</h2>
+<div id="intents">
+    <h2 style="color: black !important; margin-bottom: 1.5%">What would you like to do with Zowe?</h2>
     <div class="row">
-      <div class="col-sm text-center">
-        <a href="/learn"><button type="button" class="btn btn-primary btn-lg btn-block">Learn</button></a>
+      <div class="col-sm bg-light">
+        <img src="/assets/img/learn.png" />
+        <a href="/learn">Learn</a>
         <p style="margin-top: 1rem">Learn how Zowe works and what it can do for you</p>
       </div>
-      <div class="col-sm text-center">
-        <a href="https://docs.zowe.org/stable/user-guide/installandconfig.html"><button type="button" class="btn btn-primary btn-lg btn-block">Use</button></a>
+      <div class="col-sm bg-light">
+        <img src="/assets/img/use.png" />
+        <a href="https://docs.zowe.org/stable/user-guide/installandconfig.html">Use</a>
         <p style="margin-top: 1rem">Get started from planning to install and use Zowe</p>
       </div>
-      <div class="col-sm text-center">
-        <a href="/extend"><button type="button" class="btn btn-primary btn-lg btn-block">Create</button></a>
+      <div class="col-sm bg-light">
+        <img src="/assets/img/create.png" />
+        <a href="/extend">Create</a>
         <p style="margin-top: 1rem">Build extensions, services, plug-ins or apps on top of Zowe</p>
       </div>
-      <div class="col-sm text-center">
-        <a href="/contribute"><button type="button" class="btn btn-primary btn-lg btn-block">Contribute</button></a>
+      <div class="col-sm bg-light">
+        <img src="/assets/img/contribute.png" />
+        <a href="/contribute">Contribute</a>
         <p style="margin-top: 1rem">Contribute to the open source community developing Zowe</p>
       </div>
     </div>
@@ -208,8 +209,8 @@ redirect_from:
 
   {% if site.data.upcoming_events.size >= 1 %}
   <section id="events" style="margin-top: 3%">
-    <div style="padding: 0% 7%">
-      <h2 class="mb-3 text-center" style="color: black !important">Upcoming and recent events</h2>
+    <div style="padding: 0% 5%">
+      <h2 class="mb-3" style="color: black !important">Upcoming and recent events</h2>
       <div class="row py-4">
         {% for events in site.data.upcoming_events limit:3 %}
         <div class="col-md-4 px-3 pb-4 pb-md-0"> <!-- ml-auto mr-auto -->
@@ -230,9 +231,9 @@ redirect_from:
   </section>
   {% endif %}
 
-<div id="components" style="padding: 4% 7% 5% 7%">
+<div id="components">
   <div>
-    <h2 class="text-center" style="color: black !important; margin-bottom: 3%">Zowe components</h2>
+    <h2 style="color: black !important; margin-bottom: 3%">Zowe components</h2>
   </div>
 
   <div>
@@ -378,7 +379,7 @@ The plugin provides such abilities as working with z/OS datasets and USS files, 
   </div>
 </div>
 
-<div id="metrics" style="padding: 2% 3%; color: black !important;" class="bg-light"> 
+<div id="metrics" class="bg-light"> 
   <h2 class="text-center" style="margin-bottom: 5%"><a href="{{ site.zowe_metrics_url }}" style="color: initial">Zowe by the numbers</a></h2>
   <div class="row" style="margin-bottom: 2%">
     <div class="col-md text-center">

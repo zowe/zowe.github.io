@@ -493,3 +493,31 @@ a.back-to-top {
   margin-left: auto;
   margin-right: auto;
 }
+
+#intents {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#intents div.row>div {
+  padding: 10px; 
+  margin: 10px;
+}
+
+#intents div.row>div a {
+  font-weight: bold;
+  font-size: xx-large;
+  padding-left: 15px;
+  vertical-align: bottom;
+}
+
+#components {
+  padding: 4% 5% 5% 5%;
+}
+
+#metrics {
+  padding: 2% 3%; 
+  color: black !important;
+}

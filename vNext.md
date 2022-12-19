@@ -21,6 +21,17 @@ table, th, td {
 p .card-black {
   color: black;
 }
+
+#menu-vnext a.nav-link {
+  background-color: #eeeeee;
+  color: black !important;
+}
+
+#menu-vnext.nav-item {
+  background-color: #eeeeee;
+}
+
+
 </style>
 <script src="https://cdn.jsdelivr.net/remarkable/1.7.1/remarkable.min.js"></script>
 

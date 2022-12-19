@@ -25,13 +25,13 @@ body html {
   background-color: #eeeeee;
 }
 
-.nav-item > .nav-link:hover {
-  color: black;
+.nav-item:hover, .nav-item:hover > a.nav-link {
+  color: black !important;
   cursor: pointer;
 }
 
 .nav-item > .nav-link {
-  color: white;
+  color: white !important;
   font-size: large;
   font-weight: 500;
   margin-right: 10px;
