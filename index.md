@@ -114,17 +114,25 @@ redirect_from:
 
 <script src="https://kit.fontawesome.com/f449f80794.js" crossorigin="anonymous"></script>
 
+{% assign currentTime = 'now' | date: '%s' | plus: 0 %}     
 {% if site.data.question_of_month %}  
-  <div id="feedback-closed" class=" feedback-hide" onclick="toggleFeedback();">
-    <span class="question-name">Question for September</span>
+  {% for feedback in site.data.question_of_month %}
+    {% assign fromFeedback = feedback.from | date: '%s' | plus: 0 %}
+    {% assign toFeedback = feedback.to | date: '%s' | plus: 0 %}
+      {% if currentTime > fromFeedback %}
+        {% if toFeedback == 0 or currentTime < toFeedback %}
+<div id="feedback-closed" class=" feedback-hide" onclick="toggleFeedback();">
+  <span class="question-name">Question for September</span>
+</div>
+<div id="feedback">
+  <div class="feedback-header" onclick="toggleFeedback();"><span class="question-name" style="font-size: smaller;">Question for August</span> <div style="float: right; cursor: pointer;"><i class="fa-solid fa-circle-xmark"></i></div></div>
+  <div>
+    <iframe src="{{site.data.question_of_month.link}}" style="height: 357px; width: 270px;"></iframe>
   </div>
-
-  <div id="feedback">
-    <div class="feedback-header" onclick="toggleFeedback();"><span class="question-name" style="font-size: smaller;">Question for August</span> <div style="float: right; cursor: pointer;"><i class="fa-solid fa-circle-xmark"></i></div></div>
-    <div>
-      <iframe src="{{site.data.question_of_month.link}}" style="height: 357px; width: 270px;"></iframe>
-    </div>
-  </div>
+</div>
+        {% endif %}
+      {% endif %}
+  {% endfor %}
 {% endif %}
 
 <div class="announcementsection">
@@ -134,13 +142,19 @@ redirect_from:
   <strong>Zowe version {{ site.data.releases.v1[0].version }} is now available. You can download the installers for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="https://docs.zowe.org/v1.28.x/getting-started/release-notes/v1_28_1">Release notes</a>.<br></strong>
   {% if site.data.announcements %}
     {% for announcement in site.data.announcements %}
-    <hr class="w-100" style="margin-top: 0.25rem; margin-bottom: 0.25rem; border-top: 1px solid rgb(0 0 0 / 20%)">
-    <strong>{{ announcement.announcement }}
-      {% if announcement.link %}
-        <a href="{{ announcement.link }}">Learn More</a>
-      {% endif %}
-      <br>
-    </strong>
+      {% assign from = announcement.from | date: '%s' | plus: 0 %}
+      {% assign to = announcement.to | date: '%s' | plus: 0 %}
+        {% if currentTime > from %}
+          {% if to == 0 or currentTime < to %}
+            <hr class="w-100" style="margin-top: 0.25rem; margin-bottom: 0.25rem; border-top: 1px solid rgb(0 0 0 / 20%)">
+            <strong>{{ announcement.announcement }} 
+                   {% if announcement.link %}
+                      <a href="{{ announcement.link }}">Learn More</a>
+                   {% endif %}
+              <br>
+            </strong>  
+          {% endif %}
+        {% endif %}
     {% endfor %}
   {% endif %}
 </div>

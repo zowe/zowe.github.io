@@ -1,2 +1,10 @@
-# One question of month. If none is provided, nothing is displayed
-link: https://www.surveymonkey.com/r/zowetraining
+# The questions of the month. The from and to shouldn't overlap
+- link: https://www.surveymonkey.com/r/zowev2plans
+  from: 2022-11-01
+  to: 2022-11-30
+- link: https://www.surveymonkey.com/r/zowetraining
+  from: 2022-12-01
+  to: 2022-12-31
+- link: https://www.surveymonkey.com/r/zoweroadmap
+  from: 2023-01-01
+  to: 2023-01-31
