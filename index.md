@@ -232,7 +232,7 @@ redirect_from:
   {% endif %}
 
 <div id="components">
-  <div style="margin-bottom: 15px;">
+  <div style="margin-bottom: 35px;">
     <h2 style="color: black !important;">Zowe projects</h2>
     Zowe is composed of several projects, each improving the learning ability, accessibility, and possibility of mainframe development.
   </div>
