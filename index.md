@@ -232,152 +232,43 @@ redirect_from:
   {% endif %}
 
 <div id="components">
-  <div>
-    <h2 style="color: black !important; margin-bottom: 3%">Zowe components</h2>
+  <div style="margin-bottom: 15px;">
+    <h2 style="color: black !important;">Zowe projects</h2>
+    Zowe is composed of several projects, each improving the learning ability, accessibility, and possibility of mainframe development.
   </div>
 
-  <div>
-    <div class="row" style="margin-bottom: 4%">
-      <div class="col-md-7 col-sm order-last order-sm-first">
-        <a id="app-framework-intro"><h4>Zowe Application Framework</h4></a>
-        <p style="margin: 1rem auto">  
-        A web user interface (UI) that provides a virtual desktop containing a number of apps allowing access to z/OS functionality. Base Zowe includes apps for traditional usecases like a 3270 Terminal and a VT Terminal, as well as an Editor and Explorers for working with JES, MVS Data Sets and Unix System Services.
-        </p>
-        <p>
-          <a href="{{ site.app_framework_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
-          <a href="{{ site.app_framework_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
-          <a href="{{ site.app_framework_doc_url }}">Learn more</a>&nbsp;|&nbsp;
-          <a href="{{ site.app_framework_tour_url }}">View Tour</a>
-        </p>
-      </div>
-      <div class="col-md-5 col-sm order-first order-sm-last">
-        <img class="image-zowe-use" src="assets/img/zowe-desktop-image.png">
-      </div>
-    </div>
-    <hr class="w-75 mt-5 mb-5">
-    <div class="row" style="margin-bottom: 4%">
-      <div class="col-md-5 col-sm">
-        <img class="image-zowe-use" src="assets/img/zowe-apiml-image.png">
-      </div>
-      <div class="col-md-7 col-sm">
-        <a id="apiml-intro"><h4>API Mediation Layer</h4></a>
-          <p style="margin: 1rem auto">Provides a gateway that acts as a reverse proxy for z/OS services, together with a catalog of REST APIs and a dynamic discovery capability. Base Zowe provides core services for working with MVS Data Sets, JES, as well as working with z/OSMF REST APIs. The API Mediation Layer also provides a framework for Single Sign On (SSO). 
-          </p>
-          <p>
-            <a href="{{ site.apiml_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
-            <a href="{{ site.apiml_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
-            <a href="{{ site.apiml_doc_url }}">Learn more</a>
-          </p>
-      </div>
-    </div>
-    <hr class="w-75 mt-5 mb-5">
-    <div class="row" style="margin-bottom: 4%">
-      <div class="col-md-7 col-sm order-last order-sm-first">
-        <a id="cli-intro"><h4>Zowe CLI</h4></a>
-        <p style="margin: 1rem auto">Provides a command-line interface that lets you interact with the mainframe remotely and use common tools such as Integrated Development Environments (IDEs), shell commands, bash scripts, and build tools for mainframe development. It provides a set of utilities and services for application developers that want to become efficient in supporting and building z/OS applications quickly. The CLI provides a core set of commands for working with data sets, USS, JES, as well as issuing TSO and console commands.</p>
-          <p>Zowe CLI Plug-ins:
-            <a href="{{ site.zowe_cli_secure_credential_store_plugin_url }}">Secure Credential Store Plug-in</a>,&nbsp;
-            <a href="{{ site.zowe_cli_cics_plugin_url }}">CICS Plug-in</a>,&nbsp;
-            <a href="{{ site.zowe_cli_db2_plugin_url }}">Db2 Plug-in</a>,&nbsp;
-            <a href="{{ site.zowe_cli_ftp_plugin_url }}">FTP Plug-in</a>,&nbsp;
-            <a href="{{ site.zowe_cli_ims_plugin_url }}">IMS Plug-in</a>,&nbsp;
-            <a href="{{ site.zowe_cli_mq_plugin_url }}">MQ Plug-in</a> 
-          </p>
-          <p>
-            <a href="{{ site.zowe_cli_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
-            <a href="{{ site.zowe_cli_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
-            <a href="{{ site.zowe_cli_doc_url }}">Learn more</a>
-          </p>
-      </div>
-      <div class="col-md-5 col-sm order-first order-sm-last">
-        <img class="image-zowe-use" src="assets/img/zowe-cli.png">
-      </div>
-    </div>
-    <hr class="w-75 mt-5 mb-5">
-    <div class="row" style="margin-bottom: 4%">
-      <div class="col-md-5 col-sm">
-        <img class="image-zowe-use" src="assets/img/zowe-explorer-image.png">
-      </div>
-      <div class="col-md-7 col-sm">
-        <a id="zowe-explorer-intro"><h4>Zowe Explorer</h4></a>
-          <p style="margin: 1rem auto">A Visual Studio Code extension that modernizes the way developers and system administrators interact with z/OS mainframes. Zowe Explorer lets you interact with data sets, USS files, and jobs that are stored on z/OS. The extension complements your Zowe CLI experience and lets you use authentication services like API Mediation Layer.</p>
-          <p>
-            <a href="{{ site.zowe_explorer_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
-            <a href="{{ site.zowe_explorer_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
-            <a href="{{ site.zowe_explorer_doc_url }}">Learn more</a>
-          </p>
-      </div>
-    </div>
-    <hr class="w-75 mt-5 mb-5">
-    <div class="row" style="margin-bottom: 4%">
-      <div class="col-md-7 col-sm order-last order-sm-first">
-        <a id="zowe-client-sdk-intro"><h4>Zowe Client SDKs (under development)</h4></a>
-        <p style="margin: 1rem auto">Provides access to a set of programmatic APIs that you can use to build client applications or scripts that interact with z/OS.</p>
-          <p>Zowe SDKs:
-            <a href="{{ site.zowe_node_sdk_url }}">Node SDK</a>,&nbsp;
-            <a href="{{ site.zowe_python_sdk_url }}">Python SDK</a>,&nbsp;
-            <a href="{{ site.zowe_swift_sdk_url }}">Swift SDK</a>
-          </p>
-          <p>
-            <a href="{{ site.zowe_sdk_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
-            <a href="{{ site.zowe_sdk_doc_url }}">Learn more</a>
-          </p>
-      </div>
-      <div class="col-md-5 col-sm order-first order-sm-last">
-        <img class="image-zowe-use" src="assets/img/zowe-client-sdk-image.png">
-      </div>
-    </div>
-    <hr class="w-75 mt-5 mb-5">
-    <div class="row" style="margin-bottom: 4%">
-      <div class="col-md-7 col-sm">
-        <a id="zebra-intro"><h4>ZEBRA (Incubator)</h4></a>
-        <p style="margin: 1rem auto">Provides re-usable and industry compliant JSON formatted RMF/SMF data records, so that many other ISV SW and users can exploit them using open-source SW for many ways.</p>
-          <p>
-            <a href="{{ site.zebra_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
-            <a href="{{ site.zebra_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
-            <a href="{{ site.zebra_doc_url }}">Learn more</a>&nbsp;|&nbsp;
-            <a href="{{ site.zebra_demo_url }}">Take a tour</a>
-          </p>
-      </div>
-      <div class="col-md-5 col-sm">
-        <img class="image-zowe-use" src="assets/img/zebra-image.png">
-      </div>
-    </div>
-    <hr class="w-75 mt-5 mb-5">
-    <div class="row" style="margin-bottom: 4%">
-      <div class="col-md-7 col-sm">
-        <a id="intellij-intro"><h4>Zowe IntelliJ Plugin (Incubator)</h4></a>
-        <p style="margin: 1rem auto">A plugin is dedicated to facilitate working with z/OS datasets through providing a possibility to work with them in any IntelliJ IDE.
-The plugin provides such abilities as working with z/OS datasets and USS files, exploring and managing JES Jobs.</p>
-          <p>
-            <a href="{{ site.intellij_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
-            <a href="{{ site.intellij_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
-            <a href="{{ site.intellij_doc_url }}">Learn more</a>&nbsp;|&nbsp;
-          </p>
-      </div>
-      <div class="col-md-5 col-sm">
-        <img class="image-zowe-use" src="assets/img/intellij_squad.png">
-      </div>
-    </div>
-    <hr class="w-75 mt-5 mb-5">
-    <div class="row" style="margin-bottom: 4%">
-      <div class="col-md-5 col-sm order-last order-sm-first">
-        <img class="image-zowe-use" src="assets/img/chat-thumbnail-v2.png">
-      </div>
-      <div class="col-md-7 col-sm order-first order-sm-last">
-        <a id="chat-intro"><h4>Zowe Chat (Incubator)</h4></a>
-        <p style="margin: 1rem auto">An incubator focused on working with the mainframe from popular chat clients such as Slack&#x00AE; , Microsoft Teams&#x00AE; , and Mattermost&#x00AE; . Whether you're collaborating with your team to diagnose issues, need a quick read on the state of a system, or want push notifications from your monitoring tools, Zowe Chat will simplify those experiences and integrate directly into your chat clients. Stay tuned, more to come!
-        </p>
-          <p>
-            <a href="{{ site.chat_github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
-            <a href="{{ site.chat_slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
-            <a href="{{ site.chat_doc_url }}">Learn more</a><!--|&nbsp;-->
-            <!--<a href="{{ site.intellij_doc_url }}">Learn more</a>&nbsp;|&nbsp; -->
-          </p>
-      </div>
+  {% if site.data.projects.size >= 1 %}
+    {% assign amount_of_rows = site.data.projects.size | divided_by: 3.0 | ceil %}
+    {% assign range_rows = (1..amount_of_rows )%}
+    <div>
+      {% for current_row in range_rows %}
+        <div class="row" style="margin-bottom: 4%">
+          {% for project in site.data.projects limit: 3 offset: continue %}
+            <div class="col-md-4">
+              <img class="image-zowe-use" src="{{ project.img_url }}">
+              <a id="app-framework-intro"><h4>{{ project.name }}</h4></a>
+              <p style="margin: 1rem auto">{{project.description}}</p>
+              <p>
+                  {% if project.github_url %}
+                    <a href="{{ project.github_url }}">Code on GitHub</a>&nbsp;|&nbsp;
+                  {% endif %}
+                  {% if project.slack_url %}              
+                    <a href="{{ project.slack_url }}">Connect on Slack</a>&nbsp;|&nbsp;
+                  {% endif %}
+                  {% if project.doc_url %}              
+                    <a href="{{ project.doc_url }}">Learn more</a>&nbsp;|&nbsp;
+                  {% endif %}
+                  {% if project.tour_url %}              
+                    <a href="{{ project.tour_url }}">View Tour</a>
+                  {% endif %}
+              </p>
+            </div>
+          {% endfor %}
+        </div>
+      {% endfor %}
     </div>
   </div>
-</div>
+{% endif %}
 
 <div id="metrics" class="bg-light"> 
   <h2 class="text-center" style="margin-bottom: 5%"><a href="{{ site.zowe_metrics_url }}" style="color: initial">Zowe by the numbers</a></h2>
