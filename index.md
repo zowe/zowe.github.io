@@ -127,7 +127,7 @@ redirect_from:
 <div id="feedback">
   <div class="feedback-header" onclick="toggleFeedback();"><span class="question-name" style="font-size: smaller;">Question for August</span> <div style="float: right; cursor: pointer;"><i class="fa-solid fa-circle-xmark"></i></div></div>
   <div>
-    <iframe src="{{site.data.question_of_month.link}}" style="height: 357px; width: 270px;"></iframe>
+    <iframe src="{{feedback.link}}" style="height: 357px; width: 270px;"></iframe>
   </div>
 </div>
         {% endif %}
