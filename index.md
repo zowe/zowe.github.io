@@ -254,6 +254,10 @@ redirect_from:
             
               <img class="image-zowe-use" src="{{ project.img_url }}">
               <a id="app-framework-intro"><h4>{{ project.name }}</h4></a>
+              <p style="margin: 1rem auto">
+                <span class="{{project.stage | replace: " ", "-" | downcase }}">{{project.stage}}</span> 
+                <span class="{{project.dedication | replace: " ", "-" | downcase }}">{{project.dedication}}</span>
+              </p>
               <p style="margin: 1rem auto">{{project.description}}</p>
               <p>
                   {% if project.github_url %}

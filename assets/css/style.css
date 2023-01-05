@@ -538,3 +538,45 @@ div.row div.column-3 {
   border-style: dashed;
   border-width: 0px 0px 1px 0px;
 }
+
+span.long-term-support {
+  background-color: #3DAF94;
+  border-radius: 22px;
+  color: white;
+  padding: 6px;
+}
+
+span.generally-available {
+  background-color: #3DAF94;
+  border-radius: 22px;
+  color: white;
+  padding: 6px;
+}
+
+span.technical-preview {
+  background-color: #3DAF94;
+  border-radius: 22px;
+  color: white;
+  padding: 6px;
+}
+
+span.under-development {
+  background-color: #3DAF94;
+  border-radius: 22px;
+  color: white;
+  padding: 6px;
+}
+
+span.core {
+  background-color: #9F3DAF;
+  border-radius: 22px;
+  color: white;
+  padding: 6px;
+}
+
+span.extension {
+  background-color: #9F3DAF;
+  border-radius: 22px;
+  color: white;
+  padding: 6px;
+}
