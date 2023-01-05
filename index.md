@@ -242,9 +242,16 @@ redirect_from:
     {% assign range_rows = (1..amount_of_rows )%}
     <div>
       {% for current_row in range_rows %}
-        <div class="row" style="margin-bottom: 4%">
+        <div class="row">
+          {% assign current_row_number = forloop.index %}
+          {% assign amount_of_rows = forloop.length %}
           {% for project in site.data.projects limit: 3 offset: continue %}
-            <div class="col-md-4">
+            {% if amount_of_rows == current_row_number %}
+              <div class="col-md-4 row-{{current_row_number}} column-{{forloop.index}} last" >
+            {% else %}
+              <div class="col-md-4 row-{{current_row_number}} column-{{forloop.index}}" >
+            {% endif %}
+            
               <img class="image-zowe-use" src="{{ project.img_url }}">
               <a id="app-framework-intro"><h4>{{ project.name }}</h4></a>
               <p style="margin: 1rem auto">{{project.description}}</p>
