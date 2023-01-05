@@ -103,6 +103,7 @@ a:hover{
 .announcementsection {
   background-color:#eeeeee;
   padding-bottom:0.5%;
+  border-bottom: 1px solid #C1BFBF;
 }
 
 .announcementsection strong {
