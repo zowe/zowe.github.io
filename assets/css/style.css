@@ -40,6 +40,10 @@ a:hover{
   padding-left:2%;
 }
 
+.lfheader nav.nav {
+  background-color: rgba(173,216,230,0.4);
+}
+
 .copyright {
   width:90% !important;
   margin-top:2%;
