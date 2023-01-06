@@ -520,6 +520,11 @@ a.back-to-top {
   vertical-align: bottom;
 }
 
+#intents img {
+  width: 64px;
+  height: 64px;
+}
+
 #components {
   padding: 4% 5% 5% 5%;
 }
