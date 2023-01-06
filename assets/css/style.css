@@ -34,7 +34,7 @@ a:hover{
   width: 100%;
 }
 
-.lfheader img {
+.lfheader img.img-top {
   width:20%;
   padding-top:0.5%;
   padding-left:2%;
