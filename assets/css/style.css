@@ -534,6 +534,14 @@ a.back-to-top {
   color: black !important;
 }
 
+#events .past {
+  color: #939393;
+}
+
+#events .future {
+  color: #24a148;
+}
+
 div.row div.column-1, div.row div.column-2 {
   border-style: dashed;
   border-width: 0px 1px 1px 0px;

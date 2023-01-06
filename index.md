@@ -220,7 +220,14 @@ redirect_from:
           {% else %}
             <h5 class="border-bottom border-primary pb-2">{{ events.event }}</h5>
           {% endif %}
-            <span style="font-weight: 600">{{ events.schedule }}</span>
+          {% assign currentTime = 'now' | date: '%s' | plus: 0 %}
+          {% assign fromEvent = events.from | date: '%s' | plus: 0 %} 
+          {% assign toEvent = events.to | date: '%s' | plus: 0 %}
+          {% if currentTime > toEvent %}
+            <span class="past" style="font-weight: 600"><i class="fa-solid fa-circle-check"></i> {{ events.schedule }}</span>
+          {% else %}
+            <span style="font-weight: 600"><i class="fa-solid fa-circle-check future"></i> {{ events.schedule }}</span>
+          {% endif %}
             <br>
             <span class="text-muted small">{{ events.description }}</span>
           </div>
