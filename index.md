@@ -73,9 +73,7 @@ redirect_from:
     font-size: 24px;
     margin: 2px;
     font-weight: bold;
-    padding: 6px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding: 6px 12px;
     cursor: pointer;
     box-shadow: 0px 0px 10px #b2b2b2;
   }
@@ -88,9 +86,7 @@ redirect_from:
     font-size: 24px;
     margin: 2px;
     font-weight: bold;
-    padding-left: 22px;
-    padding-right: 6px;
-    padding-top: 4px;
+    padding: 4px 6px 0 22px;
     cursor: pointer;
   }
 
@@ -98,7 +94,6 @@ redirect_from:
     height: 356px; 
     width: 270px; 
     border: none;
-    border-radius: 0 0 3px 3px;
   }
 
   #intents {
