@@ -65,19 +65,19 @@ redirect_from:
 
   #feedback-closed {
     position: fixed; 
-    bottom: 10px; 
-    right: 10px;
+    bottom: 24px; 
+    right: 24px; 
     display: none;
-    border-radius: 5px;
-    border: 2px #212529 solid; 
     z-index: 1000;
     background-color: white;
     font-size: 24px;
     margin: 2px;
     font-weight: bold;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
     cursor: pointer;
+    box-shadow: 0px 0px 10px #b2b2b2;
   }
 
   #feedback-closed.feedback-hide, #feedback.feedback-hide {
