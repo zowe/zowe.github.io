@@ -260,7 +260,7 @@ redirect_from:
             {% endif %}
             
               <img class="image-zowe-use" src="{{ project.img_url }}">
-              <a id="app-framework-intro"><h4>{{ project.name }}</h4></a>
+              <a id="{{ project.name | replace: " ", "-" | downcase }}-intro"><h4>{{ project.name }}</h4></a>
               <p style="margin: 1rem auto">
                 <span class="{{project.stage | replace: " ", "-" | downcase }}">{{project.stage}}</span> 
                 <span class="{{project.dedication | replace: " ", "-" | downcase }}">{{project.dedication}}</span>

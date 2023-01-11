@@ -553,42 +553,42 @@ div.row div.column-3 {
 }
 
 span.long-term-support {
-  background-color: #3DAF94;
+  background-color: #0059FF;
   border-radius: 22px;
   color: white;
   padding: 6px;
 }
 
 span.generally-available {
-  background-color: #3DAF94;
+  background-color: #3579F6;
   border-radius: 22px;
   color: white;
   padding: 6px;
 }
 
 span.technical-preview {
-  background-color: #3DAF94;
+  background-color: #D0E2FF;
   border-radius: 22px;
-  color: white;
+  color: #161616;
   padding: 6px;
 }
 
 span.under-development {
-  background-color: #3DAF94;
+  background-color: #E0E0E0;
   border-radius: 22px;
-  color: white;
+  color: #161616;
   padding: 6px;
 }
 
 span.core {
-  background-color: #9F3DAF;
+  background-color: black;
   border-radius: 22px;
   color: white;
   padding: 6px;
 }
 
 span.extension {
-  background-color: #9F3DAF;
+  background-color: black;
   border-radius: 22px;
   color: white;
   padding: 6px;
