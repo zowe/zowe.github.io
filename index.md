@@ -54,31 +54,28 @@ redirect_from:
 
   #feedback {
     position: fixed; 
-    bottom: 10px; 
-    right: 10px; 
-    border: 2px #212529 solid; 
+    bottom: 24px; 
+    right: 24px; 
     height: 400px;
     background-color: white;
-    border-radius: 5px;
     z-index: 1000;
+    box-shadow: 0px 0px 10px #b2b2b2;
     display: none;
   }
 
   #feedback-closed {
     position: fixed; 
-    bottom: 10px; 
-    right: 10px;
+    bottom: 24px; 
+    right: 24px; 
     display: none;
-    border-radius: 5px;
-    border: 2px #212529 solid; 
     z-index: 1000;
     background-color: white;
     font-size: 24px;
     margin: 2px;
     font-weight: bold;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding: 6px 12px;
     cursor: pointer;
+    box-shadow: 0px 0px 10px #b2b2b2;
   }
 
   #feedback-closed.feedback-hide, #feedback.feedback-hide {
@@ -89,9 +86,14 @@ redirect_from:
     font-size: 24px;
     margin: 2px;
     font-weight: bold;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding: 4px 6px 0 22px;
     cursor: pointer;
+  }
+
+  .feedback-container {
+    height: 356px; 
+    width: 270px; 
+    border: none;
   }
 
   #intents {
@@ -125,9 +127,9 @@ redirect_from:
   <span class="question-name">Question for September</span>
 </div>
 <div id="feedback">
-  <div class="feedback-header" onclick="toggleFeedback();"><span class="question-name" style="font-size: smaller;">Question for August</span> <div style="float: right; cursor: pointer;"><i class="fa-solid fa-circle-xmark"></i></div></div>
+  <div class="feedback-header" onclick="toggleFeedback();"><span class="question-name" style="font-size: smaller; color: #008323;">Question for August</span> <div style="float: right; cursor: pointer;"><i class="fa-solid fa-circle-xmark"></i></div></div>
   <div>
-    <iframe src="{{feedback.link}}" style="height: 357px; width: 270px;"></iframe>
+    <iframe class="feedback-container" src="{{feedback.link}}"></iframe>
   </div>
 </div>
         {% endif %}
