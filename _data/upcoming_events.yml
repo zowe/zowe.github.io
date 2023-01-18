@@ -1,21 +1,10 @@
-- event: SHARE Columbus 22
-  schedule: August 21   - August 14
-  description: Join us for SHARE Columbus, August 21-26, 2022, for a week-long program 
-    of unmatched education, face-to-face networking opportunities, live technical sessions 
-    and receptions. 
-  url: https://www.share.org/Events/SHARE-Columbus-2022
-- event: Open Mainframe Summit 22
-  schedule: September 21 - September 22
-  description: The Open Mainframe Summit brings together all of the different types of 
-    mainframers – from students to hobbyists, seasoned professionals to new engineers, 
-    developers, and educators – to share best practices, discuss hot topics, learn technical 
-    insight from the best, and network with like-minded individuals who are passionate about 
-    the mainframe industry.
-  url: https://events.linuxfoundation.org/open-mainframe-summit/
-- event: GSE UK
-  schedule: November 01 - November 03
-  description: Mainframes are MAD – Modern, Adaptable, Diverse
-  url: https://conferences.gse.org.uk/2022
+- event: SHARE (Atlanta + Live Stream)
+  schedule: March 05 - March 09
+  description: SHARE Atlanta, taking place on March 5-8, 2023 at the Hyatt Regency
+    Atlanta, brings together subject-mater experts and enterprise IT professionals
+    to impart lessons, explore new release capabilities and dive deep into the most
+    pressing issues facing confronting the enterprise...
+  url: https://www.openmainframeproject.org/event/share-atlanta-live-stream
 - event: SHARE Virtual
   schedule: August 09 - August 14
   description: The SHARE virtual conference (#SHAREvirtual21) is hosting its summer
@@ -29,6 +18,13 @@
     To register for the event or to learn more, visit https://www.share.org/Events/SHARE-Dallas-2022/Registration.
     As always, Open Mainframe Project will have a presence at the event as many of...
   url: https://www.openmainframeproject.org/event/share-dallas-2022
+- event: Zowe Q4 Webinar
+  schedule: December 14 @ 08:30 AM - 09:30 AM
+  description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
+    \ in what\u2019s happening with Zowe \u2013 please join us for the next Zowe Quarterly\
+    \ Update Webinar on Wednesday, December 14 at 8:30 am PT/ 11:30 am ET. Register\
+    \ here...."
+  url: https://www.openmainframeproject.org/event/zowe-q4-webinar
 - event: VM Workshop 2021
   schedule: June 10 - June 12
   description: The annual VM Workshop, which originally was planned for in-person
@@ -50,6 +46,12 @@
     \ Developers.\u201D Five open source mainframe developers will share their personal\
     \ journey into the mainframe,..."
   url: https://www.openmainframeproject.org/event/i-am-a-mainframer-personal-stories-and-lessons-from-the-next-generation-of-mainframe-developers
+- event: Zowe Quarterly Webinar (September 2022- Virtual)
+  schedule: September 28 @ 08:30 AM - 09:30 AM
+  description: "Whether you are a Zowe User, Contributor, Extender or simply interested\
+    \ in what\u2019s happening with Zowe \u2013 please join us for the next Zowe Quarterly\
+    \ Update Webinar on Wed Sep 28 at 8:30 am PT/11:30 am ET. Register here: https://zoom.us/webinar/register/WN_PlNijM8ATSOO_Ux3JkPAFw..."
+  url: https://www.openmainframeproject.org/event/zowe-quarterly-webinar-september-2022
 - event: IBM TechU
   schedule: October 25 - October 29
   description: "Join Open Mainframe Project at IBM\u2019s Tech U, a virtual training\
