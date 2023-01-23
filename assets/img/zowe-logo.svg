@@ -26,8 +26,8 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="1.5732323"
-     inkscape:cx="638.17657"
-     inkscape:cy="235.18459"
+     inkscape:cx="687.1204"
+     inkscape:cy="184.96951"
      inkscape:window-width="2560"
      inkscape:window-height="1302"
      inkscape:window-x="0"
@@ -56,6 +56,12 @@
        id="rect504" />
     <style
        id="style2">.cls-1{fill:#fff;}</style>
+    <rect
+       x="813.61157"
+       y="133.48315"
+       width="275.22955"
+       height="101.06581"
+       id="rect668-9" />
   </defs>
   <title
      id="title6">zowe-logo</title>
@@ -181,18 +187,6 @@
   </metadata>
   <text
      xml:space="preserve"
-     id="text502"
-     style="font-size:66.6667px;white-space:pre;shape-inside:url(#rect504);fill:#d40000"
-     transform="translate(35.595506,3.813804)"><tspan
-       x="809.16211"
-       y="108.27566"
-       id="tspan914"><tspan
-         style="font-size:80px"
-         id="tspan910">Open</tspan><tspan
-         style="font-family:Helvetica;-inkscape-font-specification:Helvetica;fill:#ffffff"
-         id="tspan912">.</tspan></tspan></text>
-  <text
-     xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Helvetica;-inkscape-font-specification:Helvetica;fill:#d40000"
      x="902.60034"
      y="115.68539"
@@ -204,19 +198,27 @@
   <text
      xml:space="preserve"
      id="text666"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80px;font-family:Helvetica;-inkscape-font-specification:Helvetica;white-space:pre;shape-inside:url(#rect668);fill:#ffffff"
-     transform="translate(31.781701,-8.8988761)"><tspan
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80px;font-family:Helvetica;-inkscape-font-specification:Helvetica;white-space:pre;shape-inside:url(#rect668);display:inline;fill:#ffffff"
+     transform="translate(31.146067,3.1781706)"><tspan
        x="813.61133"
        y="208.70535"
-       id="tspan916">Simple.</tspan></text>
+       id="tspan1215">Simple.</tspan></text>
   <text
      xml:space="preserve"
      id="text672"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:73.3333px;font-family:Helvetica;-inkscape-font-specification:Helvetica;white-space:pre;shape-inside:url(#rect674);fill:#ffffff"
-     transform="translate(29.239165,14.619583)"><tspan
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:73.3333px;font-family:Helvetica;-inkscape-font-specification:Helvetica;white-space:pre;shape-inside:url(#rect674);display:inline;fill:#ffffff"
+     transform="translate(29.239165,35.595507)"><tspan
        x="814.24805"
        y="269.72684"
-       id="tspan920"><tspan
+       id="tspan1219"><tspan
    style="font-size:80px"
-   id="tspan918">Familiar</tspan>.</tspan></text>
+   id="tspan1217">Familiar</tspan>.</tspan></text>
+  <text
+     xml:space="preserve"
+     id="text666-3"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80px;font-family:Helvetica;-inkscape-font-specification:Helvetica;white-space:pre;shape-inside:url(#rect668-9);display:inline;fill:#ffffff"
+     transform="translate(29.117547,-94.828563)"><tspan
+       x="813.61133"
+       y="208.70535"
+       id="tspan1221">Open.</tspan></text>
 </svg>
