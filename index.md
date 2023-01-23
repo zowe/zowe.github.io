@@ -52,58 +52,6 @@ redirect_from:
     background-size: contain;
   }
 
-  #feedback {
-    position: fixed; 
-    bottom: 10px; 
-    right: 10px; 
-    border: 2px #212529 solid; 
-    height: 400px;
-    background-color: white;
-    border-radius: 5px;
-    z-index: 1000;
-    display: none;
-  }
-
-  #feedback-closed {
-    position: fixed; 
-    bottom: 10px; 
-    right: 10px;
-    display: none;
-    border-radius: 5px;
-    border: 2px #212529 solid; 
-    z-index: 1000;
-    background-color: white;
-    font-size: 24px;
-    margin: 2px;
-    font-weight: bold;
-    padding-left: 6px;
-    padding-right: 6px;
-    cursor: pointer;
-  }
-
-  #feedback-closed.feedback-hide, #feedback.feedback-hide, .announcementsection .feedback-hide {
-    display: none;
-  }
-
-  .feedback-header {
-    font-size: 24px;
-    margin: 2px;
-    font-weight: bold;
-    padding-left: 6px;
-    padding-right: 6px;
-    cursor: pointer;
-  }
-
-  @media (min-width: 896px) and (min-height: 530px) {
-    #feedback-closed { 
-      display: block;
-    }
-
-    #feedback {
-      display: block;
-    }
-  }
-
   #menu-overview a.nav-link {
     background-color: #eeeeee;
     color: black !important;
@@ -118,7 +66,9 @@ redirect_from:
 
 {% if site.data.question_of_month %}  
   <div id="feedback-closed" class=" feedback-hide" onclick="toggleFeedback();">
-    <span class="question-name">Question for September</span>
+    <div style="padding-top: 30px; padding-left: 15px; color: white;">
+      <span class="question-name">Question for Jan</span>
+    </div>
   </div>
 
   <div id="feedback">

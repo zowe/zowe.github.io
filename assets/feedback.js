@@ -26,7 +26,7 @@ if (feedbackOpen === getCurrentDate()) {
 }
 
 const dateObj = new Date();
-const monthNameLong = dateObj.toLocaleString("en-US", { month: "long" });
+const monthNameLong = dateObj.toLocaleString("en-US", { month: "short" });
 const elementsToTransform = document.getElementsByClassName("question-name ");
 for (var i = 0; i < elementsToTransform.length; i++) {
     elementsToTransform[i].innerHTML = "Question for " + monthNameLong;
