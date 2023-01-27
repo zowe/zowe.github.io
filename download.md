@@ -177,10 +177,11 @@
                 {% if site.data.releases.v2[0].containerization_version %}
                 <a class="btn btn-primary"
                   href="{{ site.containerization_download_url }}{{ site.data.releases.v2[0].containerization_version }}">Zowe
-                  {{ site.data.releases.v2[0].zos_version }} Containerization build</a>
+                  {{ site.data.releases.v2[0].containerization_version }} Containerization build</a>
                 {% else %}
                 <a class="btn btn-primary"
                 href="{{ site.containerization_download_url }}{{ site.data.releases.v2[0].zos_version }}">Zowe
+                {{ site.data.releases.v2[0].zos_version }} Containerization build</a>
                 {% endif %}
               </p>
               <div>
