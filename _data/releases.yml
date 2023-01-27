@@ -11,7 +11,7 @@ v2:
     cli_plugins_version: 2.6.0
     explorer_version: 2.6.0
     node_sdk_version: 2.6.0
-    python_sdk_version: 2.5.0
+    python_sdk_version: 2.6.0
     release_date: 2022-1-27
     documentation: stable
     release_notes: v2_6_0
@@ -26,7 +26,7 @@ v2:
     node_sdk_version: 2.5.0
     python_sdk_version: 2.5.0
     release_date: 2022-12-12
-    documentation: stable
+    documentation: v2.5.x
     release_notes: v2_5_0
   - version: 2.4.0
     zos_version: 2.4.0
