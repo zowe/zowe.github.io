@@ -1,6 +1,20 @@
 # List of Zowe releases - update here and it will update the entire site :-)
 # Note - keep this in order as the latest release is pulled from the first item in the list!
 v2:
+  - version: 2.6.1
+    zos_version: 2.6.1
+    smpe_version: 2.6.1
+    smpe_sysmod: PTF
+    smpe_numbers: UO02064 UO02065
+    containerization_version: 2.5.0
+    cli_version: 2.6.1
+    cli_plugins_version: 2.6.1
+    explorer_version: 2.6.1
+    node_sdk_version: 2.6.1
+    python_sdk_version: 2.6.1
+    release_date: 2023-02-10
+    documentation: stable
+    release_notes: v2_6_1
   - version: 2.6.0
     zos_version: 2.6.0
     smpe_version: 2.6.0
