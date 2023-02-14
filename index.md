@@ -308,9 +308,3 @@ redirect_from:
 <link rel="stylesheet" type="text/css" href="{{ '/assets/css/retainable.css' | relative_url }}" />
 
 <div>
-
-
-  
-  
-
-
