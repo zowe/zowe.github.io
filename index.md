@@ -66,7 +66,7 @@ redirect_from:
 
 {% if site.data.question_of_month %}  
   <div id="feedback-closed" class=" feedback-hide" onclick="toggleFeedback();">
-    <div style="padding-top: 30px; padding-left: 15px; color: white;">
+    <div style="padding-top: 12px; padding-left: 15px; color: white;">
       <span class="question-name">Question for Jan</span>
     </div>
   </div>
@@ -74,7 +74,7 @@ redirect_from:
   <div id="feedback">
     <div class="feedback-header" onclick="toggleFeedback();"><span class="question-name" style="font-size: smaller;">Question for August</span> <div style="float: right; cursor: pointer;"><i class="fa-solid fa-circle-xmark"></i></div></div>
     <div>
-      <iframe src="{{site.data.question_of_month.link}}" style="height: 357px; width: 270px;"></iframe>
+      <iframe class="feedback-container" src="{{site.data.question_of_month.link}}"></iframe>
     </div>
   </div>
 {% endif %}

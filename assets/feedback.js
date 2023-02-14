@@ -1,6 +1,5 @@
 function toggleFeedback() {
     toggle('feedback');
-    toggle('feedback-closed');
 
     localStorage.setItem("zowe-feedback-open", getCurrentDate());
 }
@@ -23,6 +22,7 @@ const feedbackOpen = localStorage.getItem("zowe-feedback-open");
 // Hide feedback when already shown in this month
 if (feedbackOpen === getCurrentDate()) {
     toggleFeedback();
+    toggle('feedback-closed');
 }
 
 const dateObj = new Date();

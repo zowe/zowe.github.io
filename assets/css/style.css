@@ -624,31 +624,30 @@ div#components img {
 
 #feedback {
   position: fixed; 
-  bottom: 10px; 
-  right: 10px; 
-  border: 2px #212529 solid; 
+  bottom: 95px; 
+  right: 70px; 
   height: 400px;
   background-color: white;
-  border-radius: 5px;
-  z-index: 1000;
+  z-index: 999;
   display: none;
+  box-shadow: 0px 0px 10px #b2b2b2;
 }
 
 #feedback-closed {
   position: fixed; 
-  bottom: 10px; 
-  right: 10px;
+  bottom: 24px; 
+  right: 24px;
   display: none;
   z-index: 1000;
   background-image: url('../img/question-of-month.png');
+  background-repeat: no-repeat;
   font-size: 24px;
   margin: 2px;
   font-weight: bold;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding: 6px 12px;
   cursor: pointer;    
   width: 326px;
-  height: 93px;
+  height: 83px;
 }
 
 #feedback-closed.feedback-hide, #feedback.feedback-hide, .announcementsection .feedback-hide {
@@ -659,9 +658,14 @@ div#components img {
   font-size: 24px;
   margin: 2px;
   font-weight: bold;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding: 4px 6px 0 22px;
   cursor: pointer;
+}
+
+.feedback-container {
+  height: 356px; 
+  width: 270px; 
+  border: none;
 }
 
 @media (min-width: 896px) and (min-height: 530px) {
