@@ -212,8 +212,8 @@ redirect_from:
               <img class="image-zowe-use" src="{{ project.img_url }}">
               <a id="{{ project.name | replace: " ", "-" | downcase }}-intro"><h4>{{ project.name }}</h4></a>
               <p style="margin: 1rem auto">
-                <span class="{{project.stage | replace: " ", "-" | downcase }}">{{project.stage}}</span> 
-                <span class="{{project.dedication | replace: " ", "-" | downcase }}">{{project.dedication}}</span>
+                <span class="{{project.stage | replace: " ", "-" | downcase }} stage">{{project.stage}}</span> 
+                <span class="{{project.dedication | replace: " ", "-" | downcase }} dedication">{{project.dedication}}</span>
               </p>
               <p style="margin: 1rem auto">{{project.description}}</p>
               <p>
