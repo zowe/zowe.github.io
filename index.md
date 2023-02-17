@@ -64,19 +64,27 @@ redirect_from:
 
 <script src="https://kit.fontawesome.com/f449f80794.js" crossorigin="anonymous"></script>
 
+{% assign currentTime = 'now' | date: '%s' | plus: 0 %}     
 {% if site.data.question_of_month %}  
-  <div id="feedback-closed" class=" feedback-hide" onclick="toggleFeedback();">
-    <div style="padding-top: 12px; padding-left: 15px; color: white;">
+  {% for feedback in site.data.question_of_month %}
+    {% assign fromFeedback = feedback.from | date: '%s' | plus: 0 %}
+    {% assign toFeedback = feedback.to | date: '%s' | plus: 0 %}
+      {% if currentTime > fromFeedback %}
+        {% if toFeedback == 0 or currentTime < toFeedback %}
+<div id="feedback-closed" class=" feedback-hide" onclick="toggleFeedback();">
+  <div style="padding-top: 12px; padding-left: 15px; color: white;">
       <span class="question-name">Question for Jan</span>
     </div>
+</div>
+<div id="feedback">
+  <div class="feedback-header" onclick="toggleFeedback();"><span class="question-name" style="font-size: smaller;">Question for August</span> <div style="float: right; cursor: pointer;"><i class="fa-solid fa-circle-xmark"></i></div></div>
+  <div>
+    <iframe class="feedback-container" src="{{feedback.link}}"></iframe>
   </div>
-
-  <div id="feedback">
-    <div class="feedback-header" onclick="toggleFeedback();"><span class="question-name" style="font-size: smaller;">Question for August</span> <div style="float: right; cursor: pointer;"><i class="fa-solid fa-circle-xmark"></i></div></div>
-    <div>
-      <iframe class="feedback-container" src="{{site.data.question_of_month.link}}"></iframe>
-    </div>
-  </div>
+</div>
+        {% endif %}
+      {% endif %}
+  {% endfor %}
 {% endif %}
 
 <div class="announcementsection row" style="padding-left: 5%">
