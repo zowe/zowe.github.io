@@ -117,7 +117,7 @@ redirect_from:
   </div>
 </div>
 
-<div class="row" style="padding: 5%">
+<div class="row main-zowe-descr" style="padding: 5%">
   <div class="col-12 col-md-8">
     <p>Zowe, the integrated and extensible open source framework for z/OS, combines the past and present to build the future of mainframes.
     Like Mac OS, Windows, and others, Zowe comes with a core set of applications out of the box in combination with the APIs and OS capabilities 
