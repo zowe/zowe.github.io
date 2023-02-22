@@ -276,7 +276,7 @@ be assigned to the issue for further investigation and will track the issue unti
 <p>This step is proposed to coordinate with the vendors using and supporting Zowe. At this stage we
 will notify all Vendors participating in the Zowe conformance program as either (a) a Zowe Conformant Support Provider or (b) a Zowe Conformant extension.</p>
 
-<h3>Step 4: Full public disclosure<h3>
+<h3>Step 4: Full public disclosure</h3>
 
 <p>This is the final stage during which the CVE is published and information about the 
 vulnerability is shared across other relevant channels along with the fix and recommendation of 
@@ -298,5 +298,3 @@ vulnerability is shared across other relevant channels along with the fix and re
   <li><a href="https://www.apache.org/security/">https://www.apache.org/security/</a></li>
 </ul>
 
-</div>
-</div>
