@@ -75,7 +75,9 @@
     .landscape-tab {
       padding-left: 20px;
       padding-right: 20px;
-      font-size: 24px;
+      font-size: 22px;
+      display: inline-block;
+      cursor: pointer;
     }
 
     .landscape-tab.active {
@@ -95,6 +97,7 @@
     .landscape-content {
        padding: 5px;
        display: none;
+       background-color: #fafafa;
     }
 
     .landscape-content h3 {
@@ -113,12 +116,7 @@
     }
 
     .landscape-heading {
-      border-bottom: 2px black solid; 
       background-color: #eee;
-    }
-
-    .landscape-overall {
-      border: 2px black solid;
     }
   </style>
 

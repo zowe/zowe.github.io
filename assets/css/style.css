@@ -547,9 +547,9 @@ div h4 {
 
 #intents div.row>div a {
   font-weight: inherit;
-  font-size: xx-large;
+  font-size: 28px;
   padding-left: 15px;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 #intents img {
@@ -572,18 +572,6 @@ div h4 {
 
 #events .future {
   color: #24a148;
-}
-
-@media (min-width:750px) {
-  div.row div.column-1, div.row div.column-2 {
-    border-style: dashed;
-    border-width: 0px 1px 1px 0px;
-  }
-
-  div.row div.column-3 {
-    border-style: dashed;
-    border-width: 0px 0px 1px 0px;
-  }
 }
 
 span.stage, span.dedication {

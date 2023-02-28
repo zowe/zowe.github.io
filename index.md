@@ -52,6 +52,12 @@ redirect_from:
     background-size: contain;
   }
 
+  .vertical-align-gap4 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
   #menu-overview a.nav-link {
     background-color: #eeeeee;
     color: black !important;
@@ -117,7 +123,7 @@ redirect_from:
   </div>
 </div>
 
-<div class="row main-zowe-descr" style="padding: 5%">
+<div class="row main-zowe-descr" style="padding: 5%; padding-bottom: 3%">
   <div class="col-12 col-md-8">
     <p>Zowe, the integrated and extensible open source framework for z/OS, combines the past and present to build the future of mainframes.
     Like Mac OS, Windows, and others, Zowe comes with a core set of applications out of the box in combination with the APIs and OS capabilities 
@@ -160,7 +166,7 @@ redirect_from:
         <p style="margin-top: 1rem">Contribute to the open source community developing Zowe</p>
       </div>
     </div>
-    <div style="margin-top: 1.5%" class="text-left">
+    <div style="margin-top: 1.5%" class="text-left vertical-align-gap4">
     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg> <a href="https://github.com/zowe/community/issues">Report Zowe issue</a> | <a href="https://github.com/zowe/zowe.github.io/issues">Report website issue</a>
     </div>
 </div> 
