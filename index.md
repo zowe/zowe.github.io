@@ -93,31 +93,45 @@ redirect_from:
   {% endfor %}
 {% endif %}
 
+
+{% assign announcements = site.data.announcements %}
+{% assign release_date_v2 = site.data.releases.v2[0].release_date | date: '%s' | plus: 0 %}
+{% assign release_date_v1 = site.data.releases.v1[0].release_date | date: '%s' | plus: 0 %}
+{% assign week_time = 1209600 %}
+{% assign today_minus_week = currentTime | minus: week_time %}
+{% if release_date_v1 > today_minus_week %}
+  {% capture version_v1_announcements %}
+    <strong>Zowe version {{ site.data.releases.v1[0].version }} is now available. You can download the installers for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="https://docs.zowe.org/stable/getting-started/release-notes/{{ site.data.releases.v1[0].release_notes }}">Release notes</a>.</strong>
+  {% endcapture %}
+  {% assign version_v1_announcements= version_v1_announcements | split: "~" %}
+  {% assign announcements = version_v1_announcements | concat: announcements %}
+{% endif %}
+{% if release_date_v2 > today_minus_week %}
+  {% capture version_v2_announcements %}
+    <strong>Zowe version {{ site.data.releases.v2[0].version }} is now available. You can download the installers for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="https://docs.zowe.org/stable/getting-started/release-notes/{{ site.data.releases.v2[0].release_notes }}">Release notes</a>.</strong>
+  {% endcapture %}
+  {% assign version_v2_announcements= version_v2_announcements | split: "~" %}
+  {% assign announcements = version_v2_announcements | concat: announcements %}
+{% endif %}
+
 <div class="announcementsection row" style="padding-left: 5%">
-  <div class="row" >
+  <div class="row" style="margin-left: 0px; margin-right: 0px; width: 100%" >
     <div class="col-12 col-md-2">
-      <div style="padding-top: 10px; padding-left: 10px; padding-botom: 10px; cursor: pointer;" onclick="toggle('remaining-rows');">
-        <i class="fa-solid fa-chevron-down"></i> Announcements
+      <div id="feedback-announcements" style="padding-top: 10px; padding-left: 10px; padding-botom: 10px; cursor: pointer;" onclick="toggle('remaining-rows');toggle('feedback-announcements-down');toggle('feedback-announcements-up');">
+        <i id="feedback-announcements-down" class="fa-solid fa-chevron-down "></i><i id="feedback-announcements-up" class="fa-solid fa-chevron-up feedback-hide"></i> Announcements
       </div>
     </div>
     <div class="col-12 col-md-10" style="padding-top: 10px;">
       <div id="first-row">
-          <strong>Zowe version {{ site.data.releases.v2[0].version }} is now available. You can download the installers for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="https://docs.zowe.org/stable/getting-started/release-notes/{{ site.data.releases.v2[0].release_notes }}">Release notes</a>.<br></strong>
+          <strong>{% if announcements[0].announcement %}{{ announcements[0].announcement }}{% else %}{{ announcements[0] }}{% endif %}<br></strong>
       </div>
       <div id="remaining-rows" class=" feedback-hide">
-        <hr class="w-100" style="margin-top: 0.25rem; margin-bottom: 0.25rem; border-top: 1px solid rgb(0 0 0 / 20%)">
-        <strong>Zowe version {{ site.data.releases.v1[0].version }} is now available. You can download the installers for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="https://docs.zowe.org/v1.28.x/getting-started/release-notes/v1_28_1">Release notes</a>.<br></strong>
-        {% if site.data.announcements %}
-          {% for announcement in site.data.announcements %}
+        {% for announcement in announcements %}
+          {% if forloop.index > 1 %}
           <hr class="w-100" style="margin-top: 0.25rem; margin-bottom: 0.25rem; border-top: 1px solid rgb(0 0 0 / 20%)">
-          <strong>{{ announcement.announcement }}
-            {% if announcement.link %}
-              <a href="{{ announcement.link }}">Learn More</a>
-            {% endif %}
-            <br>
-          </strong>
-          {% endfor %}
-        {% endif %}
+          <strong>{% if announcement.announcement %}{{ announcement.announcement }}{% else %}{{ announcement }}{% endif %}<br></strong>
+          {% endif %}
+        {% endfor %}
       </div>
     </div>
   </div>
