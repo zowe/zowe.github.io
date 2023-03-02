@@ -4,6 +4,25 @@
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- Copyright Contributors to the Zowe project. -->
 
+<style>
+  #menu-download a.nav-link {
+    background-color: #eeeeee;
+    color: black !important;
+  }
+
+  #menu-download.nav-item {
+    background-color: #eeeeee;
+  }
+
+  .card-body {
+    border-bottom: 1px solid lightgray;
+  }
+
+  .card-body:last-of-type {
+    border-bottom: inherit;
+  }
+</style>
+
 <section class="whitebackground" style="padding-top:1%">
   <h1 id="download">Download Zowe</h1>
   <div class="card">
@@ -121,8 +140,6 @@
               </a>
             </div>
           </div>
-        </div>
-        <div class="row">
           <div class="card-body">
             <h5 class="card-title">SMP/E build</h5>
             <p class="card-text">SMP/E format installed on the z/OS server</p>
@@ -147,8 +164,6 @@
               </a>
             </div>
           </div>
-        </div>
-        <div class="row">
           <div class="card-body">
             <h5 class="card-title" id="zowe-pswi">Zowe Portable Software Instance</h5>
             <p class="card-text">The Zowe Portable Software Instance (PSWI) is a new way of z/OS component
@@ -262,9 +277,8 @@
               Extension for FTP.</p>
             <p class="card-text">To install the <em>.vsix</em> files, use <b>Extensions > Install from vsix</b> within
               VS Code.</p>
-            <div class="row">
-              <div class="card-body">
-                <h5 class="card-title">Direct download</h5>
+              <div>
+                <h5 class="card-title" style="font-size: 18px">Direct download</h5>
                 <p><a class="btn btn-primary" href="{{ site.zowe_explorer_next_github_url }}">Zowe Explorer
                     {{ site.data.releases.v2[0].explorer_version }}
                   </a></p>
@@ -284,7 +298,6 @@
                   </a>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </div>

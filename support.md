@@ -4,6 +4,17 @@
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- Copyright Contributors to the Zowe project. -->
 
+<style>
+  #menu-support a.nav-link {
+    background-color: #eeeeee;
+    color: black !important;
+  }
+
+  #menu-support.nav-item {
+    background-color: #eeeeee;
+  }
+</style>
+
 <section class="whitebackground" style="float: none;">
   <h1 id="download" style="margin-bottom: 2rem">Zowe Conformant Support Provider Program</h1>
   <p>The Zowe Support Provider Conformance Program gives vendors the ability to showcase their Zowe support competencies. Applicants self-attest to criteria defined by the Zowe Technical Steering Committee designed to provide consumers with the confidence they need to use Zowe in business-critical environments. Like Zowe, the Zowe Support Provider Conformance Program will continue to evolve.

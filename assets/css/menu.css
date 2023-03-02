@@ -15,12 +15,18 @@ body html {
 .nav {
   padding-bottom: 0px;
   width: 100%;
-  background-color: #333;
   position: relative;
+  margin: 0px;
+  padding: 0px;
+  background-color: lightblue;
 }
 
-.nav-item > .nav-link:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+.nav-item:hover {
+  background-color: #eeeeee;
+}
+
+.nav-item:hover, .nav-item:hover > a.nav-link {
+  color: black !important;
   cursor: pointer;
 }
 
@@ -32,13 +38,16 @@ body html {
 }
 
 .navbar-nav {
-  margin-left: 30px;
+  width: 100%;
 }
 
-@media (max-width:900px) {
-  .navbar-nav {
-    margin-left: 10px;
-  }
+.nav-item {
+  width: 11.1%;
+  text-align: center;
+}
+
+nav.navbar {
+  padding: 0px;
 }
 
 .socialheader {

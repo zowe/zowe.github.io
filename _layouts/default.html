@@ -42,48 +42,50 @@
 
   <body>
     <div class="lfheader">
-      <img src="assets/img/lf-projects.svg">
-    </div>
-
-    <nav class="nav navbar navbar-expand-lg navbar-dark">
-      <img src="/assets/img/zowe-logo.svg" width="15%" alt="Zowe Logo">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Overview</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/download.html">Download</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://docs.zowe.org">Docs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/learn.html">Learn</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/extend.html">Extend</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contribute.html">Community</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/support.html">Support</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/security.html">Security</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/vNext.html">vNext</a>
-          </li>
-        </ul>
+      <img src="/assets/img/lf-projects.svg" alt="Linux Foundation Logo" class="img-top" >
+      <div>
+        <div class="zowe-img-middle">
+          <img style="width: 100%;" src="/assets/img/zowe-logo.svg" alt="Zowe Logo">
+        </div>
       </div>
-    </nav>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-image: url('/assets/img/navbar-toggler.png'); background-repeat: no-repeat; background-size: cover; height: 47px; width: 62px;">
+      </button>
+
+      <nav class="nav navbar navbar-expand-lg navbar-dark">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item" id="menu-overview">
+              <a class="nav-link" href="/">Overview</a>
+            </li>
+            <li class="nav-item" id="menu-download">
+              <a class="nav-link" href="/download.html">Download</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://docs.zowe.org">Docs</a>
+            </li>
+            <li class="nav-item" id="menu-learn">
+              <a class="nav-link" href="/learn.html">Learn</a>
+            </li>
+            <li class="nav-item" id="menu-extend">
+              <a class="nav-link" href="/extend.html">Extend</a>
+            </li>
+            <li class="nav-item" id="menu-community">
+              <a class="nav-link" href="/contribute.html">Community</a>
+            </li>
+            <li class="nav-item" id="menu-support">
+              <a class="nav-link" href="/support.html">Support</a>
+            </li>
+            <li class="nav-item" id="menu-security">
+              <a class="nav-link" href="/security.html">Security</a>
+            </li>
+            <li class="nav-item" id="menu-vnext">
+              <a class="nav-link" href="/vNext.html">vNext</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
     {{ content }}
 

@@ -4,6 +4,17 @@
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- Copyright Contributors to the Zowe project. -->
 
+<style>
+  #menu-community a.nav-link {
+    background-color: #eeeeee;
+    color: black !important;
+  }
+
+  #menu-community.nav-item {
+    background-color: #eeeeee;
+  }
+</style>
+
 <section class="whitebackground">
   <h1 id="download" style="margin-bottom: 1.5rem">Join The Zowe Community</h1>
   <p>Here are some of the best ways to engage with the Zowe community!</p>
