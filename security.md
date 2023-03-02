@@ -23,7 +23,7 @@
 
 <p>Our policy is based on the <a href="https://en.wikipedia.org/wiki/Coordinated_vulnerability_disclosure">Coordinated Vulnerability Disclosure (CVD) Policy</a>
 which is also adopted by many other organizations, <a href="https://www.cisa.gov/coordinated-vulnerability-disclosure-process">CISA</a> and <a href="https://www.etsi.org/standards/coordinated-vulnerability-disclosure">ETSI</a> among them.
-Zowe adapts the following 5 CVD topics to declare complete set of policy requirements for Respond to Vulnerabilities:</p>
+Zowe adapts the following CVD topics to declare complete set of policy requirements for Respond to Vulnerabilities:</p>
 
 <ul>
   <li><a href="#security-issues-identification">Security issues identification</a> <!-- <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-PVM)</span> --></li>
@@ -31,6 +31,7 @@ Zowe adapts the following 5 CVD topics to declare complete set of policy require
   <li><a href="#security-issues-mitigation">Security issues mitigation</a></li>
   <li><a href="#security-issues-disclosure">Security issues disclosure</a> <!-- <span style="display:none">(Zowe-SSDP-SDLC #ID: ZSSD-LP:RV-ICV-VDR)</span> --></li>
   <li><a href="#solution-publishing">Solution publishing</a></li>
+  <li><a href="#zowe-disclosure-process">Disclosure process</a></li>
 </ul>
 
 <p>The topics listed above contain sets of applicable requirements. Where appropriate the fulfilment of these requirements may be governed by internal processes and guidance.
@@ -253,7 +254,7 @@ The issues that were fixed would be published in the Zowe Docs in the Release No
   </li>
 </ul>
 
-  <h2>What does the Zowe Disclosure process look like</h2>
+  <h2 id="zowe-disclosure-process">What does the Zowe Disclosure process look like</h2>
 
 <p>There are two main processes to obtain information about security vulnerabilities. One process is used by
   external stakeholders, and the other process is used by internal stakeholders. </p>
