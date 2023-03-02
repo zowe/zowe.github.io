@@ -1,7 +1,5 @@
 # Announcements
 # Any kind of links should NOT be in ""
 - announcement: Zowe Chat Technical Preview 1 is available! Check out the <a href="https://zowe.org/download">Download</a> page!
-- announcement: "Interested in Zowe current & future plans?  Download the Zowe Roadmap presentation" 
-  link: https://github.com/zowe/zowe.github.io/raw/master/assets/roadmap/Zowe%20Roadmap%20CY23Q1.pdf 
-- announcement: "Register NOW for the 3/15 11:30 ET Zowe Quarterly Update Webinar featuring the Zowe App Store" 
-  link: https://zoom.platform.linuxfoundation.org/webinar/register?project=open-mainframe-project&id=R2WvkKpqUVqvHlSpMDuNIT0QAF0eBfXXFSPdo%2FiOkNvtfIJGtbNthA%3D%3D&logo=openmainframeproject-color.svg&zoomID=95491485341&sessionid=678cbd34-9233-4e7e-89df-50e78a78e091&sessionid=678cbd34-9233-4e7e-89df-50e78a78e091
+- announcement: "Interested in Zowe current & future plans?  Download the Zowe Roadmap presentation: <a href='https://github.com/zowe/zowe.github.io/raw/master/assets/roadmap/Zowe%20Roadmap%20CY23Q1.pdf'></a>" 
+- announcement: "Register NOW for the 3/15 11:30 ET Zowe Quarterly Update Webinar featuring the Zowe App Store <a href='https://zoom.platform.linuxfoundation.org/webinar/register?project=open-mainframe-project&id=R2WvkKpqUVqvHlSpMDuNIT0QAF0eBfXXFSPdo%2FiOkNvtfIJGtbNthA%3D%3D&logo=openmainframeproject-color.svg&zoomID=95491485341&sessionid=678cbd34-9233-4e7e-89df-50e78a78e091&sessionid=678cbd34-9233-4e7e-89df-50e78a78e091'></a>" 
