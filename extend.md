@@ -4,6 +4,17 @@
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- Copyright Contributors to the Zowe project. -->
 
+<style>
+  #menu-extend a.nav-link {
+    background-color: #eeeeee;
+    color: black !important;
+  }
+
+  #menu-extend.nav-item {
+    background-color: #eeeeee;
+  }
+</style>
+
 <section class="whitebackground" style="float: none;">
   <h1 id="download" style="margin-bottom: 2rem">Extending Zowe</h1>
 
@@ -64,7 +75,9 @@
     .landscape-tab {
       padding-left: 20px;
       padding-right: 20px;
-      font-size: 24px;
+      font-size: 22px;
+      display: inline-block;
+      cursor: pointer;
     }
 
     .landscape-tab.active {
@@ -84,6 +97,7 @@
     .landscape-content {
        padding: 5px;
        display: none;
+       background-color: #fafafa;
     }
 
     .landscape-content h3 {
@@ -102,12 +116,7 @@
     }
 
     .landscape-heading {
-      border-bottom: 2px black solid; 
       background-color: #eee;
-    }
-
-    .landscape-overall {
-      border: 2px black solid;
     }
   </style>
 

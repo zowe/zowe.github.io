@@ -1,0 +1,66 @@
+- name: Zowe Application Framework
+  description: A web user interface (UI) that provides a virtual desktop containing a number of apps allowing access to z/OS functionality. Base Zowe includes apps for traditional usecases like a 3270 Terminal and a VT Terminal, as well as an Editor and Explorers for working with JES, MVS Data Sets and Unix System Services.
+  github_url: https://github.com/zowe/zlux 
+  slack_url: https://openmainframeproject.slack.com/archives/CBW5ET69G
+  doc_url: https://docs.zowe.org/stable/getting-started/overview.html#zowe-application-framework
+  tour_url: https://www.youtube.com/watch?v=cbEVbcsaGCs&ab_channel=OpenMainframeProject
+  img_url: assets/img/zowe-desktop-image.png
+  stage: Long Term Support
+  dedication: Core
+- name: API Mediation Layer
+  description: Provides a gateway that acts as a reverse proxy for z/OS services, together with a catalog of REST APIs and a dynamic discovery capability. Base Zowe provides core services for working with MVS Data Sets, JES, as well as working with z/OSMF REST APIs. The API Mediation Layer also provides a framework for Single Sign On (SSO). 
+  github_url: https://openmainframeproject.slack.com/archives/CC5UUL005
+  slack_url: https://github.com/zowe/api-layer
+  doc_url: https://docs.zowe.org/stable/getting-started/overview.html#api-mediation-layer
+  img_url: assets/img/zowe-apiml-image.png
+  stage: Long Term Support
+  dedication: Core
+- name: Zowe CLI
+  description: Provides a command-line interface that lets you interact with the mainframe remotely and use common tools such as Integrated Development Environments (IDEs), shell commands, bash scripts, and build tools for mainframe development. It provides a set of utilities and services for application developers that want to become efficient in supporting and building z/OS applications quickly. The CLI provides a core set of commands for working with data sets, USS, JES, as well as issuing TSO and console commands.
+  github_url: https://github.com/zowe/zowe-cli
+  slack_url: https://openmainframeproject.slack.com/archives/CC8AALGN6
+  doc_url: https://docs.zowe.org/stable/getting-started/overview.html#zowe-cli
+  img_url: assets/img/zowe-cli.png
+  stage: Long Term Support
+  dedication: Core
+- name: Zowe Explorer
+  description: A Visual Studio Code extension that modernizes the way developers and system administrators interact with z/OS mainframes. Zowe Explorer lets you interact with data sets, USS files, and jobs that are stored on z/OS. The extension complements your Zowe CLI experience and lets you use authentication services like API Mediation Layer.
+  github_url: https://github.com/zowe/vscode-extension-for-zowe
+  slack_url: https://openmainframeproject.slack.com/archives/CUVE37Z5F
+  doc_url: https://docs.zowe.org/stable/user-guide/ze-install.html#installing-zowe-explorer
+  img_url: assets/img/zowe-explorer-image.png
+  stage: Long Term Support
+  dedication: Core
+- name: Node SDK
+  description: Provides access to a set of programmatic APIs that you can use to build client applications or scripts that interact with z/OS.
+  github_url: 
+  slack_url: https://openmainframeproject.slack.com/archives/C010AUS5MK5
+  doc_url: https://docs.zowe.org/stable/getting-started/overview.html#zowe-client-software-development-kits-sdks
+  img_url: 
+  stage: Generally Available
+  dedication: Core
+- name: Zowe IntelliJ Plugin
+  description: A plugin is dedicated to facilitate working with z/OS datasets through providing a possibility to work with them in any IntelliJ IDE. The plugin provides such abilities as working with z/OS datasets and USS files, exploring and managing JES Jobs.
+  github_url: https://github.com/zowe/zowe-explorer-intellij
+  slack_url: https://join.slack.com/t/iba-mainframe-tools/shared_invite/zt-pejbtt4j-l7KuizvDedJSCxwGtxmMBg
+  doc_url: https://plugins.jetbrains.com/plugin/18688-zowe-explorer
+  img_url: assets/img/intellij_squad.png
+  stage: Generally Available
+  dedication: Extension
+- name: Zowe Chat
+  description: An incubator focused on working with the mainframe from popular chat clients such as Slack® , Microsoft Teams® , and Mattermost® . Whether you're collaborating with your team to diagnose issues, need a quick read on the state of a system, or want push notifications from your monitoring tools, Zowe Chat will simplify those experiences and integrate directly into your chat clients. Stay tuned, more to come!
+  github_url: https://github.com/zowe/zowe-chat
+  slack_url: https://openmainframeproject.slack.com/archives/C03NNABMN0J
+  doc_url: https://docs.zowe.org/stable/getting-started/overview#zowe-chat-technical-preview
+  img_url: assets/img/chat-thumbnail-v2.png
+  stage: Technical Preview
+  dedication: Extension
+- name: ZEBRA
+  description: Provides re-usable and industry compliant JSON formatted RMF/SMF data records, so that many other ISV SW and users can exploit them using open-source SW for many ways.
+  github_url: https://github.com/zowe/zebra
+  slack_url: https://openmainframeproject.slack.com/archives/C01QWBJG3A4
+  doc_url: https://github.com/zowe/zebra/tree/main/Documentation
+  tour_url: https://zebra.talktothemainframe.com/
+  img_url: assets/img/zebra-image.png
+  stage: Technical Preview
+  dedication: Extension

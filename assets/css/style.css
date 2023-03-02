@@ -27,30 +27,46 @@ a:hover{
   padding-right:5%;
 }
 
-.lfheader{
-  background-color:#777777;
-  width:100%;
+.lfheader {
+  background-image: url('/assets/img/bg2.png'); 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  width: 100%;
+  background-position: center;
 }
 
-.lfheader img{
-
+.lfheader img.img-top {
   width:20%;
   padding-top:0.5%;
   padding-left:2%;
 }
- .copyright {
-   width:90% !important;
-   margin-top:2%;
-   font-size:0.8em;
-   display:block;
-   line-height:1.5em;
-   float:left;
-   color:white !important;
- }
 
- .copyright a {
-   color:white !important;
- }
+.lfheader nav.nav {
+  background: rgba(255, 255, 255, 0.11);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.6px);
+  -webkit-backdrop-filter: blur(4.6px);
+}
+
+.main-zowe-descr {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-weight: 500;
+}
+
+.copyright {
+  width:90% !important;
+  margin-top:2%;
+  font-size:0.8em;
+  display:block;
+  line-height:1.5em;
+  float:left;
+  color:white !important;
+}
+
+.copyright a {
+  color:white !important;
+}
 
 .navigation-top {
   border-bottom:0px solid white !important;
@@ -96,10 +112,8 @@ a:hover{
 
 .announcementsection {
   background-color:#eeeeee;
-  padding-left:7%;
-  padding-right:7%;
-  padding-top:1.5%;
-  padding-bottom:1.5%;
+  padding-bottom:0.5%;
+  border-bottom: 1px solid #C1BFBF;
 }
 
 .announcementsection strong {
@@ -342,11 +356,31 @@ a.back-to-top {
   max-height: 216px;
 }
 
+.lfheader img.img-top {
+  width: 450px;
+}
+
+div h2 {
+  font-size: 1.75rem;
+}
+
+div h4 {
+  font-size: 1.25rem;
+}
+
 @media (max-width:750px) {
   .lfheader img{
     width:55%;
     padding-top:1.5%;
     padding-left:2%;
+  }
+
+  .lfheader img.img-top {
+    width: 250px;
+  }
+
+  .lfheader li.nav-item {
+    width: 100%;
   }
 
   .copyright {
@@ -478,5 +512,168 @@ a.back-to-top {
 @media (min-width:1500px) {
   .zowe-video {
     max-height: inherit;
+  }
+}
+
+#navbarSupportedContent {
+  margin: 0px;
+  padding: 0px;
+}
+
+.img-top {
+  vertical-align: top;
+  display: block;
+}
+
+.zowe-img-middle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+  width: 25%;
+}
+
+#intents {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#intents div.row > div {
+  padding: 20px; 
+  margin: 10px;
+}
+
+#intents div.row>div a {
+  font-weight: inherit;
+  font-size: 28px;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+
+#intents img {
+  width: 48px;
+  height: 48px;
+}
+
+#components {
+  padding: 4% 5% 5% 5%;
+}
+
+#metrics {
+  padding: 2% 3%; 
+  color: black !important;
+}
+
+#events .past {
+  color: #939393;
+}
+
+#events .future {
+  color: #24a148;
+}
+
+span.stage, span.dedication {
+  border-radius: 22px;
+  padding: 4px 8px 4px 8px;
+  display: inline-block;
+} 
+
+span.long-term-support {
+  background-color: #0059FF;
+  color: white;
+}
+
+span.generally-available {
+  background-color: #3579F6;
+  color: white;
+}
+
+span.technical-preview {
+  background-color: #D0E2FF;
+  color: #161616;
+}
+
+span.under-development {
+  background-color: #E0E0E0;
+  color: #161616;
+}
+
+span.core {
+  background-color: black;
+  color: white;
+}
+
+span.extension {
+  background-color: black;
+  color: white;
+}
+
+.lfheader button.navbar-toggler {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+div#components img {
+  width: 100%;
+  max-height: 400px;
+}
+
+
+#feedback {
+  position: fixed; 
+  bottom: 95px; 
+  right: 70px; 
+  height: 400px;
+  background-color: white;
+  z-index: 999;
+  display: none;
+  box-shadow: 0px 0px 10px #b2b2b2;
+}
+
+#feedback-closed {
+  position: fixed; 
+  bottom: 24px; 
+  right: 24px;
+  display: none;
+  z-index: 1000;
+  background-image: url('../img/question-of-month.png');
+  background-repeat: no-repeat;
+  font-size: 24px;
+  margin: 2px;
+  font-weight: bold;
+  padding: 6px 12px;
+  cursor: pointer;    
+  width: 326px;
+  height: 83px;
+}
+
+#feedback-closed.feedback-hide, #feedback.feedback-hide, .announcementsection .feedback-hide {
+  display: none;
+}
+
+.feedback-header {
+  font-size: 24px;
+  margin: 2px;
+  font-weight: bold;
+  padding: 4px 6px 0 22px;
+  cursor: pointer;
+}
+
+.feedback-container {
+  height: 356px; 
+  width: 270px; 
+  border: none;
+}
+
+@media (min-width: 896px) and (min-height: 530px) {
+  #feedback-closed { 
+    display: block;
+  }
+
+  #feedback {
+    display: block;
   }
 }
