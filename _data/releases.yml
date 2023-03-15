@@ -9,7 +9,7 @@ v2:
     containerization_version: 2.7.0
     cli_version: 2.7.0
     cli_plugins_version: 2.7.0
-    explorer_version: 2.7.0
+    explorer_version: 2.6.2
     node_sdk_version: 2.7.0
     python_sdk_version: 2.7.0
     release_date: 2023-03-15
