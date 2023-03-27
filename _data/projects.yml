@@ -39,8 +39,8 @@
   img_url: assets/img/zss-project.png
   stage: Long Term Support
   dedication: Core
-- name: Node SDK
-  description: Provides access to a set of programmatic APIs that you can use to build client applications or scripts that interact with z/OS.
+- name: Zowe Node.js Client SDK
+  description: Provides access to a set of programmatic APIs that you can use to build Node.js client applications or scripts that interact with z/OS.
   github_url: 
   slack_url: https://openmainframeproject.slack.com/archives/C010AUS5MK5
   doc_url: https://docs.zowe.org/stable/getting-started/overview.html#zowe-client-software-development-kits-sdks
@@ -55,7 +55,7 @@
   img_url: assets/img/intellij_squad.png
   stage: Generally Available
   dedication: Extension
-- name: Kotlin SDK
+- name: Zowe Kotlin Client SDK
   description: This SDK covert zOSMF Rest API with Kotlin object oriented code using Retrofit. Zowe client Kotlin SDK will allow you to send http requests to your zOSMF.
   github_url: https://github.com/zowe/zowe-client-kotlin-sdk
   slack_url: https://join.slack.com/t/iba-mainframe-tools/shared_invite/zt-pejbtt4j-l7KuizvDedJSCxwGtxmMBg
@@ -80,15 +80,15 @@
   img_url: assets/img/zebra-image.png
   stage: Technical Preview
   dedication: Extension
-- name: Python SDK
-  description: The Zowe Client Python SDK, is a set of Python packages designed to allow programmatic interactions with z/OS REST API interfaces with minimum effort.
+- name: Zowe Python Client SDK
+  description: Provides access to a set of programmatic APIs that you can use to build Python applications or scripts that interact with z/OS.
   github_url: https://github.com/zowe/zowe-client-python-sdk
   slack_url: https://openmainframeproject.slack.com/archives/CBW5ET69G
   doc_url: https://docs.zowe.org/stable/user-guide/sdks-using
   img_url: assets/img/python-sdk-project.png
   stage: Under Development
   dedication: Extension
-- name: Swift SDK
+- name: Zowe Swift Client SDK
   description: The Zowe Swift Client SDK is an open-source Swift package for z/OSMF REST API. It allows you to leverage mainframe capabilities from your Swift applications with minimum effort.
   github_url: https://github.com/zowe/zowe-client-swift-sdk
   slack_url: https://openmainframeproject.slack.com/archives/CBW5ET69G
@@ -96,7 +96,7 @@
   img_url: assets/img/swift-sdk-project.png
   stage: Under Development
   dedication: Extension
-- name: Java SDK
+- name: Zowe Java Client SDK
   description: This SDK lets you leverage the underlying z/OSMF REST APIs on a z/OS system to build client applications and scripts that interface with your z/OS instance seamlessly.
   github_url: https://github.com/zowe/zowe-client-java-sdk
   slack_url: https://openmainframeproject.slack.com/archives/CBW5ET69G
