@@ -1,5 +1,19 @@
 # List of Zowe releases - update here and it will update the entire site :-)
 # Note - keep this in order as the latest release is pulled from the first item in the list!
+future:
+  v2:
+    - version: 2.10.0
+      release_date: 2023-07-24
+    - version: 2.9.0
+      release_date: 2023-06-12
+    - version: 2.8.0
+      release_date: 2023-04-24
+  v1:
+    - version: 1.28.5
+      release_date: 2023-10-02
+    - version: 1.28.4
+      release_date: 2023-07-03
+
 v2:
   - version: 2.7.0
     zos_version: 2.7.0
