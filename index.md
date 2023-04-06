@@ -149,10 +149,6 @@ redirect_from:
   </div>
   <div class="col-12 col-md-4 zowe-video">
     <iframe title="Introduction to Zowe" src="{{ site. latest_video_embed }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: -webkit-fill-available; height: 100%"></iframe>
-    <p>
-      <a href="{{ site.zowe_video_deck_url }}">Download Slides (.pptx)</a>&nbsp;|&nbsp;
-      <a href="{{ site.zowe_video_transcript_url }}">Download Transcript (.txt)</a>
-    </p>
   </div>
 </div>
 
