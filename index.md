@@ -137,14 +137,41 @@ redirect_from:
   </div>
 </div>
 
+{% assign next_version = 2.7 %}
+{% assign next_version_date = currentTime %}
+{% assign minimum_difference = 9999999 %}
+{% for release in site.data.releases.future.v2 %}
+  {% assign current_release_date = release.release_date | date: '%s' | plus: 0 %}
+  {% if current_release_date > currentTime %}
+     {% assign difference_in_seconds = current_release_date | minus: currentTime %}
+     {% if difference_in_seconds < minimum_difference %}
+       {% assign minimum_difference = difference_in_seconds %}
+       {% assign next_version_date = release.release_date %}
+       {% assign next_version = release.version %}
+     {% endif %}
+  {% endif %}
+{% endfor %}
+{% for release in site.data.releases.future.v1 %}
+  {% assign current_release_date = release.release_date | date: '%s' | plus: 0 %}
+  {% if current_release_date > currentTime %}
+    {% assign difference_in_seconds = current_release_date | minus: currentTime %}
+    {% if difference_in_seconds < minimum_difference %}
+      {% assign minimum_difference = difference_in_seconds %}
+      {% assign next_version_date = release.release_date %}
+      {% assign next_version = release.version %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
 <div class="row main-zowe-descr" style="padding: 5%; padding-bottom: 3%">
   <div class="col-12 col-md-8">
     <p>Zowe, the integrated and extensible open source framework for z/OS, combines the past and present to build the future of mainframes.
     Like Mac OS, Windows, and others, Zowe comes with a core set of applications out of the box in combination with the APIs and OS capabilities 
     future applications will depend on.   
     </p>
-    <br>
     <p>Zowe offers modern interfaces to interact with z/OS and allows you to work with z/OS in a way that is similar to what you experience on cloud platforms today. You can use these interfaces as delivered or through plug-ins and extensions that are created by clients or third-party vendors. 
+    </p>
+    <p>Next release: v{{next_version}} GA {{next_version_date}} | <a href="https://github.com/zowe/zowe.github.io/raw/master/assets/roadmap/Zowe%20Roadmap%20CY23Q1.pdf">View roadmap</a>
     </p>
   </div>
   <div class="col-12 col-md-4 zowe-video">
