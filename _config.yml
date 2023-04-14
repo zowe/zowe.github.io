@@ -9,7 +9,7 @@ theme: jekyll-theme-cayman
 auto_ids: true
 
 # URLs to various sites
-latest_video_embed: https://www.youtube.com/embed/7XpOjREP8JU
+latest_video_embed: https://www.youtube.com/embed/-JWepWX2HDA
 ibm_ztrial_url: https://www.openmainframeproject.org/projects/zowe/ztrial
 github_repo_url: https://github.com/zowe
 community_site_url: https://github.com/zowe/community/blob/master/README.md
