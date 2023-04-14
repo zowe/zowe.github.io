@@ -546,13 +546,21 @@
     </div>
 
   <h1 id="all-v2-releases">All Zowe V2.x Releases</h1>
-  <p>Download releases of Zowe V2.x by version number.</p>
-  {% for release in site.data.releases.v2 %}
-  {% if forloop.first %}
+  <p>Download releases of Zowe V2.x by version number. The future release dates are tentative and may change.</p>
   <div style="overflow-x: auto">
     <table class="table table-hover table-sm">
-      {% endif %}
-
+  {% for release in site.data.releases.future.v2 %}
+    <tr>
+      <td>Zowe {{release.version}} ({{release.release_date}})</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  {% endfor %}
+  {% for release in site.data.releases.v2 %}
+  
       <tr>
         <td>Zowe {{release.version}} ({{release.release_date}})</td>
         {% if release.zos_version %}
@@ -596,7 +604,7 @@
   {% endfor %}
 
 <h1 id="all-v1-releases">All Zowe V1.x Releases</h1>
-<p>Download releases of Zowe V1.x by version number.</p>
+<p>Download releases of Zowe V1.x by version number. The future release dates are tentative and may change.</p>
 <p>
   Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds. Zowe version 1.9.0 is the
   beginning of the Active Long-Term Support (LTS) release and it provides an SMP/E build with an FMID of AZWE001. The
@@ -604,12 +612,20 @@
   available as co-requisite PTFs as well as in convenience builds. Also, starting in 1.9.0, Zowe CLI core and plug-in
   packages are distributed separately.
 </p>
-{% for release in site.data.releases.v1 %}
-{% if forloop.first %}
+
 <div style="overflow-x: auto">
   <table class="table table-hover table-sm">
-    {% endif %}
-
+{% for release in site.data.releases.future.v1 %}
+  <tr>
+    <td>Zowe {{release.version}} ({{release.release_date}})</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+{% endfor %}
+{% for release in site.data.releases.v1 %}
     <tr>
       <td>Zowe {{release.version}} ({{release.release_date}})</td>
       {% if release.zos_version %}

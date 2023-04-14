@@ -1,15 +1,17 @@
+- event: Share New Orleans 23
+  from: 2023/08/13
+  to: 2023/08/18
+  schedule: August 13 - August 18
+  description: Join us for SHARE New Orleans, August 13-18, 2023 for a program
+    of unmatched education, face-to-face networking opportunities, live technical sessions
+    and receptions.
+  url: https://www.share.org/Events/SHARE-New-Orleans-2023
 - event: GSE Technical University - Mainframe Modernization (DACH)
   from: 2023/03/21
   to: 2023/03/22
   schedule: March 21 - March 22
   description: Join us for GSE DACH, March 21 - 22, for a two days exploring how Zowe can help with mainframe modernization. 
   url: https://www.gse.org/events/gse-european-operations-technical-conference-gse-eotc/
-- event: GSE European Operations Technical Conference (GSE EOTC)
-  from: 2023/05/22
-  to: 2023/05/25
-  schedule: May 22 - May 25
-  description: Join us for GSE EOTC, May 22 - 25, for a three day events exploring the z platform and learn more about Zowe. 
-  url: https://www.gse.org/events/gse-d-a-ch-konferenz-mainframe-modernization/
 - event: Share Atlanta 23
   from: 2023/03/05
   to: 2023/03/08

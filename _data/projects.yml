@@ -31,12 +31,20 @@
   img_url: assets/img/zowe-explorer-image.webp
   stage: Long Term Support
   dedication: Core
-- name: Node SDK
-  description: Provides access to a set of programmatic APIs that you can use to build client applications or scripts that interact with z/OS.
+- name: ZSS
+  description: Zowe System Services (ZSS) is a z/OS native, extensible HTTPS server which allows you to empower web programs with z/OS functionality due to ZSS conveniences for writing REST and Websocket APIs around z/OS system calls. The Zowe desktop delegates a number of its services to the ZSS server.
+  github_url: https://github.com/zowe/zss
+  slack_url: https://openmainframeproject.slack.com/archives/C034VLT3W2G
+  doc_url: https://docs.zowe.org/stable/getting-started/zowe-architecture/#zss
+  img_url: assets/img/zss-project.webp
+  stage: Long Term Support
+  dedication: Core
+- name: Zowe Node.js Client SDK
+  description: Provides access to a set of programmatic APIs that you can use to build Node.js client applications or scripts that interact with z/OS.
   github_url: 
   slack_url: https://openmainframeproject.slack.com/archives/C010AUS5MK5
   doc_url: https://docs.zowe.org/stable/getting-started/overview.html#zowe-client-software-development-kits-sdks
-  img_url: 
+  img_url: assets/img/nodejs-sdk-project.webp
   stage: Generally Available
   dedication: Core
 - name: Zowe IntelliJ Plugin
@@ -46,6 +54,14 @@
   doc_url: https://plugins.jetbrains.com/plugin/18688-zowe-explorer
   img_url: assets/img/intellij_squad.webp
   stage: Generally Available
+  dedication: Extension
+- name: Zowe Kotlin Client SDK
+  description: This SDK covert zOSMF Rest API with Kotlin object oriented code using Retrofit. Zowe client Kotlin SDK will allow you to send http requests to your zOSMF.
+  github_url: https://github.com/zowe/zowe-client-kotlin-sdk
+  slack_url: https://join.slack.com/t/iba-mainframe-tools/shared_invite/zt-pejbtt4j-l7KuizvDedJSCxwGtxmMBg
+  doc_url: https://github.com/zowe/zowe-client-kotlin-sdk#guide
+  img_url: assets/img/kotlin-sdk-project.webp
+  stage: Technical Preview
   dedication: Extension
 - name: Zowe Chat
   description: An incubator focused on working with the mainframe from popular chat clients such as Slack® , Microsoft Teams® , and Mattermost® . Whether you're collaborating with your team to diagnose issues, need a quick read on the state of a system, or want push notifications from your monitoring tools, Zowe Chat will simplify those experiences and integrate directly into your chat clients. Stay tuned, more to come!
@@ -63,4 +79,28 @@
   tour_url: https://zebra.talktothemainframe.com/
   img_url: assets/img/zebra-image.webp
   stage: Technical Preview
+  dedication: Extension
+- name: Zowe Python Client SDK
+  description: Provides access to a set of programmatic APIs that you can use to build Python applications or scripts that interact with z/OS.
+  github_url: https://github.com/zowe/zowe-client-python-sdk
+  slack_url: https://openmainframeproject.slack.com/archives/CBW5ET69G
+  doc_url: https://docs.zowe.org/stable/user-guide/sdks-using
+  img_url: assets/img/python-sdk-project.webp
+  stage: Under Development
+  dedication: Extension
+- name: Zowe Swift Client SDK
+  description: The Zowe Swift Client SDK is an open-source Swift package for z/OSMF REST API. It allows you to leverage mainframe capabilities from your Swift applications with minimum effort.
+  github_url: https://github.com/zowe/zowe-client-swift-sdk
+  slack_url: https://openmainframeproject.slack.com/archives/CBW5ET69G
+  doc_url: https://github.com/zowe/zowe-client-swift-sdk#quickstart
+  img_url: assets/img/swift-sdk-project.webp
+  stage: Under Development
+  dedication: Extension
+- name: Zowe Java Client SDK
+  description: This SDK lets you leverage the underlying z/OSMF REST APIs on a z/OS system to build client applications and scripts that interface with your z/OS instance seamlessly.
+  github_url: https://github.com/zowe/zowe-client-java-sdk
+  slack_url: https://openmainframeproject.slack.com/archives/CBW5ET69G
+  doc_url: https://github.com/zowe/zowe-client-java-sdk#zowe-java-client-sdk
+  img_url: assets/img/java-sdk-project.webp
+  stage: Under Development
   dedication: Extension
