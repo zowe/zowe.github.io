@@ -672,7 +672,7 @@
 
 <section class="bluebackground">
   <h1 id="timeline">Release Timeline</h1>
-  <p><img src="assets/img/major_releases.png" width="90%" /></p>
+  <p><img src="assets/img/major_releases.webp" width="90%" /></p>
   <p><b>Version timeframe, Active , Maintenance</b></p>
   <ul>
     <li>Zowe is released on regular schedule. A major version is released every two years and minor versions on a

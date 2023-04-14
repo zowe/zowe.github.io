@@ -1,6 +1,6 @@
 - name: API Mediation Layer
   homepage_link: /#api-mediation-layer-intro
-  image: https://www.zowe.org/assets/img/zowe-apiml-image.png
+  image: https://www.zowe.org/assets/img/zowe-apiml-image.webp
   description: |
   
     **Breaking changes**
@@ -15,7 +15,7 @@
 
 - name: CLI
   homepage_link: /#zowe-cli-intro
-  image: https://www.zowe.org/assets/img/zowe-cli.png
+  image: https://www.zowe.org/assets/img/zowe-cli.webp
   description: |
 
     Breaking changes for Zowe CLI end users
@@ -78,7 +78,7 @@
 
 - name: Zowe Explorer
   homepage_link: /#zowe-explorer-intro
-  image: /assets/img/zowe-explorer-image.png
+  image: /assets/img/zowe-explorer-image.webp
   description: |
 
     - Changes to settings keys - automated migration of settings when user opens Zowe Explorer v2: (includes documentation) ([#PR 1450](https://github.com/zowe/vscode-extension-for-zowe/pull/1450))
@@ -87,7 +87,7 @@
 
 - name: Systems
   homepage_link: 
-  image: /assets/img/zowe-explorer-image.png
+  image: /assets/img/zowe-explorer-image.webp
   description: |
 
     - **CI/CD**
@@ -140,7 +140,7 @@
 
 - name: Application Framework
   homepage_link: /#zowe-application-framework-intro
-  image: /assets/img/zowe-desktop-image.png
+  image: /assets/img/zowe-desktop-image.webp
   description: |
     
     **New features**

@@ -4,7 +4,7 @@
   slack_url: https://openmainframeproject.slack.com/archives/CBW5ET69G
   doc_url: https://docs.zowe.org/stable/getting-started/overview.html#zowe-application-framework
   tour_url: https://www.youtube.com/watch?v=cbEVbcsaGCs&ab_channel=OpenMainframeProject
-  img_url: assets/img/zowe-desktop-image.png
+  img_url: assets/img/zowe-desktop-image.webp
   stage: Long Term Support
   dedication: Core
 - name: API Mediation Layer
@@ -12,7 +12,7 @@
   github_url: https://openmainframeproject.slack.com/archives/CC5UUL005
   slack_url: https://github.com/zowe/api-layer
   doc_url: https://docs.zowe.org/stable/getting-started/overview.html#api-mediation-layer
-  img_url: assets/img/zowe-apiml-image.png
+  img_url: assets/img/zowe-apiml-image.webp
   stage: Long Term Support
   dedication: Core
 - name: Zowe CLI
@@ -20,7 +20,7 @@
   github_url: https://github.com/zowe/zowe-cli
   slack_url: https://openmainframeproject.slack.com/archives/CC8AALGN6
   doc_url: https://docs.zowe.org/stable/getting-started/overview.html#zowe-cli
-  img_url: assets/img/zowe-cli.png
+  img_url: assets/img/zowe-cli.webp
   stage: Long Term Support
   dedication: Core
 - name: Zowe Explorer
@@ -28,7 +28,7 @@
   github_url: https://github.com/zowe/vscode-extension-for-zowe
   slack_url: https://openmainframeproject.slack.com/archives/CUVE37Z5F
   doc_url: https://docs.zowe.org/stable/user-guide/ze-install.html#installing-zowe-explorer
-  img_url: assets/img/zowe-explorer-image.png
+  img_url: assets/img/zowe-explorer-image.webp
   stage: Long Term Support
   dedication: Core
 - name: ZSS
@@ -52,7 +52,7 @@
   github_url: https://github.com/zowe/zowe-explorer-intellij
   slack_url: https://join.slack.com/t/iba-mainframe-tools/shared_invite/zt-pejbtt4j-l7KuizvDedJSCxwGtxmMBg
   doc_url: https://plugins.jetbrains.com/plugin/18688-zowe-explorer
-  img_url: assets/img/intellij_squad.png
+  img_url: assets/img/intellij_squad.webp
   stage: Generally Available
   dedication: Extension
 - name: Zowe Kotlin Client SDK
@@ -68,7 +68,7 @@
   github_url: https://github.com/zowe/zowe-chat
   slack_url: https://openmainframeproject.slack.com/archives/C03NNABMN0J
   doc_url: https://docs.zowe.org/stable/getting-started/overview#zowe-chat-technical-preview
-  img_url: assets/img/chat-thumbnail-v2.png
+  img_url: assets/img/chat-thumbnail-v2.webp
   stage: Technical Preview
   dedication: Extension
 - name: ZEBRA
@@ -77,7 +77,7 @@
   slack_url: https://openmainframeproject.slack.com/archives/C01QWBJG3A4
   doc_url: https://github.com/zowe/zebra/tree/main/Documentation
   tour_url: https://zebra.talktothemainframe.com/
-  img_url: assets/img/zebra-image.png
+  img_url: assets/img/zebra-image.webp
   stage: Technical Preview
   dedication: Extension
 - name: Zowe Python Client SDK
