@@ -547,12 +547,20 @@
 
   <h1 id="all-v2-releases">All Zowe V2.x Releases</h1>
   <p>Download releases of Zowe V2.x by version number.</p>
-  {% for release in site.data.releases.v2 %}
-  {% if forloop.first %}
   <div style="overflow-x: auto">
     <table class="table table-hover table-sm">
-      {% endif %}
-
+  {% for release in site.data.releases.future.v2 %}
+    <tr>
+      <td>Zowe {{release.version}} ({{release.release_date}})</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  {% endfor %}
+  {% for release in site.data.releases.v2 %}
+  
       <tr>
         <td>Zowe {{release.version}} ({{release.release_date}})</td>
         {% if release.zos_version %}
@@ -604,12 +612,20 @@
   available as co-requisite PTFs as well as in convenience builds. Also, starting in 1.9.0, Zowe CLI core and plug-in
   packages are distributed separately.
 </p>
-{% for release in site.data.releases.v1 %}
-{% if forloop.first %}
+
 <div style="overflow-x: auto">
   <table class="table table-hover table-sm">
-    {% endif %}
-
+{% for release in site.data.releases.future.v1 %}
+  <tr>
+    <td>Zowe {{release.version}} ({{release.release_date}})</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+{% endfor %}
+{% for release in site.data.releases.v1 %}
     <tr>
       <td>Zowe {{release.version}} ({{release.release_date}})</td>
       {% if release.zos_version %}
