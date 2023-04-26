@@ -6,8 +6,6 @@ future:
       release_date: 2023-07-24
     - version: 2.9.0
       release_date: 2023-06-12
-    - version: 2.8.0
-      release_date: 2023-04-24
   v1:
     - version: 1.28.5
       release_date: 2023-10-02
@@ -15,6 +13,20 @@ future:
       release_date: 2023-07-03
 
 v2:
+  - version: 2.8.0
+    zos_version: 2.8.0
+    smpe_version: 2.8.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO90018 UO90019
+    containerization_version: 2.8.0
+    cli_version: 2.8.0
+    cli_plugins_version: 2.8.0
+    explorer_version: 2.7.0
+    node_sdk_version: 2.8.0
+    python_sdk_version: 2.8.0
+    release_date: 2023-04-26
+    documentation: stable
+    release_notes: v2_8_0
   - version: 2.7.0
     zos_version: 2.7.0
     smpe_version: 2.7.0
@@ -27,7 +39,7 @@ v2:
     node_sdk_version: 2.7.0
     python_sdk_version: 2.7.0
     release_date: 2023-03-15
-    documentation: stable
+    documentation: v2.7.x
     release_notes: v2_7_0
   - version: 2.6.1
     zos_version: 2.6.1
