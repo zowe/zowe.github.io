@@ -8,7 +8,7 @@
   stage: Long Term Support
   dedication: Core
 - name: API Mediation Layer
-  description: Provides a gateway that acts as a reverse proxy for z/OS services, together with a catalog of REST APIs and a dynamic discovery capability. Base Zowe provides core services for working with MVS Data Sets, JES, as well as working with z/OSMF REST APIs. The API Mediation Layer also provides a framework for Single Sign On (SSO). 
+  description: Provides a gateway that acts as a reverse proxy for z/OS services, together with a catalog of REST APIs, registry of services and Caching service for the HA Zowe setups. The API Mediation Layer provides a framework for Single Sign On (SSO) and is key component for the Zowe High Availability setup.
   github_url: https://openmainframeproject.slack.com/archives/CC5UUL005
   slack_url: https://github.com/zowe/api-layer
   doc_url: https://docs.zowe.org/stable/getting-started/overview.html#api-mediation-layer
@@ -46,6 +46,22 @@
   doc_url: https://docs.zowe.org/stable/getting-started/overview.html#zowe-client-software-development-kits-sdks
   img_url: assets/img/nodejs-sdk-project.webp
   stage: Generally Available
+  dedication: Core
+- name: Jobs
+  description: Provides APIs to handle jobs access. Use the z/OSMF directly as it provides richer functionality.
+  github_url: https://github.com/zowe/jobs
+  slack_url: https://github.com/zowe/api-layer
+  doc_url: https://petstore.swagger.io/?url=https://raw.githubusercontent.com/zowe/docs-site/docs-staging/api_definitions/jobs.json
+  img_url: assets/img/apiml-jobs.webp
+  stage: Deprecated
+  dedication: Core
+- name: Datasets
+  description: Provides APIs to handle data-sets access. Use the z/OSMF directly as it provides richer functionality.
+  github_url: https://github.com/zowe/data-sets
+  slack_url: https://github.com/zowe/api-layer
+  doc_url: https://petstore.swagger.io/?url=https://raw.githubusercontent.com/zowe/docs-site/docs-staging/api_definitions/datasets.json
+  img_url: assets/img/apiml-data-sets.webp
+  stage: Deprecated
   dedication: Core
 - name: Zowe IntelliJ Plugin
   description: A plugin is dedicated to facilitate working with z/OS datasets through providing a possibility to work with them in any IntelliJ IDE. The plugin provides such abilities as working with z/OS datasets and USS files, exploring and managing JES Jobs.
@@ -103,4 +119,12 @@
   doc_url: https://github.com/zowe/zowe-client-java-sdk#zowe-java-client-sdk
   img_url: assets/img/java-sdk-project.webp
   stage: Under Development
+  dedication: Extension
+- name: Metrics Service
+  description: As a system administrator, use the Metrics Service to view information about the acitivty of services running in the API Mediation Layer. Currently, only HTTP metrics are displayed for core API Mediation Layer services.
+  github_url: https://github.com/zowe/api-layer/tree/v2.x.x/metrics-service
+  slack_url: https://github.com/zowe/api-layer
+  doc_url: https://docs.zowe.org/stable/user-guide/api-mediation-metrics-service/
+  img_url: assets/img/apiml-metrics-service.webp
+  stage: Deprecated
   dedication: Extension
