@@ -36,6 +36,29 @@ p .card-black {
 <script src="https://cdn.jsdelivr.net/remarkable/1.7.1/remarkable.min.js"></script>
 
 <section class="whitebackground">
+  <!--
+  Control logic to decide whether the Table of contents should be displayed
+  {% increment available_areas %}
+
+  {% if site.data.vnext_announcements %}
+    {% increment available_areas %}
+  {% endif %}
+  {% if site.data.vnext_changes %}
+    {% increment available_areas %}
+  {% endif %}
+  {% if site.data.vnext_conformance_criteria %}
+    {% increment available_areas %}
+  {% endif %}
+  {% if site.data.vnext_office_hours %}
+    {% increment available_areas %}
+  {% endif %}
+  {% if site.data.vnext_faq %}
+    {% increment available_areas %}
+  {% endif %}
+  -->
+
+
+  {% if available_areas > 2 %}
   <h1 id="download" style="margin-bottom: 1.5rem">Table of Contents</h1>
 
   <div class="d-flex flex-column">
@@ -96,6 +119,7 @@ p .card-black {
         {% endif %}
       {% endif %}
   </div>
+  {% endif %}
 
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="latest-announcements">Latest Announcements</h2>
