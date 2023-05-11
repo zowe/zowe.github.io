@@ -5,7 +5,7 @@ extraJs: post-download-script.html
 ---
 <section class="whitebackground">
   <h1 class="title">Thank you for downloading the Zowe binary</h1>
-  <p>If you had an issue or your download didnt't start, please <strong>
+  <p>If you had an issue or your download did not start, please <strong>
   	<a id="download_link" href="legal.html">click here</a>
 	</strong> to try again.</p><br>
   <details>
