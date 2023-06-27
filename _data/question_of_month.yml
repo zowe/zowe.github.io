@@ -1,25 +1,7 @@
 # The questions of the month. The from and to shouldn't overlap
-- link: https://www.surveymonkey.com/r/zowev2plans
-  from: 2022-11-01
-  to: 2022-11-30
-- link: https://www.surveymonkey.com/r/zowetraining
-  from: 2022-12-01
-  to: 2022-12-31
-- link: https://www.surveymonkey.com/r/zoweroadmap
-  from: 2023-01-01
-  to: 2023-01-31
-- link: https://www.surveymonkey.com/r/zoweFeb23
-  from: 2023-02-01
-  to: 2023-02-28
-- link: https://www.surveymonkey.com/r/ZoweEM
-  from: 2023-03-01
-  to: 2023-03-31
-- link: https://www.surveymonkey.com/r/ZoweRanking
-  from: 2023-04-01
-  to: 2023-04-30
-- link: https://www.surveymonkey.com/r/zoweprod
-  from: 2023-05-01
-  to: 2023-05-31
 - link: https://www.surveymonkey.com/r/zoweOnZ
   from: 2023-06-01
   to:  2023-06-30
+- link: - link: https://www.surveymonkey.com/r/ZoweContribute
+  from: 2023-07-01
+  to:  2023-07-31
