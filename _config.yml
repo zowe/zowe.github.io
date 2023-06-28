@@ -9,8 +9,8 @@ theme: jekyll-theme-cayman
 auto_ids: true
 
 # URLs to various sites
-latest_video_embed: https://www.youtube.com/embed/-JWepWX2HDA
-ibm_ztrial_url: https://www.openmainframeproject.org/projects/zowe/ztrial
+latest_video_embed: https://www.youtube.com/embed/gje-S18-wbY
+ibm_ztrial_url: https://epwt-www.mybluemix.net/software/support/trial/cst/welcomepage.wss?siteId=936&tabId=2216&w=1
 github_repo_url: https://github.com/zowe
 community_site_url: https://github.com/zowe/community/blob/master/README.md
 forums_url: https://community.openmainframeproject.org/c/zowe
