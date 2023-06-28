@@ -9,8 +9,8 @@
   dedication: Core
 - name: API Mediation Layer
   description: Provides a gateway that acts as a reverse proxy for z/OS services, together with a catalog of REST APIs and a dynamic discovery capability. Base Zowe provides core services for working with MVS Data Sets, JES, as well as working with z/OSMF REST APIs. The API Mediation Layer also provides a framework for Single Sign On (SSO). 
-  github_url: https://openmainframeproject.slack.com/archives/CC5UUL005
-  slack_url: https://github.com/zowe/api-layer
+  github_url: https://github.com/zowe/api-layer
+  slack_url: https://openmainframeproject.slack.com/archives/CC5UUL005
   doc_url: https://docs.zowe.org/stable/getting-started/overview.html#api-mediation-layer
   img_url: assets/img/zowe-apiml-image.webp
   stage: Long Term Support

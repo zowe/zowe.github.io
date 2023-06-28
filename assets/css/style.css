@@ -616,6 +616,10 @@ span.extension {
   right: 10px;
 }
 
+.burgerbtn {
+  display: none;
+}
+
 div#components img {
   width: 100%;
   max-height: 400px;
@@ -674,6 +678,12 @@ div#components img {
   }
 
   #feedback {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .burgerbtn {
     display: block;
   }
 }
