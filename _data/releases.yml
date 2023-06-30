@@ -7,10 +7,10 @@ future:
     - version: 2.10.0
       release_date: 2023-07-24
   v1:
+    - version: 1.28.6
+      release_date: 2024-01-08
     - version: 1.28.5
       release_date: 2023-10-02
-    - version: 1.28.4
-      release_date: 2023-07-03
 
 v2:
   - version: 2.9.0
@@ -175,6 +175,18 @@ v2:
     documentation: v2.0.x
     release_notes: v2_0_0
 v1:
+  - version: 1.28.4
+    zos_version: 1.28.4
+    smpe_version: 1.28.4
+    smpe_sysmod: PTF
+    smpe_numbers: UO90028 UO90029
+    cli_version: 1.28.4
+    cli_plugins_version: 1.28.4
+    node_sdk_version: 1.28.4
+    python_sdk_version: 1.28.4
+    release_date: 2023-06-30
+    documentation: v1.28.x
+    release_notes: v1_28_4
   - version: 1.28.3
     zos_version: 1.28.3
     smpe_version: 1.28.3
