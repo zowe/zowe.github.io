@@ -1,28 +1,60 @@
 <!-- Used to write out HTML specifying how to run GPG signing against downloaded binaries -->
 <script>
     params = new URLSearchParams(location.search);
+    
+    filename_prefix = 'zowe'
+    file_ext = 'pax'
+    package_name = 'Zowe Binary'
+
+    if(params.has('type')){
+        switch(params.get('type')){
+            case 'cli':
+                filename_prefix = 'zowe-cli-package';
+                file_ext = 'zip';
+                package_name = 'Zowe CLI Package'
+                break;
+            case 'cli-plugins':
+                filename_prefix = 'zowe-cli-plugins';
+                file_ext = 'zip';
+                package_name = 'Zowe CLI Plugins Package'
+                break;
+            case 'nodejs-sdk':
+                filename_prefix = 'zowe-nodejs-sdk';
+                file_ext = 'zip';
+                package_name = 'Zowe Node.js Client SDK'
+                break;
+            case 'python-sdk':
+                filename_prefix = 'zowe-python-sdk';
+                file_ext = 'zip';
+                package_name = 'Zowe Python Client SDK'
+                break;
+        }
+    }
+
     if (params.has('version')) {
         document.getElementById('download_link').href = "legal.html?version=" + params.get('version');
+
+        document.getElementById('page_title').innerText = 'Thank you for downloading the ' + package_name;
+        document.getElementById('verify_drop').innerText = 'Verify Hash and Signature of ' + package_name;
         document.getElementById('hash_download').href = "https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" +
-            params.get('version') + "/zowe-" + params.get('version') + ".pax.sha512";
+            params.get('version') + "/" + filename_prefix + "-" + params.get('version') + "." + file_ext + ".sha512";
         document.getElementById('hash_download').onclick = function () {
-            ga && ga('send', 'event', 'download', 'Zowe Binary Hash ' + params.get('version'), 'zowe-' + params.get(
-                'version') + '.pax.sha512');
+            ga && ga('send', 'event', 'download', package_name + ' Hash ' + params.get('version'), filename_prefix + '-' + 
+                params.get('version') + '.' + file_ext + '.sha512');
         }
-        document.getElementById('hash_download').innerHTML = 'zowe-' + params.get('version') + '.pax.sha512';
-        document.getElementById('hash_code').innerHTML = '(gpg --print-md SHA512 zowe-' + params.get('version') +
-            '.pax &gt; zowe-' + params.get('version') + '.pax.sha512.my) && diff zowe-' + params.get('version') +
-            '.pax.sha512.my zowe-' + params.get('version') + '.pax.sha512 && echo matched || echo "not match"';
-        document.getElementById('hash_my').innerHTML = 'zowe-' + params.get('version') + '.pax.sha512.my';
-        document.getElementById('signature_download').href =
-            "https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" + params.get('version') + "/zowe-" + params
-            .get(
-                'version') + ".pax.asc";
+        document.getElementById('hash_download').innerHTML = filename_prefix + "-" + params.get('version') + "." + file_ext + ".sha512"; 
+        document.getElementById('hash_code').innerHTML = '(gpg --print-md SHA512 ' + filename_prefix + "-" + params.get('version') +
+            '.' + file_ext + ' &gt; ' + filename_prefix + "-" + params.get('version') + '.' + file_ext + '.sha512.my) && diff ' + filename_prefix +
+            "-" + params.get('version') + '.' + file_ext + '.sha512.my ' + filename_prefix + "-" + params.get('version') + '.' + file_ext + 
+            '.sha512 && echo matched || echo "not match"';
+        document.getElementById('hash_my').innerHTML = filename_prefix + "-" + params.get('version') + '.' + file_ext + '.sha512.my';
+        document.getElementById('signature_download').href = "https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" + params.get('version') +
+            "/" + filename_prefix + "-" + params.get('version') + "." + file_ext + ".asc";
         document.getElementById('signature_download').onclick = function () {
-            ga && ga('send', 'event', 'download', 'Zowe Binary Signature ' + params.get('version'), 'zowe-' + params
-                .get('version') + '.pax.asc');
+            ga && ga('send', 'event', 'download', package_name + ' Signature ' + params.get('version'), filename_prefix + "-" + params.get('version') + 
+            '.' + file_ext + '.asc');
         }
-        document.getElementById('signature_download').innerHTML = 'zowe-' + params.get('version') + '.pax.asc';
+        document.getElementById('signature_download').innerHTML = filename_prefix + "-" + params.get('version') + '.' + file_ext + '.asc';
         xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
@@ -41,7 +73,8 @@
         xhttp.open("GET", "https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" + params.get('version') +
             "/code-signing-key-info.json", true);
         xhttp.send();
-        document.getElementById('gpg_command').innerHTML = 'gpg --verify zowe-' + params.get('version') +
-            '.pax.asc zowe-' + params.get('version') + '.pax';
+        document.getElementById('gpg_command').innerHTML = 'gpg --verify ' + filename_prefix + "-" + params.get('version') +
+            '.' + file_ext + '.asc ' + filename_prefix + "-" + params.get('version') + '.' + file_ext; 
     }
+    
 </script>
