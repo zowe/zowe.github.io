@@ -1,3 +1,19 @@
+- event: GSE UK
+  from: 2023/10/30
+  to: 2023/11/02
+  schedule: October 30 - November 02
+  description: Where technology and talent meet tomorrow. 
+  url: https://conferences.gse.org.uk/2023
+- event: Open Mainframe Summit on IBM TechXChange
+  from: 2023/09/10
+  to: 2023/09/10
+  schedule: September 11 - September 11
+  description: The Open Mainframe Summit brings together all of the different types of 
+    mainframers – from students to hobbyists, seasoned professionals to new engineers, 
+    developers, and educators – to share best practices, discuss hot topics, learn technical 
+    insight from the best, and network with like-minded individuals who are passionate about 
+    the mainframe industry.
+  url: https://openmainframeproject.org/event/open-mainframe-summit-las-vegas/
 - event: Share New Orleans 23
   from: 2023/08/13
   to: 2023/08/18
