@@ -1,15 +1,15 @@
 ---
 title: "Download"
-extraHeaders: google-analytics-downloads-header.html 
+extraHeaders: google-analytics-downloads-header.html
 extraJs: post-download-script.html
 ---
 <section class="whitebackground">
-  <h1 class="title">Thank you for downloading the Zowe binary</h1>
+  <h1 class="title" id="page_title">Thank you for downloading the Zowe binary</h1>
   <p>If you had an issue or your download did not start, please <strong>
   	<a id="download_link" href="legal.html">click here</a>
 	</strong> to try again.</p><br>
   <details>
-    <summary>Verify Hash and Signature of Zowe Binary</summary>
+    <summary id='verify_drop'>Verify Hash and Signature of Zowe Binary</summary>
     <p>These commands are tested on both <strong>Mac OS X v10.13.6</strong> and <strong>Ubuntu v17.11.</strong></p>
 	<br>
     <h2><b>Step 1</b> - Verify Hash Code</h2>
