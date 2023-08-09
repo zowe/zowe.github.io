@@ -672,6 +672,16 @@ div#components img {
   border: none;
 }
 
+.whitebackground .legalbutton {
+  padding: 0;
+}
+
+.whitebackground .legalbutton a {
+  display: block;
+  line-height: 5rem;
+  width: 7rem;
+}
+
 @media (min-width: 896px) and (min-height: 530px) {
   #feedback-closed { 
     display: block;

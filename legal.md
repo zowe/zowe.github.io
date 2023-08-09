@@ -10,7 +10,7 @@ extraJs: legal-script.html
   <p><a id="legaltop"></a>By clicking on <b>I agree</b>, you agree that (1) you have had the opportunity to review the terms of the agreement presented below and (2) such terms govern this transaction. If you do not agree, click <b>I disagree</b>.
   </p>
   <br>
-  <button><a href="/">I disagree</a></button><button><a id="download_button" href="post_download.html">I agree</a></button><br>
+  <button class="legalbutton"><a href="/">I disagree</a></button><button class="legalbutton"><a id="download_button" href="post_download.html">I agree</a></button><br>
   <br>
     <div id="legal">
       <p>These binary files (including any associated documentation and source code, the &quot;Binaries&quot;) have been compiled from source files, and are made available to you by Zowe Binary Project a Series of LF Projects, LLC (the &quot;Project&quot;). The Binaries have been made available for your convenience pursuant to the terms of applicable open source licenses (the &quot;Applicable Licenses&quot;) free of charge to you.</p>
