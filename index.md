@@ -13,20 +13,10 @@ redirect_from:
     .then((data) => {
       document.querySelector('#cli-downloads').innerHTML = data.downloads;
     });
-  fetch(`https://www.api.metrics.zowe.org/explorer`)
-    .then((response) => response.json())
-    .then((data) => {
-      document.querySelector('#explorer-downloads').innerHTML = data.downloads;
-    });
   fetch(`https://www.api.metrics.zowe.org/server`)
     .then((response) => response.json())
     .then((data) => {
       document.querySelector('#server-downloads').innerHTML = data.downloads;
-    });
-  fetch(`https://www.api.metrics.zowe.org/omp`)
-    .then((response) => response.json())
-    .then((data) => {
-      document.querySelector('#slack-members').innerHTML = data.slackParticipants;
     });
   fetch(`https://www.api.metrics.zowe.org/omp`)
     .then((response) => response.json())
@@ -290,45 +280,39 @@ redirect_from:
 {% endif %}
 
 <div id="metrics" class="bg-light"> 
-  <h2 class="text-center" style="margin-bottom: 5%"><a href="{{ site.zowe_metrics_url }}" style="color: initial">Zowe by the numbers</a></h2>
+  <h2 class="text-center" style="margin-bottom: 5%">Zowe by the numbers</h2>
   <div class="row" style="margin-bottom: 2%">
     <div class="col-md text-center">
-      <a style="color: initial; text-decoration: none" href="{{ site.zowe_metrics_url }}"><img style="width:15%" src="assets/img/logo-cli-download.svg" />
+      <span style="color: initial; text-decoration: none"><img style="width:15%" src="assets/img/logo-cli-download.svg" />
         <h3 class="mb-0" id="cli-downloads"></h3>
         <h6>Zowe CLI Downloads</h6>
-      </a>
+      </span>
     </div>
     <div class="col-md text-center">
       <a style="color: initial; text-decoration: none" href="{{ site.vscode_marketplace_url }}"><img style="width:15%" src="assets/img/logo-explorer-download.svg" />
-        <h3 class="mb-0" id="explorer-downloads"></h3>
+        <h3 class="mb-0" id="explorer-downloads"><img style="width: 80px;" src="https://img.shields.io/visual-studio-marketplace/d/Zowe.vscode-extension-for-zowe.svg?color=f8f9fa&label=" /></h3>
         <h6>Zowe Explorer Downloads</h6>
       </a>
     </div>
     <div class="col-md text-center">
-      <a style="color: initial; text-decoration: none" href="{{ site.zowe_metrics_url }}"><img style="width:15%" src="assets/img/logo-zowe-build-download.svg">
+      <span style="color: initial; text-decoration: none"><img style="width:15%" src="assets/img/logo-zowe-build-download.svg">
         <h3 class="mb-0" id="server-downloads"></h3>
         <h6>Zowe z/OS Build Downloads</h6>
-      </a>
+      </span>
     </div>
   </div>
   <div class="row">
     <div class="col-md text-center">
-      <a style="color: initial; text-decoration: none" href="{{ site.slack_url }}"><img style="width:15%" src="assets/img/logo-slack-black.svg" />
-        <h3 class="mb-0" id="slack-members"></h3>
-        <h6>Slack Community Members</h6>
-      </a>
-    </div>
-    <div class="col-md text-center">
-      <a style="color: initial; text-decoration: none" href="{{ site.github_repo_url }}"><img style="width:15%" src="assets/img/logo-github-back.svg" />
+      <span style="color: initial; text-decoration: none"><img style="width:15%" src="assets/img/logo-github-back.svg" />
         <h3 class="mb-0" id="github-contributors"></h3>
         <h6>Contributors</h6>
-      </a>
+      </span>
     </div>
     <div class="col-md text-center">
-      <a style="color: initial; text-decoration: none" href="{{ site.conformance_page_url }}"><img style="width:15%" src="assets/img/logo-vendor-product.svg" />
+      <span style="color: initial; text-decoration: none" ><img style="width:15%" src="assets/img/logo-vendor-product.svg" />
         <h3 class="mb-0" id="conformant-product-value"></h3>
         <h6>Zowe Conformant Products</h6>
-      </a>
+      </span>
     </div>
   </div>
 </div>
