@@ -86,7 +86,7 @@
   slack_url: https://openmainframeproject.slack.com/archives/CBW5ET69G
   doc_url: https://docs.zowe.org/stable/user-guide/sdks-using
   img_url: assets/img/python-sdk-project.webp
-  stage: Under Development
+  stage: Technical Preview
   dedication: Extension
 - name: Zowe Swift Client SDK
   description: The Zowe Swift Client SDK is an open-source Swift package for z/OSMF REST API. It allows you to leverage mainframe capabilities from your Swift applications with minimum effort.
