@@ -535,7 +535,7 @@
             </a>
           </div>
          </div>         
-     </div> 
+      </div> 
       <div class="card bg-light border-light mb-3">
         <h4 class="card-title" id="zowe-client-sdks-download">Zowe Client SDKs</h4>
          <div class="card-body">
@@ -557,7 +557,7 @@
             </a>
           </div>    
         </div>  
-     </div>      
+      </div>      
      </div>     
     </div>
 
