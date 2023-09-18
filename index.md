@@ -225,6 +225,29 @@ redirect_from:
         </div>
         {% endfor %}
       </div>
+      <div class="row py-4">
+        {% for events in site.data.upcoming_events limit:3 offset:3 %}
+        <div class="col-md-4 px-3 pb-4 pb-md-0"> <!-- ml-auto mr-auto -->
+          <div class="w-100 px-4 py-4 rounded shadow bg-light h-100">
+          {% if events.url %}
+            <h5 class="border-bottom border-primary pb-2"><a href="{{ events.url }}">{{ events.event }}</a></h5>
+          {% else %}
+            <h5 class="border-bottom border-primary pb-2">{{ events.event }}</h5>
+          {% endif %}
+          {% assign currentTime = 'now' | date: '%s' | plus: 0 %}
+          {% assign fromEvent = events.from | date: '%s' | plus: 0 %} 
+          {% assign toEvent = events.to | date: '%s' | plus: 0 %}
+          {% if currentTime > toEvent %}
+            <span class="past" style="font-weight: 600"><i class="fa-solid fa-circle-check"></i> {{ events.schedule }}</span>
+          {% else %}
+            <span style="font-weight: 600"><i class="fa-solid fa-circle-check future"></i> {{ events.schedule }}</span>
+          {% endif %}
+            <br>
+            <span class="text-muted small">{{ events.description }}</span>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
     </div>
   </section>
   {% endif %}
