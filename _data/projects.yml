@@ -53,7 +53,7 @@
   slack_url: https://join.slack.com/t/iba-mainframe-tools/shared_invite/zt-pejbtt4j-l7KuizvDedJSCxwGtxmMBg
   doc_url: https://plugins.jetbrains.com/plugin/18688-zowe-explorer
   img_url: assets/img/intellij_squad.webp
-  stage: Generally Available
+  stage: Long Term Support
   dedication: Extension
 - name: Zowe Kotlin Client SDK
   description: This SDK covert zOSMF Rest API with Kotlin object oriented code using Retrofit. Zowe client Kotlin SDK will allow you to send http requests to your zOSMF.
