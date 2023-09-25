@@ -1,3 +1,17 @@
+- event: GSE UK Virtual
+  from: 2024/04/23
+  to: 2024/04/25
+  schedule: April 23 - April 25 (2024)
+  description: Where technology and talent meet in a virtual space. 
+  url: https://www.gse.org/events/gse-uk-virtual-conference-2024/
+- event: Share Orlando
+  from: 2024/03/03
+  to: 2024/03/07
+  schedule: March 03 - March 07 (2024)
+  description: Join us for SHARE Orlando, March 03-07, 2024 for a program
+    of unmatched education, face-to-face networking opportunities, live technical sessions
+    and receptions.
+  url: https://www.share.org/Events/SHARE-Orlando-2024
 - event: Open Source in Finance
   from: 2023/11/01
   to: 2023/11/01
