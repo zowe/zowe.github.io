@@ -120,7 +120,9 @@ p .card-black {
       {% endif %}
   </div>
   {% endif %}
+  </section>
 
+<section class="bluebackground">
   <div>
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="latest-announcements">Latest Announcements</h2>
     {% if site.data.vnext_announcements %}
@@ -129,8 +131,10 @@ p .card-black {
       {% endfor %}
     {% endif %}
   </div>
+  </section>
 
   {% if site.data.vnext_changes %}
+  <section class="whitebackground">
     <h2 id="coming-changes">Coming changes to the functionality</h2>
     {% for squad in site.data.vnext_changes %}
       <div class="card mb-3">
@@ -149,6 +153,7 @@ p .card-black {
         </div>
       </div>
     {% endfor %}
+  </section>
   {% endif %}
 
 {% if site.data.vnext_conformance_criteria %}
@@ -176,16 +181,16 @@ p .card-black {
   <div id="office-hours">
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Office Hours</h2>
     <p>Check out the <a href="https://lists.openmainframeproject.org/g/zowe-dev/calendar">OMP Calendar</a> for specific time of the V2 office hours.</p>
-    <h3 style="margin-bottom: 1.5rem; margin-top: 2%">Consumer Focused Office Hours</h3>
-    <table>
-    <tr>
-    <td><b>Date</b></td>
-    <td><b>Topic</b></td>
-    <td><b>Link to the meeting</b></td>
-    <td><b>Link to the recording</b></td>
-    <td><b>Links to the materials</b></td>
-    </tr>
     {% if site.data.vnext_office_hours.consumers %}
+      <h3 style="margin-bottom: 1.5rem; margin-top: 2%">Consumer Focused Office Hours</h3>
+      <table>
+      <tr>
+      <td><b>Date</b></td>
+      <td><b>Topic</b></td>
+      <td><b>Link to the meeting</b></td>
+      <td><b>Link to the recording</b></td>
+      <td><b>Links to the materials</b></td>
+      </tr>
       {% for meeting in site.data.vnext_office_hours.consumers %}
         <tr>
           <td>{{ meeting.date }}</td>
@@ -203,18 +208,18 @@ p .card-black {
           </td>
         </tr>
       {% endfor %}
+      </table>
     {% endif %}
-    </table>
-    <h3 style="margin-bottom: 1.5rem; margin-top: 2%">Extender Focused Office Hours</h3>
-    <table>
-    <tr>
-    <td><b>Date</b></td>
-    <td><b>Topic</b></td>
-    <td><b>Link to the meeting</b></td>
-    <td><b>Link to the recording</b></td>
-    <td><b>Links to the materials</b></td>
-    </tr>
     {% if site.data.vnext_office_hours.extenders %}
+      <h3 style="margin-bottom: 1.5rem; margin-top: 2%">Extender Focused Office Hours</h3>
+      <table>
+      <tr>
+      <td><b>Date</b></td>
+      <td><b>Topic</b></td>
+      <td><b>Link to the meeting</b></td>
+      <td><b>Link to the recording</b></td>
+      <td><b>Links to the materials</b></td>
+      </tr>
       {% for meeting in site.data.vnext_office_hours.extenders %}
         <tr>
           <td>{{ meeting.date }}</td>
@@ -232,8 +237,8 @@ p .card-black {
           </td>
         </tr>
       {% endfor %}
+      </table>
     {% endif %}
-    </table>
   </div>
 
 </section>
@@ -313,10 +318,12 @@ p .card-black {
 </section>
 {% endif %}
 
-<div>
-  <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="latest-announcements">Older Versions</h2>
-  <p>Are you looking for page with details for the V2 version of Zowe? The page is available <a href="versions/v2">here</a>.</p>
-</div>
+<section class="whitebackground">
+  <div>
+    <h2 style="margin-bottom: 1.5rem; margin-top: 2%" id="latest-announcements">Older Versions</h2>
+    <p>Are you looking for page with details for the V2 version of Zowe? The page is available <a href="versions/v2">here</a>.</p>
+  </div>
+</section>
 
 <script type="text/javascript" defer>
   var md = new Remarkable();
