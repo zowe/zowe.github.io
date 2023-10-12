@@ -47,6 +47,22 @@
   img_url: assets/img/nodejs-sdk-project.webp
   stage: Generally Available
   dedication: Core
+- name: Jobs
+  description: Provides APIs to handle jobs access. Use the z/OSMF directly as it provides richer functionality.
+  github_url: https://github.com/zowe/jobs
+  slack_url: https://github.com/zowe/api-layer
+  doc_url: https://petstore.swagger.io/?url=https://raw.githubusercontent.com/zowe/docs-site/docs-staging/api_definitions/jobs.json
+  img_url: assets/img/apiml-jobs.webp
+  stage: Deprecated
+  dedication: Core
+- name: Datasets
+  description: Provides APIs to handle data-sets access. Use the z/OSMF directly as it provides richer functionality.
+  github_url: https://github.com/zowe/data-sets
+  slack_url: https://github.com/zowe/api-layer
+  doc_url: https://petstore.swagger.io/?url=https://raw.githubusercontent.com/zowe/docs-site/docs-staging/api_definitions/datasets.json
+  img_url: assets/img/apiml-data-sets.webp
+  stage: Deprecated
+  dedication: Core
 - name: Zowe IntelliJ Plugin
   description: A plugin is dedicated to facilitate working with z/OS datasets through providing a possibility to work with them in any IntelliJ IDE. The plugin provides such abilities as working with z/OS datasets and USS files, exploring and managing JES Jobs.
   github_url: https://github.com/zowe/zowe-explorer-intellij
@@ -103,4 +119,12 @@
   doc_url: https://github.com/zowe/zowe-client-java-sdk#zowe-java-client-sdk
   img_url: assets/img/java-sdk-project.webp
   stage: Under Development
+  dedication: Extension
+- name: Metrics Service
+  description: As a system administrator, use the Metrics Service to view information about the acitivty of services running in the API Mediation Layer. Currently, only HTTP metrics are displayed for core API Mediation Layer services.
+  github_url: https://github.com/zowe/api-layer/tree/v2.x.x/metrics-service
+  slack_url: https://github.com/zowe/api-layer
+  doc_url: https://docs.zowe.org/stable/user-guide/api-mediation-metrics-service/
+  img_url: assets/img/apiml-metrics-service.webp
+  stage: Deprecated
   dedication: Extension
