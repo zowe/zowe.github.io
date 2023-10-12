@@ -7,8 +7,6 @@ redirect_from:
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- Copyright Contributors to the Zowe project. -->
 
-<script src="https://cmp.osano.com/16A0DbT9yDNIaQkvZ/3b49aaa9-15ab-4d47-a8fb-96cc25b5543c/osano.js"></script>
-
 <script>
   fetch(`https://www.api.metrics.zowe.org/cli`)
     .then((response) => response.json())
