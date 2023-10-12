@@ -50,7 +50,7 @@
 - name: Jobs
   description: Provides APIs to handle jobs access. Use the z/OSMF directly as it provides richer functionality.
   github_url: https://github.com/zowe/jobs
-  slack_url: https://github.com/zowe/api-layer
+  slack_url: https://openmainframeproject.slack.com/archives/CC5UUL005
   doc_url: https://petstore.swagger.io/?url=https://raw.githubusercontent.com/zowe/docs-site/docs-staging/api_definitions/jobs.json
   img_url: assets/img/apiml-jobs.webp
   stage: Deprecated
@@ -58,7 +58,7 @@
 - name: Datasets
   description: Provides APIs to handle data-sets access. Use the z/OSMF directly as it provides richer functionality.
   github_url: https://github.com/zowe/data-sets
-  slack_url: https://github.com/zowe/api-layer
+  slack_url: https://openmainframeproject.slack.com/archives/CC5UUL005
   doc_url: https://petstore.swagger.io/?url=https://raw.githubusercontent.com/zowe/docs-site/docs-staging/api_definitions/datasets.json
   img_url: assets/img/apiml-data-sets.webp
   stage: Deprecated
