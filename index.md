@@ -91,7 +91,7 @@ redirect_from:
 {% assign today_minus_week = currentTime | minus: week_time %}
 {% if release_date_v1 > today_minus_week %}
   {% capture version_v1_announcements %}
-    <strong>Zowe version {{ site.data.releases.v1[0].version }} is now available. You can download the installers for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="https://docs.zowe.org/stable/getting-started/release-notes/{{ site.data.releases.v1[0].release_notes }}">Release notes</a>.</strong>
+    <strong>Zowe version {{ site.data.releases.v1[0].version }} is now available. You can download the installers for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="https://docs.zowe.org/v1.28.x/getting-started/release-notes/{{ site.data.releases.v1[0].release_notes }}">Release notes</a>.</strong>
   {% endcapture %}
   {% assign version_v1_announcements= version_v1_announcements | split: "~" %}
   {% assign announcements = version_v1_announcements | concat: announcements %}
