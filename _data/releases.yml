@@ -26,7 +26,7 @@ v2:
     python_sdk_version: 2.12.0
     release_date: 2023-10-24
     documentation: stable
-    release_notes: v2_11_0
+    release_notes: v2_12_0
   - version: 2.11.0
     zos_version: 2.11.0
     smpe_version: 2.11.0
