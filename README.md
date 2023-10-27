@@ -50,6 +50,8 @@ Any site updates can be submitted as a pull request. We recommmend you [create a
 
 This repo aligns with the general [Zowe project role definitions](https://github.com/zowe/zlc/blob/master/process/roles.md) and [License and Copyright guidance](https://github.com/zowe/zlc/blob/master/process/LicenseAndCopyrightGuidance.md)
 
+Note: If your build script, after applying changes & doing a reload, is yielding an incorrect-looking UI, you could automate the closing & restarting of the script. Something like in Bash, `while true; do timeout 25s bundle exec jekyll serve; done`
+
 ## Governance
 
 Committers to this repo are defined in the [COMMITTERS.csv](COMMITTERS.csv) file. You can request to the committers to become a committer after having successful commits to this repo. Committers are approved by an affirmative vote of the majority of committers.

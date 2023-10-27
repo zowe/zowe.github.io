@@ -23,7 +23,7 @@
   }
 </style>
 
-<section class="whitebackground" style="padding-top:1%">
+<section class="whitebackground">
   <h1 id="download">Download Zowe</h1>
   <div class="card">
     <div class="card-body">

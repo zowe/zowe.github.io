@@ -34,7 +34,7 @@ body html {
   color: white !important;
   font-size: large;
   font-weight: 500;
-  margin-right: 10px;
+  margin-right: -2px !important;
 }
 
 .navbar-nav {

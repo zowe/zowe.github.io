@@ -34,6 +34,11 @@ redirect_from:
 <style>
   .slider-post {
     padding: 5px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the scaling effect */
+  }
+
+  .slider-post:hover {
+    transform: scale(1.05); /* Scales up the element by 5% when hovered over */
   }
 
   .slider-post a.post-image {
@@ -153,20 +158,20 @@ redirect_from:
   {% endif %}
 {% endfor %}
 
-<div class="row main-zowe-descr" style="padding: 5%; padding-bottom: 3%">
-  <div class="col-12 col-md-8">
+<div class="row main-zowe-descr">
+  <div class="col-12 col-md-7">
     <p>Zowe, the integrated and extensible open source framework for z/OS, combines the past and present to build the future of mainframes.
     Like Mac OS, Windows, and others, Zowe comes with a core set of applications out of the box in combination with the APIs and OS capabilities 
     future applications will depend on.   
     </p>
-    <p>Zowe offers modern interfaces to interact with z/OS and allows you to work with z/OS in a way that is similar to what you experience on cloud platforms today. You can use these interfaces as delivered or through plug-ins and extensions that are created by clients or third-party vendors. 
-    </p>
-    <p>Next release: v{{next_version}} GA {{next_version_date}} | <a href="https://github.com/zowe/zowe.github.io/raw/master/assets/roadmap/Zowe%20Roadmap%20CY23Q3.pdf">View roadmap</a>
+    <p>Zowe offers modern interfaces to interact with z/OS similar to what you may experience on cloud platforms today. You can use these interfaces as delivered or through plug-ins and extensions that are created by clients or third-party vendors. 
     </p>
     <p>Did you know? The Zowe Community hosts a webinar each quarter called the Zowe Quarterly Update. Watch the replays on <a href="https://www.youtube.com/playlist?list=PL8REpLGaY9QHtnElqPosteBFpITStkAxo">Youtube</a>
     </p>
+    <p>Next release: v{{next_version}} GA {{next_version_date}} | <a href="https://github.com/zowe/zowe.github.io/raw/master/assets/roadmap/Zowe%20Roadmap%20CY23Q3.pdf">View roadmap</a>
+    </p>
   </div>
-  <div class="col-12 col-md-4 zowe-video">
+  <div class="col-12 col-md-5 zowe-video animated-tile-bigger">
     <iframe title="Introduction to Zowe" src="{{ site. latest_video_embed }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: -webkit-fill-available; height: 100%"></iframe>
   </div>
 </div>
@@ -174,22 +179,22 @@ redirect_from:
 <div id="intents">
     <h2 style="color: black !important; margin-bottom: 1.5%">What would you like to do with Zowe?</h2>
     <div class="row">
-      <div class="col-sm bg-light">
+      <div class="col-sm bg-light animated-tile">
         <img src="/assets/img/learn.png" />
         <a href="/learn">Learn</a>
         <p style="margin-top: 1rem">Learn how Zowe works and what it can do for you</p>
       </div>
-      <div class="col-sm bg-light">
+      <div class="col-sm bg-light animated-tile">
         <img src="/assets/img/use.png" />
         <a href="https://docs.zowe.org/stable/user-guide/installandconfig.html">Use</a>
         <p style="margin-top: 1rem">Get started from planning to install and use Zowe</p>
       </div>
-      <div class="col-sm bg-light">
+      <div class="col-sm bg-light animated-tile">
         <img src="/assets/img/create.png" />
         <a href="/extend">Create</a>
         <p style="margin-top: 1rem">Build extensions, services, plug-ins or apps on top of Zowe</p>
       </div>
-      <div class="col-sm bg-light">
+      <div class="col-sm bg-light animated-tile">
         <img src="/assets/img/contribute.png" />
         <a href="/contribute">Contribute</a>
         <p style="margin-top: 1rem">Contribute to the open source community developing Zowe</p>
@@ -207,7 +212,7 @@ redirect_from:
       <div class="row py-4">
         {% for events in site.data.upcoming_events limit:3 %}
         <div class="col-md-4 px-3 pb-4 pb-md-0"> <!-- ml-auto mr-auto -->
-          <div class="w-100 px-4 py-4 rounded shadow bg-light h-100">
+          <div class="w-100 px-4 py-4 rounded shadow bg-light h-100 animated-tile">
           {% if events.url %}
             <h5 class="border-bottom border-primary pb-2"><a href="{{ events.url }}">{{ events.event }}</a></h5>
           {% else %}
@@ -230,7 +235,7 @@ redirect_from:
       <div class="row py-4">
         {% for events in site.data.upcoming_events limit:3 offset:3 %}
         <div class="col-md-4 px-3 pb-4 pb-md-0"> <!-- ml-auto mr-auto -->
-          <div class="w-100 px-4 py-4 rounded shadow bg-light h-100">
+          <div class="w-100 px-4 py-4 rounded shadow bg-light h-100 animated-tile">
           {% if events.url %}
             <h5 class="border-bottom border-primary pb-2"><a href="{{ events.url }}">{{ events.event }}</a></h5>
           {% else %}
@@ -270,9 +275,9 @@ redirect_from:
           {% assign amount_of_rows = forloop.length %}
           {% for project in site.data.projects limit: 3 offset: continue %}
             {% if amount_of_rows == current_row_number %}
-              <div class="col-md-4 row-{{current_row_number}} column-{{forloop.index}} last" >
+              <div class="animated-tile col-md-4 row-{{current_row_number}} column-{{forloop.index}} last" >
             {% else %}
-              <div class="col-md-4 row-{{current_row_number}} column-{{forloop.index}}" >
+              <div class="animated-tile col-md-4 row-{{current_row_number}} column-{{forloop.index}}" >
             {% endif %}
             
               <img class="image-zowe-use" src="{{ project.img_url }}">

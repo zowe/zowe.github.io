@@ -135,9 +135,9 @@ p .card-black {
 
   {% if site.data.vnext_changes %}
   <section class="whitebackground">
-    <h2 id="coming-changes">Coming changes to the functionality</h2>
+    <h2 id="coming-changes" style="margin-bottom: 30px;">Coming changes to the functionality</h2>
     {% for squad in site.data.vnext_changes %}
-      <div class="card mb-3">
+      <div class="card mb-3 animated-tile">
         <div class="card-body">
           <div class="d-flex align-items-baseline">
             <h5 class="text-left"><a href="{{ squad.homepage_link }}">{{ squad.name }}</a></h5>

@@ -20,7 +20,7 @@
   <p>Here are some of the best ways to engage with the Zowe community!</p>
 
   <div class="card-deck">
-  <div class="card mb-3">
+  <div class="card mb-3 animated-tile">
     <div class="card-body">
       <div class="d-flex align-items-baseline">
         <h5 class="text-left"><a href="{{ site.slack_url }}">Slack</a></h5>
@@ -38,7 +38,7 @@
       </p>
     </div>
   </div>
-  <div class="card mb-3">
+  <div class="card mb-3 animated-tile">
     <div class="card-body">
       <div class="d-flex align-items-baseline">
         <h5 class="text-left"><a href="{{ site.omp_calendar_url }}">Meetings</a></h5>
@@ -48,7 +48,7 @@
       <p>You are welcome to drop in on and contribute to any of these meetings! Check out the detailed introduction to squad meetings and other recurring meetings! </p>
     </div>
   </div>
-  <div class="card mb-3">
+  <div class="card mb-3 animated-tile">
     <div class="card-body">
       <div class="d-flex align-items-baseline">
         <h5 class="text-left"><a href="{{ site.github_repo_url }}">GitHub</a></h5>
