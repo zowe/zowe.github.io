@@ -530,7 +530,40 @@ div h4 {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 15px;
-  width: 25%;
+  width: 35%;
+}
+
+.zowe-img-middle-inner {
+  width: 100%;
+  margin: auto;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.animated-tile {
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the scaling effect */
+}
+
+.animated-tile-bigger {
+  transition: transform 0.3s ease-in-out;
+}
+
+.animate-upwards {
+  transform-origin: bottom; /* Makes the scaling grow upwards */
+  margin-bottom: -1px; /* Makes things cleaner on some resolutions */
+}
+
+.animated-tile:hover {
+  transform: scale(1.05); /* Scales up the element by 5% when hovered over */
+}
+
+.animated-tile-bigger:hover {
+  transform: scale(1.10); /* 10% */
+}
+
+.main-zowe-descr {
+  padding: 3%; 
+  padding-bottom: 3%
 }
 
 #intents {
@@ -628,8 +661,8 @@ div#components img {
 
 #feedback {
   position: fixed; 
-  bottom: 95px; 
-  right: 70px; 
+  bottom: 75px; 
+  right: 37px; 
   height: 400px;
   background-color: white;
   z-index: 999;
@@ -639,14 +672,15 @@ div#components img {
 
 #feedback-closed {
   position: fixed; 
-  bottom: 24px; 
-  right: 24px;
+  bottom: 0px; 
+  right: 0px;
   display: none;
   z-index: 1000;
   background-image: url('../img/question-of-month.png');
   background-repeat: no-repeat;
   font-size: 24px;
   margin: 2px;
+  margin-right: -12px;
   font-weight: bold;
   padding: 6px 12px;
   cursor: pointer;    
