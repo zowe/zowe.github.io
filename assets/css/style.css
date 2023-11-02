@@ -368,9 +368,48 @@ div h4 {
   font-size: 1.25rem;
 }
 
+.img-top {
+  vertical-align: top;
+  display: block;
+}
+
+.zowe-img-middle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+  width: 35%;
+  text-align: center;
+}
+
+.zowe-img-middle-inner {
+  width: 100%;
+  margin: auto;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
 @media (max-width:750px) {
+  .lfheader { /* mobile - short and stout, at the top but enough room to show the logo */
+    padding-bottom: 10px;
+    background-image: url('/assets/img/bg2.webp'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+  }
+
+  .zowe-img-middle-inner { /* mobile - more centered, correct looking logo */
+    width: 175% !important;
+    margin: auto;
+    padding: 0px !important;
+    padding-bottom: 10px !important;
+    margin-left: -33%; /* width 150%? margin-left -25%, width 200%? margin-left -50% etc. etc.*/
+    margin-bottom: -50px;
+  }
+
   .lfheader img{
-    width:55%;
+    width:120%;
     padding-top:1.5%;
     padding-left:2%;
   }
@@ -520,26 +559,6 @@ div h4 {
   padding: 0px;
 }
 
-.img-top {
-  vertical-align: top;
-  display: block;
-}
-
-.zowe-img-middle {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 15px;
-  width: 35%;
-}
-
-.zowe-img-middle-inner {
-  width: 100%;
-  margin: auto;
-  margin-top: -20px;
-  margin-bottom: -20px;
-}
-
 .animated-tile {
   transition: transform 0.3s ease-in-out; /* Smooth transition for the scaling effect */
 }
@@ -645,12 +664,20 @@ span.extension {
 
 .lfheader button.navbar-toggler {
   position: absolute;
-  top: 20px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
 }
 
 .burgerbtn {
   display: none;
+}
+
+.mobile-button {
+  background-image: url('/assets/img/navbar-toggler.png'); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  height: 47px; 
+  width: 63px;
 }
 
 div#components img {
