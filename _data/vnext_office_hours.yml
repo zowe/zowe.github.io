@@ -1,10 +1,10 @@
 extenders:
-  - date: 11/03/2023 8AM - 9AM ET
+  - date: 11/10/2023 8AM - 9AM ET
     topic: Other SYSTEMS Installation & Packaging & z/OS
     meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/93849373934?password=15f05b8e-88c9-4bf5-be2b-2a48f3120129
     recording_link: 
     materials_link: 
-  - date: 10/27/2023 8AM - 9AM ET
+  - date: 11/03/2023 8AM - 9AM ET
     topic: Web UI 
     meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/93849373934?password=15f05b8e-88c9-4bf5-be2b-2a48f3120129
     recording_link: 
@@ -12,13 +12,13 @@ extenders:
   - date: 10/20/2023 8AM - 9AM ET
     topic: Explorer (VS Code)
     meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/93849373934?password=15f05b8e-88c9-4bf5-be2b-2a48f3120129
-    recording_link: 
-    materials_link: 
+    recording_link: https://zoom.us/rec/share/J1I8yuRPX-wdEmmNet1PoY5RpmNaVWRzfkn5u0IqYzssLyBxzmsjzroDFLoWQ1lR.J7KEUGMqWML-XQq5
+    materials_link: https://ibm.box.com/s/h5nizhrgke12z63u7v1wivax126usjda
   - date: 10/13/2023 8AM - 9AM ET
     topic: CLI
     meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/93849373934?password=15f05b8e-88c9-4bf5-be2b-2a48f3120129
-    recording_link: 
-    materials_link: 
+    recording_link: https://zoom.us/rec/share/TdR4JEJQQknAas_pdqlii7fOiNZYJMAh7V06kds_grl53NM3Lc6CMRFzDKMmiy9t.tlQe8j2h2vhT-Zxs
+    materials_link: https://ibm.box.com/s/cdw0q1xnpnmm1wmtbjl3bk0esiqnfyox
   - date: 10/06/2023 8AM - 9AM ET
     topic: API Mediation Layer
     meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/93849373934?password=15f05b8e-88c9-4bf5-be2b-2a48f3120129
