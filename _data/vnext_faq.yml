@@ -39,3 +39,18 @@ extenders:
          answer: |
            
           The bypass scheme remains and you still can claim conformance for services that provides only public endpoints that doesn't require authentication. 
+
+   - name: Zowe Explorers for VSCode Office Hours Frequently Asked Questions
+     id: questions-explorers
+     questions: 
+       - number: 1
+         question: Will the functionality to convert profiles from profiles to Team Config remain available for V3
+         answer: |
+           
+          Yes, unlike the support for the V1 profiles. 
+
+       - number: 2
+         question: Will the APIs provided by CLI for the people scripting remain the same?
+         answer: |
+           
+          Yes, unless they are among the dropped ones in these lists [CLI](https://github.com/zowe/zowe-cli/issues/1694) and [Imperative](https://github.com/zowe/imperative/issues/970)
