@@ -10,6 +10,7 @@
     - Spring Enabler will be updated to Spring Boot 3 and Spring 6 and the Spring Boot 2 and Spring 5 versions won't be supported anymore
     - Datasets API is archived
     - Jobs API is archived
+    - Metrics service is archived
     - Java 17 is required for API Mediation Layer to run
     - z/OSMF in version V2R5 (preferred) or V2R3, V2R4 with APAR PH12143 applied
     - Statically onboarded services needs to do it via modifying the zowe.yaml and adding a directory outside of the zowe to read the files from
@@ -19,3 +20,83 @@
     - API Rate Limiting supported by the Spring Cloud Gateway
     - Authentication and Authorization Service is separate service, only one that needs z/OS directly
 
+- name: Application Framework
+  homepage_link: /#zowe-application-framework-intro
+  image: /assets/img/zowe-desktop-image.webp
+  description: |
+
+    **Breaking changes**
+
+    - Update Angular to Version 16
+    - Remove core-js dependency
+    - Update Webpack PrimeNG, Typescript
+
+- name: CLI
+  homepage_link: /#zowe-cli-intro
+  image: /assets/img/zowe-cli.webp
+  description: |
+
+    **Breaking changes**
+
+    - Remove V1 profile support
+    - Change authentication order of preference
+    - Remove deprecated items - [CLI](https://github.com/zowe/zowe-cli/issues/1694) and [Imperative](https://github.com/zowe/imperative/issues/970)
+
+    **Important updates**
+
+    - Support multiple API ML Gateway connections within a single config file. 
+    - Provide a Jenkinsfile template to replace shared library (github.com/zowe/zowe-cli-version-controller)
+
+- name: Explorer for Intellij
+  homepage_link: /#zowe-intellij-plugin-intro
+  image: /assets/img/intellij_squad.webp
+  description: |
+    
+    **Important Updates**
+
+    - The Explorer for Intellij is part of the Core. 
+    - Work with USS Files
+    - Work with Data Sets
+    - Work with JES Working Sets
+    - Interactive TSO Console
+
+- name: Explorer for Visual Studio Code
+  homepage_link: /#zowe-explorer-intro
+  image: /assets/img/zowe-explorer-image.webp
+  description: |
+
+    **Breaking changes**
+
+    - Remove V1 profile support
+    - Remove deprecated items - [Explorer for VSCode](https://github.com/zowe/vscode-extension-for-zowe/issues/2238)
+    - Change profile creation menus
+    - Store extension settings in the local storage
+
+    **Important updates**
+
+    - Store persistent settings in local storage
+    - Compare files in MVS view, the USS view and across the two views
+
+- name: Installation and Packaging 
+  homepage_link: 
+  image: 
+  description: |
+
+    **Breaking changes**
+
+    - Drop the original V2 configuration management, `zowe.useConfigmgr=false`. (Configuration Manager remains as the only supported method of configuring Zowe)
+
+    **Important updates**
+
+    - Remove dependency on Node.js for configuration
+    - Introduce ZEN to simplify configuration via UI
+
+
+- name: ZSS
+  homepage_link: /#zss-intro
+  image: /assets/img/zss-project.webp
+  description: |
+
+    **Breaking changes**
+
+    - Run by default in 64 bit mode, `components.zss.agent.64bit=true`. 31-bit plugins cannot run in 64-bit ZSS, so you need to compile your plugins for the version of ZSS to be used. Only 1 version of ZSS can run at a time.

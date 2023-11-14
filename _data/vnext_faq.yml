@@ -1,0 +1,56 @@
+general:
+  - number: 1
+    question: When will be Zowe V3 available for testing? 
+    answer: |
+      
+      The current plan is to have Zowe V3 for all projects available as preview by the December 2023
+
+extenders:
+   - name: Zowe API Mediation Layer Office Hours Frequently Asked Questions
+     id: questions-apiml
+     questions: 
+       - number: 1
+         question: Do we need to move away from the passtickets as the method of authentication from the API Mediation Layer?
+         answer: |
+           
+           No, we don't intend to remove the support, but it would be good to figure out some plan to move of them as setting up of passticket configuration shifts the burden to the user's side who need to properly configure the passtickets on their system for every service using them. 
+
+       - number: 2
+         question: With the introduction of the new cloud-gateway, how is the configuration going to change? 
+         answer: |
+           
+           We intend to move the configuration for V3 to the currently used gateway configuration space e.g. zowe.components.gateway therefore the configuration that was Zuul specific will be removed and the one that is Spring Cloud Gateway will be added to this space. 
+
+       - number: 3
+         question: How the client certificate authentication will work?
+         answer: |
+           
+           The northbound authentication works by accepting the client certificates. The API Mediation Layer then transforms the client certificate to another method of authentication such as JWT token or SAF IDT or passtickets and these needs to be accepted by the southbound services. 
+           We currently don't authenticate with client certificate towards the z/OSMF but it's a possibility for future. 
+
+       - number: 4
+         question: Will you mark the usage of deprecated functionality such as passtickets?
+         answer: |
+           
+           The plan is to do so, we just don't know yet how exactly will we do that. 
+
+       - number: 5
+         question: How do you intend to work with the the bypass scheme?
+         answer: |
+           
+           The bypass scheme remains and you still can claim conformance for services that provides only public endpoints that doesn't require authentication. 
+
+   - name: Zowe Explorers for VSCode Office Hours Frequently Asked Questions
+     id: questions-explorers
+     questions: 
+       - number: 1
+         question: Will the functionality to convert profiles from profiles to Team Config remain available for V3
+         answer: |
+           
+           Yes, unlike the support for the V1 profiles. 
+
+       - number: 2
+         question: Will the APIs provided by CLI for the people scripting remain the same?
+         answer: |
+           
+           Yes, unless they are among the dropped ones in these lists [CLI](https://github.com/zowe/zowe-cli/issues/1694) and [Imperative](https://github.com/zowe/imperative/issues/970)
