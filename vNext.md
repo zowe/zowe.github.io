@@ -120,7 +120,6 @@ p .card-black {
       {% endif %}
   </div>
   {% endif %}
-  </section>
 
 <section class="bluebackground">
   <div>
@@ -324,7 +323,7 @@ p .card-black {
     <p>Are you looking for page with details for the V2 version of Zowe? The page is available <a href="versions/v2">here</a>.</p>
   </div>
 </section>
-
+</section>
 <script type="text/javascript" defer>
   var md = new Remarkable();
   var elementsToTransform = document.getElementsByClassName("md-transform");
