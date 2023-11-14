@@ -84,7 +84,7 @@
 
     **Breaking changes**
 
-    - Drop the original V2 configuration management (Configuration Manager remains as the only supported method of configuring Zowe)
+    - Drop the original V2 configuration management, `zowe.useConfigmgr=false`. (Configuration Manager remains as the only supported method of configuring Zowe)
 
     **Important updates**
 
@@ -99,4 +99,4 @@
 
     **Breaking changes**
 
-    - Run by default in 64 bit mode
+    - Run by default in 64 bit mode, `components.zss.agent.64bit=true`. 31-bit plugins cannot run in 64-bit ZSS, so you need to compile your plugins for the version of ZSS to be used. Only 1 version of ZSS can run at a time.
