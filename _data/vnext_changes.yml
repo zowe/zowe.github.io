@@ -46,7 +46,6 @@
 
     - Support multiple API ML Gateway connections within a single config file. 
     - Provide a Jenkinsfile template to replace shared library (github.com/zowe/zowe-cli-version-controller)
-    - 
 
 - name: Explorer for Intellij
   homepage_link: /#zowe-intellij-plugin-intro
