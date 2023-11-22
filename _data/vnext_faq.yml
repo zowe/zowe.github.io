@@ -6,7 +6,7 @@ general:
       The current plan is to have Zowe V3 for all projects available as preview by the December 2023
 
 extenders:
-   - name: Zowe API Mediation Layer Office Hours Frequently Asked Questions
+   - name: Zowe API Mediation Layer Office Hours
      id: questions-apiml
      questions: 
        - number: 1
@@ -40,7 +40,14 @@ extenders:
            
            The bypass scheme remains and you still can claim conformance for services that provides only public endpoints that doesn't require authentication. 
 
-   - name: Zowe Explorers for VSCode Office Hours Frequently Asked Questions
+       - number: 6
+         question: Does the dependency changes mean that I need Java 17 to run Zowe
+         answer: |
+           
+           Yes
+
+
+   - name: Zowe Explorers for VSCode Office Hours
      id: questions-explorers
      questions: 
        - number: 1
@@ -54,3 +61,63 @@ extenders:
          answer: |
            
            Yes, unless they are among the dropped ones in these lists [CLI](https://github.com/zowe/zowe-cli/issues/1694) and [Imperative](https://github.com/zowe/imperative/issues/970)
+
+   - name: Zowe App Framework, ZSS Office Hours
+     id: questions-zowe-app-framework
+     questions: 
+       - number: 1
+         question: Is it possible to have side by side 32 bits plugin to ZSS with 64 bits ones?
+         answer: |
+           
+           No, it's not possible right now. It's possible to run just one type of plugins as there is the possibility to run only one ZSS. 
+
+       - number: 2
+         question: Are the libraries updated to the currently latest versions?
+         answer: |
+           
+           Angular 16 is most up-to-date. Webpack 5 is most up to date. 
+
+       - number: 3
+         question: What React versions are supported?
+         answer: |
+           
+           It's possible for the Desktop extensions to bring in different versions of React as the desktop is compatible with React but not built on top of React. 
+
+       - number: 4
+         question: Is ZEN application running on desktop or on z/OS?
+         answer: |
+           
+           ZEN is running on laptop/desktop and connects to z/OS via standard methods. 
+
+       - number: 5
+         question: Is is possible to validate and change the zowe.yaml and job definition within the ZEN?
+         answer: |
+           
+           Yes
+
+       - number: 6
+         question: What happens if in ZEN you click on the SMP/E?
+         answer: |
+           
+           You will be guided through the different set of pages that relates to the SMP/E installation
+
+       - number: 7
+         question: What's the intersection between Zowe Store and ZEN?
+         answer: |
+           
+           It's different topic and it's not linked other than by sharing the zwe commands. 
+
+       - number: 8
+         question: Does the App Store for Zowe handles Zowe upgrades?
+         answer: |
+           
+           No, it's focused on the server side extensions. 
+
+   - name: Zowe System Installation and Configuration Office Hours
+     id: questions-zowe-systems
+     questions: 
+       - number: 1
+         question: What does Zowe do with respect to the SBOM? 
+         answer: |
+           
+           Zowe provides the SBOMs with V3 in updated SPDX Formats.

@@ -27,9 +27,10 @@
 
     **Breaking changes**
 
-    - Update Angular to Version 16
+    - Update Angular to Version 16 from Version 12
     - Remove core-js dependency
-    - Update Webpack PrimeNG, Typescript
+    - Update Webpack to version 5
+    - Update Typescript to 4.9
 
 - name: CLI
   homepage_link: /#zowe-cli-intro
