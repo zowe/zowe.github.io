@@ -181,7 +181,7 @@ redirect_from:
     <div class="row">
       <div class="col-sm bg-light animated-tile">
         <img src="/assets/img/learn.png" />
-        <a href="/learn">Learn</a>
+        <a href="https://docs.zowe.org">Learn</a>
         <p style="margin-top: 1rem">Learn how Zowe works and what it can do for you</p>
       </div>
       <div class="col-sm bg-light animated-tile">
@@ -191,12 +191,12 @@ redirect_from:
       </div>
       <div class="col-sm bg-light animated-tile">
         <img src="/assets/img/create.png" />
-        <a href="/extend">Create</a>
+        <a href="https://docs.zowe.org/stable/extend/extend-zowe-overview">Create</a>
         <p style="margin-top: 1rem">Build extensions, services, plug-ins or apps on top of Zowe</p>
       </div>
       <div class="col-sm bg-light animated-tile">
         <img src="/assets/img/contribute.png" />
-        <a href="/contribute">Contribute</a>
+        <a href="https://docs.zowe.org/stable/contribute/roadmap-contribute">Contribute</a>
         <p style="margin-top: 1rem">Contribute to the open source community developing Zowe</p>
       </div>
     </div>
