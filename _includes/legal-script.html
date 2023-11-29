@@ -131,7 +131,7 @@
             document.getElementById('download_button').onclick = function () {
                 ga && ga('send', 'event', 'download', 'zen-windows' + params.get('version'), 'zowe-enterprise-necessity-' + params.get(
                     'version') + '.exe');
-                 window.open("https://zowe.jfrog.io/artifactory/libs-snapshot-local/org/zowe/zen" + params.get('version') + '/' + params.get('zen_branch') +
+                 window.open("https://zowe.jfrog.io/artifactory/libs-snapshot-local/org/zowe/zen/" + params.get('version') + '-V2.X/STAGING-166' +
                     '/windows' + '/zowe-enterprise-necessity-' + params.get('version') + '%20Setup.exe', '_blank');
             }
             document.getElementById('download_file_message').innerHTML = 'You are downloading zowe-enterprise-necessity-' + params.get(
@@ -143,7 +143,7 @@
             document.getElementById('download_button').onclick = function () {
                 ga && ga('send', 'event', 'download', 'zen-mac' + params.get('version'), 'zowe-enterprise-necessity-' + params.get(
                     'version') + '.exe');
-                 window.open("https://zowe.jfrog.io/artifactory/libs-snapshot-local/org/zowe/zen" + params.get('version') + '/' + params.get('zen_branch') +
+                window.open("https://zowe.jfrog.io/artifactory/libs-snapshot-local/org/zowe/zen/" + params.get('version') + '-v2.X/STAGING-166' +
                     '/mac' + '/zowe-enterprise-necessity-' + params.get('version') + '%20Setup.exe', '_blank');
             }
             document.getElementById('download_file_message').innerHTML = 'You are downloading zowe-enterprise-necessity-' + params.get(
@@ -155,7 +155,7 @@
             document.getElementById('download_button').onclick = function () {
                 ga && ga('send', 'event', 'download', 'zen-unix' + params.get('version'), 'zowe-enterprise-necessity-' + params.get(
                     'version') + '.exe');
-                window.open("https://zowe.jfrog.io/artifactory/libs-snapshot-local/org/zowe/zen" + params.get('version') + '/' + params.get('zen_branch') +
+                window.open("https://zowe.jfrog.io/artifactory/libs-snapshot-local/org/zowe/zen/" + params.get('version') + '-V2.X/STAGING-166' +
                     '/unix' + '/zowe-enterprise-necessity-' + params.get('version') + '%20Setup.exe', '_blank');
             }
             document.getElementById('download_file_message').innerHTML = 'You are downloading zowe-enterprise-necessity-' + params.get(
