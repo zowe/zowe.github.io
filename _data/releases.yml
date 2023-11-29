@@ -13,8 +13,7 @@ future:
       release_date: 2024-01-08
 
 v2:
-  - zen_version: 1.0.0-V2.X
-    zen_branch: STAGING-166
+  - zen_version: 1.0.0
     version: 2.12.0
     zos_version: 2.12.0
     smpe_version: 2.12.0
