@@ -118,9 +118,24 @@
     <div class="card bg-light border-light mb-3">
       <h4 class="card-header" id="zowe-zos-build-download">Server-side component installer</h4>
       <div class="card-body">
-        <p class="card-text">Install Zowe z/OS components from the <b>convenience build</b>, the <b>SMP/E build</b>,
+        <p class="card-text">Install Zowe z/OS components from the <b>zen Installer</b>, the <b>convenience build</b>, the <b>SMP/E build</b>,
           the <b> PSWI build </b> or the <b> containerization build </b> depending on your need.</p>
         <div class="row">
+            <div class="card-body">
+            <h5 class="card-title">Zen Installer</h5>
+            <p class="card-text">exe installer for zen</p>
+            <p><a class="btn btn-primary"
+                href="{{ site.zen_window_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
+                {{ site.data.releases.v2[0].zen_version }} window Installer</a></p>
+            <p><a class="btn btn-primary"
+                href="{{ site.zen_unix_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
+                {{ site.data.releases.v2[0].zen_version }} unix Installer</a></p>
+            <p><a class="btn btn-primary"
+                href="{{ site.zen_mac_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
+                {{ site.data.releases.v2[0].zen_version }} mac Installer</a></p>
+            <div>
+            </div>
+          </div>
           <div class="card-body">
             <h5 class="card-title">Convenience build</h5>
             <p class="card-text">PAX archive format installed on the z/OS server</p>

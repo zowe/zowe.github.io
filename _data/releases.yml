@@ -13,7 +13,9 @@ future:
       release_date: 2024-01-08
 
 v2:
-  - version: 2.12.0
+  - zen_version: 1.0.0-V2.X
+    zen_branch: STAGING-166
+    version: 2.12.0
     zos_version: 2.12.0
     smpe_version: 2.12.0
     smpe_sysmod: PTF
