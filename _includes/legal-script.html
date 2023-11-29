@@ -144,11 +144,11 @@
                 ga && ga('send', 'event', 'download', 'zen-mac' + params.get('version'), 'zowe-enterprise-necessity-' + params.get(
                     'version') + '.exe');
                 window.open("https://zowe.jfrog.io/artifactory/libs-snapshot-local/org/zowe/zen/" + params.get('version') + '-v2.x/staging-166' +
-                    '/mac' + '/zowe-enterprise-necessity-' + params.get('version') + '%20Setup.exe', '_blank');
+                    '/mac' + '/zowe-enterprise-necessity-' + params.get('version') + '-x64.dmg', '_blank');
             }
             document.getElementById('download_file_message').innerHTML = 'You are downloading zowe-enterprise-necessity-' + params.get(
                     'version') +
-                '.exe';
+                '.dmg';
         }
         else if (params.has('type') && params.get('type') == "zen-unix") {
             document.getElementById('download_button').href = "post_download.html?version=" + params.get('version');
