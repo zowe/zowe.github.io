@@ -21,10 +21,6 @@
   .card-body:last-of-type {
     border-bottom: inherit;
   }
-  .right-box {
-   float: right;
-   margin-left: 50px; /* Adjust the margin as needed */
-  }
 </style>
 
 <section class="whitebackground">
@@ -118,7 +114,6 @@
   <!--V2 download as follows -->
   <h2 id="download-v2">Zowe V2</h2>
   {% if site.data.releases.v2[0].cli_version and site.data.releases.v2[0].cli_plugins_version and site.data.releases.v2[0].zos_version and site.data.releases.v2[0].smpe_version and site.data.releases.v2[0].node_sdk_version and site.data.releases.v2[0].python_sdk_version and site.data.releases.v2[0].zen_version %}
-<div class ="left-box">
   <div class="card-deck">
     <div class="card bg-light border-light mb-3">
       <h4 class="card-header" id="zowe-zos-build-download">Server Install Wizard</h4>
@@ -140,13 +135,10 @@
             <p><a class="btn btn-primary"
                 href="{{ site.zen_mac_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
                 {{ site.data.releases.v2[0].zen_version }} mac Installer</a></p>
-          </div>
+            </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-  <div class="card-deck">
     <div class="card bg-light border-light mb-3">
       <h4 class="card-header" id="zowe-zos-build-download">Server-side component installer</h4>
       <div class="card-body">
