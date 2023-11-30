@@ -21,9 +21,9 @@
   .card-body:last-of-type {
     border-bottom: inherit;
   }
-  .left-box {
-   float: left;
-   margin-left: 15px; /* Adjust the margin as needed */
+  .right-box {
+   float: right;
+   margin-left: 50px; /* Adjust the margin as needed */
   }
 </style>
 
