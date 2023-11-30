@@ -139,10 +139,10 @@
                 '.exe';
         }
         else if (params.has('type') && params.get('type') == "zen-mac") {
-            document.getElementById('download_button').href = ""post_download.html?version=" + params.get('version') + "&type=" + params.get('type');
+            document.getElementById('download_button').href = "post_download.html?version=" + params.get('version') + "&type=" + params.get('type');
             document.getElementById('download_button').onclick = function () {
                 ga && ga('send', 'event', 'download', 'zen-mac' + params.get('version'), 'zowe-enterprise-necessity-' + params.get(
-                    'version') + '.exe');
+                    'version') + '-x64.dmg');
                 window.open("https://zowe.jfrog.io/artifactory/libs-snapshot-local/org/zowe/zen/" + params.get('version') + '-v2.x/staging-166' +
                     '/mac' + '/zowe-enterprise-necessity-' + params.get('version') + '-x64.dmg', '_blank');
             }
@@ -151,10 +151,10 @@
                 '.dmg';
         }
         else if (params.has('type') && params.get('type') == "zen-unix") {
-            document.getElementById('download_button').href = ""post_download.html?version=" + params.get('version') + "&type=" + params.get('type');
+            document.getElementById('download_button').href = "post_download.html?version=" + params.get('version') + "&type=" + params.get('type');
             document.getElementById('download_button').onclick = function () {
                 ga && ga('send', 'event', 'download', 'zen-unix' + params.get('version'), 'zowe-enterprise-necessity-' + params.get(
-                    'version') + '.exe');
+                    'version') + '-1.x86_64.rpm');
                 window.open("https://zowe.jfrog.io/artifactory/libs-snapshot-local/org/zowe/zen/" + params.get('version') + '-V2.X/STAGING-166' +
                     '/unix' + '/zowe-enterprise-necessity-' + params.get('version') + '-1.x86_64.rpm', '_blank');
             }
