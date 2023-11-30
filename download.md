@@ -116,10 +116,12 @@
   {% if site.data.releases.v2[0].cli_version and site.data.releases.v2[0].cli_plugins_version and site.data.releases.v2[0].zos_version and site.data.releases.v2[0].smpe_version and site.data.releases.v2[0].node_sdk_version and site.data.releases.v2[0].python_sdk_version and site.data.releases.v2[0].zen_version %}
   <div class="card-deck">
     <div class="card bg-light border-light mb-3">
-      <h4 class="card-header" id="zowe-zos-build-download">Server-side component installer</h4>
+      <h4 class="card-header" id="zowe-zos-build-download">Server Install Wizard</h4>
       <div class="card-body">
-        <p class="card-text">Install Zowe z/OS components from the <b>zen Installer</b>, the <b>convenience build</b>, the <b>SMP/E build</b>,
-          the <b> PSWI build </b> or the <b> containerization build </b> depending on your need.</p>
+        <p class="card-text">The Server Install Wizard is an optional program that you can run on your computer 
+         to guide you through installing Zowe server content onto <b>z/OS</b> .
+         It handles <b>YAML</b>, <b>Unix</b>, and <b>JCL</b> content involved in setup of a Zowe instance 
+         so that you can install Zowe easily by following prompts and verifying the output.</p>
         <div class="row">
             <div class="card-body">
             <h5 class="card-title">Zen Installer</h5>
@@ -134,6 +136,17 @@
                 href="{{ site.zen_mac_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
                 {{ site.data.releases.v2[0].zen_version }} mac Installer</a></p>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card bg-light border-light mb-3">
+      <h4 class="card-header" id="zowe-zos-build-download">Server-side component installer</h4>
+      <div class="card-body">
+        <p class="card-text">Install Zowe z/OS components from the <b>convenience build</b>, the <b>SMP/E build</b>,
+          the <b> PSWI build </b> or the <b> containerization build </b> depending on your need.</p>
+        <div class="row">
           <div class="card-body">
             <h5 class="card-title">Convenience build</h5>
             <p class="card-text">PAX archive format installed on the z/OS server</p>
