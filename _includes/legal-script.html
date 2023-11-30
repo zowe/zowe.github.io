@@ -127,7 +127,7 @@
                     'package') + '.zip';
         }
         else if (params.has('type') && params.get('type') == "zen-windows") {
-            document.getElementById('download_button').href = ""post_download.html?version=" + params.get('version') + "&type=" + params.get('type');
+            document.getElementById('download_button').href = "post_download.html?version=" + params.get('version') + "&type=" + params.get('type');
             document.getElementById('download_button').onclick = function () {
                 ga && ga('send', 'event', 'download', 'zen-windows' + params.get('version'), 'zowe-enterprise-necessity-' + params.get(
                     'version') + '.exe');
