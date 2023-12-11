@@ -27,6 +27,9 @@ cli_active_development_download_url: legal.html?type=cli-active-development&vers
 smpe_download_url: legal.html?type=smpe&version=
 pswi_download_uri: legal.html?type=pswi&version=
 zowe_chat_download_url: legal.html?type=chat&version=tp1
+zen_windows_download_url: legal.html?type=zen-windows&version=
+zen_mac_download_url: legal.html?type=zen-mac&version=
+zen_unix_download_url: legal.html?type=zen-unix&version=
 
 zowe_node_sdk_download_url: legal.html?type=nodejs-sdk&version=
 zowe_python_sdk_download_url: legal.html?type=python-sdk&version=

@@ -28,6 +28,21 @@
                 file_ext = 'zip';
                 package_name = 'Zowe Python Client SDK'
                 break;
+            case 'zen-windows':
+                filename_prefix = 'zowe-enterprise-necessity-windows';
+                file_ext = 'exe';
+                package_name = 'zowe-enterprise-necessity'
+                break;
+            case 'zen-mac':
+                filename_prefix = 'zowe-enterprise-necessity-mac';
+                file_ext = '-x64.dmg';
+                package_name = 'zowe-enterprise-necessity'
+                break;
+            case 'zen-unix':
+                filename_prefix = 'zowe-enterprise-necessity-unix';
+                file_ext = '-1.x86_64.rpm';
+                package_name = 'zowe-enterprise-necessity'
+                break;
         }
     }
 

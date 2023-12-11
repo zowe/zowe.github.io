@@ -21,6 +21,10 @@
   .card-body:last-of-type {
     border-bottom: inherit;
   }
+  .right-box {
+   float: right;
+   margin-left: 50px; /* Adjust the margin as needed */
+  }
 </style>
 
 <section class="whitebackground">
@@ -113,9 +117,31 @@
 
   <!--V2 download as follows -->
   <h2 id="download-v2">Zowe V2</h2>
-  {% if site.data.releases.v2[0].cli_version and site.data.releases.v2[0].cli_plugins_version and site.data.releases.v2[0].zos_version and site.data.releases.v2[0].smpe_version and site.data.releases.v2[0].node_sdk_version and site.data.releases.v2[0].python_sdk_version %}
+  {% if site.data.releases.v2[0].cli_version and site.data.releases.v2[0].cli_plugins_version and site.data.releases.v2[0].zos_version and site.data.releases.v2[0].smpe_version and site.data.releases.v2[0].node_sdk_version and site.data.releases.v2[0].python_sdk_version and site.data.releases.v2[0].zen_version %}
   <div class="card-deck">
     <div class="card bg-light border-light mb-3">
+      <h4 class="card-header" id="zowe-zos-build-download">Server Install Wizard</h4>
+      <div class="card-body">
+        <p class="card-text">The Server Install Wizard is an optional program that you can run on your computer 
+         to guide you through installing Zowe server content onto <b>z/OS</b> .
+         It handles <b>YAML</b>, <b>Unix</b>, and <b>JCL</b> content involved in setup of a Zowe instance 
+         so that you can install Zowe easily by following prompts and verifying the output.</p>
+        <div class="row">
+            <div class="card-body">
+            <h5 class="card-title">Zen Installer</h5>
+            <p class="card-text">The Executable installer for zen</p>
+            <p><a class="btn btn-primary"
+                href="{{ site.zen_windows_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
+                {{ site.data.releases.v2[0].zen_version }} window Installer</a></p>
+            <p><a class="btn btn-primary"
+                href="{{ site.zen_unix_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
+                {{ site.data.releases.v2[0].zen_version }} unix Installer</a></p>
+            <p><a class="btn btn-primary"
+                href="{{ site.zen_mac_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
+                {{ site.data.releases.v2[0].zen_version }} mac Installer</a></p>
+          </div>
+        </div>
+      </div>
       <h4 class="card-header" id="zowe-zos-build-download">Server-side component installer</h4>
       <div class="card-body">
         <p class="card-text">Install Zowe z/OS components from the <b>convenience build</b>, the <b>SMP/E build</b>,
