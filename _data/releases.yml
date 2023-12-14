@@ -2,17 +2,29 @@
 # Note - keep this in order as the latest release is pulled from the first item in the list!
 future:
   v2:
+    - version: 2.15.0
+      release_date: 2024-03-04
     - version: 2.14.0
       release_date: 2024-01-22
-    - version: 2.13.0
-      release_date: 2023-12-11
   v1:
-    - version: 1.28.7
-      release_date: 2024-04-15
     - version: 1.28.6
-      release_date: 2024-01-08
+      release_date: 2024-09-30
 
 v2:
+  - version: 2.13.0
+    zos_version: 2.13.0
+    smpe_version: 2.13.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO90045 UO90046
+    containerization_version: 2.13.0
+    cli_version: 2.13.0
+    cli_plugins_version: 2.13.0
+    explorer_version: 2.13.0
+    node_sdk_version: 2.13.0
+    python_sdk_version: 2.13.0
+    release_date: 2023-10-24
+    documentation: stable
+    release_notes: v2_13_0
   - version: 2.12.0
     zos_version: 2.12.0
     smpe_version: 2.12.0
@@ -21,11 +33,11 @@ v2:
     containerization_version: 2.12.0
     cli_version: 2.12.0
     cli_plugins_version: 2.12.0
-    explorer_version: 2.11.2
+    explorer_version: 2.12.2
     node_sdk_version: 2.12.0
     python_sdk_version: 2.12.0
     release_date: 2023-10-24
-    documentation: stable
+    documentation: v2_12_x
     release_notes: v2_12_0
   - version: 2.11.0
     zos_version: 2.11.0
