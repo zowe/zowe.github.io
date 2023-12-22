@@ -11,6 +11,7 @@
     - Datasets API is archived
     - Jobs API is archived
     - Metrics service is archived
+    - IMS API is archived
     - Java 17 is required for API Mediation Layer to run
     - z/OSMF in version V2R5 (preferred) or V2R3, V2R4 with APAR PH12143 applied
     - Statically onboarded services needs to do it via modifying the zowe.yaml and adding a directory outside of the zowe to read the files from
@@ -42,6 +43,7 @@
     - Remove V1 profile support
     - Change authentication order of preference
     - Remove deprecated items - [CLI](https://github.com/zowe/zowe-cli/issues/1694) and [Imperative](https://github.com/zowe/imperative/issues/970)
+    - IMS CLI extension is archived
 
     **Important updates**
 
