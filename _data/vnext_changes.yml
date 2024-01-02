@@ -39,13 +39,12 @@
 
     **Breaking changes**
 
+    - Introduce new format for error messages to improve clarity
     - Remove V1 profile support
-    - Change authentication order of preference
     - Remove deprecated items - [CLI](https://github.com/zowe/zowe-cli/issues/1694) and [Imperative](https://github.com/zowe/imperative/issues/970)
 
     **Important updates**
 
-    - Support multiple API ML Gateway connections within a single config file. 
     - Provide a Jenkinsfile template to replace shared library (github.com/zowe/zowe-cli-version-controller)
 
 - name: Explorer for Intellij
