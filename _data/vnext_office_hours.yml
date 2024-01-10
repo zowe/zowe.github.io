@@ -29,8 +29,8 @@ consumers:
   - date: 01/05/2024 8AM - 9AM ET
     topic: API Mediation Layer
     meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/95815909111?password=57c97886-d2b6-4430-9c05-1eedfa1e0fa7
-    recording_link: 
-    materials_link: 
+    recording_link: https://zoom.us/rec/share/iZ6-6mv0qy8tlnaIshVYyEF5fWAREjWYuwuvyyB9v9QKUcAzrpXZArT83qgpmO4u.tQFWMquAL3_sqgug
+    materials_link: https://ibm.box.com/s/06rtqh1at3nd7q3lgi36ly8uum1h4adn
   - date: 01/12/2024 8AM - 9AM ET
     topic: CLI & Node SDK
     meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/95815909111?password=57c97886-d2b6-4430-9c05-1eedfa1e0fa7
