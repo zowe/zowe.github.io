@@ -121,3 +121,56 @@ extenders:
          answer: |
            
            Zowe provides the SBOMs with V3 in updated SPDX Formats.
+
+consumers:
+   - name: API ML for Users Frequently Asked Questions
+     id: questions-apiml-users
+     questions: 
+       - number: 1
+         question: APIML v3 won't support clients with onboarding enabler v2, right?
+         answer: |
+           
+           The API ML in version 3 supports clients with onboarding enablers from version 2. It also works the other way around the onboarding enablers from version 3 will continue working with Zowe v2
+
+       - number: 2
+         question: For us, as for extenders, jump to Java 17 means that we have to maintain 2 separate versions of our application - one with apiml-enabler v2 and another one with v3 to support customers who want to stay with Java 8. Do you have any recommendation or a workaround how to support both java versions?
+         answer: |
+           
+           Plain Java Enabler in v2 will work in v3 - you can keep this for 1 - 2 years
+
+           Using Spring Boot, Java 17 requirement comes from SPRING, recommendation is to MOVE if you are using something from SPRING
+
+       - number: 3
+         question: Can you speak about the migration from Zuul to Spring Cloud Gateway? Today there are two separate gateway services in API-ML with separate config.
+         answer: |
+           
+           Goal is to have 1, spring-cloud gateway. The spring-cloud-gateway configuration should move under the component.gateway namespace. We expect to have one cluster od spring cloud gateway ahead of multiple sysplexes and then one cluster on every sysplex. Most of the configuration that was used should remain, new one from Spring Cloud Gateway remains. 
+
+       - number: 4
+         question: If you have a legacy gateway deployed will there be migration help? / is the old gateway gone?
+         answer: |
+           
+           It is gone in V3, but nothing should change from the point of view of the user…  if we discover that is not true we will plan to deliver a configuration utility to help with this transition
+
+       - number: 5
+         question: Can you talk us through how a client-side end-user will find and obtain the correct APIML service instance ID for the desired instance of their service?
+         answer: |
+           
+           Since one service can have multiple instances, living on different LPARS or different Environments how can clients identify a specific service on a specific system? 
+
+           TODAY - Clients can use the header instance ID to route to a specific instance / get information from specific services via an API on discovery service, but this part is going to be improved in 2Q 2024
+
+       - number: 6
+         question: Will the LPAR id be available for the clients to obtain?
+         answer: |
+           
+           It isn't now, but we will work on this functionality in 2Q 2024
+
+       - number: 7
+         question: Regarding Static Onboarding - we're using a template that Zowe upon startup would find through manifest, then read, fill variables and put into the api-defs directory, no manual user action required. Will this still be available?
+         answer: |
+           
+           It will remain available. The recommendation is through the V3 to move the directory away from Zowe workspace, if it isn't away by now. The zowe.yaml contains parameter specifying where the static definitions directories live components.discovery.alternativeStaticApiDefinitionsDirectories 
+
+
+
