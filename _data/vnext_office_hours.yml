@@ -32,10 +32,15 @@ consumers:
     recording_link: https://zoom.us/rec/share/iZ6-6mv0qy8tlnaIshVYyEF5fWAREjWYuwuvyyB9v9QKUcAzrpXZArT83qgpmO4u.tQFWMquAL3_sqgug
     materials_link: https://ibm.box.com/s/06rtqh1at3nd7q3lgi36ly8uum1h4adn
   - date: 01/12/2024 8AM - 9AM ET
-    topic: CLI & Node SDK
+    topic: CLI
     meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/95815909111?password=57c97886-d2b6-4430-9c05-1eedfa1e0fa7
-    recording_link: 
-    materials_link: 
+    recording_link: https://zoom.us/rec/share/oWx79e8rAeAMFSikY9klU0-zURSE4TBZGxUQg33aqsBRPQs8LWQuE8DG4qIWy4fK.bGhUwOZitTNq0gYz
+    materials_link: https://ibm.box.com/s/aqcwrc83i8uq9llyo3kae8pjxi0p1xlb
+  - date: 01/12/2024 8AM - 9AM ET
+    topic: Node SDK
+    meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/95815909111?password=57c97886-d2b6-4430-9c05-1eedfa1e0fa7
+    recording_link: https://zoom.us/rec/share/oWx79e8rAeAMFSikY9klU0-zURSE4TBZGxUQg33aqsBRPQs8LWQuE8DG4qIWy4fK.bGhUwOZitTNq0gYz
+    materials_link: https://ibm.box.com/s/ujdkjfb6f1zhx4amse1x7aysdb76ai80
   - date: 01/19/2024 8AM - 9AM ET
     topic: Explorer (VSCode)
     meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/95815909111?password=57c97886-d2b6-4430-9c05-1eedfa1e0fa7
