@@ -29,7 +29,7 @@
       <p class="card-text">Hosted by the Open Mainframe Project, this is a messaging board where you can directly engage with Zowe users and contributors - ask questions, engage in discussions, and contribute your ideas!</p>
       <p>Some popular channels to get started: <ul>
       <li><a href="{{ site.zowe_onboarding_slack_url }}">#zowe-onboarding</a></li> 
-      <li><a href="{{ site.zowe_user_slack_url }}">#zowe-user</a></li> 
+      <li><a href="{{ site.zowe_user_slack_url }}">#zowe-help</a></li> 
       <li><a href="{{ site.zowe_cli_slack_url }}">#zowe-cli</a></li> 
       <li><a href="{{ site.zowe_explorer_slack_url }}">#zowe-explorer</a></li> 
       <li><a href="{{ site.apiml_slack_url }}">#zowe-api</a></li>
