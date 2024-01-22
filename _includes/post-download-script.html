@@ -51,6 +51,10 @@
     if (params.has('version')) {
         document.getElementById('download_link').href = "legal.html?type=" + params.get('type') + "&version=" + params.get('version');
 
+        if(params.get('version').toString().startsWith('1')) {
+            document.getElementById('end-of-support-reminder').style.display = "block";
+        }
+
         document.getElementById('page_title').innerText = 'Thank you for downloading the ' + package_name;
         document.getElementById('verify_drop').innerText = 'Verify Hash and Signature of ' + package_name;
         document.getElementById('hash_download').href = "https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" +
