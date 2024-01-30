@@ -2,59 +2,76 @@
 <script>
     params = new URLSearchParams(location.search);
     
-    filename_prefix = 'zowe'
-    file_ext = 'pax'
-    package_name = 'Zowe Binary'
+    filename_prefix = 'zowe';
+    file_ext = 'pax';
+    package_name = 'Zowe Binary';
 
     if(params.has('type')){
         switch(params.get('type')){
             case 'cli':
                 filename_prefix = 'zowe-cli-package';
                 file_ext = 'zip';
-                package_name = 'Zowe CLI Package'
+                package_name = 'Zowe CLI Package';
                 break;
             case 'cli-plugins':
                 filename_prefix = 'zowe-cli-plugins';
                 file_ext = 'zip';
-                package_name = 'Zowe CLI Plugins Package'
+                package_name = 'Zowe CLI Plugins Package';
                 break;
             case 'nodejs-sdk':
                 filename_prefix = 'zowe-nodejs-sdk';
                 file_ext = 'zip';
-                package_name = 'Zowe Node.js Client SDK'
+                package_name = 'Zowe Node.js Client SDK';
                 break;
             case 'python-sdk':
                 filename_prefix = 'zowe-python-sdk';
                 file_ext = 'zip';
-                package_name = 'Zowe Python Client SDK'
+                package_name = 'Zowe Python Client SDK';
+                break;
+            case 'smpe':
+                filename_prefix = 'zowe-smpe-package';
+                file_ext = 'zip';
+                package_name = 'Zowe SMP/E Package';
+                break;
+            case 'pswi':
+                filename_prefix = 'zowe-PSWI';
+                file_ext = 'pax.Z';
+                package_name = 'Zowe Portable Software Instance';
+                break;
+            case 'containerization':
+                filename_prefix = 'zowe-containerization';
+                file_ext = 'zip';
+                package_name = 'Zowe Containerization Build';
                 break;
         }
     }
 
+    filename = filename_prefix + "-" + params.get('version') + "." + file_ext;
+
     if (params.has('version')) {
-        document.getElementById('download_link').href = "legal.html?version=" + params.get('version');
+        document.getElementById('download_link').href = "legal.html?type=" + params.get('type') + "&version=" + params.get('version');
+
+        if(params.get('version').toString().startsWith('1')) {
+            document.getElementById('end-of-support-reminder').style.display = "block";
+        }
 
         document.getElementById('page_title').innerText = 'Thank you for downloading the ' + package_name;
         document.getElementById('verify_drop').innerText = 'Verify Hash and Signature of ' + package_name;
         document.getElementById('hash_download').href = "https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" +
-            params.get('version') + "/" + filename_prefix + "-" + params.get('version') + "." + file_ext + ".sha512";
+            params.get('version') + "/" + filename + ".sha512";
         document.getElementById('hash_download').onclick = function () {
-            ga && ga('send', 'event', 'download', package_name + ' Hash ' + params.get('version'), filename_prefix + '-' + 
-                params.get('version') + '.' + file_ext + '.sha512');
+            ga && ga('send', 'event', 'download', package_name + ' Hash ' + params.get('version'), filename + '.sha512');
         }
-        document.getElementById('hash_download').innerHTML = filename_prefix + "-" + params.get('version') + "." + file_ext + ".sha512"; 
-        document.getElementById('hash_code').innerHTML = '(gpg --print-md SHA512 ' + filename_prefix + "-" + params.get('version') +
-            '.' + file_ext + ' &gt; ' + filename_prefix + "-" + params.get('version') + '.' + file_ext + '.sha512.my) && diff ' + filename_prefix +
-            "-" + params.get('version') + '.' + file_ext + '.sha512.my ' + filename_prefix + "-" + params.get('version') + '.' + file_ext + 
-            '.sha512 && echo matched || echo "not match"';
-        document.getElementById('hash_my').innerHTML = filename_prefix + "-" + params.get('version') + '.' + file_ext + '.sha512.my';
+        document.getElementById('hash_download').innerHTML = filename + ".sha512"; 
+        document.getElementById('hash_code').innerHTML = '(gpg --print-md SHA512 ' + filename + ' &gt; ' + filename + '.sha512.my) && diff ' + filename + 
+            '.sha512.my ' + filename + '.sha512 && echo matched || echo "not match"';
+        document.getElementById('hash_my').innerHTML = filename + '.sha512.my';
         document.getElementById('signature_download').href = "https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" + params.get('version') +
-            "/" + filename_prefix + "-" + params.get('version') + "." + file_ext + ".asc";
+            "/" + filename + ".asc";
         document.getElementById('signature_download').onclick = function () {
-            ga && ga('send', 'event', 'download', package_name + ' Signature ' + params.get('version'), filename_prefix + "-" + params.get('version') + 
-            '.' + file_ext + '.asc');
+            ga && ga('send', 'event', 'download', package_name + ' Signature ' + params.get('version'), filename + '.asc');
         }
-        document.getElementById('signature_download').innerHTML = filename_prefix + "-" + params.get('version') + '.' + file_ext + '.asc';
+        document.getElementById('signature_download').innerHTML = filename + '.asc';
         xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
@@ -73,8 +90,7 @@
         xhttp.open("GET", "https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" + params.get('version') +
             "/code-signing-key-info.json", true);
         xhttp.send();
-        document.getElementById('gpg_command').innerHTML = 'gpg --verify ' + filename_prefix + "-" + params.get('version') +
-            '.' + file_ext + '.asc ' + filename_prefix + "-" + params.get('version') + '.' + file_ext; 
+        document.getElementById('gpg_command').innerHTML = 'gpg --verify ' + filename + '.asc ' + filename; 
     }
     
 </script>
