@@ -5,19 +5,19 @@
   
     **Breaking changes**
 
-    - Spring Cloud Gateway replaces Netflix Zuul based Gateway
     - The authentication endpoints wont support the route /api/v1/gateway and instead will support only /gateway/api/v1
     - Spring Enabler will be updated to Spring Boot 3 and Spring 6 and the Spring Boot 2 and Spring 5 versions won't be supported anymore
     - Datasets API is archived
     - Jobs API is archived
     - Metrics service is archived
+    - IMS API is archived
     - Java 17 is required for API Mediation Layer to run
-    - z/OSMF in version V2R5 (preferred) or V2R3, V2R4 with APAR PH12143 applied
+    - z/OSMF in version V2R5 with APAR PH12143 applied
     - Statically onboarded services needs to do it via modifying the zowe.yaml and adding a directory outside of the zowe to read the files from
+    - Keyrings need to change configuration from safkeyring://// to safkeyring://
 
     **Important updates**
 
-    - API Rate Limiting supported by the Spring Cloud Gateway
     - Authentication and Authorization Service is separate service, only one that needs z/OS directly
 
 - name: Application Framework
