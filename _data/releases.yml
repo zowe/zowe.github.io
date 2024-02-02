@@ -16,7 +16,7 @@ v2:
     smpe_version: 2.14.0
     smpe_sysmod: PTF
     smpe_numbers: UO90047 UO90048
-    containerization_version: 2.13.0
+    containerization_version: 2.14.0
     cli_version: 2.14.0
     cli_plugins_version: 2.14.0
     explorer_version: 2.14.0
