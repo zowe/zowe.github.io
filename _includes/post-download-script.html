@@ -1,96 +1,41 @@
 <!-- Used to write out HTML specifying how to run GPG signing against downloaded binaries -->
 <script>
-    params = new URLSearchParams(location.search);
+    main = () => {
+        params = new URLSearchParams(location.search);
     
-    filename_prefix = 'zowe';
-    file_ext = 'pax';
-    package_name = 'Zowe Binary';
-
-    if(params.has('type')){
-        switch(params.get('type')){
-            case 'cli':
-                filename_prefix = 'zowe-cli-package';
-                file_ext = 'zip';
-                package_name = 'Zowe CLI Package';
-                break;
-            case 'cli-plugins':
-                filename_prefix = 'zowe-cli-plugins';
-                file_ext = 'zip';
-                package_name = 'Zowe CLI Plugins Package';
-                break;
-            case 'nodejs-sdk':
-                filename_prefix = 'zowe-nodejs-sdk';
-                file_ext = 'zip';
-                package_name = 'Zowe Node.js Client SDK';
-                break;
-            case 'python-sdk':
-                filename_prefix = 'zowe-python-sdk';
-                file_ext = 'zip';
-                package_name = 'Zowe Python Client SDK';
-                break;
-            case 'smpe':
-                filename_prefix = 'zowe-smpe-package';
-                file_ext = 'zip';
-                package_name = 'Zowe SMP/E Package';
-                break;
-            case 'pswi':
-                filename_prefix = 'zowe-PSWI';
-                file_ext = 'pax.Z';
-                package_name = 'Zowe Portable Software Instance';
-                break;
-            case 'containerization':
-                filename_prefix = 'zowe-containerization';
-                file_ext = 'zip';
-                package_name = 'Zowe Containerization Build';
-                break;
+        if (!params.has('version') || !params.has('type')) {
+            // error condition
+            document.getElementById('main-content').innerHTML = 
+            '<h1 class="title" id="page_title">There was an error finding your download.</h1>' +
+                '<br /><p> Please visit the <a href="/download">Zowe Download Site</a> and try again.</p>';
+            return;
         }
-    }
+        const rtBaseUrl = 'https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe'
+        const artifactDetails = getArtifactInfo(params);
+        const artifact = artifactDetails['artifact'];
+        const componentName = artifactDetails['componentName']
+        const version = params.get('version');
 
-    filename = filename_prefix + "-" + params.get('version') + "." + file_ext;
-
-    if (params.has('version')) {
-        document.getElementById('download_link').href = "legal.html?type=" + params.get('type') + "&version=" + params.get('version');
-
-        if(params.get('version').toString().startsWith('1')) {
+        if(version.toString().startsWith('1')) {
             document.getElementById('end-of-support-reminder').style.display = "block";
         }
 
-        document.getElementById('page_title').innerText = 'Thank you for downloading the ' + package_name;
-        document.getElementById('verify_drop').innerText = 'Verify Hash and Signature of ' + package_name;
-        document.getElementById('hash_download').href = "https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" +
-            params.get('version') + "/" + filename + ".sha512";
-        document.getElementById('hash_download').onclick = function () {
-            ga && ga('send', 'event', 'download', package_name + ' Hash ' + params.get('version'), filename + '.sha512');
-        }
-        document.getElementById('hash_download').innerHTML = filename + ".sha512"; 
-        document.getElementById('hash_code').innerHTML = '(gpg --print-md SHA512 ' + filename + ' &gt; ' + filename + '.sha512.my) && diff ' + filename + 
-            '.sha512.my ' + filename + '.sha512 && echo matched || echo "not match"';
-        document.getElementById('hash_my').innerHTML = filename + '.sha512.my';
-        document.getElementById('signature_download').href = "https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" + params.get('version') +
-            "/" + filename + ".asc";
-        document.getElementById('signature_download').onclick = function () {
-            ga && ga('send', 'event', 'download', package_name + ' Signature ' + params.get('version'), filename + '.asc');
-        }
-        document.getElementById('signature_download').innerHTML = filename + '.asc';
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-                keyinfo = JSON.parse(this.responseText);
-                document.getElementById('keyfile').href = keyinfo.key_location;
-                document.getElementById('keyfile').innerHTML = document.getElementById('keyfile').href.substring(
-                    document.getElementById('keyfile').href.lastIndexOf('/') + 1);
-                document.getElementById('keyfile_import_command').innerHTML = "gpg --import " + document
-                    .getElementById('keyfile').innerHTML;
-                document.getElementById('key_id').innerHTML = keyinfo.key_id;
-                document.getElementById('key_signer').innerHTML = keyinfo.key_signer;
-                document.getElementById('gpg-sign-key').innerHTML = "gpg --sign-key " + keyinfo.key_id;
-                document.getElementById('gpg-delete-key').innerHTML = "gpg --delete-key " + keyinfo.key_id;
-            }
-        }
-        xhttp.open("GET", "https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/" + params.get('version') +
-            "/code-signing-key-info.json", true);
-        xhttp.send();
-        document.getElementById('gpg_command').innerHTML = 'gpg --verify ' + filename + '.asc ' + filename; 
+        document.getElementById('download_link').href = `legal.html?type=${params.get('type')}&version=${version}`;
+        document.getElementById('page_title').innerText = 'Thank you for downloading the ' + componentName;
+        document.getElementById('download_bundle_step').innerHTML = `2. Download <a href="${rtBaseUrl}/${version}/${artifact}.bundle" download 
+                 target="_blank"  onclick="gs && ga('send', 'event', 'download', '${componentName} bundle', '${artifact}.bundle');">the ${componentName} signing bundle.</a>`;
+      
+        document.getElementById('cosign_verify_online').innerHTML = 
+            `cosign verify ./${artifact} --bundle ./${artifact}.bundle 
+                --certificate-identity=https://github.com/zowe/zowe-install-packaging/.github/workflows/build-packaging.yml@refs/heads/v${version.toString()[0]}.x/master 
+                --certificate-oidc-issuer=https://token.actions.githubusercontent.com`; 
+
+
+        document.getElementById('cosign_verify_offline').innerHTML = 
+            `cosign verify ./${artifact} --bundle ./${artifact}.bundle --offline 
+                --certificate-identity=https://github.com/zowe/zowe-install-packaging/.github/workflows/build-packaging.yml@refs/heads/v${version.toString()[0]}.x/master 
+                --certificate-oidc-issuer=https://token.actions.githubusercontent.com`; 
     }
-    
+   
+    main() 
 </script>
