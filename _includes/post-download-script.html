@@ -1,6 +1,6 @@
 <!-- Used to write out HTML specifying how to run GPG signing against downloaded binaries -->
 <script>
-    main = () => {
+    post_dl_updates = () => {
         params = new URLSearchParams(location.search);
     
         if (!params.has('version') || !params.has('type')) {
@@ -37,5 +37,5 @@
                 --certificate-oidc-issuer=https://token.actions.githubusercontent.com`; 
     }
    
-    main() 
+    post_dl_updates() 
 </script>
