@@ -135,6 +135,17 @@ redirect_from:
 {% assign next_version = 2.7 %}
 {% assign next_version_date = currentTime %}
 {% assign minimum_difference = 9999999 %}
+{% for release in site.data.releases.future.v3 %}
+  {% assign current_release_date = release.release_date | date: '%s' | plus: 0 %}
+  {% if current_release_date > currentTime %}
+     {% assign difference_in_seconds = current_release_date | minus: currentTime %}
+     {% if difference_in_seconds < minimum_difference %}
+       {% assign minimum_difference = difference_in_seconds %}
+       {% assign next_version_date = release.release_date %}
+       {% assign next_version = release.version %}
+     {% endif %}
+  {% endif %}
+{% endfor %}
 {% for release in site.data.releases.future.v2 %}
   {% assign current_release_date = release.release_date | date: '%s' | plus: 0 %}
   {% if current_release_date > currentTime %}
