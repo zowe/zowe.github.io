@@ -49,8 +49,8 @@ consumers:
   - date: 01/26/2024 8AM - 9AM ET
     topic: Explorer (Intellij)
     meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/95815909111?password=57c97886-d2b6-4430-9c05-1eedfa1e0fa7
-    recording_link: 
-    materials_link: 
+    recording_link: https://zoom.us/rec/share/JqDZGQ9iMQyzSZ7fBr8RxQ_sNNqW4yVQ36LjR2Ro8WpgHsjh_eJMQODr7r7Rr_Wa.YcBHNJmyHLFTGiOb
+    materials_link: https://ibm.box.com/s/monvnv2b55v1p6cz5cpxrmeyf8m794j4
   - date: 02/02/2024 8AM - 9AM ET
     topic: Web UI
     meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/95815909111?password=57c97886-d2b6-4430-9c05-1eedfa1e0fa7
