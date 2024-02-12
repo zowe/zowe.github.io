@@ -54,13 +54,13 @@ consumers:
   - date: 02/02/2024 8AM - 9AM ET
     topic: Web UI
     meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/95815909111?password=57c97886-d2b6-4430-9c05-1eedfa1e0fa7
-    recording_link: 
-    materials_link: 
+    recording_link: https://zoom.us/rec/share/uHr2XYEXBfTZEQgMeP6vsn2uuASCV476nOE9pE3dqRqOUozogG4PZn_vo0vXFjHe.GuhjaVMHb8xYnSvb
+    materials_link: https://ibm.box.com/s/asqn9wx7qc1mfwmdn6dqnkt56xuuflaz
   - date: 02/09/2024 8AM - 9AM ET
     topic: Systems Install & Packaging
     meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/95815909111?password=57c97886-d2b6-4430-9c05-1eedfa1e0fa7
-    recording_link: 
-    materials_link: 
+    recording_link: https://zoom.us/rec/share/_yYDue5b5Mhr17Fy-PcSita_YxO2q1X-yYKxieH6rYef_ISyhkry3JfYqGB3y4EI.gF5t820BLk7Fr8l_
+    materials_link: https://ibm.box.com/s/iy5fwn7u5jcjaxfnopd9i6acjsb491qx
   - date: 02/16/2024 8AM - 9AM ET
     topic: Open Office Hours
     meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/95815909111?password=57c97886-d2b6-4430-9c05-1eedfa1e0fa7
