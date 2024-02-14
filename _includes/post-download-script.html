@@ -13,7 +13,8 @@
         const rtBaseUrl = 'https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe'
         const artifactDetails = getArtifactInfo(params);
         const artifact = artifactDetails['artifact'];
-        const componentName = artifactDetails['componentName']
+        const componentName = artifactDetails['componentName'];
+        const sbomGroups = artifactDetails['sbomGroup'];
         const version = params.get('version');
 
         if(version.toString().startsWith('1')) {
@@ -22,7 +23,7 @@
 
         document.getElementById('download_link').href = `legal.html?type=${params.get('type')}&version=${version}`;
         document.getElementById('page_title').innerText = 'Thank you for downloading the ' + componentName;
-        document.getElementById('download_bundle_step').innerHTML = `2. Download <a href="${rtBaseUrl}/${version}/${artifact}.bundle" download 
+        document.getElementById('download_bundle_step').innerHTML = `Download <a href="${rtBaseUrl}/${version}/${artifact}.bundle" download 
                  target="_blank"  onclick="gs && ga('send', 'event', 'download', '${componentName} bundle', '${artifact}.bundle');">the ${componentName} signing bundle.</a>`;
       
         document.getElementById('cosign_verify_online').innerHTML = 
@@ -35,6 +36,50 @@
             `cosign verify ./${artifact} --bundle ./${artifact}.bundle --offline 
                 --certificate-identity=https://github.com/zowe/zowe-install-packaging/.github/workflows/build-packaging.yml@refs/heads/v${version.toString()[0]}.x/master 
                 --certificate-oidc-issuer=https://token.actions.githubusercontent.com`; 
+
+        if (sbomGroups.length > 0) {
+            document.getElementById('sbom_download_section').style.display = "block"
+            let introText =`Zowe has a Software Bill of Materials available for ${componentName},`+  
+                ` which you can use to analyze the software included as part of the product.` 
+            document.getElementById('sbom_intro_text').innerText = introText
+            
+            let sbomDownloadList = "";
+            let sbomBundleDownloadList = "";
+            for (let sbomOption of sbomGroups) {
+                let sbomDescription = '';
+                let bundleDescription = '';
+                switch(sbomOption) {
+                    case 'cli': 
+                        sbomDescription = `CLI components SBOM which contains ${componentName} information`;
+                        bundleDescription = `CLI components SBOM`;
+                        break;
+                    case 'zos':
+                        sbomDescription = `Server Side components SBOM which contains ${componentName} information`;
+                        bundleDescription = `Server side components SBOM`;
+                        break;
+                    case 'aggregate':
+                        sbomDescription = `Aggregate SBOM which contains <b>every</b> Zowe component's information`;
+                        bundleDescription = `Aggregate SBOM`;
+                        break;
+                    default:
+                        sbomDescription = `Unknown SBOM type; please return to the download page and try again.`;
+                        bundleDescription = sbomDescription;
+                }
+                sbomDownloadList += `<li>Download the ${sbomDescription} <a href="${rtBaseUrl}/${version}/sbom/sbom_${sbomOption}.spdx.yml" download 
+                 target="_blank"  onclick="gs && ga('send', 'event', 'download', '${componentName} ${sbomOption} SBOM', 'sbom_${sbomOption}.spdx.yml');">here</a>.</li>`
+                sbomBundleDownloadList += `<li>Download the verification bundle for the ${bundleDescription} <a href="${rtBaseUrl}/${version}/sbom/sbom_${sbomOption}.spdx.yml.bundle" download 
+                 target="_blank"  onclick="gs && ga('send', 'event', 'download', '${componentName} ${sbomOption} SBOM', 'sbom_${sbomOption}.spdx.yml.bundle');">here</a>.</li>`
+            }
+            document.getElementById('sbom_download_options').innerHTML = sbomDownloadList
+            document.getElementById('sbom_bundle_download_options').innerHTML = sbomBundleDownloadList
+            document.getElementById('sbom_online_verification').innerHTML =  `cosign verify ./<your_chosen_sbom_file> --bundle ./<your_chosen_sbom_file>.bundle
+                --certificate-identity=https://github.com/zowe/zowe-install-packaging/.github/workflows/build-packaging.yml@refs/heads/v${version.toString()[0]}.x/master 
+                --certificate-oidc-issuer=https://token.actions.githubusercontent.com`; 
+            document.getElementById('sbom_offline_verification').innerHTML =  `cosign verify ./<your_chosen_sbom_file> --bundle ./<your_chosen_sbom_file>.bundle --offline
+                --certificate-identity=https://github.com/zowe/zowe-install-packaging/.github/workflows/build-packaging.yml@refs/heads/v${version.toString()[0]}.x/master 
+                --certificate-oidc-issuer=https://token.actions.githubusercontent.com`; 
+            
+        }
     }
    
     post_dl_updates() 

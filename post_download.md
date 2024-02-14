@@ -13,16 +13,16 @@ extraJs: [common.html, post-download-script.html]
         <summary id='verify_drop'><b>How to verify binaries with digital signatures</b></summary>
         <br />
         <p>All Zowe binaries are signed using <a href="https://www.sigstore.dev/">Sigstore</a>, an <a href="https://openssf.org/">OpenSSF</a> project.</p>
-        <h2>Pre-Requisites</h2>
+        <h2 id="prereqs">Pre-Requisites</h2>
         <ul>
-            <li>1. Make sure the Cosign CLI is installed. Follow <a href="https://docs.sigstore.dev/system_config/installation/">these installation instructions.</a> </li>
-            <li id='download_bundle_step'>2. Download the artifact's </li>
+            <li>Make sure the Cosign CLI is installed. Follow <a href="https://docs.sigstore.dev/system_config/installation/">these installation instructions.</a> </li>
         </ul>
-        <br />
+        <h3>Download the Verification Bundle</h3>
+        <p id="download_bundle_step"></p>
         <h2><b>Online Verification</b></h2>
 
-        <p>This verification method if the preferred option for digital signature validation, and requires an internet connection with access to the public sigstore infrastructure to work (*.sigstore.dev).
-            Ensure that the the artifact you downloaded and its signing bundle you acquired <a href="#download_bundle_step">from the pre-requisites</a> are in the same directory.
+        <p>This verification method is the preferred option for digital signature validation, and requires an internet connection with access to the public sigstore infrastructure to work (*.sigstore.dev).
+            Ensure that the the artifact you downloaded and its respective signing bundle you acquired <a href="#download_bundle_step">from the pre-requisite step</a> are in the same directory.
             Navigate to that directory with your terminal, and issue the following command:</p>
 
         <code id='cosign_verify_online'>cosign verify-blob ./artifact-you-downloaded --bundle ./bundle-you-downloaded 
@@ -42,7 +42,7 @@ extraJs: [common.html, post-download-script.html]
         <h2><b>Offline Verification</b></h2>
        
         <p>This verification method is <b>>>not<<</b> the preferred option for digital signature validation, as the signature is not compared against the public transparency log. This method is useful mostly for artifact hash validation.
-            Ensure that the the artifact you downloaded and its signing bundle you acquired <a href="#download_bundle_step">from the pre-requisites</a> are in the same directory.
+            Ensure that the the artifact you downloaded and its respective signing bundle you acquired <a href="#download_bundle_step">from the pre-requisite step</a> are in the same directory.
             Navigate to that directory with your terminal, and issue the following command:</p>
 
         <code id='cosign_verify_offline'>cosign verify-blob ./artifact-you-downloaded --bundle ./bundle-you-downloaded --offline=true 
@@ -58,6 +58,32 @@ extraJs: [common.html, post-download-script.html]
 
         <code>Error: error verifying bundle: matching bundle to payload: ....more output</code>
     </details>
+    <br />
+    <details id="sbom_download_section" style="display: none;">
+        <summary id='sbom_drop'><b>How to download Zowe SBOMs (Software Bill of Materials)</b></summary>
+        <br />
+        <p id="sbom_intro_text"></p>
+        <h5>Downloading the SBOM</h5>
+    
+        <p>Choose one of the following SBOM options:</p>
+        <ul id="sbom_download_options"></ul>
+        <br />
+        <h5>(Optional) Verifying SBOM Integrity</h5>
+
+        <p>All Zowe SBOMs are signed using <a href="https://www.sigstore.dev/">Sigstore</a>, an <a href="https://openssf.org/">OpenSSF</a> project.</p>
+        <p>Choose the cosign bundle which matches the download option you chose <a href="#sbom_download_options">above</a></p>
+        <ul id="sbom_bundle_download_options"></ul>
+
+        <p id="sbom_verification_instructions">See the <a href="#prereqs">How to verify binaries with digital signatures</a> to acquire the pre-requisite software,
+             and for a description of online vs offline verficiation. Once you've reviewed that information, you can use the one of the below commands to digitally verify the SBOM. Each command assumes your SBOM and its respective signing bundle are in the same directory, and you have navigate your terminal there.</p>
+
+        <b>Online Verification</b><br />
+        <code id="sbom_online_verification"></code>
+        <br /><br />
+        <b>Offline Verification</b><br />
+        <code id="sbom_offline_verification"></code>
+    </details>
+
 </section>
 
 <section class="bluebackground" id="end-of-support-reminder" style="display: none;">

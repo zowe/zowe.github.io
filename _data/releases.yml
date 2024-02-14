@@ -22,6 +22,7 @@ v3:
     containerization_version: 3.0.0
     cli_version: 3.0.0
     cli_plugins_version: 3.0.0
+    intellij_explorer_version: 3.0.0
     explorer_version: 3.0.0
     node_sdk_version: 3.0.0
     python_sdk_version: 3.0.0

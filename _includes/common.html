@@ -4,22 +4,29 @@
         var version = params.get('version');
         let componentName = '';
         let artifact = '';
+        let sbomGroup = [];
+
+
         switch (params.get('type')) {
             case 'cli':
                 artifact = `zowe-cli-package-${version}.zip`;
                 componentName = `Zowe CLI v${version}`;
+                sbomGroup = ['cli', 'aggregate']
                 break;
             case 'cli-plugins':
                 artifact = `zowe-cli-plugins-${version}.zip`;
                 componentName = `Zowe CLI Plugins v${version}`;
+                sbomGroup = ['cli', 'aggregate']
                 break;
             case 'pax':
                 artifact = `zowe-${version}.pax`;
                 componentName = `Zowe PAX v${version}`;
+                sbomGroup = ['zos', 'aggregate']
                 break;
             case 'smpe':
                 artifact = `zowe-smpe-package-${version}.zip`;
                 componentName = `Zowe SMPE v${version}`;
+                sbomGroup = ['zos', 'aggregate']
                 break;
             case 'containerization':
                 artifact = `zowe-containerization-${version}.zip`;
@@ -27,7 +34,8 @@
                 break;
             case 'pswi':
                 artifact = `zowe-PSWI-${version}.pax.Z`;
-                componentName = `Zowe PSWI v${version}`;
+                componentName = `Zowe PSWI v${version}`;                
+                sbomGroup = ['zos', 'aggregate']
                 break;
             case 'python-sdk':
                 artifact = `zowe-python-sdk-${version}.zip`
@@ -36,14 +44,16 @@
             case 'nodejs-sdk':
                 artifact = `zowe-nodejs-sdk-${version}.zip`
                 componentName = `Zowe NodeJS SDK v${version}`
+                sbomGroup = ['cli', 'aggregate']
                 break;
             default:
                 artifact = 'unknown'
                 componentName = 'unknown component download'
+                sbomGroup = [];
                 break;
         }
         
-        return { 'artifact': artifact, 'componentName': componentName };
+        return { 'artifact': artifact, 'componentName': componentName, 'sbomGroup': sbomGroup };
     }
 
 </script>

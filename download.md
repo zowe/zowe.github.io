@@ -243,8 +243,7 @@
     <div class="card bg-light border-light mb-3">
       <h4 class="card-header">Client-side component installer</h4>
       <div class="card-body">
-        <p class="card-text">Install <b>Zowe CLI</b> or <b>Zowe Explorer</b>, a Visual Studio Code extension powered by
-          Zowe CLI.</p>
+        <p class="card-text">Install <b>Zowe CLI</b>, <b>Zowe Client SDKs</b>, <b>Zowe Explorer for VSCode</b>, or <b>Zowe Explorer for IntelliJ IDEA</b>, a rich set of client tools for easier interaction with the mainframe.</p>
         <div class="row">
           <div class="card-body">
             <h5 class="card-title" id="zowe-cli-download">Zowe CLI</h5>
@@ -291,22 +290,44 @@
             </div>
           </div>
           <div class="card-body">
-            <h5 class="card-title">Zowe Explorer</h5>
-            <p class="card-text">Zowe Explorer V3 enables you to adopt the team configuration file, recently
-              developed by the Zowe CLI Squad, to make profile management more centralized and much simpler.</p>
-            <p class="card-text">To download the V3 version of the FTP extension, click <b>Zowe Explorer {{ site.data.releases.v3[0].explorer_version }}</b>. Separate downloads are available for Zowe Explorer and Zowe Explorer
+            <h5 class="card-title">Zowe Explorer for VSCode</h5>
+            <p class="card-text">Zowe Explorer for VSCode V3 no longer supports V1 profiles. If you are using V1 profiles with V2, you must migrate them to the new format.</p>
+            <p class="card-text">Zowe Explorer downloads are available on the VSCode Marketplace. To view installation instructions for the VSCode Marketplace, follow the installation docs link below.</p>
+            <h5 class="card-title" style="font-size: 18px">Direct download</h5>
+            <p class="card-text">To download the V3 version of the FTP and CICS extensions, click <b>Zowe Explorer {{ site.data.releases.v3[0].explorer_version }}</b>. Separate downloads are available for Zowe Explorer and Zowe Explorer
               Extension for FTP.</p>
             <p class="card-text">To install the <em>.vsix</em> files, use <b>Extensions > Install from vsix</b> within
               VS Code.</p>
               <div>
-                <h5 class="card-title" style="font-size: 18px">Direct download</h5>
-                <p><a class="btn btn-primary" href="{{ site.zowe_explorer_next_github_url }}">Zowe Explorer
+                <p><a class="btn btn-primary" href="{{ site.zowe_explorer_next_github_url }}">Zowe Explorer for VSCode
                     {{ site.data.releases.v3[0].explorer_version }}
                   </a></p>
-                <p><a class="btn btn-primary" href=" {{ site.zowe_cics_explorer_next_github_url }}">Zowe Explorer for
-                    IBM CICS 2.0.0</a></p>
                 <div>
                   <a href="{{ site.zowe_explorer_install_doc_url }}" class="card-link">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle"
+                      fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                      <path fill-rule="evenodd"
+                        d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
+                      <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                    Read installation docs
+                  </a>
+                </div>
+              </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Zowe Explorer for IntelliJ IDEA</h5>
+            <p class="card-text">Zowe Explorer for IntelliJ IDEA brings support for browsing, editing and creating data on z/OS in IntelliJ IDEA.</p>
+            <h5 class="card-title" style="font-size: 18px">Marketplace Installation</h5>
+            <p class="card-text">Zowe Explorer for IntelliJ is available through the IntelliJ Marketplace.</p>
+              <div>
+                <p><a class="btn btn-primary" href="{{ site.zowe_intellij_explorer_marketplace_url }}">Zowe Explorer for IntelliJ
+                    {{ site.data.releases.v3[0].intellij_explorer_version }}
+                  </a></p>
+                <div>
+                  <a href="{{ site.zowe_intellij_explorer_install_doc_url }}" class="card-link">
                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle"
                       fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd"
@@ -1019,7 +1040,7 @@
   <p>Zowe v2 conformant extensions / plug-ins are likely to require changes to meet Zowe v3 conformance criteria. All
     extensions (regardless of v2 conformance status) must apply for v3 conformance and satisfy all required v3 testing
     criteria.</p>
-  <p><u>Recommendation:</u> All extenders interested in earning v23 conformance review the v3 conformance criteria,
+  <p><u>Recommendation:</u> All extenders interested in earning v3 conformance review the v3 conformance criteria,
     determine if technical changes are necessary, make appropriate modifications and prepare to apply for v3 conformance
     prior to v3 LTS publication.</p>
   <b>Zowe v3 Availability to Extenders</b><br />

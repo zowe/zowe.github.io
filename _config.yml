@@ -28,6 +28,7 @@ smpe_download_url: legal.html?type=smpe&version=
 pswi_download_uri: legal.html?type=pswi&version=
 zowe_chat_download_url: legal.html?type=chat&version=tp1
 
+
 zowe_node_sdk_download_url: legal.html?type=nodejs-sdk&version=
 zowe_python_sdk_download_url: legal.html?type=python-sdk&version=
 nightly_build_url: https://zowe.jfrog.io/zowe/webapp/#/artifacts/browse/tree/General/libs-release-local/org/zowe/nightly
@@ -40,6 +41,7 @@ zowe_v2_fmid_oss_version: 2.0.0
 zos_component_install_doc_url: https://docs.zowe.org/stable/user-guide/install-zos.html
 zowe_containerization_install_doc_url: https://docs.zowe.org/stable/user-guide/k8s-introduction
 zowe_cli_install_doc_url: https://docs.zowe.org/stable/user-guide/cli-install-cli-checklist
+zowe_intellij_explorer_install_doc_url: https://docs.zowe.org/stable/user-guide/intellij-install
 zowe_explorer_install_doc_url: https://docs.zowe.org/stable/user-guide/ze-install
 zowe_sdk_install_doc_url: https://docs.zowe.org/stable/user-guide/sdks-using
 vscode_marketplace_url: https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe
@@ -62,6 +64,7 @@ zowe_cli_db2_plugin_url: https://github.com/zowe/zowe-cli-db2-plugin
 zowe_cli_ftp_plugin_url: https://github.com/zowe/zowe-cli-ftp-plugin
 zowe_cli_ims_plugin_url: https://github.com/zowe/zowe-cli-ims-plugin
 zowe_cli_mq_plugin_url: https://github.com/zowe/zowe-cli-mq-plugin
+zowe_intellij_explorer_marketplace_url: https://plugins.jetbrains.com/plugin/18688-zowe-explorer
 zowe_explorer_doc_url: https://docs.zowe.org/stable/user-guide/ze-install.html#installing-zowe-explorer
 zowe_explorer_github_url: https://github.com/zowe/vscode-extension-for-zowe
 zowe_explorer_slack_url: https://openmainframeproject.slack.com/archives/CUVE37Z5F
