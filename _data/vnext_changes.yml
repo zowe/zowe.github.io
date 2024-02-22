@@ -15,6 +15,7 @@
     - z/OSMF in version V2R5 with APAR PH12143 applied
     - Statically onboarded services needs to do it via modifying the zowe.yaml and adding a directory outside of the zowe to read the files from
     - Keyrings need to change configuration from safkeyring://// to safkeyring://
+    - Support access to the zosmf only via /ibmzosmf route. Supporting both created issues for CLI setup
 
     **Important updates**
 
