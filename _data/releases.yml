@@ -8,11 +8,11 @@ future:
     - version: 1.28.6
       release_date: 2024-09-30
 
-v2:
+v2: 
   - version: 2.15.0
     zos_version: 2.15.0
     smpe_version: 2.15.0
-    pswi_version: 2.14.0
+    pswi_version: 2.15.0
     smpe_sysmod: PTF
     smpe_numbers: UO90049 UO90050
     containerization_version: 2.15.0
