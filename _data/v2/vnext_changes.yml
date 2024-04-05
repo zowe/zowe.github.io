@@ -81,9 +81,9 @@
   image: /assets/img/zowe-explorer-image.webp
   description: |
 
-    - Changes to settings keys - automated migration of settings when user opens Zowe Explorer v2: (includes documentation) ([#PR 1450](https://github.com/zowe/vscode-extension-for-zowe/pull/1450))
-    - [Using Global Profile Configuration](https://github.com/zowe/vscode-extension-for-zowe/blob/next/docs/Early%20Access%20-%20Using%20Global%20Profile%20Configuration.md)
-    - [Changes Affecting Extenders](https://github.com/zowe/vscode-extension-for-zowe/blob/next/docs/Early%20Access%20-%20Changes%20Affecting%20Extenders.md)
+    - Changes to settings keys - automated migration of settings when user opens Zowe Explorer v2: (includes documentation) ([#PR 1450](https://github.com/zowe/zowe-explorer-vscode/pull/1450))
+    - [Using Global Profile Configuration](https://github.com/zowe/zowe-explorer-vscode/blob/next/docs/Early%20Access%20-%20Using%20Global%20Profile%20Configuration.md)
+    - [Changes Affecting Extenders](https://github.com/zowe/zowe-explorer-vscode/blob/next/docs/Early%20Access%20-%20Changes%20Affecting%20Extenders.md)
 
 - name: Systems
   homepage_link: 
