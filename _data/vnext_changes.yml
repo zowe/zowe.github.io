@@ -69,7 +69,7 @@
     **Breaking changes**
 
     - Remove V1 profile support
-    - Remove deprecated items - [Explorer for VSCode](https://github.com/zowe/vscode-extension-for-zowe/issues/2238)
+    - Remove deprecated items - [Explorer for VSCode](https://github.com/zowe/zowe-explorer-vscode/issues/2238)
     - Change profile creation menus
     - Store extension settings in the local storage
 
@@ -80,7 +80,7 @@
 
     **Pre-release availability**
 
-    - V3 pre-release versions are available via [GitHub releases](https://github.com/zowe/vscode-extension-for-zowe/releases) or via the [Open VSX Registry](https://open-vsx.org/extension/Zowe/vscode-extension-for-zowe).
+    - V3 pre-release versions are available via [GitHub releases](https://github.com/zowe/zowe-explorer-vscode/releases) or via the [Open VSX Registry](https://open-vsx.org/extension/Zowe/vscode-extension-for-zowe).
 
 - name: Installation and Packaging 
   homepage_link: 
