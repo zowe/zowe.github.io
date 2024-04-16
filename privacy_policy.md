@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy
-redirect_to: http://www.github.com](https://lfprojects.org/policies/privacy-policy/
+redirect_to: https://lfprojects.org/policies/privacy-policy/
 ---
 
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
