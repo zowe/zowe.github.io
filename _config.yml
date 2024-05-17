@@ -63,10 +63,10 @@ zowe_cli_ftp_plugin_url: https://github.com/zowe/zowe-cli-ftp-plugin
 zowe_cli_ims_plugin_url: https://github.com/zowe/zowe-cli-ims-plugin
 zowe_cli_mq_plugin_url: https://github.com/zowe/zowe-cli-mq-plugin
 zowe_explorer_doc_url: https://docs.zowe.org/stable/user-guide/ze-install.html#installing-zowe-explorer
-zowe_explorer_github_url: https://github.com/zowe/vscode-extension-for-zowe
+zowe_explorer_github_url: https://github.com/zowe/zowe-explorer-vscode
 zowe_explorer_slack_url: https://openmainframeproject.slack.com/archives/CUVE37Z5F
-zowe_explorer_next_github_url: https://github.com/zowe/vscode-extension-for-zowe/releases
-zowe_explorer_next_doc_url: https://github.com/zowe/vscode-extension-for-zowe/tree/next/docs/Early%20Access%20-%20Using%20Global%20Profile%20Configuration.md
+zowe_explorer_next_github_url: https://github.com/zowe/zowe-explorer-vscode/releases
+zowe_explorer_next_doc_url: https://github.com/zowe/zowe-explorer-vscode/tree/next/docs/Early%20Access%20-%20Using%20Global%20Profile%20Configuration.md
 zowe_cics_explorer_next_github_url: https://github.com/zowe/vscode-extension-for-cics/releases
 zowe_sdk_doc_url: https://docs.zowe.org/stable/getting-started/overview.html#zowe-client-software-development-kits-sdks
 zowe_sdk_github_url: https://github.com/zowe/zowe-cli
