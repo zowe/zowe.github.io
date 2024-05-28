@@ -168,7 +168,7 @@ redirect_from:
     </p>
     <p>Did you know? The Zowe Community hosts a webinar each quarter called the Zowe Quarterly Update. Watch the replays on <a href="https://www.youtube.com/playlist?list=PL8REpLGaY9QHtnElqPosteBFpITStkAxo">Youtube</a>
     </p>
-    <p>Next release: v{{next_version}} GA {{next_version_date}} | <a href="https://github.com/zowe/zowe.github.io/raw/master/assets/roadmap/Zowe%20Roadmap%20CY23Q3.pdf">View roadmap</a>
+    <p>Next release: v{{next_version}} GA {{next_version_date}} | <a href="https://github.com/zowe/zowe.github.io/raw/master/assets/roadmap/Zowe%20Roadmap%20CY24Q2.pdf">View roadmap</a>
     </p>
   </div>
   <div class="col-12 col-md-5 zowe-video animated-tile-bigger">

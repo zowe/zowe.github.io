@@ -5,19 +5,20 @@
   
     **Breaking changes**
 
-    - Spring Cloud Gateway replaces Netflix Zuul based Gateway
     - The authentication endpoints wont support the route /api/v1/gateway and instead will support only /gateway/api/v1
     - Spring Enabler will be updated to Spring Boot 3 and Spring 6 and the Spring Boot 2 and Spring 5 versions won't be supported anymore
     - Datasets API is archived
     - Jobs API is archived
     - Metrics service is archived
+    - IMS API is archived
     - Java 17 is required for API Mediation Layer to run
-    - z/OSMF in version V2R5 (preferred) or V2R3, V2R4 with APAR PH12143 applied
+    - z/OSMF in version V2R5 with APAR PH12143 applied
     - Statically onboarded services needs to do it via modifying the zowe.yaml and adding a directory outside of the zowe to read the files from
+    - Keyrings need to change configuration from safkeyring://// to safkeyring://
+    - Support access to the zosmf only via /ibmzosmf route. Supporting both created issues for CLI setup
 
     **Important updates**
 
-    - API Rate Limiting supported by the Spring Cloud Gateway
     - Authentication and Authorization Service is separate service, only one that needs z/OS directly
 
 - name: Application Framework
@@ -39,14 +40,13 @@
 
     **Breaking changes**
 
+    - Introduce new format for error messages to improve clarity
     - Remove V1 profile support
-    - Change authentication order of preference
     - Remove deprecated items - [CLI](https://github.com/zowe/zowe-cli/issues/1694) and [Imperative](https://github.com/zowe/imperative/issues/970)
 
-    **Important updates**
+    **Pre-release availability**
 
-    - Support multiple API ML Gateway connections within a single config file. 
-    - Provide a Jenkinsfile template to replace shared library (github.com/zowe/zowe-cli-version-controller)
+    - V3 pre-release versions are available via [npm](https://www.npmjs.com/package/@zowe/cli) under the 'next' tag.
 
 - name: Explorer for Intellij
   homepage_link: /#zowe-intellij-plugin-intro
@@ -69,7 +69,7 @@
     **Breaking changes**
 
     - Remove V1 profile support
-    - Remove deprecated items - [Explorer for VSCode](https://github.com/zowe/vscode-extension-for-zowe/issues/2238)
+    - Remove deprecated items - [Explorer for VSCode](https://github.com/zowe/zowe-explorer-vscode/issues/2238)
     - Change profile creation menus
     - Store extension settings in the local storage
 
@@ -77,6 +77,10 @@
 
     - Store persistent settings in local storage
     - Compare files in MVS view, the USS view and across the two views
+
+    **Pre-release availability**
+
+    - V3 pre-release versions are available via [GitHub releases](https://github.com/zowe/zowe-explorer-vscode/releases) or via the [Open VSX Registry](https://open-vsx.org/extension/Zowe/vscode-extension-for-zowe).
 
 - name: Installation and Packaging 
   homepage_link: 
