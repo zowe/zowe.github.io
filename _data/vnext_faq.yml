@@ -1,6 +1,6 @@
 general:
   - number: 1
-    question: When will be Zowe V3 available for testing? 
+    question: When will Zowe V3 be available for testing? 
     answer: |
       
       The current plan is to have Zowe V3 for all projects available as preview by the December 2023
@@ -22,7 +22,7 @@ extenders:
            We intend to move the configuration for V3 to the currently used gateway configuration space e.g. zowe.components.gateway therefore the configuration that was Zuul specific will be removed and the one that is Spring Cloud Gateway will be added to this space. 
 
        - number: 3
-         question: How the client certificate authentication will work?
+         question: How will the client certificate authentication work?
          answer: |
            
            The northbound authentication works by accepting the client certificates. The API Mediation Layer then transforms the client certificate to another method of authentication such as JWT token or SAF IDT or passtickets and these needs to be accepted by the southbound services. 
@@ -41,7 +41,7 @@ extenders:
            The bypass scheme remains and you still can claim conformance for services that provides only public endpoints that doesn't require authentication. 
 
        - number: 6
-         question: Does the dependency changes mean that I need Java 17 to run Zowe
+         question: Do the dependency changes mean that I need Java 17 to run Zowe
          answer: |
            
            Yes
@@ -84,7 +84,7 @@ extenders:
            It's possible for the Desktop extensions to bring in different versions of React as the desktop is compatible with React but not built on top of React. 
 
        - number: 4
-         question: Is ZEN application running on desktop or on z/OS?
+         question: Is the ZEN application running on desktop or on z/OS?
          answer: |
            
            ZEN is running on laptop/desktop and connects to z/OS via standard methods. 
@@ -108,7 +108,7 @@ extenders:
            It's different topic and it's not linked other than by sharing the zwe commands. 
 
        - number: 8
-         question: Does the App Store for Zowe handles Zowe upgrades?
+         question: Does the App Store for Zowe handle Zowe upgrades?
          answer: |
            
            No, it's focused on the server side extensions. 
@@ -133,7 +133,7 @@ consumers:
            The API ML in version 3 supports clients with onboarding enablers from version 2. It also works the other way around the onboarding enablers from version 3 will continue working with Zowe v2
 
        - number: 2
-         question: For us, as for extenders, jump to Java 17 means that we have to maintain 2 separate versions of our application - one with apiml-enabler v2 and another one with v3 to support customers who want to stay with Java 8. Do you have any recommendation or a workaround how to support both java versions?
+         question: For us, as for extenders, the jump to Java 17 means that we have to maintain 2 separate versions of our application - one with apiml-enabler v2 and another one with v3 to support customers who want to stay with Java 8. Do you have any recommendation or a workaround how to support both java versions?
          answer: |
            
            Plain Java Enabler in v2 will work in v3 - you can keep this for 1 - 2 years
