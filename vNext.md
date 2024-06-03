@@ -35,6 +35,8 @@ p .card-black {
 </style>
 <script src="https://cdn.jsdelivr.net/remarkable/1.7.1/remarkable.min.js"></script>
 
+<h1 id="download" style="margin-bottom: 1.5rem">Future</h1>
+
 <section class="whitebackground">
   <!--
   Control logic to decide whether the Table of contents should be displayed
