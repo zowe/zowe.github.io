@@ -26,6 +26,41 @@ extenders:
     materials_link: https://ibm.box.com/s/0srch736nkq0q6kcrxazt0nvgfjnxyd3 
 
 consumers:
+  - date: 09/06/2024 8AM - 9AM ET
+    topic: Web UI
+    meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/92746535715?password=0d6d9c4d-acab-4979-9ac1-f0a99aaa75c2
+    recording_link:
+    materials_link:
+  - date: 09/13/2024 8AM - 9AM ET
+    topic: API Mediation Layer
+    meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/92746535715?password=0d6d9c4d-acab-4979-9ac1-f0a99aaa75c2
+    recording_link:
+    materials_link:
+  - date: 09/20/2024 8AM - 9AM ET
+    topic: CLI & Client Node SDK
+    meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/92746535715?password=0d6d9c4d-acab-4979-9ac1-f0a99aaa75c2
+    recording_link:
+    materials_link:
+  - date: 09/27/2024 8AM - 9AM ET
+    topic: Explorer (VS Code)
+    meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/92746535715?password=0d6d9c4d-acab-4979-9ac1-f0a99aaa75c2
+    recording_link:
+    materials_link:
+  - date: 10/04/2024 8AM - 9AM ET
+    topic: Explorer (Intellij)
+    meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/92746535715?password=0d6d9c4d-acab-4979-9ac1-f0a99aaa75c2
+    recording_link:
+    materials_link:
+  - date: 10/11/2024 8AM - 9AM ET
+    topic: Systems, Install & Packaging
+    meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/92746535715?password=0d6d9c4d-acab-4979-9ac1-f0a99aaa75c2
+    recording_link:
+    materials_link:
+  - date: 10/18/2024 8AM - 9AM ET
+    topic: Open Office Hours
+    meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/92746535715?password=0d6d9c4d-acab-4979-9ac1-f0a99aaa75c2
+    recording_link:
+    materials_link:
   - date: 01/05/2024 8AM - 9AM ET
     topic: API Mediation Layer
     meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/95815909111?password=57c97886-d2b6-4430-9c05-1eedfa1e0fa7
@@ -61,9 +96,4 @@ consumers:
     meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/95815909111?password=57c97886-d2b6-4430-9c05-1eedfa1e0fa7
     recording_link: https://youtu.be/EQ-jYYl6wnY?si=W3ei2hVVqMcR0Mcn
     materials_link: https://ibm.box.com/s/iy5fwn7u5jcjaxfnopd9i6acjsb491qx
-  - date: 02/16/2024 8AM - 9AM ET
-    topic: Open Office Hours
-    meeting_link: https://zoom-lfx.platform.linuxfoundation.org/meeting/95815909111?password=57c97886-d2b6-4430-9c05-1eedfa1e0fa7
-    recording_link: 
-    materials_link: 
-  
+
