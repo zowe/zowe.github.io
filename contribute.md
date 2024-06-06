@@ -86,9 +86,18 @@
     </div>
     <div>
         <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Learn about others participating in Community</h2>
-        <p>Zowe helps others in the mainframe community extend and share the fact via our OMP Zowe Conformance Program.
+        <p>Zowe helps others in the mainframe community extend and share the fact via our <a href="https://openmainframeproject.org/our-projects/zowe-conformance-program/">Open Mainframe Project's Zowe 
+            Conformance Program.</a>
             Find who already participates in the landscape below.</p>
         <iframe frameBorder="0" id="landscape-v2" width="100%" height="600"
             src="https://landscape.openmainframeproject.org/pages/zowe-conformant"></iframe>
+    </div>
+    <div>
+        <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Learn about who is providing support</h2>
+        <p>Conformant <a href="https://openmainframeproject.org/our-projects/zowe-conformant-support-provider-program/">Zowe Support Providers</a> 
+            claim to provide the services at some baseline level. If you are unsure about who will provide support for 
+            Zowe, take a look at the landscape below.</p>
+        <iframe frameBorder="0" id="landscape-v2" width="100%" height="600"
+            src="https://landscape.openmainframeproject.org/pages/zowe-conformant-support-vendor"></iframe>
     </div>
 </section>
