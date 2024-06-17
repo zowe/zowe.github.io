@@ -150,10 +150,10 @@
                     'version') +
                 '.dmg';
         }
-        else if (params.has('type') && params.get('type') == "zen-unix") {
+        else if (params.has('type') && params.get('type') == "zen-rpm") {
             document.getElementById('download_button').href = "post_download.html?version=" + params.get('version') + "&type=" + params.get('type');
             document.getElementById('download_button').onclick = function () {
-                ga && ga('send', 'event', 'download', 'zen-unix' + params.get('version'), 'zowe-enterprise-necessity-' + params.get(
+                ga && ga('send', 'event', 'download', 'zen-rpm' + params.get('version'), 'zowe-enterprise-necessity-' + params.get(
                     'version') + '-1.x86_64.rpm');
                 window.open("https://zowe.jfrog.io/artifactory/libs-snapshot-local/org/zowe/zen/" + params.get('version') + '-V2.X/STAGING-166' +
                     '/unix' + '/zowe-enterprise-necessity-' + params.get('version') + '-1.x86_64.rpm', '_blank');
@@ -161,6 +161,18 @@
             document.getElementById('download_file_message').innerHTML = 'You are downloading zowe-enterprise-necessity-' + params.get(
                     'version') +
                 '.rpm';
+        }
+        else if (params.has('type') && params.get('type') == "zen-deb") {
+            document.getElementById('download_button').href = "post_download.html?version=" + params.get('version') + "&type=" + params.get('type');
+            document.getElementById('download_button').onclick = function () {
+                ga && ga('send', 'event', 'download', 'zen-deb' + params.get('version'), 'zowe-enterprise-necessity_' + params.get(
+                    'version') + '_amd64.deb');
+                window.open("https://zowe.jfrog.io/artifactory/libs-snapshot-local/org/zowe/zen/" + params.get('version') + '-V2.X/STAGING-166' +
+                    '/unix' + '/zowe-enterprise-necessity_' + params.get('version') + '_amd64.deb', '_blank');
+            }
+            document.getElementById('download_file_message').innerHTML = 'You are downloading zowe-enterprise-necessity-' + params.get(
+                    'version') +
+                '.deb';
         }
         else {
             document.getElementById('download_button').href = "post_download.html?version=" + params.get('version');

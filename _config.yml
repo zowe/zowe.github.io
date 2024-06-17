@@ -29,7 +29,8 @@ pswi_download_uri: legal.html?type=pswi&version=
 zowe_chat_download_url: legal.html?type=chat&version=tp1
 zen_windows_download_url: legal.html?type=zen-windows&version=
 zen_mac_download_url: legal.html?type=zen-mac&version=
-zen_unix_download_url: legal.html?type=zen-unix&version=
+zen_unix_rpm_download_url: legal.html?type=zen-rpm&version=
+zen_unix_deb_download_url: legal.html?type=zen-deb&version=
 
 zowe_node_sdk_download_url: legal.html?type=nodejs-sdk&version=
 zowe_python_sdk_download_url: legal.html?type=python-sdk&version=

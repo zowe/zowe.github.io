@@ -29,19 +29,24 @@
                 package_name = 'Zowe Python Client SDK'
                 break;
             case 'zen-windows':
-                filename_prefix = 'zowe-enterprise-necessity-windows';
+                filename_prefix = 'zowe-install-wizard-windows';
                 file_ext = 'exe';
-                package_name = 'zowe-enterprise-necessity'
+                package_name = 'zowe-install-wizard'
                 break;
             case 'zen-mac':
-                filename_prefix = 'zowe-enterprise-necessity-mac';
+                filename_prefix = 'zowe-install-wizard-mac';
                 file_ext = '-x64.dmg';
-                package_name = 'zowe-enterprise-necessity'
+                package_name = 'zowe-install-wizard'
                 break;
-            case 'zen-unix':
-                filename_prefix = 'zowe-enterprise-necessity-unix';
+            case 'zen-rpm':
+                filename_prefix = 'zowe-install-wizard-rpm';
                 file_ext = '-1.x86_64.rpm';
-                package_name = 'zowe-enterprise-necessity'
+                package_name = 'zowe-install-wizard'
+                break;
+            case 'zen-deb':
+                filename_prefix = 'zowe-install-wizard-deb';
+                file_ext = '_amd64.deb';
+                package_name = 'zowe-install-wizard'
                 break;
         }
     }
