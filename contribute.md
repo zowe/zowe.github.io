@@ -29,7 +29,7 @@
       <p class="card-text">Hosted by the Open Mainframe Project, this is a messaging board where you can directly engage with Zowe users and contributors - ask questions, engage in discussions, and contribute your ideas!</p>
       <p>Some popular channels to get started: <ul>
       <li><a href="{{ site.zowe_onboarding_slack_url }}">#zowe-onboarding</a></li> 
-      <li><a href="{{ site.zowe_user_slack_url }}">#zowe-user</a></li> 
+      <li><a href="{{ site.zowe_user_slack_url }}">#zowe-help</a></li> 
       <li><a href="{{ site.zowe_cli_slack_url }}">#zowe-cli</a></li> 
       <li><a href="{{ site.zowe_explorer_slack_url }}">#zowe-explorer</a></li> 
       <li><a href="{{ site.apiml_slack_url }}">#zowe-api</a></li>
@@ -68,7 +68,7 @@
     <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Join a squad call</h2>
     <p>Zowe is an open source project - this means that anyone can contribute to any part of it, and that includes you! The best ways to first get involved are <a href="{{ site.create_zowe_issue_url }}">opening issues on GitHub</a>, saying hi on Slack, or joining the weekly calls of one of the squads listed below.</p>
     <p>Zowe’s most frequent and dedicated contributors work in teams called “squads”. If you have specific questions or are excited about a particular part of Zowe, connect with the relevant squad using the table below! Occasionally, some of the meetings might be changed, cancelled or rescheduled. Stay up to date on meetings in the <a href="{{ site.omp_calendar_url }}">Zowe meeting calendar</a> or the Slack channels.</p>
-    <iframe class="mt-4" src="https://calendar.google.com/calendar/embed?src=c55ndlc8frlvhau31r13fggmvfg4qmeu%40import.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+    <iframe class="mt-4" src="https://zoom-lfx.platform.linuxfoundation.org/meetings/zowe" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
   </div>
 </section>
 
