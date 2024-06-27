@@ -25,7 +25,7 @@
   dedication: Core
 - name: Zowe Explorer
   description: A Visual Studio Code extension that modernizes the way developers and system administrators interact with z/OS mainframes. Zowe Explorer lets you interact with data sets, USS files, and jobs that are stored on z/OS. The extension complements your Zowe CLI experience and lets you use authentication services like API Mediation Layer.
-  github_url: https://github.com/zowe/vscode-extension-for-zowe
+  github_url: https://github.com/zowe/zowe-explorer-vscode
   slack_url: https://openmainframeproject.slack.com/archives/CUVE37Z5F
   doc_url: https://docs.zowe.org/stable/user-guide/ze-install.html#installing-zowe-explorer
   img_url: assets/img/zowe-explorer-image.webp
