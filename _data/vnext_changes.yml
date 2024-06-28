@@ -71,8 +71,9 @@
 
     - Remove V1 profile support
     - Remove deprecated items - [Explorer for VSCode](https://github.com/zowe/zowe-explorer-vscode/issues/2238)
-    - Change profile creation menus
     - Store extension settings in the local storage
+
+    A comprehensive list of breaking changes made to Zowe Explorer for VS Code in V3 is available [here](https://ibm.box.com/s/exray2epor6eh61ygvpe6urp3xb30rld).
 
     **Important updates**
 
