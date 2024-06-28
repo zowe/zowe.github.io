@@ -42,6 +42,7 @@
 
     - Introduce new format for error messages to improve clarity
     - Remove V1 profile support
+    - IMS CLI extension is archived
     
     A comprehensive list of breaking changes made to Zowe CLI and the Zowe Client Node.js SDKs in V3 is available [here](https://ibm.ent.box.com/s/vqu92d82b4wk0i6fupo8glbrxvufn4zw).
 

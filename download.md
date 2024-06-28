@@ -733,44 +733,44 @@
 </section>
 
 <section class="whitebackground" id="compatibility-extensions">
-  <h1>Zowe Extensions V2 (previously vNext ) Compatibility, Conformance, and Availability Statement</h1>
+  <h1>Zowe Extensions V3 Compatibility, Conformance, and Availability Statement</h1>
   <b>General</b><br />
   <i>Backward Compatibility</i><br />
-  <p>Zowe v1 conformant extensions / plug-ins <b>are not guaranteed</b> to be compatible with Zowe v2 and therefore may
+  <p>Zowe v2 conformant extensions / plug-ins <b>are not guaranteed</b> to be compatible with Zowe v3 and therefore may
     not be operable. In general, plug-ins/extensions which leverage v2 APIs that have known “breaking changes” are at
     <i>high risk</i> of incompatibility and unpredictable results. </p>
-  <p><u>Recommendation:</u> ALL v1 extenders test with the Zowe v2, identify any issues, and disclose results to
+  <p><u>Recommendation:</u> ALL v2 extenders test with the Zowe v3, identify any issues, and disclose results to
     consumers to clearly indicate backward compatibility status in the extension documentation. If unable to test,
     clearly document as such.</p>
   <br />
   <i>Forward Compatibility</i><br />
-  <p>Zowe v2 conformant (planning to earn conformance) extensions / plug-ins <b>are not guaranteed</b> to be compatible
-    with Zowe v1 LTS. In general, plug-ins / extensions with no known dependency on any newly introduced Zowe v2
+  <p>Zowe v3 conformant (planning to earn conformance) extensions / plug-ins <b>are not guaranteed</b> to be compatible
+    with Zowe v2 LTS. In general, plug-ins / extensions with no known dependency on any newly introduced Zowe v3
     functions are at <i>minimum risk</i>.</p>
-  <p><u>Recommendation:</u> All v2 extenders test with Zowe v1 LTS, identify any issues, and disclose results to
+  <p><u>Recommendation:</u> All v3 extenders test with Zowe v2 LTS, identify any issues, and disclose results to
     consumers to clearly indicate forward compatibility status in the extension documentation. If unable to test,
     clearly document as such.</p>
   <br />
   <i>Conformance Compatibility</i><br />
-  <p>Zowe v1 conformant extensions / plug-ins are likely to require changes to meet Zowe v2 conformance criteria. All
-    extensions (regardless of v1 conformance status) must apply for v2 conformance and satisfy all required v2 testing
+  <p>Zowe v2 conformant extensions / plug-ins are likely to require changes to meet Zowe v3 conformance criteria. All
+    extensions (regardless of v2 conformance status) must apply for v3 conformance and satisfy all required v3 testing
     criteria.</p>
-  <p><u>Recommendation:</u> All extenders interested in earning v2 conformance review the v2 conformance criteria,
-    determine if technical changes are necessary, make appropriate modifications and prepare to apply for v2 conformance
-    prior to v2 LTS publication.</p>
-  <b>Zowe v2 Availability to Extenders</b><br />
+  <p><u>Recommendation:</u> All extenders interested in earning v3 conformance review the v3 conformance criteria,
+    determine if technical changes are necessary, make appropriate modifications and prepare to apply for v3 conformance
+    prior to v3 LTS publication.</p>
+  <b>Zowe v3 Availability to Extenders</b><br />
   <i>Early Access Software </i><br />
-  <p>Several pre-GA releases of Zowe v2 will be made available to Zowe extenders and the general public prior* to the
-    actual Zowe v2 GA release delivery to allow extenders time to perform Zowe v2 testing with their extensions and
-    disclose their compatibility status. (*dates to-be-determined)</p>
+  <p>Several pre-GA releases of Zowe v3 will be made available to Zowe extenders and the general public prior* to the
+    actual Zowe v3 GA release delivery to allow extenders time to perform Zowe v3 testing with their extensions and
+    disclose their compatibility status. (The PAX and SMP/E builds are available since Dec 2023)</p>
   <i>Early Access Conformance Criteria</i><br />
-  <p>The Zowe v2 conformance criteria for all extensions/plugins participating in the conformance program will be made
-    available to all Zowe v1 conformant extenders prior* to the Zowe v2 GA release to give extenders time to adapt to
+  <p>The Zowe v3 conformance criteria for all extensions/plugins participating in the conformance program will be made
+    available to all Zowe v2 conformant extenders prior* to the Zowe v3 GA release to give extenders time to adapt to
     applicable changes. (*dates to-be-determined) Note: See Zowe Support Provider conformance section below for details
-    on v2 Support Provider conformance.</p>
+    on v3 Support Provider conformance.</p>
   <b>More Information</b>
-  <p>Visit the Zowe v2 release page at <a href="https://zowe.org/vNext.html">https://zowe.org/vNext.html</a> for
-    comprehensive information related to the V2 release.</p>
+  <p>Visit the Zowe v3 release page at <a href="https://zowe.org/vNext.html">https://zowe.org/vNext.html</a> for
+    comprehensive information related to the V3 release.</p>
 
 </section>
 
