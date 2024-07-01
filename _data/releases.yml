@@ -8,8 +8,9 @@ future:
     - version: 1.28.8
       release_date: 2024-10-14
 
-v2: 
-  - version: 2.16.0
+v2:
+  - zen_version: 1.0.0
+    version: 2.16.0
     zos_version: 2.16.0
     smpe_version: 2.16.0
     pswi_version: 2.16.0
