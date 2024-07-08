@@ -21,10 +21,7 @@
   .card-body:last-of-type {
     border-bottom: inherit;
   }
-  .right-box {
-   float: right;
-   margin-left: 50px; /* Adjust the margin as needed */
-  }
+
 </style>
 
 <section class="whitebackground">
