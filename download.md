@@ -716,6 +716,7 @@
     </li>
     <li>Every major version will be in the Active phase for two years and then transition into the Maintenance phase for
       another two and half year. This brings to you the possibility to use only major versions in the maintenance mode.
+      Before major version moves to the Active phase, it will be Under Development for time needed for introducing breaking changes and new functionality. 
     </li>
     <li>The combination of <b>Active</b> and <b>Maintenance</b> release provides two guarantees:
       <ul>
