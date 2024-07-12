@@ -704,18 +704,16 @@
       schedule published in the <a
         href="https://github.com/zowe/community/blob/master/Project%20Management/Schedule/Zowe%20PI%20%26%20Sprint%20Cadence.md">Zowe
         Community GitHub repository</a>.</li>
-    <li>The Zowe community provides three types of releases:
+    <li>When determining what type of release to use, consumers should consider both Support and feature implications of each of the phases:
       <ul>
-        <li style="list-style-type: disc">Maintenance - This release receives only security patches and fixes for the
-          critical bugs. It's suitable for environment that prefers stability to new features.</li>
-        <li style="list-style-type: disc">Active - This release receives updates regularly according to the schedule. It
-          is suitable for users who are willing to invest a bit more time into upgrades to get the latest features.</li>
-        <li style="list-style-type: disc">Nightly - The Zowe publishes bleeding edge state of the project on the nightly
-          basis. There are no guarantees around the stability of the build.</li>
+        <li style="list-style-type: disc">Active: Each major version will remain in this phase for two years (24 months) after which it will transition to the maintenance phase. Consumers interested in receiving new features in addition to fixes and security patches should plan to be on an Active version.</li>
+        <li style="list-style-type: disc">Maintenance: Each major version will remain in this phase for two and one half years (30 months) - beyond the two years in the Active phase. Consumers wishing to receive ONLY fixes and security patches should plan to be on a Maintenance version. This allows them to remain on and target their upgrades to a supported, major version receiving limited minor releases.</li>
+        <li style="list-style-type: disc">Under Development: This is the pre-Active phase of the (next) major version and is not available for consumption. This phase may vary in length as it represents the time required to incorporate breaking changes and new functionality as the Community prepares for the next major version.</li>
       </ul>
     </li>
     <li>Every major version will be in the Active phase for two years and then transition into the Maintenance phase for
       another two and half year. This brings to you the possibility to use only major versions in the maintenance mode.
+      Before major version moves to the Active phase, it will be Under Development for time needed for introducing breaking changes and new functionality. 
     </li>
     <li>The combination of <b>Active</b> and <b>Maintenance</b> release provides two guarantees:
       <ul>
@@ -728,6 +726,7 @@
     </li>
     <li>Production applications should only use <b>Active</b> or <b>Maintenance </b> releases due to the contract with
       extender products remaining functional and the community’s commitment to fix critical defects.</li>
+    <li>The Zowe project also provides Nightly builds for integration testing for extenders. Use these builds at your own risk.</li>
   </ul>
   <a class="btn btn-primary" href="{{ site.lts_url }}">Learn more</a>
 </section>
