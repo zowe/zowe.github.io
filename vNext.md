@@ -4,11 +4,13 @@
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- Copyright Contributors to the Zowe project. -->
 
-<h1 id="download" style="margin-bottom: 1.5rem">Future</h1>
-
-<p>Information related to the Zowe V3 moved to Zowe Docs - <a href="https://docs.zowe.org/stable/whats-new/breaking-changes-v3/">Breaking Changes and Important Updates in Zowe v3</a></p>
-
 <section class="whitebackground">
+    <h1 id="download" style="margin-bottom: 1.5rem">Future</h1>
+    
+    <p>Information related to the Zowe V3 moved to Zowe Docs - <a href="https://docs.zowe.org/stable/whats-new/breaking-changes-v3/">Breaking Changes and Important Updates in Zowe v3</a></p>
+</section>
+
+<section class="bluebackground">
   <h2>Roadmaps</h2>
 
   <ul>
@@ -24,7 +26,7 @@
   </ul>
 </section>
 
-<section class="bluebackground">
+<section class="whitebackground">
   <h2>Releases</h2>
 
   <h3>V3 Release Stream</h3>
@@ -98,7 +100,7 @@
     <li>System Demo: August 11, 2026</li>
   </ul>
 
-  <h3>V2 Release Stream</h2>
+  <h3>V2 Release Stream</h3>
 
   <h4>2.18.1</h4>
   <ul>
