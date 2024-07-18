@@ -704,18 +704,16 @@
       schedule published in the <a
         href="https://github.com/zowe/community/blob/master/Project%20Management/Schedule/Zowe%20PI%20%26%20Sprint%20Cadence.md">Zowe
         Community GitHub repository</a>.</li>
-    <li>The Zowe community provides three types of releases:
+    <li>When determining what type of release to use, consumers should consider both Support and feature implications of each of the phases:
       <ul>
-        <li style="list-style-type: disc">Maintenance - This release receives only security patches and fixes for the
-          critical bugs. It's suitable for environment that prefers stability to new features.</li>
-        <li style="list-style-type: disc">Active - This release receives updates regularly according to the schedule. It
-          is suitable for users who are willing to invest a bit more time into upgrades to get the latest features.</li>
-        <li style="list-style-type: disc">Nightly - The Zowe publishes bleeding edge state of the project on the nightly
-          basis. There are no guarantees around the stability of the build.</li>
+        <li style="list-style-type: disc">Active: Each major version will remain in this phase for two years (24 months) after which it will transition to the maintenance phase. Consumers interested in receiving new features in addition to fixes and security patches should plan to be on an Active version.</li>
+        <li style="list-style-type: disc">Maintenance: Each major version will remain in this phase for two and one half years (30 months) - beyond the two years in the Active phase. Consumers wishing to receive ONLY fixes and security patches should plan to be on a Maintenance version. This allows them to remain on and target their upgrades to a supported, major version receiving limited minor releases.</li>
+        <li style="list-style-type: disc">Under Development: This is the pre-Active phase of the (next) major version and is not available for consumption. This phase may vary in length as it represents the time required to incorporate breaking changes and new functionality as the Community prepares for the next major version.</li>
       </ul>
     </li>
     <li>Every major version will be in the Active phase for two years and then transition into the Maintenance phase for
       another two and half year. This brings to you the possibility to use only major versions in the maintenance mode.
+      Before major version moves to the Active phase, it will be Under Development for time needed for introducing breaking changes and new functionality. 
     </li>
     <li>The combination of <b>Active</b> and <b>Maintenance</b> release provides two guarantees:
       <ul>
@@ -728,49 +726,50 @@
     </li>
     <li>Production applications should only use <b>Active</b> or <b>Maintenance </b> releases due to the contract with
       extender products remaining functional and the community’s commitment to fix critical defects.</li>
+    <li>The Zowe project also provides Nightly builds for integration testing for extenders. Use these builds at your own risk.</li>
   </ul>
   <a class="btn btn-primary" href="{{ site.lts_url }}">Learn more</a>
 </section>
 
 <section class="whitebackground" id="compatibility-extensions">
-  <h1>Zowe Extensions V2 (previously vNext ) Compatibility, Conformance, and Availability Statement</h1>
+  <h1>Zowe Extensions V3 Compatibility, Conformance, and Availability Statement</h1>
   <b>General</b><br />
   <i>Backward Compatibility</i><br />
-  <p>Zowe v1 conformant extensions / plug-ins <b>are not guaranteed</b> to be compatible with Zowe v2 and therefore may
+  <p>Zowe v2 conformant extensions / plug-ins <b>are not guaranteed</b> to be compatible with Zowe v3 and therefore may
     not be operable. In general, plug-ins/extensions which leverage v2 APIs that have known “breaking changes” are at
     <i>high risk</i> of incompatibility and unpredictable results. </p>
-  <p><u>Recommendation:</u> ALL v1 extenders test with the Zowe v2, identify any issues, and disclose results to
+  <p><u>Recommendation:</u> ALL v2 extenders test with the Zowe v3, identify any issues, and disclose results to
     consumers to clearly indicate backward compatibility status in the extension documentation. If unable to test,
     clearly document as such.</p>
   <br />
   <i>Forward Compatibility</i><br />
-  <p>Zowe v2 conformant (planning to earn conformance) extensions / plug-ins <b>are not guaranteed</b> to be compatible
-    with Zowe v1 LTS. In general, plug-ins / extensions with no known dependency on any newly introduced Zowe v2
+  <p>Zowe v3 conformant (planning to earn conformance) extensions / plug-ins <b>are not guaranteed</b> to be compatible
+    with Zowe v2 LTS. In general, plug-ins / extensions with no known dependency on any newly introduced Zowe v3
     functions are at <i>minimum risk</i>.</p>
-  <p><u>Recommendation:</u> All v2 extenders test with Zowe v1 LTS, identify any issues, and disclose results to
+  <p><u>Recommendation:</u> All v3 extenders test with Zowe v2 LTS, identify any issues, and disclose results to
     consumers to clearly indicate forward compatibility status in the extension documentation. If unable to test,
     clearly document as such.</p>
   <br />
   <i>Conformance Compatibility</i><br />
-  <p>Zowe v1 conformant extensions / plug-ins are likely to require changes to meet Zowe v2 conformance criteria. All
-    extensions (regardless of v1 conformance status) must apply for v2 conformance and satisfy all required v2 testing
+  <p>Zowe v2 conformant extensions / plug-ins are likely to require changes to meet Zowe v3 conformance criteria. All
+    extensions (regardless of v2 conformance status) must apply for v3 conformance and satisfy all required v3 testing
     criteria.</p>
-  <p><u>Recommendation:</u> All extenders interested in earning v2 conformance review the v2 conformance criteria,
-    determine if technical changes are necessary, make appropriate modifications and prepare to apply for v2 conformance
-    prior to v2 LTS publication.</p>
-  <b>Zowe v2 Availability to Extenders</b><br />
+  <p><u>Recommendation:</u> All extenders interested in earning v3 conformance review the v3 conformance criteria,
+    determine if technical changes are necessary, make appropriate modifications and prepare to apply for v3 conformance
+    prior to v3 LTS publication.</p>
+  <b>Zowe v3 Availability to Extenders</b><br />
   <i>Early Access Software </i><br />
-  <p>Several pre-GA releases of Zowe v2 will be made available to Zowe extenders and the general public prior* to the
-    actual Zowe v2 GA release delivery to allow extenders time to perform Zowe v2 testing with their extensions and
-    disclose their compatibility status. (*dates to-be-determined)</p>
+  <p>Several pre-GA releases of Zowe v3 will be made available to Zowe extenders and the general public prior* to the
+    actual Zowe v3 GA release delivery to allow extenders time to perform Zowe v3 testing with their extensions and
+    disclose their compatibility status. (The PAX and SMP/E builds are available since Dec 2023)</p>
   <i>Early Access Conformance Criteria</i><br />
-  <p>The Zowe v2 conformance criteria for all extensions/plugins participating in the conformance program will be made
-    available to all Zowe v1 conformant extenders prior* to the Zowe v2 GA release to give extenders time to adapt to
+  <p>The Zowe v3 conformance criteria for all extensions/plugins participating in the conformance program will be made
+    available to all Zowe v2 conformant extenders prior* to the Zowe v3 GA release to give extenders time to adapt to
     applicable changes. (*dates to-be-determined) Note: See Zowe Support Provider conformance section below for details
-    on v2 Support Provider conformance.</p>
+    on v3 Support Provider conformance.</p>
   <b>More Information</b>
-  <p>Visit the Zowe v2 release page at <a href="https://zowe.org/vNext.html">https://zowe.org/vNext.html</a> for
-    comprehensive information related to the V2 release.</p>
+  <p>Visit the Zowe v3 release page at <a href="https://zowe.org/vNext.html">https://zowe.org/vNext.html</a> for
+    comprehensive information related to the V3 release.</p>
 
 </section>
 
