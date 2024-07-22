@@ -33,7 +33,7 @@
     - Update Webpack to version 5
     - Update Typescript to 4.9
 
-- name: CLI
+- name: CLI & Client Node.js SDKs
   homepage_link: /#zowe-cli-intro
   image: /assets/img/zowe-cli.webp
   description: |
@@ -42,7 +42,9 @@
 
     - Introduce new format for error messages to improve clarity
     - Remove V1 profile support
-    - Remove deprecated items - [CLI](https://github.com/zowe/zowe-cli/issues/1694) and [Imperative](https://github.com/zowe/imperative/issues/970)
+    - IMS CLI extension is archived
+    
+    A comprehensive list of breaking changes made to Zowe CLI and the Zowe Client Node.js SDKs in V3 is available [here](https://ibm.ent.box.com/s/vqu92d82b4wk0i6fupo8glbrxvufn4zw).
 
     **Pre-release availability**
 
@@ -70,8 +72,9 @@
 
     - Remove V1 profile support
     - Remove deprecated items - [Explorer for VSCode](https://github.com/zowe/zowe-explorer-vscode/issues/2238)
-    - Change profile creation menus
     - Store extension settings in the local storage
+
+    A comprehensive list of breaking changes made to Zowe Explorer for VS Code in V3 is available [here](https://ibm.box.com/s/exray2epor6eh61ygvpe6urp3xb30rld).
 
     **Important updates**
 
