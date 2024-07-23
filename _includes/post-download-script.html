@@ -43,6 +43,26 @@
                 file_ext = 'zip';
                 package_name = 'Zowe Containerization Build';
                 break;
+            case 'zen-windows':
+                filename_prefix = 'zowe-install-wizard-windows';
+                file_ext = 'exe';
+                package_name = 'zowe-install-wizard'
+                break;
+            case 'zen-mac':
+                filename_prefix = 'zowe-install-wizard-mac';
+                file_ext = '-x64.dmg';
+                package_name = 'zowe-install-wizard'
+                break;
+            case 'zen-rpm':
+                filename_prefix = 'zowe-install-wizard-rpm';
+                file_ext = 'x86_64.rpm';
+                package_name = 'zowe-install-wizard'
+                break;
+            case 'zen-deb':
+                filename_prefix = 'zowe-install-wizard-deb';
+                file_ext = '_amd64.deb';
+                package_name = 'zowe-install-wizard'
+                break;
         }
     }
 
