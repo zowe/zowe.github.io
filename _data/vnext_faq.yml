@@ -1,6 +1,6 @@
 general:
   - number: 1
-    question: When will be Zowe V3 available for testing? 
+    question: When will Zowe V3 be available for testing? 
     answer: |
       
       The current plan is to have Zowe V3 for all projects available as preview by the December 2023
@@ -22,7 +22,7 @@ extenders:
            We intend to move the configuration for V3 to the currently used gateway configuration space e.g. zowe.components.gateway therefore the configuration that was Zuul specific will be removed and the one that is Spring Cloud Gateway will be added to this space. 
 
        - number: 3
-         question: How the client certificate authentication will work?
+         question: How does the client certificate authentication work in Zowe V3?
          answer: |
            
            The northbound authentication works by accepting the client certificates. The API Mediation Layer then transforms the client certificate to another method of authentication such as JWT token or SAF IDT or passtickets and these needs to be accepted by the southbound services. 
@@ -41,17 +41,17 @@ extenders:
            The bypass scheme remains and you still can claim conformance for services that provides only public endpoints that doesn't require authentication. 
 
        - number: 6
-         question: Does the dependency changes mean that I need Java 17 to run Zowe
+         question: Do the dependency changes mean that I need Java 17 to run Zowe?
          answer: |
            
-           Yes
+           Yes. Java 17 is required to run the API Mediation Layer in Zowe V3.
 
 
    - name: Zowe Explorers for VSCode Office Hours
      id: questions-explorers
      questions: 
        - number: 1
-         question: Will the functionality to convert profiles from profiles to Team Config remain available for V3
+         question: Will the functionality to convert profiles from profiles to Team Config remain available for V3?
          answer: |
            
            Yes, unlike the support for the V1 profiles. 
@@ -69,7 +69,7 @@ extenders:
          question: Is it possible to have side by side 32 bits plugin to ZSS with 64 bits ones?
          answer: |
            
-           No, it's not possible right now. It's possible to run just one type of plugins as there is the possibility to run only one ZSS. 
+           No, it is not possible right now. It is possible to run just one type of plugins as there is the possibility to run only one ZSS. 
 
        - number: 2
          question: Are the libraries updated to the currently latest versions?
@@ -81,16 +81,16 @@ extenders:
          question: What React versions are supported?
          answer: |
            
-           It's possible for the Desktop extensions to bring in different versions of React as the desktop is compatible with React but not built on top of React. 
+           It is possible for the Desktop extensions to bring in different versions of React as the desktop is compatible with React but not built on top of React. 
 
        - number: 4
-         question: Is ZEN application running on desktop or on z/OS?
+         question: Is the ZEN application running on desktop or on z/OS?
          answer: |
            
            ZEN is running on laptop/desktop and connects to z/OS via standard methods. 
 
        - number: 5
-         question: Is is possible to validate and change the zowe.yaml and job definition within the ZEN?
+         question: Is it possible to validate and change the zowe.yaml and job definition within the ZEN?
          answer: |
            
            Yes
@@ -99,19 +99,19 @@ extenders:
          question: What happens if in ZEN you click on the SMP/E?
          answer: |
            
-           You will be guided through the different set of pages that relates to the SMP/E installation
+           You will be guided through the different set of pages that relate to the SMP/E installation.
 
        - number: 7
-         question: What's the intersection between Zowe Store and ZEN?
+         question: What is the connection between Zowe Store and ZEN?
          answer: |
            
-           It's different topic and it's not linked other than by sharing the zwe commands. 
+           It is a different topic and it is not linked other than by sharing the zwe commands. 
 
        - number: 8
-         question: Does the App Store for Zowe handles Zowe upgrades?
+         question: Does the App Store for Zowe handle Zowe upgrades?
          answer: |
            
-           No, it's focused on the server side extensions. 
+           No, it is focused on the server side extensions. 
 
    - name: Zowe System Installation and Configuration Office Hours
      id: questions-zowe-systems
@@ -133,7 +133,7 @@ consumers:
            The API ML in version 3 supports clients with onboarding enablers from version 2. It also works the other way around the onboarding enablers from version 3 will continue working with Zowe v2
 
        - number: 2
-         question: For us, as for extenders, jump to Java 17 means that we have to maintain 2 separate versions of our application - one with apiml-enabler v2 and another one with v3 to support customers who want to stay with Java 8. Do you have any recommendation or a workaround how to support both java versions?
+         question: For us, as for extenders, the jump to Java 17 means that we have to maintain two separate versions of our application - one with apiml-enabler v2 and another one with v3 to support customers who want to stay with Java 8. Do you have a recommendation or a workaround for supporting both java versions?
          answer: |
            
            Plain Java Enabler in v2 will work in v3 - you can keep this for 1 - 2 years
@@ -144,7 +144,7 @@ consumers:
          question: Can you speak about the migration from Zuul to Spring Cloud Gateway? Today there are two separate gateway services in API-ML with separate config.
          answer: |
            
-           Goal is to have 1, spring-cloud gateway. The spring-cloud-gateway configuration should move under the component.gateway namespace. We expect to have one cluster od spring cloud gateway ahead of multiple sysplexes and then one cluster on every sysplex. Most of the configuration that was used should remain, new one from Spring Cloud Gateway remains. 
+           The goal is to have one: spring-cloud gateway. The spring-cloud-gateway configuration should move under the component.gateway namespace. We expect to have one cluster od spring cloud gateway ahead of multiple sysplexes and then one cluster on every sysplex. Most of the configuration that was used should remain, new one from Spring Cloud Gateway remains. 
 
        - number: 4
          question: If you have a legacy gateway deployed will there be migration help? / is the old gateway gone?

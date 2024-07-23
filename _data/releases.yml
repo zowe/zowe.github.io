@@ -8,9 +8,24 @@ future:
     - version: 1.28.8
       release_date: 2024-10-14
 
-v2:
-  - version: 2.16.0
+v2: 
+  - version: 2.17.0
     zen_version: 1.0.0
+    zos_version: 2.17.0
+    smpe_version: 2.17.0
+    pswi_version: 2.17.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO90059 UO90060
+    containerization_version: 2.17.0
+    cli_version: 2.17.0
+    cli_plugins_version: 2.17.0
+    explorer_version: 2.17.0
+    node_sdk_version: 2.17.0
+    python_sdk_version: 2.17.0
+    release_date: 2024-07-18
+    documentation: stable
+    release_notes: v2_17_0
+  - version: 2.16.0
     zos_version: 2.16.0
     smpe_version: 2.16.0
     pswi_version: 2.16.0
@@ -23,7 +38,7 @@ v2:
     node_sdk_version: 2.16.0
     python_sdk_version: 2.16.0
     release_date: 2024-05-23
-    documentation: stable
+    documentation: v2_16_x
     release_notes: v2_16_0
   - version: 2.15.0
     zos_version: 2.15.0
@@ -37,7 +52,7 @@ v2:
     explorer_version: 2.15.0
     node_sdk_version: 2.15.0
     python_sdk_version: 2.15.0
-    release_date: 2023-03-08
+    release_date: 2024-03-08
     documentation: v2_15_x
     release_notes: v2_15_0
   - version: 2.14.0
@@ -51,7 +66,7 @@ v2:
     explorer_version: 2.14.0
     node_sdk_version: 2.14.0
     python_sdk_version: 2.14.0
-    release_date: 2023-01-26
+    release_date: 2024-01-26
     documentation: v2_14_x
     release_notes: v2_14_0
   - version: 2.13.0
