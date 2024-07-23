@@ -487,7 +487,7 @@
             <div class="card bg-light border-light mb-3">
         <h4 class="card-header" id="zen">Zen Installer</h4>
          <div class="card-body">
-          <p class="card-text">The Executable installer for zen.The Zowe Install Wizard is an optional program that you can run on your computer 
+          <p class="card-text">The Executable installer for zen.The Zowe Server Install Wizard is an optional program that you can run on your computer 
          to guide you through installing Zowe server content onto <b>z/OS</b> .
          It handles <b>YAML</b>, <b>Unix</b>, and <b>JCL</b> content involved in setup of a Zowe instance 
          so that you can install Zowe easily by following prompts and verifying the output</p>
