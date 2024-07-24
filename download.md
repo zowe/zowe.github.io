@@ -485,12 +485,13 @@
       for production.</p>
     <div class="card-deck">
             <div class="card bg-light border-light mb-3">
-        <h4 class="card-header" id="zen">Zen Installer</h4>
+        <h4 class="card-header" id="zen">Zowe Server Install Wizard</h4>
          <div class="card-body">
-          <p class="card-text">The Executable installer for zen.The Zowe Install Wizard is an optional program that you can run on your computer 
-         to guide you through installing Zowe server content onto <b>z/OS</b> .
+          <p class="card-text">The Zowe Server Install Wizard (formerly known as ZEN) is a program you install on your PC (Windows/mac/linux). 
+         It is an optional alternative to the existing Zowe installation processes, designed to make installation quick and intuitive 
+         by guiding you through installing Zowe server content onto <b>z/OS</b>.
          It handles <b>YAML</b>, <b>Unix</b>, and <b>JCL</b> content involved in setup of a Zowe instance 
-         so that you can install Zowe easily by following prompts and verifying the output</p>
+         so that you can install Zowe easily by following prompts and verifying the output.</p>
           <h5 class="card-title">Direct download</h5>
           <p><a class="btn btn-primary"
                 href="{{ site.zen_windows_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
