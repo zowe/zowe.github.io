@@ -72,6 +72,26 @@
             </div>
         </div>
     </div>
+    <div class="card-deck">
+        <div class="card mb-3 animated-tile">
+            <div class="card-body">
+                <div class="d-flex align-items-baseline">
+                    <h5 class="text-left"><a href="https://medium.com/zowe">Articles</a></h5>
+                    <img class="ml-2" style="height: 20px" src="assets/img/medium.png">
+                </div>
+                <p class="card-text">Visit <a href="https://medium.com/zowe">medium.com/zowe</a></p>
+            </div>
+        </div>
+        <div class="card mb-3 animated-tile">
+            <div class="card-body">
+                <div class="d-flex align-items-baseline">
+                    <h5 class="text-left"><a href="https://www.youtube.com/playlist?list=PL8REpLGaY9QHtnElqPosteBFpITStkAxo">Videos</a></h5>
+                    <img class="ml-2" style="height: 20px" src="assets/img/video.png">
+                </div>
+                <p class="card-text">Visit <a href="https://www.youtube.com/playlist?list=PL8REpLGaY9QHtnElqPosteBFpITStkAxo">Zowe Youtube Channel</a></p>
+            </div>
+        </div>
+    </div>
     <div>
         <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Join a squad call</h2>
         <p>Zowe is an open source project - this means that anyone can contribute to any part of it, and that includes

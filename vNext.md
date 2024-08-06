@@ -11,6 +11,22 @@
 </section>
 
 <section class="bluebackground">
+  <h2>Quarters</h2>
+
+  <ul>
+    <li>24PI3 - (July 23, 2024 - October 21, 2024)</li>
+    <li>24PI4 - (October 22, 2024 - February 03, 2025)</li>
+    <li>25PI1 - (February 4, 2025 - May 5, 2025)</li>
+    <li>25PI2 - (May 6, 2025 - August 4, 2025)</li>
+    <li>25PI3 - (August 5, 2025 - November 3, 2025)</li>
+    <li>25PI4 - (November 4, 2025 - February 2, 2026)</li>
+    <li>26PI1 - (February 3, 2026 - May 4, 2026)</li>
+    <li>26PI2 - (May 5, 2026 - August 3, 2026)</li>
+    <li>26PI3 - (August 4, 2026 - November 2, 2026)</li>
+  </ul>
+</section>
+
+<section class="whitebackground">
   <h2>Roadmaps</h2>
 
   <ul>
@@ -26,7 +42,7 @@
   </ul>
 </section>
 
-<section class="whitebackground">
+<section class="bluebackground">
   <h2>Releases</h2>
 
   <h3>V3 Release Stream</h3>
@@ -143,18 +159,3 @@
   </ul>
 </section>
 
-<section class="bluebackground">
-  <h2>Quarters</h2>
-
-  <ul>
-    <li>24PI3 - (July 23, 2024 - October 21, 2024)</li>
-    <li>24PI4 - (October 22, 2024 - February 03, 2025)</li>
-    <li>25PI1 - (February 4, 2025 - May 5, 2025)</li>
-    <li>25PI2 - (May 6, 2025 - August 4, 2025)</li>
-    <li>25PI3 - (August 5, 2025 - November 3, 2025)</li>
-    <li>25PI4 - (November 4, 2025 - February 2, 2026)</li>
-    <li>26PI1 - (February 3, 2026 - May 4, 2026)</li>
-    <li>26PI2 - (May 5, 2026 - August 3, 2026)</li>
-    <li>26PI3 - (August 4, 2026 - November 2, 2026)</li>
-  </ul>
-</section>
