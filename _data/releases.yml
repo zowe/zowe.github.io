@@ -10,7 +10,7 @@ future:
 
 v2: 
   - version: 2.18.0
-    zen_version: 1.0.0
+    zen_version: 1.1.0
     zos_version: 2.18.0
     smpe_version: 2.18.0
     pswi_version: 2.18.0
