@@ -494,16 +494,16 @@
          so that you can install Zowe easily by following prompts and verifying the output.</p>
           <h5 class="card-title">Direct download</h5>
           <p><a class="btn btn-primary"
-                href="{{ site.zen_windows_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
+                href="{{ site.zen_windows_download_url }}{{ site.data.releases.v2[0].zen_version }}">Zowe Server Install Wizard
                 {{ site.data.releases.v2[0].zen_version }} window Installer</a></p>
           <p><a class="btn btn-primary"
-                href="{{ site.zen_unix_rpm_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
+                href="{{ site.zen_unix_rpm_download_url }}{{ site.data.releases.v2[0].zen_version }}">Zowe Server Install Wizard
                 {{ site.data.releases.v2[0].zen_version }} linux.rpm</a></p>
           <p><a class="btn btn-primary"
-                href="{{ site.zen_unix_deb_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
+                href="{{ site.zen_unix_deb_download_url }}{{ site.data.releases.v2[0].zen_version }}">Zowe Server Install Wizard
                 {{ site.data.releases.v2[0].zen_version }} linux.deb</a></p>
           <p><a class="btn btn-primary"
-                href="{{ site.zen_mac_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
+                href="{{ site.zen_mac_download_url }}{{ site.data.releases.v2[0].zen_version }}">Zowe Server Install Wizard
                 {{ site.data.releases.v2[0].zen_version }} mac Installer</a></p>
           <div>
           </div>
