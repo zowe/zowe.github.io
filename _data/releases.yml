@@ -2,13 +2,45 @@
 # Note - keep this in order as the latest release is pulled from the first item in the list!
 future:
   v2:
-    - version: 2.17
-      release_date: 2024-07-15
+    - version: 2.18.1
+      release_date: 2025-01-15
   v1:
     - version: 1.28.8
       release_date: 2024-10-14
 
 v2: 
+  - version: 2.18.0
+    zen_version: 1.0.1
+    zos_version: 2.18.0
+    smpe_version: 2.18.0
+    pswi_version: 2.18.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO90061 UO90062
+    containerization_version: 2.18.0
+    cli_version: 2.18.0
+    cli_plugins_version: 2.18.0
+    explorer_version: 2.18.0
+    node_sdk_version: 2.18.0
+    python_sdk_version: 2.18.0
+    release_date: 2024-08-27
+    documentation: stable
+    release_notes: v2_18_0
+  - version: 2.17.0
+    zen_version: 1.0.0
+    zos_version: 2.17.0
+    smpe_version: 2.17.0
+    pswi_version: 2.17.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO90059 UO90060
+    containerization_version: 2.17.0
+    cli_version: 2.17.0
+    cli_plugins_version: 2.17.0
+    explorer_version: 2.17.0
+    node_sdk_version: 2.17.0
+    python_sdk_version: 2.17.0
+    release_date: 2024-07-18
+    documentation: v2.17.x
+    release_notes: v2_17_0
   - version: 2.16.0
     zos_version: 2.16.0
     smpe_version: 2.16.0
@@ -22,7 +54,7 @@ v2:
     node_sdk_version: 2.16.0
     python_sdk_version: 2.16.0
     release_date: 2024-05-23
-    documentation: stable
+    documentation: v2.16.x
     release_notes: v2_16_0
   - version: 2.15.0
     zos_version: 2.15.0
@@ -37,7 +69,7 @@ v2:
     node_sdk_version: 2.15.0
     python_sdk_version: 2.15.0
     release_date: 2024-03-08
-    documentation: v2_15_x
+    documentation: v2.15.x
     release_notes: v2_15_0
   - version: 2.14.0
     zos_version: 2.14.0
@@ -51,7 +83,7 @@ v2:
     node_sdk_version: 2.14.0
     python_sdk_version: 2.14.0
     release_date: 2024-01-26
-    documentation: v2_14_x
+    documentation: v2.14.x
     release_notes: v2_14_0
   - version: 2.13.0
     zos_version: 2.13.0
@@ -65,7 +97,7 @@ v2:
     node_sdk_version: 2.13.0
     python_sdk_version: 2.13.0
     release_date: 2023-12-14
-    documentation: v2_13_x
+    documentation: versions
     release_notes: v2_13_0
   - version: 2.12.0
     zos_version: 2.12.0
@@ -79,7 +111,7 @@ v2:
     node_sdk_version: 2.12.0
     python_sdk_version: 2.12.0
     release_date: 2023-10-24
-    documentation: v2_12_x
+    documentation: versions
     release_notes: v2_12_0
   - version: 2.11.0
     zos_version: 2.11.0
@@ -93,7 +125,7 @@ v2:
     node_sdk_version: 2.11.0
     python_sdk_version: 2.11.0
     release_date: 2023-09-12
-    documentation: v2_11_x
+    documentation: versions
     release_notes: v2_11_0
   - version: 2.10.0
     zos_version: 2.10.0
@@ -107,7 +139,7 @@ v2:
     node_sdk_version: 2.10.0
     python_sdk_version: 2.10.0
     release_date: 2023-07-27
-    documentation: v2_10_x
+    documentation: versions
     release_notes: v2_10_0
   - version: 2.9.0
     zos_version: 2.9.0
@@ -121,7 +153,7 @@ v2:
     node_sdk_version: 2.9.0
     python_sdk_version: 2.9.0
     release_date: 2023-06-13
-    documentation: v2_9_x
+    documentation: versions
     release_notes: v2_9_0
   - version: 2.8.0
     zos_version: 2.8.0
@@ -135,7 +167,7 @@ v2:
     node_sdk_version: 2.8.0
     python_sdk_version: 2.8.0
     release_date: 2023-04-26
-    documentation: v2_8_x
+    documentation: versions
     release_notes: v2_8_0
   - version: 2.7.0
     zos_version: 2.7.0
@@ -149,7 +181,7 @@ v2:
     node_sdk_version: 2.7.0
     python_sdk_version: 2.7.0
     release_date: 2023-03-15
-    documentation: v2.7.x
+    documentation: versions
     release_notes: v2_7_0
   - version: 2.6.1
     zos_version: 2.6.1
@@ -163,7 +195,7 @@ v2:
     node_sdk_version: 2.6.1
     python_sdk_version: 2.6.1
     release_date: 2023-02-10
-    documentation: v2.6.x
+    documentation: versions
     release_notes: v2_6_1
   - version: 2.6.0
     zos_version: 2.6.0
@@ -177,7 +209,7 @@ v2:
     node_sdk_version: 2.6.0
     python_sdk_version: 2.6.0
     release_date: 2023-01-27
-    documentation: v2.6.x
+    documentation: versions
     release_notes: v2_6_0
   - version: 2.5.0
     zos_version: 2.5.0
@@ -190,7 +222,7 @@ v2:
     node_sdk_version: 2.5.0
     python_sdk_version: 2.5.0
     release_date: 2022-12-12
-    documentation: v2.5.x
+    documentation: versions
     release_notes: v2_5_0
   - version: 2.4.0
     zos_version: 2.4.0
@@ -203,7 +235,7 @@ v2:
     node_sdk_version: 2.4.0
     python_sdk_version: 2.4.0
     release_date: 2022-10-19
-    documentation: v2.4.x
+    documentation: versions
     release_notes: v2_4_0
   - version: 2.3.1
     zos_version: 2.3.1
@@ -216,7 +248,7 @@ v2:
     node_sdk_version: 2.3.0
     python_sdk_version: 2.3.0
     release_date: 2022-09-29
-    documentation: v2.3.x
+    documentation: versions
     release_notes: v2_3_1
   - version: 2.3.0
     zos_version: 2.3.0
@@ -229,7 +261,7 @@ v2:
     node_sdk_version: 2.3.0
     python_sdk_version: 2.3.0
     release_date: 2022-09-21
-    documentation: v2.3.x
+    documentation: versions
     release_notes: v2_3_0
   - version: 2.2.0
     zos_version: 2.2.0
@@ -242,7 +274,7 @@ v2:
     node_sdk_version: 2.2.0
     python_sdk_version: 2.2.0
     release_date: 2022-07-25
-    documentation: v2.2.x
+    documentation: versions
     release_notes: v2_2_0
   - version: 2.1.0
     zos_version: 2.1.0
@@ -255,7 +287,7 @@ v2:
     node_sdk_version: 2.1.0
     python_sdk_version: 2.1.0
     release_date: 2022-06-13
-    documentation: v2.1.x
+    documentation: versions
     release_notes: v2_1_0
   - version: 2.0.0
     zos_version: 2.0.0
@@ -268,7 +300,7 @@ v2:
     node_sdk_version: 2.0.0
     python_sdk_version: 2.0.0
     release_date: 2022-04-27
-    documentation: v2.0.x
+    documentation: versions
     release_notes: v2_0_0
 v1:
   - version: 1.28.7
@@ -378,7 +410,7 @@ v1:
     node_sdk_version: 1.27.3
     python_sdk_version: 1.27.3
     release_date: 2022-04-05
-    documentation: v1.27.x
+    documentation: versions
     release_notes: v1_27_3
   - version: 1.27.2
     zos_version: 1.27.1
@@ -390,7 +422,7 @@ v1:
     node_sdk_version: 1.27.2
     python_sdk_version: 1.27.2
     release_date: 2022-02-17
-    documentation: v1.27.x
+    documentation: versions
     release_notes: v1_27_2
   - version: 1.27.1
     zos_version: 1.27.1
@@ -402,7 +434,7 @@ v1:
     node_sdk_version: 1.27.1
     python_sdk_version: 1.27.1
     release_date: 2022-02-08
-    documentation: v1.27.x
+    documentation: versions
     release_notes: v1_27_1
   - version: 1.27.0
     zos_version: 1.27.0
@@ -414,7 +446,7 @@ v1:
     node_sdk_version: 1.27.0
     python_sdk_version: 1.27.0
     release_date: 2022-01-24
-    documentation: v1.27.x
+    documentation: versions
     release_notes: v1_27
   - version: 1.26.0
     zos_version: 1.26.0
@@ -426,7 +458,7 @@ v1:
     node_sdk_version: 1.26.0
     python_sdk_version: 1.26.0
     release_date: 2021-12-13
-    documentation: v1.26.x
+    documentation: versions
     release_notes: v1_26
   - version: 1.25.0
     zos_version: 1.25.0
@@ -438,7 +470,7 @@ v1:
     node_sdk_version: 1.25.0
     python_sdk_version: 1.25.0
     release_date: 2021-10-25
-    documentation: v1.25.x
+    documentation: versions
     release_notes: v1_25
   - version: 1.24.0
     zos_version: 1.24.0
@@ -450,7 +482,7 @@ v1:
     node_sdk_version: 1.24.0
     python_sdk_version: 1.24.0
     release_date: 2021-09-15
-    documentation: v1.24.x
+    documentation: versions
     release_notes: v1_24
   - version: 1.23.0
     zos_version: 1.23.0
@@ -462,7 +494,7 @@ v1:
     node_sdk_version: 1.23.0
     python_sdk_version: 1.23.0
     release_date: 2021-07-26
-    documentation: v1.23.x
+    documentation: versions
     release_notes: v1_23
   - version: 1.22.0
     zos_version: 1.22.0
@@ -474,7 +506,7 @@ v1:
     node_sdk_version: 1.22.0
     python_sdk_version: 1.22.0
     release_date: 2021-06-14
-    documentation: v1.22.x
+    documentation: versions
   - version: 1.21.0
     zos_version: 1.21.0
     smpe_version: 1.21.0

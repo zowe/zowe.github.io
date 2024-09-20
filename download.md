@@ -21,6 +21,7 @@
   .card-body:last-of-type {
     border-bottom: inherit;
   }
+
 </style>
 
 <section class="whitebackground">
@@ -113,7 +114,7 @@
 
   <!--V2 download as follows -->
   <h2 id="download-v2">Zowe V2</h2>
-  {% if site.data.releases.v2[0].cli_version and site.data.releases.v2[0].cli_plugins_version and site.data.releases.v2[0].zos_version and site.data.releases.v2[0].smpe_version and site.data.releases.v2[0].node_sdk_version and site.data.releases.v2[0].python_sdk_version %}
+  {% if site.data.releases.v2[0].cli_version and site.data.releases.v2[0].cli_plugins_version and site.data.releases.v2[0].zos_version and site.data.releases.v2[0].smpe_version and site.data.releases.v2[0].node_sdk_version and site.data.releases.v2[0].python_sdk_version and site.data.releases.v2[0].zen_version %}
   <div class="card-deck">
     <div class="card bg-light border-light mb-3">
       <h4 class="card-header" id="zowe-zos-build-download">Server-side component installer</h4>
@@ -483,6 +484,31 @@
       Test the latest Zowe features and provide feedback. Technical previews are <b>for testing only</b> and not ready
       for production.</p>
     <div class="card-deck">
+            <div class="card bg-light border-light mb-3">
+        <h4 class="card-header" id="zen">Zowe Server Install Wizard</h4>
+         <div class="card-body">
+          <p class="card-text">The Zowe Server Install Wizard (formerly known as ZEN) is a program you install on your PC (Windows/mac/linux). 
+         It is an optional alternative to the existing Zowe installation processes, designed to make installation quick and intuitive 
+         by guiding you through installing Zowe server content onto <b>z/OS</b>.
+         It handles <b>YAML</b>, <b>Unix</b>, and <b>JCL</b> content involved in setup of a Zowe instance 
+         so that you can install Zowe easily by following prompts and verifying the output.</p>
+          <h5 class="card-title">Direct download</h5>
+          <p><a class="btn btn-primary"
+                href="{{ site.zen_windows_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
+                {{ site.data.releases.v2[0].zen_version }} window Installer</a></p>
+          <p><a class="btn btn-primary"
+                href="{{ site.zen_unix_rpm_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
+                {{ site.data.releases.v2[0].zen_version }} linux.rpm</a></p>
+          <p><a class="btn btn-primary"
+                href="{{ site.zen_unix_deb_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
+                {{ site.data.releases.v2[0].zen_version }} linux.deb</a></p>
+          <p><a class="btn btn-primary"
+                href="{{ site.zen_mac_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
+                {{ site.data.releases.v2[0].zen_version }} mac Installer</a></p>
+          <div>
+          </div>
+         </div>         
+      </div> 
       <div class="card bg-light border-light mb-3">
         <h4 class="card-header" id="zowe-docker">Zowe Docker build</h4>
         <div class="card-body">
