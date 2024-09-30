@@ -45,23 +45,7 @@
   slack_url: https://openmainframeproject.slack.com/archives/C010AUS5MK5
   doc_url: https://docs.zowe.org/stable/getting-started/overview.html#zowe-client-software-development-kits-sdks
   img_url: assets/img/nodejs-sdk-project.webp
-  stage: Generally Available
-  dedication: Core
-- name: Jobs
-  description: Provides APIs to handle jobs access. Use the z/OSMF directly as it provides richer functionality.
-  github_url: https://github.com/zowe/jobs
-  slack_url: https://openmainframeproject.slack.com/archives/CC5UUL005
-  doc_url: https://petstore.swagger.io/?url=https://raw.githubusercontent.com/zowe/docs-site/docs-staging/api_definitions/jobs.json
-  img_url: assets/img/apiml-jobs.webp
-  stage: Deprecated
-  dedication: Core
-- name: Datasets
-  description: Provides APIs to handle data-sets access. Use the z/OSMF directly as it provides richer functionality.
-  github_url: https://github.com/zowe/data-sets
-  slack_url: https://openmainframeproject.slack.com/archives/CC5UUL005
-  doc_url: https://petstore.swagger.io/?url=https://raw.githubusercontent.com/zowe/docs-site/docs-staging/api_definitions/datasets.json
-  img_url: assets/img/apiml-data-sets.webp
-  stage: Deprecated
+  stage: Long Term Support
   dedication: Core
 - name: Zowe IntelliJ Plugin
   description: A plugin is dedicated to facilitate working with z/OS datasets through providing a possibility to work with them in any IntelliJ IDE. The plugin provides such abilities as working with z/OS datasets and USS files, exploring and managing JES Jobs.
@@ -70,7 +54,7 @@
   doc_url: https://plugins.jetbrains.com/plugin/18688-zowe-explorer
   img_url: assets/img/intellij_squad.webp
   stage: Long Term Support
-  dedication: Extension
+  dedication: Core
 - name: Zowe Kotlin Client SDK
   description: This SDK covert zOSMF Rest API with Kotlin object oriented code using Retrofit. Zowe client Kotlin SDK will allow you to send http requests to your zOSMF.
   github_url: https://github.com/zowe/zowe-client-kotlin-sdk
@@ -85,6 +69,14 @@
   slack_url: https://openmainframeproject.slack.com/archives/C010AUS5MK5
   doc_url: https://github.com/zowe/zowe-client-java-sdk#zowe-java-client-sdk
   img_url: assets/img/java-sdk-project.webp
+  stage: Generally Available
+  dedication: Extension
+- name: Zowe Python Client SDK
+  description: Provides access to a set of programmatic APIs that you can use to build Python applications or scripts that interact with z/OS.
+  github_url: https://github.com/zowe/zowe-client-python-sdk
+  slack_url: https://openmainframeproject.slack.com/archives/C010AUS5MK5
+  doc_url: https://docs.zowe.org/stable/user-guide/sdks-using
+  img_url: assets/img/python-sdk-project.webp
   stage: Generally Available
   dedication: Extension
 - name: Zowe Chat
@@ -104,14 +96,6 @@
   img_url: assets/img/zebra-image.webp
   stage: Technical Preview
   dedication: Extension
-- name: Zowe Python Client SDK
-  description: Provides access to a set of programmatic APIs that you can use to build Python applications or scripts that interact with z/OS.
-  github_url: https://github.com/zowe/zowe-client-python-sdk
-  slack_url: https://openmainframeproject.slack.com/archives/C010AUS5MK5
-  doc_url: https://docs.zowe.org/stable/user-guide/sdks-using
-  img_url: assets/img/python-sdk-project.webp
-  stage: Technical Preview
-  dedication: Extension
 - name: Zowe Swift Client SDK
   description: The Zowe Swift Client SDK is an open-source Swift package for z/OSMF REST API. It allows you to leverage mainframe capabilities from your Swift applications with minimum effort.
   github_url: https://github.com/zowe/zowe-client-swift-sdk
@@ -119,12 +103,4 @@
   doc_url: https://github.com/zowe/zowe-client-swift-sdk#quickstart
   img_url: assets/img/swift-sdk-project.webp
   stage: Under Development
-  dedication: Extension
-- name: Metrics Service
-  description: As a system administrator, use the Metrics Service to view information about the acitivty of services running in the API Mediation Layer. Currently, only HTTP metrics are displayed for core API Mediation Layer services.
-  github_url: https://github.com/zowe/api-layer/tree/v2.x.x/metrics-service
-  slack_url: https://github.com/zowe/api-layer
-  doc_url: https://docs.zowe.org/stable/user-guide/api-mediation-metrics-service/
-  img_url: assets/img/apiml-metrics-service.webp
-  stage: Deprecated
   dedication: Extension
