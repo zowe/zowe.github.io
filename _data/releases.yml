@@ -3,10 +3,10 @@
 future:
   v3:
     - version: 3.1.0
-      release_date: 2025-12-10
+      release_date: 2025-02-03
   v2:
     - version: 2.18.1
-      release_date: 2025-01-15
+      release_date: 2025-02-24
   v1:
     - version: 1.28.8
       release_date: 2024-10-14

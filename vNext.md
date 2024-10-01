@@ -55,11 +55,11 @@
 
   <h4>3.1.0</h4>
   <ul>
-    <li>Code Freeze: January 02, 2024</li>
-    <li>RC Build: January 03, 2024</li>
-    <li>Testing: January 03, 2024 - February 02, 2024</li>
+    <li>Code Freeze: January 02, 2025</li>
+    <li>RC Build: January 03, 2025</li>
+    <li>Testing: January 03, 2025 - February 02, 2025</li>
     <li>GA: February 03, 2025</li>
-    <li>System Demo: February 11, 2024</li>
+    <li>System Demo: February 11, 2025</li>
   </ul>
 
   <h4>3.2.0</h4>
