@@ -3,7 +3,7 @@
 future:
   v3:
     - version: 3.1.0
-      release_date: 2024-05-13
+      release_date: 2025-12-10
   v2:
     - version: 2.18.1
       release_date: 2025-01-15
@@ -24,7 +24,7 @@ v3:
     explorer_version: 3.0.0
     node_sdk_version: 3.0.0
     python_sdk_version: 3.0.0
-    release_date: 2024-03-28
+    release_date: 2024-10-01
     documentation: stable
     release_notes: v3_0_0
 

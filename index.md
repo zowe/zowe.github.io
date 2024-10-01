@@ -90,6 +90,7 @@ redirect_from:
 
 
 {% assign announcements = site.data.announcements %}
+{% assign release_date_v3 = site.data.releases.v3[0].release_date | date: '%s' | plus: 0 %}
 {% assign release_date_v2 = site.data.releases.v2[0].release_date | date: '%s' | plus: 0 %}
 {% assign release_date_v1 = site.data.releases.v1[0].release_date | date: '%s' | plus: 0 %}
 {% assign week_time = 1209600 %}
@@ -107,6 +108,13 @@ redirect_from:
   {% endcapture %}
   {% assign version_v2_announcements= version_v2_announcements | split: "~" %}
   {% assign announcements = version_v2_announcements | concat: announcements %}
+{% endif %}
+{% if release_date_v3 > today_minus_week %}
+  {% capture version_v3_announcements %}
+    <strong>Zowe version {{ site.data.releases.v2[0].version }} is now available. You can download the installers for this release from the <a href="/download">Download</a> page. To learn what's new in this release, see the <a href="https://docs.zowe.org/stable/getting-started/release-notes/{{ site.data.releases.v2[0].release_notes }}">Release notes</a>.</strong>
+  {% endcapture %}
+  {% assign version_v3_announcements= version_v3_announcements | split: "~" %}
+  {% assign announcements = version_v3_announcements | concat: announcements %}
 {% endif %}
 
 <div class="announcementsection row" style="padding-left: 5%">

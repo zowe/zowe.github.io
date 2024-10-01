@@ -3,7 +3,7 @@
     params = new URLSearchParams(location.search);
     if (params.has('version')) {
         var pkgVers = params.get('version');
-        if (pkgVers.startsWith('3.') || pkgVers.startsWith('2.15.')) {
+        if (pkgVers.startsWith('3.') || pkgVers.startsWith('2.18.')) {
             var dlInfo = getArtifactInfo(params);
             var artifact = dlInfo['artifact'];
             var componentName = dlInfo['componentName'];
@@ -141,53 +141,40 @@
                 .get(
                     'package') + '.zip';
         }
-        else if (params.has('type') && params.get('type') == "zen-windows") {
-            document.getElementById('download_button').href = "post_download.html?version=" + params.get('version') + "&type=" + params.get('type');
+        else if (params.has('type') && params.get('type').startsWith('zen')) {
+            document.getElementById('download_button').href = "post_download_legacy.html?version=" + params.get('version') + "&type=" + params.get('type');
+            var zenRtPath = '';
+            var zenFile = '';
+            var zenDistro = params.get('type').split('zen-')[1];
+            // capitalize
+            zenDistro = zenDistro.charAt(0).toUpperCase() + zenDistro.slice(1);//+ zenDistro.split(0);
+            switch (params.get('type')) {
+                case 'zen-windows':
+                    zenFile = 'zowe-install-wizard-' + params.get('version') + '%20Setup.exe'
+                    zenRtPath = params.get('version') + '/windows/' + zenFile;
+                    break;
+                case 'zen-mac':
+                    zenFile = 'zowe-install-wizard-' + params.get('version') + '-arm64.dmg';
+                    zenRtPath = params.get('version') + '/mac/' + zenFile;
+                    break;
+                case 'zen-rpm':
+                    zenFile = 'zowe-install-wizard-' + params.get('version') + '-1.x86_64.rpm';
+                    zenRtPath = params.get('version') + '/unix/' + zenFile;
+                    break;
+                case 'zen-deb': 
+                    zenFile = 'zowe-install-wizard_' + params.get('version') + '_amd64.deb'
+                    zenRtPath = params.get('version') + '/unix/' + zenFile;
+                break;
+            } 
             document.getElementById('download_button').onclick = function () {
-                ga && ga('send', 'event', 'download', 'zen-windows' + params.get('version'), 'zowe-server-install-wizard-' + params.get(
-                    'version') + '.exe');
-                 window.open("https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/zen/" + params.get('version') +
-                    '/windows' + '/zowe-install-wizard-' + params.get('version') + '%20Setup.exe', '_blank');
+                
+                ga && ga('send', 'event', 'download',
+                 params.get('type') + ' ' + params.get('version'), // e.g. zen-windows 1.0.0, zen-deb 1.1.0
+                 zenFile);
+                 window.open("https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/zen/" + zenRtPath, '_blank');
             }
-            document.getElementById('download_file_message').innerHTML = 'You are downloading zowe-server-install-wizard-' + params.get(
-                    'version') +
-                '.exe';
-        }
-        else if (params.has('type') && params.get('type') == "zen-mac") {
-            document.getElementById('download_button').href = "post_download.html?version=" + params.get('version') + "&type=" + params.get('type');
-            document.getElementById('download_button').onclick = function () {
-                ga && ga('send', 'event', 'download', 'zen-mac' + params.get('version'), 'zowe-server-install-wizard-' + params.get(
-                    'version') + '-x64.dmg');
-                window.open("https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/zen/" + params.get('version') +
-                    '/mac' + '/zowe-install-wizard-' + params.get('version') + '-arm64.dmg', '_blank');
-            }
-            document.getElementById('download_file_message').innerHTML = 'You are downloading zowe-server-install-wizard-' + params.get(
-                    'version') +
-                '.dmg';
-        }
-        else if (params.has('type') && params.get('type') == "zen-rpm") {
-            document.getElementById('download_button').href = "post_download.html?version=" + params.get('version') + "&type=" + params.get('type');
-            document.getElementById('download_button').onclick = function () {
-                ga && ga('send', 'event', 'download', 'zen-rpm' + params.get('version'), 'zowe-server-install-wizard-' + params.get(
-                    'version') + '-1.x86_64.rpm');
-                window.open("https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/zen/" + params.get('version') +
-                    '/unix' + '/zowe-install-wizard-' + params.get('version') + '-1.x86_64.rpm', '_blank');
-            }
-            document.getElementById('download_file_message').innerHTML = 'You are downloading zowe-server-install-wizard-' + params.get(
-                    'version') +
-                '.rpm';
-        }
-        else if (params.has('type') && params.get('type') == "zen-deb") {
-            document.getElementById('download_button').href = "post_download.html?version=" + params.get('version') + "&type=" + params.get('type');
-            document.getElementById('download_button').onclick = function () {
-                ga && ga('send', 'event', 'download', 'zen-deb' + params.get('version'), 'zowe-server-install-wizard_' + params.get(
-                    'version') + '_amd64.deb');
-                window.open("https://zowe.jfrog.io/zowe/list/libs-release-local/org/zowe/zen/" + params.get('version') +
-                    '/unix' + '/zowe-install-wizard_' + params.get('version') + '_amd64.deb', '_blank');
-            }
-            document.getElementById('download_file_message').innerHTML = 'You are downloading zowe-server-install-wizard-' + params.get(
-                    'version') +
-                '.deb';
+            document.getElementById('download_file_message').innerHTML = 
+             `You are downloading the Zowe Server Install Wizard for ${zenDistro} version ${params.get('version')}`;
         }
         else {
             document.getElementById('download_button').href = "post_download_legacy.html?version=" + params.get('version');
