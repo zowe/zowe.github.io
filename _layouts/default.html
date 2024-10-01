@@ -32,7 +32,7 @@
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
     <meta name="keywords" content="{{ site.keywords }}" />
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/style.css' | relative_url }}" />
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/styles.css' | relative_url }}" />
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/menu.css' | relative_url }}" />
     <link rel='stylesheet' id='olympus-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C300%2C400%2C500%2C700%2C900%2C0%7CRoboto+Condensed%3A300%2C400%2C700%2C0&#038;subset=greek-ext%2Cvietnamese%2Clatin%2Ccyrillic%2Cgreek%2Clatin-ext%2Ccyrillic-ext&#038;ver=4.9.8' type='text/css' media='all' />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -72,7 +72,7 @@
               <a class="nav-link" href="/vNext.html">Future</a>
             </li>
             <li class="nav-item animated-tile-bigger animate-upwards">
-              <a class="nav-link" href="https://docs.zowe.org">go to Zowe Docs</a>
+              <a class="nav-link" href="https://docs.zowe.org">Go to Zowe Docs</a>
             </li>
           </ul>
         </div>
@@ -112,6 +112,14 @@
       <div class="copyright">Copyright © Zowe a Series of LF Projects, LLC. For web site terms of use, trademark policy and other project policies please see <a href="http://lfprojects.org">lfprojects.org</a>.
       </div>
     </footer>
-  {% if page.extraJs %}{% include {{ page.extraJs }} %}{% endif %}
+  {% if page.extraJs %}
+    {% if page.extraJs.first %}
+      {% for js in page.extraJs %}
+        {% include {{ js }} %}
+      {% endfor %}
+    {% else %}
+      {% include {{ page.extraJs }} %}
+    {% endif %}
+  {% endif %}
   </body>
 </html>

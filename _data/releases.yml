@@ -1,12 +1,32 @@
 # List of Zowe releases - update here and it will update the entire site :-)
 # Note - keep this in order as the latest release is pulled from the first item in the list!
 future:
+  v3:
+    - version: 3.1.0
+      release_date: 2025-02-03
   v2:
     - version: 2.18.1
-      release_date: 2025-01-15
+      release_date: 2025-02-24
   v1:
     - version: 1.28.8
       release_date: 2024-10-14
+
+v3:
+  - version: 3.0.0
+    zos_version: 3.0.0
+    smpe_version: 3.0.0
+    smpe_sysmod:
+    smpe_numbers:
+    containerization_version: 3.0.0
+    cli_version: 3.0.0
+    cli_plugins_version: 3.0.0
+    intellij_explorer_version: 3.0.0
+    explorer_version: 3.0.0
+    node_sdk_version: 3.0.0
+    python_sdk_version: 3.0.0
+    release_date: 2024-10-01
+    documentation: stable
+    release_notes: v3_0_0
 
 v2: 
   - version: 2.18.0

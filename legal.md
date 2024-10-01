@@ -1,7 +1,7 @@
 ---
 title: "Download"
 extraHeaders: google-analytics-downloads-header.html
-extraJs: legal-script.html
+extraJs: [common.html, legal-script.html]
 ---
 <section class="whitebackground">
   <h2 id="download_file_message"></h2>
