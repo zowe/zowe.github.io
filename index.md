@@ -64,7 +64,7 @@ redirect_from:
 </style>
 
 <script src="https://kit.fontawesome.com/f449f80794.js" crossorigin="anonymous"></script>
-
+{% assign currentTime = 'now' | date: '%s' | plus: 0 %}
 {% assign announcements = site.data.announcements %}
 {% assign release_date_v3 = site.data.releases.v3[0].release_date | date: '%s' | plus: 0 %}
 {% assign release_date_v2 = site.data.releases.v2[0].release_date | date: '%s' | plus: 0 %}
