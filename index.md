@@ -65,30 +65,6 @@ redirect_from:
 
 <script src="https://kit.fontawesome.com/f449f80794.js" crossorigin="anonymous"></script>
 
-{% assign currentTime = 'now' | date: '%s' | plus: 0 %}     
-{% if site.data.question_of_month %}  
-  {% for feedback in site.data.question_of_month %}
-    {% assign fromFeedback = feedback.from | date: '%s' | plus: 0 %}
-    {% assign toFeedback = feedback.to | date: '%s' | plus: 0 %}
-      {% if currentTime > fromFeedback %}
-        {% if toFeedback == 0 or currentTime < toFeedback %}
-<div id="feedback-closed" class=" feedback-hide" onclick="toggleFeedback();">
-  <div style="padding-top: 12px; padding-left: 15px; color: white;">
-      <span class="question-name">Question for Jan</span>
-    </div>
-</div>
-<div id="feedback">
-  <div class="feedback-header" onclick="toggleFeedback();"><span class="question-name" style="font-size: smaller;">Question for August</span> <div style="float: right; cursor: pointer;"><i class="fa-solid fa-circle-xmark"></i></div></div>
-  <div>
-    <iframe class="feedback-container" src="{{feedback.link}}"></iframe>
-  </div>
-</div>
-        {% endif %}
-      {% endif %}
-  {% endfor %}
-{% endif %}
-
-
 {% assign announcements = site.data.announcements %}
 {% assign release_date_v3 = site.data.releases.v3[0].release_date | date: '%s' | plus: 0 %}
 {% assign release_date_v2 = site.data.releases.v2[0].release_date | date: '%s' | plus: 0 %}
@@ -187,7 +163,7 @@ redirect_from:
     </p>
     <p>Did you know? The Zowe Community hosts a webinar each quarter called the Zowe Quarterly Update. Watch the replays on <a href="https://www.youtube.com/playlist?list=PL8REpLGaY9QHtnElqPosteBFpITStkAxo">Youtube</a>
     </p>
-    <p>Next release: v{{next_version}} GA {{next_version_date}} | <a href="https://github.com/zowe/zowe.github.io/raw/master/assets/roadmap/Zowe%20Roadmap%20CY24Q2.pdf">View roadmap</a>
+    <p>Next release: v{{next_version}} GA {{next_version_date}}
     </p>
   </div>
   <div class="col-12 col-md-5 zowe-video animated-tile-bigger">
@@ -200,7 +176,7 @@ redirect_from:
     <div class="row">
       <div class="col-sm bg-light animated-tile">
         <img src="/assets/img/learn.png" />
-        <a href="/learn">Learn</a>
+        <a href="https://docs.zowe.org">Learn</a>
         <p style="margin-top: 1rem">Learn how Zowe works and what it can do for you</p>
       </div>
       <div class="col-sm bg-light animated-tile">
@@ -210,12 +186,12 @@ redirect_from:
       </div>
       <div class="col-sm bg-light animated-tile">
         <img src="/assets/img/create.png" />
-        <a href="/extend">Create</a>
+        <a href="https://docs.zowe.org/stable/extend/extend-zowe-overview">Create</a>
         <p style="margin-top: 1rem">Build extensions, services, plug-ins or apps on top of Zowe</p>
       </div>
       <div class="col-sm bg-light animated-tile">
         <img src="/assets/img/contribute.png" />
-        <a href="/contribute">Contribute</a>
+        <a href="https://docs.zowe.org/stable/contribute/roadmap-contribute">Contribute</a>
         <p style="margin-top: 1rem">Contribute to the open source community developing Zowe</p>
       </div>
     </div>
@@ -223,60 +199,6 @@ redirect_from:
     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg> <a href="https://github.com/zowe/community/issues">Report Zowe issue</a> | <a href="https://github.com/zowe/zowe.github.io/issues">Report website issue</a>
     </div>
 </div> 
-
-  {% if site.data.upcoming_events.size >= 1 %}
-  <section id="events" style="margin-top: 3%">
-    <div style="padding: 0% 5%">
-      <h2 class="mb-3" style="color: black !important">Upcoming and recent events</h2>
-      <div class="row py-4">
-        {% for events in site.data.upcoming_events limit:3 %}
-        <div class="col-md-4 px-3 pb-4 pb-md-0"> <!-- ml-auto mr-auto -->
-          <div class="w-100 px-4 py-4 rounded shadow bg-light h-100 animated-tile">
-          {% if events.url %}
-            <h5 class="border-bottom border-primary pb-2"><a href="{{ events.url }}">{{ events.event }}</a></h5>
-          {% else %}
-            <h5 class="border-bottom border-primary pb-2">{{ events.event }}</h5>
-          {% endif %}
-          {% assign currentTime = 'now' | date: '%s' | plus: 0 %}
-          {% assign fromEvent = events.from | date: '%s' | plus: 0 %} 
-          {% assign toEvent = events.to | date: '%s' | plus: 0 %}
-          {% if currentTime > toEvent %}
-            <span class="past" style="font-weight: 600"><i class="fa-solid fa-circle-check"></i> {{ events.schedule }}</span>
-          {% else %}
-            <span style="font-weight: 600"><i class="fa-solid fa-circle-check future"></i> {{ events.schedule }}</span>
-          {% endif %}
-            <br>
-            <span class="text-muted small">{{ events.description }}</span>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-      <div class="row py-4">
-        {% for events in site.data.upcoming_events limit:3 offset:3 %}
-        <div class="col-md-4 px-3 pb-4 pb-md-0"> <!-- ml-auto mr-auto -->
-          <div class="w-100 px-4 py-4 rounded shadow bg-light h-100 animated-tile">
-          {% if events.url %}
-            <h5 class="border-bottom border-primary pb-2"><a href="{{ events.url }}">{{ events.event }}</a></h5>
-          {% else %}
-            <h5 class="border-bottom border-primary pb-2">{{ events.event }}</h5>
-          {% endif %}
-          {% assign currentTime = 'now' | date: '%s' | plus: 0 %}
-          {% assign fromEvent = events.from | date: '%s' | plus: 0 %} 
-          {% assign toEvent = events.to | date: '%s' | plus: 0 %}
-          {% if currentTime > toEvent %}
-            <span class="past" style="font-weight: 600"><i class="fa-solid fa-circle-check"></i> {{ events.schedule }}</span>
-          {% else %}
-            <span style="font-weight: 600"><i class="fa-solid fa-circle-check future"></i> {{ events.schedule }}</span>
-          {% endif %}
-            <br>
-            <span class="text-muted small">{{ events.description }}</span>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-  {% endif %}
 
 <div id="components">
   <div style="margin-bottom: 35px;">
@@ -327,68 +249,5 @@ redirect_from:
     </div>
   </div>
 {% endif %}
-
-<div id="metrics" class="bg-light"> 
-  <h2 class="text-center" style="margin-bottom: 5%">Zowe by the numbers</h2>
-  <div class="row" style="margin-bottom: 2%">
-    <div class="col-md text-center">
-      <span style="color: initial; text-decoration: none"><img style="width:15%" src="assets/img/logo-cli-download.svg" />
-        <h3 class="mb-0" id="cli-downloads"></h3>
-        <h6>Zowe CLI Downloads</h6>
-      </span>
-    </div>
-    <div class="col-md text-center">
-      <a style="color: initial; text-decoration: none" href="{{ site.vscode_marketplace_url }}"><img style="width:15%" src="assets/img/logo-explorer-download.svg" />
-        <h3 class="mb-0" id="explorer-downloads"><img style="width: 80px;" src="https://img.shields.io/visual-studio-marketplace/d/Zowe.vscode-extension-for-zowe.svg?color=f8f9fa&label=" /></h3>
-        <h6>Zowe Explorer Downloads</h6>
-      </a>
-    </div>
-    <div class="col-md text-center">
-      <span style="color: initial; text-decoration: none"><img style="width:15%" src="assets/img/logo-zowe-build-download.svg">
-        <h3 class="mb-0" id="server-downloads"></h3>
-        <h6>Zowe z/OS Build Downloads</h6>
-      </span>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md text-center">
-      <span style="color: initial; text-decoration: none"><img style="width:15%" src="assets/img/logo-github-back.svg" />
-        <h3 class="mb-0" id="github-contributors"></h3>
-        <h6>Contributors</h6>
-      </span>
-    </div>
-    <div class="col-md text-center">
-      <span style="color: initial; text-decoration: none" ><img style="width:15%" src="assets/img/logo-vendor-product.svg" />
-        <h3 class="mb-0" id="conformant-product-value"></h3>
-        <h6>Zowe Conformant Products</h6>
-      </span>
-    </div>
-  </div>
-</div>
-
-<div id="blogs" style="padding: 4% 7% 5% 7%">
-  <div style="margin-bottom: 4%">
-    <h2 class="text-center" style="color: black !important; margin-bottom: 5%">From Zowe blog</h2>
-  </div>
-  <div>
-    <div id="retainable-rss-embed" data-rss="https://medium.com/feed/zowe"
-        data-maxcols="3" 
-        data-layout="slider" 
-        data-poststyle="external" 
-        data-readmore="Read the rest" 
-        data-buttonclass="btn btn-primary" 
-        data-offset="-100">
-    </div>
-  </div>
-  
-  <div style="margin-bottom: 4%">
-    <a href="{{ site.zowe_medium_blog_url }}"><h5 class="text-right"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/> <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg> Check our other blogs</h5></a>
-  </div>    
-</div>
-
-<script src="assets/retainable.js" ></script>
-<script src="assets/feedback.js" ></script>
-  
-<link rel="stylesheet" type="text/css" href="{{ '/assets/css/retainable.css' | relative_url }}" />
 
 <div>
