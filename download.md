@@ -21,6 +21,7 @@
   .card-body:last-of-type {
     border-bottom: inherit;
   }
+
 </style>
 
 <section class="whitebackground">
@@ -349,7 +350,7 @@
 
   <!--V2 download as follows -->
   <h2 id="download-v2">Zowe V2</h2>
-  {% if site.data.releases.v2[0].cli_version and site.data.releases.v2[0].cli_plugins_version and site.data.releases.v2[0].zos_version and site.data.releases.v2[0].smpe_version and site.data.releases.v2[0].node_sdk_version and site.data.releases.v2[0].python_sdk_version %}
+  {% if site.data.releases.v2[0].cli_version and site.data.releases.v2[0].cli_plugins_version and site.data.releases.v2[0].zos_version and site.data.releases.v2[0].smpe_version and site.data.releases.v2[0].node_sdk_version and site.data.releases.v2[0].python_sdk_version and site.data.releases.v2[0].zen_version %}
   <div class="card-deck">
     <div class="card bg-light border-light mb-3">
       <h4 class="card-header" id="zowe-zos-build-download">Server-side component installer</h4>
@@ -406,9 +407,18 @@
               distribution. The PSWI allows the full installation as you are used to from SMP/E build, but it uses the
               new standard for mainframe software distribution.</p>
             <p class="card-text">Download the PSWI based on FMID AZWE002</p>
+            {% if site.data.releases.v2[0].pswi_version and site.data.releases.v2[0].pswi_version != site.data.releases.v2[0].zos_version %}
+            <p class="card-text"><span style="color:red">Caution:</span> This PSWI release <b>does not match</b> the latest Zowe release, seen above. Please check the home page announcements for more information.</p>
+            {% endif %}
+            {% if site.data.releases.v2[0].pswi_version %}
             <p><a class="btn btn-primary"
-                href="{{ site.pswi_download_uri }}{{ site.data.releases.v2[0].zos_version }}">Zowe PSWI
-                {{ site.data.releases.v2[0].zos_version }}</a></p>
+                href="{{ site.pswi_download_uri }}{{ site.data.releases.v2[0].pswi_version }}">Zowe PSWI
+                {{ site.data.releases.v2[0].pswi_version }}</a></p>
+            {% else %}
+            <p><a class="btn btn-primary"
+              href="{{ site.pswi_download_uri }}{{ site.data.releases.v2[0].zos_version }}">Zowe PSWI
+              {{ site.data.releases.v2[0].zos_version }}</a></p>
+            {% endif %}
             <div>
               <a href="https://docs.zowe.org/{{ site.data.releases.v2[0].documentation }}/user-guide/install-zowe-pswi" class="card-link">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
@@ -710,6 +720,31 @@
       Test the latest Zowe features and provide feedback. Technical previews are <b>for testing only</b> and not ready
       for production.</p>
     <div class="card-deck">
+            <div class="card bg-light border-light mb-3">
+        <h4 class="card-header" id="zen">Zowe Server Install Wizard</h4>
+         <div class="card-body">
+          <p class="card-text">The Zowe Server Install Wizard (formerly known as ZEN) is a program you install on your PC (Windows/mac/linux). 
+         It is an optional alternative to the existing Zowe installation processes, designed to make installation quick and intuitive 
+         by guiding you through installing Zowe server content onto <b>z/OS</b>.
+         It handles <b>YAML</b>, <b>Unix</b>, and <b>JCL</b> content involved in setup of a Zowe instance 
+         so that you can install Zowe easily by following prompts and verifying the output.</p>
+          <h5 class="card-title">Direct download</h5>
+          <p><a class="btn btn-primary"
+                href="{{ site.zen_windows_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
+                {{ site.data.releases.v2[0].zen_version }} window Installer</a></p>
+          <p><a class="btn btn-primary"
+                href="{{ site.zen_unix_rpm_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
+                {{ site.data.releases.v2[0].zen_version }} linux.rpm</a></p>
+          <p><a class="btn btn-primary"
+                href="{{ site.zen_unix_deb_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
+                {{ site.data.releases.v2[0].zen_version }} linux.deb</a></p>
+          <p><a class="btn btn-primary"
+                href="{{ site.zen_mac_download_url }}{{ site.data.releases.v2[0].zen_version }}">zen
+                {{ site.data.releases.v2[0].zen_version }} mac Installer</a></p>
+          <div>
+          </div>
+         </div>         
+      </div> 
       <div class="card bg-light border-light mb-3">
         <h4 class="card-header" id="zowe-docker">Zowe Docker build</h4>
         <div class="card-body">
@@ -989,18 +1024,16 @@
       schedule published in the <a
         href="https://github.com/zowe/community/blob/master/Project%20Management/Schedule/Zowe%20PI%20%26%20Sprint%20Cadence.md">Zowe
         Community GitHub repository</a>.</li>
-    <li>The Zowe community provides three types of releases:
+    <li>When determining what type of release to use, consumers should consider both Support and feature implications of each of the phases:
       <ul>
-        <li style="list-style-type: disc">Maintenance - This release receives only security patches and fixes for the
-          critical bugs. It's suitable for environment that prefers stability to new features.</li>
-        <li style="list-style-type: disc">Active - This release receives updates regularly according to the schedule. It
-          is suitable for users who are willing to invest a bit more time into upgrades to get the latest features.</li>
-        <li style="list-style-type: disc">Nightly - The Zowe publishes bleeding edge state of the project on the nightly
-          basis. There are no guarantees around the stability of the build.</li>
+        <li style="list-style-type: disc">Active: Each major version will remain in this phase for two years (24 months) after which it will transition to the maintenance phase. Consumers interested in receiving new features in addition to fixes and security patches should plan to be on an Active version.</li>
+        <li style="list-style-type: disc">Maintenance: Each major version will remain in this phase for two and one half years (30 months) - beyond the two years in the Active phase. Consumers wishing to receive ONLY fixes and security patches should plan to be on a Maintenance version. This allows them to remain on and target their upgrades to a supported, major version receiving limited minor releases.</li>
+        <li style="list-style-type: disc">Under Development: This is the pre-Active phase of the (next) major version and is not available for consumption. This phase may vary in length as it represents the time required to incorporate breaking changes and new functionality as the Community prepares for the next major version.</li>
       </ul>
     </li>
     <li>Every major version will be in the Active phase for two years and then transition into the Maintenance phase for
       another two and half year. This brings to you the possibility to use only major versions in the maintenance mode.
+      Before major version moves to the Active phase, it will be Under Development for time needed for introducing breaking changes and new functionality. 
     </li>
     <li>The combination of <b>Active</b> and <b>Maintenance</b> release provides two guarantees:
       <ul>
@@ -1013,6 +1046,7 @@
     </li>
     <li>Production applications should only use <b>Active</b> or <b>Maintenance </b> releases due to the contract with
       extender products remaining functional and the community’s commitment to fix critical defects.</li>
+    <li>The Zowe project also provides Nightly builds for integration testing for extenders. Use these builds at your own risk.</li>
   </ul>
   <a class="btn btn-primary" href="{{ site.lts_url }}">Learn more</a>
 </section>
@@ -1022,7 +1056,7 @@
   <b>General</b><br />
   <i>Backward Compatibility</i><br />
   <p>Zowe v2 conformant extensions / plug-ins <b>are not guaranteed</b> to be compatible with Zowe v3 and therefore may
-    not be operable. In general, plug-ins/extensions which leverage v3 APIs that have known “breaking changes” are at
+    not be operable. In general, plug-ins/extensions which leverage v2 APIs that have known “breaking changes” are at
     <i>high risk</i> of incompatibility and unpredictable results. </p>
   <p><u>Recommendation:</u> ALL v2 extenders test with the Zowe v3, identify any issues, and disclose results to
     consumers to clearly indicate backward compatibility status in the extension documentation. If unable to test,
@@ -1047,7 +1081,7 @@
   <i>Early Access Software </i><br />
   <p>Several pre-GA releases of Zowe v3 will be made available to Zowe extenders and the general public prior* to the
     actual Zowe v3 GA release delivery to allow extenders time to perform Zowe v3 testing with their extensions and
-    disclose their compatibility status. (*dates to-be-determined)</p>
+    disclose their compatibility status. (The PAX and SMP/E builds are available since Dec 2023)</p>
   <i>Early Access Conformance Criteria</i><br />
   <p>The Zowe v3 conformance criteria for all extensions/plugins participating in the conformance program will be made
     available to all Zowe v2 conformant extenders prior* to the Zowe v3 GA release to give extenders time to adapt to

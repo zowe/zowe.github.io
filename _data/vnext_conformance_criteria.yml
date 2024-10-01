@@ -1,0 +1,24 @@
+- name: Zowe API Mediation Layer
+  description: |
+
+    The API Mediation Layer related conformance Criteria are [here](https://ibm.box.com/s/qin12i90slsxzv2zdpiq4we6o6157gh5)
+
+- name: Zowe CLI
+  description: |
+
+    The CLI related conformance Criteria are [here](https://ibm.box.com/s/d8dgrx37k42wi2o92bk6vglfdazmkte9)
+
+- name: Zowe Explorer
+  description: |
+    
+    The Explorer related conformance Criteria are [here](https://ibm.box.com/s/xmiwe01li8n0mgx4wpj68dqpsw2ybati)
+
+- name: Zowe Application Framework
+  description: |
+
+    The Application Framework related conformance Criteria are [here](https://ibm.box.com/s/krk4cckl7mo1wgmjkghv1s82q8cu5rx1)
+
+- name: Support Providers
+  description: |
+
+    The Support providers related conformance Criteria are [here](https://ibm.box.com/s/ok85oj6eflnpxsxvp1rntrebjbhebuk1)
