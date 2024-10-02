@@ -41,6 +41,8 @@ zowe_v1_fmid: AZWE001
 zowe_v1_fmid_oss_version: 1.9.0
 zowe_v2_fmid: AZWE002
 zowe_v2_fmid_oss_version: 2.0.0
+zowe_v3_fmid: AZWE003
+zowe_v3_fmid_oss_version: 3.0.0
 zos_component_install_doc_url: https://docs.zowe.org/stable/user-guide/install-zos.html
 zowe_containerization_install_doc_url: https://docs.zowe.org/stable/user-guide/k8s-introduction
 zowe_cli_install_doc_url: https://docs.zowe.org/stable/user-guide/cli-install-cli-checklist
@@ -126,6 +128,7 @@ zowe_next_release_date: 2022-04-25
 # not in use, place variables here if you need to distinguish based on Zowe release
 v1:
 v2:
+v3:
 
 plugins:
   # Redirect plugin
