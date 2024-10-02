@@ -56,4 +56,23 @@
         return { 'artifact': artifact, 'componentName': componentName, 'sbomGroup': sbomGroup };
     }
 
+    function hasBundle(packageType, packageVersion) {
+        switch(packageType) {
+            case 'smpe':
+            case 'containerization':
+            case 'pswi':
+            case 'pax':
+                if (packageVersion.startsWith("2.18") || packageVersion.startsWith("3.0")) {
+                    return true;
+                }
+                return false;
+            case 'cli':
+            case 'cli-plugins':
+            case 'python-sdk':
+            case 'nodejs-sdk':
+            default:
+                return false;
+        }
+    }
+
 </script>

@@ -27,13 +27,13 @@
                  target="_blank"  onclick="gs && ga('send', 'event', 'download', '${componentName} bundle', '${artifact}.bundle');">the ${componentName} signing bundle.</a>`;
       
         document.getElementById('cosign_verify_online').innerHTML = 
-            `cosign verify ./${artifact} --bundle ./${artifact}.bundle 
+            `cosign verify-blob ./${artifact} --bundle ./${artifact}.bundle 
                 --certificate-identity=https://github.com/zowe/zowe-install-packaging/.github/workflows/build-packaging.yml@refs/heads/v${version.toString()[0]}.x/master 
                 --certificate-oidc-issuer=https://token.actions.githubusercontent.com`; 
 
 
         document.getElementById('cosign_verify_offline').innerHTML = 
-            `cosign verify ./${artifact} --bundle ./${artifact}.bundle --offline 
+            `cosign verify-blob ./${artifact} --bundle ./${artifact}.bundle --offline 
                 --certificate-identity=https://github.com/zowe/zowe-install-packaging/.github/workflows/build-packaging.yml@refs/heads/v${version.toString()[0]}.x/master 
                 --certificate-oidc-issuer=https://token.actions.githubusercontent.com`; 
 
@@ -72,10 +72,10 @@
             }
             document.getElementById('sbom_download_options').innerHTML = sbomDownloadList
             document.getElementById('sbom_bundle_download_options').innerHTML = sbomBundleDownloadList
-            document.getElementById('sbom_online_verification').innerHTML =  `cosign verify ./<your_chosen_sbom_file> --bundle ./<your_chosen_sbom_file>.bundle
+            document.getElementById('sbom_online_verification').innerHTML =  `cosign verify-blob ./<your_chosen_sbom_file> --bundle ./<your_chosen_sbom_file>.bundle
                 --certificate-identity=https://github.com/zowe/zowe-install-packaging/.github/workflows/build-packaging.yml@refs/heads/v${version.toString()[0]}.x/master 
                 --certificate-oidc-issuer=https://token.actions.githubusercontent.com`; 
-            document.getElementById('sbom_offline_verification').innerHTML =  `cosign verify ./<your_chosen_sbom_file> --bundle ./<your_chosen_sbom_file>.bundle --offline
+            document.getElementById('sbom_offline_verification').innerHTML =  `cosign verify-blob ./<your_chosen_sbom_file> --bundle ./<your_chosen_sbom_file>.bundle --offline
                 --certificate-identity=https://github.com/zowe/zowe-install-packaging/.github/workflows/build-packaging.yml@refs/heads/v${version.toString()[0]}.x/master 
                 --certificate-oidc-issuer=https://token.actions.githubusercontent.com`; 
             
