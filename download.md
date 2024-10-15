@@ -624,6 +624,8 @@
 
     <h1 id="all-v3-releases">All Zowe V3.x Releases</h1>
     <p>Download releases of Zowe V3.x by version number. The future release dates are tentative and may change.</p>
+    <details>
+      <summary>Click to show V3.x Releases</summary>
     <div style="overflow-x: auto">
       <table class="table table-hover table-sm">
     {% for release in site.data.releases.future.v3 %}
@@ -679,9 +681,12 @@
     </div>
     {% endif %}
     {% endfor %}
+    </details>
 
   <h1 id="all-v2-releases">All Zowe V2.x Releases</h1>
   <p>Download releases of Zowe V2.x by version number. The future release dates are tentative and may change.</p>
+  <details>
+    <summary>Click to show V2.x Releases</summary>
   <div style="overflow-x: auto">
     <table class="table table-hover table-sm">
   {% for release in site.data.releases.future.v2 %}
@@ -737,9 +742,12 @@
   </div>
   {% endif %}
   {% endfor %}
+  </details>
 
 <h1 id="all-v1-releases">All Zowe V1.x Releases</h1>
-<p>Download releases of Zowe V1.x by version number. V1.x is no longer produced or supported.</p>
+<p>Download releases of Zowe V1.x by version number. V1.x is no longer updated or supported.</p>
+<details>
+  <summary>Click to show V1.x Releases</summary>
 <p>
   Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds. Zowe version 1.9.0 is the
   beginning of the Active Long-Term Support (LTS) release and it provides an SMP/E build with an FMID of AZWE001. The
@@ -803,6 +811,7 @@
 <p class="text-muted">All builds prior to Zowe v1.0.0 are no longer available.</p>
 {% endif %}
 {% endfor %}
+</details>
 </section>
 
 <section class="bluebackground">
