@@ -108,7 +108,7 @@
         <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Learn about others participating in Community</h2>
         <p>Zowe helps others in the mainframe community extend and share the fact via our <a href="https://openmainframeproject.org/our-projects/zowe-conformance-program/">Open Mainframe Project's Zowe 
             Conformance Program.</a>
-            Find who already participates in the landscape below.</p>
+            Find who participates in the landscape below.</p>
         <iframe frameBorder="0" id="landscape-v2" width="100%" height="600"
             src="https://landscape.openmainframeproject.org/pages/zowe-conformant"></iframe>
     </div>
@@ -119,5 +119,11 @@
             Zowe, take a look at the landscape below.</p>
         <iframe frameBorder="0" id="landscape-v2" width="100%" height="600"
             src="https://landscape.openmainframeproject.org/pages/zowe-conformant-support-vendor"></iframe>
+    </div>
+    <div>
+        <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Learn about V3 Conformant extensions</h2>
+        <p>Find who already participates in V3 in the landscape below. If you are looking only for V3 Conformant Extensions consult <a href="https://landscape.openmainframeproject.org/card-mode?category=app-framework-zowe-v3,cli-zowe-v3,api-mediation-layer-zowe-v3,explorer-for-visual-studio-code-zowe-v3,explorer-for-visual-studio-code-zowe-v3,api-mediation-layer-zowe-v3,app-framework-zowe-v3,cli-zowe-v3&grouping=category" target="_blank">V3 Conformant Landscape</a></p>
+        <iframe frameBorder="0" id="landscape-v2" width="100%" height="600"
+            src="https://landscape.openmainframeproject.org/card-mode?category=app-framework-zowe-v3,cli-zowe-v3,api-mediation-layer-zowe-v3,explorer-for-visual-studio-code-zowe-v3,explorer-for-visual-studio-code-zowe-v3,api-mediation-layer-zowe-v3,app-framework-zowe-v3,cli-zowe-v3&grouping=category"></iframe>
     </div>
 </section>
