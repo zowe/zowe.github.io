@@ -17,8 +17,8 @@
 </style>
 
 <section class="whitebackground">
-    <h1 id="download" style="margin-bottom: 1.5rem">Join The Zowe Community</h1>
-    <p>Here are some of the best ways to engage with the Zowe community!</p>
+    <h1 id="download" style="margin-bottom: 1.5rem">Interesting in joining or simply communicating with the Zowe community?</h1>
+    <p>Page down to learn how we collaborate, where we share knowledge, and how best to engage with us!</p>
     <div class="card-deck">
         <div class="card mb-3 animated-tile">
             <div class="card-body">
@@ -105,19 +105,23 @@
                 width="100%" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
     <div>
-        <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Learn about others participating in Community</h2>
-        <p>Zowe helps others in the mainframe community extend and share the fact via our <a href="https://openmainframeproject.org/our-projects/zowe-conformance-program/">Open Mainframe Project's Zowe 
-            Conformance Program.</a>
-            Find who already participates in the landscape below.</p>
-        <iframe frameBorder="0" id="landscape-v2" width="100%" height="600"
-            src="https://landscape.openmainframeproject.org/pages/zowe-conformant"></iframe>
+        <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Find products & services that integrate with Zowe V3</h2>
+        <p>Vendors & Consumers publish extensions and participate in our <a href="https://openmainframeproject.org/our-projects/zowe-conformance-program/">Open Mainframe Project's Zowe Vx
+            Conformance Program.</a> to ensure they are interoperable with the specific Zowe Vx Version. All are free to download and use! Find participating, conformant extensions below (use the slide on the right of the page to advance the card view). Click the card to view conformance statistics. See a filtered list of products and solutions that have achieved V3 conformance in the <a href="https://landscape.openmainframeproject.org/card-mode?category=app-framework-zowe-v3,cli-zowe-v3,api-mediation-layer-zowe-v3,explorer-for-visual-studio-code-zowe-v3,explorer-for-visual-studio-code-zowe-v3,api-mediation-layer-zowe-v3,app-framework-zowe-v3,cli-zowe-v3&grouping=category" target="_blank">V3 Conformant Landscape</a> view presented below. (use the slide on the right of the page to advance the card view).</p>
+        <iframe frameBorder="0" id="landscape-v3" width="100%" height="600"
+            src="https://landscape.openmainframeproject.org/card-mode?category=app-framework-zowe-v3,cli-zowe-v3,api-mediation-layer-zowe-v3,explorer-for-visual-studio-code-zowe-v3,explorer-for-visual-studio-code-zowe-v3,api-mediation-layer-zowe-v3,app-framework-zowe-v3,cli-zowe-v3&grouping=category"></iframe>
     </div>
     <div>
-        <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Learn about who is providing support</h2>
-        <p>Conformant <a href="https://openmainframeproject.org/our-projects/zowe-conformant-support-provider-program/">Zowe Support Providers</a> 
-            claim to provide the services at some baseline level. If you are unsure about who will provide support for 
-            Zowe, take a look at the landscape below.</p>
+        <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Find products & services that integrate with Zowe V2</h2>
+        <p>Vendors & Consumers publish extensions and participate in our <a href="https://openmainframeproject.org/our-projects/zowe-conformance-program/">Open Mainframe Project's Zowe Vx
+            Conformance Program.</a> to ensure they are interoperable with the specific Zowe Vx Version. All are free to download and use! Find participating, conformant extensions below (use the slide on the right of the page to advance the card view). Click the card to view conformance statistics. See a filtered list of products and solutions that have achieved V2 conformance in the <a href="https://landscape.openmainframeproject.org/card-mode?category=app-framework-zowe-v2,cli-zowe-v2,api-mediation-layer-zowe-v2,explorer-for-visual-studio-code-zowe-v2,explorer-for-visual-studio-code-zowe-v2,api-mediation-layer-zowe-v2,app-framework-zowe-v2,cli-zowe-v2&grouping=category" target="_blank">V2 Conformant Landscape</a> view presented below. (use the slide on the right of the page to advance the card view).</p>
         <iframe frameBorder="0" id="landscape-v2" width="100%" height="600"
+            src="https://landscape.openmainframeproject.org/card-mode?category=app-framework-zowe-v2,cli-zowe-v2,api-mediation-layer-zowe-v2,explorer-for-visual-studio-code-zowe-v2,explorer-for-visual-studio-code-zowe-v2,api-mediation-layer-zowe-v2,app-framework-zowe-v2,cli-zowe-v2&grouping=category"></iframe>
+    </div>
+    <div>
+        <h2 style="margin-bottom: 1.5rem; margin-top: 2%">Find Zowe support providers</h2>
+        <p>Vendors have the ability to participate in our <a href="https://openmainframeproject.org/our-projects/zowe-conformant-support-provider-program/">Open Mainframe Project Zowe Vx Support Provider Conformance program</a>. Vendor Offerings that earn this badge have satisfied the requirements necessary to ensure they are capable of providing Support for the specific Zowe core component(s). Note: the "Comprehensive Support designation indicates the offering is capable of providing support for ALL of the Zowe components designated as "core" for the specific Zowe version. Take a look at the landscape below to find an offering.</p>
+        <iframe frameBorder="0" id="landscape-support-providers" width="100%" height="600"
             src="https://landscape.openmainframeproject.org/pages/zowe-conformant-support-vendor"></iframe>
     </div>
 </section>
