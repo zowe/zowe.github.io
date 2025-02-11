@@ -32,8 +32,8 @@
   <ul>
     <li><a href="https://github.com/orgs/zowe/projects/13/views/9">API Mediation Layer</a></li>
     <li><a href="">CLI</a></li>
-    <li><a href="">Documentation</a></li>
-    <li><a href="">Explorer for VS Code</a></li>
+    <li><a href="https://github.com/orgs/zowe/projects/36/views/4">Documentation</a></li>
+    <li><a href="https://github.com/orgs/zowe/projects/15/views/9">Explorer for VS Code</a></li>
     <li><a href="">Explorer for Intellij</a></li>
     <li><a href="">Onboarding</a></li>
     <li><a href="">Systems</a></li>
