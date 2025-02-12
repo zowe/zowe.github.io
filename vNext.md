@@ -1,4 +1,4 @@
----
+d---
 ---
 
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
@@ -31,14 +31,14 @@
 
   <ul>
     <li><a href="https://github.com/orgs/zowe/projects/13/views/9">API Mediation Layer</a></li>
-    <li><a href="">CLI</a></li>
+    <li><a href="https://github.com/orgs/zowe/projects/21/views/8">CLI</a></li>
     <li><a href="https://github.com/orgs/zowe/projects/36/views/4">Documentation</a></li>
     <li><a href="https://github.com/orgs/zowe/projects/15/views/9">Explorer for VS Code</a></li>
-    <li><a href="">Explorer for Intellij</a></li>
+    <li><a href="https://github.com/orgs/zowe/projects/34/views/4">Explorer for Intellij</a></li>
     <li><a href="">Onboarding</a></li>
-    <li><a href="">Systems</a></li>
-    <li><a href="">Web UI</a></li>
-    <li><a href="">zOS</a></li>
+    <li><a href="https://github.com/orgs/zowe/projects/32">Systems</a></li>
+    <li><a href="https://github.com/orgs/zowe/projects/18/views/4">Web UI</a></li>
+    <li><a href="https://github.com/orgs/zowe/projects/28/views/15">zOS</a></li>
   </ul>
 </section>
 
