@@ -632,6 +632,22 @@ span.stage, span.dedication {
   display: inline-block;
 } 
 
+span.stage, span.server-side {
+  border-radius: 22px;
+  padding: 4px 8px 4px 8px;
+  display: inline-block;
+  background-color: rgb(55, 156, 129);
+  color: white;
+} 
+
+span.stage, span.client-side {
+  border-radius: 22px;
+  padding: 4px 8px 4px 8px;
+  display: inline-block;
+  background-color: rgb(156, 55, 55);
+  color: white;
+} 
+
 span.long-term-support {
   background-color: #0059FF;
   color: white;

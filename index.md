@@ -215,6 +215,9 @@ redirect_from:
               <p style="margin: 1rem auto">
                 <span class="{{project.stage | replace: " ", "-" | downcase }} stage">{{project.stage}}</span> 
                 <span class="{{project.dedication | replace: " ", "-" | downcase }} dedication">{{project.dedication}}</span>
+                {% if project.component_type %}
+                 <span class="{{project.component_type | replace: " ", "-" | downcase }} component_type">{{project.component_type}}</span>
+                {% endif %}
               </p>
               <p style="margin: 1rem auto">{{project.description}}</p>
               <p>
