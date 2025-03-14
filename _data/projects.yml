@@ -7,6 +7,7 @@
   img_url: assets/img/zowe-desktop-image.webp
   stage: Long Term Support
   dedication: Core
+  component_type: Server-side
 - name: API Mediation Layer
   description: Provides a gateway that acts as a reverse proxy for z/OS services, together with a catalog of REST APIs and a dynamic discovery capability. Base Zowe provides core services for working with MVS Data Sets, JES, as well as working with z/OSMF REST APIs. The API Mediation Layer also provides a framework for Single Sign On (SSO). 
   github_url: https://github.com/zowe/api-layer
@@ -15,6 +16,7 @@
   img_url: assets/img/zowe-apiml-image.webp
   stage: Long Term Support
   dedication: Core
+  component_type: Server-side
 - name: Zowe CLI
   description: Provides a command-line interface that lets you interact with the mainframe remotely and use common tools such as Integrated Development Environments (IDEs), shell commands, bash scripts, and build tools for mainframe development. It provides a set of utilities and services for application developers that want to become efficient in supporting and building z/OS applications quickly. The CLI provides a core set of commands for working with data sets, USS, JES, as well as issuing TSO and console commands.
   github_url: https://github.com/zowe/zowe-cli
@@ -23,6 +25,7 @@
   img_url: assets/img/zowe-cli.webp
   stage: Long Term Support
   dedication: Core
+  component_type: Client-side
 - name: Zowe Explorer
   description: A Visual Studio Code extension that modernizes the way developers and system administrators interact with z/OS mainframes. Zowe Explorer lets you interact with data sets, USS files, and jobs that are stored on z/OS. The extension complements your Zowe CLI experience and lets you use authentication services like API Mediation Layer.
   github_url: https://github.com/zowe/zowe-explorer-vscode
@@ -31,6 +34,7 @@
   img_url: assets/img/zowe-explorer-image.webp
   stage: Long Term Support
   dedication: Core
+  component_type: Client-side
 - name: ZSS
   description: Zowe System Services (ZSS) is a z/OS native, extensible HTTPS server which allows you to empower web programs with z/OS functionality due to ZSS conveniences for writing REST and Websocket APIs around z/OS system calls. The Zowe desktop delegates a number of its services to the ZSS server.
   github_url: https://github.com/zowe/zss
@@ -39,6 +43,7 @@
   img_url: assets/img/zss-project.webp
   stage: Long Term Support
   dedication: Core
+  component_type: Server-side
 - name: Zowe Node.js Client SDK
   description: Provides access to a set of programmatic APIs that you can use to build Node.js client applications or scripts that interact with z/OS.
   github_url: 
@@ -47,6 +52,7 @@
   img_url: assets/img/nodejs-sdk-project.webp
   stage: Long Term Support
   dedication: Core
+  component_type: Client-side
 - name: Zowe IntelliJ Plugin
   description: A plugin is dedicated to facilitate working with z/OS datasets through providing a possibility to work with them in any IntelliJ IDE. The plugin provides such abilities as working with z/OS datasets and USS files, exploring and managing JES Jobs.
   github_url: https://github.com/zowe/zowe-explorer-intellij
@@ -55,6 +61,7 @@
   img_url: assets/img/intellij_squad.webp
   stage: Long Term Support
   dedication: Core
+  component_type: Client-side
 - name: Zowe Kotlin Client SDK
   description: This SDK covert zOSMF Rest API with Kotlin object oriented code using Retrofit. Zowe client Kotlin SDK will allow you to send http requests to your zOSMF.
   github_url: https://github.com/zowe/zowe-client-kotlin-sdk
@@ -62,6 +69,7 @@
   doc_url: https://github.com/zowe/zowe-client-kotlin-sdk#guide
   img_url: assets/img/kotlin-sdk-project.webp
   stage: Generally Available
+  component_type: Client-side
   dedication: Extension
 - name: Zowe Java Client SDK
   description: This SDK lets you leverage the underlying z/OSMF REST APIs on a z/OS system to build client applications and scripts that interface with your z/OS instance seamlessly.
@@ -70,6 +78,7 @@
   doc_url: https://github.com/zowe/zowe-client-java-sdk#zowe-java-client-sdk
   img_url: assets/img/java-sdk-project.webp
   stage: Generally Available
+  component_type: Client-side
   dedication: Extension
 - name: Zowe Python Client SDK
   description: Provides access to a set of programmatic APIs that you can use to build Python applications or scripts that interact with z/OS.
@@ -78,6 +87,7 @@
   doc_url: https://docs.zowe.org/stable/user-guide/sdks-using
   img_url: assets/img/python-sdk-project.webp
   stage: Generally Available
+  component_type: Client-side
   dedication: Extension
 - name: Zowe Chat
   description: An incubator focused on working with the mainframe from popular chat clients such as Slack® , Microsoft Teams® , and Mattermost® . Whether you're collaborating with your team to diagnose issues, need a quick read on the state of a system, or want push notifications from your monitoring tools, Zowe Chat will simplify those experiences and integrate directly into your chat clients. Stay tuned, more to come!
@@ -103,4 +113,5 @@
   doc_url: https://github.com/zowe/zowe-client-swift-sdk#quickstart
   img_url: assets/img/swift-sdk-project.webp
   stage: Under Development
+  component_type: Client-side
   dedication: Extension
