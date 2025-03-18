@@ -795,9 +795,9 @@
       <td></td>
       {% endif %}
       {% if release.documentation == 'versions' %}
-      <td><a href="https://docs.zowe.org/versions/">Documentation</a></td>
+      <td><a href="https://67c89aa5af702da5881fc564--zowe-docs-master.netlify.app/v1.28.x/getting-started/overview/">Documentation</a></td>
       {% else %}
-      <td><a href="https://docs.zowe.org/{{release.documentation}}/getting-started/overview">Documentation</a></td>
+      <td><a href="https://67c89aa5af702da5881fc564--zowe-docs-master.netlify.app/v1.28.x/getting-started/overview/">Documentation</a></td>
       {% endif %}
     </tr>
 
