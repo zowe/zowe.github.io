@@ -42,7 +42,7 @@ v3:
 
 v2: 
   - version: 2.18.1
-    zen_version: 1.0.1
+    zen_version: 1.1.0
     zos_version: 2.18.1
     smpe_version: 2.18.1
     pswi_version: 2.18.1
@@ -58,7 +58,7 @@ v2:
     documentation: stable
     release_notes: v2_18_1
   - version: 2.18.0
-    zen_version: 1.1.0
+    zen_version: 1.0.1
     zos_version: 2.18.0
     smpe_version: 2.18.0
     pswi_version: 2.18.0
