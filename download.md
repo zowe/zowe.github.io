@@ -148,7 +148,7 @@
                 href="{{ site.zen_mac_download_url }}{{ site.data.releases.v2[0].zen_version }}">Zowe V3/V2 Server Install Wizard
                 {{ site.data.releases.v2[0].zen_version }} Mac 🍏 Installer</a></p>
          </div>
-      <h4 class="card-header" id="zowe-zos-build-download">Server-side component installer</h4>
+      <h4 class="card-header" id="zowe-zos-build-download">Server-side components installer</h4>
       <div class="card-body">
         <p class="card-text">Manually install Zowe z/OS components from the <b>convenience build</b>, the <b>SMP/E build</b>,
           the <b> PSWI build </b> or the <b> containerization build </b> depending on your need.</p>
@@ -369,7 +369,7 @@
   {% if site.data.releases.v2[0].cli_version and site.data.releases.v2[0].cli_plugins_version and site.data.releases.v2[0].zos_version and site.data.releases.v2[0].smpe_version and site.data.releases.v2[0].node_sdk_version and site.data.releases.v2[0].python_sdk_version and site.data.releases.v2[0].zen_version %}
   <div class="card-deck">
     <div class="card bg-light border-light mb-3">
-      <h4 class="card-header" id="zowe-zos-build-download">Server-side component installer</h4>
+      <h4 class="card-header" id="zowe-zos-build-download">Server-side components installer</h4>
       <div class="card-body">
         <p class="card-text">Manually install Zowe z/OS components from the <b>convenience build</b>, the <b>SMP/E build</b>,
           the <b> PSWI build </b> or the <b> containerization build </b> depending on your need.</p>
