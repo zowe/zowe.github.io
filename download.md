@@ -126,9 +126,31 @@
   {% if site.data.releases.v3[0].cli_version and site.data.releases.v3[0].cli_plugins_version and site.data.releases.v3[0].zos_version and site.data.releases.v3[0].smpe_version and site.data.releases.v3[0].node_sdk_version and site.data.releases.v3[0].python_sdk_version %}
   <div class="card-deck">
     <div class="card bg-light border-light mb-3">
-      <h4 class="card-header" id="zowe-zos-build-download">Server-side component installer</h4>
+      <h4 class="card-header" id="zen">Zowe Server Install Wizard</h4>
+         <div class="card-body">
+          <p class="card-text">The Zowe Server Install Wizard (formerly known as ZEN) is a program for your Windows/Mac/Linux PC to install the Zowe Server-side components via a guided wizard. Wizard offers options for online download, PAX archive upload, and SMP/E, with both V2 and V3 support.
+         <br><br>
+         An alternative to the existing Zowe installation process, the Wizard is designed to make installation quick and intuitive 
+         by guiding you through installing Zowe server content onto <b>z/OS</b>.
+         It handles <b>YAML</b>, <b>Unix</b>, and <b>JCL</b> content involved in setup of a Zowe instance 
+         so that you can install Zowe easily by following prompts and verifying the output.</p>
+          <h5 class="card-title">Direct download</h5>
+          <p><a class="btn btn-primary"
+                href="{{ site.zen_windows_download_url }}{{ site.data.releases.v2[0].zen_version }}">Zowe V3/V2 Server Install Wizard
+                {{ site.data.releases.v2[0].zen_version }} Windows 🖥️ Installer</a></p>
+          <p><a class="btn btn-primary"
+                href="{{ site.zen_unix_rpm_download_url }}{{ site.data.releases.v2[0].zen_version }}">Zowe V3/V2 Server Install Wizard
+                {{ site.data.releases.v2[0].zen_version }} linux.rpm 🐧 Installer</a></p>
+          <p><a class="btn btn-primary"
+                href="{{ site.zen_unix_deb_download_url }}{{ site.data.releases.v2[0].zen_version }}">Zowe V3/V2 Server Install Wizard
+                {{ site.data.releases.v2[0].zen_version }} linux.deb 🐧 Installer</a></p>
+          <p><a class="btn btn-primary"
+                href="{{ site.zen_mac_download_url }}{{ site.data.releases.v2[0].zen_version }}">Zowe V3/V2 Server Install Wizard
+                {{ site.data.releases.v2[0].zen_version }} Mac 🍏 Installer</a></p>
+         </div>
+      <h4 class="card-header" id="zowe-zos-build-download">Server-side components installer</h4>
       <div class="card-body">
-        <p class="card-text">Install Zowe z/OS components from the <b>convenience build</b>, the <b>SMP/E build</b>,
+        <p class="card-text">Manually install Zowe z/OS components from the <b>convenience build</b>, the <b>SMP/E build</b>,
           the <b> PSWI build </b> or the <b> containerization build </b> depending on your need.</p>
         <div class="row">
           <div class="card-body">
@@ -347,9 +369,9 @@
   {% if site.data.releases.v2[0].cli_version and site.data.releases.v2[0].cli_plugins_version and site.data.releases.v2[0].zos_version and site.data.releases.v2[0].smpe_version and site.data.releases.v2[0].node_sdk_version and site.data.releases.v2[0].python_sdk_version and site.data.releases.v2[0].zen_version %}
   <div class="card-deck">
     <div class="card bg-light border-light mb-3">
-      <h4 class="card-header" id="zowe-zos-build-download">Server-side component installer</h4>
+      <h4 class="card-header" id="zowe-zos-build-download">Server-side components installer</h4>
       <div class="card-body">
-        <p class="card-text">Install Zowe z/OS components from the <b>convenience build</b>, the <b>SMP/E build</b>,
+        <p class="card-text">Manually install Zowe z/OS components from the <b>convenience build</b>, the <b>SMP/E build</b>,
           the <b> PSWI build </b> or the <b> containerization build </b> depending on your need.</p>
         <div class="row">
           <div class="card-body">
@@ -548,31 +570,6 @@
       Test the latest Zowe features and provide feedback. Technical previews are <b>for testing only</b> and not ready
       for production.</p>
     <div class="card-deck">
-            <div class="card bg-light border-light mb-3">
-        <h4 class="card-header" id="zen">Zowe Server Install Wizard</h4>
-         <div class="card-body">
-          <p class="card-text">The Zowe Server Install Wizard (formerly known as ZEN) is a program you install on your PC (Windows/mac/linux). 
-         It is an optional alternative to the existing Zowe installation processes, designed to make installation quick and intuitive 
-         by guiding you through installing Zowe server content onto <b>z/OS</b>.
-         It handles <b>YAML</b>, <b>Unix</b>, and <b>JCL</b> content involved in setup of a Zowe instance 
-         so that you can install Zowe easily by following prompts and verifying the output.</p>
-          <h5 class="card-title">Direct download</h5>
-          <p><a class="btn btn-primary"
-                href="{{ site.zen_windows_download_url }}{{ site.data.releases.v2[0].zen_version }}">Zowe Server Install Wizard
-                {{ site.data.releases.v2[0].zen_version }} window Installer</a></p>
-          <p><a class="btn btn-primary"
-                href="{{ site.zen_unix_rpm_download_url }}{{ site.data.releases.v2[0].zen_version }}">Zowe Server Install Wizard
-                {{ site.data.releases.v2[0].zen_version }} linux.rpm</a></p>
-          <p><a class="btn btn-primary"
-                href="{{ site.zen_unix_deb_download_url }}{{ site.data.releases.v2[0].zen_version }}">Zowe Server Install Wizard
-                {{ site.data.releases.v2[0].zen_version }} linux.deb</a></p>
-          <p><a class="btn btn-primary"
-                href="{{ site.zen_mac_download_url }}{{ site.data.releases.v2[0].zen_version }}">Zowe Server Install Wizard
-                {{ site.data.releases.v2[0].zen_version }} mac Installer</a></p>
-          <div>
-          </div>
-         </div>         
-      </div> 
       <div class="card bg-light border-light mb-3">
         <h4 class="card-header" id="zowe-chat">Zowe Chat</h4>
          <div class="card-body">
@@ -619,7 +616,6 @@
           </div>    
         </div>   
      </div>    
-     </div>     
     </div>
 
     <h1 id="all-v3-releases">All Zowe V3.x Releases</h1>
