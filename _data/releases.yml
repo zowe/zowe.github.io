@@ -52,7 +52,7 @@ v2:
     cli_version: 2.18.2
     cli_plugins_version: 2.18.2
     explorer_version: 2.18.1
-    node_sdk_version: 2.18.1
+    node_sdk_version: 2.18.2
     python_sdk_version: 2.18.2
     release_date: 2025-03-27
     documentation: stable
