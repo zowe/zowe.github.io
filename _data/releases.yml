@@ -15,15 +15,15 @@ v3:
     smpe_sysmod: PTF
     smpe_numbers: UO90082 UO90083
     containerization_version: 3.1.0
-    cli_version: 3.1.0
-    cli_plugins_version: 3.1.0
+    cli_version: 3.1.1
+    cli_plugins_version: 3.1.1
     intellij_explorer_version: 3.1.0
     explorer_version: 3.1.0
-    node_sdk_version: 3.1.0
-    python_sdk_version: 3.1.0
+    node_sdk_version: 3.1.1
+    python_sdk_version: 3.1.1
     release_date: 2025-02-03
     documentation: stable
-    release_notes: v3_1_0
+    release_notes: v3_1_1
   - version: 3.0.0
     zos_version: 3.0.0
     smpe_version: 3.0.0
