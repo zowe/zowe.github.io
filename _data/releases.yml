@@ -27,8 +27,8 @@ v3:
   - version: 3.0.0
     zos_version: 3.0.0
     smpe_version: 3.0.0
-    smpe_sysmod:
-    smpe_numbers:
+    smpe_sysmod: FMID
+    smpe_numbers: AZWE003
     containerization_version: 3.0.0
     cli_version: 3.0.0
     cli_plugins_version: 3.0.0
