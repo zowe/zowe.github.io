@@ -2,8 +2,8 @@
 # Note - keep this in order as the latest release is pulled from the first item in the list!
 future:
   v3:
-    - version: 3.2.0
-      release_date: 2025-05-13
+    - version: 3.3.0
+      release_date: 2025-08-12
   v2:
     - version: 2.18.2
       release_date: 2025-08-29
