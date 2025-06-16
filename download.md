@@ -632,6 +632,7 @@
         <td></td>
         <td></td>
         <td></td>
+        <td></td>
       </tr>
     {% endfor %}
     {% for release in site.data.releases.v3 %}
@@ -648,6 +649,11 @@
           {% elsif release.smpe_version and release.smpe_sysmod %}
           <td><a href="{{site.smpe_download_url}}{{release.smpe_version}}">SMP/E {{release.smpe_sysmod}}
               {{release.smpe_numbers}}</a></td>
+          {% else %}
+          <td></td>
+          {% endif %}
+          {% if release.zos_version %}
+          <td><a href="{{site.pswi_download_uri}}{{release.zos_version}}">PSWI {{release.zos_version}}</a></td>
           {% else %}
           <td></td>
           {% endif %}
@@ -693,6 +699,7 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
   {% endfor %}
   {% for release in site.data.releases.v2 %}
@@ -709,6 +716,11 @@
         {% elsif release.smpe_version and release.smpe_sysmod %}
         <td><a href="{{site.smpe_download_url}}{{release.smpe_version}}">SMP/E {{release.smpe_sysmod}}
             {{release.smpe_numbers}}</a></td>
+        {% else %}
+        <td></td>
+        {% endif %}
+        {% if release.zos_version %}
+        <td><a href="{{site.pswi_download_uri}}{{release.zos_version}}">PSWI {{release.zos_version}}</a></td>
         {% else %}
         <td></td>
         {% endif %}
