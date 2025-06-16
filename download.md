@@ -30,12 +30,16 @@
     border-bottom: none;
   }
 
-  table.all-releases-zebra tr:nth-child(even) {
+  table.all-releases-zebra tr:nth-child(odd) {
     background-color: #ffffff;
   }
 
-  table.all-releases-zebra tr:nth-child(odd) {
+  table.all-releases-zebra tr:nth-child(even) {
     background-color: #f8f9fa;
+  }
+
+  table.all-releases-zebra tr:last-child {
+    border-bottom: 1px solid #dee2e6
   }
 
 </style>
