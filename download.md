@@ -22,6 +22,26 @@
     border-bottom: inherit;
   }
 
+  .details-container {
+    padding-bottom: 18px;
+  }
+
+  .details-container .card-header {
+    border-bottom: none;
+  }
+
+  table.all-releases-zebra tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  table.all-releases-zebra tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+
+  table.all-releases-zebra tr:last-child {
+    border-bottom: 1px solid #dee2e6
+  }
+
 </style>
 
 <section class="whitebackground">
@@ -620,13 +640,14 @@
 
     <h1 id="all-v3-releases">All Zowe V3.x Releases</h1>
     <p>Download releases of Zowe V3.x by version number. The future release dates are tentative and may change.</p>
-    <details>
-      <summary>Click to show V3.x Releases</summary>
+    <details class="details-container">
+      <summary class="card-header">Click to show V3.x Releases</summary>
     <div style="overflow-x: auto">
-      <table class="table table-hover table-sm">
+      <table class="table table-hover table-sm all-releases-zebra">
     {% for release in site.data.releases.future.v3 %}
       <tr>
         <td>Zowe {{release.version}} ({{release.release_date}})</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -648,6 +669,11 @@
           {% elsif release.smpe_version and release.smpe_sysmod %}
           <td><a href="{{site.smpe_download_url}}{{release.smpe_version}}">SMP/E {{release.smpe_sysmod}}
               {{release.smpe_numbers}}</a></td>
+          {% else %}
+          <td></td>
+          {% endif %}
+          {% if release.zos_version %}
+          <td><a href="{{site.pswi_download_uri}}{{release.zos_version}}">PSWI {{release.zos_version}}</a></td>
           {% else %}
           <td></td>
           {% endif %}
@@ -681,13 +707,14 @@
 
   <h1 id="all-v2-releases">All Zowe V2.x Releases</h1>
   <p>Download releases of Zowe V2.x by version number. The future release dates are tentative and may change.</p>
-  <details>
-    <summary>Click to show V2.x Releases</summary>
+  <details class="details-container">
+    <summary class="card-header">Click to show V2.x Releases</summary>
   <div style="overflow-x: auto">
-    <table class="table table-hover table-sm">
+    <table class="table table-hover table-sm all-releases-zebra">
   {% for release in site.data.releases.future.v2 %}
     <tr>
       <td>Zowe {{release.version}} ({{release.release_date}})</td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -709,6 +736,11 @@
         {% elsif release.smpe_version and release.smpe_sysmod %}
         <td><a href="{{site.smpe_download_url}}{{release.smpe_version}}">SMP/E {{release.smpe_sysmod}}
             {{release.smpe_numbers}}</a></td>
+        {% else %}
+        <td></td>
+        {% endif %}
+        {% if release.zos_version %}
+        <td><a href="{{site.pswi_download_uri}}{{release.zos_version}}">PSWI {{release.zos_version}}</a></td>
         {% else %}
         <td></td>
         {% endif %}
@@ -742,8 +774,8 @@
 
 <h1 id="all-v1-releases">All Zowe V1.x Releases</h1>
 <p>Download releases of Zowe V1.x by version number. V1.x is no longer updated or supported.</p>
-<details>
-  <summary>Click to show V1.x Releases</summary>
+<details class="details-container">
+  <summary class="card-header">Click to show V1.x Releases</summary>
 <p>
   Zowe version 1.0.0 through 1.8.0 are only available as rollup convenience builds. Zowe version 1.9.0 is the
   beginning of the Active Long-Term Support (LTS) release and it provides an SMP/E build with an FMID of AZWE001. The
@@ -753,7 +785,7 @@
 </p>
 
 <div style="overflow-x: auto">
-  <table class="table table-hover table-sm">
+  <table class="table table-hover table-sm all-releases-zebra">
 {% for release in site.data.releases.future.v1 %}
   <tr>
     <td>Zowe {{release.version}} ({{release.release_date}})</td>
