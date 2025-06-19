@@ -47,30 +47,6 @@
 
   <h3>V3 Release Stream</h3>
 
-  <h4>3.0</h4>
-  <ul>
-    <li>System Demo 2024, October 06</li>
-    <li>GA 2024, September 27</li>
-  </ul>
-
-  <h4>3.1.0</h4>
-  <ul>
-    <li>Code Freeze: January 02, 2025</li>
-    <li>RC Build: January 03, 2025</li>
-    <li>Testing: January 03, 2025 - February 02, 2025</li>
-    <li>GA: February 03, 2025</li>
-    <li>System Demo: February 11, 2025</li>
-  </ul>
-
-  <h4>3.2.0</h4>
-  <ul>
-    <li>Code Freeze: April 7, 2025</li>
-    <li>RC Build: April 8, 2025</li>
-    <li>Testing: April 8, 2025 - May 4, 2025</li>
-    <li>GA: May 5, 2025</li>
-    <li>System Demo: May 13, 2025</li>
-  </ul>
-
   <h4>3.3.0</h4>
   <ul>
     <li>Code Freeze: July 7, 2025</li>
@@ -118,14 +94,6 @@
 
   <h3>V2 Release Stream</h3>
 
-  <h4>2.18.1</h4>
-  <ul>
-    <li>Code Freeze: February 10, 2025</li>
-    <li>RC Build: February 11, 2025</li>
-    <li>Testing: February 11, 2025 - February 23, 2025</li>
-    <li>GA: February 24, 2025</li>
-  </ul>
-
   <h4>2.18.2</h4>
   <ul>
     <li>Code Freeze: August 15, 2025</li>
@@ -136,10 +104,10 @@
 
   <h4>2.18.3</h4>
   <ul>
-    <li>Code Freeze: February 09, 2026</li>
-    <li>RC Build: February 10, 2026</li>
-    <li>Testing: February 10, 2026 - February 22, 2026</li>
-    <li>GA: February 23, 2026</li>
+    <li>Code Freeze: November 17, 2025</li>
+    <li>RC Build: November 18, 2025</li>
+    <li>Testing: November 18, 2025 - December 1, 2025</li>
+    <li>GA: December 2, 2025</li>
   </ul>
 
   <h4>2.18.4</h4>
