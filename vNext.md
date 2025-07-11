@@ -49,11 +49,11 @@
 
   <h4>3.3.0</h4>
   <ul>
-    <li>Code Freeze: July 7, 2025</li>
-    <li>RC Build: July 8, 2025</li>
-    <li>Testing: July 8, 2025 - August 3, 2025</li>
-    <li>GA: August 4, 2025</li>
-    <li>System Demo: August 12, 2025</li>
+    <li>Code Freeze: July 21, 2025</li>
+    <li>RC Build: July 22, 2025</li>
+    <li>Testing: July 22, 2025 - August 17, 2025</li>
+    <li>GA: August 18, 2025</li>
+    <li>System Demo: August 26, 2025</li>
   </ul>
 
   <h4>3.4.0</h4>
@@ -96,10 +96,10 @@
 
   <h4>2.18.2</h4>
   <ul>
-    <li>Code Freeze: August 15, 2025</li>
-    <li>RC Build: August 15, 2025</li>
-    <li>Testing: August 16, 2025 - August 28, 2025</li>
-    <li>GA: August 29, 2025</li>
+    <li>Code Freeze: June 15, 2025</li>
+    <li>RC Build: June 15, 2025</li>
+    <li>Testing: June 16, 2025 - July 22, 2025</li>
+    <li>GA: July 22, 2025</li>
   </ul>
 
   <h4>2.18.3</h4>
