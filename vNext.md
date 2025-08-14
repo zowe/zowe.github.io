@@ -49,29 +49,29 @@
 
   <h4>3.3.0</h4>
   <ul>
-    <li>Code Freeze: July 21, 2025</li>
-    <li>RC Build: July 22, 2025</li>
-    <li>Testing: July 22, 2025 - August 17, 2025</li>
-    <li>GA: August 18, 2025</li>
-    <li>System Demo: August 26, 2025</li>
+    <li>Code Freeze: August 7, 2025</li>
+    <li>RC Build: August 8, 2025</li>
+    <li>Testing: August 8, 2025 - September 1, 2025</li>
+    <li>GA: September 2, 2025</li>
+    <li>System Demo: September 9, 2025</li>
   </ul>
 
   <h4>3.4.0</h4>
   <ul>
-    <li>Code Freeze: October 6, 2025</li>
-    <li>RC Build: October 7, 2025</li>
-    <li>Testing: October 7, 2025 - November 2, 2025</li>
-    <li>GA: November 3, 2025</li>
-    <li>System Demo: November 11, 2025</li>
+    <li>Code Freeze: October 20, 2025</li>
+    <li>RC Build: October 21, 2025</li>
+    <li>Testing: October 21, 2025 - November 17, 2025</li>
+    <li>GA: November 17, 2025</li>
+    <li>System Demo: November 25, 2025</li>
   </ul>
 
   <h4>3.5.0</h4>
   <ul>
-    <li>Code Freeze: January 5, 2026</li>
-    <li>RC Build: January 6, 2026</li>
-    <li>Testing: January 6, 2026 - February 1, 2026</li>
-    <li>GA: February 2, 2026</li>
-    <li>System Demo: February 10, 2026</li>
+    <li>Code Freeze: February 2, 2026</li>
+    <li>RC Build: February 3, 2026</li>
+    <li>Testing: February 3, 2026 - March 1, 2026</li>
+    <li>GA: March 2, 2026</li>
+    <li>System Demo: March 10, 2026</li>
   </ul>
 
   <h4>3.6.0</h4>
@@ -94,20 +94,12 @@
 
   <h3>V2 Release Stream</h3>
 
-  <h4>2.18.2</h4>
-  <ul>
-    <li>Code Freeze: June 15, 2025</li>
-    <li>RC Build: June 15, 2025</li>
-    <li>Testing: June 16, 2025 - July 22, 2025</li>
-    <li>GA: July 22, 2025</li>
-  </ul>
-
   <h4>2.18.3</h4>
   <ul>
-    <li>Code Freeze: November 17, 2025</li>
-    <li>RC Build: November 18, 2025</li>
-    <li>Testing: November 18, 2025 - December 1, 2025</li>
-    <li>GA: December 2, 2025</li>
+    <li>Code Freeze: January 12, 2025</li>
+    <li>RC Build: January 13, 2025</li>
+    <li>Testing: January 13, 2025 - February 1, 2025</li>
+    <li>GA: February 2, 2025</li>
   </ul>
 
   <h4>2.18.4</h4>
@@ -126,4 +118,5 @@
     <li>GA: February 22, 2027</li>
   </ul>
 </section>
+
 
