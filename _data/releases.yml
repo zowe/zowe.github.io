@@ -2,13 +2,28 @@
 # Note - keep this in order as the latest release is pulled from the first item in the list!
 future:
   v3:
-    - version: 3.3.0
-      release_date: 2025-08-12
+    - version: 3.4.0
+      release_date: 2025-11-17
   v2:
     - version: 2.18.3
       release_date: 2025-12-02
     
 v3:
+  - version: 3.3.0
+    zos_version: 3.3.0
+    smpe_version: 3.3.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO03548 UO03549
+    containerization_version: 3.3.0
+    cli_version: 3.3.0
+    cli_plugins_version: 3.3.0
+    intellij_explorer_version: 3.3.0
+    explorer_version: 3.3.0
+    node_sdk_version: 3.3.0
+    python_sdk_version: 3.3.0
+    release_date: 2025-09-09
+    documentation: stable
+    release_notes: v3_3_0
   - version: 3.2.0
     zos_version: 3.2.0
     smpe_version: 3.2.0
@@ -22,7 +37,7 @@ v3:
     node_sdk_version: 3.2.0
     python_sdk_version: 3.2.0
     release_date: 2025-05-09
-    documentation: stable
+    documentation: v3.2.x
     release_notes: v3_2_0
   - version: 3.1.0
     zos_version: 3.1.0
