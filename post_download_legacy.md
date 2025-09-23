@@ -7,8 +7,17 @@ extraJs: post-download-script-legacy.html
     <h1 class="title" id="page_title">Thank you for downloading the Zowe binary</h1>
     <p>
         If you had an issue or your download did not start, please <strong><a id="download_link" href="legal.html">click
-                here</a></strong> to try again.
+                here</a></strong> to try again or copy the following URL to your browser: 
+        <span id="download_url_display"></span>
     </p>
+    <script>
+        // Retrieve the download URL from localStorage
+        const lastDownloadURL = localStorage.getItem('zowe-last-download-url') || 'No download started yet.';
+        const urlDisplay = document.getElementById('download_url_display');
+        if (urlDisplay) {
+            urlDisplay.textContent = lastDownloadURL; // Display the URL
+        }
+    </script>
     <details>
         <summary id='verify_drop'><b>Verify Hash and Signature of Zowe Binary</b></summary>
         <p>These commands are tested on both <strong>Mac OS X v10.13.6</strong> and <strong>Ubuntu v17.11.</strong></p>
