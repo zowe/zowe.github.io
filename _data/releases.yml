@@ -10,11 +10,11 @@ future:
     
 v3:
   - version: 3.3.0
-    zos_version: 3.3.0
-    smpe_version: 3.3.0
+    zos_version: 3.3.1
+    smpe_version: 3.3.1
     smpe_sysmod: PTF
-    smpe_numbers: UO03548 UO03549
-    containerization_version: 3.3.0
+    smpe_numbers: UO03552 UO03553
+    containerization_version: 3.3.1
     cli_version: 3.3.0
     cli_plugins_version: 3.3.0
     intellij_explorer_version: 3.3.0
