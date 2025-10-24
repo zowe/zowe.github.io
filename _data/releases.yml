@@ -9,12 +9,27 @@ future:
       release_date: 2025-12-02
     
 v3:
-  - version: 3.3.0
+  - version: 3.3.1
     zos_version: 3.3.1
     smpe_version: 3.3.1
     smpe_sysmod: PTF
     smpe_numbers: UO03552 UO03553
     containerization_version: 3.3.1
+    cli_version: 3.3.1
+    cli_plugins_version: 3.3.1
+    intellij_explorer_version: 3.3.0
+    explorer_version: 3.3.0
+    node_sdk_version: 3.3.1
+    python_sdk_version: 3.3.1
+    release_date: 2025-10-24
+    documentation: stable
+    release_notes: v3_3_1
+  - version: 3.3.0
+    zos_version: 3.3.0
+    smpe_version: 3.3.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO03548 UO03549
+    containerization_version: 3.3.0
     cli_version: 3.3.0
     cli_plugins_version: 3.3.0
     intellij_explorer_version: 3.3.0
