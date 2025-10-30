@@ -26,7 +26,6 @@ cli_plugins_download_url: legal.html?type=cli-plugins&version=
 cli_active_development_download_url: legal.html?type=cli-active-development&version=
 smpe_download_url: legal.html?type=smpe&version=
 pswi_download_uri: legal.html?type=pswi&version=
-zowe_chat_download_url: legal.html?type=chat&version=tp1
 zen_windows_download_url: legal.html?type=zen-windows&version=
 zen_mac_download_url: legal.html?type=zen-mac&version=
 zen_unix_rpm_download_url: legal.html?type=zen-rpm&version=
@@ -95,9 +94,6 @@ workflow_wizard_doc_url: https://github.com/zowe/workflow-wizard/raw/main/doc/Wo
 intellij_github_url: https://github.com/zowe/zowe-explorer-intellij
 intellij_slack_url: https://join.slack.com/t/iba-mainframe-tools/shared_invite/zt-pejbtt4j-l7KuizvDedJSCxwGtxmMBg
 intellij_doc_url: https://plugins.jetbrains.com/plugin/18688-zowe-explorer
-chat_github_url: https://github.com/zowe/zowe-chat
-chat_slack_url: https://openmainframeproject.slack.com/archives/C03NNABMN0J
-chat_doc_url: https://docs.zowe.org/stable/getting-started/overview#zowe-chat-technical-preview
 zowe_video_deck_url: https://docs.zowe.org/Zowe_introduction_video_deck.pptx
 zowe_video_transcript_url: https://docs.zowe.org/Zowe_introduction_video_script.txt
 learn_page_get_started: https://docs.zowe.org/stable/getting-started/overview.html
