@@ -52,6 +52,100 @@
         Zowe has both server and client components, which you can install independently. Download the latest installer
         to install Zowe on the z/OS server, on your computer, or both. Start your journey with Zowe today!
       </p>
+      <div class="card-text">
+        <h3>Technological Pre-requisites for Zowe 3.3 Server Side</h3>
+        <table>
+          <tr>
+            <th>Name of the technology</td>
+            <th>State</td>
+          </tr>
+          <tr>
+            <td>zOS</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2.5</td>
+            <td>Contributors</td>
+          </tr>
+          <tr>
+            <td>3.1</td>
+            <td>CICD</td>
+          </tr>
+          <tr>
+            <td>3.2</td>
+            <td>Contributors</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Not Supported</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Not Supported</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>CICD</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>Contributors</td>
+          </tr>
+          <tr>
+            <td>Node.js</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>Contributors</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>Contributors</td>
+          </tr>
+        </table>
+      </div>
+      <div class="card-text">
+        <h3>Technological Features for Zowe 3.3 Server Side</h3>
+        <table>
+          <tr>
+            <th>Name of the technology</th>
+            <th>State</th>
+          </tr>
+          <tr>
+            <td>TLS</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>AT-TLS</td>
+            <td>CICD</td>
+          </tr>
+          <tr>
+            <td>1.2</td>
+            <td>CICD</td>
+          </tr>
+          <tr>
+            <td>1.3</td>
+            <td>Not Supported</td>
+          </tr>
+          <tr>
+            <td>IP</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>V4</td>
+            <td>CICD</td>
+          </tr>
+          <tr>
+            <td>V6</td>
+            <td>Not Supported</td>
+          </tr>
+        </table>
+      </div>
       <p>
         <div class="d-flex flex-column">
           <a href="#download-v3" class="card-link" style="margin-left: 1.25rem">
