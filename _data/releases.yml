@@ -92,7 +92,7 @@ v2:
     smpe_version: 2.18.3
     pswi_version: 2.18.3
     smpe_sysmod: PTF
-    smpe_numbers: UO90076 UO90077
+    smpe_numbers: UO90078 UO90079
     containerization_version: 2.18.3
     cli_version: 2.18.3
     cli_plugins_version: 2.18.3
