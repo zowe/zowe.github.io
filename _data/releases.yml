@@ -99,7 +99,7 @@ v2:
     explorer_version: 2.18.3
     node_sdk_version: 2.18.3
     python_sdk_version: 2.18.3
-    release_date: 2025-07-23
+    release_date: 2025-10-31
     documentation: stable
     release_notes: v2_18_3
   - version: 2.18.2
@@ -115,7 +115,7 @@ v2:
     explorer_version: 2.18.2
     node_sdk_version: 2.18.2
     python_sdk_version: 2.18.2
-    release_date: 2025-10-31
+    release_date: 2025-07-23
     documentation: v2.18.x
     release_notes: v2_18_2
   - version: 2.18.1
