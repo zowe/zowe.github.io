@@ -52,8 +52,8 @@
     <li>Code Freeze: November 3, 2025</li>
     <li>RC Build: November 10, 2025</li>
     <li>Testing: November 11, 2025 - December 1, 2025</li>
-    <li>GA: December 1, 2025</li>
-    <li>System Demo: December 9, 2025</li>
+    <li>GA: December 8, 2025</li>
+    <li>System Demo: December 16, 2025</li>
   </ul>
 
   <h4>3.5.0</h4>
@@ -109,6 +109,7 @@
     <li>GA: February 22, 2027</li>
   </ul>
 </section>
+
 
 
 
