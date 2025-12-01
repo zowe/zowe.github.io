@@ -94,11 +94,11 @@ v2:
     smpe_sysmod: PTF
     smpe_numbers: UO90078 UO90079
     containerization_version: 2.18.3
-    cli_version: 2.18.3
-    cli_plugins_version: 2.18.3
-    explorer_version: 2.18.3
-    node_sdk_version: 2.18.3
-    python_sdk_version: 2.18.3
+    cli_version: 2.18.4
+    cli_plugins_version: 2.18.4
+    explorer_version: 2.18.4
+    node_sdk_version: 2.18.4
+    python_sdk_version: 2.18.4
     release_date: 2025-10-31
     documentation: stable
     release_notes: v2_18_3
