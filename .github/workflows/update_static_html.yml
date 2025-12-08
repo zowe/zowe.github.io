@@ -10,7 +10,6 @@ on:
     branches:
       - master
     
-    
 jobs:
 
   check-permission:
@@ -44,6 +43,10 @@ jobs:
 
     - name: Build site
       uses: actions/jekyll-build-pages@v1
+
+    - name: Print jekyll version
+      uses: zowe-actions/shared-actions/prepare-workflow@main
+
 
     - name: Publish Release to Artifactory
       uses: zowe-actions/shared-actions/publish@main
