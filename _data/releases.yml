@@ -2,8 +2,8 @@
 # Note - keep this in order as the latest release is pulled from the first item in the list!
 future:
   v3:
-    - version: 3.4.0
-      release_date: 2025-12-01
+    - version: 3.5.0
+      release_date: 2026-05-12
   v2:
     - version: 2.18.4
       release_date: 2026-08-31
@@ -21,7 +21,7 @@ v3:
     explorer_version: 3.4.0
     node_sdk_version: 3.4.0
     python_sdk_version: 3.4.0
-    release_date: 2025-01-06
+    release_date: 2026-01-06
     documentation: stable
     release_notes: v3_4_0
   - version: 3.3.1
