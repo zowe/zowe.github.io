@@ -11,22 +11,6 @@
 </section>
 
 <section class="bluebackground">
-  <h2>Quarters</h2>
-
-  <ul>
-    <li>24PI3 - (July 23, 2024 - October 21, 2024)</li>
-    <li>24PI4 - (October 22, 2024 - February 03, 2025)</li>
-    <li>25PI1 - (February 4, 2025 - May 5, 2025)</li>
-    <li>25PI2 - (May 6, 2025 - August 4, 2025)</li>
-    <li>25PI3 - (August 5, 2025 - November 3, 2025)</li>
-    <li>25PI4 - (November 4, 2025 - February 2, 2026)</li>
-    <li>26PI1 - (February 3, 2026 - May 4, 2026)</li>
-    <li>26PI2 - (May 5, 2026 - August 3, 2026)</li>
-    <li>26PI3 - (August 4, 2026 - November 2, 2026)</li>
-  </ul>
-</section>
-
-<section class="whitebackground">
   <h2>Roadmaps</h2>
 
   <ul>
@@ -49,15 +33,6 @@
 
   <h4>3.5.0</h4>
   <ul>
-    <li>Code Freeze: February 2, 2026</li>
-    <li>RC Build: February 3, 2026</li>
-    <li>Testing: February 3, 2026 - March 1, 2026</li>
-    <li>GA: March 2, 2026</li>
-    <li>System Demo: March 10, 2026</li>
-  </ul>
-
-  <h4>3.6.0</h4>
-  <ul>
     <li>Code Freeze: April 6, 2026</li>
     <li>RC Build: April 7, 2026</li>
     <li>Testing: April 7, 2026 - May 3, 2026</li>
@@ -65,7 +40,7 @@
     <li>System Demo: May 12, 2026</li>
   </ul>
 
-  <h4>3.7.0</h4>
+  <h4>3.6.0</h4>
   <ul>
     <li>Code Freeze: July 6, 2026</li>
     <li>RC Build: July 7, 2026</li>
@@ -74,15 +49,34 @@
     <li>System Demo: August 11, 2026</li>
   </ul>
 
-  <h3>V2 Release Stream</h3>
-
-  <h4>2.18.3</h4>
+  <h4>3.7.0</h4>
   <ul>
-    <li>Code Freeze: September 19, 2025</li>
-    <li>RC Build: September 23, 2025</li>
-    <li>Testing: September 23, 2025 - October 31, 2025</li>
-    <li>GA: October 31, 2025</li>
+    <li>Code Freeze: September 29 6, 2026</li>
+    <li>RC Build: September 30, 2026</li>
+    <li>Testing: September 30, 2026 - October 25, 2026</li>
+    <li>GA: October 26, 2026</li>
+    <li>System Demo: November 3, 2026</li>
   </ul>
+
+  <h4>3.8.0</h4>
+  <ul>
+    <li>Code Freeze: January 4, 2027</li>
+    <li>RC Build: January 5, 2027</li>
+    <li>Testing: January 5, 2027 - January 31, 2027</li>
+    <li>GA: February 1, 2027</li>
+    <li>System Demo: February 9, 2027</li>
+  </ul>
+
+  <h4>3.9.0</h4>
+  <ul>
+    <li>Code Freeze: March 22, 2027</li>
+    <li>RC Build: March 23, 2027</li>
+    <li>Testing: March 23, 2027 - April 18, 2027</li>
+    <li>GA: April 19, 2027</li>
+    <li>System Demo: April 27, 2027</li>
+  </ul>
+
+  <h3>V2 Release Stream</h3>
 
   <h4>2.18.4</h4>
   <ul>
