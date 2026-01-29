@@ -86,6 +86,25 @@ redirect_from:
   {% assign announcements = version_v3_announcements | concat: announcements %}
 {% endif %}
 
+{% comment %}
+Re-order announcements by priority. Supports 'priority' and 'until' fields in announcements.yml. The only priority is 'high' right now, and 'until' should be formatted as 'YYYY-MM-DD'.
+{% endcomment %}
+{% assign temp_announcements = announcements %}
+{% assign announcements = "" | split: "," %}
+{% for announcement in temp_announcements %} 
+  {% if announcement.priority == 'high' %}
+    {% assign priority_until_date = announcement.until | date: '%s' | plus: 0 %}
+    {% if priority_until_date > currentTime %}
+      {% assign announcements = announcement | concat: announcements %}
+    {% else %}
+      {% assign announcements = announcements | push: announcement %}
+    {% endif %}
+  {% else %}
+    {% assign announcements = announcements | push: announcement %}
+  {% endif %}
+{% endfor %}
+
+
 <div class="announcementsection row" style="padding-left: 5%">
   <div class="row" style="margin-left: 0px; margin-right: 0px; width: 100%" >
     <div class="col-12 col-md-2">

@@ -78,7 +78,7 @@
 
   <h3>V2 Release Stream</h3>
 
-  <h4>2.18.4</h4>
+  <h4>2.18.5</h4>
   <ul>
     <li>Code Freeze: August 17, 2026</li>
     <li>RC Build: August 18, 2026</li>
@@ -86,7 +86,7 @@
     <li>GA: August 31, 2026</li>
   </ul>
 
-  <h4>2.18.5</h4>
+  <h4>2.18.6</h4>
   <ul>
     <li>Code Freeze: February 08, 2027</li>
     <li>RC Build: February 09, 2027</li>
