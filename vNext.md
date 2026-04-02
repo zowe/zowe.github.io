@@ -33,11 +33,11 @@
 
   <h4>3.5.0</h4>
   <ul>
-    <li>Code Freeze: April 6, 2026</li>
-    <li>RC Build: April 7, 2026</li>
-    <li>Testing: April 7, 2026 - May 3, 2026</li>
-    <li>GA: May 4, 2026</li>
-    <li>System Demo: May 12, 2026</li>
+    <li>Code Freeze: April 20, 2026</li>
+    <li>RC Build: April 21, 2026</li>
+    <li>Testing: April 21, 2026 - May 17, 2026</li>
+    <li>GA: May 18, 2026</li>
+    <li>System Demo: May 26, 2026</li>
   </ul>
 
   <h4>3.6.0</h4>
