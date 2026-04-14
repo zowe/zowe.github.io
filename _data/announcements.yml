@@ -1,3 +1,6 @@
 # Announcements
 # Links need to be shared within announcement in the HTML form e.g. <a href='url'>text visible for user</a>
+- announcement: "Zowe 3.4.1 and 2.18.4 are now available with critical fixes for z/OSMF compatibility."
+  priority: high
+  until: 2026-02-10
 - announcement: "Stay informed, join our <a href='https://lists.openmainframeproject.org/g/zowe-user'>Zowe User mailing list</a> today"

@@ -57,19 +57,25 @@
     }
 
     function hasBundle(packageType, packageVersion) {
+        const versionParts = packageVersion.split('.');
+        const major = Number(versionParts[0]);
+        const minor = Number(versionParts[1]);
+        const patch = Number(versionParts[3]);
         switch(packageType) {
             case 'smpe':
             case 'containerization':
             case 'pswi':
             case 'pax':
-                if (packageVersion.startsWith("2.18") || packageVersion.startsWith("3.0")) {
+                if ((major === 2 && minor >= 18 ) || major >= 3) {
                     return true;
                 }
-                return false;
             case 'cli':
             case 'cli-plugins':
             case 'python-sdk':
             case 'nodejs-sdk':
+                if ((major === 2 && minor >= 18 && patch >= 1) || (major == 3 && minor >=1)) {
+                    return true;
+                }
             default:
                 return false;
         }

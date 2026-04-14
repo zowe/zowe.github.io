@@ -2,13 +2,43 @@
 # Note - keep this in order as the latest release is pulled from the first item in the list!
 future:
   v3:
-    - version: 3.4.0
-      release_date: 2025-12-01
+    - version: 3.5.0
+      release_date: 2026-05-04
   v2:
-    - version: 2.18.4
+    - version: 2.18.5
       release_date: 2026-08-31
     
 v3:
+  - version: 3.4.1
+    zos_version: 3.4.1
+    smpe_version: 3.4.1
+    smpe_sysmod: PTF
+    smpe_numbers: UO03573 UO03574
+    containerization_version: 3.4.1
+    cli_version: 3.4.1
+    cli_plugins_version: 3.4.1
+    intellij_explorer_version: 3.4.1
+    explorer_version: 3.4.1
+    node_sdk_version: 3.4.1
+    python_sdk_version: 3.4.1
+    release_date: 2026-01-29
+    documentation: stable
+    release_notes: v3_4_1
+  - version: 3.4.0
+    zos_version: 3.4.0
+    smpe_version: 3.4.0
+    smpe_sysmod: PTF
+    smpe_numbers: UO03567 UO03568
+    containerization_version: 3.4.0
+    cli_version: 3.4.0
+    cli_plugins_version: 3.4.0
+    intellij_explorer_version: 3.4.0
+    explorer_version: 3.4.0
+    node_sdk_version: 3.4.0
+    python_sdk_version: 3.4.0
+    release_date: 2026-01-06
+    documentation: stable
+    release_notes: v3_4_0
   - version: 3.3.1
     zos_version: 3.3.1
     smpe_version: 3.3.1
@@ -22,7 +52,7 @@ v3:
     node_sdk_version: 3.3.1
     python_sdk_version: 3.3.1
     release_date: 2025-10-24
-    documentation: stable
+    documentation: v3.3.x
     release_notes: v3_3_1
   - version: 3.3.0
     zos_version: 3.3.0
@@ -37,7 +67,7 @@ v3:
     node_sdk_version: 3.3.0
     python_sdk_version: 3.3.0
     release_date: 2025-09-09
-    documentation: stable
+    documentation: v3.3.x
     release_notes: v3_3_0
   - version: 3.2.0
     zos_version: 3.2.0
@@ -86,6 +116,22 @@ v3:
     release_notes: v3_0_0
 
 v2: 
+  - version: 2.18.4
+    zen_version: 1.1.0
+    zos_version: 2.18.4
+    smpe_version: 2.18.4
+    pswi_version: 2.18.4
+    smpe_sysmod: PTF
+    smpe_numbers: UO03613 UO03614
+    containerization_version: 2.18.4
+    cli_version: 2.18.5
+    cli_plugins_version: 2.18.5
+    explorer_version: 2.18.5
+    node_sdk_version: 2.18.5
+    python_sdk_version: 2.18.5
+    release_date: 2026-01-29
+    documentation: stable
+    release_notes: v2_18_4
   - version: 2.18.3
     zen_version: 1.1.0
     zos_version: 2.18.3
@@ -94,13 +140,13 @@ v2:
     smpe_sysmod: PTF
     smpe_numbers: UO90078 UO90079
     containerization_version: 2.18.3
-    cli_version: 2.18.3
-    cli_plugins_version: 2.18.3
-    explorer_version: 2.18.3
-    node_sdk_version: 2.18.3
-    python_sdk_version: 2.18.3
+    cli_version: 2.18.4
+    cli_plugins_version: 2.18.4
+    explorer_version: 2.18.4
+    node_sdk_version: 2.18.4
+    python_sdk_version: 2.18.4
     release_date: 2025-10-31
-    documentation: stable
+    documentation: v2.18.x
     release_notes: v2_18_3
   - version: 2.18.2
     zen_version: 1.1.0

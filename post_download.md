@@ -34,7 +34,7 @@ extraJs: [common.html, post-download-script.html]
 
         <code>Verified OK</code><br /><br />
 
-        If the veritication failed, you will see:<br />
+        If the verification failed, you will see:<br />
 
         <code>Error: error verifying bundle: matching bundle to payload: ....more output</code>
         <br /><br />
@@ -54,7 +54,7 @@ extraJs: [common.html, post-download-script.html]
 
         <code>Verified OK</code><br /><br />
 
-        If the veritication failed, you will see:<br />
+        If the verification failed, you will see:<br />
 
         <code>Error: error verifying bundle: matching bundle to payload: ....more output</code>
     </details>
@@ -75,7 +75,7 @@ extraJs: [common.html, post-download-script.html]
         <ul id="sbom_bundle_download_options"></ul>
 
         <p id="sbom_verification_instructions">See the <a href="#prereqs">How to verify binaries with digital signatures</a> to acquire the pre-requisite software,
-             and for a description of online vs offline verficiation. Once you've reviewed that information, you can use the one of the below commands to digitally verify the SBOM. Each command assumes your SBOM and its respective signing bundle are in the same directory, and you have navigate your terminal there.</p>
+             and for a description of online vs offline verification. Once you've reviewed that information, you can use the one of the below commands to digitally verify the SBOM. Each command assumes your SBOM and its respective signing bundle are in the same directory, and you have navigate your terminal there.</p>
 
         <b>Online Verification</b><br />
         <code id="sbom_online_verification"></code>
