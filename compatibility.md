@@ -5,139 +5,147 @@
 <!-- Copyright Contributors to the Zowe project. -->
 
 <style>
-  #menu-download a.nav-link {
+  #menu-compatibility a.nav-link {
     background-color: #eeeeee;
     color: black !important;
   }
 
-  #menu-download.nav-item {
+  #menu-compatibility.nav-item {
     background-color: #eeeeee;
   }
 
-  .card-body {
-    border-bottom: 1px solid lightgray;
+  .compatibility-table th {
+    background-color: #145391;
+    color: white;
+    font-weight: 600;
+    border: 1px solid #0e3f73;
+    white-space: nowrap;
   }
 
-  .card-body:last-of-type {
-    border-bottom: inherit;
+  .compatibility-table .section-header td {
+    background-color: #1a6bb5;
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border: 1px solid #0e3f73;
   }
 
-  .details-container {
-    padding-bottom: 18px;
+  .compatibility-table td {
+    vertical-align: middle;
+    border: 1px solid #dee2e6;
   }
 
-  .details-container .card-header {
-    border-bottom: none;
-  }
-
-  table.all-releases-zebra tr:nth-child(odd) {
+  .compatibility-table tbody tr:not(.section-header):nth-child(odd) {
     background-color: #ffffff;
   }
 
-  table.all-releases-zebra tr:nth-child(even) {
+  .compatibility-table tbody tr:not(.section-header):nth-child(even) {
     background-color: #f8f9fa;
   }
 
-  table.all-releases-zebra tr:last-child {
-    border-bottom: 1px solid #dee2e6
+  .compatibility-table tbody tr:not(.section-header):hover {
+    background-color: #e9ecef;
   }
 
+  .badge-automated {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 0.2em 0.55em;
+    border-radius: 0.25rem;
+    font-size: 0.82em;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .badge-community {
+    display: inline-block;
+    background-color: #17a2b8;
+    color: white;
+    padding: 0.2em 0.55em;
+    border-radius: 0.25rem;
+    font-size: 0.82em;
+    font-weight: 600;
+    white-space: nowrap;
+  }
 </style>
 
 <section class="whitebackground">
   <h1>Compatibility Matrix</h1>
-  <p>Validate whether your z/OS environment meet the necessary pre-requisites to operate Zowe server side</p>
-  <table>
-    <tr>
-      <td>
-        z/OS
-      </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>
-        2.5
-      </td>
-      <td>&gt! 2.13</td>
-      <td>Automated Testing by Community</td>
-    </tr>
-    <tr>
-      <td>
-        3.1
-      </td>
-      <td>&gt! 2.18.2</td>
-      <td>Tested by Community Member</td>
-    </tr>
-    <tr>
-      <td>
-        3.2
-      </td>
-      <td>&gt!= 3.3</td>
-      <td>Tested by Community Member</td>
-    </tr>
-    <tr>
-      <td>
-        Java
-      </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>
-        8
-      </td>
-      <td>&gt! 2.0 , &lt! 3.0</td>
-      <td>Automated Testing by Community</td>
-    </tr>
-    <tr>
-      <td>
-        11
-      </td>
-      <td>&gt! 2.0 , &lt! 3.0</td>
-      <td>Automated Testing by Community</td>
-    </tr>
-    <tr>
-      <td>
-        17
-      </td>
-      <td>&gt! 2.15</td>
-      <td>Automated Testing by Community</td>
-    </tr>
-    <tr>
-      <td>
-        21
-      </td>
-      <td>&gt! 3.3</td>
-      <td>Tested by Community Member</td>
-    </tr>    
-    <tr>
-      <td>
-        Node.js
-      </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>
-        20
-      </td>
-      <td>&gt! 2.13</td>
-      <td>Automated Testing by Community</td>
-    </tr>    
-    <tr>
-      <td>
-        22
-      </td>
-      <td>&gt! 3.0</td>
-      <td>Automated Testing by Community</td>
-    </tr>    
-    <tr>
-      <td>
-        24
-      </td>
-      <td>&gt! 3.3</td>
-      <td>Tested by Community Member</td>
-    </tr>    
-  </table>
+  <p>Validate whether your z/OS environment meets the necessary prerequisites to operate Zowe server side.</p>
+
+  <div style="overflow-x: auto">
+    <table class="table table-bordered table-sm compatibility-table">
+      <thead>
+        <tr>
+          <th>Version</th>
+          <th>Zowe Version Constraint</th>
+          <th>Testing Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="section-header">
+          <td colspan="3">z/OS</td>
+        </tr>
+        <tr>
+          <td>2.5</td>
+          <td>&gt;= 2.13</td>
+          <td><span class="badge-automated">Automated Testing by Community</span></td>
+        </tr>
+        <tr>
+          <td>3.1</td>
+          <td>&gt;= 2.18.2</td>
+          <td><span class="badge-community">Tested by Community Member</span></td>
+        </tr>
+        <tr>
+          <td>3.2</td>
+          <td>&gt;= 3.3</td>
+          <td><span class="badge-community">Tested by Community Member</span></td>
+        </tr>
+        <tr class="section-header">
+          <td colspan="3">Java</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>&gt;= 2.0, &lt; 3.0</td>
+          <td><span class="badge-automated">Automated Testing by Community</span></td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>&gt;= 2.0, &lt; 3.0</td>
+          <td><span class="badge-automated">Automated Testing by Community</span></td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>&gt;= 2.15</td>
+          <td><span class="badge-automated">Automated Testing by Community</span></td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>&gt;= 3.3</td>
+          <td><span class="badge-community">Tested by Community Member</span></td>
+        </tr>
+        <tr class="section-header">
+          <td colspan="3">Node.js</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>&gt;= 2.13</td>
+          <td><span class="badge-automated">Automated Testing by Community</span></td>
+        </tr>
+        <tr>
+          <td>22</td>
+          <td>&gt;= 3.0</td>
+          <td><span class="badge-automated">Automated Testing by Community</span></td>
+        </tr>
+        <tr>
+          <td>24</td>
+          <td>&gt;= 3.3</td>
+          <td><span class="badge-community">Tested by Community Member</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </section>
