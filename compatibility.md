@@ -130,13 +130,13 @@
         </tr>
         <tr>
           <td>8</td>
-          <td>&gt;= 2.0</td>
+          <td>All Versions</td>
           <td><span class="compat-nosupport">✗</span></td>
           <td><span class="badge-automated">Automated Testing by Community</span></td>
         </tr>
         <tr>
           <td>11</td>
-          <td>&gt;= 2.0</td>
+          <td>All Versions</td>
           <td><span class="compat-nosupport">✗</span></td>
           <td><span class="badge-automated">Automated Testing by Community</span></td>
         </tr>
