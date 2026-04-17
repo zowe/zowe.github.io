@@ -70,18 +70,29 @@
     font-weight: 600;
     white-space: nowrap;
   }
+
+  .badge-nosupport {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 0.2em 0.55em;
+    border-radius: 0.25rem;
+    font-size: 0.82em;
+    font-weight: 600;
+    white-space: nowrap;
+  }
 </style>
 
 <section class="whitebackground">
   <h1>Compatibility Matrix</h1>
-  <p>Validate whether your z/OS environment meets the necessary prerequisites to operate Zowe server side.</p>
+  <p>Validate whether your z/OS environment meets the necessary prerequisites to operate Zowe server side. If you are looking for a version that used to be here, but that is not here anymore, it is possible that the version of the pre-req is not supported and as such Zowe does not continue supporting it either. </p>
 
   <div style="overflow-x: auto">
     <table class="table table-bordered table-sm compatibility-table">
       <thead>
         <tr>
           <th>Version</th>
-          <th>Zowe Version Constraint</th>
+          <th>Zowe Version Compatibility</th>
           <th>Testing Status</th>
         </tr>
       </thead>
@@ -124,8 +135,13 @@
         </tr>
         <tr>
           <td>21</td>
-          <td>&gt;= 3.3</td>
+          <td>&gt;= 3.3 &gt;= 2.18.5</td>
           <td><span class="badge-community">Tested by Community Member</span></td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td></td>
+          <td><span class="badge-nosupport">No Support Yet</span></td>
         </tr>
         <tr class="section-header">
           <td colspan="3">Node.js</td>
