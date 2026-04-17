@@ -85,7 +85,7 @@
 
 <section class="whitebackground">
   <h1>Compatibility Matrix</h1>
-  <p>Validate whether your z/OS environment meets the necessary prerequisites to operate Zowe server side. If you are looking for a version that used to be here, but that is not here anymore, it is possible that the version of the pre-req is not supported and as such Zowe does not continue supporting it either. </p>
+  <p>Validate whether your z/OS environment meets the necessary prerequisites to operate Zowe server side. In the case of z/OS, Java, Node.js we had older versions that we used to support and no longer support.</p>
 
   <div style="overflow-x: auto">
     <table class="table table-bordered table-sm compatibility-table">
@@ -164,4 +164,7 @@
       </tbody>
     </table>
   </div>
+
+  <h2>Looking for something else?</h2>
+  <p>Let us know <a href="https://github.com/zowe/community/issues/new?template=zowe-org-request.md">here</a> by opening new issue. </p>
 </section>
