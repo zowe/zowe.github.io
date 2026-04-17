@@ -42,48 +42,39 @@
 
   <h4>3.6.0</h4>
   <ul>
-    <li>Code Freeze: July 6, 2026</li>
-    <li>RC Build: July 7, 2026</li>
-    <li>Testing: July 7, 2026 - August 2, 2026</li>
-    <li>GA: August 3, 2026</li>
-    <li>System Demo: August 11, 2026</li>
+    <li>Code Freeze: July 20, 2026</li>
+    <li>RC Build: July 21, 2026</li>
+    <li>Testing: July 21, 2026 - August 16, 2026</li>
+    <li>GA: August 17, 2026</li>
+    <li>System Demo: August 25, 2026</li>
   </ul>
 
   <h4>3.7.0</h4>
   <ul>
-    <li>Code Freeze: September 29 6, 2026</li>
-    <li>RC Build: September 30, 2026</li>
-    <li>Testing: September 30, 2026 - October 25, 2026</li>
-    <li>GA: October 26, 2026</li>
-    <li>System Demo: November 3, 2026</li>
+    <li>Code Freeze: October 12, 2026</li>
+    <li>RC Build: October 13, 2026</li>
+    <li>Testing: October 13, 2026 - November 8, 2026</li>
+    <li>GA: November 9, 2026</li>
+    <li>System Demo: November 17, 2026</li>
   </ul>
 
   <h4>3.8.0</h4>
   <ul>
-    <li>Code Freeze: January 4, 2027</li>
-    <li>RC Build: January 5, 2027</li>
-    <li>Testing: January 5, 2027 - January 31, 2027</li>
-    <li>GA: February 1, 2027</li>
-    <li>System Demo: February 9, 2027</li>
-  </ul>
-
-  <h4>3.9.0</h4>
-  <ul>
-    <li>Code Freeze: March 22, 2027</li>
-    <li>RC Build: March 23, 2027</li>
-    <li>Testing: March 23, 2027 - April 18, 2027</li>
-    <li>GA: April 19, 2027</li>
-    <li>System Demo: April 27, 2027</li>
+    <li>Code Freeze: February 4, 2027</li>
+    <li>RC Build: February 5, 2027</li>
+    <li>Testing: February 5, 2027 - March 31, 2027</li>
+    <li>GA: March 1, 2027</li>
+    <li>System Demo: March 9, 2027</li>
   </ul>
 
   <h3>V2 Release Stream</h3>
 
   <h4>2.18.5</h4>
   <ul>
-    <li>Code Freeze: August 17, 2026</li>
-    <li>RC Build: August 18, 2026</li>
-    <li>Testing: August 18, 2026 - August 30, 2026</li>
-    <li>GA: August 31, 2026</li>
+    <li>Code Freeze: May 19, 2026</li>
+    <li>RC Build: May 20, 2026</li>
+    <li>Testing: May 20, 2026 - June 3, 2026</li>
+    <li>GA: June 4, 2026</li>
   </ul>
 
   <h4>2.18.6</h4>
