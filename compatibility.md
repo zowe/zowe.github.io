@@ -81,6 +81,12 @@
     font-weight: 600;
     white-space: nowrap;
   }
+
+  .compat-nosupport {
+    color: red;
+    font-weight: 700;
+    font-size: 1.1em;
+  }
 </style>
 
 <section class="whitebackground">
@@ -92,72 +98,84 @@
       <thead>
         <tr>
           <th>Version</th>
-          <th>Zowe Version Compatibility</th>
+          <th>Zowe V2 Compatibility</th>
+          <th>Zowe V3 Compatibility</th>
           <th>Testing Status</th>
         </tr>
       </thead>
       <tbody>
         <tr class="section-header">
-          <td colspan="3">z/OS</td>
+          <td colspan="4">z/OS</td>
         </tr>
         <tr>
           <td>2.5</td>
           <td>&gt;= 2.13</td>
+          <td>All versions</td>
           <td><span class="badge-automated">Automated Testing by Community</span></td>
         </tr>
         <tr>
           <td>3.1</td>
           <td>&gt;= 2.18.2</td>
+          <td>All versions</td>
           <td><span class="badge-community">Tested by Community Member</span></td>
         </tr>
         <tr>
           <td>3.2</td>
+          <td>&gt;= 2.18.4</td>
           <td>&gt;= 3.3</td>
           <td><span class="badge-community">Tested by Community Member</span></td>
         </tr>
         <tr class="section-header">
-          <td colspan="3">Java</td>
+          <td colspan="4">Java</td>
         </tr>
         <tr>
           <td>8</td>
-          <td>&gt;= 2.0, &lt; 3.0</td>
+          <td>&gt;= 2.0</td>
+          <td><span class="compat-nosupport">✗</span></td>
           <td><span class="badge-automated">Automated Testing by Community</span></td>
         </tr>
         <tr>
           <td>11</td>
-          <td>&gt;= 2.0, &lt; 3.0</td>
+          <td>&gt;= 2.0</td>
+          <td><span class="compat-nosupport">✗</span></td>
           <td><span class="badge-automated">Automated Testing by Community</span></td>
         </tr>
         <tr>
           <td>17</td>
           <td>&gt;= 2.15</td>
+          <td>All versions</td>
           <td><span class="badge-automated">Automated Testing by Community</span></td>
         </tr>
         <tr>
           <td>21</td>
-          <td>&gt;= 3.3 &gt;= 2.18.5</td>
+          <td>&gt;= 2.18.5</td>
+          <td>&gt;= 3.3</td>
           <td><span class="badge-community">Tested by Community Member</span></td>
         </tr>
         <tr>
           <td>25</td>
-          <td></td>
+          <td><span class="compat-nosupport">✗</span></td>
+          <td><span class="compat-nosupport">✗</span></td>
           <td><span class="badge-nosupport">No Support Yet</span></td>
         </tr>
         <tr class="section-header">
-          <td colspan="3">Node.js</td>
+          <td colspan="4">Node.js</td>
         </tr>
         <tr>
           <td>20</td>
           <td>&gt;= 2.13</td>
+          <td>All versions</td>
           <td><span class="badge-automated">Automated Testing by Community</span></td>
         </tr>
         <tr>
           <td>22</td>
+          <td><span class="compat-nosupport">✗</span></td>
           <td>&gt;= 3.0</td>
           <td><span class="badge-automated">Automated Testing by Community</span></td>
         </tr>
         <tr>
           <td>24</td>
+          <td><span class="compat-nosupport">✗</span></td>
           <td>&gt;= 3.3</td>
           <td><span class="badge-community">Tested by Community Member</span></td>
         </tr>
