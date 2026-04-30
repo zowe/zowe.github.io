@@ -90,8 +90,7 @@
 </style>
 
 <section class="whitebackground">
-  <h1>Compatibility Matrix</h1>
-  
+  <h1>Compatibility Matrix</h1>  
   <p>Validate whether your z/OS environment meets the necessary prerequisites to operate Zowe server side. In the case of z/OS, Java, Node.js we had older versions that we used to support and no longer support.</p>
 
   <div style="overflow-x: auto">
