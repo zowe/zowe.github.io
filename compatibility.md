@@ -117,7 +117,7 @@
           <td>3.1</td>
           <td>&gt;= 2.18.2</td>
           <td>All versions</td>
-          <td><span class="badge-community">Automated Testing by Community</span></td>
+          <td><span class="badge-automated">Automated Testing by Community</span></td>
         </tr>
         <tr>
           <td>3.2</td>
