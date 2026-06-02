@@ -71,10 +71,10 @@
 
   <h4>2.18.5</h4>
   <ul>
-    <li>Code Freeze: May 19, 2026</li>
-    <li>RC Build: May 20, 2026</li>
-    <li>Testing: May 20, 2026 - June 3, 2026</li>
-    <li>GA: June 4, 2026</li>
+    <li>Code Freeze: June 17, 2026</li>
+    <li>RC Build: June 18, 2026</li>
+    <li>Testing: June 18, 2026 - July 7, 2026</li>
+    <li>GA: July 8, 2026</li>
   </ul>
 
   <h4>2.18.6</h4>
