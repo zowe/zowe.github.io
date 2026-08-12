@@ -278,7 +278,7 @@
             <p class="card-text">Install Zowe CLI from the local package or from an npm registry if your computer is
               connected to the Internet.</p>
             <p class="card-text">Download the Zowe CLI core package and optionally download the plug-ins (CICS, Db2,
-              IMS, MQ, z/OS FTP, and so on) to gain more capabilities.</p>
+              MQ, z/OS FTP, and so on) to gain more capabilities.</p>
             <p><a class="btn btn-primary"
                 href="{{ site.cli_download_url }}{{ site.data.releases.v3[0].cli_version }}">Zowe
                 {{ site.data.releases.v3[0].cli_plugins_version }} CLI Core</a></p>
@@ -500,7 +500,7 @@
             <p class="card-text">Install Zowe CLI from the local package or from an npm registry if your computer is
               connected to the Internet.</p>
             <p class="card-text">Download the Zowe CLI core package and optionally download the plug-ins (CICS, Db2,
-              IMS, MQ, z/OS FTP, and so on) to gain more capabilities.</p>
+              MQ, z/OS FTP, and so on) to gain more capabilities.</p>
             <p><a class="btn btn-primary"
                 href="{{ site.cli_download_url }}{{ site.data.releases.v2[0].cli_version }}">Zowe
                 {{ site.data.releases.v2[0].cli_plugins_version }} CLI Core</a></p>
