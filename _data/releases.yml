@@ -5,7 +5,7 @@ future:
     - version: 3.6.0
       release_date: 2026-08-17
   v2:
-    - version: 2.18.6
+    - version: 2.18.7
       release_date: 2027-02-22
     
 v3:
@@ -130,7 +130,23 @@ v3:
     documentation: v3.0.x
     release_notes: v3_0_0
 
-v2: 
+v2:
+  - version: 2.18.6
+    zen_version: 1.1.0
+    zos_version: 2.18.6
+    smpe_version: 2.18.6
+    pswi_version: 2.18.6
+    smpe_sysmod: PTF
+    smpe_numbers: UO06705 UO06706
+    containerization_version: 2.18.6
+    cli_version: 2.18.6
+    cli_plugins_version: 2.18.6
+    explorer_version: 2.18.6
+    node_sdk_version: 2.18.6
+    python_sdk_version: 2.18.6
+    release_date: 2026-08-12
+    documentation: stable
+    release_notes: v2_18_6
   - version: 2.18.5
     zen_version: 1.1.0
     zos_version: 2.18.5
@@ -139,13 +155,13 @@ v2:
     smpe_sysmod: PTF
     smpe_numbers: UO06703 UO06704
     containerization_version: 2.18.5
-    cli_version: 2.18.6
-    cli_plugins_version: 2.18.6
-    explorer_version: 2.18.6
-    node_sdk_version: 2.18.6
-    python_sdk_version: 2.18.6
+    cli_version: 2.18.5
+    cli_plugins_version: 2.18.5
+    explorer_version: 2.18.5
+    node_sdk_version: 2.18.5
+    python_sdk_version: 2.18.5
     release_date: 2026-07-15
-    documentation: stable
+    documentation: v2.18.x
     release_notes: v2_18_5
   - version: 2.18.4
     zen_version: 1.1.0
@@ -155,11 +171,11 @@ v2:
     smpe_sysmod: PTF
     smpe_numbers: UO03613 UO03614
     containerization_version: 2.18.4
-    cli_version: 2.18.5
-    cli_plugins_version: 2.18.5
-    explorer_version: 2.18.5
-    node_sdk_version: 2.18.5
-    python_sdk_version: 2.18.5
+    cli_version: 2.18.4
+    cli_plugins_version: 2.18.4
+    explorer_version: 2.18.4
+    node_sdk_version: 2.18.4
+    python_sdk_version: 2.18.4
     release_date: 2026-01-29
     documentation: v2.18.x
     release_notes: v2_18_4
@@ -171,11 +187,11 @@ v2:
     smpe_sysmod: PTF
     smpe_numbers: UO90078 UO90079
     containerization_version: 2.18.3
-    cli_version: 2.18.4
-    cli_plugins_version: 2.18.4
-    explorer_version: 2.18.4
-    node_sdk_version: 2.18.4
-    python_sdk_version: 2.18.4
+    cli_version: 2.18.3
+    cli_plugins_version: 2.18.3
+    explorer_version: 2.18.3
+    node_sdk_version: 2.18.3
+    python_sdk_version: 2.18.3
     release_date: 2025-10-31
     documentation: v2.18.x
     release_notes: v2_18_3
