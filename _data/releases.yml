@@ -15,12 +15,12 @@ v3:
     smpe_sysmod: PTF
     smpe_numbers: UO03576 UO03577
     containerization_version: 3.5.0
-    cli_version: 3.5.0
-    cli_plugins_version: 3.5.0
+    cli_version: 3.6.0
+    cli_plugins_version: 3.6.0
     intellij_explorer_version: 3.5.0
-    explorer_version: 3.5.0
-    node_sdk_version: 3.5.0
-    python_sdk_version: 3.5.0
+    explorer_version: 3.6.0
+    node_sdk_version: 3.6.0
+    python_sdk_version: 3.6.0
     release_date: 2026-05-21
     documentation: stable
     release_notes: v3_5_0
