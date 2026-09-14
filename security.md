@@ -21,6 +21,8 @@
 
 <p>This Security Policy governs how Zowe handles vulnerabilities identification, mitigation and disclosure.</p>
 
+<p>CRA stewardship: This project is supported under the Linux Foundation CRA stewardship framework, as described at https://www.linuxfoundation.org/security. Security vulnerabilities should be reported through the mechanisms described below, which we will coordinate with our CRA steward. For actively exploited vulnerabilities and severe incidents that may require CRA escalation, please use the project’s emergency security reporting mechanisms as appropriate.</p>
+
 <p>Our policy is based on the <a href="https://en.wikipedia.org/wiki/Coordinated_vulnerability_disclosure">Coordinated Vulnerability Disclosure (CVD) Policy</a>
 which is also adopted by many other organizations, <a href="https://www.cisa.gov/coordinated-vulnerability-disclosure-process">CISA</a> and <a href="https://www.etsi.org/standards/coordinated-vulnerability-disclosure">ETSI</a> among them.
 Zowe adapts the following CVD topics to declare complete set of policy requirements for Respond to Vulnerabilities:</p>
