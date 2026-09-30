@@ -1,0 +1,6 @@
+[[plugins]]
+  package = "netlify-plugin-checklinks"
+
+  [plugins.inputs]
+    checkExternal = false
+    skipPatterns = ["https://lfprojects.org"]
