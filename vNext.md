@@ -10,7 +10,7 @@
     <p>Information related to the Zowe V3 moved to Zowe Docs - <a href="https://docs.zowe.org/stable/whats-new/breaking-changes-v3/">Breaking Changes and Important Updates in Zowe v3</a></p>
 
     <div class="alert alert-info" role="alert">
-      <strong>Zowe 3.6.0 is a split release:</strong> the client-side components — Zowe CLI, Zowe Explorer, and the client SDKs — were released in September 2026. The server-side components are planned for release on <strong>October 27, 2026</strong>, with code freeze on <strong>October 6, 2026</strong>.
+      <strong>Zowe 3.6.0 is a split release:</strong> the client-side components — Zowe CLI, Zowe Explorer, and the client SDKs — were released in September 2026. The server-side components are planned for release on <strong>October 27, 2026</strong>.
     </div>
 </section>
 
