@@ -35,25 +35,22 @@
 
   <h3>V3 Release Stream</h3>
 
-  <h4>3.5.0</h4>
-  <ul>
-    <li>Code Freeze: April 20, 2026</li>
-    <li>RC Build: April 21, 2026</li>
-    <li>Testing: April 21, 2026 - May 17, 2026</li>
-    <li>GA: May 18, 2026</li>
-    <li>System Demo: May 26, 2026</li>
-  </ul>
-
   <h4>3.6.0 (server-side)</h4>
   <ul>
     <li>Code Freeze: October 6, 2026</li>
+    <li>RC Build: October 7, 2026</li>
+    <li>Testing: October 7, 2026 - October 26, 2026</li>
     <li>GA: October 27, 2026</li>
+    <li>System Demo: November 3, 2026</li>
   </ul>
 
   <h4>3.7.0</h4>
   <ul>
     <li>Code Freeze: February 2, 2027</li>
+    <li>RC Build: February 3, 2027</li>
+    <li>Testing: February 3, 2027 - March 1, 2027</li>
     <li>GA: March 2, 2027</li>
+    <li>System Demo: March 9, 2027</li>
   </ul>
 
   <h3>V2 Release Stream</h3>
@@ -61,12 +58,16 @@
   <h4>2.18.7</h4>
   <ul>
     <li>Code Freeze: November 10, 2026</li>
+    <li>RC Build: November 11, 2026</li>
+    <li>Testing: November 11, 2026 - November 23, 2026</li>
     <li>GA: November 24, 2026</li>
   </ul>
 
   <h4>2.18.8</h4>
   <ul>
-    <li>Code Freeze: February 2027</li>
+    <li>Code Freeze: February 23, 2027</li>
+    <li>RC Build: February 24, 2027</li>
+    <li>Testing: February 24, 2027 - March 29, 2027</li>
     <li>GA: March 30, 2027</li>
   </ul>
 </section>
