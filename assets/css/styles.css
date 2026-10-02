@@ -775,17 +775,6 @@ div#components img {
   }
 }
 
-.osano-cm-header {
-  background-color: white;
-  color: black;
-}
-
-.osano-cm-description {
-  background-color: white;
-  color: black;
-}
-
-.osano-cm-label {
-  background-color: white;
+.osano-cm-info {
   color: black;
 }
