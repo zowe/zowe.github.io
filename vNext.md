@@ -8,6 +8,10 @@
     <h1 id="download" style="margin-bottom: 1.5rem">Future</h1>
     
     <p>Information related to the Zowe V3 moved to Zowe Docs - <a href="https://docs.zowe.org/stable/whats-new/breaking-changes-v3/">Breaking Changes and Important Updates in Zowe v3</a></p>
+
+    <div class="alert alert-info" role="alert">
+      <strong>Zowe 3.6.0 is a split release:</strong> the client-side components — Zowe CLI, Zowe Explorer, and the client SDKs — were released in September 2026. The server-side components are planned for release on <strong>October 27, 2026</strong>, with code freeze on <strong>October 6, 2026</strong>.
+    </div>
 </section>
 
 <section class="bluebackground">
@@ -40,49 +44,40 @@
     <li>System Demo: May 26, 2026</li>
   </ul>
 
-  <h4>3.6.0</h4>
+  <h4>3.6.0 (server-side)</h4>
   <ul>
-    <li>Code Freeze: July 20, 2026</li>
-    <li>RC Build: July 21, 2026</li>
-    <li>Testing: July 21, 2026 - August 16, 2026</li>
-    <li>GA: August 17, 2026</li>
-    <li>System Demo: August 25, 2026</li>
+    <li>Code Freeze: October 6, 2026</li>
+    <li>GA: October 27, 2026</li>
   </ul>
 
   <h4>3.7.0</h4>
   <ul>
-    <li>Code Freeze: October 12, 2026</li>
-    <li>RC Build: October 13, 2026</li>
-    <li>Testing: October 13, 2026 - November 8, 2026</li>
-    <li>GA: November 9, 2026</li>
-    <li>System Demo: November 17, 2026</li>
-  </ul>
-
-  <h4>3.8.0</h4>
-  <ul>
-    <li>Code Freeze: February 4, 2027</li>
-    <li>RC Build: February 5, 2027</li>
-    <li>Testing: February 5, 2027 - March 31, 2027</li>
-    <li>GA: March 1, 2027</li>
-    <li>System Demo: March 9, 2027</li>
+    <li>Code Freeze: February 2, 2027</li>
+    <li>GA: March 2, 2027</li>
   </ul>
 
   <h3>V2 Release Stream</h3>
 
   <h4>2.18.5</h4>
   <ul>
-    <li>Code Freeze: May 19, 2026</li>
-    <li>RC Build: May 20, 2026</li>
-    <li>Testing: May 20, 2026 - June 3, 2026</li>
-    <li>GA: June 4, 2026</li>
+    <li>GA: July 15, 2026</li>
   </ul>
 
   <h4>2.18.6</h4>
   <ul>
-    <li>Code Freeze: February 08, 2027</li>
-    <li>RC Build: February 09, 2027</li>
-    <li>Testing: February 09, 2027 - February 21, 2027</li>
-    <li>GA: February 22, 2027</li>
+    <li>GA: August 12, 2026</li>
+  </ul>
+
+  <h4>2.18.7</h4>
+  <ul>
+    <li>Code Freeze: November 10, 2026</li>
+    <li>GA: November 24, 2026</li>
+  </ul>
+
+  <h4>2.18.8</h4>
+  <ul>
+    <li>Code Freeze: February 2027</li>
+    <li>GA: March 30, 2027</li>
   </ul>
 </section>
 
