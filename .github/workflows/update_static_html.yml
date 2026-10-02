@@ -42,7 +42,7 @@ jobs:
       uses: zowe-actions/shared-actions/prepare-workflow@main
 
     - name: Build site
-      uses: jerryjvl/jekyll-build-action@v1
+      uses: actions/jekyll-build-pages@v1
 
     - name: Publish Release to Artifactory
       uses: zowe-actions/shared-actions/publish@main
