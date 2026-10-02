@@ -58,16 +58,6 @@
 
   <h3>V2 Release Stream</h3>
 
-  <h4>2.18.5</h4>
-  <ul>
-    <li>GA: July 15, 2026</li>
-  </ul>
-
-  <h4>2.18.6</h4>
-  <ul>
-    <li>GA: August 12, 2026</li>
-  </ul>
-
   <h4>2.18.7</h4>
   <ul>
     <li>Code Freeze: November 10, 2026</li>
