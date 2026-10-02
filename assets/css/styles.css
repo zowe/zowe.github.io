@@ -774,3 +774,18 @@ div#components img {
     display: block;
   }
 }
+
+.osano-cm-header {
+  background-color: white;
+  color: black;
+}
+
+.osano-cm-description {
+  background-color: white;
+  color: black;
+}
+
+.osano-cm-label {
+  background-color: white;
+  color: black;
+}
