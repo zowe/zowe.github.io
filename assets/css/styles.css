@@ -774,3 +774,7 @@ div#components img {
     display: block;
   }
 }
+
+.osano-cm-info {
+  color: black;
+}
