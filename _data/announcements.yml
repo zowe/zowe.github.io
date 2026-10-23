@@ -1,5 +1,8 @@
 # Announcements
 # Links need to be shared within announcement in the HTML form e.g. <a href='url'>text visible for user</a>
+- announcement: "<span style='color: red; font-weight: bold;'>URGENT:</span> Please see our response to recent industry vulnerabilities <a href='/emudhra_response.html'>here</a>."
+  priority: high
+  until: 2027-01-01
 - announcement: "Zowe 3.6.0 is now available for Zowe CLI and Zowe Explorer."
   priority: high
   until: 2026-09-20
