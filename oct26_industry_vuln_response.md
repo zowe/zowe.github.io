@@ -1,4 +1,7 @@
 ---
+redirect_from:
+  - /emudhra_response.html
+  - /emudhra_response/
 title: "Zowe Response to Recent Industry Vulnerabilities (eMudhra CA Compromise & Brotli node2shell)"
 ---
 
