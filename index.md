@@ -64,6 +64,14 @@ redirect_from:
 </style>
 
 <script src="https://kit.fontawesome.com/f449f80794.js" crossorigin="anonymous"></script>
+<script>
+  function toggle(id) {
+    var element = document.getElementById(id);
+    if (element) {
+      element.classList.toggle('feedback-hide');
+    }
+  }
+</script>
 {% assign currentTime = 'now' | date: '%s' | plus: 0 %}
 {% assign announcements = site.data.announcements %}
 {% assign release_date_v3 = site.data.releases.v3[0].release_date | date: '%s' | plus: 0 %}
@@ -89,48 +97,79 @@ redirect_from:
 {% comment %}
 Re-order announcements by priority. Supports 'priority' and 'until' fields in announcements.yml. The only priority is 'high' right now, and 'until' should be formatted as 'YYYY-MM-DD'.
 {% endcomment %}
-{% assign temp_announcements = announcements %}
-{% assign announcements = "" | split: "," %}
-{% for announcement in temp_announcements %} 
+{% assign high_priority_announcements = "" | split: "," %}
+{% assign other_announcements = "" | split: "," %}
+{% for announcement in announcements %} 
   {% if announcement.priority == 'high' %}
     {% assign priority_until_date = announcement.until | date: '%s' | plus: 0 %}
     {% if priority_until_date > currentTime %}
-      {% assign announcements = announcement | concat: announcements %}
+      {% assign high_priority_announcements = high_priority_announcements | push: announcement %}
     {% else %}
-      {% assign announcements = announcements | push: announcement %}
+      {% assign other_announcements = other_announcements | push: announcement %}
     {% endif %}
   {% else %}
-    {% assign announcements = announcements | push: announcement %}
+    {% assign other_announcements = other_announcements | push: announcement %}
   {% endif %}
 {% endfor %}
+{% assign announcements = high_priority_announcements | concat: other_announcements %}
+{% assign has_remaining_announcements = false %}
+{% if high_priority_announcements.size > 0 and other_announcements.size > 0 %}
+  {% assign has_remaining_announcements = true %}
+{% elsif high_priority_announcements.size == 0 and other_announcements.size > 1 %}
+  {% assign has_remaining_announcements = true %}
+{% endif %}
 
 
-<div class="announcementsection row" style="padding-left: 5%">
+<div class="announcementsection row" style="padding-left: 5%; padding-bottom: 0px;">
   <div class="row" style="margin-left: 0px; margin-right: 0px; width: 100%" >
     <div class="col-12 col-md-2">
-      <div id="feedback-announcements" style="padding-top: 10px; padding-left: 10px; padding-botom: 10px; cursor: pointer;" onclick="toggle('remaining-rows');toggle('feedback-announcements-down');toggle('feedback-announcements-up');">
+      {% if has_remaining_announcements %}
+      <div id="feedback-announcements" style="padding-top: 8px; padding-left: 10px; padding-bottom: 8px; cursor: pointer;" onclick="toggle('remaining-rows');toggle('feedback-announcements-down');toggle('feedback-announcements-up');">
         <i id="feedback-announcements-down" class="fa-solid fa-chevron-down "></i><i id="feedback-announcements-up" class="fa-solid fa-chevron-up feedback-hide"></i> Announcements
       </div>
+      {% else %}
+      <div id="feedback-announcements" style="padding-top: 8px; padding-left: 10px; padding-bottom: 8px;">
+        Announcements
+      </div>
+      {% endif %}
     </div>
-    <div class="col-12 col-md-10" style="padding-top: 10px;">
+    <div class="col-12 col-md-10" style="padding-top: 8px; padding-bottom: 8px;">
       <div id="first-row">
-          <strong>{% if announcements[0].announcement %}{{ announcements[0].announcement }}{% else %}{{ announcements[0] }}{% endif %}<br></strong>
+        {% if high_priority_announcements.size > 0 %}
+          {% for announcement in high_priority_announcements %}
+            {% if forloop.index > 1 %}
+            <hr class="w-100" style="margin-top: 0.25rem; margin-bottom: 0.25rem; border-top: 1px solid rgb(0 0 0 / 20%)">
+            {% endif %}
+            <div><strong>{% if announcement.announcement %}{{ announcement.announcement }}{% else %}{{ announcement }}{% endif %}</strong></div>
+          {% endfor %}
+        {% else %}
+          <div><strong>{% if other_announcements[0].announcement %}{{ other_announcements[0].announcement }}{% else %}{{ other_announcements[0] }}{% endif %}</strong></div>
+        {% endif %}
       </div>
+      {% if has_remaining_announcements %}
       <div id="remaining-rows" class=" feedback-hide">
-        {% for announcement in announcements %}
-          {% if forloop.index > 1 %}
-          <hr class="w-100" style="margin-top: 0.25rem; margin-bottom: 0.25rem; border-top: 1px solid rgb(0 0 0 / 20%)">
-          <strong>{% if announcement.announcement %}{{ announcement.announcement }}{% else %}{{ announcement }}{% endif %}<br></strong>
-          {% endif %}
-        {% endfor %}
+        {% if high_priority_announcements.size > 0 %}
+          {% for announcement in other_announcements %}
+            <hr class="w-100" style="margin-top: 0.25rem; margin-bottom: 0.25rem; border-top: 1px solid rgb(0 0 0 / 20%)">
+            <div><strong>{% if announcement.announcement %}{{ announcement.announcement }}{% else %}{{ announcement }}{% endif %}</strong></div>
+          {% endfor %}
+        {% else %}
+          {% for announcement in other_announcements %}
+            {% if forloop.index > 1 %}
+            <hr class="w-100" style="margin-top: 0.25rem; margin-bottom: 0.25rem; border-top: 1px solid rgb(0 0 0 / 20%)">
+            <div><strong>{% if announcement.announcement %}{{ announcement.announcement }}{% else %}{{ announcement }}{% endif %}</strong></div>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
       </div>
+      {% endif %}
     </div>
   </div>
 </div>
 
 {% assign next_version = 2.7 %}
 {% assign next_version_date = currentTime %}
-{% assign minimum_difference = 15770000 %}  <!-- 6 months --> 
+{% assign minimum_difference = 15770000 %}  {% comment %} 6 months {% endcomment %} 
 {% for release in site.data.releases.future.v3 %}
   {% assign current_release_date = release.release_date | date: '%s' | plus: 0 %}
   {% if current_release_date > currentTime %}

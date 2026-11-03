@@ -112,7 +112,7 @@ a:hover{
 
 .announcementsection {
   background-color:#eeeeee;
-  padding-bottom:0.5%;
+  padding-bottom: 0;
   border-bottom: 1px solid #C1BFBF;
 }
 
@@ -433,7 +433,7 @@ div h4 {
   }
 
   .announcementsection {
-    padding-bottom:8%;
+    padding-bottom: 0;
   }
 
   .whitebackground {
